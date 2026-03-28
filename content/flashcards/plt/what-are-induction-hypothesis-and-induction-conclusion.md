@@ -1,0 +1,15 @@
+---
+createdAt: "2026-03-28"
+updatedAt: "2026-03-28"
+question: What are induction hypothesis and induction conclusion?
+answer: TODO
+deck: proof-technique
+concepts: []
+books:
+  - chapter-2-inductive-definitions
+---
+
+
+Inductive conclusion 
+
+Inductive hypothesis

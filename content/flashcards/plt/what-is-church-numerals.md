@@ -1,0 +1,19 @@
+---
+createdAt: "2026-03-28"
+updatedAt: "2026-03-28"
+question: What is Church numerals?
+answer: TODO
+deck: pure-lambda-calculus
+concepts:
+  - pure-untyped-lambda-calculus
+  - church-numeral
+books:
+  - chapter-5-the-untyped-pure-lambda-calculus
+---
+
+
+Church numerals is an encoding of natural numbers in Pure/Untyped lambda calculus.
+
+$$
+c_n = \lambda a.\ \lambda z.\ a\ (a\ (...\ z)\ ...)
+$$

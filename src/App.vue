@@ -1,0 +1,111 @@
+<template>
+  <div class="layout">
+    <NavBar v-if="!isGraph" />
+    <main :class="isGraph ? '' : 'content'">
+      <router-view v-slot="{ Component }">
+        <Transition
+          name="page"
+          mode="out-in"
+        >
+          <component
+            :is="Component"
+            :key="$route.path"
+          />
+        </Transition>
+      </router-view>
+    </main>
+    <FooterBar v-if="!isGraph" />
+    <CommandPalette ref="palette" />
+  </div>
+</template>
+
+<script setup lang="ts">
+import {
+  ref, computed, defineAsyncComponent,
+} from 'vue';
+import { useRouter } from 'vue-router';
+import NavBar from '@/components/NavBar.vue';
+import FooterBar from '@/components/FooterBar.vue';
+import { useKeyboard } from '@/composables/use_keyboard';
+
+const CommandPalette = defineAsyncComponent(() => import('@/components/CommandPalette.vue'));
+
+const palette = ref<InstanceType<typeof CommandPalette>>();
+const router = useRouter();
+const { register } = useKeyboard();
+
+const isGraph = computed(() => router.currentRoute.value.path === '/graph');
+
+function go (path: string) {
+  palette.value?.close();
+  if (router.currentRoute.value.path === path) {
+    router.back();
+  } else {
+    router.push(path);
+  }
+}
+
+register([
+  {
+    key: 'p',
+    alt: true,
+    handler: () => palette.value?.show(),
+    label: 'Search',
+    scope: 'global',
+  },
+  {
+    key: 'h',
+    alt: true,
+    handler: () => go('/'),
+    label: 'Go to Home',
+    scope: 'global',
+  },
+  {
+    key: 't',
+    alt: true,
+    handler: () => go('/thoughts'),
+    label: 'Go to Thoughts',
+    scope: 'global',
+  },
+  {
+    key: 'j',
+    alt: true,
+    handler: () => go('/journeys'),
+    label: 'Go to Journeys',
+    scope: 'global',
+  },
+  {
+    key: 'g',
+    alt: true,
+    handler: () => go('/graph'),
+    label: 'Go to Graph',
+    scope: 'global',
+  },
+]);
+</script>
+
+<style scoped>
+@reference "./style.css";
+.layout {
+  @apply min-h-screen flex flex-col;
+}
+.content {
+  @apply flex-1;
+}
+</style>
+
+<style>
+.page-enter-active {
+  transition: opacity 0.1s ease, transform 0.1s ease;
+}
+.page-leave-active {
+  transition: opacity 0.05s ease;
+}
+.page-enter-from {
+  opacity: 0;
+  transform: translateY(4px);
+}
+.page-leave-to {
+  opacity: 0;
+}
+</style>

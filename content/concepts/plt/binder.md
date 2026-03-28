@@ -1,0 +1,13 @@
+---
+createdAt: "2026-03-28"
+updatedAt: "2026-03-28"
+title: "Binder"
+journey: plt
+status: mastered
+tags: ["lambda-calculus", "syntax-grammar"]
+books: ["chapter-5-the-untyped-pure-lambda-calculus"]
+dependsOn: []
+blocks: []
+---
+
+A syntactic construct that introduces a variable and defines its scope. In lambda calculus, it's the variable directly following $\lambda$.

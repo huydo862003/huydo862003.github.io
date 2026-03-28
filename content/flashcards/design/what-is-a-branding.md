@@ -1,0 +1,13 @@
+---
+createdAt: "2026-03-28"
+updatedAt: "2026-03-28"
+question: What is a branding?
+answer: TODO
+deck: design-aspect
+concepts:
+  - branding
+books: []
+---
+
+
+The strategic application of distinct visual and tonal identity elements-like logos, colors, and voice-to create a unique, recognizable, and emotional connection with the user.

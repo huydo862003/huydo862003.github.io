@@ -1,0 +1,15 @@
+---
+createdAt: "2026-03-28"
+updatedAt: "2026-03-28"
+title: Component
+journey: design
+status: mastered
+tags:
+  - design-system
+books: []
+dependsOn: []
+blocks:
+  - component-library
+---
+
+A reusable, standardized interface element-not a one-off, unique implementation-that operates by encapsulating code, style, and behavior into a single package to ensure consistency and efficiency across a product.
