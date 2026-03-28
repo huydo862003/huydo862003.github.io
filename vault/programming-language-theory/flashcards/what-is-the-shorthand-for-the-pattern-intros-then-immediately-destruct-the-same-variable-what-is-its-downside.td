@@ -1,0 +1,12 @@
+---
+_type: Flashcard
+_label: 'What is the shorthand for the pattern intros then immediately destruct the same variable? what is its downside?'
+deck: 'general'
+books:
+  - fref("programming-language-theory/books/software-foundations/chapter-1-basics-functional-programming-in-rocq.td")
+---
+
+::: flashcard
+What is the shorthand for the pattern intros then immediately destruct the same variable? what is its downside?
+=== key
+:::

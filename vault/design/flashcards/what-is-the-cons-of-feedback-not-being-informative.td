@@ -1,0 +1,12 @@
+---
+_type: Flashcard
+_label: 'What is the cons of feedback not being informative?'
+deck: 'general'
+concepts:
+  - fref("design/concepts/feedback.td")
+---
+
+::: flashcard
+What is the cons of feedback not being informative?
+=== key
+:::

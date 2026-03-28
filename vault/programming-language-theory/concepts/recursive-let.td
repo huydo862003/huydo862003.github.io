@@ -1,0 +1,15 @@
+---
+_type: Concept
+_label: 'Recursive let'
+journey: fref("programming-language-theory/index.td")
+status: 'learning'
+books:
+  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/chapter-1-learning-smol-standard-model-of-languages.td")
+---
+
+```scheme
+(letrec ([fact (lambda (n)
+                 (if (= n 0) 1 (* n (fact (- n 1)))))])
+  (fact 5))
+; => 120
+```

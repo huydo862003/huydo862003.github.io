@@ -1,0 +1,8 @@
+---
+_type: Concept
+_label: 'Nominal typing structural typing'
+journey: fref("programming-language-theory/index.td")
+status: 'learning'
+---
+
+A type system where ${fref("programming-language-theory/concepts/type-compatibility.td")} is determined by **explicit declarations** (class names, inheritance hierarchy), not structure - `class A` and `class B` are different even if identical in shape.

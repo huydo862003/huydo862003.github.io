@@ -1,0 +1,13 @@
+---
+_type: Flashcard
+_label: 'Should we think in features or paradigms regarding programming languages?'
+deck: 'programming-language-basic'
+books:
+  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/index.td")
+---
+
+::: flashcard
+Should we think in features or paradigms regarding programming languages?
+=== key
+Modern programming languages are all multi-paradigms and rather mixes of multiple features. It's outdated to think in terms of paradigms.
+:::

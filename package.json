@@ -1,0 +1,17 @@
+{
+  "name": "huydo862003.github.io",
+  "version": "1.0.0",
+  "description": "Personal knowledge base",
+  "scripts": {
+    "dev": "typerighter dev",
+    "build": "typerighter build",
+    "preview": "typerighter preview"
+  },
+  "license": "APGL-3-only",
+  "packageManager": "pnpm@11.18.0",
+
+  "type": "module",
+  "devDependencies": {
+    "typerighter": "0.14.1"
+  }
+}

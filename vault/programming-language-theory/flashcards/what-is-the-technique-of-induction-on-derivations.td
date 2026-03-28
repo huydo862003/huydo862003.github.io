@@ -1,0 +1,15 @@
+---
+_type: Flashcard
+_label: 'What is the technique of induction on derivations?'
+deck: 'pure-lambda-calculus'
+concepts:
+  - fref("programming-language-theory/concepts/induction-on-derivations.td")
+books:
+  - fref("programming-language-theory/books/types-and-programming-languages/chapter-3-untyped-arithmetic-expressions.td")
+---
+
+::: flashcard
+What is the technique of induction on derivations?
+=== key
+An induction technique in which to prove a specific property about a derivation, we take the induction hypothesis is that every smaller derivations satisfy that property.
+:::
