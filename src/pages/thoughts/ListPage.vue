@@ -7,7 +7,7 @@
       >
         &larr; home
       </router-link>
-      <Breadcrumb :crumbs="[{ label: 'Thoughts', to: '/thoughts' }]" />
+      <SBreadcrumb :crumbs="[{ label: 'Thoughts', to: '/thoughts' }]" />
     </div>
     <h1>Scrambled Thoughts</h1>
     <ul class="list">
@@ -34,7 +34,7 @@
 </template>
 
 <script setup lang="ts">
-import Breadcrumb from '@/components/BreadcrumbNav.vue';
+import SBreadcrumb from '@/components/common/SBreadcrumb.vue';
 import { useThoughtStore } from '@/stores/thoughts';
 
 const { thoughts: posts } = useThoughtStore();

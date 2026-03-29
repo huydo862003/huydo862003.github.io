@@ -13,7 +13,7 @@ import {
 } from '@/utils/sm2';
 import {
   useAuth, useReviewSync,
-} from '@/composables/use_supabase';
+} from '@/composables/useSupabase';
 
 const STORAGE_KEY = 'scrambled_review_state';
 

@@ -7,7 +7,7 @@
       >
         &larr; all thoughts
       </router-link>
-      <Breadcrumb :crumbs="[{ label: 'Thoughts', to: '/thoughts' }, { label: 'Archived', to: '/archived' }]" />
+      <SBreadcrumb :crumbs="[{ label: 'Thoughts', to: '/thoughts' }, { label: 'Archived', to: '/archived' }]" />
     </div>
     <h1>Archived</h1>
     <p class="subtitle">
@@ -37,7 +37,7 @@
 </template>
 
 <script setup lang="ts">
-import Breadcrumb from '@/components/BreadcrumbNav.vue';
+import SBreadcrumb from '@/components/common/SBreadcrumb.vue';
 import { useThoughtStore } from '@/stores/thoughts';
 
 const { archivedThoughts: archivedPosts } = useThoughtStore();

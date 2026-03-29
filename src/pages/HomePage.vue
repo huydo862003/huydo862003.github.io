@@ -165,27 +165,193 @@
       </div>
     </section>
 
-    <FooterBar />
+    <div class="section-sep" />
 
     <section class="graph-section">
-      <GraphPreview />
+      <div class="reads-panel">
+        <h2 class="reads-heading">
+          Scrambled Reads
+        </h2>
+        <SFilterBar
+          :groups="filterGroups"
+          :model-values="filterValues"
+          class="mb-4"
+          @update:model-values="onFilterUpdate"
+        />
+        <ul class="reads-list">
+          <li
+            v-for="item in pagedReads"
+            :key="`${item.type}-${item.slug}`"
+            class="reads-item"
+          >
+            <span :class="`reads-type reads-type-${item.type}`">{{ item.type }}</span>
+            <div class="reads-item-body">
+              <a
+                v-if="item.url"
+                :href="item.url"
+                target="_blank"
+                rel="noopener"
+                class="reads-item-title"
+              >{{ item.title }}</a>
+              <span
+                v-else
+                class="reads-item-title no-link"
+              >{{ item.title }}</span>
+              <span
+                v-if="item.meta"
+                class="reads-item-meta"
+              >{{ item.meta }}</span>
+            </div>
+          </li>
+          <li
+            v-for="i in READS_PAGE_SIZE - pagedReads.length"
+            :key="`empty-${i}`"
+            class="reads-item reads-item-empty"
+          />
+        </ul>
+        <SPager
+          v-model="readsPage"
+          :total="readsPages"
+          class="mt-4"
+        />
+      </div>
+      <KnowledgeGraph />
     </section>
   </div>
 </template>
 
 <script setup lang="ts">
-import { defineAsyncComponent } from 'vue';
+import {
+  ref, computed, watch, defineAsyncComponent,
+} from 'vue';
 import {
   PhPackage, PhReadCvLogo, PhNewspaper,
 } from '@phosphor-icons/vue';
 import { useThoughtStore } from '@/stores/thoughts';
 import { useJourneyStore } from '@/stores/journeys';
-import FooterBar from '@/components/FooterBar.vue';
+import { useBookStore } from '@/stores/books';
+import { useBlogs } from '@/stores/blogs';
+import { usePaperStore } from '@/stores/papers';
+import SFilterBar from '@/components/common/SFilterBar.vue';
+import SPager from '@/components/common/SPager.vue';
 
-const GraphPreview = defineAsyncComponent(() => import('@/components/GraphPreview.vue'));
+const KnowledgeGraph = defineAsyncComponent(() => import('@/components/KnowledgeGraph.vue'));
 
 const { getRecent } = useThoughtStore();
 const { journeys } = useJourneyStore();
+const bookStore = useBookStore();
+const blogStore = useBlogs();
+const paperStore = usePaperStore();
+
+const READS_PAGE_SIZE = 5;
+const readsJourneys = ref<string[]>([]);
+const readsTypes = ref<string[]>([]);
+const readsPage = ref(1);
+
+const readsStats = computed(() => {
+  const js = readsJourneys.value;
+  const books = js.length
+    ? js.flatMap((j) => bookStore.getByJourney(j)).filter((b) => !b.parent)
+    : bookStore.books.filter((b) => !b.parent);
+  const blogs = js.length
+    ? js.flatMap((j) => blogStore.getPosts(j))
+    : blogStore.blogs.filter((b) => b.posts.length === 0);
+  const papers = js.length
+    ? js.flatMap((j) => paperStore.getByJourney(j))
+    : paperStore.papers;
+
+  const statsItems = [
+    {
+      label: 'books',
+      type: 'book',
+      count: books.length,
+    },
+    {
+      label: 'posts',
+      type: 'post',
+      count: blogs.length,
+    },
+    {
+      label: 'papers',
+      type: 'paper',
+      count: papers.length,
+    },
+  ];
+  return statsItems;
+});
+
+const readsItems = computed(() => {
+  const js = readsJourneys.value;
+  const ts = readsTypes.value;
+
+  const books = (js.length ? js.flatMap((j) => bookStore.getByJourney(j)) : bookStore.books)
+    .filter((b) => !b.parent)
+    .map((b) => ({
+      slug: b.slug,
+      type: 'book',
+      title: b.title,
+      url: '',
+      meta: [b.author, b.date].filter(Boolean).join(' · '),
+    }));
+
+  const blogs = (js.length ? js.flatMap((j) => blogStore.getPosts(j)) : blogStore.blogs.filter((b) => b.posts.length === 0))
+    .map((b) => ({
+      slug: b.slug,
+      type: 'post',
+      title: b.title,
+      url: b.url,
+      meta: b.author,
+    }));
+
+  const papers = (js.length ? js.flatMap((j) => paperStore.getByJourney(j)) : paperStore.papers)
+    .map((p) => ({
+      slug: p.slug,
+      type: 'paper',
+      title: p.title,
+      url: p.url,
+      meta: [
+        p.authors.join(', '),
+        p.venue,
+        p.year,
+      ].filter(Boolean).join(' · '),
+    }));
+
+  const all = [
+    ...books,
+    ...blogs,
+    ...papers,
+  ];
+  return ts.length ? all.filter((item) => ts.includes(item.type)) : all;
+});
+
+const readsPages = computed(() => Math.max(1, Math.ceil(readsItems.value.length / READS_PAGE_SIZE)));
+const pagedReads = computed(() => {
+  const start = (readsPage.value - 1) * READS_PAGE_SIZE;
+  return readsItems.value.slice(start, start + READS_PAGE_SIZE);
+});
+
+watch([readsJourneys, readsTypes], () => {
+  readsPage.value = 1;
+}, { deep: true });
+
+const filterGroups = computed(() => [
+  journeys.map((j) => ({
+    label: j.title,
+    value: j.slug,
+  })),
+  readsStats.value.map((r) => ({
+    label: `${r.count} ${r.label}`,
+    value: r.type,
+    colorClass: r.type,
+  })),
+]);
+
+const filterValues = computed(() => [readsJourneys.value, readsTypes.value]);
+
+function onFilterUpdate (values: string[][]) {
+  readsJourneys.value = values[0];
+  readsTypes.value = values[1];
+}
 
 const recentPosts = getRecent(5);
 
@@ -247,7 +413,7 @@ const projects = [
 <style scoped>
 @reference "../style.css";
 .main-section {
-  min-height: calc(100vh - 3rem - 3rem);
+  min-height: calc(100vh - 3rem);
 }
 .hero h1 {
   @apply text-xl font-bold mb-1;
@@ -306,7 +472,61 @@ const projects = [
 .empty {
   @apply text-sm text-fg-faint;
 }
+.section-sep {
+  @apply border-t border-border py-10;
+}
 .graph-section {
   @apply px-0;
+}
+.reads-panel {
+  @apply max-w-2xl mx-auto px-4 py-8;
+}
+.reads-heading {
+  @apply text-base font-bold mb-4 pb-2 border-b border-border;
+}
+.reads-list {
+  @apply list-none p-0 m-0 flex flex-col;
+}
+.reads-item {
+  @apply flex items-start gap-2 border-b border-border/50;
+  height: 3.25rem;
+  padding-top: 0.625rem;
+}
+.reads-item-empty {
+  @apply border-b border-border/20;
+  padding-top: 0;
+}
+.reads-item-body {
+  @apply flex flex-col min-w-0 flex-1;
+}
+.reads-item-title {
+  @apply text-xs text-fg-muted no-underline hover:text-accent-blue transition-colors truncate;
+  line-height: 1.2rem;
+  margin-bottom: 0.2rem;
+}
+.reads-item-title.no-link {
+  @apply cursor-default hover:text-fg-muted;
+}
+.reads-item-meta {
+  @apply text-fg-faint truncate;
+  font-size: 0.625rem;
+  line-height: 1rem;
+}
+.reads-type {
+  @apply shrink-0 px-1.5 rounded-sm;
+  font-size: 0.625rem;
+  line-height: 1.2rem;
+}
+.reads-type-book {
+  @apply bg-accent-blue/10 text-accent-blue;
+}
+.reads-type-post {
+  @apply bg-accent-green/10 text-accent-green;
+}
+.reads-type-paper {
+  @apply bg-accent-yellow/10 text-accent-yellow;
+}
+.reads-empty {
+  @apply text-xs text-fg-faint;
 }
 </style>

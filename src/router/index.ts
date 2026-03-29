@@ -34,52 +34,57 @@ export const routes: RouteRecordRaw[] = [
   {
     path: '/journeys/:slug/concepts',
     name: 'concepts',
-    component: () => import('@/pages/journeys/ConceptsPage.vue'),
+    component: () => import('@/pages/journeys/concepts/ListPage.vue'),
   },
   {
     path: '/journeys/:slug/concepts/:conceptSlug',
     name: 'concept-detail',
-    component: () => import('@/pages/journeys/ConceptDetailPage.vue'),
+    component: () => import('@/pages/journeys/concepts/DetailPage.vue'),
   },
   {
     path: '/journeys/:slug/flashcards',
     name: 'flashcards',
-    component: () => import('@/pages/journeys/FlashcardsPage.vue'),
+    component: () => import('@/pages/journeys/flashcards/ListPage.vue'),
   },
   {
     path: '/journeys/:slug/flashcards/:cardSlug',
     name: 'flashcard-detail',
-    component: () => import('@/pages/journeys/FlashcardDetailPage.vue'),
+    component: () => import('@/pages/journeys/flashcards/DetailPage.vue'),
   },
   {
     path: '/journeys/:slug/phases',
     name: 'phases',
-    component: () => import('@/pages/journeys/PhasesPage.vue'),
+    component: () => import('@/pages/journeys/phases/ListPage.vue'),
   },
   {
     path: '/journeys/:slug/phases/:phaseSlug',
     name: 'phase-detail',
-    component: () => import('@/pages/journeys/PhaseDetailPage.vue'),
+    component: () => import('@/pages/journeys/phases/DetailPage.vue'),
   },
   {
     path: '/journeys/:slug/books',
     name: 'books',
-    component: () => import('@/pages/journeys/BooksPage.vue'),
+    component: () => import('@/pages/journeys/books/ListPage.vue'),
   },
   {
     path: '/journeys/:slug/blogs',
     name: 'blogs',
-    component: () => import('@/pages/journeys/BlogsPage.vue'),
+    component: () => import('@/pages/journeys/books/BlogsPage.vue'),
+  },
+  {
+    path: '/journeys/:slug/papers',
+    name: 'papers',
+    component: () => import('@/pages/journeys/papers/ListPage.vue'),
   },
   {
     path: '/journeys/:slug/books/:bookSlug',
     name: 'book-detail',
-    component: () => import('@/pages/journeys/BookDetailPage.vue'),
+    component: () => import('@/pages/journeys/books/DetailPage.vue'),
   },
   {
     path: '/graph',
     name: 'graph',
-    component: () => import('@/pages/GraphPage.vue'),
+    component: () => import('@/pages/graph/KnowledgeGraphPage.vue'),
   },
   {
     path: '/:pathMatch(.*)*',

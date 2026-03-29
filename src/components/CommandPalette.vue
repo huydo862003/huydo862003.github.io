@@ -47,7 +47,7 @@
                 class="result-icon"
               />
               <span class="result-label">{{ item.label }}</span>
-              <KbdShortcut
+              <SKbdShortcut
                 v-if="item.shortcutKeys"
                 :keys="item.shortcutKeys"
                 class="ml-auto"
@@ -82,13 +82,13 @@
 
         <div class="footer">
           <span class="hint">
-            <KbdShortcut :keys="['↑', '↓']" /> navigate
+            <SKbdShortcut :keys="['↑', '↓']" /> navigate
           </span>
           <span class="hint">
-            <KbdShortcut :keys="['↵']" /> open
+            <SKbdShortcut :keys="['↵']" /> open
           </span>
           <span class="hint">
-            <KbdShortcut :keys="['Esc']" /> close
+            <SKbdShortcut :keys="['Esc']" /> close
           </span>
         </div>
       </div>
@@ -111,7 +111,7 @@ import { useBookStore } from '@/stores/books';
 import { usePhaseStore } from '@/stores/phases';
 import { useBlogs } from '@/stores/blogs';
 import { useJourneyStore } from '@/stores/journeys';
-import KbdShortcut from '@/components/KbdShortcut.vue';
+import SKbdShortcut from '@/components/common/SKbdShortcut.vue';
 
 interface PaletteItem {
   label: string;
@@ -251,6 +251,7 @@ defineExpose({
 </script>
 
 <style scoped>
+@reference "../style.css";
 @reference "../style.css";
 .palette {
   @apply bg-bg border border-border rounded-sm shadow-2xl

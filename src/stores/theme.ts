@@ -1,17 +1,27 @@
 import { defineStore } from 'pinia';
 import {
+  nextTick,
   ref, watch,
 } from 'vue';
+
+const themeKey = 'scrambled_theme';
 
 export const useThemeStore = defineStore('theme', () => {
   const isDark = ref(false);
 
-  function init () {
+  async function init () {
     if (typeof window === 'undefined') return;
-    const stored = localStorage.getItem('scrambled_theme');
-    if (stored === 'dark' || (!stored && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    const stored = localStorage.getItem(themeKey);
+    const shouldBeDark = stored === 'dark' || (!stored && window.matchMedia('(prefers-color-scheme: dark)').matches);
+
+    if (shouldBeDark) {
+      document.documentElement.classList.add('dark');
       isDark.value = true;
     }
+
+    await nextTick();
+    // Apply class synchronously without triggering transitions
+    document.documentElement.classList.add('allow-theme-transition');
   }
 
   function toggle () {
@@ -25,8 +35,8 @@ export const useThemeStore = defineStore('theme', () => {
   watch(isDark, (dark) => {
     if (typeof document === 'undefined') return;
     document.documentElement.classList.toggle('dark', dark);
-    localStorage.setItem('scrambled_theme', dark ? 'dark' : 'light');
-  }, { immediate: true });
+    localStorage.setItem(themeKey, dark ? 'dark' : 'light');
+  });
 
   return {
     isDark,

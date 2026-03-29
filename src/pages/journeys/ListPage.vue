@@ -7,7 +7,7 @@
       >
         &larr; home
       </router-link>
-      <Breadcrumb :crumbs="[{ label: 'Journeys', to: '/journeys' }]" />
+      <SBreadcrumb :crumbs="[{ label: 'Journeys', to: '/journeys' }]" />
     </div>
     <h1>Scrambled Journeys</h1>
 
@@ -43,7 +43,7 @@
 </template>
 
 <script setup lang="ts">
-import Breadcrumb from '@/components/BreadcrumbNav.vue';
+import SBreadcrumb from '@/components/common/SBreadcrumb.vue';
 import { useJourneyStore } from '@/stores/journeys';
 import { useConceptStore } from '@/stores/concepts';
 import { useFlashcardStore } from '@/stores/flashcards';

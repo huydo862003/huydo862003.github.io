@@ -8,7 +8,7 @@
         >
           &larr; all journeys
         </router-link>
-        <Breadcrumb :crumbs="[{ label: 'Journeys', to: '/journeys' }, { label: journey?.title ?? slug, to: `/journeys/${slug}` }]" />
+        <SBreadcrumb :crumbs="[{ label: 'Journeys', to: '/journeys' }, { label: journey?.title ?? slug, to: `/journeys/${slug}` }]" />
       </div>
       <div class="title-row">
         <h1>{{ journey.title }}</h1>
@@ -70,13 +70,13 @@
         No content yet.
       </p>
 
-      <PrevNextNav
+      <ResourcePagination
         kind="journey"
         :prev="prevJourney"
         :next="nextJourney"
       />
 
-      <GiscusComments />
+      <GiscusComment />
     </template>
     <template v-else>
       <p>
@@ -95,20 +95,21 @@ import {
 import { useAsyncState } from '@vueuse/core';
 import { useRoute } from 'vue-router';
 import {
-  PhFlag, PhBrain, PhCards, PhBook, PhRss,
+  PhFlag, PhBrain, PhCards, PhBook, PhRss, PhNewspaper,
 } from '@phosphor-icons/vue';
-import { useSeo } from '@/composables/use_seo';
+import { useSeo } from '@/composables/useSeo';
 import { useJourneyStore } from '@/stores/journeys';
 import { usePhaseStore } from '@/stores/phases';
 import { useConceptStore } from '@/stores/concepts';
 import { useFlashcardStore } from '@/stores/flashcards';
 import { useBookStore } from '@/stores/books';
 import { useBlogs } from '@/stores/blogs';
+import { usePaperStore } from '@/stores/papers';
 import { loadContent } from '@/utils/content';
-import PrevNextNav from '@/components/PrevNextNav.vue';
-import Breadcrumb from '@/components/BreadcrumbNav.vue';
+import ResourcePagination from '@/components/content/ResourcePagination.vue';
+import SBreadcrumb from '@/components/common/SBreadcrumb.vue';
 
-const GiscusComments = defineAsyncComponent(() => import('@/components/GiscusComments.vue'));
+const GiscusComment = defineAsyncComponent(() => import('@/components/content/github/GiscusComment.vue'));
 
 const route = useRoute();
 const journeyStore = useJourneyStore();
@@ -118,6 +119,7 @@ const conceptStore = useConceptStore();
 const flashcardStore = useFlashcardStore();
 const bookStore = useBookStore();
 const blogStore = useBlogs();
+const paperStore = usePaperStore();
 
 const slug = computed(() => route.params.slug as string);
 const journey = computed(() => getBySlug(slug.value));
@@ -302,6 +304,7 @@ const resources = computed(() => {
   const ps = phaseStats.value;
   const books = bookStore.getByJourney(s);
   const blogs = blogStore.getByJourney(s);
+  const papers = paperStore.getByJourney(s);
   return [
     {
       label: 'Phases',
@@ -332,6 +335,12 @@ const resources = computed(() => {
       count: blogs.length,
       to: `/journeys/${s}/blogs`,
       icon: PhRss,
+    },
+    {
+      label: 'Papers',
+      count: papers.length,
+      to: `/journeys/${s}/papers`,
+      icon: PhNewspaper,
     },
   ].filter((r) => 0 < r.count);
 });

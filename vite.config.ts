@@ -5,7 +5,7 @@ import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import tailwindcss from '@tailwindcss/vite';
 import contentCollections from '@content-collections/vite';
-import { generateRoutes } from './src/utils/static_routes';
+import { generateRoutes } from './src/utils/staticRoutes';
 
 export default defineConfig({
   plugins: [

@@ -24,9 +24,9 @@ import {
   ref, computed, defineAsyncComponent,
 } from 'vue';
 import { useRouter } from 'vue-router';
-import NavBar from '@/components/NavBar.vue';
-import FooterBar from '@/components/FooterBar.vue';
-import { useKeyboard } from '@/composables/use_keyboard';
+import NavBar from '@/components/layout/NavBar.vue';
+import FooterBar from '@/components/layout/FooterBar.vue';
+import { useKeyboard } from '@/composables/useKeyboard';
 
 const CommandPalette = defineAsyncComponent(() => import('@/components/CommandPalette.vue'));
 
@@ -85,7 +85,6 @@ register([
 </script>
 
 <style scoped>
-@reference "./style.css";
 .layout {
   @apply min-h-screen flex flex-col;
 }

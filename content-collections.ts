@@ -113,6 +113,25 @@ const blogs = defineCollection({
   transform: stripContent,
 });
 
+const papers = defineCollection({
+  name: 'papers',
+  directory: 'content/papers',
+  include: '**/*.md',
+  schema: z.object({
+    ...dates,
+    title: z.string(),
+    authors: z.array(z.string()).default([]),
+    year: z.string().default(''),
+    venue: z.string().default(''),
+    url: z.string().default(''),
+    journey: z.string().default(''),
+    tags: z.array(z.string()).default([]),
+    concepts: z.array(z.string()).default([]),
+    status: z.enum(['to-read', 'reading', 'read']).default('to-read'),
+  }),
+  transform: stripContent,
+});
+
 const thoughts = defineCollection({
   name: 'thoughts',
   directory: 'content/thoughts',
@@ -180,5 +199,5 @@ const graph = defineCollection({
 });
 
 export default defineConfig({
-  collections: [concepts, flashcards, journeys, phases, books, blogs, thoughts, graph],
+  collections: [concepts, flashcards, journeys, phases, books, blogs, papers, thoughts, graph],
 });

@@ -8,7 +8,7 @@
         >
           &larr; all thoughts
         </router-link>
-        <Breadcrumb :crumbs="[{ label: 'Thoughts', to: '/thoughts' }]" />
+        <SBreadcrumb :crumbs="[{ label: 'Thoughts', to: '/thoughts' }]" />
       </div>
       <article>
         <h1>{{ post.title }}</h1>
@@ -27,13 +27,13 @@
           No content yet.
         </p>
       </article>
-      <PrevNextNav
+      <ResourcePagination
         kind="thought"
         :prev="prevPost"
         :next="nextPost"
       />
 
-      <GiscusComments />
+      <GiscusComment />
     </template>
     <template v-else>
       <p>
@@ -51,13 +51,13 @@ import {
 } from 'vue';
 import { useAsyncState } from '@vueuse/core';
 import { useRoute } from 'vue-router';
-import { useSeo } from '@/composables/use_seo';
+import { useSeo } from '@/composables/useSeo';
 import { useThoughtStore } from '@/stores/thoughts';
 import { loadContent } from '@/utils/content';
-import PrevNextNav from '@/components/PrevNextNav.vue';
-import Breadcrumb from '@/components/BreadcrumbNav.vue';
+import ResourcePagination from '@/components/content/ResourcePagination.vue';
+import SBreadcrumb from '@/components/common/SBreadcrumb.vue';
 
-const GiscusComments = defineAsyncComponent(() => import('@/components/GiscusComments.vue'));
+const GiscusComment = defineAsyncComponent(() => import('@/components/content/github/GiscusComment.vue'));
 
 const route = useRoute();
 const thoughtStore = useThoughtStore();
