@@ -293,6 +293,7 @@ import {
 import SBreadcrumb from '@/components/common/SBreadcrumb.vue';
 import { useConceptStore } from '@/stores/concepts';
 import { useFlashcardStore } from '@/stores/flashcards';
+import { useSeo } from '@/composables/useSeo';
 import {
   renderMarkdown, loadContent,
 } from '@/utils/content';
@@ -310,6 +311,12 @@ const router = useRouter();
 const slug = computed(() => route.params.slug as string);
 const conceptStore = useConceptStore();
 const flashcardStore = useFlashcardStore();
+
+useSeo({
+  title: computed(() => `Flashcards - ${slug.value}`),
+  path: computed(() => `/journeys/${slug.value}/flashcards`),
+  type: 'website',
+});
 
 const mode = computed(() => (route.query.mode as string) || 'decks');
 const activeDeck = computed(() => (route.query.deck as string) || undefined);

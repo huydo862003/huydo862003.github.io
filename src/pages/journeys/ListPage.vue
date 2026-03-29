@@ -43,14 +43,23 @@
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue';
 import SBreadcrumb from '@/components/common/SBreadcrumb.vue';
 import { useJourneyStore } from '@/stores/journeys';
+import { useSeo } from '@/composables/useSeo';
 import { useConceptStore } from '@/stores/concepts';
 import { useFlashcardStore } from '@/stores/flashcards';
 import { usePhaseStore } from '@/stores/phases';
 import {
   plural,
 } from '@/utils/format';
+
+useSeo({
+  title: ref('Scrambled Journeys'),
+  description: ref('Learning journeys covering programming language theory, design, and computer science.'),
+  path: ref('/journeys'),
+  type: 'website',
+});
 
 const { journeys } = useJourneyStore();
 const conceptStore = useConceptStore();

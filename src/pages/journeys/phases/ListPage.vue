@@ -49,10 +49,17 @@ import { computed } from 'vue';
 import { useRoute } from 'vue-router';
 import SBreadcrumb from '@/components/common/SBreadcrumb.vue';
 import { usePhaseStore } from '@/stores/phases';
+import { useSeo } from '@/composables/useSeo';
 
 const route = useRoute();
 const slug = computed(() => route.params.slug as string);
 const phaseStore = usePhaseStore();
+
+useSeo({
+  title: computed(() => `Phases - ${slug.value}`),
+  path: computed(() => `/journeys/${slug.value}/phases`),
+  type: 'website',
+});
 
 const phases = computed(() => phaseStore.getByJourney(slug.value));
 </script>

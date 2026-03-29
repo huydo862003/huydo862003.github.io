@@ -143,6 +143,7 @@ import STable from '@/components/common/STable.vue';
 import type { TableColumn } from '@/components/common/STable.vue';
 import { useTableSort } from '@/composables/useTableSort';
 import { useConceptStore } from '@/stores/concepts';
+import { useSeo } from '@/composables/useSeo';
 import {
   loadContent, getCachedContent,
 } from '@/utils/content';
@@ -160,6 +161,12 @@ const route = useRoute();
 const router = useRouter();
 const slug = computed(() => route.params.slug as string);
 const conceptStore = useConceptStore();
+
+useSeo({
+  title: computed(() => `Concepts - ${slug.value}`),
+  path: computed(() => `/journeys/${slug.value}/concepts`),
+  type: 'website',
+});
 
 const search = ref('');
 const {

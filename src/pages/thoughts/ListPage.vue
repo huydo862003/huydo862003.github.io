@@ -34,8 +34,17 @@
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue';
 import SBreadcrumb from '@/components/common/SBreadcrumb.vue';
 import { useThoughtStore } from '@/stores/thoughts';
+import { useSeo } from '@/composables/useSeo';
+
+useSeo({
+  title: ref('Scrambled Thoughts'),
+  description: ref('All thoughts, notes, and write-ups from Scrambled Kitchen.'),
+  path: ref('/thoughts'),
+  type: 'website',
+});
 
 const { thoughts: posts } = useThoughtStore();
 </script>

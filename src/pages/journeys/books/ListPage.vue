@@ -35,6 +35,7 @@ import { useRoute } from 'vue-router';
 import { PhBook } from '@phosphor-icons/vue';
 import SBreadcrumb from '@/components/common/SBreadcrumb.vue';
 import { useBookStore } from '@/stores/books';
+import { useSeo } from '@/composables/useSeo';
 import SCard from '@/components/content/book/SCard.vue';
 import type { SCardConfig } from '@/components/content/book/SCard.vue';
 import type { Book } from '@/types/book';
@@ -42,6 +43,12 @@ import type { Book } from '@/types/book';
 const route = useRoute();
 const slug = computed(() => route.params.slug as string);
 const bookStore = useBookStore();
+
+useSeo({
+  title: computed(() => `Books - ${slug.value}`),
+  path: computed(() => `/journeys/${slug.value}/books`),
+  type: 'website',
+});
 
 const journeyBooks = computed(() => bookStore.getByJourney(slug.value));
 const rootBooks = computed(() => journeyBooks.value.filter((b) => !b.parent));

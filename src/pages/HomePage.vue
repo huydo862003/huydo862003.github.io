@@ -165,7 +165,12 @@
       </div>
     </section>
 
-    <div class="section-sep" />
+    <div class="section-sep">
+      <span class="section-sep-text">knowledge</span>
+      <p class="section-sep-tm">
+        &copy; {{ new Date().getFullYear() }} Scrambled Kitchen &middot; huydo862003.github.io
+      </p>
+    </div>
 
     <section class="graph-section">
       <div class="reads-panel">
@@ -227,6 +232,7 @@ import {
 import {
   PhPackage, PhReadCvLogo, PhNewspaper,
 } from '@phosphor-icons/vue';
+import { useSeo } from '@/composables/useSeo';
 import { useThoughtStore } from '@/stores/thoughts';
 import { useJourneyStore } from '@/stores/journeys';
 import { useBookStore } from '@/stores/books';
@@ -234,6 +240,13 @@ import { useBlogs } from '@/stores/blogs';
 import { usePaperStore } from '@/stores/papers';
 import SFilterBar from '@/components/common/SFilterBar.vue';
 import SPager from '@/components/common/SPager.vue';
+
+useSeo({
+  title: ref(undefined),
+  description: ref('Scrambled thoughts, journeys, and reads on programming language theory, design, and computer science.'),
+  path: ref('/'),
+  type: 'website',
+});
 
 const KnowledgeGraph = defineAsyncComponent(() => import('@/components/KnowledgeGraph.vue'));
 
@@ -473,7 +486,20 @@ const projects = [
   @apply text-sm text-fg-faint;
 }
 .section-sep {
-  @apply border-t border-border py-10;
+  @apply flex flex-col items-center gap-3 py-10 px-6;
+  background: var(--color-bg-subtle);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+.section-sep-text {
+  @apply text-xs tracking-widest uppercase shrink-0;
+  color: var(--color-fg-faint);
+  opacity: 0.6;
+}
+.section-sep-tm {
+  @apply text-xs;
+  color: var(--color-fg-faint);
+  opacity: 0.4;
 }
 .graph-section {
   @apply px-0;

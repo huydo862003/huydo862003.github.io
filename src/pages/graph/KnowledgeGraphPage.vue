@@ -58,6 +58,14 @@ import { useGraph } from '@/composables/useGraph';
 import {
   nodes, edges,
 } from '@/utils/graph';
+import { useSeo } from '@/composables/useSeo';
+
+useSeo({
+  title: ref('Knowledge Graph'),
+  description: ref('An interactive graph of concepts, books, and connections from Scrambled Kitchen.'),
+  path: ref('/graph'),
+  type: 'website',
+});
 
 const container = ref<HTMLElement>();
 const h = computed(() => window.innerHeight - 40);
