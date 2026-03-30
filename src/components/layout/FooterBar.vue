@@ -1,6 +1,6 @@
 <template>
   <footer class="foot">
-    <span>&copy; {{ year }} scrambled</span>
+    <span>&copy; {{ year }} Scrambled Kitchen</span>
     <span>&middot;</span>
     <a
       href="https://github.com/huydo862003"

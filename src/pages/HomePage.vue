@@ -166,9 +166,8 @@
     </section>
 
     <div class="section-sep">
-      <span class="section-sep-text">knowledge</span>
       <p class="section-sep-tm">
-        &copy; {{ new Date().getFullYear() }} Scrambled Kitchen &middot; huydo862003.github.io
+        &copy; {{ new Date().getFullYear() }} Scrambled Kitchen
       </p>
     </div>
 
