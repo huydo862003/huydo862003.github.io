@@ -19,6 +19,7 @@ const year = new Date().getFullYear();
 
 .foot {
   @apply h-12 flex items-center justify-center gap-2 border-t border-b border-border text-xs text-fg-faint shrink-0;
+  background: var(--color-bg-subtle);
 }
 .foot a {
   @apply text-fg-faint no-underline hover:text-fg-muted;

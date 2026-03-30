@@ -166,9 +166,13 @@
     </section>
 
     <div class="section-sep">
-      <p class="section-sep-tm">
-        &copy; {{ new Date().getFullYear() }} Scrambled Kitchen
-      </p>
+      <span>&copy; {{ new Date().getFullYear() }} Scrambled Kitchen</span>
+      <span>&middot;</span>
+      <a
+        href="https://github.com/huydo862003"
+        target="_blank"
+        rel="noopener"
+      >GitHub</a>
     </div>
 
     <section class="graph-section">
@@ -485,20 +489,11 @@ const projects = [
   @apply text-sm text-fg-faint;
 }
 .section-sep {
-  @apply flex flex-col items-center gap-3 py-10 px-6;
+  @apply h-12 flex items-center justify-center gap-2 border-t border-b border-border text-xs text-fg-faint shrink-0;
   background: var(--color-bg-subtle);
-  border-top: 1px solid var(--color-border);
-  border-bottom: 1px solid var(--color-border);
-}
-.section-sep-text {
-  @apply text-xs tracking-widest uppercase shrink-0;
-  color: var(--color-fg-faint);
-  opacity: 0.6;
-}
-.section-sep-tm {
-  @apply text-xs;
-  color: var(--color-fg-faint);
-  opacity: 0.4;
+  a {
+    @apply text-fg-faint no-underline hover:text-fg-muted;
+  }
 }
 .graph-section {
   @apply px-0;
