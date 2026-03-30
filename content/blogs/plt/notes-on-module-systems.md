@@ -349,10 +349,8 @@ The 5Cs:
     
     ### Problem 3: Conditional Compilation
     
-    - Proposed: use `use`based re-exports with `#[cfg(...)]` per file rather than cutting the AST
+    - Proposed: use `use`-based re-exports with `#[cfg(...)]` per file rather than cutting the AST
     - Ideal (unresolved): push conditional compilation to *after* type-checking, so cross-platform code can be validated on any platform - but no concrete solution offered
-    
-    ---
     
     ### Other Minor Points
     
