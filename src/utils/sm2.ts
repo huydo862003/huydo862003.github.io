@@ -56,6 +56,6 @@ export function defaultReviewState (): ReviewState {
     interval: 0,
     repetitions: 0,
     nextReviewDate: todayISO(),
-    lastReviewedAt: '2003-06-08',
+    lastReviewedAt: 'Not reviewed yet',
   };
 }
