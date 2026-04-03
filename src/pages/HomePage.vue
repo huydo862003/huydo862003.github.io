@@ -379,14 +379,14 @@ const projects = [
     docs: 'https://huydo862003.github.io/sqlingo.js/',
     npm: 'https://www.npmjs.com/package/@hdnax/sqlingo.js',
     status: 'alpha',
-    tags: ['sql', 'incremental'],
+    tags: ['sql'],
   },
   {
     name: 'dboxide',
     desc: 'A rewrite of the DBML parser from past experience.',
     repo: 'https://github.com/huydo862003/dboxide',
     docs: 'https://huydo862003.github.io/dboxide',
-    status: 'wip',
+    status: 'researching',
     tags: ['parser', 'rust'],
   },
   {
@@ -395,8 +395,8 @@ const projects = [
     repo: 'https://github.com/huydo862003/RNA',
     docs: 'https://huydo862003.github.io/RNA/',
     npm: 'https://www.npmjs.com/package/@hdnax/splicer.js',
-    status: 'wip',
-    tags: ['design system'],
+    status: 'researching',
+    tags: ['incremental'],
   },
   {
     name: 'MPiSC',
