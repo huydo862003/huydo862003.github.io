@@ -199,5 +199,5 @@ const graph = defineCollection({
 });
 
 export default defineConfig({
-  collections: [concepts, flashcards, journeys, phases, books, blogs, papers, thoughts, graph],
+  content: [concepts, flashcards, journeys, phases, books, blogs, papers, thoughts, graph],
 });
