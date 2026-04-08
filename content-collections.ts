@@ -27,6 +27,7 @@ const concepts = defineCollection({
     books: z.array(z.string()).default([]),
     dependsOn: z.array(z.string()).default([]),
     blocks: z.array(z.string()).default([]),
+    content: z.string(),
   }),
   transform: stripContent,
 });
@@ -42,6 +43,7 @@ const flashcards = defineCollection({
     deck: z.string().default('general'),
     concepts: z.array(z.string()).default([]),
     books: z.array(z.string()).default([]),
+    content: z.string(),
   }),
   transform: stripContent,
 });
@@ -56,6 +58,7 @@ const journeys = defineCollection({
     description: z.string().default(''),
     status: z.enum(['active', 'paused', 'completed']).default('active'),
     tags: z.array(z.string()).default([]),
+    content: z.string(),
   }),
   transform: stripContent,
 });
@@ -72,6 +75,7 @@ const phases = defineCollection({
     order: z.number().default(0),
     books: z.array(z.string()).default([]),
     concepts: z.array(z.string()).default([]),
+    content: z.string(),
   }),
   transform: stripContent,
 });
@@ -90,6 +94,7 @@ const books = defineCollection({
     concepts: z.array(z.string()).default([]),
     parent: z.string().default(''),
     children: z.array(z.string()).default([]),
+    content: z.string(),
   }),
   transform: stripContent,
 });
@@ -109,6 +114,7 @@ const blogs = defineCollection({
     lastChecked: z.string().default(''),
     posts: z.array(z.string()).default([]),
     tags: z.array(z.string()).default([]),
+    content: z.string(),
   }),
   transform: stripContent,
 });
@@ -128,6 +134,7 @@ const papers = defineCollection({
     tags: z.array(z.string()).default([]),
     concepts: z.array(z.string()).default([]),
     status: z.enum(['to-read', 'reading', 'read']).default('to-read'),
+    content: z.string(),
   }),
   transform: stripContent,
 });
@@ -145,6 +152,7 @@ const thoughts = defineCollection({
     archived: z.boolean().default(false),
     concepts: z.array(z.string()).default([]),
     journeys: z.array(z.string()).default([]),
+    content: z.string(),
   }),
   transform: stripContent,
 });
@@ -173,6 +181,7 @@ const graph = defineCollection({
     dependsOn: z.array(z.string()).default([]),
     children: z.array(z.string()).default([]),
     parent: z.string().default(''),
+    content: z.string(),
   }),
   transform (doc) {
     const slug = doc._meta.fileName.replace('.md', '');

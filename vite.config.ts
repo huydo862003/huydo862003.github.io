@@ -4,14 +4,18 @@ import {
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import tailwindcss from '@tailwindcss/vite';
+import sitemap from 'vite-plugin-sitemap';
 import contentCollections from '@content-collections/vite';
 import { generateRoutes } from './src/utils/staticRoutes';
+
+const routes = generateRoutes();
 
 export default defineConfig({
   plugins: [
     vue(),
     tailwindcss(),
     contentCollections(),
+    sitemap({ dynamicRoutes: routes }),
   ],
   resolve: {
     alias: {
@@ -21,7 +25,7 @@ export default defineConfig({
   assetsInclude: ['**/*.md'],
   ssgOptions: {
     includedRoutes () {
-      return generateRoutes();
+      return routes;
     },
   },
 });
