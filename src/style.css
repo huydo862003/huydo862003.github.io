@@ -91,17 +91,15 @@ body {
 }
 
 /* Theme transition - scoped to key elements, not * */
-.allow-theme-transition {
-  body, nav, footer, .page, .modal, .overlay,
-  a, button, input, select, textarea,
-  h1, h2, h3, h4, h5, h6, p, span, td, th,
-  svg, path, ellipse {
-    transition: color 0.3s ease,
-                background-color 0.3s ease,
-                border-color 0.3s ease,
-                fill 0.3s ease,
-                stroke 0.3s ease;
-  }
+body, nav, footer, .page, .modal, .overlay,
+a, button, input, select, textarea,
+h1, h2, h3, h4, h5, h6, p, span, td, th,
+svg, path, ellipse {
+  transition: color 0.3s ease,
+              background-color 0.3s ease,
+              border-color 0.3s ease,
+              fill 0.3s ease,
+              stroke 0.3s ease;
 }
 
 ::selection {

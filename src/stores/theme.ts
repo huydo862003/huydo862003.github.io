@@ -20,8 +20,6 @@ export const useThemeStore = defineStore('theme', () => {
     }
 
     await nextTick();
-    // Apply class synchronously without triggering transitions
-    document.documentElement.classList.add('allow-theme-transition');
   }
 
   function toggle () {
