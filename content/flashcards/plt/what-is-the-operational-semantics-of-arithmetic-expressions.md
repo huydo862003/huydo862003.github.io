@@ -54,7 +54,7 @@ $$
 \displaystyle\frac{t_1 \to t_1'}{\text{if}\ t_1\ \text{then}\ t_2\ \text{else}\ t_3 \to \text{if}\ t_1'\ \text{then}\ t_2\ \text{else}\ t_3}\\
 \text{if}\ \text{tru}\ \text{then}\ t_1\ \text{else}\ t_2 \to t_1 \\
 \text{if}\ \text{fls}\ \text{then}\ t_1\ \text{else}\ t_2 \to t_2 \\
-$$
+\\
 \displaystyle\frac{t\to t'}{\text{succ}\ t \to \text{succ}\ t'} \\
 \displaystyle\frac{t\to t'}{\text{pred}\ t \to \text{pred}\ t'}
 \\

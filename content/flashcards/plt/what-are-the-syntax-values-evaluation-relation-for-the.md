@@ -40,7 +40,7 @@ Evaluation rules, assuming call by value:
 
 $$
 \displaystyle\frac{t_1 \to t_1'}{t_1\ t_2 \to t_1'\ t_2} \\
-$$
+\\
 \displaystyle\frac{t_1 \to t_1'}{v\ t_1 \to v\ t_2} \\
 (\lambda x.\ t)\ v \to [x \to v]t
 $$

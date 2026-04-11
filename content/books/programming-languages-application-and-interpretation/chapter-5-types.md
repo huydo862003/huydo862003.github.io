@@ -670,7 +670,7 @@ This subsection shows the pattern concretely using function rules we've already 
 
 $$
 \dfrac{\Gamma[x \leftarrow T] \vdash t : U}{\Gamma \vdash (\lambda \; x : T \; t) : (T \to U)} \; \small{\text{(Lambda)}}
-$$
+\\
 \dfrac{\Gamma \vdash t_1 : (T \to U) \quad \Gamma \vdash t_2 : T}{\Gamma \vdash (t_1 \; t_2) : U} \; \small{\text{(Application)}}
 $$
 

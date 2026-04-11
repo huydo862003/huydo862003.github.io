@@ -650,7 +650,7 @@ Therefore:
     
     $$
     g = \lambda \text{fct}.\ \lambda n.\ \text{if } \text{realeq}\ n\ c_0\ \text{ then } c_1\ \text{ else } \text{times}\ n\ (\text{fct}\ (\text{prd}\ n))
-    $$
+    \\
     \text{factorial} = \text{fix}\ g
     $$
     
@@ -680,8 +680,10 @@ Therefore:
 - If we use $\text{test}$ in the same way as $\text{if}$ in the above example, it would yield divergent terms on every application.
 - How to define $\text{factorial}$ in terms of $\text{test}$: **Simulate call-by-name** using **thunks**.
 
-$\text{factorial}\ n\\
-= \lambda \text{fct}.\  \lambda n.\ (\text{test}\ (\text{equal}\ n\ 0)\ (\lambda \_.\ c_1)\ (\lambda \_.\ (\text{times}\ n\ (\text{fct}\ (\text{sub}\ n\ 1)))))\ \text{tru}$
+$$
+\text{factorial}\ n
+= \lambda \text{fct}.\  \lambda n.\ (\text{test}\ (\text{equal}\ n\ 0)\ (\lambda \_.\ c_1)\ (\lambda \_.\ (\text{times}\ n\ (\text{fct}\ (\text{sub}\ n\ 1)))))\ \text{tru}
+$$
 
 
 

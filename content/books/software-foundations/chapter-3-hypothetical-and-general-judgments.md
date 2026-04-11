@@ -702,7 +702,7 @@ $$
 \displaystyle\frac{}{x\ \vert \ x\ \text{comb}\vdash \text{abs}_x\ x\ \text{is}\ \mathsf{s}\ \mathsf{k}\ \mathsf{k}}
 $$
 \displaystyle\frac{}{x\ \vert \ x\ \text{comb}\ y\ \text{comb}\vdash \text{abs}_x\ y\ \text{is}\ }
-$$
+\\
 \displaystyle\frac{x\ \vert  \ x\ \text{comb}\vdash \text{abs}_x\ a_1\ \text{is}\ a'_1 \quad x\  \vert \ x\ \text{comb}\vdash \text{abs}_x\ a_2\ \text{is}\ a'_2}{x\ \vert \ x\ \text{comb}\vdash \text{abs}_x\ \text{ap}\  a_1\ a_2 \ \text{is}\ \mathsf{s}\ a_1'\ a_2'}
 $$
 

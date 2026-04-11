@@ -52,7 +52,7 @@ $$
 \text{if}\ \text{tru}\ \text{then}\ t_1\ \text{else}\ t_2 \to t_1\\
 \text{if}\ \text{fls}\ \text{then}\ t_1\ \text{else}\ t_2 \to t_2
 \\
-$$
+\\
 \displaystyle\frac{t \to t'}{\text{succ}\ t \to \text{succ}\ t'}\\
 \text{pred}\ 0 \to 0\\
 \text{pred}\ (\text{succ}\ t) \to t \\
