@@ -10,7 +10,8 @@ concepts:
   - smt-solver
 books:
   - logical-foundations
-tags:
+tags: []
+keywords:
   - "automated theorem prover"
   - "sat solver"
   - "smt solver"

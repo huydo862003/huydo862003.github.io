@@ -8,7 +8,8 @@ concepts:
   - object
 books:
   - chapter-4-objects
-tags:
+tags: []
+keywords:
   - "object"
   - "lambda"
   - "expression"

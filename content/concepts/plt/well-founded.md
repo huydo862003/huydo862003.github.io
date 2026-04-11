@@ -10,6 +10,7 @@ dependsOn: []
 blocks: []
 tags:
   - "order-lattice-theory"
+keywords:
   - "well-founded"
   - "property"
   - "preorder"

@@ -10,6 +10,7 @@ dependsOn: []
 blocks: []
 tags:
   - "language-feature-design"
+keywords:
   - "constructor"
   - "expression"
   - "rocq"

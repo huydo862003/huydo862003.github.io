@@ -10,7 +10,8 @@ books:
   - chapter-1-abstract-syntax
 dependsOn: []
 blocks: []
-tags:
+tags: []
+keywords:
   - "vec"
   - "mathcal"
   - "lambda"

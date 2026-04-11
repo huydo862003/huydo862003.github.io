@@ -11,6 +11,7 @@ blocks: []
 tags:
   - "language-feature-design"
   - "semantics"
+keywords:
   - "strong"
   - "normalization"
   - "property"

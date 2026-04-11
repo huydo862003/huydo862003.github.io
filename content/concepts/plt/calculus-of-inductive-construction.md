@@ -12,6 +12,7 @@ tags:
   - "computation-theory"
   - "formal-system"
   - "logic"
+keywords:
   - "inductive"
   - "rocq"
   - "theory"

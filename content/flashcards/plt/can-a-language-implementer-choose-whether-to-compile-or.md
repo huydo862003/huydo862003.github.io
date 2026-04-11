@@ -7,7 +7,8 @@ deck: compiler-implementation
 concepts: []
 books:
   - chapter-2-evaluation
-tags:
+tags: []
+keywords:
   - "yes"
   - "language"
   - "specification"

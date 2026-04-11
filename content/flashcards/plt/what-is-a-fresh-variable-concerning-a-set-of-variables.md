@@ -9,7 +9,8 @@ concepts:
   - abstract-syntax-tree-ast
 books:
   - chapter-1-abstract-syntax
-tags:
+tags: []
+keywords:
   - "fresh variable"
   - "abstract syntax tree ast"
   - "variable"

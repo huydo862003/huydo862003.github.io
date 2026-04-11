@@ -12,6 +12,7 @@ tags:
   - "formal-system"
   - "language-feature-design"
   - "type-theory"
+keywords:
   - "type"
   - "simple"
   - "types"

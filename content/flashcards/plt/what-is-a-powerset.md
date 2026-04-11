@@ -8,7 +8,8 @@ concepts:
   - powerset
 books:
   - chapter-2-mathematical-preliminaries
-tags:
+tags: []
+keywords:
   - "powerset"
   - "set"
   - "mathcal"

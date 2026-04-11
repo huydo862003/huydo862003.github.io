@@ -7,7 +7,8 @@ deck: type-theory
 concepts: []
 books:
   - chapter-5-types
-tags:
+tags: []
+keywords:
   - "programs"
   - "expensive"
   - "unsafe"

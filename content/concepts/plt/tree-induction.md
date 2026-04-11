@@ -9,7 +9,8 @@ books:
   - chapter-2-inductive-definitions
 dependsOn: []
 blocks: []
-tags:
+tags: []
+keywords:
   - "tree"
   - "text"
   - "mathcal"

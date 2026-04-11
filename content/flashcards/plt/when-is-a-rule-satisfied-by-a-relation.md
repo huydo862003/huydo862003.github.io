@@ -8,7 +8,8 @@ concepts:
   - inference-rule
 books:
   - chapter-3-untyped-arithmetic-expressions
-tags:
+tags: []
+keywords:
   - "inference rule"
   - "relation"
   - "instance"

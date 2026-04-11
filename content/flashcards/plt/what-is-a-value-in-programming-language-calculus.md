@@ -8,7 +8,8 @@ concepts:
   - value
 books:
   - chapter-3-untyped-arithmetic-expressions
-tags:
+tags: []
+keywords:
   - "value"
   - "term"
   - "syntactic"

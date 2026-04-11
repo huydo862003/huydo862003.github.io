@@ -8,7 +8,8 @@ concepts:
   - equivalence
 books:
   - chapter-2-mathematical-preliminaries
-tags:
+tags: []
+keywords:
   - "equivalence"
   - "relation"
   - "reflexive"

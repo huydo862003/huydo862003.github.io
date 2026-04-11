@@ -8,7 +8,8 @@ concepts:
   - macro-system
 books:
   - chapter-3-syntactic-sugar
-tags:
+tags: []
+keywords:
   - "macro system"
   - "language"
   - "facility"

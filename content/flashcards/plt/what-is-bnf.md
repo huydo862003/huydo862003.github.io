@@ -8,7 +8,8 @@ concepts:
   - BNF
 books:
   - chapter-3-untyped-arithmetic-expressions
-tags:
+tags: []
+keywords:
   - "BNF"
   - "meta-language"
   - "widely"

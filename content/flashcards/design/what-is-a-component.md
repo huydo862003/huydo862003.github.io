@@ -7,7 +7,8 @@ deck: design-system
 concepts:
   - component
 books: []
-tags:
+tags: []
+keywords:
   - "component"
   - "reusable"
   - "standardized"

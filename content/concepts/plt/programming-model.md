@@ -11,6 +11,7 @@ blocks: []
 tags:
   - "data-structure-algorithm"
   - "programming-paradigm"
+keywords:
   - "programming"
   - "model"
   - "conceptual"

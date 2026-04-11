@@ -11,6 +11,7 @@ blocks: []
 tags:
   - "set-theory-relation"
   - "syntax-grammar"
+keywords:
   - "style"
   - "subseteq"
   - "cup"

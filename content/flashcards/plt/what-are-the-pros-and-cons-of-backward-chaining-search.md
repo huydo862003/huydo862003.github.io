@@ -9,7 +9,8 @@ concepts:
   - goal-directed
 books:
   - chapter-2-inductive-definitions
-tags:
+tags: []
+keywords:
   - "backward chaining search"
   - "goal directed"
   - "backward"

@@ -7,7 +7,8 @@ deck: set-theory-relation
 concepts: []
 books:
   - chapter-2-inductive-definitions
-tags:
+tags: []
+keywords:
   - "chaining"
   - "search"
   - "forward"

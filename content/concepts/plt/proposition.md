@@ -10,6 +10,7 @@ dependsOn: []
 blocks: []
 tags:
   - "logic"
+keywords:
   - "proposition"
   - "means"
   - "boolean"

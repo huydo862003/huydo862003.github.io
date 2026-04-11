@@ -7,7 +7,8 @@ deck: design-methodology
 concepts:
   - visual-hierarchy
 books: []
-tags:
+tags: []
+keywords:
   - "visual hierarchy"
   - "visual"
   - "hierarchy"

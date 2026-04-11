@@ -11,6 +11,7 @@ blocks: []
 tags:
   - "formal-system"
   - "logic"
+keywords:
   - "automated"
   - "prover"
   - "tool"

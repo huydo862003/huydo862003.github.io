@@ -8,7 +8,8 @@ concepts:
   - language-safety
 books:
   - chapter-1-introduction
-tags:
+tags: []
+keywords:
   - "language safety"
   - "type"
   - "safety"

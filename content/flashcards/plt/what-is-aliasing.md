@@ -8,7 +8,8 @@ concepts:
   - aliasing
 books:
   - chapter-1-learning-smol-standard-model-of-languages
-tags:
+tags: []
+keywords:
   - "aliasing"
   - "phenomenon"
   - "multiple"

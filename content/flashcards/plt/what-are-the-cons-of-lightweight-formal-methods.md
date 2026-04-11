@@ -8,7 +8,8 @@ concepts:
   - type-system
 books:
   - chapter-1-introduction
-tags:
+tags: []
+keywords:
   - "type system"
   - "strong"
   - "general"

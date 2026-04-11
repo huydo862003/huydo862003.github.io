@@ -8,7 +8,8 @@ concepts:
   - lexicographic-order
 books:
   - chapter-2-mathematical-preliminaries
-tags:
+tags: []
+keywords:
   - "lexicographic order"
   - "decreases"
   - "component"

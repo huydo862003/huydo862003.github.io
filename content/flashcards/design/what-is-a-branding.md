@@ -7,7 +7,8 @@ deck: design-aspect
 concepts:
   - branding
 books: []
-tags:
+tags: []
+keywords:
   - "branding"
   - "strategic"
   - "application"

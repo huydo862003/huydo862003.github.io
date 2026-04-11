@@ -12,6 +12,7 @@ tags:
   - "design-principle"
   - "programming-paradigm"
   - "semantics"
+keywords:
   - "substitution"
   - "principle"
   - "class"

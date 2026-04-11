@@ -9,7 +9,8 @@ concepts:
   - judgment-form
 books:
   - chapter-2-inductive-definitions
-tags:
+tags: []
+keywords:
   - "inductive definition"
   - "judgment form"
   - "rules"

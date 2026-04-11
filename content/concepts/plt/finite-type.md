@@ -12,6 +12,7 @@ tags:
   - "language-feature-design"
   - "programming-paradigm"
   - "type-theory"
+keywords:
   - "type"
   - "finite"
   - "bounded"

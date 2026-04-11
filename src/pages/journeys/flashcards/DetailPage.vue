@@ -180,7 +180,7 @@ useSeo({
   tags: computed(() => {
     const c = card.value;
     if (!c) return undefined;
-    return [...(c.tags ?? []), c.deck, slug.value, 'flashcard', 'spaced repetition'];
+    return [...(c.tags ?? []), ...(c.keywords ?? []), c.deck, slug.value, 'flashcard', 'spaced repetition'];
   }),
   path: computed(() => `/journeys/${slug.value}/flashcards/${cardSlug.value}`),
   publishedTime: computed(() => card.value?.createdAt || undefined),

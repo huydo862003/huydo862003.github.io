@@ -10,6 +10,7 @@ dependsOn: []
 blocks: []
 tags:
   - "design-principle"
+keywords:
   - "diamond"
   - "problem"
   - "ambiguity"

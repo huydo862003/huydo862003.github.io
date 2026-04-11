@@ -7,7 +7,8 @@ deck: type-theory
 concepts: []
 books:
   - chapter-1-introduction
-tags:
+tags: []
+keywords:
   - "know"
   - "internals"
   - "runtime"

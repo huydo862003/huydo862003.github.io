@@ -14,6 +14,7 @@ tags:
   - "logic"
   - "programming-paradigm"
   - "proof-reason-technique"
+keywords:
   - "technique"
   - "case"
   - "rocq"

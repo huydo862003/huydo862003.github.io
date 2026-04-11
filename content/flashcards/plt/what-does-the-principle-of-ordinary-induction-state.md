@@ -8,7 +8,8 @@ concepts:
   - principle-of-ordinary-induction
 books:
   - chapter-2-mathematical-preliminaries
-tags:
+tags: []
+keywords:
   - "principle of ordinary induction"
   - "technique"
   - "base"

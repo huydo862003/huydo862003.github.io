@@ -12,6 +12,7 @@ tags:
   - "logic"
   - "set-theory-relation"
   - "syntax-grammar"
+keywords:
   - "2-dimensional"
   - "inference"
   - "rule"

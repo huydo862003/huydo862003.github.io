@@ -8,7 +8,8 @@ concepts:
   - fixed-point-combinator
 books:
   - chapter-1-basics-functional-programming-in-rocq
-tags:
+tags: []
+keywords:
   - "fixed point combinator"
   - "fixpoint"
   - "coq"

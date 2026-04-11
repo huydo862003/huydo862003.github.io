@@ -8,7 +8,8 @@ concepts:
   - fresh-renaming
 books:
   - chapter-1-abstract-syntax
-tags:
+tags: []
+keywords:
   - "fresh renaming"
   - "mathcal"
   - "vec"

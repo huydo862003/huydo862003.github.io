@@ -11,6 +11,7 @@ blocks: []
 tags:
   - "semantics"
   - "syntax-grammar"
+keywords:
   - "alpha-variant"
   - "terms"
   - "related"

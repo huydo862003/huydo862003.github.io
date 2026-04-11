@@ -11,6 +11,7 @@ dependsOn: []
 blocks: []
 tags:
   - "design-psychology"
+keywords:
   - "psychology"
   - "scientific"
   - "study"

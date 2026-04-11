@@ -12,6 +12,7 @@ tags:
   - "compiler-implementation"
   - "semantics"
   - "syntax-grammar"
+keywords:
   - "abstract"
   - "tree"
   - "abt"

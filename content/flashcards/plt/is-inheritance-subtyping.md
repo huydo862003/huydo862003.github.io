@@ -9,7 +9,8 @@ concepts:
   - subtyping
 books:
   - chapter-5-types
-tags:
+tags: []
+keywords:
   - "inheritance"
   - "subtyping"
   - "introduce"

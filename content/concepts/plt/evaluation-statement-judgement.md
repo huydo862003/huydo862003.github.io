@@ -12,6 +12,7 @@ tags:
   - "logic"
   - "semantics"
   - "set-theory-relation"
+keywords:
   - "term"
   - "evaluation"
   - "statement"

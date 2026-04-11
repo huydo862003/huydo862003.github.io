@@ -10,6 +10,7 @@ dependsOn: []
 blocks: []
 tags:
   - "data-structure-algorithm"
+keywords:
   - "goal"
   - "towards"
   - "goal-directed"

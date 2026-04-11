@@ -11,6 +11,7 @@ blocks: []
 tags:
   - "design-pattern"
   - "UI-UX"
+keywords:
   - "design"
   - "responsive"
   - "approach"

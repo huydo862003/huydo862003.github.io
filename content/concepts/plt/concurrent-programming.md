@@ -12,6 +12,7 @@ tags:
   - "concurrency-theory"
   - "language-feature-design"
   - "programming-paradigm"
+keywords:
   - "programming"
   - "concurrent"
   - "paradigm"

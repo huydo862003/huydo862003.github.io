@@ -8,7 +8,8 @@ concepts:
   - transitive-closure
 books:
   - chapter-2-mathematical-preliminaries
-tags:
+tags: []
+keywords:
   - "transitive closure"
   - "relation"
   - "set"

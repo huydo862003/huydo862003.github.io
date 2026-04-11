@@ -9,7 +9,8 @@ concepts:
   - closure
 books:
   - chapter-4-objects
-tags:
+tags: []
+keywords:
   - "object"
   - "closure"
   - "multiple"

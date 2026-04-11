@@ -8,7 +8,8 @@ concepts:
   - environment
 books:
   - chapter-1-learning-smol-standard-model-of-languages
-tags:
+tags: []
+keywords:
   - "environment"
   - "store"
   - "bindings"

@@ -12,6 +12,7 @@ tags:
   - "language-feature-design"
   - "semantics"
   - "syntax-grammar"
+keywords:
   - "statement"
   - "term"
   - "evaluate"

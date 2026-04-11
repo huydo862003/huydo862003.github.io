@@ -8,7 +8,8 @@ concepts:
   - axiomatic-semantics
 books:
   - chapter-3-untyped-arithmetic-expressions
-tags:
+tags: []
+keywords:
   - "axiomatic semantics"
   - "rules"
   - "laws"

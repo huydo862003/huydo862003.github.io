@@ -8,7 +8,8 @@ concepts:
   - proof-assistant-prover
 books:
   - logical-foundations
-tags:
+tags: []
+keywords:
   - "proof assistant prover"
   - "automated"
   - "routine"

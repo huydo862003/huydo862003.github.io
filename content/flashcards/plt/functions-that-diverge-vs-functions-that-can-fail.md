@@ -7,7 +7,8 @@ deck: set-theory-relation
 concepts: []
 books:
   - chapter-2-mathematical-preliminaries
-tags:
+tags: []
+keywords:
   - "function"
   - "value"
   - "fails"

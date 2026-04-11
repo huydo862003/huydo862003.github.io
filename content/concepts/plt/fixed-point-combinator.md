@@ -10,7 +10,8 @@ books:
   - chapter-1-basics-functional-programming-in-rocq
 dependsOn: []
 blocks: []
-tags:
+tags: []
+keywords:
   - "combinator"
   - "fixed-point"
   - "function"

@@ -7,7 +7,8 @@ deck: pure-lambda-calculus
 concepts: []
 books:
   - chapter-5-the-untyped-pure-lambda-calculus
-tags:
+tags: []
+keywords:
   - "lambda"
   - "languages"
   - "call-by-value"

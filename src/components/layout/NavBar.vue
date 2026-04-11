@@ -20,6 +20,7 @@
         <VTooltip placement="bottom">
           <button
             class="icon-btn"
+            aria-label="Open search"
             @click="emit('open-palette')"
           >
             <PhMagnifyingGlass
@@ -52,6 +53,7 @@
       <div class="mobile-right">
         <button
           class="icon-btn"
+          :aria-label="open ? 'Close menu' : 'Open menu'"
           @click="open = !open"
         >
           <PhX
@@ -67,6 +69,7 @@
         </button>
         <button
           class="icon-btn"
+          :aria-label="isDark ? 'Switch to light mode' : 'Switch to dark mode'"
           @click="toggle"
         >
           <PhMoon

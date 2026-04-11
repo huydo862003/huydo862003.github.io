@@ -12,6 +12,7 @@ tags:
   - "other-mathematics"
   - "semantics"
   - "type-theory"
+keywords:
   - "name"
   - "combination"
   - "algebra"

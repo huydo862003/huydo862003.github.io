@@ -8,7 +8,8 @@ concepts:
   - automatic-memory-management
 books:
   - chapter-1-learning-smol-standard-model-of-languages
-tags:
+tags: []
+keywords:
   - "automatic memory management"
   - "memory"
   - "dynamic"

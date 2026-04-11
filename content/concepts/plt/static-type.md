@@ -12,6 +12,7 @@ tags:
   - "language-feature-design"
   - "program-analysis"
   - "type-theory"
+keywords:
   - "type"
   - "checked"
   - "static"

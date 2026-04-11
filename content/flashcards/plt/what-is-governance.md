@@ -7,7 +7,8 @@ deck: general
 concepts:
   - governance
 books: []
-tags:
+tags: []
+keywords:
   - "governance"
 ---
 

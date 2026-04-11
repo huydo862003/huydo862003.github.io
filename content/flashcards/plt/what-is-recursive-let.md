@@ -8,7 +8,8 @@ concepts:
   - recursive-let
 books:
   - chapter-1-learning-smol-standard-model-of-languages
-tags:
+tags: []
+keywords:
   - "recursive let"
   - "recursive"
   - "syntactic"

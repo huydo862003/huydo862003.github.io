@@ -12,6 +12,7 @@ tags:
   - "language-feature-design"
   - "programming-paradigm"
   - "runtime"
+keywords:
   - "dynamic"
   - "properties"
   - "dispatch"

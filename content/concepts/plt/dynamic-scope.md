@@ -12,6 +12,7 @@ tags:
   - "language-feature-design"
   - "runtime"
   - "semantics"
+keywords:
   - "dynamic"
   - "scope"
   - "considered"

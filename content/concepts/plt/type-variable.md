@@ -12,6 +12,7 @@ tags:
   - "language-feature-design"
   - "syntax-grammar"
   - "type-theory"
+keywords:
   - "type"
   - "variable"
   - "placeholder"

@@ -8,7 +8,8 @@ concepts:
   - representation
 books:
   - chapter-1-basics-functional-programming-in-rocq
-tags:
+tags: []
+keywords:
   - "representation"
   - "multiple"
   - "meanings"

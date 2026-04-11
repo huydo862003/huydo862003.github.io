@@ -7,7 +7,8 @@ deck: design-system
 concepts:
   - style-dictionary
 books: []
-tags:
+tags: []
+keywords:
   - "style dictionary"
   - "build"
   - "system"

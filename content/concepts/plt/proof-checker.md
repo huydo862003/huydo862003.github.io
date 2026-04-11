@@ -12,6 +12,7 @@ tags:
   - "formal-system"
   - "logic"
   - "program-analysis"
+keywords:
   - "rules"
   - "checker"
   - "program"

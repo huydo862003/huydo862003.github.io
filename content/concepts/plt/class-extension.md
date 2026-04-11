@@ -12,6 +12,7 @@ tags:
   - "language-feature-design"
   - "programming-paradigm"
   - "syntax-grammar"
+keywords:
   - "class"
   - "sup"
   - "extension"

@@ -9,7 +9,8 @@ books:
   - chapter-1-introduction
 dependsOn: []
 blocks: []
-tags:
+tags: []
+keywords:
   - "type"
   - "system"
   - "runtime"

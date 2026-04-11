@@ -8,7 +8,8 @@ concepts:
   - hindley-milner-system
 books:
   - chapter-5-types
-tags:
+tags: []
+keywords:
   - "hindley milner system"
   - "constraints"
   - "type"

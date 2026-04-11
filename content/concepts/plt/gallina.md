@@ -12,6 +12,7 @@ tags:
   - "formal-system"
   - "language-feature-design"
   - "proof-reason-technique"
+keywords:
   - "functional"
   - "language"
   - "gallina"

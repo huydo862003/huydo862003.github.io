@@ -7,7 +7,8 @@ deck: design-methodology
 concepts:
   - atomic-design
 books: []
-tags:
+tags: []
+keywords:
   - "atomic design"
   - "building"
   - "design"

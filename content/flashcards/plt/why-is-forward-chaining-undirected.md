@@ -8,7 +8,8 @@ concepts:
   - forward-chaining
 books:
   - chapter-2-inductive-definitions
-tags:
+tags: []
+keywords:
   - "forward chaining"
   - "forward"
   - "chaining"

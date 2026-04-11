@@ -7,7 +7,8 @@ deck: general
 concepts: []
 books:
   - chapter-2-mathematical-preliminaries
-tags:
+tags: []
+keywords:
   - "list"
   - "out"
   - "members"

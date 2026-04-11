@@ -9,7 +9,8 @@ concepts:
   - tactic
 books:
   - logical-foundations
-tags:
+tags: []
+keywords:
   - "rocq"
   - "tactic"
   - "tactics"

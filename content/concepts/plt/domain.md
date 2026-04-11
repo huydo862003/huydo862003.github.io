@@ -11,6 +11,7 @@ blocks: []
 tags:
   - "order-lattice-theory"
   - "set-theory-relation"
+keywords:
   - "theory"
   - "order"
   - "lattice"

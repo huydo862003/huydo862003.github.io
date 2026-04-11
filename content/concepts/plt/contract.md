@@ -13,6 +13,7 @@ tags:
   - "runtime"
   - "semantics"
   - "type-theory"
+keywords:
   - "string"
   - "number"
   - "contract"

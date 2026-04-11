@@ -7,7 +7,8 @@ deck: pure-lambda-calculus
 concepts:
 - pattern
 books: []
-tags:
+tags: []
+keywords:
   - "recursion"
   - "y-combinator"
   - "z-combinator"

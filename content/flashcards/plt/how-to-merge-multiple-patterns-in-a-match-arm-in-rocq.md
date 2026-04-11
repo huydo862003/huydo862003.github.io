@@ -7,7 +7,8 @@ deck: rocq-programming-language
 concepts: []
 books:
   - chapter-1-basics-functional-programming-in-rocq
-tags:
+tags: []
+keywords:
   - "iframe"
   - "https"
   - "com"

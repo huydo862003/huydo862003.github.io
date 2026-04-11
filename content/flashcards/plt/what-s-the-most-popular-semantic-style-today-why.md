@@ -11,7 +11,8 @@ concepts:
   - axiomatic-semantics
 books:
   - chapter-3-untyped-arithmetic-expressions
-tags:
+tags: []
+keywords:
   - "small step structural operational semantics sos"
   - "operational semantics"
   - "denotational semantics"

@@ -7,7 +7,8 @@ deck: language-theory
 concepts:
   - operational-semantics
 books: []
-tags:
+tags: []
+keywords:
   - "operational semantics"
 ---
 

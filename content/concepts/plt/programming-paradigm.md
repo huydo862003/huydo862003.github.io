@@ -10,6 +10,7 @@ dependsOn: []
 blocks: []
 tags:
   - "programming-paradigm"
+keywords:
   - "programming"
   - "paradigm"
   - "style"

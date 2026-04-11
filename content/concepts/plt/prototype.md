@@ -11,6 +11,7 @@ blocks: []
 tags:
   - "language-feature-design"
   - "programming-paradigm"
+keywords:
   - "class-based"
   - "inheritance"
   - "prototype"

@@ -8,7 +8,8 @@ concepts:
   - simultaneous-inductive-definition
 books:
   - chapter-2-inductive-definitions
-tags:
+tags: []
+keywords:
   - "simultaneous inductive definition"
 ---
 

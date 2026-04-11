@@ -8,7 +8,8 @@ concepts:
   - functional-programming
 books:
   - logical-foundations
-tags:
+tags: []
+keywords:
   - "functional programming"
   - "programming"
   - "computations"

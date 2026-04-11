@@ -8,7 +8,8 @@ concepts:
   - alpha-equivalence
 books:
   - chapter-1-abstract-syntax
-tags:
+tags: []
+keywords:
   - "alpha equivalence"
   - "vec"
   - "alpha"

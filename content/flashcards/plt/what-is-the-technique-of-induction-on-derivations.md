@@ -8,7 +8,8 @@ concepts:
   - induction-on-derivations
 books:
   - chapter-3-untyped-arithmetic-expressions
-tags:
+tags: []
+keywords:
   - "induction on derivations"
   - "induction"
   - "property"

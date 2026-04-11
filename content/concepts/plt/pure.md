@@ -13,6 +13,7 @@ tags:
   - "program-analysis"
   - "programming-paradigm"
   - "semantics"
+keywords:
   - "pure"
   - "property"
   - "function"

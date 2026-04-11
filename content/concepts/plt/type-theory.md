@@ -11,6 +11,7 @@ blocks: []
 tags:
   - "formal-system"
   - "type-theory"
+keywords:
   - "type"
   - "theory"
   - "formal"

@@ -9,7 +9,8 @@ books:
   - chapter-1-the-psychopathology-of-everyday-things
 dependsOn: []
 blocks: []
-tags:
+tags: []
+keywords:
   - "intuition"
   - "over"
   - "instruction"

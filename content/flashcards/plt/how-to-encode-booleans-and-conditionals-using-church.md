@@ -8,7 +8,8 @@ concepts:
   - pure-untyped-lambda-calculus
 books:
   - chapter-5-the-untyped-pure-lambda-calculus
-tags:
+tags: []
+keywords:
   - "pure untyped lambda calculus"
   - "lambda"
   - "text"

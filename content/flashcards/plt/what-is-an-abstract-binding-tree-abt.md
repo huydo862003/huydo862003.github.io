@@ -10,7 +10,8 @@ concepts:
   - abstractor
 books:
   - chapter-1-abstract-syntax
-tags:
+tags: []
+keywords:
   - "abstract binding tree abt"
   - "valence"
   - "abstractor"

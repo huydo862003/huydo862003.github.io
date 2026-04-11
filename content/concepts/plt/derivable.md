@@ -13,6 +13,7 @@ tags:
   - "logic"
   - "set-theory-relation"
   - "syntax-grammar"
+keywords:
   - "evaluation"
   - "derivable"
   - "property"

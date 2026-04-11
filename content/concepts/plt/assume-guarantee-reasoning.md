@@ -10,6 +10,7 @@ dependsOn: []
 blocks: []
 tags:
   - "proof-reason-technique"
+keywords:
   - "assumes"
   - "guarantees"
   - "lambda"

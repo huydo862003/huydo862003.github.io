@@ -9,7 +9,8 @@ books:
   - chapter-3-syntactic-sugar
 dependsOn: []
 blocks: []
-tags:
+tags: []
+keywords:
   - "code"
   - "macro"
   - "syntactic"

@@ -10,6 +10,7 @@ dependsOn: []
 blocks: []
 tags:
   - "design-system"
+keywords:
   - "cross-platform"
   - "ability"
   - "design"

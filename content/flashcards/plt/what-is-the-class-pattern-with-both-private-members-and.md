@@ -7,7 +7,8 @@ deck: general
 concepts: []
 books:
   - chapter-4-objects
-tags:
+tags: []
+keywords:
   - "lambda"
   - "racket"
   - "cls"

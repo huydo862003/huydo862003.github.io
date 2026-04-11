@@ -8,7 +8,8 @@ concepts:
   - derivable
 books:
   - chapter-3-untyped-arithmetic-expressions
-tags:
+tags: []
+keywords:
   - "derivable"
   - "there's"
   - "derivation"

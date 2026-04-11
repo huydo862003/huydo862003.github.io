@@ -13,6 +13,7 @@ tags:
   - "semantics"
   - "set-theory-relation"
   - "type-theory"
+keywords:
   - "substitutability"
   - "type"
   - "compatibility"

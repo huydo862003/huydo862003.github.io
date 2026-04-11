@@ -10,6 +10,7 @@ dependsOn: []
 blocks: []
 tags:
   - "design-system"
+keywords:
   - "adaptability"
   - "system's"
   - "resilience"

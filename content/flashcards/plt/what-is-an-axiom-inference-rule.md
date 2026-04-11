@@ -9,7 +9,8 @@ concepts:
 books:
   - chapter-3-untyped-arithmetic-expressions
   - chapter-2-inductive-definitions
-tags:
+tags: []
+keywords:
   - "inference rule"
   - "axiom"
   - "inference"

@@ -10,6 +10,7 @@ dependsOn: []
 blocks: []
 tags:
   - "semantics"
+keywords:
   - "function"
   - "terms"
   - "interpretation"

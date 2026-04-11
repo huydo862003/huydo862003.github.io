@@ -8,7 +8,8 @@ concepts:
   - congruence
 books:
   - chapter-1-abstract-syntax
-tags:
+tags: []
+keywords:
   - "congruence"
   - "equivalence"
   - "relation"

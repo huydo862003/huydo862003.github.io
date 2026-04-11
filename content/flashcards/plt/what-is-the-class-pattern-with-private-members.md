@@ -8,7 +8,8 @@ concepts:
   - class-pattern
 books:
   - chapter-4-objects
-tags:
+tags: []
+keywords:
   - "class pattern"
   - "racket"
   - "cls"

@@ -9,7 +9,8 @@ concepts:
   - require
 books:
   - chapter-1-basics-functional-programming-in-rocq
-tags:
+tags: []
+keywords:
   - "import"
   - "require"
   - "library"

@@ -9,7 +9,8 @@ books:
   - chapter-2-evaluation
 dependsOn: []
 blocks: []
-tags:
+tags: []
+keywords:
   - "program"
   - "read-eval-print-loop"
   - "repl"

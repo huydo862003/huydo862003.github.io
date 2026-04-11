@@ -7,7 +7,8 @@ deck: logic-tools
 concepts: []
 books:
   - chapter-2-inductive-definitions
-tags:
+tags: []
+keywords:
   - "judgment"
   - "relation"
   - "announcement"

@@ -12,6 +12,7 @@ tags:
   - "order-lattice-theory"
   - "proof-reason-technique"
   - "set-theory-relation"
+keywords:
   - "lexicographic"
   - "induction"
   - "decreases"

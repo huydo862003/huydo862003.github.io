@@ -14,6 +14,7 @@ tags:
   - "proof-reason-technique"
   - "semantics"
   - "syntax-grammar"
+keywords:
   - "rocq"
   - "intros"
   - "intro"

@@ -12,6 +12,7 @@ tags:
   - "data-structure-algorithm"
   - "language-feature-design"
   - "programming-paradigm"
+keywords:
   - "recursion"
   - "structural"
   - "scheme"

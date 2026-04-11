@@ -8,7 +8,8 @@ concepts:
   - if-splitting
 books:
   - chapter-5-types
-tags:
+tags: []
+keywords:
   - "if splitting"
   - "union"
   - "types"

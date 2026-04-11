@@ -8,7 +8,8 @@ concepts:
   - object-language
 books:
   - chapter-3-untyped-arithmetic-expressions
-tags:
+tags: []
+keywords:
   - "object language"
   - "formal"
   - "language"

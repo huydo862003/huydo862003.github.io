@@ -11,6 +11,7 @@ blocks: []
 tags:
   - "design-pattern"
   - "design-tool"
+keywords:
   - "grid"
   - "system"
   - "structural"

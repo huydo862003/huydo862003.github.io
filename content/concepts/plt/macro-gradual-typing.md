@@ -12,6 +12,7 @@ tags:
   - "language-feature-design"
   - "runtime"
   - "type-theory"
+keywords:
   - "gradual"
   - "typing"
   - "macro"

@@ -10,6 +10,7 @@ dependsOn: []
 blocks: []
 tags:
   - "syntax-grammar"
+keywords:
   - "precedence"
   - "parsing"
   - "rule"

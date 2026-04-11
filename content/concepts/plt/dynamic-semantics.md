@@ -10,6 +10,7 @@ dependsOn: []
 blocks: []
 tags:
   - "semantics"
+keywords:
   - "dynamic"
   - "meaning"
   - "programs"

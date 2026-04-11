@@ -8,7 +8,8 @@ concepts:
   - read-eval-print-loop-repl
 books:
   - chapter-2-evaluation
-tags:
+tags: []
+keywords:
   - "read eval print loop repl"
   - "mostly"
   - "repl"

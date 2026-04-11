@@ -8,7 +8,8 @@ concepts:
   - evaluation-strategy
 books:
   - chapter-5-the-untyped-pure-lambda-calculus
-tags:
+tags: []
+keywords:
   - "evaluation strategy"
   - "call"
   - "evaluation"

@@ -9,7 +9,8 @@ books:
   - chapter-2-mathematical-preliminaries
 dependsOn: []
 blocks: []
-tags:
+tags: []
+keywords:
   - "powerset"
   - "mathcal"
   - "subseteq"

@@ -11,6 +11,7 @@ const all: Concept[] = allConcepts.map((c) => ({
   description: c.description ?? '',
   status: c.status as Concept['status'],
   tags: c.tags,
+  keywords: c.keywords ?? [],
   books: c.books,
   dependsOn: c.dependsOn,
   blocks: c.blocks,

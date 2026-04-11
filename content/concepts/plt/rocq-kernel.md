@@ -10,6 +10,7 @@ dependsOn: []
 blocks: []
 tags:
   - "compiler-implementation"
+keywords:
   - "rocq"
   - "kernel"
   - "tools"

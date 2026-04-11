@@ -11,6 +11,7 @@ blocks: []
 tags:
   - "compiler-implementation"
   - "syntax-grammar"
+keywords:
   - "tree"
   - "labeled"
   - "synonymous"

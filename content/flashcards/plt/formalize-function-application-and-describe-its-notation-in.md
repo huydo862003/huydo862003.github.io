@@ -8,7 +8,8 @@ concepts:
   - application-function-call
 books:
   - chapter-5-the-untyped-pure-lambda-calculus
-tags:
+tags: []
+keywords:
   - "application function call"
   - "lambda"
   - "function"

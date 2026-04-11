@@ -8,7 +8,8 @@ concepts:
   - countable-set
 books:
   - chapter-2-mathematical-preliminaries
-tags:
+tags: []
+keywords:
   - "countable set"
   - "set"
   - "finite"

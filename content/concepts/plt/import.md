@@ -13,6 +13,7 @@ tags:
   - "programming-paradigm"
   - "semantics"
   - "syntax-grammar"
+keywords:
   - "import"
   - "rocq"
   - "command"

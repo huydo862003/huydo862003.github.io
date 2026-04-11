@@ -12,6 +12,7 @@ tags:
   - "semantics"
   - "set-theory-relation"
   - "type-theory"
+keywords:
   - "supertype"
   - "subtype"
 ---

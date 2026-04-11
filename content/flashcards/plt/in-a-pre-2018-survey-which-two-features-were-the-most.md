@@ -6,7 +6,8 @@ answer: TODO
 deck: general
 concepts: []
 books: []
-tags:
+tags: []
+keywords:
   - "blog"
   - "posts"
   - "module"

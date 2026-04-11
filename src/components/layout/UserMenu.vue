@@ -29,6 +29,7 @@
   <button
     v-else-if="!loading"
     class="sign-in-btn"
+    aria-label="Sign in with GitHub"
     @click="signInWithGithub"
   >
     <PhGithubLogo :size="14" />

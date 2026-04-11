@@ -9,7 +9,8 @@ books:
   - logical-foundations
 dependsOn: []
 blocks: []
-tags:
+tags: []
+keywords:
   - "rocq"
   - "formal"
   - "assistant"

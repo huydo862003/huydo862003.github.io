@@ -13,6 +13,7 @@ tags:
   - "semantics"
   - "set-theory-relation"
   - "syntax-grammar"
+keywords:
   - "dots"
   - "operator"
   - "sort"

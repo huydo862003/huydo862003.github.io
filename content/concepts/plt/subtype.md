@@ -14,6 +14,7 @@ tags:
   - "semantics"
   - "set-theory-relation"
   - "type-theory"
+keywords:
   - "type"
   - "subtype"
   - "wherever"

@@ -7,7 +7,8 @@ deck: design-system
 concepts:
   - component-library
 books: []
-tags:
+tags: []
+keywords:
   - "component library"
   - "centralized"
   - "repository"

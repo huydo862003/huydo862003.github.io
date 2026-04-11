@@ -9,7 +9,8 @@ concepts:
   - metavariable
 books:
   - chapter-2-inductive-definitions
-tags:
+tags: []
+keywords:
   - "inference rule"
   - "metavariable"
   - "rule"

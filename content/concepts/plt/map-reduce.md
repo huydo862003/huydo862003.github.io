@@ -10,6 +10,7 @@ dependsOn: []
 blocks: []
 tags:
   - "programming-paradigm"
+keywords:
   - "map-reduce"
   - "programming"
   - "model"

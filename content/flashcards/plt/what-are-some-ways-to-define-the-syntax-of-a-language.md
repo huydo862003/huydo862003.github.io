@@ -7,7 +7,8 @@ deck: compiler-implementation
 concepts: []
 books:
   - chapter-3-untyped-arithmetic-expressions
-tags:
+tags: []
+keywords:
   - "inductive"
   - "2-dimension"
   - "inference"

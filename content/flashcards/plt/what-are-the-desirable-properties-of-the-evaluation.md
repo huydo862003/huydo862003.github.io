@@ -7,7 +7,8 @@ deck: pure-lambda-calculus
 concepts: []
 books:
   - chapter-3-untyped-arithmetic-expressions
-tags:
+tags: []
+keywords:
   - "desired"
   - "property"
   - "normal"

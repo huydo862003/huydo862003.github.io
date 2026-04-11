@@ -12,6 +12,7 @@ tags:
   - "computation-theory"
   - "data-structure-algorithm"
   - "logic"
+keywords:
   - "decision"
   - "procedure"
   - "algorithm"

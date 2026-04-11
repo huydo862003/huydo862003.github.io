@@ -7,7 +7,8 @@ deck: design-system
 concepts:
   - design-system
 books: []
-tags:
+tags: []
+keywords:
   - "design system"
   - "comprehensive"
   - "ecosystem"

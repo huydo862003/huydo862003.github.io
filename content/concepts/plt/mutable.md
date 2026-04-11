@@ -12,6 +12,7 @@ tags:
   - "language-feature-design"
   - "runtime"
   - "semantics"
+keywords:
   - "mutable"
   - "property"
   - "entity"

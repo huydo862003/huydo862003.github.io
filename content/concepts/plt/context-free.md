@@ -12,6 +12,7 @@ tags:
   - "computation-theory"
   - "linguistics"
   - "syntax-grammar"
+keywords:
   - "context-free"
   - "grammar"
   - "production"

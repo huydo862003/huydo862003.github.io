@@ -10,6 +10,7 @@ dependsOn: []
 blocks: []
 tags:
   - "semantics"
+keywords:
   - "environment"
   - "gamma"
   - "extension"

@@ -12,6 +12,7 @@ tags:
   - "formal-system"
   - "linguistics"
   - "syntax-grammar"
+keywords:
   - "language"
   - "core"
   - "calculus"

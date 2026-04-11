@@ -10,6 +10,7 @@ dependsOn: []
 blocks: []
 tags:
   - "design-pattern"
+keywords:
   - "atomic"
   - "design"
   - "methodology"

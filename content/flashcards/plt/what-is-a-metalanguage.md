@@ -8,7 +8,8 @@ concepts:
   - metalanguage
 books:
   - chapter-3-untyped-arithmetic-expressions
-tags:
+tags: []
+keywords:
   - "metalanguage"
   - "language"
   - "describe"

@@ -9,7 +9,8 @@ books:
   - chapter-5-types
 dependsOn: []
 blocks: []
-tags:
+tags: []
+keywords:
   - "add"
   - "functions"
   - "existing"

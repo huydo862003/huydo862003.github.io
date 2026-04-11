@@ -7,7 +7,8 @@ deck: design-methodology
 concepts:
   - grid-system
 books: []
-tags:
+tags: []
+keywords:
   - "grid system"
   - "structural"
   - "framework"

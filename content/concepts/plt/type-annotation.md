@@ -11,6 +11,7 @@ blocks: []
 tags:
   - "syntax-grammar"
   - "type-theory"
+keywords:
   - "type"
   - "annotation"
   - "syntactic"

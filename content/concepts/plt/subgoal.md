@@ -12,6 +12,7 @@ tags:
   - "language-feature-design"
   - "logic"
   - "proof-reason-technique"
+keywords:
   - "rocq"
   - "goal"
   - "formal"

@@ -11,6 +11,7 @@ blocks: []
 tags:
   - "computation-theory"
   - "semantics"
+keywords:
   - "function"
   - "term"
   - "transition"

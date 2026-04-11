@@ -10,6 +10,7 @@ dependsOn: []
 blocks: []
 tags:
   - "linguistics"
+keywords:
   - "type"
   - "chomsky"
   - "hierarchy"

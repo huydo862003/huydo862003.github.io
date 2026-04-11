@@ -7,7 +7,8 @@ deck: general
 concepts:
 - system
 books: []
-tags:
+tags: []
+keywords:
   - "blog"
   - "posts"
   - "module"

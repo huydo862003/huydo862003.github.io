@@ -9,7 +9,8 @@ concepts:
   - mixin
 books:
   - chapter-4-objects
-tags:
+tags: []
+keywords:
   - "trait"
   - "mixin"
   - "class"

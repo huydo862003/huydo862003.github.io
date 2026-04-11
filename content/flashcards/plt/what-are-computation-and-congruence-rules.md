@@ -9,7 +9,8 @@ concepts:
   - congruence-rule
 books:
   - chapter-3-untyped-arithmetic-expressions
-tags:
+tags: []
+keywords:
   - "computation rule"
   - "congruence rule"
   - "rule"

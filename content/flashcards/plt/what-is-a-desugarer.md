@@ -8,7 +8,8 @@ concepts:
   - desugarer
 books:
   - chapter-3-syntactic-sugar
-tags:
+tags: []
+keywords:
   - "desugarer"
   - "compiler"
   - "phase"

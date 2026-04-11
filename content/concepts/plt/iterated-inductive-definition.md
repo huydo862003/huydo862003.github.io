@@ -12,6 +12,7 @@ tags:
   - "logic"
   - "proof-reason-technique"
   - "set-theory-relation"
+keywords:
   - "inductive"
   - "set"
   - "sets"

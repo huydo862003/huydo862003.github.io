@@ -11,6 +11,7 @@ blocks: []
 tags:
   - "language-feature-design"
   - "syntax-grammar"
+keywords:
   - "syntax"
   - "concrete"
   - "surface"

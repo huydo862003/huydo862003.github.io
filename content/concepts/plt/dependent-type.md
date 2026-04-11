@@ -11,6 +11,7 @@ blocks: []
 tags:
   - "logic"
   - "type-theory"
+keywords:
   - "text"
   - "dependent"
   - "types"

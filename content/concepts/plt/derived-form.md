@@ -9,7 +9,8 @@ books:
   - chapter-5-the-untyped-pure-lambda-calculus
 dependsOn: []
 blocks: []
-tags:
+tags: []
+keywords:
   - "text"
   - "derived"
   - "form"

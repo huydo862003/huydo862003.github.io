@@ -9,7 +9,8 @@ concepts:
   - function
 books:
   - chapter-2-inductive-definitions
-tags:
+tags: []
+keywords:
   - "inductive definition"
   - "function"
   - "inputs"

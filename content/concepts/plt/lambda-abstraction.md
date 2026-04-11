@@ -11,6 +11,7 @@ blocks: []
 tags:
   - "lambda-calculus"
   - "syntax-grammar"
+keywords:
   - "lambda"
   - "abstraction"
   - "term"

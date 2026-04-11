@@ -13,6 +13,7 @@ tags:
   - "metaprogramming-self-reflection"
   - "programming-paradigm"
   - "syntax-grammar"
+keywords:
   - "language"
   - "syntactic"
   - "abstraction"

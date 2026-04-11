@@ -12,6 +12,7 @@ tags:
   - "formal-system"
   - "logic"
   - "syntax-grammar"
+keywords:
   - "text"
   - "frac"
   - "aligned"

@@ -12,6 +12,7 @@ tags:
   - "computation-theory"
   - "logic"
   - "program-analysis"
+keywords:
   - "programs"
   - "rice's"
   - "stating"

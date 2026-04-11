@@ -12,6 +12,7 @@ tags:
   - "computation-theory"
   - "semantics"
   - "set-theory-relation"
+keywords:
   - "inputs"
   - "functions"
   - "partiality"

@@ -8,7 +8,8 @@ concepts:
   - local-binding-form
 books:
   - chapter-1-learning-smol-standard-model-of-languages
-tags:
+tags: []
+keywords:
   - "local binding form"
   - "syntactic"
   - "construct"

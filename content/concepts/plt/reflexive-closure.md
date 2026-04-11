@@ -10,6 +10,7 @@ dependsOn: []
 blocks: []
 tags:
   - "set-theory-relation"
+keywords:
   - "reflexive"
   - "closure"
   - "smallest"

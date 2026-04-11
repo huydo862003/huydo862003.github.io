@@ -8,7 +8,8 @@ concepts:
   - evaluation-strategy
 books:
   - chapter-3-untyped-arithmetic-expressions
-tags:
+tags: []
+keywords:
   - "evaluation strategy"
   - "evaluation"
   - "set"

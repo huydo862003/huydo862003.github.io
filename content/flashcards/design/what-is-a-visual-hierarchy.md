@@ -7,7 +7,8 @@ deck: design-aspect
 concepts:
   - visual-hierarchy
 books: []
-tags:
+tags: []
+keywords:
   - "visual hierarchy"
   - "elements"
   - "important"

@@ -8,7 +8,8 @@ concepts:
   - term
 books:
   - chapter-3-untyped-arithmetic-expressions
-tags:
+tags: []
+keywords:
   - "term"
   - "syntactic"
   - "phrase"

@@ -8,7 +8,8 @@ status: learning
 books: ["chapter-3-hypothetical-and-general-judgments"]
 dependsOn: []
 blocks: []
-tags:
+tags: []
+keywords:
   - "generic"
   - "derivability"
   - "judgment"

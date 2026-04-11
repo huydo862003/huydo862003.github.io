@@ -7,7 +7,8 @@ deck: language-theory
 concepts: []
 books:
   - chapter-5-types
-tags:
+tags: []
+keywords:
   - "static"
   - "analyzer"
   - "context-sensitive"

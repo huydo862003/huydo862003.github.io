@@ -8,7 +8,8 @@ concepts:
   - type-inference
 books:
   - chapter-5-types
-tags:
+tags: []
+keywords:
   - "type inference"
   - "report"
   - "text"

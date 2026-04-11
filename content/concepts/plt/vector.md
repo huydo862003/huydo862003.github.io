@@ -10,6 +10,7 @@ dependsOn: []
 blocks: []
 tags:
   - "data-structure-algorithm"
+keywords:
   - "vector"
   - "contiguous"
   - "dynamically-sized"

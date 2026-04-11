@@ -10,6 +10,7 @@ dependsOn: []
 blocks: []
 tags:
   - "compiler-implementation"
+keywords:
   - "language"
   - "host"
   - "compiler"

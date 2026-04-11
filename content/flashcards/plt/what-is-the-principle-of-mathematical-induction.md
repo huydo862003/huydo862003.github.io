@@ -8,7 +8,8 @@ concepts:
   - mathematical-induction
 books:
   - chapter-2-inductive-definitions
-tags:
+tags: []
+keywords:
   - "mathematical induction"
 ---
 

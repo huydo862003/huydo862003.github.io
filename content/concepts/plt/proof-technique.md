@@ -13,6 +13,7 @@ tags:
   - "logic"
   - "programming-paradigm"
   - "proof-reason-technique"
+keywords:
   - "technique"
   - "rocq"
   - "key"

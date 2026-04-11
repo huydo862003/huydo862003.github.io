@@ -11,6 +11,7 @@ blocks: []
 tags:
   - "semantics"
   - "type-theory"
+keywords:
   - "type"
   - "environment"
   - "mapping"

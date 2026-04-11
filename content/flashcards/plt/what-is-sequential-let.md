@@ -8,7 +8,8 @@ concepts:
   - cascading-sequential-let
 books:
   - chapter-1-learning-smol-standard-model-of-languages
-tags:
+tags: []
+keywords:
   - "cascading sequential let"
   - "scheme"
   - "binding"

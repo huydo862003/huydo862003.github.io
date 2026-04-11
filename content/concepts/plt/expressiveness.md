@@ -13,6 +13,7 @@ tags:
   - "language-feature-design"
   - "linguistics"
   - "type-theory"
+keywords:
   - "feature"
   - "naturally"
   - "expressiveness"

@@ -10,6 +10,7 @@ dependsOn: []
 blocks: []
 tags:
   - "formal-system"
+keywords:
   - "statements"
   - "formal"
   - "system"

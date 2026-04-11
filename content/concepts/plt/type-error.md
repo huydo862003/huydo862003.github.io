@@ -10,6 +10,7 @@ dependsOn: []
 blocks: []
 tags:
   - "type-theory"
+keywords:
   - "type"
   - "error"
   - "according"

@@ -8,7 +8,8 @@ concepts:
   - proof-by-simplification
 books:
   - chapter-1-basics-functional-programming-in-rocq
-tags:
+tags: []
+keywords:
   - "proof by simplification"
   - "tactics"
   - "relates"

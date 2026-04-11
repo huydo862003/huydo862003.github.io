@@ -8,7 +8,8 @@ concepts:
   - small-step-structural-operational-semantics-sos
 books:
   - chapter-3-untyped-arithmetic-expressions
-tags:
+tags: []
+keywords:
   - "small step structural operational semantics sos"
   - "state"
   - "describe"

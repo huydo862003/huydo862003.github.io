@@ -7,7 +7,8 @@ deck: proof-technique
 concepts: []
 books:
   - chapter-2-inductive-definitions
-tags:
+tags: []
+keywords:
   - "inductive"
   - "conclusion"
   - "hypothesis"

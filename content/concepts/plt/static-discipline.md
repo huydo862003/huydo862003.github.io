@@ -12,6 +12,7 @@ tags:
   - "program-analysis"
   - "syntax-grammar"
   - "type-theory"
+keywords:
   - "discipline"
   - "static"
   - "approach"

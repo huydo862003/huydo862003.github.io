@@ -8,7 +8,8 @@ concepts:
   - denotational-semantics
 books:
   - chapter-3-untyped-arithmetic-expressions
-tags:
+tags: []
+keywords:
   - "denotational semantics"
   - "denotational"
   - "semantics"

@@ -10,6 +10,7 @@ dependsOn: []
 blocks: []
 tags:
   - "design-tool"
+keywords:
   - "design"
   - "figma"
   - "browser-based"

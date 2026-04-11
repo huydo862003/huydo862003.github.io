@@ -108,7 +108,7 @@ useSeo({
   tags: computed(() => {
     const c = concept.value;
     if (!c) return undefined;
-    return [...c.tags, c.journey, c.status, 'concept', 'programming language theory'];
+    return [...c.tags, ...c.keywords, c.journey, c.status, 'concept', 'programming language theory'];
   }),
   path: computed(() => `/journeys/${slug.value}/concepts/${conceptSlug.value}`),
   publishedTime: computed(() => concept.value?.createdAt || undefined),

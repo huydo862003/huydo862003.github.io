@@ -9,7 +9,8 @@ books:
   - chapter-1-basics-functional-programming-in-rocq
 dependsOn: []
 blocks: []
-tags:
+tags: []
+keywords:
   - "technique"
   - "rocq"
   - "reason"

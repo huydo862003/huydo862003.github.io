@@ -12,6 +12,7 @@ tags:
   - "compiler-implementation"
   - "linguistics"
   - "syntax-grammar"
+keywords:
   - "lexical"
   - "analysis"
   - "removing"

@@ -8,7 +8,8 @@ concepts:
   - preorder
 books:
   - chapter-2-mathematical-preliminaries
-tags:
+tags: []
+keywords:
   - "preorder"
   - "relation"
   - "reflexive"

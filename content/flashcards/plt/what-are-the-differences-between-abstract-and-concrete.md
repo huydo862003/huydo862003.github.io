@@ -8,7 +8,8 @@ concepts: []
 books:
   - chapter-3-untyped-arithmetic-expressions
   - chapter-5-the-untyped-pure-lambda-calculus
-tags:
+tags: []
+keywords:
   - "syntax"
   - "language"
   - "abstract"

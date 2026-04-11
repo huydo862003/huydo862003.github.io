@@ -302,7 +302,7 @@ const projects = [
   @apply text-sm font-medium;
 }
 .desc {
-  @apply text-xs text-fg-faint mt-0.5;
+  @apply text-xs text-fg-muted mt-0.5;
 }
 .project-header {
   @apply flex flex-wrap items-center gap-1.5;
@@ -311,7 +311,7 @@ const projects = [
   @apply flex flex-wrap gap-1 mt-1;
 }
 .cat-tag {
-  @apply text-fg-faint border border-border rounded-sm px-1.5;
+  @apply text-fg-muted border border-border rounded-sm px-1.5;
   font-size: 0.625rem;
   line-height: 1.25rem;
 }
@@ -319,10 +319,11 @@ const projects = [
   @apply flex flex-wrap items-center gap-x-3 gap-y-0.5 mt-0.5;
 }
 .plink {
-  @apply inline-flex items-center gap-1 text-xs text-fg-faint
-         no-underline hover:text-accent-blue transition-colors;
+  @apply inline-flex items-center gap-1 text-xs text-fg-muted
+         no-underline hover:text-accent-blue transition-colors
+         py-1;
 }
 .empty {
-  @apply text-sm text-fg-faint;
+  @apply text-sm text-fg-muted;
 }
 </style>

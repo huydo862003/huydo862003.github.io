@@ -11,6 +11,7 @@ blocks: []
 tags:
   - "compiler-implementation"
   - "type-theory"
+keywords:
   - "type"
   - "program"
   - "checker"

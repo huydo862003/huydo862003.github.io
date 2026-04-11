@@ -11,6 +11,7 @@ blocks: []
 tags:
   - "design-system"
   - "design-tool"
+keywords:
   - "style"
   - "dictionary"
   - "build"

@@ -8,7 +8,8 @@ status: learning
 books: []
 dependsOn: []
 blocks: []
-tags:
+tags: []
+keywords:
   - "dynamically"
   - "sized"
   - "type"

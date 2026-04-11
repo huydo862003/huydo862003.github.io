@@ -8,7 +8,8 @@ status: learning
 books: ["chapter-2-inductive-definitions"]
 dependsOn: []
 blocks: []
-tags:
+tags: []
+keywords:
   - "ordered"
   - "variadic"
   - "tree"

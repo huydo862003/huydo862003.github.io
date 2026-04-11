@@ -9,7 +9,8 @@ books:
   - chapter-2-evaluation
 dependsOn: []
 blocks: []
-tags:
+tags: []
+keywords:
   - "just-in-time"
   - "jit"
   - "compilation"

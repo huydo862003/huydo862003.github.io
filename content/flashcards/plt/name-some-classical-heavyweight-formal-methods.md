@@ -8,7 +8,8 @@ concepts:
   - hoare-logic
 books:
   - chapter-1-introduction
-tags:
+tags: []
+keywords:
   - "hoare logic"
   - "logic"
   - "hoare"

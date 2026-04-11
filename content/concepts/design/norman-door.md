@@ -12,6 +12,7 @@ blocks: []
 tags:
   - "design-antipattern"
   - "design-psychology"
+keywords:
   - "norman"
   - "door"
   - "confusing"

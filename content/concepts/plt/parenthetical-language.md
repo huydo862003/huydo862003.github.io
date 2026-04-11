@@ -12,6 +12,7 @@ tags:
   - "language-feature-design"
   - "metaprogramming-self-reflection"
   - "syntax-grammar"
+keywords:
   - "parenthetical"
   - "language"
   - "scheme"

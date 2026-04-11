@@ -8,7 +8,8 @@ concepts:
   - one-step-evaluation-relation
 books:
   - chapter-3-untyped-arithmetic-expressions
-tags:
+tags: []
+keywords:
   - "one step evaluation relation"
   - "relation"
   - "relates"

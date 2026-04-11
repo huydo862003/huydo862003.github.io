@@ -9,7 +9,8 @@ books:
   - chapter-1-learning-smol-standard-model-of-languages
 dependsOn: []
 blocks: []
-tags:
+tags: []
+keywords:
   - "memory"
   - "automatic"
   - "management"

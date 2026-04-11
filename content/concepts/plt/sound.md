@@ -12,6 +12,7 @@ tags:
   - "formal-system"
   - "logic"
   - "set-theory-relation"
+keywords:
   - "sound"
   - "adjective"
   - "form"

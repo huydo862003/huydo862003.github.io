@@ -11,6 +11,7 @@ blocks: []
 tags:
   - "branding"
   - "design-system"
+keywords:
   - "strategic"
   - "application"
   - "distinct"

@@ -11,6 +11,7 @@ blocks: []
 tags:
   - "lambda-calculus"
   - "semantics"
+keywords:
   - "property"
   - "normal"
   - "desired"

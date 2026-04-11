@@ -12,6 +12,7 @@ tags:
   - "lambda-calculus"
   - "semantics"
   - "syntax-grammar"
+keywords:
   - "binding"
   - "case"
   - "declaration"

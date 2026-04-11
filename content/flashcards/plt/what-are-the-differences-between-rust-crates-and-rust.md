@@ -7,7 +7,8 @@ deck: general
 concepts:
 - rust
 books: []
-tags:
+tags: []
+keywords:
   - "blog"
   - "posts"
   - "module"

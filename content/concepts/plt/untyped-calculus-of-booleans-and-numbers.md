@@ -9,7 +9,8 @@ books:
   - chapter-3-untyped-arithmetic-expressions
 dependsOn: []
 blocks: []
-tags:
+tags: []
+keywords:
   - "text"
   - "succ"
   - "else"

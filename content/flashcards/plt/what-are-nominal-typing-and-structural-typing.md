@@ -9,7 +9,8 @@ concepts:
   - structural-typing
 books:
   - chapter-5-types
-tags:
+tags: []
+keywords:
   - "nominal typing"
   - "structural typing"
   - "typing"

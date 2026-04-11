@@ -8,7 +8,8 @@ concepts:
   - retrofitted-type-system
 books:
   - chapter-5-types
-tags:
+tags: []
+keywords:
   - "retrofitted type system"
   - "untyped"
   - "patterns"

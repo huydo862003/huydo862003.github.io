@@ -11,6 +11,7 @@ blocks:
   - component-library
 tags:
   - "design-system"
+keywords:
   - "component"
   - "reusable"
   - "standardized"

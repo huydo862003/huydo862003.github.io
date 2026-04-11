@@ -9,7 +9,8 @@ concepts:
   - constructor
 books:
   - chapter-1-basics-functional-programming-in-rocq
-tags:
+tags: []
+keywords:
   - "constructor expression"
   - "constructor"
   - "expression"

@@ -12,6 +12,7 @@ tags:
   - "compiler-implementation"
   - "language-feature-design"
   - "syntax-grammar"
+keywords:
   - "language"
   - "surface"
   - "user-facing"

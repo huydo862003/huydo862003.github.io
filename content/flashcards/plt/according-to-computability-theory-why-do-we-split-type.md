@@ -7,7 +7,8 @@ deck: compiler-implementation
 concepts: []
 books:
   - chapter-5-types
-tags:
+tags: []
+keywords:
   - "decidable"
   - "parser"
   - "easy"

@@ -11,6 +11,7 @@ blocks: []
 tags:
   - "logic"
   - "semantics"
+keywords:
   - "rule"
   - "computation"
   - "performing"

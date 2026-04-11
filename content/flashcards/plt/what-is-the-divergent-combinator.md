@@ -8,7 +8,8 @@ concepts:
   - divergent-big-omega-combinator
 books:
   - chapter-5-the-untyped-pure-lambda-calculus
-tags:
+tags: []
+keywords:
   - "divergent big omega combinator"
   - "omega"
   - "lambda"

@@ -7,7 +7,8 @@ deck: language-theory
 concepts: []
 books:
   - practical-foundations-for-programming-languages
-tags:
+tags: []
+keywords:
   - "semantics"
   - "static"
   - "dynamic"

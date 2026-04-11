@@ -9,7 +9,8 @@ books:
   - chapter-4-objects
 dependsOn: []
 blocks: []
-tags:
+tags: []
+keywords:
   - "lambda"
   - "prop1"
   - "prop2"

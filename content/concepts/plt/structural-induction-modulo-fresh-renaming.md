@@ -11,6 +11,7 @@ blocks: []
 tags:
   - "proof-reason-technique"
   - "syntax-grammar"
+keywords:
   - "mathcal"
   - "vec"
   - "set"

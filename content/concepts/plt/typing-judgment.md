@@ -12,6 +12,7 @@ tags:
   - "logic"
   - "semantics"
   - "type-theory"
+keywords:
   - "typing"
   - "judgment"
   - "formal"

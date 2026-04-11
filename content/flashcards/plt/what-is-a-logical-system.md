@@ -8,7 +8,8 @@ concepts:
   - logical-system
 books:
   - chapter-3-untyped-arithmetic-expressions
-tags:
+tags: []
+keywords:
   - "logical system"
   - "formal"
   - "framework"

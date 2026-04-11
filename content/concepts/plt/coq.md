@@ -13,6 +13,7 @@ tags:
   - "language-feature-design"
   - "programming-paradigm"
   - "proof-reason-technique"
+keywords:
   - "coq"
   - "rocq"
   - "tools"

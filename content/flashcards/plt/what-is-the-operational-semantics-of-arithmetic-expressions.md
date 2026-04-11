@@ -9,7 +9,8 @@ concepts:
   - untyped-calculus-of-booleans-and-numbers
 books:
   - chapter-3-untyped-arithmetic-expressions
-tags:
+tags: []
+keywords:
   - "operational semantics"
   - "untyped calculus of booleans and numbers"
   - "text"

@@ -11,6 +11,7 @@ blocks: []
 tags:
   - "formal-system"
   - "proof-reason-technique"
+keywords:
   - "sentence"
   - "diagram"
   - "syntactic"

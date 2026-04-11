@@ -9,7 +9,8 @@ concepts:
 - rust
 - rust-crate
 books: []
-tags:
+tags: []
+keywords:
   - "blog"
   - "posts"
   - "module"

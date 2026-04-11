@@ -11,6 +11,7 @@ blocks: []
 tags:
   - "semantics"
   - "syntax-grammar"
+keywords:
   - "text"
   - "nonsensical"
   - "term"

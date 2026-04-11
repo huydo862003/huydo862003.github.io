@@ -12,6 +12,7 @@ tags:
   - "language-feature-design"
   - "programming-paradigm"
   - "semantics"
+keywords:
   - "multiple"
   - "inheritance"
   - "model"

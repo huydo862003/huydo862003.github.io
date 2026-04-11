@@ -9,7 +9,8 @@ concepts:
   - value
 books:
   - chapter-3-untyped-arithmetic-expressions
-tags:
+tags: []
+keywords:
   - "normal form"
   - "value"
   - "hold"

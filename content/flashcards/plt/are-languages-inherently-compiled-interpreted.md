@@ -7,7 +7,8 @@ deck: programming-language-basic
 concepts: []
 books:
   - chapter-2-evaluation
-tags:
+tags: []
+keywords:
   - "compiled"
   - "interpreted"
   - "languages"

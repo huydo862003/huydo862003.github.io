@@ -11,6 +11,7 @@ dependsOn:
 blocks: []
 tags:
   - "design-system"
+keywords:
   - "component"
   - "library"
   - "centralized"

@@ -9,7 +9,8 @@ concepts:
   - derivation-tree
 books:
   - chapter-2-inductive-definitions
-tags:
+tags: []
+keywords:
   - "derivation"
   - "derivation tree"
   - "root"

@@ -7,7 +7,8 @@ deck: design-system
 concepts:
   - design-token
 books: []
-tags:
+tags: []
+keywords:
   - "design token"
   - "documented"
   - "design"

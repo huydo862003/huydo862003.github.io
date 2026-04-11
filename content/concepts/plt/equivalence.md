@@ -9,7 +9,8 @@ books:
   - chapter-2-mathematical-preliminaries
 dependsOn: []
 blocks: []
-tags:
+tags: []
+keywords:
   - "equivalence"
   - "reflexive"
   - "transitive"

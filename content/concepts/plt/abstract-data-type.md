@@ -12,6 +12,7 @@ tags:
   - "design-principle"
   - "language-feature-design"
   - "programming-paradigm"
+keywords:
   - "type"
   - "abstract"
   - "data"

@@ -12,6 +12,7 @@ tags:
   - "compiler-implementation"
   - "semantics"
   - "syntax-grammar"
+keywords:
   - "binding"
   - "structure"
   - "syntax"

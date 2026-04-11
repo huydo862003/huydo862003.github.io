@@ -8,7 +8,8 @@ concepts:
   - conditional-expression
 books:
   - chapter-1-basics-functional-programming-in-rocq
-tags:
+tags: []
+keywords:
   - "conditional expression"
   - "inductive"
   - "types"

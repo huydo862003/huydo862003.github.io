@@ -10,6 +10,7 @@ dependsOn: []
 blocks: []
 tags:
   - "design-ops"
+keywords:
   - "technical"
   - "debt"
   - "cumulative"

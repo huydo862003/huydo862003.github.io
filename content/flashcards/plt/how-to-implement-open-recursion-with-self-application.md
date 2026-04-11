@@ -7,7 +7,8 @@ deck: pure-lambda-calculus
 concepts: []
 books:
   - chapter-4-objects
-tags:
+tags: []
+keywords:
   - "lambda"
   - "self"
   - "parent-maker"

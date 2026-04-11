@@ -8,7 +8,8 @@ concepts:
   - trait
 books:
   - chapter-4-objects
-tags:
+tags: []
+keywords:
   - "trait"
   - "mixin"
   - "generalization"

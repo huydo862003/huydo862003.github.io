@@ -11,6 +11,7 @@ blocks: []
 tags:
   - "lambda-calculus"
   - "semantics"
+keywords:
   - "beta-equivalence"
   - "binary"
   - "relation"

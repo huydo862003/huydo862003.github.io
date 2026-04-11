@@ -10,6 +10,7 @@ dependsOn: []
 blocks: []
 tags:
   - "program-analysis"
+keywords:
   - "rocq"
   - "decreasing"
   - "analysis"

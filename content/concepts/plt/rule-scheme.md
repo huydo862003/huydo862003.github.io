@@ -11,6 +11,7 @@ blocks: []
 tags:
   - "logic"
   - "set-theory-relation"
+keywords:
   - "rule"
   - "scheme"
   - "synonymous"

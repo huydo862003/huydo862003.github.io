@@ -7,7 +7,8 @@ deck: programming-language-basic
 concepts: []
 books:
   - programming-languages-application-and-interpretation
-tags:
+tags: []
+keywords:
   - "modern"
   - "programming"
   - "languages"

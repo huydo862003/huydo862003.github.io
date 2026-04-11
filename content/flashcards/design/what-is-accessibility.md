@@ -7,7 +7,8 @@ deck: design-aspect
 concepts:
   - accessibility
 books: []
-tags:
+tags: []
+keywords:
   - "accessibility"
   - "quality"
   - "interface"

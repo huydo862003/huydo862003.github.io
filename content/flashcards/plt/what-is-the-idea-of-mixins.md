@@ -8,7 +8,8 @@ concepts:
   - mixin
 books:
   - chapter-4-objects
-tags:
+tags: []
+keywords:
   - "mixin"
   - "intends"
   - "provide"

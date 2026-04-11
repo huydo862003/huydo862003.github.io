@@ -6,7 +6,8 @@ answer: TODO
 deck: type-theory
 concepts: []
 books: []
-tags:
+tags: []
+keywords:
   - "checks"
   - "impossible"
   - "compile"

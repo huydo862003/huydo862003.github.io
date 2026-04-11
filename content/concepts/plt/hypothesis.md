@@ -11,6 +11,7 @@ blocks: []
 tags:
   - "language-feature-design"
   - "logic"
+keywords:
   - "hypothesis"
   - "key"
   - "formal"

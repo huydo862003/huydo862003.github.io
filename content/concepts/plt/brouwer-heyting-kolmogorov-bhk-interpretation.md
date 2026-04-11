@@ -11,6 +11,7 @@ blocks: []
 tags:
   - "logic"
   - "semantics"
+keywords:
   - "exists"
   - "bhk"
   - "prove"

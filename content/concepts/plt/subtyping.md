@@ -13,6 +13,7 @@ tags:
   - "programming-paradigm"
   - "semantics"
   - "type-theory"
+keywords:
   - "subtyping"
   - "type"
   - "system"

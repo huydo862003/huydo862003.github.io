@@ -8,7 +8,8 @@ concepts:
   - rocq
 books:
   - logical-foundations
-tags:
+tags: []
+keywords:
   - "rocq"
   - "programming"
   - "platform"

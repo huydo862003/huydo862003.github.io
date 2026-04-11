@@ -8,7 +8,8 @@ concepts:
   - syntactic-sugar
 books:
   - chapter-3-syntactic-sugar
-tags:
+tags: []
+keywords:
   - "syntactic sugar"
   - "core"
   - "calculus"

@@ -9,7 +9,8 @@ concepts:
   - church-numeral
 books:
   - chapter-1-basics-functional-programming-in-rocq
-tags:
+tags: []
+keywords:
   - "rocq"
   - "church numeral"
   - "representation"

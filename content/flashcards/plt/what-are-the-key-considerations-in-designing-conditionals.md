@@ -8,7 +8,8 @@ concepts:
   - conditional-expression
 books:
   - chapter-2-evaluation
-tags:
+tags: []
+keywords:
   - "conditional expression"
   - "data"
   - "types"

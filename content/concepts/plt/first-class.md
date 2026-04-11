@@ -12,6 +12,7 @@ tags:
   - "language-feature-design"
   - "semantics"
   - "syntax-grammar"
+keywords:
   - "first-class"
   - "stored"
   - "variables"

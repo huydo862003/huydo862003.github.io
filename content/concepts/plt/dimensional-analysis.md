@@ -12,6 +12,7 @@ tags:
   - "other-mathematics"
   - "program-analysis"
   - "type-theory"
+keywords:
   - "dimensional"
   - "analysis"
   - "static"

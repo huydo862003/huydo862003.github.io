@@ -8,7 +8,8 @@ concepts:
   - macro-expansion
 books:
   - chapter-3-syntactic-sugar
-tags:
+tags: []
+keywords:
   - "macro expansion"
   - "code"
   - "compile-time"

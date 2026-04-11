@@ -538,36 +538,57 @@ th.sortable:hover {
   line-height: 1.4;
 }
 .status-active {
-  color: var(--color-accent-blue);
+  color: color-mix(in oklch, var(--color-accent-blue), black 38%);
   background: color-mix(in oklch, var(--color-accent-blue) 10%, var(--color-bg));
 }
+.dark .status-active {
+  color: var(--color-accent-blue);
+}
 .status-paused, .status-on-hold {
-  color: var(--color-fg-faint);
+  color: var(--color-fg-muted);
   background: var(--color-bg-subtle);
 }
 .status-completed {
-  color: var(--color-accent-blue);
+  color: color-mix(in oklch, var(--color-accent-blue), black 38%);
   background: color-mix(in oklch, var(--color-accent-blue) 10%, var(--color-bg));
+}
+.dark .status-completed {
+  color: var(--color-accent-blue);
 }
 .status-learning {
-  color: var(--color-accent-blue);
+  color: color-mix(in oklch, var(--color-accent-blue), black 38%);
   background: color-mix(in oklch, var(--color-accent-blue) 10%, var(--color-bg));
 }
+.dark .status-learning {
+  color: var(--color-accent-blue);
+}
 .status-reviewing {
-  color: var(--color-accent-yellow);
+  color: color-mix(in oklch, var(--color-accent-yellow), black 48%);
   background: color-mix(in oklch, var(--color-accent-yellow) 10%, var(--color-bg));
+}
+.dark .status-reviewing {
+  color: var(--color-accent-yellow);
 }
 .status-mastered, .status-done {
-  color: var(--color-accent-green);
+  color: color-mix(in oklch, var(--color-accent-green), black 32%);
   background: color-mix(in oklch, var(--color-accent-green) 10%, var(--color-bg));
 }
+.dark .status-mastered, .dark .status-done {
+  color: var(--color-accent-green);
+}
 .status-alpha {
-  color: var(--color-accent-yellow);
+  color: color-mix(in oklch, var(--color-accent-yellow), black 48%);
   background: color-mix(in oklch, var(--color-accent-yellow) 10%, var(--color-bg));
 }
+.dark .status-alpha {
+  color: var(--color-accent-yellow);
+}
 .status-wip {
-  color: var(--color-accent-orange);
+  color: color-mix(in oklch, var(--color-accent-orange), black 32%);
   background: color-mix(in oklch, var(--color-accent-orange) 10%, var(--color-bg));
+}
+.dark .status-wip {
+  color: var(--color-accent-orange);
 }
 
 /* Status ring */

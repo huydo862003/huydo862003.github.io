@@ -7,7 +7,8 @@ deck: type-theory
 concepts: []
 books:
   - chapter-1-introduction
-tags:
+tags: []
+keywords:
   - "type"
   - "language"
   - "system"

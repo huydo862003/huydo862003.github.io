@@ -8,7 +8,8 @@ concepts:
   - evaluation-reduction-relation
 books:
   - chapter-3-untyped-arithmetic-expressions
-tags:
+tags: []
+keywords:
   - "evaluation reduction relation"
   - "evaluation"
   - "statement"

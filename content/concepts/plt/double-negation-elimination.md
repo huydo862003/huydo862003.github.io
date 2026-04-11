@@ -11,6 +11,7 @@ blocks: []
 tags:
   - "logic"
   - "syntax-grammar"
+keywords:
   - "neg"
   - "double"
   - "negation"

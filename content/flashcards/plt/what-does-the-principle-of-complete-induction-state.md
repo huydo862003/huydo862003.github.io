@@ -8,7 +8,8 @@ concepts:
   - principle-of-complete-induction
 books:
   - chapter-2-mathematical-preliminaries
-tags:
+tags: []
+keywords:
   - "principle of complete induction"
   - "property"
   - "technique"

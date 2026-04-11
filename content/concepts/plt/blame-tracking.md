@@ -14,6 +14,7 @@ tags:
   - "runtime"
   - "semantics"
   - "type-theory"
+keywords:
   - "contract"
   - "blame"
   - "tracking"

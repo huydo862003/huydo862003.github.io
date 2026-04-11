@@ -11,6 +11,7 @@ blocks: []
 tags:
   - "program-analysis"
   - "semantics"
+keywords:
   - "lambda"
   - "behavioral"
   - "observational"

@@ -11,6 +11,7 @@ blocks: []
 tags:
   - "computation-theory"
   - "logic"
+keywords:
   - "decidability"
   - "property"
   - "problem"

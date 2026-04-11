@@ -7,7 +7,8 @@ deck: programming-language-basic
 concepts: []
 books:
   - chapter-5-types
-tags:
+tags: []
+keywords:
   - "verification"
   - "type"
   - "static"

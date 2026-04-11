@@ -13,6 +13,7 @@ tags:
   - "computation-theory"
   - "linguistics"
   - "runtime"
+keywords:
   - "states"
   - "abstract"
   - "machine"

@@ -9,7 +9,8 @@ books:
   - chapter-4-objects
 dependsOn: []
 blocks: []
-tags:
+tags: []
+keywords:
   - "class"
   - "mixin"
   - "function"

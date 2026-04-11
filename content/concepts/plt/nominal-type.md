@@ -12,6 +12,7 @@ tags:
   - "language-feature-design"
   - "semantics"
   - "type-theory"
+keywords:
   - "type"
   - "name"
   - "nominal"

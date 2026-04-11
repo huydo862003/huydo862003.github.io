@@ -10,6 +10,7 @@ dependsOn: []
 blocks: []
 tags:
   - "UI-UX"
+keywords:
   - "user"
   - "interface"
   - "visual"

@@ -8,7 +8,8 @@ concepts:
   - primordial-block
 books:
   - chapter-1-learning-smol-standard-model-of-languages
-tags:
+tags: []
+keywords:
   - "primordial block"
   - "block"
   - "encompasses"

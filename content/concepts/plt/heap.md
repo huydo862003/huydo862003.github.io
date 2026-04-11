@@ -10,6 +10,7 @@ dependsOn: []
 blocks: []
 tags:
   - "runtime"
+keywords:
   - "heap"
   - "region"
   - "process's"
