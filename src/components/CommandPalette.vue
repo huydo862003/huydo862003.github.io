@@ -301,7 +301,7 @@ defineExpose({
   @apply text-fg-faint shrink-0;
 }
 .result-type {
-  @apply text-xs text-fg-faint bg-bg-subtle px-1 py-px rounded-sm shrink-0 w-16 text-center;
+  @apply text-xs text-fg-faint bg-bg-subtle px-1 py-px rounded-sm shrink-0 min-w-16 text-center;
 }
 .result-label {
   @apply truncate;

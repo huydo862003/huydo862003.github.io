@@ -17,6 +17,20 @@
         >
           {{ link.label }}
         </router-link>
+        <VTooltip placement="bottom">
+          <button
+            class="icon-btn"
+            @click="emit('open-palette')"
+          >
+            <PhMagnifyingGlass
+              :size="16"
+              weight="bold"
+            />
+          </button>
+          <template #popper>
+            <span class="tooltip-search">Search <SKbdShortcut :keys="['Alt', 'P']" /></span>
+          </template>
+        </VTooltip>
         <button
           class="icon-btn"
           :title="isDark ? 'Light mode' : 'Dark mode'"
@@ -90,11 +104,14 @@
 import { ref } from 'vue';
 import { storeToRefs } from 'pinia';
 import {
-  PhSun, PhMoon, PhList, PhX,
+  PhSun, PhMoon, PhList, PhX, PhMagnifyingGlass,
 } from '@phosphor-icons/vue';
 import { useThemeStore } from '@/stores/theme';
 import SLogo from '@/components/common/SLogo.vue';
 import UserMenu from '@/components/layout/UserMenu.vue';
+import SKbdShortcut from '@/components/common/SKbdShortcut.vue';
+
+const emit = defineEmits<{ (e: 'open-palette'): void }>();
 
 const themeStore = useThemeStore();
 const { isDark } = storeToRefs(themeStore);
@@ -156,5 +173,8 @@ const navLinks = [
 }
 .mobile-link {
   @apply text-sm text-fg-muted no-underline hover:text-fg py-1;
+}
+.tooltip-search {
+  @apply flex items-center gap-2 text-xs text-fg-muted;
 }
 </style>

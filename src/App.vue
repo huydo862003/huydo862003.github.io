@@ -1,6 +1,9 @@
 <template>
   <div class="layout">
-    <NavBar v-if="!isGraph" />
+    <NavBar
+      v-if="!isGraph"
+      @open-palette="palette?.show()"
+    />
     <main :class="isGraph ? '' : 'content'">
       <router-view v-slot="{ Component }">
         <Transition
