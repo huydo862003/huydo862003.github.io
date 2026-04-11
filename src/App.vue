@@ -4,25 +4,27 @@
       v-if="!isGraph"
       @open-palette="palette?.show()"
     />
-    <main :class="isGraph ? '' : 'content'">
-      <router-view v-slot="{ Component }">
-        <Transition
-          name="page"
-          mode="out-in"
-        >
-          <component
-            :is="Component"
-            :key="$route.path"
-          />
-        </Transition>
-      </router-view>
-    </main>
+    <div class="workspace">
+      <main :class="isGraph ? '' : 'content'">
+        <router-view v-slot="{ Component }">
+          <Transition
+            name="page"
+            mode="out-in"
+          >
+            <component
+              :is="Component"
+              :key="$route.path"
+            />
+          </Transition>
+        </router-view>
+      </main>
+      <GraphSidePanel ref="graphPanel" />
+    </div>
     <FooterBar v-if="!isGraph" />
     <CommandPalette
       ref="palette"
       @open-graph-side="graphPanel?.toggle()"
     />
-    <GraphSidePanel ref="graphPanel" />
   </div>
 </template>
 
@@ -96,6 +98,9 @@ register([
 <style scoped>
 .layout {
   @apply min-h-screen flex flex-col;
+}
+.workspace {
+  @apply flex flex-row flex-1;
 }
 .content {
   @apply flex-1;

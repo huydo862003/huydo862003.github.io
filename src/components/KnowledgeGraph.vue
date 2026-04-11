@@ -1,10 +1,10 @@
 <template>
   <div
     ref="wrap"
-    class="graph-wrap"
+    :class="['graph-wrap', inPanel && 'graph-wrap--panel']"
   >
     <div
-      v-if="inView"
+      v-if="inView && !inPanel"
       class="scroll-nav"
     >
       <button
@@ -22,7 +22,10 @@
         <PhCaretDoubleDown :size="14" />
       </button>
     </div>
-    <div class="graph-header">
+    <div
+      v-if="!inPanel"
+      class="graph-header"
+    >
       <span class="graph-label">Knowledge Graph</span>
       <div class="controls">
         <button
@@ -64,14 +67,14 @@
     </div>
     <div
       ref="container"
-      class="graph-canvas"
+      :class="['graph-canvas', inPanel && 'graph-canvas--panel']"
     />
   </div>
 </template>
 
 <script setup lang="ts">
 import {
-  ref, onMounted, onUnmounted,
+  ref, computed, onMounted, onUnmounted,
 } from 'vue';
 import {
   PhPlus, PhMinus, PhArrowsOut, PhCrosshair, PhFrameCorners,
@@ -79,13 +82,27 @@ import {
 } from '@phosphor-icons/vue';
 import { useGraph } from '@/composables/useGraph';
 
+const props = withDefaults(defineProps<{ inPanel?: boolean }>(), { inPanel: false });
+
 const wrap = ref<HTMLElement>();
 const container = ref<HTMLElement>();
 const inView = ref(false);
 
+// When embedded in the side panel the pane is 100svh; subtract the header (~36px).
+const PANEL_HEADER_PX = 36;
+const panelHeight = ref(typeof window !== 'undefined' ? window.innerHeight - PANEL_HEADER_PX : 664);
+function updatePanelHeight () {
+  panelHeight.value = window.innerHeight - PANEL_HEADER_PX;
+}
+if (props.inPanel && typeof window !== 'undefined') {
+  window.addEventListener('resize', updatePanelHeight);
+}
+
+const graphHeight = computed(() => (props.inPanel ? panelHeight.value : 700));
+
 const {
   zoomIn, zoomOut, zoomFit, recenter,
-} = useGraph(container, 700);
+} = useGraph(container, graphHeight);
 
 function scrollUp () {
   wrap.value?.scrollIntoView({
@@ -120,11 +137,17 @@ onMounted(() => {
 
 onUnmounted(() => {
   observer?.disconnect();
+  if (props.inPanel) {
+    window.removeEventListener('resize', updatePanelHeight);
+  }
+});
+
+defineExpose({
+  zoomIn, zoomOut, zoomFit, recenter,
 });
 </script>
 
 <style scoped>
-@reference "../style.css";
 @reference "../style.css";
 .graph-wrap {
   @apply rounded-sm overflow-hidden relative;
@@ -166,5 +189,15 @@ onUnmounted(() => {
 }
 .graph-canvas {
   height: 700px;
+}
+.graph-wrap--panel {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+.graph-canvas--panel {
+  flex: 1;
+  min-height: 0;
 }
 </style>
