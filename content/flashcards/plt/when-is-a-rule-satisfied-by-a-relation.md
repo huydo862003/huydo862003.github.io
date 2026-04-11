@@ -8,6 +8,14 @@ concepts:
   - inference-rule
 books:
   - chapter-3-untyped-arithmetic-expressions
+tags:
+  - "inference rule"
+  - "relation"
+  - "instance"
+  - "rule"
+  - "satisfied"
+  - "fact"
+  - "premises"
 ---
 
 

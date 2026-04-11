@@ -7,6 +7,11 @@ deck: language-theory
 concepts: []
 books:
   - chapter-5-types
+tags:
+  - "hardware"
+  - "driver"
+  - "reactive"
+  - "system"
 ---
 
 - Hardware driver.

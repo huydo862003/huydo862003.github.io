@@ -7,6 +7,13 @@ deck: language-theory
 concepts: []
 books:
   - chapter-3-untyped-arithmetic-expressions
+tags:
+  - "text"
+  - "vert"
+  - "succ"
+  - "else"
+  - "iszero"
+  - "aligned"
 ---
 
 

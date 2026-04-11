@@ -8,6 +8,12 @@ concepts:
   - axiomatic-semantics
 books:
   - chapter-3-untyped-arithmetic-expressions
+tags:
+  - "axiomatic semantics"
+  - "rules"
+  - "laws"
+  - "fore-front"
+  - "focus"
 ---
 
 

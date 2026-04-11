@@ -8,6 +8,12 @@ concepts:
   - read-eval-print-loop-repl
 books:
   - chapter-2-evaluation
+tags:
+  - "read eval print loop repl"
+  - "mostly"
+  - "repl"
+  - "implements"
+  - "interpretation"
 ---
 
 

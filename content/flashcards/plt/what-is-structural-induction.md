@@ -8,6 +8,14 @@ concepts:
   - structural-induction
 books:
   - chapter-3-untyped-arithmetic-expressions
+tags:
+  - "structural induction"
+  - "property"
+  - "technique"
+  - "proves"
+  - "term"
+  - "relying"
+  - "holding"
 ---
 
 

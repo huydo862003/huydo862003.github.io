@@ -2,13 +2,24 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Proof assistant/Prover
+description: "\"Proof assistant/Prover\" is a concept in plt (status: learning)."
 journey: plt
 status: learning
-tags: []
 books:
   - logical-foundations
 dependsOn: []
 blocks: []
+tags:
+  - "rocq"
+  - "formal"
+  - "assistant"
+  - "prover"
+  - "tools"
+  - "formerly"
+  - "coq"
+  - "logic"
+  - "reason"
+  - "technique"
 ---
 
 Tools: Rocq (formerly Coq)

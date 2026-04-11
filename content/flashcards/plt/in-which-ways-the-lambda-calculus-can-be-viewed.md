@@ -8,6 +8,14 @@ concepts:
   - lambda-calculus
 books:
   - chapter-5-the-untyped-pure-lambda-calculus
+tags:
+  - "lambda calculus"
+  - "simple"
+  - "programming"
+  - "language"
+  - "computations"
+  - "described"
+  - "mathematical"
 ---
 
 - A **simple programming language** in which computations can be described.

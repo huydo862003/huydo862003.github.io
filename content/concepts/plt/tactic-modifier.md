@@ -2,12 +2,24 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Tactic modifier"
+description: "\"Tactic modifier\" is a concept in plt (status: learning). Topics: syntax-grammar."
 journey: plt
 status: learning
-tags: ["syntax-grammar"]
 books: []
 dependsOn: []
 blocks: []
+tags:
+  - "syntax-grammar"
+  - "tactic"
+  - "rocq"
+  - "modifier"
+  - "tools"
+  - "formerly"
+  - "coq"
+  - "syntax"
+  - "grammar"
+  - "language"
+  - "feature"
 ---
 
 Tools: Rocq (formerly Coq)

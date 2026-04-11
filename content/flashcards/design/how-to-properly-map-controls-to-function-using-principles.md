@@ -8,5 +8,6 @@ deck: general
 concepts:
 - psychology
 books: []
+tags: []
 ---
 

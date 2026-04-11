@@ -8,6 +8,14 @@ concepts:
   - variable
 books:
   - chapter-1-abstract-syntax
+tags:
+  - "variable"
+  - "object"
+  - "abstract"
+  - "syntax"
+  - "it's"
+  - "placeholder"
+  - "ast"
 ---
 
 

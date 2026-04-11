@@ -8,6 +8,10 @@ concepts:
   - object-pattern
 books:
   - chapter-4-objects
+tags:
+  - "object pattern"
+  - "racket"
+  - "lambda"
 ---
 
 

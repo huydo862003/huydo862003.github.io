@@ -2,14 +2,25 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Fixed-point combinator
+description: "\"Fixed-point combinator\" is a concept in plt (status: learning)."
 journey: plt
 status: learning
-tags: []
 books:
   - chapter-5-the-untyped-pure-lambda-calculus
   - chapter-1-basics-functional-programming-in-rocq
 dependsOn: []
 blocks: []
+tags:
+  - "combinator"
+  - "fixed-point"
+  - "function"
+  - "text"
+  - "fix"
+  - "functional"
+  - "tools"
+  - "rocq"
+  - "formerly"
+  - "coq"
 ---
 
 Tools: Rocq (formerly Coq)

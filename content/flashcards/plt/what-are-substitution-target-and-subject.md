@@ -9,6 +9,15 @@ concepts:
   - substitution-target
 books:
   - chapter-1-abstract-syntax
+tags:
+  - "substitution subject"
+  - "substitution target"
+  - "substitution"
+  - "target"
+  - "substituted"
+  - "term"
+  - "variables"
+  - "subject"
 ---
 
 

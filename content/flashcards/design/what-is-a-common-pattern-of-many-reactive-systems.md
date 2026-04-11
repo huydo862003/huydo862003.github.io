@@ -7,5 +7,6 @@ deck: design
 concepts: []
 books:
   - chapter-5-types
+tags: []
 ---
 

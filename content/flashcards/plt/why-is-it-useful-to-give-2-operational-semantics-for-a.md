@@ -8,6 +8,14 @@ concepts:
   - operational-semantics
 books:
   - chapter-3-untyped-arithmetic-expressions
+tags:
+  - "operational semantics"
+  - "it's"
+  - "useful"
+  - "operational"
+  - "semantics"
+  - "abstract"
+  - "machine"
 ---
 
 

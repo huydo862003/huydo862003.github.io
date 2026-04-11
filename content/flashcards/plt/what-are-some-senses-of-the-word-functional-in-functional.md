@@ -8,6 +8,14 @@ concepts:
   - functional-programming
 books:
   - chapter-1-basics-functional-programming-in-rocq
+tags:
+  - "functional programming"
+  - "functions"
+  - "mathematical"
+  - "denote"
+  - "resemblance"
+  - "pure"
+  - "first-class"
 ---
 
 - Mathematical functions: To denote the resemblance to "pure" mathematical functions.

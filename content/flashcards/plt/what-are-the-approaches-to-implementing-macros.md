@@ -8,6 +8,12 @@ concepts:
   - macro
 books:
   - chapter-3-syntactic-sugar
+tags:
+  - "macro"
+  - "ast"
+  - "rewriting"
+  - "parenthetical"
+  - "language"
 ---
 
 

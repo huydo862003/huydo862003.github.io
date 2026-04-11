@@ -9,6 +9,12 @@ concepts:
 books:
   - chapter-3-untyped-arithmetic-expressions
   - chapter-2-inductive-definitions
+tags:
+  - "inference rule"
+  - "axiom"
+  - "inference"
+  - "rule"
+  - "premise"
 ---
 
 

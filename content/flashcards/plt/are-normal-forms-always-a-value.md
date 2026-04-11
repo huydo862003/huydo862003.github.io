@@ -9,6 +9,13 @@ concepts:
   - normal-form
 books:
   - chapter-3-untyped-arithmetic-expressions
+tags:
+  - "value"
+  - "normal form"
+  - "normal"
+  - "forms"
+  - "stuck"
+  - "terms"
 ---
 
 

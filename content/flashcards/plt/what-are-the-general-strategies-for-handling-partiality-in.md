@@ -7,6 +7,13 @@ deck: type-theory
 concepts: []
 books:
   - chapter-5-types
+tags:
+  - "pros"
+  - "cons"
+  - "contract"
+  - "simple"
+  - "type"
+  - "truthful"
 ---
 
 1. Exception

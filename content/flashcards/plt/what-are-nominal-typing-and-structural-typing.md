@@ -9,6 +9,15 @@ concepts:
   - structural-typing
 books:
   - chapter-5-types
+tags:
+  - "nominal typing"
+  - "structural typing"
+  - "typing"
+  - "policy"
+  - "determines"
+  - "type"
+  - "compatibility"
+  - "based"
 ---
 
 

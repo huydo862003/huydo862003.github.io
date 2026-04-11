@@ -8,6 +8,13 @@ concepts: []
 books:
   - chapter-3-untyped-arithmetic-expressions
   - chapter-5-the-untyped-pure-lambda-calculus
+tags:
+  - "syntax"
+  - "language"
+  - "abstract"
+  - "concrete"
+  - "surface"
+  - "programmers"
 ---
 
 - Concrete/Surface syntax: The language that the programmers actually programs in - usually a sequence of characters.

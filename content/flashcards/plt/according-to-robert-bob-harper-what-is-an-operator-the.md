@@ -7,6 +7,13 @@ deck: language-theory
 concepts: []
 books:
   - chapter-1-abstract-syntax
+tags:
+  - "operator"
+  - "type"
+  - "stand-in"
+  - "internal"
+  - "node's"
+  - "abstract"
 ---
 
 

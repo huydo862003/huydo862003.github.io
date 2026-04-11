@@ -8,6 +8,14 @@ concepts:
   - garbage-collection
 books:
   - chapter-1-learning-smol-standard-model-of-languages
+tags:
+  - "garbage collection"
+  - "garbage"
+  - "collection"
+  - "runtime"
+  - "mechanism"
+  - "utilizes"
+  - "heuristic"
 ---
 
 

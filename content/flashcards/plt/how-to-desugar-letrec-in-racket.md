@@ -7,6 +7,13 @@ deck: general
 concepts: []
 books:
   - chapter-4-objects
+tags:
+  - "lambda"
+  - "expression"
+  - "racket"
+  - "arg1"
+  - "arg2"
+  - "arg3"
 ---
 
 

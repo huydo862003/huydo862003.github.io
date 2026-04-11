@@ -9,6 +9,15 @@ concepts:
   - abstract-syntax-tree-ast
 books:
   - chapter-1-abstract-syntax
+tags:
+  - "fresh variable"
+  - "abstract syntax tree ast"
+  - "variable"
+  - "mathcal"
+  - "fresh"
+  - "set"
+  - "it's"
+  - "within"
 ---
 
 

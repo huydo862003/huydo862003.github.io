@@ -8,6 +8,14 @@ concepts:
   - object
 books:
   - chapter-4-objects
+tags:
+  - "object"
+  - "value"
+  - "maps"
+  - "names"
+  - "stuff"
+  - "values"
+  - "methods"
 ---
 
 - A value that maps names to stuff (either other values or "methods").

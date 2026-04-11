@@ -8,6 +8,13 @@ concepts:
   - term
 books:
   - chapter-3-untyped-arithmetic-expressions
+tags:
+  - "term"
+  - "denote"
+  - "syntactic"
+  - "constructs"
+  - "expression"
+  - "represents"
 ---
 
 

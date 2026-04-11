@@ -9,6 +9,14 @@ concepts:
   - pure-untyped-lambda-calculus
 books:
   - chapter-5-the-untyped-pure-lambda-calculus
+tags:
+  - "church numeral"
+  - "pure untyped lambda calculus"
+  - "lambda"
+  - "church"
+  - "numerals"
+  - "booleans"
+  - "identical"
 ---
 
 - 0 in Church numerals: $\lambda a.\ \lambda z.\ z$.

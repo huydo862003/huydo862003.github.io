@@ -7,5 +7,6 @@ deck: general
 concepts:
 - conceptual-model
 books: []
+tags: []
 ---
 

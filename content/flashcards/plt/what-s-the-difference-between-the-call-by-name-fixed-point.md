@@ -7,6 +7,13 @@ deck: pure-lambda-calculus
 concepts: []
 books:
   - chapter-5-the-untyped-pure-lambda-calculus
+tags:
+  - "lambda"
+  - "languages"
+  - "call-by-value"
+  - "call-by-name"
+  - "fixed-point"
+  - "combinator"
 ---
 
 - Call-by-name fixed-point combinator - Curry/Y-Combinator:

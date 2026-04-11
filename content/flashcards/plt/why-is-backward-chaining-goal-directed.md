@@ -9,6 +9,15 @@ concepts:
   - backward-chaining
 books:
   - chapter-2-inductive-definitions
+tags:
+  - "backward chaining search"
+  - "backward chaining"
+  - "backward"
+  - "chaining"
+  - "starts"
+  - "goal"
+  - "works"
+  - "backwards"
 ---
 
 

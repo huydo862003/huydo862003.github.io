@@ -7,6 +7,14 @@ deck: design-methodology
 concepts:
   - grid-system
 books: []
+tags:
+  - "grid system"
+  - "structural"
+  - "framework"
+  - "intersecting"
+  - "vertical"
+  - "horizontal"
+  - "lines"
 ---
 
 

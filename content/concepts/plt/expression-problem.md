@@ -2,13 +2,24 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Expression problem
+description: "Neither paradigm naturally supports both dimensions of extensibility without modifying existing code or sacrificing type safety. Solutions exist (type classes, object algebras, tagless final) but invo"
 journey: plt
 status: learning
-tags: []
 books:
   - chapter-5-types
 dependsOn: []
 blocks: []
+tags:
+  - "add"
+  - "functions"
+  - "existing"
+  - "classes"
+  - "variants"
+  - "must"
+  - "edit"
+  - "type"
+  - "expression"
+  - "problem"
 ---
 
 | Approach | Easy to add | Hard to add |

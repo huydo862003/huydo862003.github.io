@@ -8,6 +8,13 @@ concepts:
   - natural-deduction-style
 books:
   - chapter-3-untyped-arithmetic-expressions
+tags:
+  - "natural deduction style"
+  - "listed"
+  - "horizontal"
+  - "line"
+  - "premises"
+  - "conclusion"
 ---
 
 

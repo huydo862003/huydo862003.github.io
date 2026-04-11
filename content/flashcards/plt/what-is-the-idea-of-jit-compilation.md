@@ -8,6 +8,14 @@ concepts:
   - just-in-time-jit-compilation
 books:
   - chapter-2-evaluation
+tags:
+  - "just in time jit compilation"
+  - "hybrid"
+  - "approach"
+  - "programs"
+  - "interpreted"
+  - "code"
+  - "monitored"
 ---
 
 

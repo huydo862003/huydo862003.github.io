@@ -8,6 +8,14 @@ concepts:
   - conditional-expression
 books:
   - chapter-2-evaluation
+tags:
+  - "conditional expression"
+  - "data"
+  - "types"
+  - "allowed"
+  - "conditionals"
+  - "values"
+  - "truthy"
 ---
 
 - Which data types are allowed in conditionals?

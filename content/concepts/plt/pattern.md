@@ -2,12 +2,25 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Pattern"
+description: "A structural template that matches values by shape (using constructors, variables, or wildcards), enabling destructuring and case analysis in match expressions."
 journey: plt
 status: mastered
-tags: ["language-feature-design", "syntax-grammar"]
 books: []
 dependsOn: []
 blocks: []
+tags:
+  - "language-feature-design"
+  - "syntax-grammar"
+  - "pattern"
+  - "structural"
+  - "template"
+  - "matches"
+  - "values"
+  - "shape"
+  - "using"
+  - "constructors"
+  - "variables"
+  - "wildcards"
 ---
 
 A **structural template** that matches values by shape (using constructors, variables, or wildcards), enabling destructuring and case analysis in `match` expressions.

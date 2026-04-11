@@ -8,6 +8,14 @@ concepts:
   - logical-system
 books:
   - chapter-3-untyped-arithmetic-expressions
+tags:
+  - "logical system"
+  - "formal"
+  - "framework"
+  - "comprising"
+  - "syntax"
+  - "well-formed"
+  - "formulas"
 ---
 
 

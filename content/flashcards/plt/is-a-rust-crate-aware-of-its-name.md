@@ -8,6 +8,11 @@ concepts:
 - rust
 - rust-crate
 books: []
+tags:
+  - "blog"
+  - "posts"
+  - "module"
+  - "systems"
 ---
 
 Blog posts: Notes on module systems

@@ -7,6 +7,10 @@ deck: general
 concepts:
 - boolean-blindness
 books: []
+tags:
+  - "interpreters"
+  - "projects"
+  - "dboxide"
 ---
 
 ️ Interpreters & projects : dboxide

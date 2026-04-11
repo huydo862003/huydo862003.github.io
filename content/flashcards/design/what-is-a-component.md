@@ -7,6 +7,14 @@ deck: design-system
 concepts:
   - component
 books: []
+tags:
+  - "component"
+  - "reusable"
+  - "standardized"
+  - "interface"
+  - "element"
+  - "encapsulate"
+  - "code"
 ---
 
 

@@ -24,6 +24,7 @@ const allCards: Flashcard[] = allFlashcards.map((c) => ({
   question: c.question,
   answer: c.answer,
   deck: c.deck,
+  tags: c.tags ?? [],
   concepts: c.concepts,
   books: c.books,
 }));

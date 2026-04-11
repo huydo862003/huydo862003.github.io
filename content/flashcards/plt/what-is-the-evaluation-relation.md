@@ -8,6 +8,14 @@ concepts:
   - evaluation-reduction-relation
 books:
   - chapter-3-untyped-arithmetic-expressions
+tags:
+  - "evaluation reduction relation"
+  - "operational"
+  - "semantics"
+  - "relation"
+  - "relates"
+  - "terms"
+  - "another"
 ---
 
 

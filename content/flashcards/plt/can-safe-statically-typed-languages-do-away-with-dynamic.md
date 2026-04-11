@@ -6,6 +6,13 @@ answer: TODO
 deck: type-theory
 concepts: []
 books: []
+tags:
+  - "checks"
+  - "impossible"
+  - "compile"
+  - "time"
+  - "bound"
+  - "divide-by-zero"
 ---
 
 

@@ -9,6 +9,15 @@ concepts:
   - instance-of-an-inference-rule
 books:
   - chapter-3-untyped-arithmetic-expressions
+tags:
+  - "inference rule"
+  - "instance of an inference rule"
+  - "rule"
+  - "schema"
+  - "synonymous"
+  - "inference"
+  - "representing"
+  - "generic"
 ---
 
 

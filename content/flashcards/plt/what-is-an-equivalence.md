@@ -8,6 +8,12 @@ concepts:
   - equivalence
 books:
   - chapter-2-mathematical-preliminaries
+tags:
+  - "equivalence"
+  - "relation"
+  - "reflexive"
+  - "symmetric"
+  - "transitive"
 ---
 
 

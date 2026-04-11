@@ -2,12 +2,24 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Call by value"
+description: "(Lambda calculus, Semantics) A Strict/Eager evaluation strategy in which Beta-redex/Reducible expressions inside lambda abstractions must not be reduced."
 journey: plt
 status: mastered
-tags: ["language-feature-design", "semantics"]
 books: ["chapter-5-the-untyped-pure-lambda-calculus"]
 dependsOn: []
 blocks: []
+tags:
+  - "language-feature-design"
+  - "semantics"
+  - "lambda"
+  - "calculus"
+  - "strategy"
+  - "displaystyle"
+  - "frac"
+  - "call"
+  - "value"
+  - "key"
+  - "strict"
 ---
 :::key
 (Lambda calculus, Semantics) A Strict/Eager evaluation strategy in which Beta-redex/Reducible expressions inside lambda abstractions must not be reduced.

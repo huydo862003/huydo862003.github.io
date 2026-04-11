@@ -8,6 +8,11 @@ concepts:
   - evaluator
 books:
   - chapter-2-evaluation
+tags:
+  - "evaluator"
+  - "program"
+  - "reduces"
+  - "value"
 ---
 
 

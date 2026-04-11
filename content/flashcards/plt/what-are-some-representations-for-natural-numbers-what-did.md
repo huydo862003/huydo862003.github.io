@@ -9,6 +9,15 @@ concepts:
   - church-numeral
 books:
   - chapter-1-basics-functional-programming-in-rocq
+tags:
+  - "rocq"
+  - "church numeral"
+  - "representation"
+  - "unary"
+  - "church"
+  - "numeral"
+  - "decimal"
+  - "hexadecimal"
 ---
 
 - Unary representation. → Church numeral.

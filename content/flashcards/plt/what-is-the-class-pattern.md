@@ -7,6 +7,13 @@ deck: language-theory
 concepts: []
 books:
   - chapter-4-objects
+tags:
+  - "class"
+  - "pattern"
+  - "members"
+  - "private"
+  - "simple"
+  - "racket"
 ---
 
 

@@ -8,6 +8,14 @@ concepts:
   - hindley-milner-system
 books:
   - chapter-5-types
+tags:
+  - "hindley milner system"
+  - "constraints"
+  - "type"
+  - "algorithm"
+  - "works"
+  - "generate"
+  - "variables"
 ---
 
 

@@ -2,12 +2,23 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Strong normalization"
+description: "The property of a language written in which every program always terminates."
 journey: plt
 status: reviewing
-tags: ["language-feature-design", "semantics"]
 books: ["chapter-5-types"]
 dependsOn: []
 blocks: []
+tags:
+  - "language-feature-design"
+  - "semantics"
+  - "strong"
+  - "normalization"
+  - "property"
+  - "language"
+  - "written"
+  - "program"
+  - "always"
+  - "terminates"
 ---
 
 The property of a language written in which every program always terminates.

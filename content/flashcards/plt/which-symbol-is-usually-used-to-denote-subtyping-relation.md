@@ -8,6 +8,8 @@ concepts:
   - subtyping-relation
 books:
   - chapter-5-types
+tags:
+  - "subtyping relation"
 ---
 
 

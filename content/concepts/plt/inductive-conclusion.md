@@ -2,12 +2,25 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Inductive conclusion"
+description: "\\displaystyle\\frac{a_1\\ J \\ \\dots \\ a_k\\ J}{a\\ J}"
 journey: plt
 status: reviewing
-tags: ["logic", "set-theory-relation"]
 books: ["chapter-2-inductive-definitions"]
 dependsOn: []
 blocks: []
+tags:
+  - "logic"
+  - "set-theory-relation"
+  - "mathcal"
+  - "inductive"
+  - "conclusion"
+  - "displaystyle"
+  - "frac"
+  - "dots"
+  - "typically"
+  - "show"
+  - "case"
+  - "theinstance"
 ---
 
 $$

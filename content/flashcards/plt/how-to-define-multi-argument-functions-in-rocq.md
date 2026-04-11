@@ -8,6 +8,14 @@ concepts:
   - rocq
 books:
   - chapter-1-basics-functional-programming-in-rocq
+tags:
+  - "rocq"
+  - "nat"
+  - "plus"
+  - "arg1"
+  - "arg2"
+  - "arg3"
+  - "ret-type"
 ---
 
 

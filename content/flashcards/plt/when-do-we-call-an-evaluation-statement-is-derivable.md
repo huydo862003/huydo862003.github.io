@@ -8,6 +8,14 @@ concepts:
   - derivable
 books:
   - chapter-3-untyped-arithmetic-expressions
+tags:
+  - "derivable"
+  - "there's"
+  - "derivation"
+  - "tree"
+  - "whose"
+  - "root"
+  - "evaluation"
 ---
 
 

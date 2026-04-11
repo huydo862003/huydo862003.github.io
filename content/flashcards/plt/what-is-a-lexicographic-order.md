@@ -8,6 +8,14 @@ concepts:
   - lexicographic-order
 books:
   - chapter-2-mathematical-preliminaries
+tags:
+  - "lexicographic order"
+  - "ordering"
+  - "total"
+  - "sequences"
+  - "compares"
+  - "elements"
+  - "position-by-position"
 ---
 
 

@@ -8,6 +8,13 @@ concepts:
   - variable
 books:
   - chapter-1-abstract-syntax
+tags:
+  - "variable"
+  - "variables"
+  - "placeholders"
+  - "asts"
+  - "specified"
+  - "sorts"
 ---
 
 

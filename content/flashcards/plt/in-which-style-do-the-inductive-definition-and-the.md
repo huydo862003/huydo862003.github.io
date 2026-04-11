@@ -7,6 +7,7 @@ deck: logic-tools
 concepts: []
 books:
   - chapter-3-untyped-arithmetic-expressions
+tags: []
 ---
 
 

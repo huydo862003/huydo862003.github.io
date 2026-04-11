@@ -9,6 +9,12 @@ concepts:
   - function
 books:
   - chapter-4-objects
+tags:
+  - "method"
+  - "function"
+  - "gets"
+  - "bound"
+  - "object"
 ---
 
 

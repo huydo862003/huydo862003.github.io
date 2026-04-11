@@ -16,10 +16,11 @@ interface SeoOptions {
   publishedTime?: Ref<string | undefined>;
   modifiedTime?: Ref<string | undefined>;
   tags?: Ref<string[] | undefined>;
+  author?: Ref<string | undefined>;
 }
 
 export function useSeo ({
-  title, description, path, type = 'article', image, publishedTime, modifiedTime, tags,
+  title, description, path, type = 'article', image, publishedTime, modifiedTime, tags, author,
 }: SeoOptions) {
   const fullTitle = computed(() => {
     const t = title.value;
@@ -48,6 +49,13 @@ export function useSeo ({
         m.push({
           name: 'keywords',
           content: tags.value.join(', '),
+        });
+      }
+
+      if (author?.value) {
+        m.push({
+          name: 'author',
+          content: author.value,
         });
       }
 

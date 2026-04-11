@@ -8,6 +8,13 @@ concepts:
   - environment
 books:
   - chapter-1-learning-smol-standard-model-of-languages
+tags:
+  - "environment"
+  - "store"
+  - "bindings"
+  - "variables"
+  - "values"
+  - "theoretic"
 ---
 
 

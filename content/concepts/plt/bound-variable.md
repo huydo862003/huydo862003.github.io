@@ -2,12 +2,19 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Bound variable"
+description: "A variable bound by an enclosing $\\lambda$."
 journey: plt
 status: mastered
-tags: ["lambda-calculus", "syntax-grammar"]
 books: ["chapter-5-the-untyped-pure-lambda-calculus"]
 dependsOn: []
 blocks: []
+tags:
+  - "lambda-calculus"
+  - "syntax-grammar"
+  - "bound"
+  - "variable"
+  - "enclosing"
+  - "lambda"
 ---
 
 A variable bound by an enclosing $\lambda$.

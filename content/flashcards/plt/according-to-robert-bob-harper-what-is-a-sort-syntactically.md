@@ -8,6 +8,12 @@ concepts:
   - sort
 books:
   - chapter-1-abstract-syntax
+tags:
+  - "sort"
+  - "basically"
+  - "syntactic"
+  - "category"
+  - "ast"
 ---
 
 

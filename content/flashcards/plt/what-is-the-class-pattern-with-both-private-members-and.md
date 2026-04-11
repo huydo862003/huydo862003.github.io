@@ -7,6 +7,13 @@ deck: general
 concepts: []
 books:
   - chapter-4-objects
+tags:
+  - "lambda"
+  - "racket"
+  - "cls"
+  - "static1"
+  - "exp1"
+  - "args"
 ---
 
 

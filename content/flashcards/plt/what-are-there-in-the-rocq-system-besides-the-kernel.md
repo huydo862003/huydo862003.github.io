@@ -9,6 +9,15 @@ concepts:
   - tactic
 books:
   - logical-foundations
+tags:
+  - "rocq"
+  - "tactic"
+  - "tactics"
+  - "large"
+  - "library"
+  - "common"
+  - "definitions"
+  - "axioms"
 ---
 
 - A large library of common definitions and axioms.

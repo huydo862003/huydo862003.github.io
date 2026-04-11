@@ -6,6 +6,10 @@ export interface Book {
   author: string;
   date: string;
   journey: string;
+  description: string;
+  isbn: string;
+  url: string;
+  cover: string;
   tags: string[];
   concepts: string[];
   parent: string;

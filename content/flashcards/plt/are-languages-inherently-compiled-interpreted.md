@@ -7,6 +7,13 @@ deck: programming-language-basic
 concepts: []
 books:
   - chapter-2-evaluation
+tags:
+  - "compiled"
+  - "interpreted"
+  - "languages"
+  - "inherently"
+  - "language"
+  - "specifications"
 ---
 
 - **No**: Languages are not inherently compiled or interpreted.

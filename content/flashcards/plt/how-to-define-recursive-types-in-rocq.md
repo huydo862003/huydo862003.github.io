@@ -8,6 +8,12 @@ concepts:
   - recursive-type
 books:
   - chapter-1-basics-functional-programming-in-rocq
+tags:
+  - "recursive type"
+  - "inductive"
+  - "type"
+  - "nat"
+  - "coq"
 ---
 
 

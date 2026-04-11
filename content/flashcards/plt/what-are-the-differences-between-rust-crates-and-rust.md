@@ -7,6 +7,11 @@ deck: general
 concepts:
 - rust
 books: []
+tags:
+  - "blog"
+  - "posts"
+  - "module"
+  - "systems"
 ---
 
 Blog posts: Notes on module systems

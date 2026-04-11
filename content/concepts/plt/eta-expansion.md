@@ -2,12 +2,25 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Eta-expansion"
+description: "The transformation of a term $t$ to $\\lambda x.\\ t\\ x$ where $x \\notin FV(f)$ - the inverse of Eta-reduction, often used to delay evaluation or make function abstraction explicit."
 journey: plt
 status: learning
-tags: ["lambda-calculus", "semantics"]
 books: []
 dependsOn: []
 blocks: []
+tags:
+  - "lambda-calculus"
+  - "semantics"
+  - "eta-expansion"
+  - "transformation"
+  - "term"
+  - "lambda"
+  - "notin"
+  - "inverse"
+  - "eta-reduction"
+  - "often"
+  - "delay"
+  - "evaluation"
 ---
 
 The transformation of a term $t$ to $\lambda x.\ t\ x$ where $x \notin FV(f)$ - the inverse of Eta-reduction, often used to delay evaluation or make function abstraction explicit.

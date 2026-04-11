@@ -7,6 +7,12 @@ deck: pure-lambda-calculus
 concepts: []
 books:
   - chapter-5-the-untyped-pure-lambda-calculus
+tags:
+  - "languages"
+  - "y-combinator"
+  - "call-by-name"
+  - "z-combinator"
+  - "call-by-value"
 ---
 
 - The Y-combinator is used in call-by-name languages.

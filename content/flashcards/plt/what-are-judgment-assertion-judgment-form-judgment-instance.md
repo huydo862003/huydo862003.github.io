@@ -7,6 +7,13 @@ deck: logic-tools
 concepts: []
 books:
   - chapter-2-inductive-definitions
+tags:
+  - "judgment"
+  - "form"
+  - "instance"
+  - "relation"
+  - "interpreted"
+  - "predicate"
 ---
 
 - A judgment form is a relation, interpreted as a Predicate.

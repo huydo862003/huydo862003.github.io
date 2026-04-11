@@ -7,6 +7,12 @@ deck: programming-language-basic
 concepts: []
 books:
   - chapter-5-types
+tags:
+  - "verification"
+  - "type"
+  - "static"
+  - "test"
+  - "dynamic"
 ---
 
 - Type: Static verification.

@@ -7,6 +7,13 @@ deck: pure-lambda-calculus
 concepts:
 - pattern
 books: []
+tags:
+  - "recursion"
+  - "y-combinator"
+  - "z-combinator"
+  - "big"
+  - "small"
+  - "omega"
 ---
 
 - Recursion: Y-combinator, Z-combinator.

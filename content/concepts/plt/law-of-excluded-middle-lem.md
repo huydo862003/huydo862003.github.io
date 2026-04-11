@@ -2,12 +2,24 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Law of excluded middle (LEM)"
+description: "holds. It asserts that every statement is either true or false, with no middle ground."
 journey: plt
 status: reviewing
-tags: ["logic", "syntax-grammar"]
 books: []
 dependsOn: []
 blocks: []
+tags:
+  - "logic"
+  - "syntax-grammar"
+  - "neg"
+  - "middle"
+  - "lor"
+  - "law"
+  - "excluded"
+  - "lem"
+  - "holds"
+  - "asserts"
+  - "statement"
 ---
 
 $$

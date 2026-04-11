@@ -2,13 +2,19 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Recursive let
+description: "\"Recursive let\" is a concept in plt (status: learning)."
 journey: plt
 status: learning
-tags: []
 books:
   - chapter-1-learning-smol-standard-model-of-languages
 dependsOn: []
 blocks: []
+tags:
+  - "fact"
+  - "recursive"
+  - "scheme"
+  - "letrec"
+  - "lambda"
 ---
 
 ```scheme

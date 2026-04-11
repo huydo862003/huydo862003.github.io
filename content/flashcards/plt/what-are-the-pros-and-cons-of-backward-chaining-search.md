@@ -9,6 +9,15 @@ concepts:
   - goal-directed
 books:
   - chapter-2-inductive-definitions
+tags:
+  - "backward chaining search"
+  - "goal directed"
+  - "backward"
+  - "chaining"
+  - "search"
+  - "judgment"
+  - "eventually"
+  - "find"
 ---
 
 

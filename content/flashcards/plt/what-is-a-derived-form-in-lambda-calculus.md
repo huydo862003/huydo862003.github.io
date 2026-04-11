@@ -8,6 +8,14 @@ concepts:
   - derived-form
 books:
   - chapter-5-the-untyped-pure-lambda-calculus
+tags:
+  - "derived form"
+  - "text"
+  - "construct"
+  - "adds"
+  - "expressive"
+  - "power"
+  - "translated"
 ---
 
 

@@ -10,6 +10,15 @@ concepts:
   - smt-solver
 books:
   - logical-foundations
+tags:
+  - "automated theorem prover"
+  - "sat solver"
+  - "smt solver"
+  - "solver"
+  - "sat"
+  - "smt"
+  - "model"
+  - "checker"
 ---
 
 - SAT solver

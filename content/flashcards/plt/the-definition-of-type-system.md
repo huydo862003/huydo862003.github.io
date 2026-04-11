@@ -8,6 +8,14 @@ concepts:
   - type-system
 books:
   - chapter-1-introduction
+tags:
+  - "type system"
+  - "type"
+  - "system"
+  - "tractable"
+  - "syntactic"
+  - "method"
+  - "prove"
 ---
 
 

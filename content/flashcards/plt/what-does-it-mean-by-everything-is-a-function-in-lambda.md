@@ -8,6 +8,13 @@ concepts:
   - lambda-calculus
 books:
   - chapter-5-the-untyped-pure-lambda-calculus
+tags:
+  - "lambda calculus"
+  - "closed"
+  - "terms"
+  - "lambda"
+  - "calculus"
+  - "functions"
 ---
 
 

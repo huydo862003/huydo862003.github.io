@@ -8,6 +8,14 @@ concepts:
   - first-order-variable
 books:
   - chapter-1-learning-smol-standard-model-of-languages
+tags:
+  - "first order variable"
+  - "variable"
+  - "ranges"
+  - "over"
+  - "data"
+  - "values"
+  - "integers"
 ---
 
 

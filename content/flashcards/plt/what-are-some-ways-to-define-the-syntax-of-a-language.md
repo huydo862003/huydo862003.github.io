@@ -7,6 +7,13 @@ deck: compiler-implementation
 concepts: []
 books:
   - chapter-3-untyped-arithmetic-expressions
+tags:
+  - "inductive"
+  - "2-dimension"
+  - "inference"
+  - "rule"
+  - "format"
+  - "concrete"
 ---
 
 - Inductive definition.

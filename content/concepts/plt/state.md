@@ -2,12 +2,25 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "State"
+description: "The complete configuration of an abstract machine at a point during evaluation, comprising the current term and any auxiliary data (e.g., environment, store, stack). In Pure/Untyped lambda calculus, t"
 journey: plt
 status: reviewing
-tags: ["computation-theory", "language-feature-design", "program-analysis", "semantics"]
 books: ["chapter-3-untyped-arithmetic-expressions", "chapter-4-objects"]
 dependsOn: []
 blocks: []
+tags:
+  - "computation-theory"
+  - "language-feature-design"
+  - "program-analysis"
+  - "semantics"
+  - "state"
+  - "term"
+  - "lambda"
+  - "complete"
+  - "configuration"
+  - "abstract"
+  - "machine"
+  - "point"
 ---
 
 The complete configuration of an abstract machine at a point during evaluation, comprising the current term and any auxiliary data (e.g., environment, store, stack). In Pure/Untyped lambda calculus, the state is simply a Lambda term.

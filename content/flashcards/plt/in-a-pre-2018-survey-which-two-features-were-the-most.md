@@ -6,6 +6,11 @@ answer: TODO
 deck: general
 concepts: []
 books: []
+tags:
+  - "blog"
+  - "posts"
+  - "module"
+  - "systems"
 ---
 
 Blog posts: Notes on module systems

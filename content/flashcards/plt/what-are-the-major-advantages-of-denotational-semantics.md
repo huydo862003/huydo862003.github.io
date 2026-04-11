@@ -8,6 +8,14 @@ concepts:
   - denotational-semantics
 books:
   - chapter-3-untyped-arithmetic-expressions
+tags:
+  - "denotational semantics"
+  - "denotational"
+  - "semantics"
+  - "allows"
+  - "reuse"
+  - "knowledge"
+  - "well-studied"
 ---
 
 

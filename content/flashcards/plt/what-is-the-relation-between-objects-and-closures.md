@@ -9,6 +9,11 @@ concepts:
   - closure
 books:
   - chapter-4-objects
+tags:
+  - "object"
+  - "closure"
+  - "multiple"
+  - "entrypoints"
 ---
 
 

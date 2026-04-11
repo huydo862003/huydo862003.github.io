@@ -11,13 +11,50 @@
     </div>
 
     <template v-if="book">
-      <h1>{{ book.title }}</h1>
-      <p
-        v-if="book.author"
-        class="author"
-      >
-        {{ book.author }}
-      </p>
+      <div class="book-header">
+        <img
+          v-if="book.cover"
+          :src="`/book-covers/${book.cover}`"
+          :alt="book.title"
+          class="book-cover"
+        >
+        <div class="book-header-meta">
+          <h1>{{ book.title }}</h1>
+          <p
+            v-if="book.author"
+            class="author"
+          >
+            {{ book.author }}
+          </p>
+          <p
+            v-if="book.date"
+            class="year"
+          >
+            {{ book.date }}
+          </p>
+          <div class="book-links">
+            <a
+              v-if="book.url"
+              :href="book.url"
+              target="_blank"
+              rel="noopener"
+              class="book-ext-link"
+            >
+              <PhArrowSquareOut :size="12" /> Publisher / Author page
+            </a>
+            <span
+              v-if="book.isbn"
+              class="book-isbn"
+            >ISBN {{ book.isbn }}</span>
+          </div>
+          <p
+            v-if="book.description && !book.parent"
+            class="book-desc"
+          >
+            {{ book.description }}
+          </p>
+        </div>
+      </div>
 
       <SCard
         v-if="rootBook"
@@ -122,7 +159,7 @@ import {
 } from 'vue';
 import { useAsyncState } from '@vueuse/core';
 import { useRoute } from 'vue-router';
-import { PhBook } from '@phosphor-icons/vue';
+import { PhBook, PhArrowSquareOut } from '@phosphor-icons/vue';
 import { useSeo } from '@/composables/useSeo';
 import { useBookStore } from '@/stores/books';
 import { loadContent } from '@/utils/content';
@@ -157,10 +194,16 @@ const bookConfig = computed((): SCardConfig<Book> => ({
   renderChildren: true,
 }));
 
+const BASE = 'https://huydo862003.github.io';
 useSeo({
   title: computed(() => book.value?.title),
-  description: computed(() => book.value?.author ? `By ${book.value.author}` : undefined),
+  description: computed(() => book.value?.description || (book.value?.author ? `By ${book.value.author}` : undefined)),
   path: computed(() => `/journeys/${slug.value}/books/${bookSlug.value}`),
+  author: computed(() => book.value?.author),
+  tags: computed(() => book.value?.tags),
+  image: computed(() => book.value?.cover ? `${BASE}/book-covers/${book.value.cover}` : undefined),
+  publishedTime: computed(() => book.value?.createdAt || undefined),
+  modifiedTime: computed(() => book.value?.updatedAt || undefined),
 });
 
 const rootBook = computed(() => {
@@ -226,8 +269,32 @@ watch(conceptSearch, () => {
 h1 {
   @apply text-xl font-bold mb-1;
 }
+.book-header {
+  @apply flex gap-5 mb-6;
+}
+.book-cover {
+  @apply w-24 shrink-0 rounded-sm object-cover self-start border border-border/50;
+}
+.book-header-meta {
+  @apply flex flex-col min-w-0;
+}
 .author {
-  @apply text-xs text-fg-faint mb-6;
+  @apply text-xs text-fg-faint mt-0.5;
+}
+.year {
+  @apply text-xs text-fg-faint/60;
+}
+.book-links {
+  @apply flex flex-wrap items-center gap-x-4 gap-y-0.5 mt-2 mb-2;
+}
+.book-ext-link {
+  @apply inline-flex items-center gap-1 text-xs text-accent-blue no-underline hover:underline;
+}
+.book-isbn {
+  @apply text-xs text-fg-faint/60 font-mono;
+}
+.book-desc {
+  @apply text-xs text-fg-muted mt-1 max-w-prose;
 }
 .section {
   @apply mb-6;

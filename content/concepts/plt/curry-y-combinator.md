@@ -2,12 +2,25 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Curry/Y-Combinator"
+description: "\\text{fix} = \\lambda f.\\ (\\lambda x.\\ f\\ (x\\ x))\\ (\\lambda x.\\ f (x\\ x))"
 journey: plt
 status: reviewing
-tags: ["lambda-calculus", "semantics"]
 books: ["chapter-5-the-untyped-pure-lambda-calculus"]
 dependsOn: []
 blocks: []
+tags:
+  - "lambda-calculus"
+  - "semantics"
+  - "lambda"
+  - "text"
+  - "fix"
+  - "aligned"
+  - "evaluation"
+  - "strategy"
+  - "curry"
+  - "y-combinator"
+  - "details"
+  - "begin"
 ---
 
 $$

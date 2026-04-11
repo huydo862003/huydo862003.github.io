@@ -8,6 +8,14 @@ concepts:
   - functional-programming
 books:
   - logical-foundations
+tags:
+  - "functional programming"
+  - "programming"
+  - "computations"
+  - "pure"
+  - "possible"
+  - "returns"
+  - "results"
 ---
 
 

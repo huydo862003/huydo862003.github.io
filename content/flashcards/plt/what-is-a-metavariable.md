@@ -8,6 +8,14 @@ concepts:
   - metavariable
 books:
   - chapter-3-untyped-arithmetic-expressions
+tags:
+  - "metavariable"
+  - "variable"
+  - "metalanguage"
+  - "ranges"
+  - "over"
+  - "terms"
+  - "syntactic"
 ---
 
 

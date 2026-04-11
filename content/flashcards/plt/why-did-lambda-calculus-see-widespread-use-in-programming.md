@@ -7,6 +7,13 @@ deck: pure-lambda-calculus
 concepts: []
 books:
   - chapter-5-the-untyped-pure-lambda-calculus
+tags:
+  - "language"
+  - "landin"
+  - "core"
+  - "programming"
+  - "understood"
+  - "lambda-calculus"
 ---
 
 - Mid 1960, Peter Landin observed that a **complex programming language** can be understood by:

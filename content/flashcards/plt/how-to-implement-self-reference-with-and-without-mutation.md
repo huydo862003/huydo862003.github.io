@@ -7,6 +7,13 @@ deck: general
 concepts: []
 books:
   - chapter-4-objects
+tags:
+  - "self"
+  - "lambda"
+  - "mutation"
+  - "racket"
+  - "mk-self-ref"
+  - "get-self"
 ---
 
 

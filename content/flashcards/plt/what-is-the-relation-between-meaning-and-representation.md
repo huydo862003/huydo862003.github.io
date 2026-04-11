@@ -8,6 +8,13 @@ concepts:
   - representation
 books:
   - chapter-1-basics-functional-programming-in-rocq
+tags:
+  - "representation"
+  - "multiple"
+  - "meanings"
+  - "depending"
+  - "usage"
+  - "meaning"
 ---
 
 - One representation can have multiple meanings, depending on its usage.

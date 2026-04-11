@@ -2,12 +2,25 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Constant"
+description: "The token itself *is* the value-the parser can extract it directly without consulting any environment or performing computation"
 journey: plt
 status: mastered
-tags: ["compiler-implementation", "language-feature-design", "program-analysis", "semantics", "syntax-grammar"]
 books: ["chapter-2-evaluation"]
 dependsOn: []
 blocks: []
+tags:
+  - "compiler-implementation"
+  - "language-feature-design"
+  - "program-analysis"
+  - "semantics"
+  - "syntax-grammar"
+  - "constant"
+  - "name"
+  - "binding"
+  - "value"
+  - "cannot"
+  - "const"
+  - "requires"
 ---
 
 - Requires no evaluation or name lookup.

@@ -8,6 +8,14 @@ concepts:
   - primordial-block
 books:
   - chapter-1-learning-smol-standard-model-of-languages
+tags:
+  - "primordial block"
+  - "block"
+  - "encompasses"
+  - "global"
+  - "scope"
+  - "containing"
+  - "builtins"
 ---
 
 

@@ -8,6 +8,14 @@ concepts:
   - desugarer
 books:
   - chapter-3-syntactic-sugar
+tags:
+  - "desugarer"
+  - "compiler"
+  - "phase"
+  - "program"
+  - "transforms"
+  - "syntactic"
+  - "sugar"
 ---
 
 

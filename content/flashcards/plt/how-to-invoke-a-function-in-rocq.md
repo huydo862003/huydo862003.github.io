@@ -8,6 +8,14 @@ concepts:
   - rocq
 books:
   - chapter-1-basics-functional-programming-in-rocq
+tags:
+  - "rocq"
+  - "arg1"
+  - "arg2"
+  - "subexpression"
+  - "top-level"
+  - "compute"
+  - "expectation"
 ---
 
 

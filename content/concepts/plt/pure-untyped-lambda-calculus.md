@@ -2,13 +2,24 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Pure/Untyped lambda calculus
+description: "\"Pure/Untyped lambda calculus\" is a concept in plt (status: learning)."
 journey: plt
 status: learning
-tags: []
 books:
   - chapter-5-the-untyped-pure-lambda-calculus
 dependsOn: []
 blocks: []
+tags:
+  - "lambda"
+  - "textbf"
+  - "array"
+  - "dfrac"
+  - "pure"
+  - "untyped"
+  - "calculus"
+  - "begin"
+  - "term"
+  - "value"
 ---
 
 $$

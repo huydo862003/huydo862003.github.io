@@ -8,6 +8,14 @@ concepts:
   - principle-of-complete-induction
 books:
   - chapter-2-mathematical-preliminaries
+tags:
+  - "principle of complete induction"
+  - "property"
+  - "technique"
+  - "inductive"
+  - "step"
+  - "assumes"
+  - "holds"
 ---
 
 

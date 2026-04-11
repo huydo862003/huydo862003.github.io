@@ -2,12 +2,25 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Intuitionistic/Constructive logic"
+description: "\\frac{A \\quad B}{A \\land B} & & (\\land\\text{-intro}) \\\\ \\\\"
 journey: plt
 status: learning
-tags: ["formal-system", "logic", "syntax-grammar"]
 books: []
 dependsOn: []
 blocks: []
+tags:
+  - "formal-system"
+  - "logic"
+  - "syntax-grammar"
+  - "text"
+  - "frac"
+  - "aligned"
+  - "quad"
+  - "elim"
+  - "intro"
+  - "begin"
+  - "land"
+  - "end"
 ---
 
 - Inference rules

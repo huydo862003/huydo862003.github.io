@@ -8,6 +8,13 @@ concepts:
   - mixin
 books:
   - chapter-4-objects
+tags:
+  - "mixin"
+  - "intends"
+  - "provide"
+  - "code"
+  - "reuse"
+  - "capability"
 ---
 
 

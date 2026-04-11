@@ -8,6 +8,13 @@ concepts:
   - block
 books:
   - chapter-1-learning-smol-standard-model-of-languages
+tags:
+  - "block"
+  - "syntactic"
+  - "construct"
+  - "groups"
+  - "statements"
+  - "introduces"
 ---
 
 

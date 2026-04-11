@@ -2,12 +2,25 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Dependent type"
+description: "Consider the $\\text{head}$ function which returns the first item of a list."
 journey: plt
 status: learning
-tags: ["logic", "type-theory"]
 books: []
 dependsOn: []
 blocks: []
+tags:
+  - "logic"
+  - "type-theory"
+  - "text"
+  - "dependent"
+  - "types"
+  - "list"
+  - "head"
+  - "function"
+  - "type"
+  - "length"
+  - "becomes"
+  - "signature"
 ---
 
 - Elaboration

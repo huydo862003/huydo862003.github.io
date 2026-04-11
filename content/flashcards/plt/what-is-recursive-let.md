@@ -8,6 +8,14 @@ concepts:
   - recursive-let
 books:
   - chapter-1-learning-smol-standard-model-of-languages
+tags:
+  - "recursive let"
+  - "recursive"
+  - "syntactic"
+  - "construct"
+  - "scheme"
+  - "binding"
+  - "visible"
 ---
 
 

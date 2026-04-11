@@ -9,6 +9,15 @@ concepts:
   - metavariable
 books:
   - chapter-2-inductive-definitions
+tags:
+  - "inference rule"
+  - "metavariable"
+  - "rule"
+  - "synonymous"
+  - "schema"
+  - "inference"
+  - "parameterized"
+  - "metavariables"
 ---
 
 

@@ -2,12 +2,25 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Curry-Howard correspondence"
+description: "Remark. [Brouwer-Heyting-Kolmogorov (BHK) interpretation](/journeys/plt/concepts/brouwer-heyting-kolmogorov-bhk-interpretation) makes this correspondence explicit:"
 journey: plt
 status: learning
-tags: ["logic", "semantics", "type-theory"]
 books: []
 dependsOn: []
 blocks: []
+tags:
+  - "logic"
+  - "semantics"
+  - "type-theory"
+  - "type"
+  - "function"
+  - "proofs"
+  - "terms"
+  - "correspondence"
+  - "types"
+  - "term"
+  - "dependent"
+  - "bhk"
 ---
 
 - Propositions ~ types.

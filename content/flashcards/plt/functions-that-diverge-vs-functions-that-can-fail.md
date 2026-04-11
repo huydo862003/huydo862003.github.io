@@ -7,6 +7,13 @@ deck: set-theory-relation
 concepts: []
 books:
   - chapter-2-mathematical-preliminaries
+tags:
+  - "function"
+  - "value"
+  - "fails"
+  - "text"
+  - "error"
+  - "uparrow"
 ---
 
 

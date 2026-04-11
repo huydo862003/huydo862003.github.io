@@ -8,6 +8,14 @@ concepts:
   - retrofitted-type-system
 books:
   - chapter-5-types
+tags:
+  - "retrofitted type system"
+  - "untyped"
+  - "patterns"
+  - "languages"
+  - "previously"
+  - "encourage"
+  - "type-unsound"
 ---
 
 

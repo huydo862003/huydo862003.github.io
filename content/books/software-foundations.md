@@ -1,11 +1,22 @@
 ---
 createdAt: "2026-03-28"
-updatedAt: "2026-03-28"
+updatedAt: "2026-04-11"
 title: "Software Foundations"
-author: "Benjamin C. Pierce"
+author: "Benjamin C. Pierce et al."
 date: "2024"
 journey: plt
-tags: ["PLT", "book"]
+description: "A machine-checked introduction to the mathematical underpinnings of reliable software. Uses the Rocq (Coq) proof assistant to teach logic, functional programming, operational semantics, and formal verification."
+isbn: ""
+url: "https://softwarefoundations.cis.upenn.edu/"
+cover: ""
+tags:
+  - PLT
+  - textbook
+  - formal verification
+  - Rocq
+  - Coq
+  - type theory
+  - theorem proving
 concepts: []
 parent: ""
 children: ["logical-foundations"]

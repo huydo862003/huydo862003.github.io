@@ -9,6 +9,14 @@ concepts:
   - derivation-tree
 books:
   - chapter-2-inductive-definitions
+tags:
+  - "derivation"
+  - "derivation tree"
+  - "root"
+  - "judgment"
+  - "node"
+  - "tree"
+  - "desired"
 ---
 
 

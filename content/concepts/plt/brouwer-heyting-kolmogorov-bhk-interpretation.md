@@ -2,12 +2,24 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Brouwer-Heyting-Kolmogorov (BHK) interpretation"
+description: "Motivation. Classical logic tells you *that* something exists, not *how* to find it. BHK says to prove something exists, you must exhibit a witness."
 journey: plt
 status: learning
-tags: ["logic", "semantics"]
 books: []
 dependsOn: []
 blocks: []
+tags:
+  - "logic"
+  - "semantics"
+  - "exists"
+  - "bhk"
+  - "prove"
+  - "proofs"
+  - "text"
+  - "half"
+  - "derivation"
+  - "witness"
+  - "method"
 ---
 
 - Intuitionistic logic is syntax-the formal rules.

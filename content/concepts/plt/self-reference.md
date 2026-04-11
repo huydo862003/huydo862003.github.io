@@ -2,12 +2,25 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Self-reference"
+description: "(Programming paradigm) A technique in the Class pattern that allows members of a class to reference their owner objects."
 journey: plt
 status: mastered
-tags: ["programming-paradigm"]
 books: ["chapter-4-objects"]
 dependsOn: []
 blocks: []
+tags:
+  - "programming-paradigm"
+  - "self"
+  - "lambda"
+  - "msg"
+  - "args"
+  - "self-reference"
+  - "mutation"
+  - "scheme"
+  - "o-self"
+  - "case"
+  - "programming"
+  - "class"
 ---
 :::key
 (Programming paradigm) A technique in the Class pattern that allows members of a class to reference their owner objects.

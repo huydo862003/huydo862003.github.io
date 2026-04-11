@@ -7,6 +7,13 @@ deck: type-theory
 concepts: []
 books:
   - chapter-1-introduction
+tags:
+  - "type"
+  - "language"
+  - "system"
+  - "constructs"
+  - "untyped"
+  - "central"
 ---
 
 

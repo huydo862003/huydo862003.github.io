@@ -8,6 +8,14 @@ concepts:
   - read-eval-print-loop-repl
 books:
   - chapter-2-evaluation
+tags:
+  - "read eval print loop repl"
+  - "program"
+  - "provides"
+  - "interactive"
+  - "interface"
+  - "programmers"
+  - "interact"
 ---
 
 

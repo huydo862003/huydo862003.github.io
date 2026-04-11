@@ -7,6 +7,14 @@ deck: design-aspect
 concepts:
   - branding
 books: []
+tags:
+  - "branding"
+  - "strategic"
+  - "application"
+  - "distinct"
+  - "visual"
+  - "tonal"
+  - "identity"
 ---
 
 

@@ -5,6 +5,7 @@ export interface Flashcard {
   question: string;
   answer: string;
   deck: string;
+  tags: string[];
   concepts: string[];
   books: string[];
 }

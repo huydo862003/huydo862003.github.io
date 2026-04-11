@@ -7,6 +7,13 @@ deck: pure-lambda-calculus
 concepts: []
 books:
   - chapter-5-the-untyped-pure-lambda-calculus
+tags:
+  - "variable"
+  - "bound"
+  - "term"
+  - "free"
+  - "binder"
+  - "closed"
 ---
 
 - Closed term: A term with no free variables.

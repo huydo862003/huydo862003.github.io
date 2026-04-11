@@ -2,13 +2,25 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Class pattern
+description: "This pattern has many variants:"
 journey: plt
 status: learning
-tags: []
 books:
   - chapter-4-objects
 dependsOn: []
 blocks: []
+tags:
+  - "lambda"
+  - "members"
+  - "class"
+  - "pattern"
+  - "amount"
+  - "case"
+  - "private"
+  - "counter"
+  - "scheme"
+  - "reference"
+  - "self"
 ---
 
 This pattern has many variants:

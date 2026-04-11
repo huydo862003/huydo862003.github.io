@@ -2,13 +2,24 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Alpha-equivalence
+description: "Then, $=_\\alpha$ is the strongest Congruence on $\\mathcal{A}$that contains the followings:"
 journey: plt
 status: learning
-tags: []
 books:
   - chapter-1-abstract-syntax
 dependsOn: []
 blocks: []
+tags:
+  - "mathcal"
+  - "vec"
+  - "alpha"
+  - "set"
+  - "family"
+  - "fresh"
+  - "rho"
+  - "leftrightarrow"
+  - "asts"
+  - "sort-indexed"
 ---
 
 - Formal definition according to Practical foundations for programming languages 

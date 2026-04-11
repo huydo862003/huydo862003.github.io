@@ -8,6 +8,14 @@ concepts:
   - proof-by-simplification
 books:
   - chapter-1-basics-functional-programming-in-rocq
+tags:
+  - "proof by simplification"
+  - "reflexivity"
+  - "simpl"
+  - "unfolds"
+  - "terms"
+  - "performs"
+  - "simplification"
 ---
 
 

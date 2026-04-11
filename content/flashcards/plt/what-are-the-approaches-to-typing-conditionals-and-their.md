@@ -7,6 +7,13 @@ deck: type-theory
 concepts: []
 books:
   - chapter-5-types
+tags:
+  - "type"
+  - "conditionals"
+  - "approach"
+  - "branches"
+  - "pros"
+  - "cons"
 ---
 
 - 1st approach: True and False branches must be of the same types.

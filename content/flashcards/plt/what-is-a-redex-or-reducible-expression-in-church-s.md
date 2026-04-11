@@ -8,6 +8,13 @@ concepts:
   - beta-redex-reducible-expression
 books:
   - chapter-5-the-untyped-pure-lambda-calculus
+tags:
+  - "beta redex reducible expression"
+  - "redex"
+  - "term"
+  - "form"
+  - "lambda"
+  - "abstraction"
 ---
 
 

@@ -7,6 +7,11 @@ deck: general
 concepts:
 - system
 books: []
+tags:
+  - "blog"
+  - "posts"
+  - "module"
+  - "systems"
 ---
 
 Blog posts: Notes on module systems

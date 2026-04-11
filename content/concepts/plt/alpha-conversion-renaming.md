@@ -2,12 +2,25 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Alpha conversion/renaming"
+description: "(\\lambda x.\\ \\lambda y.\\ x)\\ y \\to [x \\to y] \\lambda y.\\ x"
 journey: plt
 status: learning
-tags: ["lambda-calculus", "semantics"]
 books: ["chapter-5-the-untyped-pure-lambda-calculus"]
 dependsOn: []
 blocks: []
+tags:
+  - "lambda-calculus"
+  - "semantics"
+  - "lambda"
+  - "alpha-conversion"
+  - "substitution"
+  - "function"
+  - "alpha"
+  - "conversion"
+  - "renaming"
+  - "without"
+  - "performing"
+  - "naive"
 ---
 
 Example:

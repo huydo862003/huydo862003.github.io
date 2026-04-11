@@ -8,6 +8,12 @@ concepts:
   - object
 books:
   - chapter-4-objects
+tags:
+  - "object"
+  - "lambda"
+  - "expression"
+  - "multiple"
+  - "entrypoints"
 ---
 
 

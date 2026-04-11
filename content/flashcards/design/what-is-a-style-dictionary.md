@@ -7,6 +7,14 @@ deck: design-system
 concepts:
   - style-dictionary
 books: []
+tags:
+  - "style dictionary"
+  - "build"
+  - "system"
+  - "transforms"
+  - "platform-agnostic"
+  - "design"
+  - "tokens"
 ---
 
 

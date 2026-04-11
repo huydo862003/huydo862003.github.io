@@ -7,6 +7,13 @@ deck: pure-lambda-calculus
 concepts: []
 books:
   - chapter-4-objects
+tags:
+  - "lambda"
+  - "self"
+  - "parent-maker"
+  - "parent-obj"
+  - "scheme"
+  - "cls"
 ---
 
 

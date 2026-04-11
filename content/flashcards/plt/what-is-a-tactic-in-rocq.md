@@ -8,6 +8,14 @@ concepts:
   - tactic
 books:
   - chapter-1-basics-functional-programming-in-rocq
+tags:
+  - "tactic"
+  - "command"
+  - "rocq"
+  - "transforms"
+  - "goal's"
+  - "state"
+  - "form"
 ---
 
 

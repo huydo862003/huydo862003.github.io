@@ -8,6 +8,12 @@ concepts:
   - evaluation-strategy
 books:
   - chapter-5-the-untyped-pure-lambda-calculus
+tags:
+  - "evaluation strategy"
+  - "specification"
+  - "redexes"
+  - "reduced"
+  - "order"
 ---
 
 

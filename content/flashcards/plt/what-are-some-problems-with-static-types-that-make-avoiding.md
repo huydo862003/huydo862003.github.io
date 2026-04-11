@@ -7,6 +7,13 @@ deck: type-theory
 concepts: []
 books:
   - chapter-5-types
+tags:
+  - "types"
+  - "abstract"
+  - "away"
+  - "runtime"
+  - "details"
+  - "provide"
 ---
 
 

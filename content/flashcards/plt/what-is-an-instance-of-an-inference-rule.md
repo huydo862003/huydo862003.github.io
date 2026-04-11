@@ -8,6 +8,14 @@ concepts:
   - instance-of-an-inference-rule
 books:
   - chapter-3-untyped-arithmetic-expressions
+tags:
+  - "instance of an inference rule"
+  - "inference"
+  - "rule"
+  - "whose"
+  - "metavariables"
+  - "replaced"
+  - "real"
 ---
 
 

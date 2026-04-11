@@ -2,12 +2,25 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Contract"
+description: "Problem: When typed code is called from untyped code, the type checker can't guarantee arguments will have correct types - untyped code has no static checking."
 journey: plt
 status: learning
-tags: ["language-feature-design", "runtime", "semantics", "type-theory"]
 books: ["chapter-5-types"]
 dependsOn: []
 blocks: []
+tags:
+  - "language-feature-design"
+  - "runtime"
+  - "semantics"
+  - "type-theory"
+  - "string"
+  - "number"
+  - "contract"
+  - "racket"
+  - "typed"
+  - "code"
+  - "untyped"
+  - "called"
 ---
 
 - Racket example

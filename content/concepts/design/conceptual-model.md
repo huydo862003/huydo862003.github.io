@@ -2,6 +2,7 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Conceptual model
+description: "\"Conceptual model\" is a concept in design (status: learning)."
 journey: design
 status: learning
 tags: []

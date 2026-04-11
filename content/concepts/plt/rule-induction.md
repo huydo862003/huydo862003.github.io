@@ -2,13 +2,24 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Rule induction
+description: "\\displaystyle\\frac{a_1\\ J \\ \\dots \\ a_k\\ J}{a\\ J}"
 journey: plt
 status: learning
-tags: []
 books:
   - chapter-2-inductive-definitions
 dependsOn: []
 blocks: []
+tags:
+  - "mathcal"
+  - "displaystyle"
+  - "frac"
+  - "dots"
+  - "rule"
+  - "induction"
+  - "typically"
+  - "show"
+  - "conclude"
+  - "whenever"
 ---
 
 $$

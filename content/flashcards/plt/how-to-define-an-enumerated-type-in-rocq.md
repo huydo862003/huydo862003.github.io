@@ -8,6 +8,13 @@ concepts:
   - enumerated-type
 books:
   - chapter-1-basics-functional-programming-in-rocq
+tags:
+  - "enumerated type"
+  - "inductive"
+  - "nat"
+  - "keyword"
+  - "coq"
+  - "type"
 ---
 
 

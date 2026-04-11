@@ -7,6 +7,14 @@ deck: design-system
 concepts:
   - component-library
 books: []
+tags:
+  - "component library"
+  - "centralized"
+  - "repository"
+  - "reusable"
+  - "components"
+  - "programmers"
+  - "put"
 ---
 
 

@@ -8,5 +8,6 @@ concepts:
 - affordance
 - anti-affordance
 books: []
+tags: []
 ---
 

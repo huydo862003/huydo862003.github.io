@@ -7,6 +7,14 @@ deck: design-aspect
 concepts:
   - responsive-design
 books: []
+tags:
+  - "responsive design"
+  - "set"
+  - "design"
+  - "techniques"
+  - "methodologies"
+  - "interface"
+  - "adapt"
 ---
 
 

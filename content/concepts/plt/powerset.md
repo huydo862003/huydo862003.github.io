@@ -2,13 +2,17 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Powerset
+description: "Definition: $\\mathcal{P}(S) = \\{ s\\ |\\ s \\subseteq S \\}$ ."
 journey: plt
 status: learning
-tags: []
 books:
   - chapter-2-mathematical-preliminaries
 dependsOn: []
 blocks: []
+tags:
+  - "powerset"
+  - "mathcal"
+  - "subseteq"
 ---
 
 Definition: $\mathcal{P}(S) = \{ s\ |\ s \subseteq S \}$ .

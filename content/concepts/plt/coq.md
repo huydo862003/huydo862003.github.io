@@ -2,12 +2,25 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Coq"
+description: "\"Coq\" is a concept in plt (status: reviewing). Topics: formal-system, language-feature-design, programming-paradigm, proof-reason-technique."
 journey: plt
 status: reviewing
-tags: ["formal-system", "language-feature-design", "programming-paradigm", "proof-reason-technique"]
 books: ["logical-foundations"]
 dependsOn: []
 blocks: []
+tags:
+  - "formal-system"
+  - "language-feature-design"
+  - "programming-paradigm"
+  - "proof-reason-technique"
+  - "coq"
+  - "rocq"
+  - "tools"
+  - "formerly"
+  - "programming"
+  - "paradigm"
+  - "language"
+  - "feature"
 ---
 
 Tools: Rocq (formerly Coq)

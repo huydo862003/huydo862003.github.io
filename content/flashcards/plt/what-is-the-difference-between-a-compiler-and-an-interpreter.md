@@ -9,6 +9,14 @@ concepts:
   - interpreter
 books:
   - chapter-2-evaluation
+tags:
+  - "compiler"
+  - "interpreter"
+  - "mathcal"
+  - "treated"
+  - "function"
+  - "carries"
+  - "program"
 ---
 
 - A compiler can be treated as a function that carries a program in the source programming language to another target programming language.

@@ -7,6 +7,11 @@ deck: type-theory
 concepts: []
 books:
   - chapter-5-types
+tags:
+  - "self-application"
+  - "z-combinator"
+  - "requires"
+  - "untypable"
 ---
 
 

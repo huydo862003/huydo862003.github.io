@@ -8,6 +8,14 @@ concepts:
   - fixed-point-combinator
 books:
   - chapter-5-the-untyped-pure-lambda-calculus
+tags:
+  - "fixed point combinator"
+  - "fixed-point"
+  - "function"
+  - "text"
+  - "fix"
+  - "combinator"
+  - "finds"
 ---
 
 

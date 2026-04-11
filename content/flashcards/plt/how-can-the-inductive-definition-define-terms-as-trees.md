@@ -8,6 +8,13 @@ concepts:
   - term
 books:
   - chapter-3-untyped-arithmetic-expressions
+tags:
+  - "term"
+  - "inductive"
+  - "starts"
+  - "base"
+  - "builds"
+  - "composite"
 ---
 
 

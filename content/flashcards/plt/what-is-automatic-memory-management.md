@@ -8,6 +8,14 @@ concepts:
   - automatic-memory-management
 books:
   - chapter-1-learning-smol-standard-model-of-languages
+tags:
+  - "automatic memory management"
+  - "memory"
+  - "dynamic"
+  - "automatic"
+  - "management"
+  - "set"
+  - "compile-time"
 ---
 
 

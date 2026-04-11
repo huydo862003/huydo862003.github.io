@@ -2,14 +2,26 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Capture-avoiding substitution
+description: "Rules in Pure/Untyped lambda calculus:"
 journey: plt
 status: learning
-tags: []
 books:
   - chapter-5-the-untyped-pure-lambda-calculus
   - chapter-1-abstract-syntax
 dependsOn: []
 blocks: []
+tags:
+  - "vec"
+  - "mathcal"
+  - "lambda"
+  - "text"
+  - "neq"
+  - "notin"
+  - "set"
+  - "substitution"
+  - "cases"
+  - "ldots"
+  - "leq"
 ---
 
 Rules in Pure/Untyped lambda calculus:

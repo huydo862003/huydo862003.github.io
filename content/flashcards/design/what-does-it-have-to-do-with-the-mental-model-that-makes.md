@@ -8,5 +8,6 @@ deck: general
 concepts:
 - mental-model
 books: []
+tags: []
 ---
 

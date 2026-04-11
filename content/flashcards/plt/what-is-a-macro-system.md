@@ -8,6 +8,14 @@ concepts:
   - macro-system
 books:
   - chapter-3-syntactic-sugar
+tags:
+  - "macro system"
+  - "language"
+  - "facility"
+  - "provides"
+  - "programmable"
+  - "syntax"
+  - "transformations"
 ---
 
 

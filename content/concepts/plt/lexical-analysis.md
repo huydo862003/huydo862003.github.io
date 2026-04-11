@@ -2,12 +2,25 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Lexical analysis"
+description: "(Syntax & Grammar, Linguistics) The process of classifying texts into syntactic categories."
 journey: plt
 status: mastered
-tags: ["compiler-implementation", "linguistics", "syntax-grammar"]
 books: ["chapter-5-the-untyped-pure-lambda-calculus"]
 dependsOn: []
 blocks: []
+tags:
+  - "compiler-implementation"
+  - "linguistics"
+  - "syntax-grammar"
+  - "lexical"
+  - "analysis"
+  - "removing"
+  - "comments"
+  - "whitespaces"
+  - "categorizing"
+  - "tokens"
+  - "syntax"
+  - "grammar"
 ---
 
 - Removing comments and whitespaces.

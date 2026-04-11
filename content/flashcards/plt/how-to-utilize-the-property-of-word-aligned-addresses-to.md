@@ -7,6 +7,13 @@ deck: compiler-implementation
 concepts: []
 books:
   - chapter-5-types
+tags:
+  - "memory"
+  - "languages"
+  - "mostly"
+  - "allocate"
+  - "objects"
+  - "heap"
 ---
 
 - In languages that mostly allocate memory for objects on the heap.

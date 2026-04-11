@@ -8,6 +8,14 @@ concepts:
   - simultaneous-inductive-definition
 books:
   - chapter-2-inductive-definitions
+tags:
+  - "simultaneous inductive definition"
+  - "iterated"
+  - "inductive"
+  - "simultaneously"
+  - "handle"
+  - "properties"
+  - "judgment"
 ---
 
 

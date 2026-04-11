@@ -8,6 +8,14 @@ concepts:
   - capture-avoiding-substitution
 books:
   - chapter-5-the-untyped-pure-lambda-calculus
+tags:
+  - "capture avoiding substitution"
+  - "useful"
+  - "mathematical"
+  - "reasoning"
+  - "proofs"
+  - "bruijn's"
+  - "notation"
 ---
 
 - $[x \to s]t$ → Useful for mathematical reasoning, proofs.

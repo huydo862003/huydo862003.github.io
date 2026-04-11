@@ -8,6 +8,10 @@ concepts:
   - partial-order
 books:
   - chapter-2-mathematical-preliminaries
+tags:
+  - "partial order"
+  - "preorder"
+  - "antisymmetric"
 ---
 
 

@@ -8,6 +8,14 @@ concepts:
   - countable-set
 books:
   - chapter-2-mathematical-preliminaries
+tags:
+  - "countable set"
+  - "set"
+  - "finite"
+  - "infinite"
+  - "bijection"
+  - "mathbb"
+  - "exists"
 ---
 
 

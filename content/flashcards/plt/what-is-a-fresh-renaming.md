@@ -8,6 +8,14 @@ concepts:
   - fresh-renaming
 books:
   - chapter-1-abstract-syntax
+tags:
+  - "fresh renaming"
+  - "mathcal"
+  - "vec"
+  - "set"
+  - "variables"
+  - "sorts"
+  - "sort-indexed"
 ---
 
 

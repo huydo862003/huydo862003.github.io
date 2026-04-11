@@ -2,13 +2,24 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Term
+description: "A term is a syntactic phrase in a grammar that represents computation and evaluates to a value - unlike Expression which broadly encompasses any well-formed syntactic construct including types, patter"
 journey: plt
 status: learning
-tags: []
 books:
   - chapter-3-untyped-arithmetic-expressions
 dependsOn: []
 blocks: []
+tags:
+  - "term"
+  - "syntactic"
+  - "phrase"
+  - "grammar"
+  - "represents"
+  - "computation"
+  - "evaluates"
+  - "value"
+  - "unlike"
+  - "expression"
 ---
 
 A term is a syntactic phrase in a grammar that represents computation and evaluates to a value - unlike Expression which broadly encompasses any well-formed syntactic construct including types, patterns, and declarations.

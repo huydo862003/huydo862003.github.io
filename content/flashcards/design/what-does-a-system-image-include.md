@@ -7,5 +7,6 @@ deck: general
 concepts:
 - system-image
 books: []
+tags: []
 ---
 

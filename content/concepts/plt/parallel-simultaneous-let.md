@@ -2,13 +2,25 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Parallel/Simultaneous let
+description: "[y (+ x 1)])  ; this x refers to outer scope, not the x being bound"
 journey: plt
 status: learning
-tags: []
 books:
   - chapter-1-learning-smol-standard-model-of-languages
 dependsOn: []
 blocks: []
+tags:
+  - "parallel"
+  - "outer"
+  - "simultaneous"
+  - "scheme"
+  - "refers"
+  - "scope"
+  - "bound"
+  - "error"
+  - "exists"
+  - "python's"
+  - "multi-assignment's"
 ---
 
 ```scheme

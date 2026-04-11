@@ -8,6 +8,14 @@ concepts:
   - value
 books:
   - chapter-3-untyped-arithmetic-expressions
+tags:
+  - "value"
+  - "term"
+  - "syntactic"
+  - "related"
+  - "another"
+  - "operational"
+  - "semantics"
 ---
 
 

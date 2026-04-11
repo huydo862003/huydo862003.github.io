@@ -8,6 +8,13 @@ concepts:
   - macro
 books:
   - chapter-3-syntactic-sugar
+tags:
+  - "macro"
+  - "syntactic"
+  - "pattern"
+  - "gets"
+  - "expanded"
+  - "code"
 ---
 
 

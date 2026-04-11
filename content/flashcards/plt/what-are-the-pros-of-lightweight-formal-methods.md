@@ -8,6 +8,14 @@ concepts:
   - type-system
 books:
   - chapter-1-introduction
+tags:
+  - "type system"
+  - "require"
+  - "high"
+  - "sophistication"
+  - "side"
+  - "programmer"
+  - "accessible"
 ---
 
 - Do not require high sophistication from the side of the programmer, more accessible.

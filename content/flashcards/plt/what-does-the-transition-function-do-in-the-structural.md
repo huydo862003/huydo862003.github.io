@@ -8,6 +8,14 @@ concepts:
   - small-step-structural-operational-semantics-sos
 books:
   - chapter-3-untyped-arithmetic-expressions
+tags:
+  - "small step structural operational semantics sos"
+  - "state"
+  - "describe"
+  - "machine's"
+  - "behavior"
+  - "gives"
+  - "performing"
 ---
 
 

@@ -2,12 +2,23 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Pair encoding"
+description: "\"Pair encoding\" is a concept in plt (status: learning). Topics: lambda-calculus, semantics."
 journey: plt
 status: learning
-tags: ["lambda-calculus", "semantics"]
 books: ["chapter-5-the-untyped-pure-lambda-calculus"]
 dependsOn: []
 blocks: []
+tags:
+  - "lambda-calculus"
+  - "semantics"
+  - "text"
+  - "lambda"
+  - "pair"
+  - "encoding"
+  - "fst"
+  - "tru"
+  - "snd"
+  - "fls"
 ---
 
 Encoding:

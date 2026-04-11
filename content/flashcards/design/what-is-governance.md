@@ -6,6 +6,13 @@ answer: "TODO"
 deck: general
 concepts: ["governance"]
 books: []
+tags:
+  - "governance"
+  - "protocols"
+  - "surrounding"
+  - "maintenance"
+  - "design"
+  - "systems"
 ---
 
 

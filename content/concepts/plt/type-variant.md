@@ -2,12 +2,18 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Type variant"
+description: "\"Type variant\" is a concept in plt (status: mastered). Topics: language-feature-design, type-theory."
 journey: plt
 status: mastered
-tags: ["language-feature-design", "type-theory"]
 books: ["chapter-5-types"]
 dependsOn: []
 blocks: []
+tags:
+  - "language-feature-design"
+  - "type-theory"
+  - "type"
+  - "variant"
+  - "sum"
 ---
 
 A variant of a Sum type.

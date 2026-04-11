@@ -8,6 +8,12 @@ concepts:
   - type-system
 books:
   - chapter-1-introduction
+tags:
+  - "type system"
+  - "strong"
+  - "general"
+  - "heavy-weight"
+  - "methods"
 ---
 
 

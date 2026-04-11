@@ -8,6 +8,14 @@ concepts:
   - valence
 books:
   - chapter-1-abstract-syntax
+tags:
+  - "valence"
+  - "specification"
+  - "argument"
+  - "operator"
+  - "specifying"
+  - "number"
+  - "sorts"
 ---
 
 

@@ -8,6 +8,8 @@ concepts:
   - runtime-type-error
 books:
   - chapter-1-introduction
+tags:
+  - "runtime type error"
 ---
 
 

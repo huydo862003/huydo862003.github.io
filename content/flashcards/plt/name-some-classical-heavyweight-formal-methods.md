@@ -8,6 +8,14 @@ concepts:
   - hoare-logic
 books:
   - chapter-1-introduction
+tags:
+  - "hoare logic"
+  - "logic"
+  - "hoare"
+  - "modal"
+  - "algebraic"
+  - "language"
+  - "denotational"
 ---
 
 - Hoare logic.

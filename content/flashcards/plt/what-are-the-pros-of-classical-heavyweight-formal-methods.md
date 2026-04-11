@@ -7,6 +7,13 @@ deck: language-theory
 concepts: []
 books:
   - chapter-1-introduction
+tags:
+  - "express"
+  - "prove"
+  - "general"
+  - "strong"
+  - "correctness"
+  - "properties"
 ---
 
 

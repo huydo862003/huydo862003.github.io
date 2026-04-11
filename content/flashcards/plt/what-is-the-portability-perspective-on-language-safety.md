@@ -8,6 +8,14 @@ concepts:
   - language-safety
 books:
   - chapter-1-introduction
+tags:
+  - "language safety"
+  - "safe"
+  - "language"
+  - "totally"
+  - "defined"
+  - "programmer's"
+  - "manual"
 ---
 
 

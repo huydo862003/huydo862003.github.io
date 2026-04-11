@@ -8,6 +8,14 @@ concepts:
   - local-binding-form
 books:
   - chapter-1-learning-smol-standard-model-of-languages
+tags:
+  - "local binding form"
+  - "syntactic"
+  - "construct"
+  - "introduces"
+  - "variable"
+  - "limited"
+  - "scope"
 ---
 
 

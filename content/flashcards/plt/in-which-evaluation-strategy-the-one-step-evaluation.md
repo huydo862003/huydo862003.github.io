@@ -8,6 +8,13 @@ concepts:
   - one-step-evaluation-relation
 books:
   - chapter-5-the-untyped-pure-lambda-calculus
+tags:
+  - "one step evaluation relation"
+  - "call"
+  - "normal"
+  - "order"
+  - "name"
+  - "value"
 ---
 
 - Normal order.

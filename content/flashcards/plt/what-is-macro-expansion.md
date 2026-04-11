@@ -8,6 +8,14 @@ concepts:
   - macro-expansion
 books:
   - chapter-3-syntactic-sugar
+tags:
+  - "macro expansion"
+  - "code"
+  - "compile-time"
+  - "transformation"
+  - "macro"
+  - "invocations"
+  - "replaced"
 ---
 
 

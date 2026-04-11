@@ -2,12 +2,19 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Transitive"
+description: "A property of a Binary relation $R$ on a set $T$ such that if $t_0\\ R\\ t_1$ and $t_1\\ R\\ t_2$ then $t_0\\ R\\ t_2$, for every $t_0$, $t_1$, $t_2$ $\\in T$."
 journey: plt
 status: mastered
-tags: ["set-theory-relation"]
 books: ["chapter-2-mathematical-preliminaries"]
 dependsOn: []
 blocks: []
+tags:
+  - "set-theory-relation"
+  - "transitive"
+  - "property"
+  - "binary"
+  - "relation"
+  - "set"
 ---
 
 A property of a Binary relation $R$ on a set $T$ such that if $t_0\ R\ t_1$ and $t_1\ R\ t_2$ then $t_0\ R\ t_2$, for every $t_0$, $t_1$, $t_2$ $\in T$.

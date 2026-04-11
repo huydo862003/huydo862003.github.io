@@ -8,6 +8,14 @@ concepts:
   - lexical-static-scope
 books:
   - chapter-1-learning-smol-standard-model-of-languages
+tags:
+  - "lexical static scope"
+  - "binding"
+  - "lexical"
+  - "static"
+  - "scoping"
+  - "resolution"
+  - "strategy"
 ---
 
 

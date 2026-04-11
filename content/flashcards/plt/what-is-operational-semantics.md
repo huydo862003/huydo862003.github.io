@@ -8,6 +8,14 @@ concepts:
   - operational-semantics
 books:
   - chapter-3-untyped-arithmetic-expressions
+tags:
+  - "operational semantics"
+  - "style"
+  - "semantics"
+  - "defines"
+  - "language"
+  - "runs"
+  - "using"
 ---
 
 

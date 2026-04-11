@@ -8,6 +8,14 @@ concepts:
   - proof-assistant-prover
 books:
   - logical-foundations
+tags:
+  - "proof assistant prover"
+  - "automated"
+  - "routine"
+  - "tasks"
+  - "building"
+  - "proofs"
+  - "require"
 ---
 
 - Automated for routine tasks of building proofs.

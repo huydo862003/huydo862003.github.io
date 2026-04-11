@@ -7,6 +7,13 @@ deck: programming-language-basic
 concepts: []
 books:
   - chapter-1-abstract-syntax
+tags:
+  - "programming"
+  - "languages"
+  - "describe"
+  - "computations"
+  - "human"
+  - "machines"
 ---
 
 

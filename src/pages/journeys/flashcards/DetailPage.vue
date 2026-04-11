@@ -171,8 +171,20 @@ const card = computed(() => flashcardStore.cards.find((c) => c.slug === cardSlug
 
 useSeo({
   title: computed(() => card.value?.question),
-  description: computed(() => card.value ? `Flashcard from ${card.value.deck} deck` : undefined),
+  description: computed(() => {
+    const c = card.value;
+    if (!c) return undefined;
+    const answer = c.answer && c.answer !== 'TODO' ? ` Answer: ${c.answer.slice(0, 120)}${c.answer.length > 120 ? '…' : ''}` : '';
+    return `Flashcard from the ${c.deck} deck.${answer}`;
+  }),
+  tags: computed(() => {
+    const c = card.value;
+    if (!c) return undefined;
+    return [...(c.tags ?? []), c.deck, slug.value, 'flashcard', 'spaced repetition'];
+  }),
   path: computed(() => `/journeys/${slug.value}/flashcards/${cardSlug.value}`),
+  publishedTime: computed(() => card.value?.createdAt || undefined),
+  modifiedTime: computed(() => card.value?.updatedAt || undefined),
 });
 const flipped = ref(false);
 watch(cardSlug, () => {

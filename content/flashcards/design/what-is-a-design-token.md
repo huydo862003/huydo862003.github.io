@@ -7,6 +7,14 @@ deck: design-system
 concepts:
   - design-token
 books: []
+tags:
+  - "design token"
+  - "documented"
+  - "design"
+  - "decision"
+  - "clear"
+  - "unambiguous"
+  - "name"
 ---
 
 - A documented design decision that has been given a clear and unambiguous name.

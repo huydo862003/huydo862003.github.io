@@ -8,6 +8,14 @@ concepts:
   - pure-untyped-lambda-calculus
 books:
   - chapter-5-the-untyped-pure-lambda-calculus
+tags:
+  - "pure untyped lambda calculus"
+  - "aligned"
+  - "lambda"
+  - "begin"
+  - "end"
+  - "displaystyle"
+  - "frac"
 ---
 
 

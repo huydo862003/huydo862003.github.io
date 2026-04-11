@@ -8,6 +8,14 @@ concepts:
   - language-safety
 books:
   - chapter-5-types
+tags:
+  - "language safety"
+  - "safe"
+  - "language"
+  - "partial"
+  - "operations"
+  - "cannot"
+  - "work"
 ---
 
 

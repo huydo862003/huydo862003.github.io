@@ -8,6 +8,14 @@ concepts:
   - alpha-equivalence
 books:
   - chapter-1-abstract-syntax
+tags:
+  - "alpha equivalence"
+  - "vec"
+  - "alpha"
+  - "rhoi"
+  - "set"
+  - "asts"
+  - "dots"
 ---
 
 

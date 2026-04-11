@@ -7,6 +7,11 @@ deck: type-theory
 concepts: []
 books:
   - chapter-1-introduction
+tags:
+  - "know"
+  - "internals"
+  - "runtime"
+  - "platform"
 ---
 
 

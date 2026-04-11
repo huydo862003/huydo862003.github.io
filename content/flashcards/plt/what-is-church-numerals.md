@@ -9,6 +9,15 @@ concepts:
   - church-numeral
 books:
   - chapter-5-the-untyped-pure-lambda-calculus
+tags:
+  - "pure untyped lambda calculus"
+  - "church numeral"
+  - "lambda"
+  - "church"
+  - "numerals"
+  - "encoding"
+  - "natural"
+  - "numbers"
 ---
 
 

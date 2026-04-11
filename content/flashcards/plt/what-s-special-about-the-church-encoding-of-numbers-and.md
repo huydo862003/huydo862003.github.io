@@ -8,6 +8,14 @@ concepts:
   - church-numeral
 books:
   - chapter-5-the-untyped-pure-lambda-calculus
+tags:
+  - "church numeral"
+  - "list"
+  - "value"
+  - "number"
+  - "lambda"
+  - "stands"
+  - "empty"
 ---
 
 - Both have a base value:

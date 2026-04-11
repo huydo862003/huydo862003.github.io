@@ -8,6 +8,14 @@ concepts:
   - rocq
 books:
   - logical-foundations
+tags:
+  - "rocq"
+  - "programming"
+  - "platform"
+  - "model"
+  - "languages"
+  - "tool"
+  - "write"
 ---
 
 - As a platform to model programming languages.

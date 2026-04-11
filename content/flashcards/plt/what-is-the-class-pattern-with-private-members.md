@@ -8,6 +8,14 @@ concepts:
   - class-pattern
 books:
   - chapter-4-objects
+tags:
+  - "class pattern"
+  - "racket"
+  - "cls"
+  - "args"
+  - "priv1"
+  - "exp1"
+  - "lambda"
 ---
 
 

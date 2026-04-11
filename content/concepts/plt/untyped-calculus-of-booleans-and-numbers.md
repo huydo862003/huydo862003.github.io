@@ -2,13 +2,24 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Untyped calculus of booleans and numbers
+description: "\"Untyped calculus of booleans and numbers\" is a concept in plt (status: learning)."
 journey: plt
 status: learning
-tags: []
 books:
   - chapter-3-untyped-arithmetic-expressions
 dependsOn: []
 blocks: []
+tags:
+  - "text"
+  - "succ"
+  - "else"
+  - "pred"
+  - "iszero"
+  - "textbf"
+  - "tru"
+  - "fls"
+  - "dfrac"
+  - "array"
 ---
 
 $$

@@ -8,6 +8,8 @@ concepts:
   - pure-untyped-lambda-calculus
 books:
   - chapter-3-untyped-arithmetic-expressions
+tags:
+  - "pure untyped lambda calculus"
 ---
 
 

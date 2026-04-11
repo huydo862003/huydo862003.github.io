@@ -10,6 +10,10 @@ concepts:
   - proper-rule
 books:
   - chapter-2-inductive-definitions
+tags:
+  - "axiom"
+  - "rule"
+  - "proper rule"
 ---
 
 

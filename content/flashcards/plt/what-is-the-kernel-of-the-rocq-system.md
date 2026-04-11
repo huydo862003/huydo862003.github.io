@@ -7,5 +7,6 @@ deck: general
 concepts: []
 books:
   - logical-foundations
+tags: []
 ---
 

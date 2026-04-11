@@ -2,12 +2,24 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Rocq kernel"
+description: "\"Rocq kernel\" is a concept in plt (status: learning). Topics: compiler-implementation."
 journey: plt
 status: learning
-tags: ["compiler-implementation"]
 books: ["logical-foundations"]
 dependsOn: []
 blocks: []
+tags:
+  - "compiler-implementation"
+  - "rocq"
+  - "kernel"
+  - "tools"
+  - "formerly"
+  - "coq"
+  - "compiler"
+  - "implementation"
+  - "trusted"
+  - "core"
+  - "type-checks"
 ---
 
 Tools: Rocq (formerly Coq)

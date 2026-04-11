@@ -8,6 +8,14 @@ concepts:
   - conditional-expression
 books:
   - chapter-1-basics-functional-programming-in-rocq
+tags:
+  - "conditional expression"
+  - "inductive"
+  - "types"
+  - "constructors"
+  - "rocq"
+  - "built-in"
+  - "boolean"
 ---
 
 - Inductive types with two constructors.

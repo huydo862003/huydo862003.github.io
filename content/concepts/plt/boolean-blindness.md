@@ -2,12 +2,25 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Boolean blindness"
+description: "→ The boolean discards it; you must later \"remember\" what it meant."
 journey: plt
 status: learning
-tags: ["design-principle", "type-theory"]
 books: []
 dependsOn: []
 blocks: []
+tags:
+  - "design-principle"
+  - "type-theory"
+  - "boolean"
+  - "bit"
+  - "must"
+  - "constructive"
+  - "witness"
+  - "iszero"
+  - "information"
+  - "approach"
+  - "pred"
+  - "blindness"
 ---
 
 - Elaboration

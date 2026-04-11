@@ -8,6 +8,13 @@ concepts:
   - closure
 books:
   - chapter-1-learning-smol-standard-model-of-languages
+tags:
+  - "closure"
+  - "function"
+  - "memorizes"
+  - "surrounding"
+  - "environment"
+  - "access"
 ---
 
 

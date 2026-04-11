@@ -8,6 +8,8 @@ concepts:
   - tree-induction
 books:
   - chapter-2-inductive-definitions
+tags:
+  - "tree induction"
 ---
 
 

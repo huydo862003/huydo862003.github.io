@@ -9,6 +9,14 @@ concepts:
   - function
 books:
   - chapter-2-inductive-definitions
+tags:
+  - "inductive definition"
+  - "function"
+  - "inputs"
+  - "relation"
+  - "between"
+  - "outputs"
+  - "using"
 ---
 
 - Define a relation between inputs and outputs of the function using Inductive definition.

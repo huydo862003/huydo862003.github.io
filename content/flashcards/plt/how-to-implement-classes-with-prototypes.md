@@ -9,6 +9,14 @@ concepts:
   - class
 books:
   - chapter-4-objects
+tags:
+  - "prototype"
+  - "class"
+  - "create"
+  - "delegates"
+  - "child"
+  - "object"
+  - "methods"
 ---
 
 

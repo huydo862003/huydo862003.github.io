@@ -7,5 +7,6 @@ deck: general
 concepts:
 - intuition-over-instruction
 books: []
+tags: []
 ---
 

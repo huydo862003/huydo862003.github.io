@@ -2,12 +2,24 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Directed acyclic graph (DAG)"
+description: "\"Directed acyclic graph (DAG)\" is a concept in plt (status: mastered). Topics: data-structure-algorithm."
 journey: plt
 status: mastered
-tags: ["data-structure-algorithm"]
 books: ["chapter-1-abstract-syntax"]
 dependsOn: []
 blocks: []
+tags:
+  - "data-structure-algorithm"
+  - "edges"
+  - "directed"
+  - "acyclic"
+  - "graph"
+  - "dag"
+  - "direction"
+  - "node"
+  - "another"
+  - "cycles"
+  - "can't"
 ---
 
 - Edges have a direction (from one node to another).

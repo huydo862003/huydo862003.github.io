@@ -2,13 +2,24 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Environment
+description: "(Lambda calculus, Semantics) A finite map from variables to values, used to track substitutions during evaluation."
 journey: plt
 status: learning
-tags: []
 books:
   - chapter-1-learning-smol-standard-model-of-languages
 dependsOn: []
 blocks: []
+tags:
+  - "env"
+  - "environment"
+  - "key"
+  - "lambda"
+  - "calculus"
+  - "semantics"
+  - "finite"
+  - "map"
+  - "variables"
+  - "values"
 ---
 :::key
 (Lambda calculus, Semantics) A finite map from variables to values, used to track substitutions during evaluation.

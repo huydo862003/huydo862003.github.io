@@ -2,12 +2,24 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Full beta-reduction"
+description: "In pure lambda calculus, this strategy is defined by the following rules:"
 journey: plt
 status: mastered
-tags: ["semantics"]
 books: ["chapter-5-the-untyped-pure-lambda-calculus"]
 dependsOn: []
 blocks: []
+tags:
+  - "semantics"
+  - "lambda"
+  - "displaystyle"
+  - "frac"
+  - "full"
+  - "beta-reduction"
+  - "pure"
+  - "calculus"
+  - "strategy"
+  - "defined"
+  - "rules"
 ---
 
 In pure lambda calculus, this strategy is defined by the following rules:

@@ -8,6 +8,14 @@ concepts:
   - capture-avoiding-substitution
 books:
   - chapter-1-abstract-syntax
+tags:
+  - "capture avoiding substitution"
+  - "mathcal"
+  - "vec"
+  - "set"
+  - "family"
+  - "variable"
+  - "notin"
 ---
 
 

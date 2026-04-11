@@ -8,6 +8,14 @@ concepts:
   - application-function-call
 books:
   - chapter-5-the-untyped-pure-lambda-calculus
+tags:
+  - "application function call"
+  - "lambda"
+  - "function"
+  - "application"
+  - "beta-redex"
+  - "reducible"
+  - "expression"
 ---
 
 

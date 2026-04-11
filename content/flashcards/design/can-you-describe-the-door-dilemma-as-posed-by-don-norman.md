@@ -7,5 +7,6 @@ deck: general
 concepts:
 - norman-door
 books: []
+tags: []
 ---
 

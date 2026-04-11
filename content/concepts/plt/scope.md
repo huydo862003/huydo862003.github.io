@@ -2,12 +2,25 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Scope"
+description: "(Semantics) The region of the code that a Binding takes effect."
 journey: plt
 status: mastered
-tags: ["lambda-calculus", "semantics", "syntax-grammar"]
 books: ["chapter-5-the-untyped-pure-lambda-calculus", "chapter-2-evaluation", "chapter-1-abstract-syntax"]
 dependsOn: []
 blocks: []
+tags:
+  - "lambda-calculus"
+  - "semantics"
+  - "syntax-grammar"
+  - "binding"
+  - "case"
+  - "declaration"
+  - "scope"
+  - "key"
+  - "region"
+  - "code"
+  - "takes"
+  - "effect"
 ---
 :::key
 (Semantics) The region of the code that a Binding takes effect.

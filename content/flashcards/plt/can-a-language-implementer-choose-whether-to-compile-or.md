@@ -7,6 +7,13 @@ deck: compiler-implementation
 concepts: []
 books:
   - chapter-2-evaluation
+tags:
+  - "yes"
+  - "language"
+  - "specification"
+  - "doesn't"
+  - "enforce"
+  - "compilation"
 ---
 
 

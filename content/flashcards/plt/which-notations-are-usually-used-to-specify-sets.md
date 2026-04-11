@@ -7,6 +7,12 @@ deck: general
 concepts: []
 books:
   - chapter-2-mathematical-preliminaries
+tags:
+  - "list"
+  - "out"
+  - "members"
+  - "set"
+  - "comprehension"
 ---
 
 - List out all members.

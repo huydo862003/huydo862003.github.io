@@ -8,6 +8,11 @@ concepts:
   - forward-chaining
 books:
   - chapter-2-inductive-definitions
+tags:
+  - "forward chaining"
+  - "chaining"
+  - "forward"
+  - "backward"
 ---
 
 

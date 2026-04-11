@@ -8,6 +8,14 @@ concepts:
   - metatheory
 books:
   - chapter-3-untyped-arithmetic-expressions
+tags:
+  - "metatheory"
+  - "study"
+  - "properties"
+  - "formal"
+  - "system"
+  - "using"
+  - "external"
 ---
 
 

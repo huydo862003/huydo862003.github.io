@@ -2,12 +2,25 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Proposition"
+description: "→ true/false do not merely \"corresponds to reality.\""
 journey: plt
 status: mastered
-tags: ["logic"]
 books: ["chapter-1-basics-functional-programming-in-rocq"]
 dependsOn: []
 blocks: []
+tags:
+  - "logic"
+  - "proposition"
+  - "means"
+  - "boolean"
+  - "intuitionistic"
+  - "constructive"
+  - "refutation"
+  - "value"
+  - "propositions"
+  - "called"
+  - "something"
+  - "conflating"
 ---
 
 - In Intuitionistic/Constructive logic

@@ -13,29 +13,21 @@
         :key="`${item.type}-${item.slug}`"
         class="reads-item"
       >
-        <span :class="`reads-type reads-type-${item.type}`">{{ item.type }}</span>
-        <div class="reads-item-body">
-          <router-link
-            v-if="item.to"
-            :to="item.to"
-            class="reads-item-title"
-          >{{ item.title }}</router-link>
-          <a
-            v-else-if="item.url"
-            :href="item.url"
-            target="_blank"
-            rel="noopener"
-            class="reads-item-title"
-          >{{ item.title }}</a>
-          <span
-            v-else
-            class="reads-item-title no-link"
-          >{{ item.title }}</span>
-          <span
-            v-if="item.meta"
-            class="reads-item-meta"
-          >{{ item.meta }}</span>
-        </div>
+        <component
+          :is="item.to ? 'router-link' : 'a'"
+          v-bind="item.to ? { to: item.to } : { href: item.url, target: '_blank', rel: 'noopener' }"
+          class="reads-item-row"
+          :class="{ 'reads-item-no-link': !item.to && !item.url }"
+        >
+          <span :class="`reads-type reads-type-${item.type}`">{{ item.type }}</span>
+          <div class="reads-item-body">
+            <span class="reads-item-title">{{ item.title }}</span>
+            <span
+              v-if="item.meta"
+              class="reads-item-meta"
+            >{{ item.meta }}</span>
+          </div>
+        </component>
       </li>
       <li
         v-for="i in READS_PAGE_SIZE - pagedReads.length"
@@ -172,24 +164,36 @@ function onFilterUpdate (values: string[][]) {
   @apply list-none p-0 m-0 flex flex-col;
 }
 .reads-item {
-  @apply flex items-start gap-2 border-b border-border/50;
+  @apply border-b border-border/50;
   height: 3.25rem;
-  padding-top: 0.625rem;
 }
 .reads-item-empty {
   @apply border-b border-border/20;
-  padding-top: 0;
+}
+.reads-item-row {
+  @apply flex items-start gap-2 no-underline w-full h-full px-1 -mx-1 rounded-sm
+         transition-colors cursor-pointer;
+  padding-top: 0.625rem;
+}
+.reads-item-row:hover {
+  @apply bg-bg-subtle;
+}
+.reads-item-row:hover .reads-item-title {
+  @apply text-accent-blue;
+}
+.reads-item-no-link {
+  @apply cursor-default;
+}
+.reads-item-no-link:hover {
+  @apply bg-transparent;
 }
 .reads-item-body {
   @apply flex flex-col min-w-0 flex-1;
 }
 .reads-item-title {
-  @apply text-xs text-fg-muted no-underline hover:text-accent-blue transition-colors truncate;
+  @apply text-xs text-fg-muted transition-colors truncate;
   line-height: 1.2rem;
   margin-bottom: 0.2rem;
-}
-.reads-item-title.no-link {
-  @apply cursor-default hover:text-fg-muted;
 }
 .reads-item-meta {
   @apply text-fg-faint truncate;

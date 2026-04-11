@@ -9,6 +9,13 @@ concepts:
   - mixin
 books:
   - chapter-4-objects
+tags:
+  - "trait"
+  - "mixin"
+  - "class"
+  - "classes"
+  - "sense"
+  - "rust's"
 ---
 
 

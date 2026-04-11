@@ -8,6 +8,14 @@ concepts:
   - safe-sound-type-system
 books:
   - chapter-1-introduction
+tags:
+  - "safe sound type system"
+  - "type"
+  - "system"
+  - "sound"
+  - "claim"
+  - "program"
+  - "actually"
 ---
 
 

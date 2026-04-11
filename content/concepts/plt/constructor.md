@@ -2,12 +2,25 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Constructor"
+description: "(Programming paradigm, Language feature/design) In languages with closures or prototypes, a function that returns objects of similar shapes."
 journey: plt
 status: mastered
-tags: ["language-feature-design", "programming-paradigm"]
 books: ["chapter-4-objects", "chapter-1-basics-functional-programming-in-rocq"]
 dependsOn: []
 blocks: []
+tags:
+  - "language-feature-design"
+  - "programming-paradigm"
+  - "language"
+  - "feature"
+  - "design"
+  - "rocq"
+  - "constructor"
+  - "key"
+  - "programming"
+  - "paradigm"
+  - "languages"
+  - "closures"
 ---
 :::key
 (Programming paradigm, Language feature/design) In languages with closures or prototypes, a function that returns objects of similar shapes.

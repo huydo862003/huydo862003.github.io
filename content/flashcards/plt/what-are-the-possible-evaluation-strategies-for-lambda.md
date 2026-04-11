@@ -7,6 +7,13 @@ deck: pure-lambda-calculus
 concepts: []
 books:
   - chapter-5-the-untyped-pure-lambda-calculus
+tags:
+  - "reduced"
+  - "call"
+  - "redexes"
+  - "normal"
+  - "order"
+  - "redex"
 ---
 
 - Full beta-reduction.

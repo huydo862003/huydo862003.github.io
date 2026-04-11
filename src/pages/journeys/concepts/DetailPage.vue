@@ -96,8 +96,23 @@ const concept = computed(() => conceptStore.getBySlug(conceptSlug.value));
 
 useSeo({
   title: computed(() => concept.value?.title),
-  description: computed(() => concept.value ? `${concept.value.status} concept in ${slug.value}` : undefined),
+  description: computed(() => {
+    const c = concept.value;
+    if (!c) return undefined;
+    if (c.description) return c.description;
+    const parts: string[] = [`A ${c.status} concept in the ${slug.value} journey.`];
+    if (c.tags.length) parts.push(`Topics: ${c.tags.join(', ')}.`);
+    if (c.dependsOn.length) parts.push(`Builds on: ${c.dependsOn.join(', ')}.`);
+    return parts.join(' ');
+  }),
+  tags: computed(() => {
+    const c = concept.value;
+    if (!c) return undefined;
+    return [...c.tags, c.journey, c.status, 'concept', 'programming language theory'];
+  }),
   path: computed(() => `/journeys/${slug.value}/concepts/${conceptSlug.value}`),
+  publishedTime: computed(() => concept.value?.createdAt || undefined),
+  modifiedTime: computed(() => concept.value?.updatedAt || undefined),
 });
 
 const journeyConcepts = computed(() => conceptStore.getByJourney(slug.value));

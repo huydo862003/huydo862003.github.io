@@ -8,6 +8,7 @@ const all: Concept[] = allConcepts.map((c) => ({
   updatedAt: c.updatedAt,
   title: c.title,
   journey: c.journey,
+  description: c.description ?? '',
   status: c.status as Concept['status'],
   tags: c.tags,
   books: c.books,

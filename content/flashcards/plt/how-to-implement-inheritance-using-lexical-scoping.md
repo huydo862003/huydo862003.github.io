@@ -7,6 +7,13 @@ deck: general
 concepts: []
 books:
   - chapter-4-objects
+tags:
+  - "make-parent"
+  - "racket"
+  - "cls"
+  - "args"
+  - "parent"
+  - "lambda"
 ---
 
 

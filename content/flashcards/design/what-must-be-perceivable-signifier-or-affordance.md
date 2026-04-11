@@ -8,5 +8,6 @@ concepts:
 - affordance
 - signifier
 books: []
+tags: []
 ---
 

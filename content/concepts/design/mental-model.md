@@ -2,6 +2,7 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Mental model
+description: "\"Mental model\" is a concept in design (status: learning)."
 journey: design
 status: learning
 tags: []

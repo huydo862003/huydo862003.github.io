@@ -8,6 +8,14 @@ concepts:
   - forward-chaining
 books:
   - chapter-2-inductive-definitions
+tags:
+  - "forward chaining"
+  - "chaining"
+  - "construction"
+  - "start"
+  - "axioms"
+  - "work"
+  - "towards"
 ---
 
 - Forward chaining/Bottom-up construction

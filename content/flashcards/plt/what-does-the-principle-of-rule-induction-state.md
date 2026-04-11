@@ -8,6 +8,8 @@ concepts:
   - rule-induction
 books:
   - chapter-2-inductive-definitions
+tags:
+  - "rule induction"
 ---
 
 

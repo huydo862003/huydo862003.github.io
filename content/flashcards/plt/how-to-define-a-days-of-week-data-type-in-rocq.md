@@ -8,6 +8,14 @@ concepts:
   - rocq
 books:
   - chapter-1-basics-functional-programming-in-rocq
+tags:
+  - "rocq"
+  - "coq"
+  - "inductive"
+  - "day"
+  - "type"
+  - "monday"
+  - "tuesday"
 ---
 
 

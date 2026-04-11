@@ -7,6 +7,13 @@ deck: compiler-implementation
 concepts: []
 books:
   - chapter-5-types
+tags:
+  - "decidable"
+  - "parser"
+  - "easy"
+  - "context-free"
+  - "grammar"
+  - "handling"
 ---
 
 - Parser: Easy context-free grammar handling. Efficient & Decidable algorithms exist.

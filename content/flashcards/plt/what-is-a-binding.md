@@ -8,6 +8,11 @@ concepts:
   - binding
 books:
   - chapter-1-learning-smol-standard-model-of-languages
+tags:
+  - "binding"
+  - "mapping"
+  - "variable"
+  - "value"
 ---
 
 

@@ -8,6 +8,13 @@ concepts:
   - congruence
 books:
   - chapter-1-abstract-syntax
+tags:
+  - "congruence"
+  - "equivalence"
+  - "relation"
+  - "preserved"
+  - "under"
+  - "operation"
 ---
 
 

@@ -8,6 +8,14 @@ concepts:
   - type-inference
 books:
   - chapter-5-types
+tags:
+  - "type inference"
+  - "report"
+  - "text"
+  - "must"
+  - "error"
+  - "sometimes"
+  - "multiple"
 ---
 
 

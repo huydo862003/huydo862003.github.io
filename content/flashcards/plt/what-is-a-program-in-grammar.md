@@ -8,6 +8,11 @@ concepts:
   - program
 books:
   - chapter-3-untyped-arithmetic-expressions
+tags:
+  - "program"
+  - "starting"
+  - "symbol"
+  - "grammar"
 ---
 
 

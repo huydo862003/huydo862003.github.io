@@ -6,6 +6,12 @@ answer: "TODO"
 deck: type-theory
 concepts: []
 books: ["chapter-5-types"]
+tags:
+  - "loop"
+  - "spine"
+  - "short"
+  - "guaranteed"
+  - "ribs"
 ---
 
 - Loop spine.

@@ -8,6 +8,14 @@ concepts:
   - if-splitting
 books:
   - chapter-5-types
+tags:
+  - "if splitting"
+  - "union"
+  - "types"
+  - "if-splittings"
+  - "eliminate"
+  - "conditionals"
+  - "introduce"
 ---
 
 - If-splittings eliminate union types.

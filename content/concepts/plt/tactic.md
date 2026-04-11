@@ -2,13 +2,24 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Tactic
+description: "\"Tactic\" is a concept in plt (status: learning)."
 journey: plt
 status: learning
-tags: []
 books:
   - chapter-1-basics-functional-programming-in-rocq
 dependsOn: []
 blocks: []
+tags:
+  - "rocq"
+  - "tactic"
+  - "tools"
+  - "formerly"
+  - "coq"
+  - "language"
+  - "feature"
+  - "design"
+  - "formal"
+  - "system"
 ---
 
 Tools: Rocq (formerly Coq)

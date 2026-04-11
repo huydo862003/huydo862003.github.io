@@ -9,6 +9,13 @@ concepts:
   - value
 books:
   - chapter-3-untyped-arithmetic-expressions
+tags:
+  - "term"
+  - "value"
+  - "set"
+  - "values"
+  - "subset"
+  - "terms"
 ---
 
 

@@ -8,6 +8,12 @@ concepts:
   - object-language
 books:
   - chapter-3-untyped-arithmetic-expressions
+tags:
+  - "object language"
+  - "formal"
+  - "language"
+  - "defined"
+  - "metalanguage"
 ---
 
 

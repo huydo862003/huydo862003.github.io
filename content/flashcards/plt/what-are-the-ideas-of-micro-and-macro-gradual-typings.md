@@ -10,6 +10,16 @@ concepts:
   - micro-gradual-typing
 books:
   - chapter-5-types
+tags:
+  - "gradual typing"
+  - "macro gradual typing"
+  - "micro gradual typing"
+  - "gradual"
+  - "typing"
+  - "untyped"
+  - "type"
+  - "typed"
+  - "languages"
 ---
 
 

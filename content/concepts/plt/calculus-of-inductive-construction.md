@@ -2,12 +2,25 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Calculus of Inductive Construction"
+description: "\"Calculus of Inductive Construction\" is a concept in plt (status: learning). Topics: computation-theory, formal-system, logic."
 journey: plt
 status: learning
-tags: ["computation-theory", "formal-system", "logic"]
 books: []
 dependsOn: []
 blocks: []
+tags:
+  - "computation-theory"
+  - "formal-system"
+  - "logic"
+  - "inductive"
+  - "rocq"
+  - "theory"
+  - "types"
+  - "calculus"
+  - "construction"
+  - "tools"
+  - "formerly"
+  - "coq"
 ---
 
 Tools: Rocq (formerly Coq)

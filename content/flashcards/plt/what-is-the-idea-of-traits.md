@@ -8,6 +8,13 @@ concepts:
   - trait
 books:
   - chapter-4-objects
+tags:
+  - "trait"
+  - "mixin"
+  - "generalization"
+  - "multiple"
+  - "traits"
+  - "applied"
 ---
 
 

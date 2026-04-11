@@ -6,6 +6,14 @@ answer: "TODO"
 deck: language-theory
 concepts: ["expression-problem"]
 books: ["chapter-5-types"]
+tags:
+  - "expression problem"
+  - "data"
+  - "fundamental"
+  - "tension"
+  - "language"
+  - "design"
+  - "extend"
 ---
 
 

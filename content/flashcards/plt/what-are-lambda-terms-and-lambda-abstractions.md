@@ -8,6 +8,14 @@ concepts:
   - lambda-calculus
 books:
   - chapter-5-the-untyped-pure-lambda-calculus
+tags:
+  - "lambda calculus"
+  - "lambda"
+  - "terms"
+  - "syntactic"
+  - "constructs"
+  - "calculus"
+  - "abstractions"
 ---
 
 

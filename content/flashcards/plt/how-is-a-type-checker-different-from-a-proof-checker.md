@@ -7,6 +7,13 @@ deck: type-theory
 concepts: []
 books:
   - chapter-1-introduction
+tags:
+  - "type"
+  - "checker"
+  - "theoretically"
+  - "full"
+  - "program"
+  - "meets"
 ---
 
 

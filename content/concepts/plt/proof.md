@@ -2,12 +2,25 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Proof"
+description: "\"Proof\" is a concept in plt (status: reviewing). Topics: formal-system, language-feature-design, logic, programming-paradigm, proof-reason-technique."
 journey: plt
 status: reviewing
-tags: ["formal-system", "language-feature-design", "logic", "programming-paradigm", "proof-reason-technique"]
 books: []
 dependsOn: []
 blocks: []
+tags:
+  - "formal-system"
+  - "language-feature-design"
+  - "logic"
+  - "programming-paradigm"
+  - "proof-reason-technique"
+  - "rocq"
+  - "reason"
+  - "technique"
+  - "term"
+  - "tools"
+  - "formerly"
+  - "coq"
 ---
 
 Tools: Rocq (formerly Coq)

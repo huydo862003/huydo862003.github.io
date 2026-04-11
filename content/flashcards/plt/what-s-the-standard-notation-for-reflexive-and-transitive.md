@@ -7,6 +7,12 @@ deck: set-theory-relation
 concepts: []
 books:
   - chapter-2-mathematical-preliminaries
+tags:
+  - "relation"
+  - "reflexive"
+  - "transitive"
+  - "closure"
+  - "denoted"
 ---
 
 

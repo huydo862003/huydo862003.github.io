@@ -8,6 +8,14 @@ concepts:
   - church-numeral
 books:
   - chapter-5-the-untyped-pure-lambda-calculus
+tags:
+  - "church numeral"
+  - "numbers"
+  - "their"
+  - "operations"
+  - "programs"
+  - "written"
+  - "using"
 ---
 
 

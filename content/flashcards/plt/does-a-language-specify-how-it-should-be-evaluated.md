@@ -9,6 +9,9 @@ concepts:
   - interpreter
 books:
   - chapter-2-evaluation
+tags:
+  - "compiler"
+  - "interpreter"
 ---
 
 

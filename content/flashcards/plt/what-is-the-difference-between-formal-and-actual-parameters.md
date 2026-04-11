@@ -7,6 +7,13 @@ deck: programming-language-basic
 concepts: []
 books:
   - chapter-1-learning-smol-standard-model-of-languages
+tags:
+  - "function"
+  - "parameter"
+  - "formal"
+  - "parameters"
+  - "defined"
+  - "headers"
 ---
 
 - Formal parameter: The function parameters as defined in the function headers.

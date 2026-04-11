@@ -8,6 +8,8 @@ concepts:
   - rocq
 books:
   - chapter-1-basics-functional-programming-in-rocq
+tags:
+  - "rocq"
 ---
 
 

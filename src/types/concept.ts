@@ -4,6 +4,7 @@ export interface Concept {
   updatedAt: string;
   title: string;
   journey: string;
+  description: string;
   status: 'learning' | 'reviewing' | 'mastered';
   tags: string[];
   books: string[];

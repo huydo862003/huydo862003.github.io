@@ -2,12 +2,23 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Judgment"
+description: "(Logic) The mental act of affirming or denying a Proposition is true."
 journey: plt
 status: reviewing
-tags: ["logic"]
 books: ["chapter-5-types", "chapter-2-inductive-definitions", "chapter-3-hypothetical-and-general-judgments"]
 dependsOn: []
 blocks: []
+tags:
+  - "logic"
+  - "proposition"
+  - "judgment"
+  - "act"
+  - "language"
+  - "mental"
+  - "affirming"
+  - "denying"
+  - "propositions"
+  - "content"
 ---
 :::key
 (Logic) The mental act of affirming or denying a Proposition is true.

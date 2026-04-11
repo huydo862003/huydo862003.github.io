@@ -7,6 +7,11 @@ deck: set-theory-relation
 concepts: []
 books:
   - chapter-1-abstract-syntax
+tags:
+  - "terms"
+  - "related"
+  - "treated"
+  - "indiscriminately"
 ---
 
 

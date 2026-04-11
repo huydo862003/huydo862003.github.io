@@ -2,12 +2,25 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Parsing"
+description: "(Compiler implementation) The process of converting Concrete/Surface syntax into [Abstract syntax tree (AST)](/journeys/plt/concepts/abstract-syntax-tree-ast)s."
 journey: plt
 status: mastered
-tags: ["compiler-implementation", "linguistics", "syntax-grammar"]
 books: ["chapter-5-the-untyped-pure-lambda-calculus"]
 dependsOn: []
 blocks: []
+tags:
+  - "compiler-implementation"
+  - "linguistics"
+  - "syntax-grammar"
+  - "syntax"
+  - "process"
+  - "converting"
+  - "grammar"
+  - "parsing"
+  - "key"
+  - "compiler"
+  - "implementation"
+  - "concrete"
 ---
 :::key
 (Compiler implementation) The process of converting Concrete/Surface syntax into [Abstract syntax tree (AST)](/journeys/plt/concepts/abstract-syntax-tree-ast)s.

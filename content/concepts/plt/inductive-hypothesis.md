@@ -2,12 +2,25 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Inductive hypothesis"
+description: "\\displaystyle\\frac{a_1\\ J \\ \\dots \\ a_k\\ J}{a\\ J}"
 journey: plt
 status: reviewing
-tags: ["logic", "proof-reason-technique", "set-theory-relation"]
 books: ["chapter-2-inductive-definitions"]
 dependsOn: []
 blocks: []
+tags:
+  - "logic"
+  - "proof-reason-technique"
+  - "set-theory-relation"
+  - "mathcal"
+  - "inductive"
+  - "displaystyle"
+  - "frac"
+  - "dots"
+  - "hypothesis"
+  - "typically"
+  - "show"
+  - "case"
 ---
 
 $$

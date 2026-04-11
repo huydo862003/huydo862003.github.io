@@ -8,6 +8,14 @@ concepts:
   - syntactic-sugar
 books:
   - chapter-3-syntactic-sugar
+tags:
+  - "syntactic sugar"
+  - "core"
+  - "calculus"
+  - "proofs"
+  - "easily"
+  - "derived"
+  - "surface"
 ---
 
 - The core calculus can be minimal, so that proofs about them can be easily derived and the compiler implementation can be kept simple.

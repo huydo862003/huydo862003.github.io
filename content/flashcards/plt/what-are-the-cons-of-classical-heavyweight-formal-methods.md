@@ -7,6 +7,11 @@ deck: language-theory
 concepts: []
 books:
   - chapter-1-introduction
+tags:
+  - "cumbersome"
+  - "sophisticated"
+  - "mathematically"
+  - "heavy"
 ---
 
 - Cumbersome.

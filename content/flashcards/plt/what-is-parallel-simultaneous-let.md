@@ -8,6 +8,14 @@ concepts:
   - parallel-simultaneous-let
 books:
   - chapter-1-learning-smol-standard-model-of-languages
+tags:
+  - "parallel simultaneous let"
+  - "parallel"
+  - "simultaneous"
+  - "syntactic"
+  - "construct"
+  - "scheme"
+  - "bindings"
 ---
 
 

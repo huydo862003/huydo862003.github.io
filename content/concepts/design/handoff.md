@@ -2,13 +2,25 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Handoff
+description: "The specific workflow phase where designers deliver finalized specifications, assets, and redlines to developers for implementation."
 journey: design
 status: reviewing
-tags:
-  - design-ops
 books: []
 dependsOn: []
 blocks: []
+tags:
+  - "design-ops"
+  - "handoff"
+  - "specific"
+  - "workflow"
+  - "phase"
+  - "designers"
+  - "deliver"
+  - "finalized"
+  - "specifications"
+  - "assets"
+  - "redlines"
+  - "developers"
 ---
 
 The specific workflow phase where designers deliver finalized specifications, assets, and redlines to developers for implementation.

@@ -7,6 +7,13 @@ deck: proof-technique
 concepts: []
 books:
   - chapter-2-inductive-definitions
+tags:
+  - "inference"
+  - "rules"
+  - "judgment"
+  - "form"
+  - "cannot"
+  - "contain"
 ---
 
 

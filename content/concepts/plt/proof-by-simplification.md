@@ -2,13 +2,24 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Proof by simplification
+description: "\"Proof by simplification\" is a concept in plt (status: learning)."
 journey: plt
 status: learning
-tags: []
 books:
   - chapter-1-basics-functional-programming-in-rocq
 dependsOn: []
 blocks: []
+tags:
+  - "technique"
+  - "rocq"
+  - "reason"
+  - "reduces"
+  - "expressions"
+  - "using"
+  - "computation"
+  - "rules"
+  - "simplification"
+  - "tools"
 ---
 
 Tools: Rocq (formerly Coq)

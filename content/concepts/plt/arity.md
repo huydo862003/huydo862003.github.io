@@ -2,12 +2,25 @@
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Arity"
+description: "(Syntax & Grammar) According to Practical foundations for programming languages , a syntactic type signature of an Operator, determining the Sort of an operator and the number and the sorts of the arg"
 journey: plt
 status: mastered
-tags: ["language-feature-design", "semantics", "set-theory-relation", "syntax-grammar"]
 books: ["chapter-5-types", "chapter-1-abstract-syntax"]
 dependsOn: []
 blocks: []
+tags:
+  - "language-feature-design"
+  - "semantics"
+  - "set-theory-relation"
+  - "syntax-grammar"
+  - "dots"
+  - "operator"
+  - "sort"
+  - "arity"
+  - "vec"
+  - "context"
+  - "mathcal"
+  - "key"
 ---
 :::key
 (Syntax & Grammar) According to Practical foundations for programming languages , a syntactic type signature of an Operator, determining the Sort of an operator and the number and the sorts of the arguments expected by the operator.
