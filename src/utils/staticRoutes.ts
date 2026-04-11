@@ -81,5 +81,14 @@ export function generateRoutes (): string[] {
   };
   walkBooks('content/books');
 
+  // Papers - journey comes from frontmatter
+  for (const entry of fs.readdirSync('content/papers', { withFileTypes: true }).filter((e) => e.isFile() && e.name.endsWith('.md'))) {
+    const fp = path.join('content/papers', entry.name);
+    const journey = frontmatterField(fp, 'journey');
+    if (journey) {
+      routes.push(`/journeys/${journey}/papers/${path.basename(entry.name, '.md')}`);
+    }
+  }
+
   return routes;
 }

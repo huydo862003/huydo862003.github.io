@@ -71,21 +71,19 @@
             :key="j.slug"
             class="item"
           >
-            <div class="item-body">
+            <router-link
+              :to="`/journeys/${j.slug}`"
+              class="item-body item-body-link"
+            >
               <div class="item-row">
-                <router-link
-                  :to="`/journeys/${j.slug}`"
-                  class="item-link"
-                >
-                  {{ j.title }}
-                </router-link>
+                <span class="item-link">{{ j.title }}</span>
                 <span :class="`status-${j.status}`">{{ j.status }}</span>
               </div>
               <span
                 v-if="j.description"
                 class="desc"
               >{{ j.description }}</span>
-            </div>
+            </router-link>
           </li>
         </ul>
         <p
@@ -103,22 +101,29 @@
             :key="p.name"
             class="item"
           >
-            <div class="item-body">
+            <a
+              :href="p.repo"
+              target="_blank"
+              rel="noopener"
+              class="item-body item-body-link"
+            >
               <div class="project-header">
-                <a
-                  :href="p.repo"
-                  target="_blank"
-                  rel="noopener"
+                <span
+                  v-tooltip="{ content: p.repo, placement: 'bottom' }"
                   class="item-link"
-                >{{ p.name }}</a>
+                >
+                  <PhArrowSquareOut :size="11" class="ext-icon" />{{ p.name }}
+                </span>
                 <span :class="`status-${p.status}`">{{ p.status }}</span>
               </div>
               <div
                 v-if="p.npm || p.docs"
                 class="project-links"
+                @click.stop
               >
                 <a
                   v-if="p.npm"
+                  v-tooltip="{ content: p.npm, placement: 'bottom' }"
                   :href="p.npm"
                   target="_blank"
                   rel="noopener"
@@ -128,6 +133,7 @@
                 </a>
                 <a
                   v-if="p.docs"
+                  v-tooltip="{ content: p.docs, placement: 'bottom' }"
                   :href="p.docs"
                   target="_blank"
                   rel="noopener"
@@ -140,10 +146,12 @@
               <div
                 v-if="p.links?.length"
                 class="project-links"
+                @click.stop
               >
                 <a
                   v-for="l in p.links"
                   :key="l.url"
+                  v-tooltip="{ content: l.url, placement: 'bottom' }"
                   :href="l.url"
                   target="_blank"
                   rel="noopener"
@@ -159,7 +167,7 @@
                   class="cat-tag"
                 >{{ t }}</span>
               </div>
-            </div>
+            </a>
           </li>
         </ul>
       </div>
@@ -170,7 +178,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import {
-  PhPackage, PhReadCvLogo, PhNewspaper,
+  PhPackage, PhReadCvLogo, PhNewspaper, PhArrowSquareOut,
 } from '@phosphor-icons/vue';
 import { useSeo } from '@/composables/useSeo';
 import { useThoughtStore } from '@/stores/thoughts';
@@ -267,10 +275,22 @@ const projects = [
   @apply list-none p-0 m-0 flex flex-col gap-3;
 }
 .item {
-  @apply border-l-2 border-fg-faint/30 pl-3 py-1;
+  @apply border-l-2 border-fg-faint/30 pl-3 py-1 rounded-sm transition-colors;
+}
+.item:has(.item-body-link:hover) {
+  @apply bg-bg-subtle border-accent-blue/50;
 }
 .item-body {
   @apply flex flex-col;
+}
+.item-body-link {
+  @apply no-underline cursor-pointer;
+}
+.item-body-link:hover .item-link {
+  @apply text-accent-blue;
+}
+.ext-icon {
+  @apply inline-block mr-1 opacity-50 shrink-0;
 }
 .item-row {
   @apply flex flex-wrap gap-x-3 gap-y-0.5 items-baseline;

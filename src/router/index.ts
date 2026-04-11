@@ -77,6 +77,11 @@ export const routes: RouteRecordRaw[] = [
     component: () => import('@/pages/journeys/papers/ListPage.vue'),
   },
   {
+    path: '/journeys/:slug/papers/:paperSlug',
+    name: 'paper-detail',
+    component: () => import('@/pages/journeys/papers/DetailPage.vue'),
+  },
+  {
     path: '/journeys/:slug/books/:bookSlug',
     name: 'book-detail',
     component: () => import('@/pages/journeys/books/DetailPage.vue'),

@@ -15,8 +15,13 @@
       >
         <span :class="`reads-type reads-type-${item.type}`">{{ item.type }}</span>
         <div class="reads-item-body">
+          <router-link
+            v-if="item.to"
+            :to="item.to"
+            class="reads-item-title"
+          >{{ item.title }}</router-link>
           <a
-            v-if="item.url"
+            v-else-if="item.url"
             :href="item.url"
             target="_blank"
             rel="noopener"
@@ -104,6 +109,7 @@ const readsItems = computed(() => {
       slug: b.slug,
       type: 'book',
       title: b.title,
+      to: `/journeys/${b.journey}/books/${b.slug}`,
       url: '',
       meta: [b.author, b.date].filter(Boolean).join(' · '),
     }));
@@ -122,6 +128,7 @@ const readsItems = computed(() => {
       slug: p.slug,
       type: 'paper',
       title: p.title,
+      to: `/journeys/${p.journey}/papers/${p.slug}`,
       url: p.url,
       meta: [p.authors.join(', '), p.venue, p.year].filter(Boolean).join(' · '),
     }));

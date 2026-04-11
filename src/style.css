@@ -635,3 +635,8 @@ th.sortable:hover {
   color: var(--color-fg-faint);
   margin-bottom: 0.5rem;
 }
+
+.v-popper--theme-tooltip .v-popper__inner {
+  font-size: 0.625rem;
+  line-height: 1rem;
+}
