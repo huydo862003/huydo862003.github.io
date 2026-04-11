@@ -110,6 +110,10 @@ const navLinks = [
     label: 'Journeys',
     to: '/journeys',
   },
+  {
+    label: 'Reads',
+    to: '/reads',
+  },
 ];
 </script>
 

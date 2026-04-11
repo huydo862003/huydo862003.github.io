@@ -15,7 +15,11 @@
       </router-view>
     </main>
     <FooterBar v-if="!isGraph" />
-    <CommandPalette ref="palette" />
+    <CommandPalette
+      ref="palette"
+      @open-graph-side="graphPanel?.toggle()"
+    />
+    <GraphSidePanel ref="graphPanel" />
   </div>
 </template>
 
@@ -27,10 +31,12 @@ import { useRouter } from 'vue-router';
 import NavBar from '@/components/layout/NavBar.vue';
 import FooterBar from '@/components/layout/FooterBar.vue';
 import { useKeyboard } from '@/composables/useKeyboard';
+import GraphSidePanel from '@/components/GraphSidePanel.vue';
 
 const CommandPalette = defineAsyncComponent(() => import('@/components/CommandPalette.vue'));
 
 const palette = ref<InstanceType<typeof CommandPalette>>();
+const graphPanel = ref<InstanceType<typeof GraphSidePanel>>();
 const router = useRouter();
 const { register } = useKeyboard();
 

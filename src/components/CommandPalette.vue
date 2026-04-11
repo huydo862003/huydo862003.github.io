@@ -102,7 +102,7 @@ import {
 } from 'vue';
 import { useRouter } from 'vue-router';
 import {
-  PhHouse, PhFlag, PhArticle,
+  PhHouse, PhFlag, PhArticle, PhGraph,
   PhMagnifyingGlass,
 } from '@phosphor-icons/vue';
 import { useConceptStore } from '@/stores/concepts';
@@ -115,7 +115,8 @@ import SKbdShortcut from '@/components/common/SKbdShortcut.vue';
 
 interface PaletteItem {
   label: string;
-  to: string;
+  to?: string;
+  action?: () => void;
   type?: string;
   icon?: object;
   shortcutKeys?: string[];
@@ -126,6 +127,8 @@ const query = ref('');
 const activeIndex = ref(0);
 const inputEl = ref<HTMLInputElement>();
 const router = useRouter();
+
+const emit = defineEmits<{ (e: 'open-graph-side'): void }>();
 
 const conceptStore = useConceptStore();
 const flashcardStore = useFlashcardStore();
@@ -152,6 +155,12 @@ const navItems = computed<PaletteItem[]>(() => [
     to: '/journeys',
     icon: PhFlag,
     shortcutKeys: ['Alt', 'J'],
+  },
+  {
+    label: 'Open Graph (Side)',
+    action: () => emit('open-graph-side'),
+    icon: PhGraph,
+    shortcutKeys: ['Alt', 'G'],
   },
   ...journeyStore.journeys.map((j) => ({
     label: j.title,
@@ -239,8 +248,12 @@ function close () {
 
 function go (item: PaletteItem | undefined) {
   if (!item) return;
-  router.push(item.to);
   close();
+  if (item.action) {
+    item.action();
+  } else if (item.to) {
+    router.push(item.to);
+  }
 }
 
 defineExpose({

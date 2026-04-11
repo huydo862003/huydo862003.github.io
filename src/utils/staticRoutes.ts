@@ -25,6 +25,7 @@ export function generateRoutes (): string[] {
     '/thoughts',
     '/archived',
     '/journeys',
+    '/reads',
     '/graph',
   ];
 
