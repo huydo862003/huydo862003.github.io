@@ -1,7 +1,7 @@
 ---
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: How to encode booleans and conditionals using Church booleans in lambda calculus?
+question: "How to encode booleans and conditionals using church booleans in lambda calculus?"
 answer: TODO
 deck: pure-lambda-calculus
 concepts:

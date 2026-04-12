@@ -13,7 +13,9 @@
 </template>
 
 <script setup lang="ts">
-import { Dropdown as VDropdown } from 'floating-vue';
+import {
+  Dropdown as VDropdown,
+} from 'floating-vue';
 </script>
 
 <style scoped>

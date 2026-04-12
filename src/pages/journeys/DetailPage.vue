@@ -92,20 +92,42 @@
 import {
   computed, watch, defineAsyncComponent,
 } from 'vue';
-import { useAsyncState } from '@vueuse/core';
-import { useRoute } from 'vue-router';
+import {
+  useAsyncState,
+} from '@vueuse/core';
+import {
+  useRoute,
+} from 'vue-router';
 import {
   PhFlag, PhBrain, PhCards, PhBook, PhRss, PhNewspaper,
 } from '@phosphor-icons/vue';
-import { useSeo } from '@/composables/useSeo';
-import { useJourneyStore } from '@/stores/journeys';
-import { usePhaseStore } from '@/stores/phases';
-import { useConceptStore } from '@/stores/concepts';
-import { useFlashcardStore } from '@/stores/flashcards';
-import { useBookStore } from '@/stores/books';
-import { useBlogs } from '@/stores/blogs';
-import { usePaperStore } from '@/stores/papers';
-import { loadContent } from '@/utils/content';
+import {
+  useSeo,
+} from '@/composables/useSeo';
+import {
+  useJourneyStore,
+} from '@/stores/journeys';
+import {
+  usePhaseStore,
+} from '@/stores/phases';
+import {
+  useConceptStore,
+} from '@/stores/concepts';
+import {
+  useFlashcardStore,
+} from '@/stores/flashcards';
+import {
+  useBookStore,
+} from '@/stores/books';
+import {
+  useBlogs,
+} from '@/stores/blogs';
+import {
+  usePaperStore,
+} from '@/stores/papers';
+import {
+  loadContent,
+} from '@/utils/content';
 import ResourcePagination from '@/components/content/ResourcePagination.vue';
 import SBreadcrumb from '@/components/common/SBreadcrumb.vue';
 
@@ -113,7 +135,9 @@ const GiscusComment = defineAsyncComponent(() => import('@/components/content/gi
 
 const route = useRoute();
 const journeyStore = useJourneyStore();
-const { getBySlug } = journeyStore;
+const {
+  getBySlug,
+} = journeyStore;
 const phaseStore = usePhaseStore();
 const conceptStore = useConceptStore();
 const flashcardStore = useFlashcardStore();
@@ -170,16 +194,19 @@ const phaseStats = computed(() => {
   };
 });
 
-function ringStyle (s: { segments: { pct: number;
-  color: string; }[]; }) {
-  const parts: string[] = [];
+function ringStyle (s: {segments: {pct: number;
+  color: string;}[];}) {
+  const parts: string[] = [
+  ];
   let acc = 0;
   for (const seg of s.segments) {
     parts.push(`${seg.color} ${acc}% ${acc + seg.pct}%`);
     acc += seg.pct;
   }
   parts.push(`var(--color-bg-subtle) ${acc}% 100%`);
-  return { background: `conic-gradient(${parts.join(', ')})` };
+  return {
+    background: `conic-gradient(${parts.join(', ')})`,
+  };
 }
 
 const reviewedToday = computed(() => {

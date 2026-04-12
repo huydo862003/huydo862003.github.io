@@ -1,7 +1,7 @@
 ---
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: What does it mean to say Church numerals represent ordinary numbers?
+question: "What does it mean to say church numerals represent ordinary numbers?"
 answer: TODO
 deck: pure-lambda-calculus
 concepts:

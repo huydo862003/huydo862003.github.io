@@ -29,8 +29,12 @@
 </template>
 
 <script setup lang="ts" generic="T extends Record<string, any>">
-import { computed } from 'vue';
-import type { SCardConfig } from './SCard.vue';
+import {
+  computed,
+} from 'vue';
+import type {
+  SCardConfig,
+} from './SCard.vue';
 
 const props = defineProps<{
   items: T[];
@@ -87,9 +91,13 @@ function hasChildren (item: T): boolean {
 
 function getChildren (item: T): T[] {
   const resolver = props.config.childrenResolver;
-  if (!resolver) return [];
+  if (!resolver) return [
+  ];
   const children = resolver(item);
-  return Array.isArray(children) ? children : [];
+  return Array.isArray(children)
+    ? children
+    : [
+    ];
 }
 
 const showMeta = computed(() => {
@@ -106,7 +114,8 @@ const showMeta = computed(() => {
 
 function metaValue (item: T): string {
   const config = props.config;
-  const metaKeys = config.metaKeys ?? [];
+  const metaKeys = config.metaKeys ?? [
+  ];
   const data = item as Record<string, any>;
 
   for (const key of metaKeys) {

@@ -1,7 +1,7 @@
 ---
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: Are there booleans, strings, numbers defined in Rocq?
+question: "Are there booleans, strings, numbers defined in rocq?"
 answer: TODO
 deck: rocq-programming-language
 concepts:

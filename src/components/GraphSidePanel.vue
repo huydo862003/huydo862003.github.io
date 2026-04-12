@@ -55,7 +55,10 @@
             title="Close graph"
             @click="open = false"
           >
-            <PhX :size="14" weight="bold" />
+            <PhX
+              :size="14"
+              weight="bold"
+            />
           </button>
         </div>
       </div>
@@ -120,11 +123,22 @@ function stopResize () {
 onUnmounted(stopResize);
 
 // ── Public API ──────────────────────────────────────────────────────────────
-function show () { open.value = true; }
-function close () { open.value = false; }
-function toggle () { open.value = !open.value; }
+function show () {
+  open.value = true;
+}
+function close () {
+  open.value = false;
+}
+function toggle () {
+  open.value = !open.value;
+}
 
-defineExpose({ show, close, toggle, open });
+defineExpose({
+  show,
+  close,
+  toggle,
+  open,
+});
 </script>
 
 <style scoped>

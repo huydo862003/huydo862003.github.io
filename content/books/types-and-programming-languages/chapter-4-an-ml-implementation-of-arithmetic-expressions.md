@@ -1,7 +1,7 @@
 ---
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Chapter 4. An ML Implementation of Arithmetic Expressions"
+title: "Chapter 4. an ML implementation of arithmetic expressions"
 author: "Benjamin C. Pierce"
 date: ""
 journey: plt

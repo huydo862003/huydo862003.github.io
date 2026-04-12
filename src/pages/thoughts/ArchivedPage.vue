@@ -38,9 +38,13 @@
 
 <script setup lang="ts">
 import SBreadcrumb from '@/components/common/SBreadcrumb.vue';
-import { useThoughtStore } from '@/stores/thoughts';
+import {
+  useThoughtStore,
+} from '@/stores/thoughts';
 
-const { archivedThoughts: archivedPosts } = useThoughtStore();
+const {
+  archivedThoughts: archivedPosts,
+} = useThoughtStore();
 </script>
 
 <style scoped>

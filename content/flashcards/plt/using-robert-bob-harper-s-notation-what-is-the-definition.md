@@ -1,7 +1,7 @@
 ---
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: Using Robert (Bob) Harper's notation, what is the definition of variable substitution?
+question: "Using robert (bob) harper's notation, what is the definition of variable substitution?"
 answer: TODO
 deck: language-theory
 concepts:

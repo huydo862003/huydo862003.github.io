@@ -1,7 +1,7 @@
 ---
 createdAt: '2026-03-28'
 updatedAt: '2026-03-28'
-question: What are the differences between Rust crates and Rust modules?
+question: "What are the differences between rust crates and rust modules?"
 answer: TODO
 deck: general
 concepts:

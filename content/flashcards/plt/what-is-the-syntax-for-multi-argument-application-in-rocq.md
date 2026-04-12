@@ -1,7 +1,7 @@
 ---
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: What is the syntax for multi-argument application in Rocq?
+question: "What is the syntax for multi-argument application in rocq?"
 answer: TODO
 deck: rocq-programming-language
 concepts:

@@ -45,11 +45,19 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue';
-import { useRoute } from 'vue-router';
+import {
+  computed,
+} from 'vue';
+import {
+  useRoute,
+} from 'vue-router';
 import SBreadcrumb from '@/components/common/SBreadcrumb.vue';
-import { usePhaseStore } from '@/stores/phases';
-import { useSeo } from '@/composables/useSeo';
+import {
+  usePhaseStore,
+} from '@/stores/phases';
+import {
+  useSeo,
+} from '@/composables/useSeo';
 
 const route = useRoute();
 const slug = computed(() => route.params.slug as string);

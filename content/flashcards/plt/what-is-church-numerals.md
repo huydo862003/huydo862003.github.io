@@ -1,7 +1,7 @@
 ---
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: What is Church numerals?
+question: "What is church numerals?"
 answer: TODO
 deck: pure-lambda-calculus
 concepts:

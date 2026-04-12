@@ -1,7 +1,7 @@
 ---
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Calculus of Inductive Construction"
+title: "Calculus of inductive construction"
 description: "\"Calculus of Inductive Construction\" is a concept in plt (status: learning). Topics: computation-theory, formal-system, logic."
 journey: plt
 status: learning

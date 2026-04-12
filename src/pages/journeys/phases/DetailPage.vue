@@ -122,17 +122,37 @@
 import {
   ref, computed, watch, defineAsyncComponent,
 } from 'vue';
-import { useAsyncState } from '@vueuse/core';
-import { useRoute } from 'vue-router';
-import { PhBook } from '@phosphor-icons/vue';
-import { useSeo } from '@/composables/useSeo';
-import { usePhaseStore } from '@/stores/phases';
-import { useBookStore } from '@/stores/books';
+import {
+  useAsyncState,
+} from '@vueuse/core';
+import {
+  useRoute,
+} from 'vue-router';
+import {
+  PhBook,
+} from '@phosphor-icons/vue';
+import {
+  useSeo,
+} from '@/composables/useSeo';
+import {
+  usePhaseStore,
+} from '@/stores/phases';
+import {
+  useBookStore,
+} from '@/stores/books';
 import SCard from '@/components/content/book/SCard.vue';
-import type { SCardConfig } from '@/components/content/book/SCard.vue';
-import type { Book } from '@/types/book';
-import { loadContent } from '@/utils/content';
-import { formatSlug } from '@/utils/format';
+import type {
+  SCardConfig,
+} from '@/components/content/book/SCard.vue';
+import type {
+  Book,
+} from '@/types/book';
+import {
+  loadContent,
+} from '@/utils/content';
+import {
+  formatSlug,
+} from '@/utils/format';
 import ResourcePagination from '@/components/content/ResourcePagination.vue';
 import SBreadcrumb from '@/components/common/SBreadcrumb.vue';
 
@@ -179,8 +199,10 @@ watch(phase, () => reloadContent());
 
 const rootBooks = computed(() => {
   const seen = new Set<string>();
-  const roots: NonNullable<ReturnType<typeof bookStore.getBySlug>>[] = [];
-  for (const s of phase.value?.books ?? []) {
+  const roots: NonNullable<ReturnType<typeof bookStore.getBySlug>>[] = [
+  ];
+  for (const s of phase.value?.books ?? [
+  ]) {
     let b = bookStore.getBySlug(s);
     if (!b) continue;
     while (b.parent) {
@@ -200,8 +222,13 @@ const bookConfig = computed((): SCardConfig<Book> => ({
   titleKey: 'title',
   icon: PhBook,
   routeTemplate: '/journeys/{journeySlug}/books/{slug}',
-  routeParams: { journeySlug: slug.value },
-  metaKeys: ['author', 'date'],
+  routeParams: {
+    journeySlug: slug.value,
+  },
+  metaKeys: [
+    'author',
+    'date',
+  ],
   childrenResolver: (book) => book.children
     .map((s) => bookStore.getBySlug(s))
     .filter((c): c is NonNullable<typeof c> => !!c),
@@ -212,7 +239,8 @@ const conceptSearch = ref('');
 const conceptPage = ref(1);
 
 const filteredConcepts = computed(() => {
-  const all = phase.value?.concepts ?? [];
+  const all = phase.value?.concepts ?? [
+  ];
   if (!conceptSearch.value) return all;
   const q = conceptSearch.value.toLowerCase();
   return all.filter((c) => c.toLowerCase().includes(q));

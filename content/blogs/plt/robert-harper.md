@@ -1,7 +1,7 @@
 ---
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: existentialtype.wordpress.com
+title: "Existentialtype.wordpress.com"
 url: https://existentialtype.wordpress.com/
 author: Robert Harper
 journey: plt

@@ -180,6 +180,7 @@ const graph = defineCollection({
   name: 'graph',
   directory: 'content',
   include: '**/*.md',
+  exclude: ['_configs/**'],
   schema: z.object({
     title: z.string().default(''),
     question: z.string().default(''),

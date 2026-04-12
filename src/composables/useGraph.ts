@@ -1,7 +1,9 @@
 import {
   onMounted, onUnmounted, type Ref,
 } from 'vue';
-import { useRouter } from 'vue-router';
+import {
+  useRouter,
+} from 'vue-router';
 import {
   nodes, edges, TYPE_COLORS, nodeRoute, type GraphNode,
 } from '@/utils/graph';
@@ -33,14 +35,20 @@ export function useGraph (container: Ref<HTMLElement | undefined>, height: Ref<n
 
   onMounted(async () => {
     if (!container.value) return;
-    const { default: ForceGraph } = await import('force-graph');
+    const {
+      default: ForceGraph,
+    } = await import('force-graph');
     const h = typeof height === 'number' ? height : height.value;
 
     // force-graph types don't match its runtime API
     graph = (ForceGraph as any)()(container.value)
       .graphData({
-        nodes: nodes.map((n) => ({ ...n })),
-        links: edges.map((e) => ({ ...e })),
+        nodes: nodes.map((n) => ({
+          ...n,
+        })),
+        links: edges.map((e) => ({
+          ...e,
+        })),
       })
       .nodeId('id')
       .nodeLabel((n: GraphNode) => `${n.title} (${n.type})`)

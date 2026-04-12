@@ -157,16 +157,34 @@
 import {
   ref, computed, watch, defineAsyncComponent,
 } from 'vue';
-import { useAsyncState } from '@vueuse/core';
-import { useRoute } from 'vue-router';
-import { PhBook, PhArrowSquareOut } from '@phosphor-icons/vue';
-import { useSeo } from '@/composables/useSeo';
-import { useBookStore } from '@/stores/books';
-import { loadContent } from '@/utils/content';
-import { formatSlug } from '@/utils/format';
-import type { Book } from '@/types/book';
+import {
+  useAsyncState,
+} from '@vueuse/core';
+import {
+  useRoute,
+} from 'vue-router';
+import {
+  PhBook, PhArrowSquareOut,
+} from '@phosphor-icons/vue';
+import {
+  useSeo,
+} from '@/composables/useSeo';
+import {
+  useBookStore,
+} from '@/stores/books';
+import {
+  loadContent,
+} from '@/utils/content';
+import {
+  formatSlug,
+} from '@/utils/format';
+import type {
+  Book,
+} from '@/types/book';
 import SCard from '@/components/content/book/SCard.vue';
-import type { SCardConfig } from '@/components/content/book/SCard.vue';
+import type {
+  SCardConfig,
+} from '@/components/content/book/SCard.vue';
 import ResourcePagination from '@/components/content/ResourcePagination.vue';
 import SBreadcrumb from '@/components/common/SBreadcrumb.vue';
 
@@ -185,8 +203,13 @@ const bookConfig = computed((): SCardConfig<Book> => ({
   titleKey: 'title',
   icon: PhBook,
   routeTemplate: '/journeys/{journeySlug}/books/{slug}',
-  routeParams: { journeySlug: slug.value },
-  metaKeys: ['author', 'date'],
+  routeParams: {
+    journeySlug: slug.value,
+  },
+  metaKeys: [
+    'author',
+    'date',
+  ],
   childrenResolver: (book) => book.children
     .map((s) => bookStore.getBySlug(s))
     .filter((c): c is NonNullable<typeof c> => !!c),
@@ -222,8 +245,10 @@ watch(book, () => reloadContent());
 
 // Flat list of all books in this journey for prev/next navigation
 const allJourneyBooks = computed(() => {
-  if (!book.value) return [];
-  const flat: Book[] = [];
+  if (!book.value) return [
+  ];
+  const flat: Book[] = [
+  ];
   function collect (slugs: string[]) {
     for (const s of slugs) {
       const b = bookStore.getBySlug(s);
@@ -246,7 +271,8 @@ const conceptSearch = ref('');
 const conceptPage = ref(1);
 
 const filteredConcepts = computed(() => {
-  const all = book.value?.concepts ?? [];
+  const all = book.value?.concepts ?? [
+  ];
   if (!conceptSearch.value) return all;
   const q = conceptSearch.value.toLowerCase();
   return all.filter((c) => c.toLowerCase().includes(q));

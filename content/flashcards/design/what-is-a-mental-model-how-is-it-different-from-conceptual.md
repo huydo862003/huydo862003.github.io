@@ -1,7 +1,7 @@
 ---
 createdAt: '2026-03-28'
 updatedAt: '2026-03-28'
-question: What is a mental model? How is it different from conceptual model?
+question: "What is a mental model? how is it different from conceptual model?"
 answer: TODO
 deck: general
 concepts:

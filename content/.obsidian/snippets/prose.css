@@ -1,0 +1,420 @@
+body {
+  --prose-accent-red:    #c44;
+  --prose-accent-green:  #2a7a3a;
+  --prose-accent-blue:   #48c;
+  --prose-accent-yellow: #ca3;
+  --prose-fg:            #1a1a1a;
+  --prose-fg-muted:      #666;
+  --prose-fg-faint:      #999;
+  --prose-bg:            #fff;
+  --prose-bg-subtle:     #f9f9f8;
+  --prose-border:        #e5e5e4;
+  --prose-radius:        3px;
+}
+
+.theme-dark body {
+  --prose-accent-red:    #e66;
+  --prose-accent-green:  #3d9a4d;
+  --prose-accent-blue:   #6ae;
+  --prose-accent-yellow: #ec6;
+  --prose-fg:            #d4d4d4;
+  --prose-fg-muted:      #999;
+  --prose-fg-faint:      #666;
+  --prose-bg:            #141414;
+  --prose-bg-subtle:     #1c1c1c;
+  --prose-border:        #2a2a2a;
+}
+
+
+/* =========================================================
+   READING MODE  (.markdown-rendered / .markdown-preview-view)
+   ========================================================= */
+
+.markdown-rendered,
+.markdown-preview-view {
+  font-size: 1rem;
+  line-height: 1.75;
+  letter-spacing: -0.01em;
+}
+
+.markdown-rendered > *,
+.markdown-preview-view > * {
+  margin-top: 0 !important;
+}
+.markdown-rendered > * + *,
+.markdown-preview-view > * + * {
+  margin-top: 0.5rem !important;
+}
+
+.markdown-rendered h1, .markdown-preview-view h1 {
+  font-size: clamp(1.25rem, 5vw, 1.875rem);
+  font-weight: 700;
+  margin-top: 2rem !important;
+  margin-bottom: 0.25rem !important;
+}
+.markdown-rendered h2, .markdown-preview-view h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 1.75rem !important;
+  margin-bottom: 0.25rem !important;
+}
+.markdown-rendered h3, .markdown-preview-view h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 1.5rem !important;
+  margin-bottom: 0.25rem !important;
+}
+.markdown-rendered h4, .markdown-preview-view h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 1.25rem !important;
+  margin-bottom: 0.25rem !important;
+}
+
+.markdown-rendered p, .markdown-preview-view p {
+  margin-top: 0 !important;
+  margin-bottom: 0.25rem !important;
+}
+
+.markdown-rendered strong, .markdown-preview-view strong {
+  font-weight: 600;
+}
+
+.markdown-rendered a, .markdown-preview-view a {
+  color: var(--prose-accent-blue);
+  text-decoration: underline;
+  text-decoration-color: var(--prose-accent-blue);
+  text-underline-offset: 2px;
+}
+.markdown-rendered a:hover, .markdown-preview-view a:hover {
+  color: var(--prose-fg);
+  text-decoration-color: var(--prose-fg);
+}
+
+.markdown-rendered p code,
+.markdown-rendered li > code,
+.markdown-preview-view p code,
+.markdown-preview-view li > code {
+  font-size: 0.75rem;
+  background: color-mix(in oklch, var(--prose-accent-red) 8%, var(--prose-bg-subtle));
+  color: var(--prose-accent-red);
+  padding: 0.1em 0.35em;
+  border-radius: var(--prose-radius);
+}
+
+.markdown-rendered pre,
+.markdown-preview-view pre {
+  background: var(--prose-bg-subtle) !important;
+  padding: 1rem;
+  overflow-x: auto;
+  border-radius: var(--prose-radius);
+  margin-bottom: 1rem !important;
+  font-size: 0.75rem;
+}
+.markdown-rendered pre code,
+.markdown-preview-view pre code {
+  background: none !important;
+  color: inherit;
+  padding: 0;
+  font-size: 0.75rem;
+}
+
+.markdown-rendered blockquote,
+.markdown-preview-view blockquote {
+  border-left: 2px solid var(--prose-accent-blue);
+  background: color-mix(in oklch, var(--prose-accent-blue) 10%, var(--prose-bg));
+  margin-left: 0;
+  padding: 0.75rem 1rem;
+  border-radius: var(--prose-radius);
+  color: var(--prose-fg-muted);
+  margin-bottom: 0.5rem !important;
+}
+.markdown-rendered blockquote strong,
+.markdown-preview-view blockquote strong {
+  color: var(--prose-fg);
+}
+.markdown-rendered blockquote p,
+.markdown-preview-view blockquote p {
+  margin-bottom: 0 !important;
+}
+.markdown-rendered blockquote > * + *,
+.markdown-preview-view blockquote > * + * {
+  margin-top: 0.25rem !important;
+}
+.markdown-rendered li > blockquote,
+.markdown-preview-view li > blockquote {
+  margin-top: 0.25rem !important;
+  margin-bottom: 0.25rem !important;
+}
+
+.markdown-rendered ul, .markdown-preview-view ul {
+  padding-left: 1.75rem;
+  margin-bottom: 0.25rem !important;
+  list-style-type: disc;
+}
+.markdown-rendered ul ul, .markdown-preview-view ul ul {
+  list-style-type: circle;
+  margin-bottom: 0 !important;
+}
+.markdown-rendered ul ul ul, .markdown-preview-view ul ul ul {
+  list-style-type: square;
+}
+.markdown-rendered ol, .markdown-preview-view ol {
+  padding-left: 1.75rem;
+  margin-bottom: 0.25rem !important;
+  list-style-type: decimal;
+}
+.markdown-rendered li, .markdown-preview-view li {
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+  padding-left: 0.25rem;
+  line-height: 1.75;
+}
+.markdown-rendered li > ul,
+.markdown-rendered li > ol,
+.markdown-preview-view li > ul,
+.markdown-preview-view li > ol {
+  margin-top: 0.4rem !important;
+  margin-bottom: 0 !important;
+}
+
+.markdown-rendered table, .markdown-preview-view table {
+  border-collapse: collapse;
+  margin-bottom: 1rem !important;
+  max-width: 100%;
+  font-size: 0.875rem;
+}
+.markdown-rendered th, .markdown-preview-view th {
+  background: color-mix(in oklch, var(--prose-fg) 6%, var(--prose-bg));
+  font-weight: 600;
+  font-size: 0.8125rem;
+  text-align: left;
+  padding: 0.4rem 0.75rem;
+  border: 1px solid var(--prose-border);
+}
+.markdown-rendered td, .markdown-preview-view td {
+  padding: 0.4rem 0.75rem;
+  border: 1px solid var(--prose-border);
+  font-size: 0.875rem;
+}
+
+.markdown-rendered hr, .markdown-preview-view hr {
+  border: none;
+  border-top: 1px solid var(--prose-border);
+  margin: 2rem 0 !important;
+  opacity: 0.5;
+}
+
+.markdown-rendered img, .markdown-preview-view img {
+  display: block;
+  margin: 1rem auto;
+  max-width: 100%;
+  border-radius: var(--prose-radius);
+}
+
+.markdown-rendered details,
+.markdown-preview-view details {
+  border: 1px solid var(--prose-border);
+  border-radius: var(--prose-radius);
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 1rem !important;
+}
+.markdown-rendered summary,
+.markdown-preview-view summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--prose-fg-faint);
+  user-select: none;
+}
+.markdown-rendered summary:hover,
+.markdown-preview-view summary:hover {
+  color: var(--prose-fg);
+}
+.markdown-rendered details[open] summary,
+.markdown-preview-view details[open] summary {
+  margin-bottom: 0.75rem;
+}
+
+
+/* =========================================================
+   LIVE PREVIEW  (.cm-content)
+   ========================================================= */
+
+.cm-content {
+  font-size: 1rem;
+  line-height: 1.75;
+  letter-spacing: -0.01em;
+}
+
+/* reset all cm-line spacing, then re-add selectively */
+.cm-content .cm-line {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* paragraph gap between blocks */
+.cm-content .cm-line + .cm-line {
+  margin-top: 0 !important;
+}
+
+/* hide heading # markers by default, show faintly on hover without layout shift */
+.cm-content .cm-formatting.cm-formatting-header {
+  color: transparent !important;
+  user-select: none;
+}
+.cm-content .cm-line:hover .cm-formatting.cm-formatting-header {
+  color: var(--prose-fg-faint) !important;
+}
+
+/* headings */
+.cm-content .HyperMD-header-1 {
+  font-size: clamp(1.25rem, 5vw, 1.875rem);
+  font-weight: 700;
+  margin-top: 2rem !important;
+}
+.cm-content .HyperMD-header-2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 1.75rem !important;
+}
+.cm-content .HyperMD-header-3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 1.5rem !important;
+}
+.cm-content .HyperMD-header-4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 1.25rem !important;
+}
+
+/* inline code */
+.cm-content .cm-inline-code {
+  font-size: 0.75rem;
+  background: color-mix(in oklch, var(--prose-accent-red) 8%, var(--prose-bg-subtle)) !important;
+  color: var(--prose-accent-red) !important;
+  padding: 0.1em 0.35em !important;
+  border-radius: var(--prose-radius) !important;
+}
+
+/* code block lines */
+.cm-content .HyperMD-codeblock {
+  font-size: 0.75rem !important;
+  background: var(--prose-bg-subtle) !important;
+  line-height: 1.6 !important;
+}
+.cm-content .HyperMD-codeblock-begin {
+  border-radius: var(--prose-radius) var(--prose-radius) 0 0 !important;
+  padding-top: 0.75rem !important;
+}
+.cm-content .HyperMD-codeblock-end {
+  border-radius: 0 0 var(--prose-radius) var(--prose-radius) !important;
+  padding-bottom: 0.75rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+/* blockquote */
+.cm-content .HyperMD-quote {
+  line-height: 1.75 !important;
+  color: var(--prose-fg-muted) !important;
+  background: color-mix(in oklch, var(--prose-accent-blue) 8%, var(--prose-bg)) !important;
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+}
+.cm-content .HyperMD-quote:first-of-type,
+.cm-content .cm-line:not(.HyperMD-quote) + .HyperMD-quote {
+  padding-top: 0.6rem !important;
+  border-radius: var(--prose-radius) var(--prose-radius) 0 0 !important;
+}
+.cm-content .HyperMD-quote:has(+ .cm-line:not(.HyperMD-quote)),
+.cm-content .HyperMD-quote:last-of-type {
+  padding-bottom: 0.6rem !important;
+  border-radius: 0 0 var(--prose-radius) var(--prose-radius) !important;
+}
+
+.cm-blockquote-border {
+  border-left: 2px solid var(--prose-accent-blue) !important;
+}
+
+/* collapse empty blockquote separator lines (lines with only "> ") */
+.cm-content .HyperMD-quote:has(> .cm-formatting-quote:last-child),
+.cm-content .HyperMD-quote:has(> .cm-hmd-indent-in-quote + .cm-formatting-quote:last-child) {
+  line-height: 0.6 !important;
+  font-size: 0.1px !important;
+  overflow: hidden !important;
+}
+
+/* HR */
+.cm-content .HyperMD-hr {
+  border: none !important;
+  border-top: 1px solid var(--prose-border) !important;
+  margin: 2rem 0 !important;
+  opacity: 0.5;
+}
+
+/* list spacing */
+.cm-content .HyperMD-list-line {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  line-height: 1.75 !important;
+}
+
+
+/* =========================================================
+   CALLOUTS  (both modes)
+   ========================================================= */
+
+.callout {
+  border-left: 2px solid var(--prose-accent-blue);
+  background: color-mix(in oklch, var(--prose-accent-blue) 10%, var(--prose-bg));
+  padding: 0.75rem 1rem;
+  border-radius: var(--prose-radius);
+  margin-bottom: 1rem !important;
+  font-size: 0.875rem;
+}
+.callout-title {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--prose-accent-blue);
+  margin-bottom: 0.25rem;
+}
+.callout[data-callout="tip"],
+.callout[data-callout="key"] {
+  border-left-color: var(--prose-accent-green);
+  background: color-mix(in oklch, var(--prose-accent-green) 10%, var(--prose-bg));
+}
+.callout[data-callout="tip"] .callout-title,
+.callout[data-callout="key"] .callout-title {
+  color: var(--prose-accent-green);
+}
+.callout[data-callout="warning"] {
+  border-left-color: var(--prose-accent-yellow);
+  background: color-mix(in oklch, var(--prose-accent-yellow) 10%, var(--prose-bg));
+}
+.callout[data-callout="warning"] .callout-title {
+  color: var(--prose-accent-yellow);
+}
+.callout[data-callout="important"] {
+  border-left-color: var(--prose-accent-red);
+  background: color-mix(in oklch, var(--prose-accent-red) 10%, var(--prose-bg));
+}
+.callout[data-callout="important"] .callout-title {
+  color: var(--prose-accent-red);
+}
+.callout[data-callout="question"] {
+  border-left-color: oklch(0.75 0.12 280);
+  background: color-mix(in oklch, oklch(0.75 0.12 280) 10%, var(--prose-bg));
+}
+.callout[data-callout="question"] .callout-title {
+  color: oklch(0.75 0.12 280);
+}
+.callout[data-callout="insight"] {
+  border-left-color: oklch(0.75 0.12 60);
+  background: color-mix(in oklch, oklch(0.75 0.12 60) 10%, var(--prose-bg));
+}
+.callout[data-callout="insight"] .callout-title {
+  color: oklch(0.75 0.12 60);
+}

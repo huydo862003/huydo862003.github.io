@@ -1,7 +1,7 @@
 ---
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: Logical Foundations
+title: "Logical foundations"
 author: Benjamin C. Pierce et al.
 date: "2010"
 journey: plt

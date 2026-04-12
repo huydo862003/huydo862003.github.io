@@ -283,7 +283,9 @@
 import {
   ref, computed, watch,
 } from 'vue';
-import { useAsyncState } from '@vueuse/core';
+import {
+  useAsyncState,
+} from '@vueuse/core';
 import {
   useRoute, useRouter,
 } from 'vue-router';
@@ -291,20 +293,30 @@ import {
   PhX, PhCheck,
 } from '@phosphor-icons/vue';
 import SBreadcrumb from '@/components/common/SBreadcrumb.vue';
-import { useConceptStore } from '@/stores/concepts';
-import { useFlashcardStore } from '@/stores/flashcards';
-import { useSeo } from '@/composables/useSeo';
+import {
+  useConceptStore,
+} from '@/stores/concepts';
+import {
+  useFlashcardStore,
+} from '@/stores/flashcards';
+import {
+  useSeo,
+} from '@/composables/useSeo';
 import {
   renderMarkdown, loadContent,
 } from '@/utils/content';
 import {
   formatSlug, ringColor,
 } from '@/utils/format';
-import { useTableSort } from '@/composables/useTableSort';
+import {
+  useTableSort,
+} from '@/composables/useTableSort';
 import {
   isDue, isStale, isAnsweredToday, MASTERED_INTERVAL_DAYS,
 } from '@/utils/sm2';
-import type { Flashcard } from '@/types/flashcard';
+import type {
+  Flashcard,
+} from '@/types/flashcard';
 
 const route = useRoute();
 const router = useRouter();
@@ -324,7 +336,9 @@ const activeDeck = computed(() => (route.query.deck as string) || undefined);
 const journeyConcepts = computed(() => conceptStore.getByJourney(slug.value));
 const journeyConceptSlugs = computed(() => journeyConcepts.value.map((c) => c.slug));
 const journeyCards = computed(() => flashcardStore.getByJourney(journeyConceptSlugs.value));
-const journeyDecks = computed(() => [...new Set(journeyCards.value.map((c) => c.deck))].sort());
+const journeyDecks = computed(() => [
+  ...new Set(journeyCards.value.map((c) => c.deck)),
+].sort());
 const journeyStats = computed(() => flashcardStore.statsForCards(journeyCards.value));
 
 const {
@@ -336,10 +350,15 @@ const activePool = computed(() => {
     ? journeyCards.value.filter((c) => c.deck === activeDeck.value)
     : journeyCards.value;
   if (!tableSortKey.value) return pool;
-  const list = [...pool];
+  const list = [
+    ...pool,
+  ];
   const dir = tableSortAsc.value ? 1 : -1;
   const k = tableSortKey.value;
-  const states = new Map(list.map((c) => [c.slug, flashcardStore.getState(c.slug)]));
+  const states = new Map(list.map((c) => [
+    c.slug,
+    flashcardStore.getState(c.slug),
+  ]));
   list.sort((a, b) => {
     if (k === 'question') return dir * a.question.localeCompare(b.question);
     const sa = states.get(a.slug) ?? flashcardStore.getState(a.slug);
@@ -353,8 +372,8 @@ const activePool = computed(() => {
 });
 
 const deckStats = computed(() => {
-  const stats = new Map<string, { count: number;
-    due: number; }>();
+  const stats = new Map<string, {count: number;
+    due: number;}>();
   for (const c of journeyCards.value) {
     const s = stats.get(c.deck) || {
       count: 0,
@@ -369,10 +388,15 @@ const deckStats = computed(() => {
 
 function setQuery (q: Record<string, string | undefined>) {
   const query: Record<string, string> = {};
-  for (const [k, v] of Object.entries(q)) {
+  for (const [
+    k,
+    v,
+  ] of Object.entries(q)) {
     if (v) query[k] = v;
   }
-  router.replace({ query });
+  router.replace({
+    query,
+  });
 }
 
 function openDeck (deck?: string) {
@@ -422,7 +446,8 @@ function lastReviewed (cardSlug: string): string {
   return s.lastReviewedAt || '-';
 }
 
-const queue = ref<Flashcard[]>([]);
+const queue = ref<Flashcard[]>([
+]);
 const currentIndex = ref(0);
 const flipped = ref(false);
 const sessionRight = ref(0);
@@ -457,7 +482,9 @@ function startQuiz () {
   const due = flashcardStore.getDueCards(activePool.value);
   const pool = due.length ? due : activePool.value;
   if (!pool.length) return;
-  queue.value = [...pool];
+  queue.value = [
+    ...pool,
+  ];
   currentIndex.value = 0;
   flipped.value = false;
   sessionRight.value = 0;

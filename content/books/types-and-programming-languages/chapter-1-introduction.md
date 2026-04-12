@@ -1,7 +1,7 @@
 ---
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: Chapter 1. Introduction
+title: "Chapter 1. introduction"
 author: Benjamin C. Pierce
 date: ""
 journey: plt

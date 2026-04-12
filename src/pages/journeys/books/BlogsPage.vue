@@ -101,10 +101,16 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue';
-import { useRoute } from 'vue-router';
+import {
+  computed,
+} from 'vue';
+import {
+  useRoute,
+} from 'vue-router';
 import SBreadcrumb from '@/components/common/SBreadcrumb.vue';
-import { useBlogs } from '@/stores/blogs';
+import {
+  useBlogs,
+} from '@/stores/blogs';
 
 const route = useRoute();
 const slug = computed(() => route.params.slug as string);

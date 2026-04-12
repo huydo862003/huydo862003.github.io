@@ -1,6 +1,6 @@
 ---
 createdAt: "2026-03-28"
-updatedAt: "2026-03-28"
+updatedAt: 2026-04-12
 title: "Notes on module systems"
 url: "Notes on module systems"
 author: ""
@@ -17,13 +17,13 @@ Same context as On the Criteria To Be Used in Decomposing Systems into Modules.
 # First phase
 
 - Title: Notes on module system.
-    
+
     → Not much to say, but it conveys a highly personal take.
     
 - Summary: What a better Module system for Rust would look like…
 - Introduction:
     - Rust's module system is its second most exciting feature after the Borrow checker.
-        
+
         → Why?
         
     - Reasons why the decentralized ecosystems of libraries like [crates.io](http://crates.io/) robust:
@@ -33,20 +33,19 @@ Same context as On the Criteria To Be Used in Decomposing Systems into Modules.
         - No single global namespace, unlike, say C++.
             - In many languages, a library has a global name (e.g., in C++, there is only one `std`). If two libraries use the same name, they collide.
             - A crate in Rust doesn't know its own name - it's cargo who names it and this can be changed:
-                
+
                 ```toml
                 extern_log = { package = "log", version = "1.0" }.
                 ```
-                
-        
+
         → Because names are localized to the "edges" between crates, `crates.io` doesn't need a central authority to ensure that crate A and crate B don't use the same internal names.
-        
+
         **Rust allows linking-in several versions of the same crate without the fear of naming conflicts (via Mangling).**
         
     - However, the author felt that the Concrete/Surface syntax used to express the model of the module system is suboptimal.
-        
+
         In a pre-2018 survey, the Rust Module system is the most confusing aspect after Lifetime.
-        
+
         Post-2018 was better (why?), but still some regular questions about module system.
         
 - Conclusion: Nothing… just a disclaimer that these are not to be taken as the absolute truth.
@@ -58,7 +57,7 @@ The 5Cs:
 - Context:
     - The Rust module system is awesome, offering a way to maintain & manage robust & flexible ecosystem of crates, without some common problems, say namespace pollution, etc.
     - However, it's still very confusing.
-    
+
     → The Rust module system can be better.
     
 - Contributions:
@@ -75,9 +74,8 @@ The 5Cs:
     - Rust module system allows for a robust ecosystem of crates:
         - Separation between Rust crates (physical units of compilation) and Rust modules (logical organization that doesn't really affect compilation).
         - No single global namespace for crates.
-            
+
             → Rust allows linking several versions of the same crate without naming conflicts.
-            
 
 → Quite insightful from the part of the author, however, it can require a bit of context.
 
@@ -87,7 +85,7 @@ The 5Cs:
 
 - First point: Be more precise about Visibility.
     - The most important question about a Rust item: Can it be visible outside of the Compilation unit?
-        
+
         → 2 answers leading to 2 assumptions:
         
         - Closed world (every usage of the item is known).
@@ -97,7 +95,7 @@ The 5Cs:
         > 
         > - Closed world may allow for aggressive optimization and flexibility, but I think it causes a lot of compilation overhead, as this requires informing a crate of external crates when we're compiling external crates, so the used crates cannot be compiled first.
         > - Open world offers the opposite.
-        
+
         **→ This should be reflected in the module system.**
         
         - `pub` → Visible inside the whole Compilation unit, but not further (I thought this is visible to the whole world?)
@@ -109,12 +107,12 @@ The 5Cs:
         > → Hmm, it seems like this is only the author's desired state?
         > 
     - These can be achieved in today's Rust with `pub(crate)`, `-Dunreachable_pub` + some tolerance for compiler's false positive.
-        
+
         However, other parts of the Rust's module system, such as `pub(in some::path)` do not really hold their weights.
         
         > Making visibilities more precise within a single CU doesn't meaningfully make the code better, as you can control and rewrite all the code anyway.
         > 
-        
+
         Remarks:
         
         - Hmm, I don't really think so… I mean `pub(in some::path)` really does seem clunky, but if visibility is done right, it does help set clear-cut boundary of responsibility between modules in a crate.
@@ -127,20 +125,20 @@ The 5Cs:
         
         > Imports should only introduce the name into module's namespace, and should be separate from intentional re-exports.
         > 
-        
+
         Remarks: I think this is regarding **explicitness**.
         
     - CONSIDER (not 100% sure) banning glob re-exports.
-        
+
         This might be related to the rust-analyzer's 3 architecture for IDE blog posts, where it thinks this aspect of Zig is cool as it helps with local reasoning of toolings.
         
         > Though, as Rust has namespaces, looking at `pub use submod::thing` doesn't tell you whether the thing is a type or a value, so this might not be a meaningful property after all.
         > 
-        
+
         → So having namespaces (like one for types and one for values) defeats the purpose of banning glob re-exports… The import should be explicitly spelling out if an imported item is a type or a value.
         
 - Second point: Improve module tree/directory structure mapping.
-    
+
     Some existing problems relating to visibility:
     
     - Confusion between binary and library crates.
@@ -159,7 +157,7 @@ The 5Cs:
         
         > Large projects which don't have super-strict code style process end up using both the older `foo/mod.rs` and the newer `foo.rs, foo/*` conventions.
         > 
-        
+
         Remarks: I don't think is much of a problem though…
         
     - Forgotten files:
@@ -173,28 +171,27 @@ The 5Cs:
     > - `mod.rs`less system is self-inconsistent. `lib.rs` and `main.rs` *still* behave like `mod.rs`, in a sense that nested modules are their direct siblings, and not in the `lib` directory.
     > - Naming for crates roots (`lib.rs` and `main.rs`) is ad-hoc.
     > - Current system doesn't work well for tools, which have to iteratively discover the module tree. You can't process all of the crate's files in parallel, because you don't know what those files are until you process them.
-    
+
     Remarks: The third point is again, related to Zig.
-    
 
 - A better system
     1. A compilation unit = A directory with Rust source files.
     2. Relative file paths = module paths.
     3. No `mod foo;` nor `mod foo {}`.
-        
+
         Can be useful, but doesn't mean it should be part of the language.
         
     4. Use `mod.rs` but name it `_<name-of-the-module>.rs` instead.
-        
+
         Why:
         
         - Sort it first alphabetically.
         - Generate a unique fuzzy findable name.
-        
+
         Remarks: Mainly for productivity.
         
         - Example
-            
+
             ```markdown
             /home/matklad/projects/regex
               Cargo.toml
@@ -217,7 +214,7 @@ The 5Cs:
                 fuzz.rs
                      
             ```
-            
+
             ```markdown
             
             crate::{
@@ -227,18 +224,18 @@ The 5Cs:
             ```
             
     - Example of conditional compilation
-        
+
         To do conditional compilation, you'd do:
-        
+
         ```markdown
         mutex/
           _mutex.rs
           linux_mutex.rs
           windows_mutex.rs
         ```
-        
+
         where `_mutex.rs` is
-        
+
         ```markdown
         #[cfg(linux)]
         use linux_mutex as os_mutex;
@@ -260,7 +257,7 @@ The 5Cs:
     - Make `use` paths consistent with other paths:
         - Paths in `use` and paths in regular code historically resolved differently, requiring different syntax for the same thing.
         - The 2018 edition improved this but didn't fully eliminate the inconsistency.
-        
+
         ```rust
         // Regular code - works fine
         let map = std::collections::HashMap::new();
@@ -272,7 +269,6 @@ The 5Cs:
         // e.g. a local module named `std` would shadow the crate in one context but not the other
         use std::collections::HashMap;
         ```
-        
 
 # Third phase
 
@@ -283,7 +279,7 @@ The 5Cs:
     ## Summary: Notes on a Better Module System for Rust-like Languages
     
     ### Context
-    
+
     An informal, unedited reflection (confidence ~0.5) on improving Rust's module system, written Nov 27, 2021.
     
     ---
@@ -297,15 +293,15 @@ The 5Cs:
     ---
     
     ### Problem 1: Visibility System
-    
+
     **Current issues:** `pub` is ambiguous about whether something is crate-internal or externally exported.
-    
+
     **Proposed fix - three explicit tiers:**
     
     - No modifier → visible in current module only
     - `pub` → visible anywhere within the crate
     - `pub*` / `export` → visible to external crates
-    
+
     **Other suggestions:**
     
     - `pub(in some::path)` doesn't pull its weight - too complex for too little benefit
@@ -315,7 +311,7 @@ The 5Cs:
     ---
     
     ### Problem 2: Module Tree / Directory Structure
-    
+
     **Common pitfalls today:**
     
     - `mod foo;` accidentally placed in both `main.rs` and `lib.rs`
@@ -324,15 +320,15 @@ The 5Cs:
     - Large projects inconsistently mixing `foo/mod.rs` and `foo.rs` + `foo/*` conventions
     - Source files accidentally left unlinked from the module tree
     - Tooling can't process crate files in parallel since the tree must be discovered incrementally
-    
+
     **Proposed fix - directory = compilation unit:**
     
     - File paths map directly to module paths; no `mod foo;` or `mod foo {}` declarations needed
     - Replace `mod.rs` with `_modulename.rs` (sorts first alphabetically, uniquely fuzzy-findable)
     - `lib.rs` / `main.rs` replaced by a consistent naming convention
-    
+
     **Example structure:**
-    
+
     ```
     src/
       _regex.rs         ← crate root

@@ -1,7 +1,7 @@
 ---
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: Phase 0 - Design as a discipline (recalibration)
+title: "Phase 0 - design as a discipline (recalibration)"
 journey: design
 status: active
 order: 1

@@ -72,15 +72,27 @@
 import {
   computed, watch, defineAsyncComponent,
 } from 'vue';
-import { useAsyncState } from '@vueuse/core';
-import { useRoute } from 'vue-router';
-import { useSeo } from '@/composables/useSeo';
-import { useConceptStore } from '@/stores/concepts';
-import { loadContent } from '@/utils/content';
+import {
+  useAsyncState,
+} from '@vueuse/core';
+import {
+  useRoute,
+} from 'vue-router';
+import {
+  useSeo,
+} from '@/composables/useSeo';
+import {
+  useConceptStore,
+} from '@/stores/concepts';
+import {
+  loadContent,
+} from '@/utils/content';
 import {
   formatSlug, statusProgress, ringColor,
 } from '@/utils/format';
-import { tagHue } from '@/utils/color';
+import {
+  tagHue,
+} from '@/utils/color';
 import SCollapsible from '@/components/common/SCollapsible.vue';
 import ResourcePagination from '@/components/content/ResourcePagination.vue';
 import SBreadcrumb from '@/components/common/SBreadcrumb.vue';
@@ -100,7 +112,9 @@ useSeo({
     const c = concept.value;
     if (!c) return undefined;
     if (c.description) return c.description;
-    const parts: string[] = [`A ${c.status} concept in the ${slug.value} journey.`];
+    const parts: string[] = [
+      `A ${c.status} concept in the ${slug.value} journey.`,
+    ];
     if (c.tags.length) parts.push(`Topics: ${c.tags.join(', ')}.`);
     if (c.dependsOn.length) parts.push(`Builds on: ${c.dependsOn.join(', ')}.`);
     return parts.join(' ');
@@ -108,7 +122,14 @@ useSeo({
   tags: computed(() => {
     const c = concept.value;
     if (!c) return undefined;
-    return [...c.tags, ...c.keywords, c.journey, c.status, 'concept', 'programming language theory'];
+    return [
+      ...c.tags,
+      ...c.keywords,
+      c.journey,
+      c.status,
+      'concept',
+      'programming language theory',
+    ];
   }),
   path: computed(() => `/journeys/${slug.value}/concepts/${conceptSlug.value}`),
   publishedTime: computed(() => concept.value?.createdAt || undefined),
@@ -137,10 +158,12 @@ const {
 watch(concept, () => reloadContent());
 
 const displayTags = computed(() =>
-  (concept.value?.tags ?? []).filter((t) => t !== slug.value));
+  (concept.value?.tags ?? [
+  ]).filter((t) => t !== slug.value));
 
 const bookItems = computed(() =>
-  (concept.value?.books ?? []).map((b) => ({
+  (concept.value?.books ?? [
+  ]).map((b) => ({
     value: b,
     label: formatSlug(b),
     to: `/journeys/${slug.value}/books/${b}`,

@@ -9,8 +9,12 @@
 import {
   ref, onMounted, watch, computed,
 } from 'vue';
-import { useRoute } from 'vue-router';
-import { useThemeStore } from '@/stores/theme';
+import {
+  useRoute,
+} from 'vue-router';
+import {
+  useThemeStore,
+} from '@/stores/theme';
 
 const container = ref<HTMLElement>();
 const route = useRoute();
@@ -44,7 +48,13 @@ function updateTheme () {
   const iframe = container.value?.querySelector<HTMLIFrameElement>('iframe.giscus-frame');
   if (iframe) {
     iframe.contentWindow?.postMessage(
-      { giscus: { setConfig: { theme: dark.value ? 'dark' : 'light' } } },
+      {
+        giscus: {
+          setConfig: {
+            theme: dark.value ? 'dark' : 'light',
+          },
+        },
+      },
       'https://giscus.app',
     );
   }

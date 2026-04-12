@@ -1,6 +1,12 @@
-import { defineStore } from 'pinia';
-import { allBooks } from 'content-collections';
-import type { Book } from '@/types/book';
+import {
+  defineStore,
+} from 'pinia';
+import {
+  allBooks,
+} from 'content-collections';
+import type {
+  Book,
+} from '@/types/book';
 
 const all: Book[] = allBooks.map((b) => ({
   slug: b._meta.fileName.replace('.md', ''),
@@ -20,7 +26,10 @@ const all: Book[] = allBooks.map((b) => ({
   children: b.children,
 })).sort((a, b) => a.title.localeCompare(b.title));
 
-const bySlug = new Map(all.map((b) => [b.slug, b]));
+const bySlug = new Map(all.map((b) => [
+  b.slug,
+  b,
+]));
 
 export const useBookStore = defineStore('books', () => {
   const books = all;

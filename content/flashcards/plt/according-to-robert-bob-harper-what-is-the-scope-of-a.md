@@ -1,7 +1,7 @@
 ---
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: According to Robert (Bob) Harper, what is the scope of a binding?
+question: "According to robert (bob) harper, what is the scope of a binding?"
 answer: TODO
 deck: language-theory
 concepts:

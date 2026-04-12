@@ -1,7 +1,7 @@
 ---
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: Define boolean operations and, or, not for Church booleans?
+question: "Define boolean operations and, or, not for church booleans?"
 answer: TODO
 deck: pure-lambda-calculus
 concepts:

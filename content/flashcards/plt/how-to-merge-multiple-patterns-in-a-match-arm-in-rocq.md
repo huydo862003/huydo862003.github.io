@@ -1,7 +1,7 @@
 ---
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: How to merge multiple patterns in a match arm in Rocq?
+question: "How to merge multiple patterns in a match arm in rocq?"
 answer: TODO
 deck: rocq-programming-language
 concepts: []

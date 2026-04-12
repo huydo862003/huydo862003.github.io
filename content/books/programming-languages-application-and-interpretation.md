@@ -1,7 +1,7 @@
 ---
 createdAt: "2026-03-28"
 updatedAt: "2026-04-11"
-title: "Programming languages: Application and Interpretation"
+title: "Programming languages: application and interpretation"
 author: Shriram Krishnamurthi
 date: "2012"
 journey: plt

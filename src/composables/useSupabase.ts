@@ -1,9 +1,15 @@
-import { createClient } from '@supabase/supabase-js';
+import {
+  createClient,
+} from '@supabase/supabase-js';
 import {
   ref, computed,
 } from 'vue';
-import type { User } from '@supabase/supabase-js';
-import { useRoute } from 'vue-router';
+import type {
+  User,
+} from '@supabase/supabase-js';
+import {
+  useRoute,
+} from 'vue-router';
 
 const SUPABASE_URL = 'https://nohbnyxvynepzdekfjzd.supabase.co';
 const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_EQRjHyuiioInquIecMzZig_99rp4C6H'; // publishable key - safe to be published with RLS policy
@@ -13,7 +19,9 @@ export const supabase = createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
 const user = ref<User | undefined>();
 const loading = ref(true);
 
-supabase.auth.getSession().then(({ data }) => {
+supabase.auth.getSession().then(({
+  data,
+}) => {
   user.value = data.session?.user ?? undefined;
   loading.value = false;
 
@@ -53,14 +61,18 @@ export function useAuth () {
   async function signInWithGithub () {
     await supabase.auth.signInWithOAuth({
       provider: 'github',
-      options: { redirectTo: redirectUrl() },
+      options: {
+        redirectTo: redirectUrl(),
+      },
     });
   }
 
   async function signInWithGoogle () {
     await supabase.auth.signInWithOAuth({
       provider: 'google',
-      options: { redirectTo: redirectUrl() },
+      options: {
+        redirectTo: redirectUrl(),
+      },
     });
   }
 
@@ -89,7 +101,10 @@ export function useReviewSync () {
     syncing.value = true;
     error.value = '';
     try {
-      const rows = Object.entries(reviewState).map(([slug, state]) => {
+      const rows = Object.entries(reviewState).map(([
+        slug,
+        state,
+      ]) => {
         const s = state as {
           easeFactor: number;
           interval: number;
@@ -108,9 +123,13 @@ export function useReviewSync () {
         };
       });
 
-      const { error: err } = await supabase
+      const {
+        error: err,
+      } = await supabase
         .from('review_state')
-        .upsert(rows, { onConflict: 'user_id,slug' });
+        .upsert(rows, {
+          onConflict: 'user_id,slug',
+        });
 
       if (err) error.value = err.message;
     } catch (e) {
@@ -138,7 +157,8 @@ export function useReviewSync () {
       }
 
       const state: Record<string, unknown> = {};
-      for (const row of data ?? []) {
+      for (const row of data ?? [
+      ]) {
         state[row.slug] = {
           easeFactor: row.ease_factor,
           interval: row.interval,

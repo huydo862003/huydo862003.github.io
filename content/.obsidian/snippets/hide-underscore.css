@@ -1,0 +1,6 @@
+/* Hide files and folders starting with _ from the file explorer */
+.nav-file-title[data-path^="_"],
+.nav-folder-title[data-path^="_"],
+.nav-folder[data-path^="_"] {
+  display: none;
+}

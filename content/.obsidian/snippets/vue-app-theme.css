@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+body {
+  --font-text: 'Open Sans', sans-serif;
+  --font-monospace: 'JetBrains Mono', monospace;
+  --font-interface: 'Open Sans', sans-serif;
+  --font-text-size: 15px;
+  --line-height-normal: 1.5;
+  --radius-s: 3px;
+  --radius-m: 5px;
+  --radius-l: 8px;
+}
+
+.theme-light {
+  --background-primary:          #fff;
+  --background-primary-alt:      #f9f9f8;
+  --background-secondary:        #f9f9f8;
+  --background-secondary-alt:    #f9f9f8;
+  --background-modifier-border:  #e5e5e4;
+  --background-modifier-border-hover: #e5e5e4;
+  --background-modifier-border-focus: #c8c8c6;
+
+  --text-normal:                 #1a1a1a;
+  --text-muted:                  #666;
+  --text-faint:                  #999;
+  --text-on-accent:              #fff;
+
+  --interactive-accent:          #48c;
+  --interactive-accent-hover:    #6ae;
+  --text-accent:                 #48c;
+  --text-accent-hover:           #6ae;
+
+  --color-red:                   #c44;
+  --color-green:                 #2a7a3a;
+  --color-blue:                  #48c;
+  --color-yellow:                #ca3;
+  --color-orange:                #e89030;
+
+  --divider-color:               #e5e5e4;
+  --divider-color-hover:         #c8c8c6;
+
+  --code-background:             #f9f9f8;
+  --code-normal:                 #1a1a1a;
+  --code-comment:                #999;
+
+  --tag-background:              rgba(72, 136, 204, 0.1);
+  --tag-color:                   #48c;
+  --tag-border-color:            rgba(72, 136, 204, 0.3);
+}
+
+.theme-dark {
+  --background-primary:          #141414;
+  --background-primary-alt:      #1c1c1c;
+  --background-secondary:        #1c1c1c;
+  --background-secondary-alt:    #222;
+  --background-modifier-border:  #2a2a2a;
+  --background-modifier-border-hover: #333;
+  --background-modifier-border-focus: #444;
+
+  --text-normal:                 #d4d4d4;
+  --text-muted:                  #999;
+  --text-faint:                  #666;
+  --text-on-accent:              #fff;
+
+  --interactive-accent:          #6ae;
+  --interactive-accent-hover:    #8cf;
+  --text-accent:                 #6ae;
+  --text-accent-hover:           #8cf;
+
+  --color-red:                   #e66;
+  --color-green:                 #3d9a4d;
+  --color-blue:                  #6ae;
+  --color-yellow:                #ec6;
+  --color-orange:                #f0a050;
+
+  --divider-color:               #2a2a2a;
+  --divider-color-hover:         #333;
+
+  --code-background:             #1c1c1c;
+  --code-normal:                 #c9d1d9;
+  --code-comment:                #8b949e;
+
+  --tag-background:              rgba(102, 170, 238, 0.1);
+  --tag-color:                   #6ae;
+  --tag-border-color:            rgba(102, 170, 238, 0.3);
+}

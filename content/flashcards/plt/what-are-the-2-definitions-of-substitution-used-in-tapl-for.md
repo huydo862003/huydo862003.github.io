@@ -1,7 +1,7 @@
 ---
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: What are the 2 definitions of substitution used in TAPL? For what purposes?
+question: "What are the 2 definitions of substitution used in TAPL? for what purposes?"
 answer: TODO
 deck: pure-lambda-calculus
 concepts:

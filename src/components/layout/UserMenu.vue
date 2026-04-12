@@ -38,9 +38,15 @@
 </template>
 
 <script setup lang="ts">
-import { PhGithubLogo } from '@phosphor-icons/vue';
-import { Dropdown } from 'floating-vue';
-import { useAuth } from '@/composables/useSupabase';
+import {
+  PhGithubLogo,
+} from '@phosphor-icons/vue';
+import {
+  Dropdown,
+} from 'floating-vue';
+import {
+  useAuth,
+} from '@/composables/useSupabase';
 
 const {
   loading, isLoggedIn, displayName, avatarUrl, signInWithGithub, signOut,

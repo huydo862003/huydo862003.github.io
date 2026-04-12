@@ -13,4 +13,3 @@ keywords:
   - "hypothetical"
   - "inductive"
 ---
-

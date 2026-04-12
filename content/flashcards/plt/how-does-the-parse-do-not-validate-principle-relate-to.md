@@ -1,7 +1,7 @@
 ---
 createdAt: '2026-03-28'
 updatedAt: '2026-03-28'
-question: How does the "Parse, do not validate" principle relate to "Boolean blindness"?
+question: "How does the "parse, do not validate" principle relate to "boolean blindness"?"
 answer: TODO
 deck: general
 concepts:

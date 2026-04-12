@@ -1,7 +1,9 @@
 import {
   computed, type Ref,
 } from 'vue';
-import { useHead } from '@unhead/vue';
+import {
+  useHead,
+} from '@unhead/vue';
 
 const SITE = 'Scrambled Kitchen';
 const BASE = 'https://huydo862003.github.io';
@@ -34,9 +36,10 @@ export function useSeo ({
   useHead({
     title: fullTitle,
     meta: computed(() => {
-      const m: { name?: string;
+      const m: {name?: string;
         property?: string;
-        content: string; }[] = [];
+        content: string;}[] = [
+      ];
 
       if (desc.value) {
         m.push({

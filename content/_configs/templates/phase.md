@@ -1,0 +1,10 @@
+---
+createdAt: "<% tp.date.now('YYYY-MM-DD') %>"
+updatedAt: "<% tp.date.now('YYYY-MM-DD') %>"
+title: "<% tp.file.title %>"
+journey: ""
+status: on-hold
+order: 0
+books: []
+concepts: []
+---

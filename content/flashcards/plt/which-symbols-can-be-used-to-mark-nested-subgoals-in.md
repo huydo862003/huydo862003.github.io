@@ -1,7 +1,7 @@
 ---
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: Which symbols can be used to mark nested subgoals in destruct in Rocq?
+question: "Which symbols can be used to mark nested subgoals in destruct in rocq?"
 answer: TODO
 deck: general
 concepts: []
@@ -9,4 +9,3 @@ books:
   - chapter-1-basics-functional-programming-in-rocq
 tags: []
 ---
-

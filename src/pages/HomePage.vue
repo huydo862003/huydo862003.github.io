@@ -112,7 +112,10 @@
                   v-tooltip="{ content: p.repo, placement: 'bottom' }"
                   class="item-link"
                 >
-                  <PhArrowSquareOut :size="11" class="ext-icon" />{{ p.name }}
+                  <PhArrowSquareOut
+                    :size="11"
+                    class="ext-icon"
+                  />{{ p.name }}
                 </span>
                 <span :class="`status-${p.status}`">{{ p.status }}</span>
               </div>
@@ -176,13 +179,21 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import {
+  ref,
+} from 'vue';
 import {
   PhPackage, PhReadCvLogo, PhNewspaper, PhArrowSquareOut,
 } from '@phosphor-icons/vue';
-import { useSeo } from '@/composables/useSeo';
-import { useThoughtStore } from '@/stores/thoughts';
-import { useJourneyStore } from '@/stores/journeys';
+import {
+  useSeo,
+} from '@/composables/useSeo';
+import {
+  useThoughtStore,
+} from '@/stores/thoughts';
+import {
+  useJourneyStore,
+} from '@/stores/journeys';
 
 useSeo({
   title: ref(undefined),
@@ -191,8 +202,12 @@ useSeo({
   type: 'website',
 });
 
-const { getRecent } = useThoughtStore();
-const { journeys } = useJourneyStore();
+const {
+  getRecent,
+} = useThoughtStore();
+const {
+  journeys,
+} = useJourneyStore();
 
 const recentPosts = getRecent(5);
 
@@ -204,7 +219,9 @@ const projects = [
     docs: 'https://huydo862003.github.io/sqlingo.js/',
     npm: 'https://www.npmjs.com/package/@hdnax/sqlingo.js',
     status: 'alpha',
-    tags: ['sql'],
+    tags: [
+      'sql',
+    ],
   },
   {
     name: 'dboxide',
@@ -212,7 +229,10 @@ const projects = [
     repo: 'https://github.com/huydo862003/dboxide',
     docs: 'https://huydo862003.github.io/dboxide',
     status: 'researching',
-    tags: ['parser', 'rust'],
+    tags: [
+      'parser',
+      'rust',
+    ],
   },
   {
     name: 'splicer.js',
@@ -221,7 +241,9 @@ const projects = [
     docs: 'https://huydo862003.github.io/RNA/',
     npm: 'https://www.npmjs.com/package/@hdnax/splicer.js',
     status: 'researching',
-    tags: ['incremental'],
+    tags: [
+      'incremental',
+    ],
   },
   {
     name: 'MPiSC',
@@ -229,7 +251,10 @@ const projects = [
     repo: 'https://github.com/huydo862003/MPiSC',
     docs: 'https://huydo862003.github.io/MPiSC/',
     status: 'done',
-    tags: ['research', 'distributed'],
+    tags: [
+      'research',
+      'distributed',
+    ],
     links: [
       {
         label: 'dLTQueue (FDSE 2025)',
@@ -246,7 +271,10 @@ const projects = [
     desc: 'Exercises and proofs from Software Foundations, TAPL, and PFPL.',
     repo: 'https://github.com/huydo862003/type-theory',
     status: 'active',
-    tags: ['type theory', 'rocq'],
+    tags: [
+      'type theory',
+      'rocq',
+    ],
   },
 ];
 </script>

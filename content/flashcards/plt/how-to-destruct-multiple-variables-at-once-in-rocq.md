@@ -1,7 +1,7 @@
 ---
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: How to destruct multiple variables at once in Rocq?
+question: "How to destruct multiple variables at once in rocq?"
 answer: TODO
 deck: rocq-programming-language
 concepts: []

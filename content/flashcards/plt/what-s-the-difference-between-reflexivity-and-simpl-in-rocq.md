@@ -1,7 +1,7 @@
 ---
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: What's the difference between reflexivity and simpl in Rocq?
+question: "What's the difference between reflexivity and simpl in rocq?"
 answer: TODO
 deck: rocq-programming-language
 concepts:

@@ -1,6 +1,12 @@
-import { defineStore } from 'pinia';
-import { allBlogs } from 'content-collections';
-import type { Blog } from '@/types/blog';
+import {
+  defineStore,
+} from 'pinia';
+import {
+  allBlogs,
+} from 'content-collections';
+import type {
+  Blog,
+} from '@/types/blog';
 
 const all: Blog[] = allBlogs.map((b) => ({
   slug: b._meta.fileName.replace('.md', ''),
@@ -17,7 +23,10 @@ const all: Blog[] = allBlogs.map((b) => ({
   tags: b.tags,
 })).sort((a, b) => a.title.localeCompare(b.title));
 
-const bySlug = new Map(all.map((b) => [b.slug, b]));
+const bySlug = new Map(all.map((b) => [
+  b.slug,
+  b,
+]));
 
 export const useBlogs = defineStore('blogs', () => {
   const blogs = all;

@@ -1,7 +1,7 @@
 ---
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: According to Robert (Bob) Harper, what is an operator, the arity of an operator?
+question: "According to robert (bob) harper, what is an operator, the arity of an operator?"
 answer: TODO
 deck: language-theory
 concepts: []

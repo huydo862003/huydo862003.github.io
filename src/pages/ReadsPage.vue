@@ -1,6 +1,8 @@
 <template>
   <div class="page reads-page">
-    <h1 class="heading">Scrambled Reads</h1>
+    <h1 class="heading">
+      Scrambled Reads
+    </h1>
     <SFilterBar
       :groups="filterGroups"
       :model-values="filterValues"
@@ -47,11 +49,21 @@
 import {
   ref, computed, watch,
 } from 'vue';
-import { useSeo } from '@/composables/useSeo';
-import { useJourneyStore } from '@/stores/journeys';
-import { useBookStore } from '@/stores/books';
-import { useBlogs } from '@/stores/blogs';
-import { usePaperStore } from '@/stores/papers';
+import {
+  useSeo,
+} from '@/composables/useSeo';
+import {
+  useJourneyStore,
+} from '@/stores/journeys';
+import {
+  useBookStore,
+} from '@/stores/books';
+import {
+  useBlogs,
+} from '@/stores/blogs';
+import {
+  usePaperStore,
+} from '@/stores/papers';
 import SFilterBar from '@/components/common/SFilterBar.vue';
 import SPager from '@/components/common/SPager.vue';
 
@@ -62,14 +74,18 @@ useSeo({
   type: 'website',
 });
 
-const { journeys } = useJourneyStore();
+const {
+  journeys,
+} = useJourneyStore();
 const bookStore = useBookStore();
 const blogStore = useBlogs();
 const paperStore = usePaperStore();
 
 const READS_PAGE_SIZE = 5;
-const readsJourneys = ref<string[]>([]);
-const readsTypes = ref<string[]>([]);
+const readsJourneys = ref<string[]>([
+]);
+const readsTypes = ref<string[]>([
+]);
 const readsPage = ref(1);
 
 const readsStats = computed(() => {
@@ -85,9 +101,21 @@ const readsStats = computed(() => {
     : paperStore.papers;
 
   return [
-    { label: 'books', type: 'book', count: books.length },
-    { label: 'posts', type: 'post', count: blogs.length },
-    { label: 'papers', type: 'paper', count: papers.length },
+    {
+      label: 'books',
+      type: 'book',
+      count: books.length,
+    },
+    {
+      label: 'posts',
+      type: 'post',
+      count: blogs.length,
+    },
+    {
+      label: 'papers',
+      type: 'paper',
+      count: papers.length,
+    },
   ];
 });
 
@@ -103,7 +131,10 @@ const readsItems = computed(() => {
       title: b.title,
       to: `/journeys/${b.journey}/books/${b.slug}`,
       url: '',
-      meta: [b.author, b.date].filter(Boolean).join(' · '),
+      meta: [
+        b.author,
+        b.date,
+      ].filter(Boolean).join(' · '),
     }));
 
   const blogs = (js.length ? js.flatMap((j) => blogStore.getPosts(j)) : blogStore.blogs.filter((b) => b.posts.length === 0))
@@ -122,10 +153,18 @@ const readsItems = computed(() => {
       title: p.title,
       to: `/journeys/${p.journey}/papers/${p.slug}`,
       url: p.url,
-      meta: [p.authors.join(', '), p.venue, p.year].filter(Boolean).join(' · '),
+      meta: [
+        p.authors.join(', '),
+        p.venue,
+        p.year,
+      ].filter(Boolean).join(' · '),
     }));
 
-  const all = [...books, ...blogs, ...papers];
+  const all = [
+    ...books,
+    ...blogs,
+    ...papers,
+  ];
   return ts.length ? all.filter((item) => ts.includes(item.type)) : all;
 });
 
@@ -135,16 +174,31 @@ const pagedReads = computed(() => {
   return readsItems.value.slice(start, start + READS_PAGE_SIZE);
 });
 
-watch([readsJourneys, readsTypes], () => {
+watch([
+  readsJourneys,
+  readsTypes,
+], () => {
   readsPage.value = 1;
-}, { deep: true });
+}, {
+  deep: true,
+});
 
 const filterGroups = computed(() => [
-  journeys.map((j) => ({ label: j.title, value: j.slug })),
-  readsStats.value.map((r) => ({ label: `${r.count} ${r.label}`, value: r.type, colorClass: r.type })),
+  journeys.map((j) => ({
+    label: j.title,
+    value: j.slug,
+  })),
+  readsStats.value.map((r) => ({
+    label: `${r.count} ${r.label}`,
+    value: r.type,
+    colorClass: r.type,
+  })),
 ]);
 
-const filterValues = computed(() => [readsJourneys.value, readsTypes.value]);
+const filterValues = computed(() => [
+  readsJourneys.value,
+  readsTypes.value,
+]);
 
 function onFilterUpdate (values: string[][]) {
   readsJourneys.value = values[0];

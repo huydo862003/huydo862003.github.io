@@ -1,7 +1,7 @@
 ---
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: Chapter 2. Mathematical preliminaries
+title: "Chapter 2. mathematical preliminaries"
 author: Benjamin C. Pierce
 date: ""
 journey: plt

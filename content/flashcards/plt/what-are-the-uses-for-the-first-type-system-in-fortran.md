@@ -1,7 +1,7 @@
 ---
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: What are the uses for the first type system in Fortran?
+question: "What are the uses for the first type system in fortran?"
 answer: TODO
 deck: type-theory
 concepts: []

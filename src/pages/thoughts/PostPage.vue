@@ -49,11 +49,21 @@
 import {
   computed, watch, defineAsyncComponent,
 } from 'vue';
-import { useAsyncState } from '@vueuse/core';
-import { useRoute } from 'vue-router';
-import { useSeo } from '@/composables/useSeo';
-import { useThoughtStore } from '@/stores/thoughts';
-import { loadContent } from '@/utils/content';
+import {
+  useAsyncState,
+} from '@vueuse/core';
+import {
+  useRoute,
+} from 'vue-router';
+import {
+  useSeo,
+} from '@/composables/useSeo';
+import {
+  useThoughtStore,
+} from '@/stores/thoughts';
+import {
+  loadContent,
+} from '@/utils/content';
 import ResourcePagination from '@/components/content/ResourcePagination.vue';
 import SBreadcrumb from '@/components/common/SBreadcrumb.vue';
 

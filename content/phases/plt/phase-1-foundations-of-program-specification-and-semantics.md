@@ -1,7 +1,7 @@
 ---
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: Phase 1 - Foundations of program specification and semantics
+title: "Phase 1 - foundations of program specification and semantics"
 journey: plt
 status: active
 order: 1

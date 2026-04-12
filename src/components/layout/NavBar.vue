@@ -104,21 +104,31 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
-import { storeToRefs } from 'pinia';
+import {
+  ref,
+} from 'vue';
+import {
+  storeToRefs,
+} from 'pinia';
 import {
   PhSun, PhMoon, PhList, PhX, PhMagnifyingGlass,
 } from '@phosphor-icons/vue';
-import { useThemeStore } from '@/stores/theme';
+import {
+  useThemeStore,
+} from '@/stores/theme';
 import SLogo from '@/components/common/SLogo.vue';
 import UserMenu from '@/components/layout/UserMenu.vue';
 import SKbdShortcut from '@/components/common/SKbdShortcut.vue';
 
-const emit = defineEmits<{ (e: 'open-palette'): void }>();
+const emit = defineEmits<{(e: 'open-palette'): void}>();
 
 const themeStore = useThemeStore();
-const { isDark } = storeToRefs(themeStore);
-const { toggle } = themeStore;
+const {
+  isDark,
+} = storeToRefs(themeStore);
+const {
+  toggle,
+} = themeStore;
 const open = ref(false);
 
 const navLinks = [

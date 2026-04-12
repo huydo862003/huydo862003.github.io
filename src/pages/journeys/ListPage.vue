@@ -43,13 +43,25 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import {
+  ref,
+} from 'vue';
 import SBreadcrumb from '@/components/common/SBreadcrumb.vue';
-import { useJourneyStore } from '@/stores/journeys';
-import { useSeo } from '@/composables/useSeo';
-import { useConceptStore } from '@/stores/concepts';
-import { useFlashcardStore } from '@/stores/flashcards';
-import { usePhaseStore } from '@/stores/phases';
+import {
+  useJourneyStore,
+} from '@/stores/journeys';
+import {
+  useSeo,
+} from '@/composables/useSeo';
+import {
+  useConceptStore,
+} from '@/stores/concepts';
+import {
+  useFlashcardStore,
+} from '@/stores/flashcards';
+import {
+  usePhaseStore,
+} from '@/stores/phases';
 import {
   plural,
 } from '@/utils/format';
@@ -61,7 +73,9 @@ useSeo({
   type: 'website',
 });
 
-const { journeys } = useJourneyStore();
+const {
+  journeys,
+} = useJourneyStore();
 const conceptStore = useConceptStore();
 const flashcardStore = useFlashcardStore();
 const phaseStore = usePhaseStore();

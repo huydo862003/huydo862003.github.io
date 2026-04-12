@@ -66,14 +66,22 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue';
-import { PhMapPinSimple } from '@phosphor-icons/vue';
-import { Dropdown as VDropdown } from 'floating-vue';
-import { useJourneyStore } from '@/stores/journeys';
+import {
+  computed,
+} from 'vue';
+import {
+  PhMapPinSimple,
+} from '@phosphor-icons/vue';
+import {
+  Dropdown as VDropdown,
+} from 'floating-vue';
+import {
+  useJourneyStore,
+} from '@/stores/journeys';
 
 const props = defineProps<{
-  crumbs: { label: string;
-    to: string; }[];
+  crumbs: {label: string;
+    to: string;}[];
 }>();
 
 const journeyStore = useJourneyStore();

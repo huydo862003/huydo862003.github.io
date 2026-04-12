@@ -39,7 +39,7 @@
       >
         <td
           v-tooltip="{ content: tooltipContent(concept.slug), html: true, delay: { show: 300, hide: 0 }, placement: 'top-start' }"
-          class="font-medium"
+          class="font-medium p-3"
         >
           <router-link
             :to="`/journeys/${slug}/concepts/${concept.slug}`"
@@ -134,26 +134,40 @@
 import {
   ref, computed, watch,
 } from 'vue';
-import { useAsyncState } from '@vueuse/core';
+import {
+  useAsyncState,
+} from '@vueuse/core';
 import {
   useRoute, useRouter,
 } from 'vue-router';
 import SBreadcrumb from '@/components/common/SBreadcrumb.vue';
 import STable from '@/components/common/STable.vue';
-import type { TableColumn } from '@/components/common/STable.vue';
-import { useTableSort } from '@/composables/useTableSort';
-import { useConceptStore } from '@/stores/concepts';
-import { useSeo } from '@/composables/useSeo';
+import type {
+  TableColumn,
+} from '@/components/common/STable.vue';
+import {
+  useTableSort,
+} from '@/composables/useTableSort';
+import {
+  useConceptStore,
+} from '@/stores/concepts';
+import {
+  useSeo,
+} from '@/composables/useSeo';
 import {
   loadContent, getCachedContent,
 } from '@/utils/content';
 import {
   formatSlug, statusProgress, ringColor,
 } from '@/utils/format';
-import { tagHue } from '@/utils/color';
+import {
+  tagHue,
+} from '@/utils/color';
 import SCollapsible from '@/components/common/SCollapsible.vue';
 import DetailModal from '@/components/modal/DetailModal.vue';
-import type { Concept } from '@/types/concept';
+import type {
+  Concept,
+} from '@/types/concept';
 
 const PAGE_SIZE = 50;
 
@@ -216,7 +230,9 @@ const filteredConcepts = computed(() =>
 
 const sortedConcepts = computed(() => {
   if (!sortKey.value) return filteredConcepts.value;
-  const list = [...filteredConcepts.value];
+  const list = [
+    ...filteredConcepts.value,
+  ];
   const dir = sortAsc.value ? 1 : -1;
   if (sortKey.value === 'status') {
     list.sort((a, b) => dir * (statusOrder[a.status] - statusOrder[b.status]) || dir * a.title.localeCompare(b.title));
@@ -250,7 +266,8 @@ const {
 watch(selected, () => reloadContent());
 
 const bookItems = computed(() =>
-  (expanded.value?.books ?? []).map((b) => ({
+  (expanded.value?.books ?? [
+  ]).map((b) => ({
     value: b,
     label: formatSlug(b),
     to: `/journeys/${slug.value}/books/${b}`,

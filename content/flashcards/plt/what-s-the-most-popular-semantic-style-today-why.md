@@ -1,7 +1,7 @@
 ---
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: What's the most popular semantic style today? Why?
+question: "What's the most popular semantic style today? why?"
 answer: TODO
 deck: language-theory
 concepts:

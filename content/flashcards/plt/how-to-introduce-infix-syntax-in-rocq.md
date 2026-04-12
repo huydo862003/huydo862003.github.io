@@ -1,7 +1,7 @@
 ---
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: How to introduce infix syntax in Rocq?
+question: "How to introduce infix syntax in rocq?"
 answer: TODO
 deck: language-theory
 concepts:

@@ -46,9 +46,9 @@ const {
   label, items, columns = 2,
 } = defineProps<{
   label: string;
-  items: { value: string;
+  items: {value: string;
     label: string;
-    to?: string; }[];
+    to?: string;}[];
   columns?: 1 | 2;
 }>();
 

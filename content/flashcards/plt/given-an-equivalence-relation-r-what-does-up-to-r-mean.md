@@ -1,7 +1,7 @@
 ---
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: Given an equivalence relation R, what does "up to R" mean?
+question: "Given an equivalence relation r, what does "up to r" mean?"
 answer: TODO
 deck: set-theory-relation
 concepts: []

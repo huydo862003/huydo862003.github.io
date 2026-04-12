@@ -1,6 +1,12 @@
-import { defineStore } from 'pinia';
-import { allPhases } from 'content-collections';
-import type { Phase } from '@/types/phase';
+import {
+  defineStore,
+} from 'pinia';
+import {
+  allPhases,
+} from 'content-collections';
+import type {
+  Phase,
+} from '@/types/phase';
 
 const all: Phase[] = allPhases.map((p) => ({
   slug: p._meta.fileName.replace('.md', ''),
@@ -14,7 +20,10 @@ const all: Phase[] = allPhases.map((p) => ({
   concepts: p.concepts,
 })).sort((a, b) => a.order - b.order);
 
-const bySlug = new Map(all.map((p) => [p.slug, p]));
+const bySlug = new Map(all.map((p) => [
+  p.slug,
+  p,
+]));
 
 export const usePhaseStore = defineStore('phases', () => {
   const phases = all;

@@ -1,7 +1,7 @@
 ---
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: What is a redex or reducible expression in Church's terminology?
+question: "What is a redex or reducible expression in church's terminology?"
 answer: TODO
 deck: pure-lambda-calculus
 concepts:

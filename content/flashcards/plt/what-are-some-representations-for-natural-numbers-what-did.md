@@ -1,7 +1,7 @@
 ---
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: What are some representations for natural numbers? What did we choose in Rocq?
+question: "What are some representations for natural numbers? what did we choose in rocq?"
 answer: TODO
 deck: rocq-programming-language
 concepts:

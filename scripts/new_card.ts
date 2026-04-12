@@ -1,5 +1,7 @@
 #!/usr/bin/env node
-import { scaffoldContent } from './utils/scaffold';
+import {
+  scaffoldContent,
+} from './utils/scaffold';
 
 const question = process.argv[2];
 const answer = process.argv[3];

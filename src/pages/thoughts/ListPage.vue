@@ -34,10 +34,16 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import {
+  ref,
+} from 'vue';
 import SBreadcrumb from '@/components/common/SBreadcrumb.vue';
-import { useThoughtStore } from '@/stores/thoughts';
-import { useSeo } from '@/composables/useSeo';
+import {
+  useThoughtStore,
+} from '@/stores/thoughts';
+import {
+  useSeo,
+} from '@/composables/useSeo';
 
 useSeo({
   title: ref('Scrambled Thoughts'),
@@ -46,7 +52,9 @@ useSeo({
   type: 'website',
 });
 
-const { thoughts: posts } = useThoughtStore();
+const {
+  thoughts: posts,
+} = useThoughtStore();
 </script>
 
 <style scoped>

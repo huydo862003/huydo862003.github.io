@@ -80,9 +80,13 @@ import {
   PhPlus, PhMinus, PhArrowsOut, PhCrosshair, PhFrameCorners,
   PhCaretDoubleUp, PhCaretDoubleDown,
 } from '@phosphor-icons/vue';
-import { useGraph } from '@/composables/useGraph';
+import {
+  useGraph,
+} from '@/composables/useGraph';
 
-const props = withDefaults(defineProps<{ inPanel?: boolean }>(), { inPanel: false });
+const props = withDefaults(defineProps<{inPanel?: boolean}>(), {
+  inPanel: false,
+});
 
 const wrap = ref<HTMLElement>();
 const container = ref<HTMLElement>();
@@ -126,10 +130,14 @@ let observer: IntersectionObserver | undefined;
 onMounted(() => {
   if (wrap.value) {
     observer = new IntersectionObserver(
-      ([entry]) => {
+      ([
+        entry,
+      ]) => {
         inView.value = entry.isIntersecting;
       },
-      { threshold: 0.1 },
+      {
+        threshold: 0.1,
+      },
     );
     observer.observe(wrap.value);
   }
@@ -143,7 +151,10 @@ onUnmounted(() => {
 });
 
 defineExpose({
-  zoomIn, zoomOut, zoomFit, recenter,
+  zoomIn,
+  zoomOut,
+  zoomFit,
+  recenter,
 });
 </script>
 

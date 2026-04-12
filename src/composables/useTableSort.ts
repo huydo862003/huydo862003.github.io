@@ -1,4 +1,6 @@
-import { ref } from 'vue';
+import {
+  ref,
+} from 'vue';
 
 export function useTableSort (initial = '') {
   const sortKey = ref(initial);

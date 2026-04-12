@@ -1,13 +1,21 @@
-import { defineStore } from 'pinia';
+import {
+  defineStore,
+} from 'pinia';
 import {
   ref, computed,
 } from 'vue';
-import { useDebounceFn } from '@vueuse/core';
-import { allFlashcards } from 'content-collections';
+import {
+  useDebounceFn,
+} from '@vueuse/core';
+import {
+  allFlashcards,
+} from 'content-collections';
 import type {
   Flashcard, ReviewState,
 } from '@/types/flashcard';
-import { todayISO } from '@/utils/date';
+import {
+  todayISO,
+} from '@/utils/date';
 import {
   sm2, isDue, qualityFromCorrect, defaultReviewState, MASTERED_INTERVAL_DAYS,
 } from '@/utils/sm2';
@@ -24,8 +32,10 @@ const allCards: Flashcard[] = allFlashcards.map((c) => ({
   question: c.question,
   answer: c.answer,
   deck: c.deck,
-  tags: c.tags ?? [],
-  keywords: c.keywords ?? [],
+  tags: c.tags ?? [
+  ],
+  keywords: c.keywords ?? [
+  ],
   concepts: c.concepts,
   books: c.books,
 }));
@@ -48,8 +58,13 @@ function mergeStates (
   local: Record<string, ReviewState>,
   remote: Record<string, ReviewState>,
 ): Record<string, ReviewState> {
-  const merged = { ...local };
-  for (const [slug, remoteState] of Object.entries(remote)) {
+  const merged = {
+    ...local,
+  };
+  for (const [
+    slug,
+    remoteState,
+  ] of Object.entries(remote)) {
     const localState = local[slug];
     if (!localState) {
       merged[slug] = remoteState;
@@ -67,7 +82,9 @@ export const useFlashcardStore = defineStore('flashcards', () => {
     typeof window !== 'undefined' ? loadReviewState() : {},
   );
 
-  const { isLoggedIn } = useAuth();
+  const {
+    isLoggedIn,
+  } = useAuth();
   const {
     pushState, pullState,
   } = useReviewSync();
@@ -115,7 +132,9 @@ export const useFlashcardStore = defineStore('flashcards', () => {
     await pushState(reviewState.value);
   }
 
-  const decks = computed(() => [...new Set(cards.map((c) => c.deck))].sort());
+  const decks = computed(() => [
+    ...new Set(cards.map((c) => c.deck)),
+  ].sort());
 
   function statsForCards (pool: Flashcard[]) {
     const today = todayISO();

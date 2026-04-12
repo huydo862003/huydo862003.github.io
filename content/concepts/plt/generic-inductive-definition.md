@@ -13,4 +13,3 @@ keywords:
   - "generic"
   - "inductive"
 ---
-

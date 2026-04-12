@@ -1,7 +1,7 @@
 ---
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: What are judgment/assertion, judgment form, judgment instance, judgment form instance's subject? In what notations are they written in?
+question: "What are judgment/assertion, judgment form, judgment instance, judgment form instance's subject? in what notations are they written in?"
 answer: TODO
 deck: logic-tools
 concepts: []

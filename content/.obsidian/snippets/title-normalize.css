@@ -1,0 +1,26 @@
+.inline-title {
+  font-size: 1.6em !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.5em;
+}
+
+.metadata-property-key input {
+  text-transform: capitalize;
+  letter-spacing: 0.02em;
+  font-size: 0.85em;
+  color: var(--text-muted);
+}
+
+.metadata-property {
+  padding: 2px 0 !important;
+}
+
+.metadata-property-icon {
+  opacity: 0.5;
+}
+
+.metadata-property-icon svg {
+  width: 12px;
+  height: 12px;
+}

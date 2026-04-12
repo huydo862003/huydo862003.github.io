@@ -1,7 +1,7 @@
 ---
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: Chapter 3. Syntactic sugar
+title: "Chapter 3. syntactic sugar"
 author: Shriram Krishnamurthi
 date: ""
 journey: plt

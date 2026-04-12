@@ -1,7 +1,7 @@
 ---
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: Are there many built-in features in Rocq?
+question: "Are there many built-in features in rocq?"
 answer: TODO
 deck: rocq-programming-language
 concepts:

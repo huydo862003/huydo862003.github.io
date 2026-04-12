@@ -1,4 +1,6 @@
-import { allGraphs } from 'content-collections';
+import {
+  allGraphs,
+} from 'content-collections';
 
 export interface GraphNode {
   id: string;
@@ -33,9 +35,13 @@ export const nodes: GraphNode[] = allGraphs.map((n) => ({
   links: 0,
 }));
 
-const nodeMap = new Map(nodes.map((n) => [n.id, n]));
+const nodeMap = new Map(nodes.map((n) => [
+  n.id,
+  n,
+]));
 
-export const edges: GraphEdge[] = [];
+export const edges: GraphEdge[] = [
+];
 for (const n of allGraphs) {
   for (const target of n.forwardLinks) {
     if (slugSet.has(target) && target !== n.slug) {

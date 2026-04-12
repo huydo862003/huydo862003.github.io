@@ -30,15 +30,29 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue';
-import { useRoute } from 'vue-router';
-import { PhBook } from '@phosphor-icons/vue';
+import {
+  computed,
+} from 'vue';
+import {
+  useRoute,
+} from 'vue-router';
+import {
+  PhBook,
+} from '@phosphor-icons/vue';
 import SBreadcrumb from '@/components/common/SBreadcrumb.vue';
-import { useBookStore } from '@/stores/books';
-import { useSeo } from '@/composables/useSeo';
+import {
+  useBookStore,
+} from '@/stores/books';
+import {
+  useSeo,
+} from '@/composables/useSeo';
 import SCard from '@/components/content/book/SCard.vue';
-import type { SCardConfig } from '@/components/content/book/SCard.vue';
-import type { Book } from '@/types/book';
+import type {
+  SCardConfig,
+} from '@/components/content/book/SCard.vue';
+import type {
+  Book,
+} from '@/types/book';
 
 const route = useRoute();
 const slug = computed(() => route.params.slug as string);
@@ -57,8 +71,13 @@ const bookConfig = computed((): SCardConfig<Book> => ({
   titleKey: 'title',
   icon: PhBook,
   routeTemplate: '/journeys/{journeySlug}/books/{slug}',
-  routeParams: { journeySlug: slug.value },
-  metaKeys: ['author', 'date'],
+  routeParams: {
+    journeySlug: slug.value,
+  },
+  metaKeys: [
+    'author',
+    'date',
+  ],
   childrenResolver: (book) => book.children
     .map((s) => bookStore.getBySlug(s))
     .filter((c): c is NonNullable<typeof c> => !!c),

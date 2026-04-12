@@ -1,0 +1,86 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:concepts/plt",
+      "color": {
+        "a": 1,
+        "rgb": 4458788
+      }
+    },
+    {
+      "query": "path:concepts/design",
+      "color": {
+        "a": 1,
+        "rgb": 16744272
+      }
+    },
+    {
+      "query": "path:flashcards",
+      "color": {
+        "a": 1,
+        "rgb": 6749952
+      }
+    },
+    {
+      "query": "path:books",
+      "color": {
+        "a": 1,
+        "rgb": 10053324
+      }
+    },
+    {
+      "query": "path:papers",
+      "color": {
+        "a": 1,
+        "rgb": 16737792
+      }
+    },
+    {
+      "query": "path:journeys",
+      "color": {
+        "a": 1,
+        "rgb": 8900331
+      }
+    },
+    {
+      "query": "path:phases",
+      "color": {
+        "a": 1,
+        "rgb": 11184810
+      }
+    },
+    {
+      "query": "path:thoughts",
+      "color": {
+        "a": 1,
+        "rgb": 16711935
+      }
+    },
+    {
+      "query": "path:blogs",
+      "color": {
+        "a": 1,
+        "rgb": 65535
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": true,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": false,
+  "centerStrength": 0.518713248970312,
+  "repelStrength": 10,
+  "linkStrength": 1,
+  "linkDistance": 30,
+  "scale": 1,
+  "close": true
+}

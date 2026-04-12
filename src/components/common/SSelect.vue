@@ -21,14 +21,18 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue';
-import { PhCaretDown } from '@phosphor-icons/vue';
+import {
+  computed,
+} from 'vue';
+import {
+  PhCaretDown,
+} from '@phosphor-icons/vue';
 import SDropdown from './SDropdown.vue';
 
 const props = defineProps<{
   modelValue: string;
-  options: { value: string;
-    label: string; }[];
+  options: {value: string;
+    label: string;}[];
   placeholder?: string;
 }>();
 

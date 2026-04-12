@@ -21,24 +21,60 @@ let mdInstance: MarkdownItType | undefined;
 async function getMd () {
   if (mdInstance) return mdInstance;
 
-  const LANG_IMPORTS: [string, () => Promise<{ default: unknown }>][] = [
-    ['haskell', () => import('highlight.js/lib/languages/haskell')],
-    ['ocaml', () => import('highlight.js/lib/languages/ocaml')],
-    ['scheme', () => import('highlight.js/lib/languages/scheme')],
-    ['python', () => import('highlight.js/lib/languages/python')],
-    ['javascript', () => import('highlight.js/lib/languages/javascript')],
-    ['typescript', () => import('highlight.js/lib/languages/typescript')],
-    ['bash', () => import('highlight.js/lib/languages/bash')],
-    ['css', () => import('highlight.js/lib/languages/css')],
+  const LANG_IMPORTS: [string, () => Promise<{default: unknown}>][] = [
+    [
+      'haskell',
+      () => import('highlight.js/lib/languages/haskell'),
+    ],
+    [
+      'ocaml',
+      () => import('highlight.js/lib/languages/ocaml'),
+    ],
+    [
+      'scheme',
+      () => import('highlight.js/lib/languages/scheme'),
+    ],
+    [
+      'python',
+      () => import('highlight.js/lib/languages/python'),
+    ],
+    [
+      'javascript',
+      () => import('highlight.js/lib/languages/javascript'),
+    ],
+    [
+      'typescript',
+      () => import('highlight.js/lib/languages/typescript'),
+    ],
+    [
+      'bash',
+      () => import('highlight.js/lib/languages/bash'),
+    ],
+    [
+      'css',
+      () => import('highlight.js/lib/languages/css'),
+    ],
   ];
 
   const [
-    { default: MarkdownIt },
-    { default: anchor },
-    { default: container },
-    { default: texmath },
-    { default: katex },
-    { default: hljs },
+    {
+      default: MarkdownIt,
+    },
+    {
+      default: anchor,
+    },
+    {
+      default: container,
+    },
+    {
+      default: texmath,
+    },
+    {
+      default: katex,
+    },
+    {
+      default: hljs,
+    },
     ...langMods
   ] = await Promise.all([
     import('markdown-it'),
@@ -47,19 +83,25 @@ async function getMd () {
     import('markdown-it-texmath'),
     import('katex'),
     import('highlight.js/lib/core'),
-    ...LANG_IMPORTS.map(([, fn]) => fn()),
+    ...LANG_IMPORTS.map(([
+      , fn,
+    ]) => fn()),
     // Side-effect CSS imports (no value needed)
     import('katex/dist/katex.min.css'),
     import('highlight.js/styles/github.css'),
   ]);
 
   type LanguageFn = Parameters<typeof hljs.registerLanguage>[1];
-  LANG_IMPORTS.forEach(([name], i) => hljs.registerLanguage(name, (langMods[i] as { default: LanguageFn }).default));
+  LANG_IMPORTS.forEach(([
+    name,
+  ], i) => hljs.registerLanguage(name, (langMods[i] as {default: LanguageFn}).default));
   hljs.registerAliases([
     'coq',
     'rocq',
     'v',
-  ], { languageName: 'ocaml' });
+  ], {
+    languageName: 'ocaml',
+  });
 
   const md = new MarkdownIt({
     html: true,
@@ -68,7 +110,9 @@ async function getMd () {
     highlight (str: string, lang: string) {
       if (lang && hljs.getLanguage(lang)) {
         try {
-          return hljs.highlight(str, { language: lang }).value;
+          return hljs.highlight(str, {
+            language: lang,
+          }).value;
         } catch { /* fall through */ }
       }
       return '';
@@ -96,7 +140,7 @@ async function getMd () {
   ];
   for (const type of CALLOUT_TYPES) {
     md.use(container, type, {
-      render (tokens: { nesting: number }[], idx: number) {
+      render (tokens: {nesting: number}[], idx: number) {
         return tokens[idx].nesting === 1
           ? `<div class="callout callout-${type}"><span class="callout-label">${type}</span>\n`
           : '</div>\n';
@@ -236,7 +280,10 @@ const bodyGlob = import.meta.glob('/content/**/*.md', {
 });
 
 const slugToLoader = new Map<string, () => Promise<unknown>>();
-for (const [path, loader] of Object.entries(bodyGlob)) {
+for (const [
+  path,
+  loader,
+] of Object.entries(bodyGlob)) {
   slugToLoader.set(slugFromPath(path), loader);
 }
 
@@ -248,7 +295,9 @@ export async function loadContent (slug: string): Promise<string> {
   if (!loader) return '';
 
   const raw = await loader() as string;
-  const { rawContent } = parseFrontMatter(raw);
+  const {
+    rawContent,
+  } = parseFrontMatter(raw);
   if (!rawContent.trim()) return '';
   const html = await renderMarkdown(rawContent);
   htmlCache.set(slug, html);

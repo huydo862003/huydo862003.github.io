@@ -100,17 +100,31 @@
 import {
   ref, computed, watch, nextTick,
 } from 'vue';
-import { useRouter } from 'vue-router';
+import {
+  useRouter,
+} from 'vue-router';
 import {
   PhHouse, PhFlag, PhArticle, PhGraph,
   PhMagnifyingGlass,
 } from '@phosphor-icons/vue';
-import { useConceptStore } from '@/stores/concepts';
-import { useFlashcardStore } from '@/stores/flashcards';
-import { useBookStore } from '@/stores/books';
-import { usePhaseStore } from '@/stores/phases';
-import { useBlogs } from '@/stores/blogs';
-import { useJourneyStore } from '@/stores/journeys';
+import {
+  useConceptStore,
+} from '@/stores/concepts';
+import {
+  useFlashcardStore,
+} from '@/stores/flashcards';
+import {
+  useBookStore,
+} from '@/stores/books';
+import {
+  usePhaseStore,
+} from '@/stores/phases';
+import {
+  useBlogs,
+} from '@/stores/blogs';
+import {
+  useJourneyStore,
+} from '@/stores/journeys';
 import SKbdShortcut from '@/components/common/SKbdShortcut.vue';
 
 interface PaletteItem {
@@ -128,7 +142,7 @@ const activeIndex = ref(0);
 const inputEl = ref<HTMLInputElement>();
 const router = useRouter();
 
-const emit = defineEmits<{ (e: 'open-graph-side'): void }>();
+const emit = defineEmits<{(e: 'open-graph-side'): void}>();
 
 const conceptStore = useConceptStore();
 const flashcardStore = useFlashcardStore();
@@ -142,25 +156,37 @@ const navItems = computed<PaletteItem[]>(() => [
     label: 'Home',
     to: '/',
     icon: PhHouse,
-    shortcutKeys: ['Alt', 'H'],
+    shortcutKeys: [
+      'Alt',
+      'H',
+    ],
   },
   {
     label: 'Thoughts',
     to: '/thoughts',
     icon: PhArticle,
-    shortcutKeys: ['Alt', 'T'],
+    shortcutKeys: [
+      'Alt',
+      'T',
+    ],
   },
   {
     label: 'Journeys',
     to: '/journeys',
     icon: PhFlag,
-    shortcutKeys: ['Alt', 'J'],
+    shortcutKeys: [
+      'Alt',
+      'J',
+    ],
   },
   {
     label: 'Open Graph (Side)',
     action: () => emit('open-graph-side'),
     icon: PhGraph,
-    shortcutKeys: ['Alt', 'G'],
+    shortcutKeys: [
+      'Alt',
+      'G',
+    ],
   },
   ...journeyStore.journeys.map((j) => ({
     label: j.title,
@@ -170,7 +196,8 @@ const navItems = computed<PaletteItem[]>(() => [
 ]);
 
 const searchItems = computed<PaletteItem[]>(() => {
-  const items: PaletteItem[] = [];
+  const items: PaletteItem[] = [
+  ];
 
   for (const c of conceptStore.concepts) {
     items.push({

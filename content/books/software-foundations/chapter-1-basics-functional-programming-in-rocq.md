@@ -1,7 +1,7 @@
 ---
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: Chapter 1. Basics - Functional programming in Rocq
+title: "Chapter 1. basics - functional programming in rocq"
 author: Benjamin C. Pierce et al.
 date: ""
 journey: plt

@@ -14,4 +14,3 @@ keywords:
   - "rule"
   - "induction"
 ---
-

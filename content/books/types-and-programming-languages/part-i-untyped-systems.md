@@ -1,7 +1,7 @@
 ---
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Part I. Untyped systems"
+title: "Part i. untyped systems"
 author: "Benjamin C. Pierce"
 date: ""
 journey: plt

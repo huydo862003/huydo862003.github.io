@@ -7,8 +7,11 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 function slugsFromDir (dir: string): string[] {
-  if (!fs.existsSync(dir)) return [];
-  return fs.readdirSync(dir, { recursive: true })
+  if (!fs.existsSync(dir)) return [
+  ];
+  return fs.readdirSync(dir, {
+    recursive: true,
+  })
     .filter((f) => String(f).endsWith('.md'))
     .map((f) => path.basename(String(f), '.md'));
 }
@@ -67,7 +70,9 @@ export function generateRoutes (): string[] {
   // Books - journey comes from frontmatter, not directory
   const walkBooks = (dir: string) => {
     if (!fs.existsSync(dir)) return;
-    for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    for (const entry of fs.readdirSync(dir, {
+      withFileTypes: true,
+    })) {
       if (entry.isDirectory()) {
         walkBooks(path.join(dir, entry.name));
       } else if (entry.name.endsWith('.md')) {
@@ -82,7 +87,9 @@ export function generateRoutes (): string[] {
   walkBooks('content/books');
 
   // Papers - journey comes from frontmatter
-  for (const entry of fs.readdirSync('content/papers', { withFileTypes: true }).filter((e) => e.isFile() && e.name.endsWith('.md'))) {
+  for (const entry of fs.readdirSync('content/papers', {
+    withFileTypes: true,
+  }).filter((e) => e.isFile() && e.name.endsWith('.md'))) {
     const fp = path.join('content/papers', entry.name);
     const journey = frontmatterField(fp, 'journey');
     if (journey) {

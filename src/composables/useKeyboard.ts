@@ -13,7 +13,8 @@ export interface KeyBinding {
   scope: 'global' | 'page';
 }
 
-const globalBindings = ref<KeyBinding[]>([]);
+const globalBindings = ref<KeyBinding[]>([
+]);
 
 function matches (e: KeyboardEvent, b: KeyBinding): boolean {
   return e.key.toLowerCase() === b.key.toLowerCase()
@@ -54,7 +55,8 @@ export function useKeyboard () {
 }
 
 export function formatShortcut (b: KeyBinding): string[] {
-  const parts: string[] = [];
+  const parts: string[] = [
+  ];
   if (b.meta) parts.push(navigator?.platform?.includes('Mac') ? '⌘' : 'Ctrl');
   if (b.shift) parts.push('⇧');
   if (b.alt) parts.push(navigator?.platform?.includes('Mac') ? '⌥' : 'Alt');

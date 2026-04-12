@@ -98,11 +98,17 @@
 import {
   ref, computed,
 } from 'vue';
-import { useRoute } from 'vue-router';
+import {
+  useRoute,
+} from 'vue-router';
 import SBreadcrumb from '@/components/common/SBreadcrumb.vue';
 import SFilterBar from '@/components/common/SFilterBar.vue';
-import { usePaperStore } from '@/stores/papers';
-import { useSeo } from '@/composables/useSeo';
+import {
+  usePaperStore,
+} from '@/stores/papers';
+import {
+  useSeo,
+} from '@/composables/useSeo';
 
 const route = useRoute();
 const slug = computed(() => route.params.slug as string);
@@ -116,7 +122,8 @@ useSeo({
 
 const papers = computed(() => paperStore.getByJourney(slug.value));
 const search = ref('');
-const statusFilter = ref<string[]>([]);
+const statusFilter = ref<string[]>([
+]);
 
 const statusGroup = [
   {

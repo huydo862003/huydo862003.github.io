@@ -54,11 +54,15 @@ import {
 import {
   PhArrowLeft, PhPlus, PhMinus, PhArrowsOut, PhCrosshair,
 } from '@phosphor-icons/vue';
-import { useGraph } from '@/composables/useGraph';
+import {
+  useGraph,
+} from '@/composables/useGraph';
 import {
   nodes, edges,
 } from '@/utils/graph';
-import { useSeo } from '@/composables/useSeo';
+import {
+  useSeo,
+} from '@/composables/useSeo';
 
 useSeo({
   title: ref('Knowledge Graph'),

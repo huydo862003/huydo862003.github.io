@@ -1,7 +1,7 @@
 ---
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: Chapter 1. Learning SMoL - Standard model of languages
+title: "Chapter 1. learning SMoL - standard model of languages"
 author: Shriram Krishnamurthi
 date: ""
 journey: plt

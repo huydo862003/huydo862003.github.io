@@ -1,7 +1,7 @@
 ---
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: How to define recursive types in Rocq?
+question: "How to define recursive types in rocq?"
 answer: TODO
 deck: rocq-programming-language
 concepts:

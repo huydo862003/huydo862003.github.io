@@ -1,7 +1,7 @@
 ---
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Boolean Blindness"
+title: "Boolean blindness"
 url: "Boolean Blindness"
 author: ""
 journey: plt

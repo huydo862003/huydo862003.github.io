@@ -1,7 +1,7 @@
 ---
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: Chapter 1. The Psychopathology of Everyday Things
+title: "Chapter 1. the psychopathology of everyday things"
 author: Don Norman
 date: ""
 journey: design

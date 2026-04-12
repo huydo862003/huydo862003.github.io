@@ -1,6 +1,12 @@
-import { defineStore } from 'pinia';
-import { allJourneys } from 'content-collections';
-import type { Journey } from '@/types/journey';
+import {
+  defineStore,
+} from 'pinia';
+import {
+  allJourneys,
+} from 'content-collections';
+import type {
+  Journey,
+} from '@/types/journey';
 
 const STATUS_ORDER = {
   active: 0,
@@ -18,7 +24,10 @@ const all: Journey[] = allJourneys.map((j) => ({
   tags: j.tags,
 })).sort((a, b) => STATUS_ORDER[a.status] - STATUS_ORDER[b.status]);
 
-const bySlug = new Map(all.map((j) => [j.slug, j]));
+const bySlug = new Map(all.map((j) => [
+  j.slug,
+  j,
+]));
 
 export const useJourneyStore = defineStore('journeys', () => {
   const journeys = all;

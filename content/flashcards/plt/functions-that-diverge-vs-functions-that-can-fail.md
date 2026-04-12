@@ -1,7 +1,7 @@
 ---
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: Functions that diverge vs Functions that can fail?
+question: "Functions that diverge vs functions that can fail?"
 answer: TODO
 deck: set-theory-relation
 concepts: []

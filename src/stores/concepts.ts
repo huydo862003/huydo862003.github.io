@@ -1,6 +1,12 @@
-import { defineStore } from 'pinia';
-import { allConcepts } from 'content-collections';
-import type { Concept } from '@/types/concept';
+import {
+  defineStore,
+} from 'pinia';
+import {
+  allConcepts,
+} from 'content-collections';
+import type {
+  Concept,
+} from '@/types/concept';
 
 const all: Concept[] = allConcepts.map((c) => ({
   slug: c._meta.fileName.replace('.md', ''),
@@ -11,13 +17,17 @@ const all: Concept[] = allConcepts.map((c) => ({
   description: c.description ?? '',
   status: c.status as Concept['status'],
   tags: c.tags,
-  keywords: c.keywords ?? [],
+  keywords: c.keywords ?? [
+  ],
   books: c.books,
   dependsOn: c.dependsOn,
   blocks: c.blocks,
 })).sort((a, b) => a.title.localeCompare(b.title));
 
-const bySlug = new Map(all.map((c) => [c.slug, c]));
+const bySlug = new Map(all.map((c) => [
+  c.slug,
+  c,
+]));
 
 export const useConceptStore = defineStore('concepts', () => {
   const concepts = all;

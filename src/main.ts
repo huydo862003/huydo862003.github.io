@@ -1,10 +1,16 @@
-import { ViteSSG } from 'vite-ssg';
-import { createPinia } from 'pinia';
+import {
+  ViteSSG,
+} from 'vite-ssg';
+import {
+  createPinia,
+} from 'pinia';
 import FloatingVue from 'floating-vue';
 import 'floating-vue/dist/style.css';
 import './style.css';
 import App from './App.vue';
-import { routes } from './router';
+import {
+  routes,
+} from './router';
 
 export const createApp = ViteSSG(
   App,
@@ -12,7 +18,9 @@ export const createApp = ViteSSG(
     routes,
     base: '/',
     scrollBehavior () {
-      return { top: 0 };
+      return {
+        top: 0,
+      };
     },
   },
   ({

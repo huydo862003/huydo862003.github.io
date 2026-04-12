@@ -1,7 +1,7 @@
 ---
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: Chapter 3. Hypothetical and general judgments
+title: "Chapter 3. hypothetical and general judgments"
 author: Benjamin C. Pierce et al.
 date: ""
 journey: plt
@@ -727,8 +727,3 @@ The hypothesis that a variable is closed seems self-contradictory in that a vari
 <details>
 
 <summary>Solution</summary>
-
-
-
-
-

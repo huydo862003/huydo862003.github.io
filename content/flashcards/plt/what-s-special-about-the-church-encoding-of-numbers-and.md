@@ -1,7 +1,7 @@
 ---
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: What's special about the Church encoding of numbers and lists?
+question: "What's special about the church encoding of numbers and lists?"
 answer: TODO
 deck: pure-lambda-calculus
 concepts:

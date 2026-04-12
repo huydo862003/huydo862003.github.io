@@ -32,10 +32,14 @@
 import {
   ref, computed, defineAsyncComponent,
 } from 'vue';
-import { useRouter } from 'vue-router';
+import {
+  useRouter,
+} from 'vue-router';
 import NavBar from '@/components/layout/NavBar.vue';
 import FooterBar from '@/components/layout/FooterBar.vue';
-import { useKeyboard } from '@/composables/useKeyboard';
+import {
+  useKeyboard,
+} from '@/composables/useKeyboard';
 import GraphSidePanel from '@/components/GraphSidePanel.vue';
 
 const CommandPalette = defineAsyncComponent(() => import('@/components/CommandPalette.vue'));
@@ -43,7 +47,9 @@ const CommandPalette = defineAsyncComponent(() => import('@/components/CommandPa
 const palette = ref<InstanceType<typeof CommandPalette>>();
 const graphPanel = ref<InstanceType<typeof GraphSidePanel>>();
 const router = useRouter();
-const { register } = useKeyboard();
+const {
+  register,
+} = useKeyboard();
 
 const isGraph = computed(() => router.currentRoute.value.path === '/graph');
 

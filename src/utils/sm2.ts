@@ -1,4 +1,6 @@
-import type { ReviewState } from '@/types/flashcard';
+import type {
+  ReviewState,
+} from '@/types/flashcard';
 import {
   todayISO, addDaysISO,
 } from '@/utils/date';

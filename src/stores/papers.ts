@@ -1,6 +1,12 @@
-import { defineStore } from 'pinia';
-import { allPapers } from 'content-collections';
-import type { Paper } from '@/types/paper';
+import {
+  defineStore,
+} from 'pinia';
+import {
+  allPapers,
+} from 'content-collections';
+import type {
+  Paper,
+} from '@/types/paper';
 
 const all: Paper[] = allPapers.map((p) => ({
   slug: p._meta.fileName.replace('.md', ''),
@@ -17,7 +23,10 @@ const all: Paper[] = allPapers.map((p) => ({
   status: p.status,
 })).sort((a, b) => a.title.localeCompare(b.title));
 
-const bySlug = new Map(all.map((p) => [p.slug, p]));
+const bySlug = new Map(all.map((p) => [
+  p.slug,
+  p,
+]));
 
 export const usePaperStore = defineStore('papers', () => {
   const papers = all;

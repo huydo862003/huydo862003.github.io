@@ -75,19 +75,37 @@
       </div>
     </template>
     <template v-else>
-      <p>Not found. <router-link :to="`/journeys/${slug}/papers`">Back to papers</router-link></p>
+      <p>
+        Not found. <router-link :to="`/journeys/${slug}/papers`">
+          Back to papers
+        </router-link>
+      </p>
     </template>
   </div>
 </template>
 
 <script setup lang="ts">
-import { computed, watch } from 'vue';
-import { useAsyncState } from '@vueuse/core';
-import { useRoute } from 'vue-router';
-import { PhArrowSquareOut } from '@phosphor-icons/vue';
-import { useSeo } from '@/composables/useSeo';
-import { usePaperStore } from '@/stores/papers';
-import { loadContent } from '@/utils/content';
+import {
+  computed, watch,
+} from 'vue';
+import {
+  useAsyncState,
+} from '@vueuse/core';
+import {
+  useRoute,
+} from 'vue-router';
+import {
+  PhArrowSquareOut,
+} from '@phosphor-icons/vue';
+import {
+  useSeo,
+} from '@/composables/useSeo';
+import {
+  usePaperStore,
+} from '@/stores/papers';
+import {
+  loadContent,
+} from '@/utils/content';
 import SBreadcrumb from '@/components/common/SBreadcrumb.vue';
 
 const route = useRoute();

@@ -1,7 +1,7 @@
 ---
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: matklad.github.io
+title: "Matklad.github.io"
 url: https://matklad.github.io/
 author: Alexey Kladov (Matklad)
 journey: plt

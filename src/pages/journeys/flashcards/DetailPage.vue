@@ -139,24 +139,38 @@
 import {
   ref, computed, watch, defineAsyncComponent,
 } from 'vue';
-import { useAsyncState } from '@vueuse/core';
-import { useRoute } from 'vue-router';
+import {
+  useAsyncState,
+} from '@vueuse/core';
+import {
+  useRoute,
+} from 'vue-router';
 import {
   PhBrain, PhBook, PhCaretRight,
 } from '@phosphor-icons/vue';
-import { useSeo } from '@/composables/useSeo';
-import { useFlashcardStore } from '@/stores/flashcards';
+import {
+  useSeo,
+} from '@/composables/useSeo';
+import {
+  useFlashcardStore,
+} from '@/stores/flashcards';
 import {
   renderMarkdown, loadContent,
 } from '@/utils/content';
 import {
   formatSlug, ringColor,
 } from '@/utils/format';
-import { MASTERED_INTERVAL_DAYS } from '@/utils/sm2';
+import {
+  MASTERED_INTERVAL_DAYS,
+} from '@/utils/sm2';
 import ResourcePagination from '@/components/content/ResourcePagination.vue';
 import SBreadcrumb from '@/components/common/SBreadcrumb.vue';
-import { useConceptStore } from '@/stores/concepts';
-import { useBookStore } from '@/stores/books';
+import {
+  useConceptStore,
+} from '@/stores/concepts';
+import {
+  useBookStore,
+} from '@/stores/books';
 
 const GiscusComment = defineAsyncComponent(() => import('@/components/content/github/GiscusComment.vue'));
 
@@ -174,13 +188,22 @@ useSeo({
   description: computed(() => {
     const c = card.value;
     if (!c) return undefined;
-    const answer = c.answer && c.answer !== 'TODO' ? ` Answer: ${c.answer.slice(0, 120)}${c.answer.length > 120 ? '…' : ''}` : '';
+    const answer = c.answer && c.answer !== 'TODO' ? ` Answer: ${c.answer.slice(0, 120)}${120 < c.answer.length ? '…' : ''}` : '';
     return `Flashcard from the ${c.deck} deck.${answer}`;
   }),
   tags: computed(() => {
     const c = card.value;
     if (!c) return undefined;
-    return [...(c.tags ?? []), ...(c.keywords ?? []), c.deck, slug.value, 'flashcard', 'spaced repetition'];
+    return [
+      ...(c.tags ?? [
+      ]),
+      ...(c.keywords ?? [
+      ]),
+      c.deck,
+      slug.value,
+      'flashcard',
+      'spaced repetition',
+    ];
   }),
   path: computed(() => `/journeys/${slug.value}/flashcards/${cardSlug.value}`),
   publishedTime: computed(() => card.value?.createdAt || undefined),
@@ -244,7 +267,8 @@ const masteryLabel = computed(() => {
 });
 
 const resolvedBooks = computed(() =>
-  (card.value?.books ?? [])
+  (card.value?.books ?? [
+  ])
     .map((s) => bookStore.getBySlug(s))
     .filter((b): b is NonNullable<typeof b> => !!b));
 </script>

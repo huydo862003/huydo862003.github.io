@@ -1,7 +1,7 @@
 ---
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: Define successor, addition, multiplication, zero test, subtraction, predecessor, equality for Church numerals?
+question: "Define successor, addition, multiplication, zero test, subtraction, predecessor, equality for church numerals?"
 answer: TODO
 deck: pure-lambda-calculus
 concepts:

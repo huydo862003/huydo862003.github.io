@@ -1,7 +1,7 @@
 ---
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: Chapter 5. The untyped/pure lambda-calculus
+title: "Chapter 5. the untyped/pure lambda-calculus"
 author: Benjamin C. Pierce
 date: ""
 journey: plt

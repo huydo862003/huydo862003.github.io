@@ -9,4 +9,3 @@ books:
   - logical-foundations
 tags: []
 ---
-

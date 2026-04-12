@@ -1,6 +1,12 @@
-import { defineStore } from 'pinia';
-import { allThoughts } from 'content-collections';
-import type { Thought } from '@/types/thought';
+import {
+  defineStore,
+} from 'pinia';
+import {
+  allThoughts,
+} from 'content-collections';
+import type {
+  Thought,
+} from '@/types/thought';
 
 const all: Thought[] = allThoughts.map((t) => ({
   slug: t._meta.fileName.replace('.md', ''),
@@ -15,7 +21,10 @@ const all: Thought[] = allThoughts.map((t) => ({
   journeys: t.journeys,
 })).sort((a, b) => b.date.localeCompare(a.date));
 
-const bySlug = new Map(all.map((t) => [t.slug, t]));
+const bySlug = new Map(all.map((t) => [
+  t.slug,
+  t,
+]));
 
 export const useThoughtStore = defineStore('thoughts', () => {
   const thoughts = all.filter((t) => !t.archived);

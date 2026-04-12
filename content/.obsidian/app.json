@@ -1,0 +1,25 @@
+{
+  "useMarkdownLinks": false,
+  "showFrontmatter": true,
+  "showInlineTitle": true,
+  "showTitleInFileExplorer": true,
+  "defaultViewMode": "source",
+  "livePreview": true,
+  "propertiesInDocument": "hidden",
+  "foldHeading": true,
+  "foldIndent": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "thoughts",
+  "attachmentFolderPath": "public/attachments",
+  "alwaysUpdateLinks": true,
+  "trashOption": "system",
+  "showStatusBar": false,
+  "vimMode": true,
+  "userIgnoreFilters": [
+    "(^|/)_",
+    "^public$"
+  ],
+  "showUnsupportedFiles": true,
+  "showLineNumber": false,
+  "strictLineBreaks": true
+}

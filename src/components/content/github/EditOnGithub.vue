@@ -11,8 +11,12 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue';
-import { PhPencilSimple } from '@phosphor-icons/vue';
+import {
+  computed,
+} from 'vue';
+import {
+  PhPencilSimple,
+} from '@phosphor-icons/vue';
 
 const props = defineProps<{
   path: string;

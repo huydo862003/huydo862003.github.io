@@ -11,7 +11,6 @@ lastChecked: ""
 posts: []
 tags: ["PLT", "blog"]
 ---
-
 # First pass
 
 - The author felt he's proficient enough with Typescript.

@@ -1,7 +1,7 @@
 ---
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: Which values are truthy in Rocq?
+question: "Which values are truthy in rocq?"
 answer: TODO
 deck: rocq-programming-language
 concepts:

@@ -1,7 +1,7 @@
 ---
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Desired property: Normal form implies values"
+title: "Desired property: normal form implies values"
 description: "A desirable property of a Lambda calculus where there's no stuck term. This property may not hold in most systems."
 journey: plt
 status: mastered
