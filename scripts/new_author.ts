@@ -26,5 +26,6 @@ const origin = await input({
 scaffoldContent({
   contentDir: 'authors',
   title: name,
+  author: name,
   frontMatter: `name: "${name}"\nbio: "${bio}"\nurl: "${url}"\ndateOfBirth: "${dateOfBirth}"\norigin: "${origin}"\neducation: []\ninterests: []\ntags: []`,
 });

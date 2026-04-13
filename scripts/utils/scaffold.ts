@@ -16,7 +16,7 @@ export function scaffoldContent (opts: {
   contentDir: string;
   title: string;
   frontMatter: string;
-  author?: string;
+  author: string;
 }): void {
   const slug = slugify(opts.title);
   const filePath = resolve(import.meta.dirname, '../../content', opts.contentDir, `${slug}.md`);

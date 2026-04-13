@@ -6,6 +6,10 @@ import {
   scaffoldContent,
 } from './utils/scaffold';
 
+const author = await input({
+  message: 'Author:',
+  validate: (v) => v.trim() === 'hdnax' || v.trim() === 'cosmos',
+});
 const question = await input({
   message: 'Question:',
   validate: (v) => v.trim() !== '' || 'Required',
@@ -22,5 +26,6 @@ const deck = await input({
 scaffoldContent({
   contentDir: 'flashcards',
   title: question,
+  author,
   frontMatter: `question: "${question}"\nanswer: "${answer}"\ndeck: "${deck}"\ntags: []\nkeywords: []\nconcepts: []\nbooks: []`,
 });

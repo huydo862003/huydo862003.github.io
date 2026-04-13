@@ -6,6 +6,10 @@ import {
   scaffoldContent,
 } from './utils/scaffold';
 
+const author = await input({
+  message: 'Author:',
+  validate: (v) => v.trim() === 'hdnax' || v.trim() === 'cosmos',
+});
 const title = await input({
   message: 'Title:',
   validate: (v) => v.trim() !== '' || 'Required',
@@ -35,5 +39,6 @@ const status = await select({
 scaffoldContent({
   contentDir: 'phases',
   title,
+  author,
   frontMatter: `title: "${title}"\njourney: "${journey}"\nstatus: ${status}\norder: ${order}\nbooks: []\nconcepts: []`,
 });
