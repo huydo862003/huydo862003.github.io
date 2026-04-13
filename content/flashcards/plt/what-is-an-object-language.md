@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What is an object language?
@@ -16,6 +17,7 @@ keywords:
   - "defined"
   - "metalanguage"
 ---
+author: hdnax
 
 
 The formal language being defined by the metalanguage.

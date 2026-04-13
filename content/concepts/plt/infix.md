@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Infix
@@ -21,5 +22,6 @@ keywords:
   - "prefix"
   - "postfix"
 ---
+author: hdnax
 
 A Fixity where an operator appears between its two arguments (like `x + y`), as opposed to prefix or postfix.

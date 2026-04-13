@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Decision procedure"
@@ -23,5 +24,6 @@ keywords:
   - "yes"
   - "instance"
 ---
+author: hdnax
 
 An **algorithm** that always terminates and correctly answers yes/no for any instance of a given problem class (like propositional satisfiability or type equivalence).

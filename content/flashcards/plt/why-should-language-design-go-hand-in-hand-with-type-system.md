@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: Why should language design go hand in hand with type system design?
@@ -16,6 +17,7 @@ keywords:
   - "untyped"
   - "central"
 ---
+author: hdnax
 
 
 According to Robert (Bob) Harper, type system is the central organizing principle in programming language theory.

@@ -1,19 +1,26 @@
 #!/usr/bin/env node
 import {
+  input,
+} from '@inquirer/prompts';
+import {
   scaffoldContent,
 } from './utils/scaffold';
 
-const question = process.argv[2];
-const answer = process.argv[3];
-const deck = process.argv[4] || 'default';
-
-if (!question || !answer) {
-  console.error('Usage: pnpm new:card "Question" "Answer" [deck]');
-  process.exit(1);
-}
+const question = await input({
+  message: 'Question:',
+  validate: (v) => v.trim() !== '' || 'Required',
+});
+const answer = await input({
+  message: 'Answer:',
+  validate: (v) => v.trim() !== '' || 'Required',
+});
+const deck = await input({
+  message: 'Deck:',
+  default: 'general',
+});
 
 scaffoldContent({
   contentDir: 'flashcards',
   title: question,
-  frontMatter: `question: "${question}"\nanswer: "${answer}"\ndeck: ${deck}\ntags: []\nkeywords: []\nconcepts: []\nbooks: []`,
+  frontMatter: `question: "${question}"\nanswer: "${answer}"\ndeck: "${deck}"\ntags: []\nkeywords: []\nconcepts: []\nbooks: []`,
 });

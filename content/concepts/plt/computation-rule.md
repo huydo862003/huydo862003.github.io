@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Computation rule"
@@ -23,5 +24,6 @@ keywords:
   - "congruence"
   - "merely"
 ---
+author: hdnax
 
 A rule performing an actual reduction step (e.g., beta-reduction), as opposed to Congruence rule which merely propagate evaluation into subterms.

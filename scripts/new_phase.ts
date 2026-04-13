@@ -1,19 +1,39 @@
 #!/usr/bin/env node
 import {
+  input, number, select,
+} from '@inquirer/prompts';
+import {
   scaffoldContent,
 } from './utils/scaffold';
 
-const title = process.argv[2];
-const journey = process.argv[3] || '';
-const order = process.argv[4] || '0';
-
-if (!title) {
-  console.error('Usage: pnpm new:phase "Phase Title" [journey-slug] [order]');
-  process.exit(1);
-}
+const title = await input({
+  message: 'Title:',
+  validate: (v) => v.trim() !== '' || 'Required',
+});
+const journey = await input({
+  message: 'Journey slug (optional):',
+});
+const order = await number({
+  message: 'Order:',
+  default: 0,
+});
+const status = await select({
+  message: 'Status:',
+  choices: [
+    {
+      value: 'on-hold',
+    },
+    {
+      value: 'active',
+    },
+    {
+      value: 'completed',
+    },
+  ],
+});
 
 scaffoldContent({
   contentDir: 'phases',
   title,
-  frontMatter: `title: ${title}\njourney: ${journey}\nstatus: on-hold\norder: ${order}\nbooks: []\nconcepts: []`,
+  frontMatter: `title: "${title}"\njourney: "${journey}"\nstatus: ${status}\norder: ${order}\nbooks: []\nconcepts: []`,
 });

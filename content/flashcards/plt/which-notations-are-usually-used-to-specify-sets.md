@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: Which notations are usually used to specify sets?
@@ -15,6 +16,7 @@ keywords:
   - "set"
   - "comprehension"
 ---
+author: hdnax
 
 - List out all members.
 - Set comprehension.

@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Double negation elimination"
@@ -22,6 +23,7 @@ keywords:
   - "accepts"
   - "intuitionistic"
 ---
+author: hdnax
 
 $$
 \neg\neg A \to A

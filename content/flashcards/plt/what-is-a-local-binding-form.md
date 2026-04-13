@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What is a local binding form?
@@ -18,6 +19,7 @@ keywords:
   - "limited"
   - "scope"
 ---
+author: hdnax
 
 
 A syntactic construct that introduces a variable with limited scope.

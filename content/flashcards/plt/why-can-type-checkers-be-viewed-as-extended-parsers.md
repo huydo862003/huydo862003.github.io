@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: Why can type checkers be viewed as extended parsers?
@@ -14,6 +15,7 @@ keywords:
   - "context-sensitive"
   - "semantics"
 ---
+author: hdnax
 
 
 Static analyzer but for context-sensitive semantics.

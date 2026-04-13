@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Type variable"
@@ -23,5 +24,6 @@ keywords:
   - "gets"
   - "instantiated"
 ---
+author: hdnax
 
 A **placeholder** (e.g., $T$, $U$, $\alpha$) representing an unknown or generic type - gets instantiated to a concrete type during type checking or remains polymorphic.

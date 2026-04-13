@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What does the principle of complete induction state?
@@ -18,6 +19,7 @@ keywords:
   - "assumes"
   - "holds"
 ---
+author: hdnax
 
 
 A proof technique where the inductive step assumes the property holds for all predecessors (not just the immediate one), deriving the property for the current element.

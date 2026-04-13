@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: "How to define a days-of-week data type in rocq?"
@@ -18,6 +19,7 @@ keywords:
   - "monday"
   - "tuesday"
 ---
+author: hdnax
 
 
 ```coq

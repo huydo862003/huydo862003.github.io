@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What is the Hindley-Milner type inference algorithm?
@@ -18,6 +19,7 @@ keywords:
   - "generate"
   - "variables"
 ---
+author: hdnax
 
 
 This algorithm works by:

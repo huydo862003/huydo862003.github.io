@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: Disadvantages and advantages of union types compared to sum types?
@@ -16,6 +17,7 @@ keywords:
   - "runtime"
   - "languages"
 ---
+author: hdnax
 
 
 Depending on the exact language, tooling and runtime:

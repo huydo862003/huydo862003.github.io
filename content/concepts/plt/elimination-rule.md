@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Elimination rule"
@@ -16,6 +17,7 @@ keywords:
   - "rule"
   - "frac"
 ---
+author: hdnax
 
 Example:
 

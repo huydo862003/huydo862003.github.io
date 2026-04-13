@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: "What is the name of rocq's native functional programming language?"
@@ -12,6 +13,7 @@ tags: []
 keywords:
   - "rocq"
 ---
+author: hdnax
 
 
 Gallina.

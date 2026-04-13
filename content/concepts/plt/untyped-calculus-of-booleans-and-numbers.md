@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Untyped calculus of booleans and numbers
@@ -22,6 +23,7 @@ keywords:
   - "dfrac"
   - "array"
 ---
+author: hdnax
 
 $$
 \begin{array}{l r c l}

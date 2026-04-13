@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Small-step/Structural operational semantics (SOS)
@@ -22,5 +23,6 @@ keywords:
   - "defines"
   - "via"
 ---
+author: hdnax
 
 A style of semantics which defines evaluation via Evaluation statement/judgement of the form $t \to t'$, specifying how a term reduces by one atomic step at a time until reaching a normal form.

@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What are the ideal use cases of ASTs?
@@ -16,6 +17,7 @@ keywords:
   - "languages"
   - "internal"
 ---
+author: hdnax
 
 - **Formal language definitions** and **proofs** about languages.
 - The internal workings of **compilers** and **interpreters**, which need to manipulate program structure precisely.

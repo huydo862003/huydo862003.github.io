@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: "What's special about the church encoding of numbers and lists?"
@@ -18,6 +19,7 @@ keywords:
   - "stands"
   - "empty"
 ---
+author: hdnax
 
 - Both have a base value:
     - Number: 0.

@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Small omega combinator"
@@ -23,5 +24,6 @@ keywords:
   - "open"
   - "recursion"
 ---
+author: hdnax
 
 A combinator defined as $\omega = \lambda x.\ x\ x$, useful in many patterns, such as Extensible/Open recursion.

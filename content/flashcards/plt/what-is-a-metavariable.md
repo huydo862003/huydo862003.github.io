@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What is a metavariable?
@@ -18,6 +19,7 @@ keywords:
   - "terms"
   - "syntactic"
 ---
+author: hdnax
 
 
 A variable of the metalanguage that ranges over terms of a syntactic category.

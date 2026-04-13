@@ -42,6 +42,7 @@
   },
   "devDependencies": {
     "@hdnax/nuclint": "^0.11.0",
+    "@inquirer/prompts": "^8.4.1",
     "@tailwindcss/vite": "^4.2.2",
     "@types/markdown-it": "^14.1.0",
     "@types/node": "^25.5.0",

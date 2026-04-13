@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What are some challenges of retrofitting type systems?
@@ -18,6 +19,7 @@ keywords:
   - "encourage"
   - "type-unsound"
 ---
+author: hdnax
 
 
 Languages that are previously untyped:

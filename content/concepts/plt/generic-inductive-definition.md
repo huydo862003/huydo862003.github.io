@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Generic inductive definition"
@@ -13,3 +14,4 @@ keywords:
   - "generic"
   - "inductive"
 ---
+author: hdnax

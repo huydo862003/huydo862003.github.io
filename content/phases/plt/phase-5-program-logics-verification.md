@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Phase 5 - program logics & verification"
@@ -8,4 +9,5 @@ order: 5
 books: []
 concepts: []
 ---
+author: hdnax
 

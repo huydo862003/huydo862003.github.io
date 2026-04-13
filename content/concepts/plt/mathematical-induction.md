@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Mathematical induction
@@ -23,6 +24,7 @@ keywords:
   - "number"
   - "prove"
 ---
+author: hdnax
 
 Formally, assume $n\ \text{nat}$ means that $n$ is a natural number. To prove that whenever $n\ \text{nat}$, we have $\mathcal{P}(n)$, it's sufficient to show that:
 

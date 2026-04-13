@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: Why is there a need for macro hygiene?
@@ -12,6 +13,7 @@ tags: []
 keywords:
   - "macro"
 ---
+author: hdnax
 
 
 To avoid Variable capture.

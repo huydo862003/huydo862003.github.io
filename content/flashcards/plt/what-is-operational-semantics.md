@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What is operational semantics?
@@ -18,6 +19,7 @@ keywords:
   - "runs"
   - "using"
 ---
+author: hdnax
 
 
 A style of semantics that defines a language by how it runs using syntactic transformation.

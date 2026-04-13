@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Class pattern
@@ -23,6 +24,7 @@ keywords:
   - "reference"
   - "self"
 ---
+author: hdnax
 
 This pattern has many variants:
 

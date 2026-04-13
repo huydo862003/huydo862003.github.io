@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Join"
@@ -22,5 +23,6 @@ keywords:
   - "denoted"
   - "bigvee"
 ---
+author: hdnax
 
 In the context of a Partial order, the least upper bound of a set $S$, denoted $\bigvee S$.

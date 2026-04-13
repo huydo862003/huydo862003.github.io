@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Binding
@@ -22,5 +23,6 @@ keywords:
   - "function"
   - "within"
 ---
+author: hdnax
 
 An association between a name and an entity (value, location, type, function, etc.) within a given scope.

@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: "What is the wildcard pattern in rocq?"
@@ -18,6 +19,7 @@ keywords:
   - "values"
   - "without"
 ---
+author: hdnax
 
 
 The wildcard pattern `_` allows matching all values without introducing unnecessary variables.

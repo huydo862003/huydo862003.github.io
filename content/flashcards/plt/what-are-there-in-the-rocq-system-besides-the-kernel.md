@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: "What are there in the rocq system besides the kernel?"
@@ -20,6 +21,7 @@ keywords:
   - "definitions"
   - "axioms"
 ---
+author: hdnax
 
 - A large library of common definitions and axioms.
 - Powerful tactics for constructing complex proofs semi-automatically.

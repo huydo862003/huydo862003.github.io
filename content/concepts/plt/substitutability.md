@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Substitutability"
@@ -23,5 +24,6 @@ keywords:
   - "another"
   - "without"
 ---
+author: hdnax
 
 The semantic/behavioral property that one value can **safely replace** another without breaking program correctness, of which Type compatibility is a static approximation of.

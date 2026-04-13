@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: "What are judgment/assertion, judgment form, judgment instance, judgment form instance's subject? in what notations are they written in?"
@@ -16,6 +17,7 @@ keywords:
   - "interpreted"
   - "predicate"
 ---
+author: hdnax
 
 - A judgment form is a relation, interpreted as a Predicate.
     

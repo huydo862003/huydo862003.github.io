@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Garbage collection
@@ -22,5 +23,6 @@ keywords:
   - "heap-allocated"
   - "longer"
 ---
+author: hdnax
 
 An Automatic memory management technique that identifies and reclaims heap-allocated memory no longer reachable by the program, freeing the programmer from explicit deallocation and preventing memory leaks and dangling references.

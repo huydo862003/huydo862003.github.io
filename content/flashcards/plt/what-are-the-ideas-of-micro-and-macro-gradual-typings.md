@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What are the ideas of micro and macro gradual typings?
@@ -22,6 +23,7 @@ keywords:
   - "typed"
   - "languages"
 ---
+author: hdnax
 
 
 Gradual typing is often the formal term for retrofitted type systems.

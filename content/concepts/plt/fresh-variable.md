@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Fresh variable"
@@ -18,5 +19,6 @@ keywords:
   - "set"
   - "notin"
 ---
+author: hdnax
 
 Given a set of variable $\mathcal{X}$, a Variable $v \notin \mathcal{X}$.

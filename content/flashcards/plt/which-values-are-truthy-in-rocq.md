@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: "Which values are truthy in rocq?"
@@ -16,6 +17,7 @@ keywords:
   - "type"
   - "constructors"
 ---
+author: hdnax
 
 
 The first constructor of an inductive type that has two constructors.

@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: "What is governance?"
@@ -15,6 +16,7 @@ keywords:
   - "design"
   - "systems"
 ---
+author: hdnax
 
 
 Protocols surrounding the maintenance of design systems.

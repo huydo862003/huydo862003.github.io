@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Closure
@@ -22,6 +23,7 @@ keywords:
   - "remembers"
   - "surrounding"
 ---
+author: hdnax
 :::key
 (Language feature/design, Semantics) A function value that remembers its surrounding Environment.
 :::

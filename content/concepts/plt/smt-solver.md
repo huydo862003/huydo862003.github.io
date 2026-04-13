@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "SMT solver"
@@ -23,5 +24,6 @@ keywords:
   - "first-order"
   - "theories"
 ---
+author: hdnax
 
 A **decision procedure** that determines satisfiability of formulas in first-order logic with theories (like arithmetic, arrays, bit-vectors), extending SAT to richer domains.

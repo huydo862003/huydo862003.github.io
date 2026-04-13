@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What is the untyped calculus of booleans and numbers?
@@ -16,6 +17,7 @@ keywords:
   - "iszero"
   - "aligned"
 ---
+author: hdnax
 
 
 A simple language with only natural numbers and booleans as primitives.

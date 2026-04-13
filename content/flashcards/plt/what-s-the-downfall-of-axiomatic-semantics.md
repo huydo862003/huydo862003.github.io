@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What's the downfall of axiomatic semantics?
@@ -12,6 +13,7 @@ tags: []
 keywords:
   - "axiomatic semantics"
 ---
+author: hdnax
 
 
 Procedure.

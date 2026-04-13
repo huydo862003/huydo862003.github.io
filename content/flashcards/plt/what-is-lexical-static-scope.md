@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What is lexical/static scope?
@@ -18,6 +19,7 @@ keywords:
   - "resolution"
   - "strategy"
 ---
+author: hdnax
 
 
 Lexical/static scoping is a binding resolution strategy where a variable's binding is determined by its textual position in the source code.

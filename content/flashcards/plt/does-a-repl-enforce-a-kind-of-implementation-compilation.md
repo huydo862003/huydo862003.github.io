@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: Does a REPL enforce a kind of implementation (compilation/interpretation)?
@@ -16,6 +17,7 @@ keywords:
   - "implements"
   - "interpretation"
 ---
+author: hdnax
 
 
 No. But mostly a REPL implements interpretation.

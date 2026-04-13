@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Macro definition hazard: duplication"
@@ -23,5 +24,6 @@ keywords:
   - "evaluated"
   - "multiple"
 ---
+author: hdnax
 
 A macro pitfall where an expression passed as argument is evaluated multiple times in the expansion, causing unintended repeated side-effects or performance issues.

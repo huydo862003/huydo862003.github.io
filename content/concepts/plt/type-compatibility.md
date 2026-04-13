@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Type compatibility"
@@ -23,5 +24,6 @@ keywords:
   - "implies"
   - "static"
 ---
+author: hdnax
 
 A relation between types that implies Substitutability. A static approximation of Substitutability.

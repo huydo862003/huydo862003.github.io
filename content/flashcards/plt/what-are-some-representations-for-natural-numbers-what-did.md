@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: "What are some representations for natural numbers? what did we choose in rocq?"
@@ -20,6 +21,7 @@ keywords:
   - "decimal"
   - "hexadecimal"
 ---
+author: hdnax
 
 - Unary representation. → Church numeral.
 - Decimal representation.

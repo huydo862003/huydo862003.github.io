@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What does it mean for a collection of inference rules to form the strongest judgment form that is closed under those rules?
@@ -16,6 +17,7 @@ keywords:
   - "cannot"
   - "contain"
 ---
+author: hdnax
 
 
 A collection of inference rules is taken to specify a judgment form - assuming it's $-\ J$ - that is:

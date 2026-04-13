@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What is an evaluation strategy?
@@ -16,6 +17,7 @@ keywords:
   - "reduced"
   - "order"
 ---
+author: hdnax
 
 
 A specification of what redexes can be reduced an in what order.

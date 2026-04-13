@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Extensible/Open recursion"
@@ -23,5 +24,6 @@ keywords:
   - "classes"
   - "calls"
 ---
+author: hdnax
 
 When utilizing the Class pattern to define classes with method calls referencing other methods, a recursion pattern that allows method references to be resolved at call site.

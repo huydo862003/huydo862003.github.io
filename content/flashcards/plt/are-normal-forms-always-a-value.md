@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: Are normal forms always a value?
@@ -18,6 +19,7 @@ keywords:
   - "stuck"
   - "terms"
 ---
+author: hdnax
 
 
 Normal forms can be stuck terms.

@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Human-centered design (HCD)
@@ -15,4 +16,5 @@ keywords:
   - "design"
   - "hcd"
 ---
+author: hdnax
 

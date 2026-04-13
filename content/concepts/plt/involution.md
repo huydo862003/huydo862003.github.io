@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Involution"
@@ -22,5 +23,6 @@ keywords:
   - "list"
   - "twice"
 ---
+author: hdnax
 
 A **function** that is its own inverse, satisfying `f(f(x)) = x` (like negation on booleans or reversing a list twice).

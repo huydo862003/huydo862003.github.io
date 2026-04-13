@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Simply typed lambda calculus"
@@ -23,5 +24,6 @@ keywords:
   - "abstraction"
   - "explicitly"
 ---
+author: hdnax
 
 The foundational typed lambda calculus where each lambda abstraction explicitly annotates its parameter with a type, providing a basis for more advanced type systems while guaranteeing termination.

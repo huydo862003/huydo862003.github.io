@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Reflexive closure"
@@ -17,5 +18,6 @@ keywords:
   - "superset"
   - "set"
 ---
+author: hdnax
 
 The smallest superset of a set that is reflexive.

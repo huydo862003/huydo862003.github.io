@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: "How to define multi-argument functions in rocq?"
@@ -18,6 +19,7 @@ keywords:
   - "arg3"
   - "ret-type"
 ---
+author: hdnax
 
 
 Use this syntax:

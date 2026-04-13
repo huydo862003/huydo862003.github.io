@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What do programming languages describe, and for whom?
@@ -16,6 +17,7 @@ keywords:
   - "human"
   - "machines"
 ---
+author: hdnax
 
 
 Programming languages describe computations to human and machines.

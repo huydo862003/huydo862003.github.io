@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: The definition of runtime type error
@@ -18,6 +19,7 @@ keywords:
   - "program"
   - "behaviors"
 ---
+author: hdnax
 
 
 Runtime type error is the class of program behaviors that a specific type system is designed to eliminate.

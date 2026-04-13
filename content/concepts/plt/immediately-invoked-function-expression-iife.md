@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Immediately invoked function expression (IIFE)"
@@ -23,5 +24,6 @@ keywords:
   - "scheme"
   - "actually"
 ---
+author: hdnax
 
 Example: Parallel/Simultaneous let in Scheme is actually a Syntactic sugar for IIFE.

@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What's the symbol for untyped lambda calculus?
@@ -12,6 +13,7 @@ tags: []
 keywords:
   - "pure untyped lambda calculus"
 ---
+author: hdnax
 
 
 $\to$

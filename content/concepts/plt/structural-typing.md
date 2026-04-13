@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Structural typing"
@@ -23,5 +24,6 @@ keywords:
   - "name"
   - "value"
 ---
+author: hdnax
 
 A type system where Type compatibility is determined by **structure**, not **name** - any value with matching shape satisfies the type, regardless of declared class or origin.

@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What are the syntax/values/evaluation relation for the untyped lambda calculus?
@@ -18,6 +19,7 @@ keywords:
   - "displaystyle"
   - "frac"
 ---
+author: hdnax
 
 
 Syntax:

@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: In which evaluation strategy, the one-step evaluation relation is a partial function on terms?
@@ -17,6 +18,7 @@ keywords:
   - "name"
   - "value"
 ---
+author: hdnax
 
 - Normal order.
 - Call by name.

@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Micro gradual typing"
@@ -23,5 +24,6 @@ keywords:
   - "subset"
   - "variables"
 ---
+author: hdnax
 
 A Gradual typing approach where type annotations can be added to **any subset of variables** within the same code, freely mixing typed and untyped expressions.

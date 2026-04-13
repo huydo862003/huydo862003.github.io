@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What is a rule scheme?
@@ -20,6 +21,7 @@ keywords:
   - "parameterized"
   - "metavariables"
 ---
+author: hdnax
 
 
 Synonymous with Rule schema - An Inference rule that is parameterized with Metavariables.

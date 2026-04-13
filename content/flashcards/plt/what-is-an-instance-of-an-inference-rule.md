@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What is an instance of an inference rule?
@@ -18,6 +19,7 @@ keywords:
   - "replaced"
   - "real"
 ---
+author: hdnax
 
 
 An inference rule whose metavariables are replaced with real values.

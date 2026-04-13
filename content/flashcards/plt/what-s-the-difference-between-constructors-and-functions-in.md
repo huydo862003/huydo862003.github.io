@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: "What's the difference between constructors and functions in rocq?"
@@ -18,6 +19,7 @@ keywords:
   - "functionss"
   - "ave"
 ---
+author: hdnax
 
 
 Constructors have no notion of computation i.e. it has no computation rules.

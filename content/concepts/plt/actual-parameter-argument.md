@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Actual parameter/argument"
@@ -23,6 +24,7 @@ keywords:
   - "practical"
   - "foundations"
 ---
+author: hdnax
 :::key
 (Syntax & Grammar) According to Practical foundations for programming languages , the child of an Operator in an [Abstract syntax tree (AST)](/journeys/plt/concepts/abstract-syntax-tree-ast).
 :::

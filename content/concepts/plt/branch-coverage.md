@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Branch coverage"
@@ -22,5 +23,6 @@ keywords:
   - "least"
   - "once"
 ---
+author: hdnax
 
 A testing metric requiring that **every branch** (true/false of each conditional) is executed at least once - difficult to achieve in testing but **automatic** in type checking since type checkers traverse both branches of conditionals.

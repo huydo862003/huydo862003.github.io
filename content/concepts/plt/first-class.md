@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "First-class"
@@ -23,6 +24,7 @@ keywords:
   - "created"
   - "runtime"
 ---
+author: hdnax
 
 - Can be stored in variables.
 - Passed as arguments.

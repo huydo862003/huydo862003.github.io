@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Closed term"
@@ -18,5 +19,6 @@ keywords:
   - "free"
   - "variable"
 ---
+author: hdnax
 
 A Lambda term with no Free variable.

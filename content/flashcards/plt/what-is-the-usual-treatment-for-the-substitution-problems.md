@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What is the usual treatment for the substitution problems (variable capture, etc.)
@@ -18,6 +19,7 @@ keywords:
   - "capture-avoiding"
   - "substitution"
 ---
+author: hdnax
 
 
 Using Capture-avoiding substitution:

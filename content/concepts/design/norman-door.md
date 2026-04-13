@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Norman door
@@ -23,5 +24,6 @@ keywords:
   - "after"
   - "don"
 ---
+author: hdnax
 
 A door with confusing usability features and signs, named after Don Norman.

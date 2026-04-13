@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Antisymmetric"
@@ -16,5 +17,6 @@ keywords:
   - "binary"
   - "relation"
 ---
+author: hdnax
 
 A property of a Binary relation $R$ such that if $t\ R\ s$ and $s\ R\ t$ then $s = t$, for every $t$, $s$ $\in T$.

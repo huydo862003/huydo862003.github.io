@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: Are values always in normal form?
@@ -17,6 +18,7 @@ keywords:
   - "meaningful"
   - "calculus"
 ---
+author: hdnax
 
 
 May not be, but should hold for all meaningful calculus.

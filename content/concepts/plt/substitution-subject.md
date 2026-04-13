@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Substitution subject"
@@ -18,5 +19,6 @@ keywords:
   - "object"
   - "substituted"
 ---
+author: hdnax
 
 A variable to which an object is substituted in.

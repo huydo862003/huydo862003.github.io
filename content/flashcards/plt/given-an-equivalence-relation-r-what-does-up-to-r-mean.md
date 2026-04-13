@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: "Given an equivalence relation r, what does "up to r" mean?"
@@ -14,6 +15,7 @@ keywords:
   - "treated"
   - "indiscriminately"
 ---
+author: hdnax
 
 
 "Up to $R$" means that terms related by $R$ are treated indiscriminately.

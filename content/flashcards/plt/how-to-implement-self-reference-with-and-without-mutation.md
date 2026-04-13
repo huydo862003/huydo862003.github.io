@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: How to implement self-reference with and without mutation?
@@ -16,6 +17,7 @@ keywords:
   - "mk-self-ref"
   - "get-self"
 ---
+author: hdnax
 
 
 With mutation:

@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Concrete/Surface syntax"
@@ -23,5 +24,6 @@ keywords:
   - "including"
   - "parentheses"
 ---
+author: hdnax
 
 The textual representation programmers actually write, including parentheses, keywords, and punctuation - as opposed to abstract syntax which captures only the essential structure.

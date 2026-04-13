@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Vector"
@@ -22,5 +23,6 @@ keywords:
   - "access"
   - "operations"
 ---
+author: hdnax
 
 A contiguous, dynamically-sized array data structure supporting indexed access and operations like append, typically allocated on the Heap.

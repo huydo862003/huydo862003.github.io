@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Countable set
@@ -20,5 +21,6 @@ keywords:
   - "itself"
   - "mathbb"
 ---
+author: hdnax
 
 A set that is either finite, or is infinite and there exists a bijection from itself into $\mathbb{N}$.

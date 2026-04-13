@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Local variable"
@@ -23,5 +24,6 @@ keywords:
   - "lifetime"
   - "limited"
 ---
+author: hdnax
 
 A variable declared within a Block or function whose scope and lifetime are limited to that region - inaccessible from outside and typically deallocated when the block exits.

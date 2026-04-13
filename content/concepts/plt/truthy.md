@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Truthy"
@@ -23,5 +24,6 @@ keywords:
   - "numbers"
   - "non-empty"
 ---
+author: hdnax
 
 A **value** that evaluates as true in a boolean context despite not being literally `true` (like non-zero numbers or non-empty strings in dynamic languages).

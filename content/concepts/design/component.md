@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Component
@@ -23,5 +24,6 @@ keywords:
   - "operates"
   - "encapsulating"
 ---
+author: hdnax
 
 A reusable, standardized interface element-not a one-off, unique implementation-that operates by encapsulating code, style, and behavior into a single package to ensure consistency and efficiency across a product.

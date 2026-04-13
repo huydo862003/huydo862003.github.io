@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Sequential evaluation"
@@ -23,5 +24,6 @@ keywords:
   - "evaluated"
   - "after"
 ---
+author: hdnax
 
 An execution model where expressions or statements are evaluated one after another in a specified order, with each completing before the next begins - the default in imperative languages, contrasted with parallel or concurrent evaluation.

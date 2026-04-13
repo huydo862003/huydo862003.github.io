@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What are the possible evaluation strategies for lambda calculus?
@@ -16,6 +17,7 @@ keywords:
   - "order"
   - "redex"
 ---
+author: hdnax
 
 - Full beta-reduction.
     

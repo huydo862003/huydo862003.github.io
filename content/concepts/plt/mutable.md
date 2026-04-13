@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Mutable"
@@ -23,5 +24,6 @@ keywords:
   - "whose"
   - "contents"
 ---
+author: hdnax
 
 The property of an entity (variable, data structure, reference) whose contents can be modified in place after creation.

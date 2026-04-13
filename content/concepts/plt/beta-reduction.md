@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Beta-reduction"
@@ -23,5 +24,6 @@ keywords:
   - "argument"
   - "function"
 ---
+author: hdnax
 
 The act of reducing a Beta-redex/Reducible expression by substituting the redex's argument into its function body.

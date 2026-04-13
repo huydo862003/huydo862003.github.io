@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What are type systems good for?
@@ -16,6 +17,7 @@ keywords:
   - "debugging"
   - "performance"
 ---
+author: hdnax
 
 - Living documentation.
 - Maintenance tool.

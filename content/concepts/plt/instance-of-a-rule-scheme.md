@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Instance of a rule scheme"
@@ -18,5 +19,6 @@ keywords:
   - "synonymous"
   - "inference"
 ---
+author: hdnax
 
 Synonymous with Instance of an inference rule.

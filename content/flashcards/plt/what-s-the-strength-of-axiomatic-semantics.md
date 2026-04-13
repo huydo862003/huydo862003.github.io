@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What's the strength of axiomatic semantics?
@@ -16,6 +17,7 @@ keywords:
   - "fore-front"
   - "focus"
 ---
+author: hdnax
 
 
 The proof rules/laws are of the fore-front focus.

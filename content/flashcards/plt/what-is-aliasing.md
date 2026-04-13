@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What is aliasing?
@@ -17,6 +18,7 @@ keywords:
   - "variables"
   - "references"
 ---
+author: hdnax
 
 
 Aliasing is a phenomenon where multiple paths (variables, references, member accesses) refer to the same memory location.

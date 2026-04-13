@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: Which notation is often used to denote a preorder relation?
@@ -12,6 +13,7 @@ tags: []
 keywords:
   - "preorder"
 ---
+author: hdnax
 
 
 $\le$ or $\lesssim$

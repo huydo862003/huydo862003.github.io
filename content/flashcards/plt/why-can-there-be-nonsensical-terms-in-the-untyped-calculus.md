@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: Why can there be nonsensical terms in the untyped calculus of booleans and numbers?
@@ -12,6 +13,7 @@ tags: []
 keywords:
   - "untyped calculus of booleans and numbers"
 ---
+author: hdnax
 
 
 There's no type system.

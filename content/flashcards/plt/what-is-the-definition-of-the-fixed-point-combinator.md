@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What is the definition of the fixed-point combinator?
@@ -18,6 +19,7 @@ keywords:
   - "combinator"
   - "finds"
 ---
+author: hdnax
 
 
 A fixed-point combinator is a function that finds the fixed-point of any given function regarding the Evaluation/Reduction relation.

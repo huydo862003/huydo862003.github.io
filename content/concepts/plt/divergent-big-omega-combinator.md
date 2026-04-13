@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Divergent/Big omega combinator
@@ -18,5 +19,6 @@ keywords:
   - "combinator"
   - "formula"
 ---
+author: hdnax
 
 Formula: $\Omega = (\lambda x.\ x\ x)\ (\lambda x.\ x\ x)$

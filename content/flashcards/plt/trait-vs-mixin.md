@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: Trait vs mixin?
@@ -18,6 +19,7 @@ keywords:
   - "sense"
   - "rust's"
 ---
+author: hdnax
 
 
 Note: Trait in this sense is different from Rust's traits.

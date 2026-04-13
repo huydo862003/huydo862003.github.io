@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: When a rule is not an axiom, what is it called?
@@ -16,6 +17,7 @@ keywords:
   - "rule"
   - "proper rule"
 ---
+author: hdnax
 
 
 Proper rule.

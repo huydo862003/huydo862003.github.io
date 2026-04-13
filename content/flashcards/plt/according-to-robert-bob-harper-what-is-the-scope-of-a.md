@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: "According to robert (bob) harper, what is the scope of a binding?"
@@ -17,6 +18,7 @@ keywords:
   - "bound"
   - "identifier"
 ---
+author: hdnax
 
 
 The scope of a binding is an ABT in which the corresponding bound identifier can be used as a placeholder or an index of an indexed operator.

@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Value
@@ -19,5 +20,6 @@ keywords:
   - "bad"
   - "state"
 ---
+author: hdnax
 
 A term in normal form that is not deemed a bad state.

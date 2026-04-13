@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Procedure"
@@ -22,5 +23,6 @@ keywords:
   - "returning"
   - "value"
 ---
+author: hdnax
 
 A subroutine that performs actions primarily for side effects rather than returning a value. Unlike functions, procedures emphasize imperative steps over computation of results.

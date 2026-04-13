@@ -1,16 +1,35 @@
 #!/usr/bin/env node
 import {
+  input, select,
+} from '@inquirer/prompts';
+import {
   scaffoldContent,
 } from './utils/scaffold';
 
-const title = process.argv[2];
-if (!title) {
-  console.error('Usage: pnpm new:journey "Journey Title"');
-  process.exit(1);
-}
+const title = await input({
+  message: 'Title:',
+  validate: (v) => v.trim() !== '' || 'Required',
+});
+const description = await input({
+  message: 'Description (optional):',
+});
+const status = await select({
+  message: 'Status:',
+  choices: [
+    {
+      value: 'active',
+    },
+    {
+      value: 'paused',
+    },
+    {
+      value: 'completed',
+    },
+  ],
+});
 
 scaffoldContent({
   contentDir: 'journeys',
   title,
-  frontMatter: `title: ${title}\ndescription:\nstatus: active\ntags: []`,
+  frontMatter: `title: "${title}"\ndescription: "${description}"\nstatus: ${status}\ntags: []`,
 });

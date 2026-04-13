@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Conclusion"
@@ -20,5 +21,6 @@ keywords:
   - "premises"
   - "satisfied"
 ---
+author: hdnax
 
 The consequent judgment of an inference rule that is derived when all its premises are satisfied.

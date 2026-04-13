@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Binding structure of syntax"
@@ -21,5 +22,6 @@ keywords:
   - "tree"
   - "abt"
 ---
+author: hdnax
 
 A generalization of [Abstract binding tree (ABT)](/journeys/plt/concepts/abstract-binding-tree-abt).

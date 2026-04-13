@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: Why are most dynamically checked languages safe?
@@ -18,6 +19,7 @@ keywords:
   - "trivial"
   - "provide"
 ---
+author: hdnax
 
 
 If a runtime provides any checking at all, it's trivial to provide the utmost safety.

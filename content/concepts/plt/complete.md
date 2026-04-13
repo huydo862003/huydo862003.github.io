@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Complete"
@@ -18,5 +19,6 @@ keywords:
   - "form"
   - "completeness"
 ---
+author: hdnax
 
 The adjective form of Completeness.

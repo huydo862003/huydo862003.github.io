@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Formal parameter"
@@ -23,5 +24,6 @@ keywords:
   - "placeholders"
   - "signature"
 ---
+author: hdnax
 
 The variable declared in a function definition that receive values when called - placeholders in the function signature.

@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Subtyping"
@@ -23,5 +24,6 @@ keywords:
   - "substitution"
   - "allowed"
 ---
+author: hdnax
 
 The type system mechanism that defines and enforces **when substitution is allowed** between types.

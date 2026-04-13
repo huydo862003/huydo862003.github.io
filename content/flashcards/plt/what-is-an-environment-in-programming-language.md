@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What is an environment in programming language?
@@ -17,6 +18,7 @@ keywords:
   - "values"
   - "theoretic"
 ---
+author: hdnax
 
 
 An environment can be a theoretic construct to store bindings of variables to values/types as part of semantic/type-theoretic reasoning.

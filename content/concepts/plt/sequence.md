@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Sequence"
@@ -23,5 +24,6 @@ keywords:
   - "formally"
   - "function"
 ---
+author: hdnax
 
 An ordered collection of elements indexed by natural numbers - formally, a function from $\mathbb{N}$ to some set, denoted $(a_0, a_1, a_2, ...)$ or $(a_i)_i\in\mathbb{N}$.

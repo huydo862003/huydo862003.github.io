@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What is a primordial block in programming language?
@@ -18,6 +19,7 @@ keywords:
   - "containing"
   - "builtins"
 ---
+author: hdnax
 
 
 A block that encompasses the global scope, containing all the builtins.

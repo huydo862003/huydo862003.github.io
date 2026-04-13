@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Framework
@@ -23,6 +24,7 @@ keywords:
   - "code"
   - "html"
 ---
+author: hdnax
 :::key
 (Design tool, Frontend technology) A pre-written package of code (HTML/CSS/JS) that provides ready-made UI components to speed up development.
 :::

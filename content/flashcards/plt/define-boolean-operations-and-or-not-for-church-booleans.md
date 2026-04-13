@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: "Define boolean operations and, or, not for church booleans?"
@@ -18,6 +19,7 @@ keywords:
   - "aligned"
   - "church"
 ---
+author: hdnax
 
 
 Church booleans:

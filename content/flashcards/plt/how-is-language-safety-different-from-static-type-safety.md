@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: How is language safety different from static type safety
@@ -18,6 +19,7 @@ keywords:
   - "never"
   - "language"
 ---
+author: hdnax
 
 
 Static type safety means that if a compiler suggests that a program is free of any runtime type errors, running that program can never produce such an error.

@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What is the class pattern with both private members and static members?
@@ -16,6 +17,7 @@ keywords:
   - "exp1"
   - "args"
 ---
+author: hdnax
 
 
 ```racket

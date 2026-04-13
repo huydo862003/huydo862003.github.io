@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: Language safety from the perspective of trapped and untrapped errors?
@@ -16,6 +17,7 @@ keywords:
   - "untrapped"
   - "trapped"
 ---
+author: hdnax
 
 
 Trapped error: An error that causes immediate termination of the process.

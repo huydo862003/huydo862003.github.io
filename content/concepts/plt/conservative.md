@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Conservative"
@@ -23,5 +24,6 @@ keywords:
   - "actual"
   - "ones"
 ---
+author: hdnax
 
 A type checker that considers **all possible executions** rather than just actual ones - may reject programs that would run safely (false positives) because it can't know which branch will execute at runtime.

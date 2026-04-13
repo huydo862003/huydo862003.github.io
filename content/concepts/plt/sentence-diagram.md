@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Sentence diagram"
@@ -17,5 +18,6 @@ keywords:
   - "syntactic"
   - "structure"
 ---
+author: hdnax
 
 A syntactic structure of a given sentence.

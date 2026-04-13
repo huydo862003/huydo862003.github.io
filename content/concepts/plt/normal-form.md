@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Normal form
@@ -18,5 +19,6 @@ keywords:
   - "evaluated"
   - "further"
 ---
+author: hdnax
 
 A term that cannot be evaluated further.

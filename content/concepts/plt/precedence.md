@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Precedence"
@@ -22,5 +23,6 @@ keywords:
   - "makes"
   - "parse"
 ---
+author: hdnax
 
 A **parsing rule** that determines which operator binds tighter (e.g., `*` before `+` makes `1 + 2 * 3` parse as `1 + (2 * 3)`).

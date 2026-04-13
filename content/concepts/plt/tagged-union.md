@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Tagged union"
@@ -23,5 +24,6 @@ keywords:
   - "variant"
   - "explicit"
 ---
+author: hdnax
 
 Synonym for Sum type - "union" because it combines variants, "tagged" because each variant has an explicit Constructor tag distinguishing it (unlike **untagged** Union type types).

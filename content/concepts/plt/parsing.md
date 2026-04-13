@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Parsing"
@@ -23,6 +24,7 @@ keywords:
   - "implementation"
   - "concrete"
 ---
+author: hdnax
 :::key
 (Compiler implementation) The process of converting Concrete/Surface syntax into [Abstract syntax tree (AST)](/journeys/plt/concepts/abstract-syntax-tree-ast)s.
 :::

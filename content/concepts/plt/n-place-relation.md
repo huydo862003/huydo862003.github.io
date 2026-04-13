@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "N-place relation"
@@ -19,5 +20,6 @@ keywords:
   - "cartesian"
   - "product"
 ---
+author: hdnax
 
 Given $n$ sets $X_1, X_2, ..., X_n$, the subset of the Cartesian product $X_1 \times X_2 \times ... \times X_n$.

@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Self-reference"
@@ -23,6 +24,7 @@ keywords:
   - "programming"
   - "class"
 ---
+author: hdnax
 :::key
 (Programming paradigm) A technique in the Class pattern that allows members of a class to reference their owner objects.
 :::

@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Structural type"
@@ -23,5 +24,6 @@ keywords:
   - "rather"
   - "name"
 ---
+author: hdnax
 
 A type defined by its **shape** (fields, methods, signatures) rather than its name - two types are equal if they have the same structure.

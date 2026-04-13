@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Stuck term"
@@ -19,5 +20,6 @@ keywords:
   - "form"
   - "value"
 ---
+author: hdnax
 
 A Lambda term that is in Normal form but not a Value.

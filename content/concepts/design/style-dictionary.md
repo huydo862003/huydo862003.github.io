@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Style dictionary
@@ -23,5 +24,6 @@ keywords:
   - "tokens"
   - "json"
 ---
+author: hdnax
 
 A build system that automatically transforms platform-agnostic design tokens (JSON) into platform-specific code (CSS, Swift, Android XML) to ensure synchronization.

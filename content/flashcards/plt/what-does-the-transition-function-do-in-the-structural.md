@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What does the transition function do in the structural operational semantics?
@@ -18,6 +19,7 @@ keywords:
   - "gives"
   - "performing"
 ---
+author: hdnax
 
 
 Describe the machine's behavior - for each state, either:

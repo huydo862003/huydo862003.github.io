@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Prototype"
@@ -23,5 +24,6 @@ keywords:
   - "cloning"
   - "prototype-based"
 ---
+author: hdnax
 
 An object that serves as a template for creating other objects through cloning, used in prototype-based languages like JavaScript as an alternative to class-based inheritance, generalizing class-based inheritance.

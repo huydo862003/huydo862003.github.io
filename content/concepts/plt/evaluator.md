@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Evaluator
@@ -17,5 +18,6 @@ keywords:
   - "programs"
   - "answers"
 ---
+author: hdnax
 
 A program that turns programs into answers

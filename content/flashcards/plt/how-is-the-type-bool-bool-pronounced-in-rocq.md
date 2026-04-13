@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: "How is the type "bool -> bool" pronounced in rocq?"
@@ -12,6 +13,7 @@ tags: []
 keywords:
   - "rocq"
 ---
+author: hdnax
 
 
 "bool arrow bool".

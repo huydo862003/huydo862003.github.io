@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Supertype"
@@ -16,5 +17,6 @@ keywords:
   - "supertype"
   - "subtype"
 ---
+author: hdnax
 
 If $X$ is a Subtype of $Y$ then $Y$ is a supertype of $X$.

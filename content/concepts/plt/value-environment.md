@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Value environment"
@@ -20,5 +21,6 @@ keywords:
   - "values"
   - "interpretation"
 ---
+author: hdnax
 
 A mapping from variable names to **runtime values** used during interpretation.

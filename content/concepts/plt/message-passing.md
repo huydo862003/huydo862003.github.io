@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Message passing"
@@ -21,6 +22,7 @@ keywords:
   - "scheme"
   - "msg"
 ---
+author: hdnax
 
 ```scheme
 (define msg (obj name . args)

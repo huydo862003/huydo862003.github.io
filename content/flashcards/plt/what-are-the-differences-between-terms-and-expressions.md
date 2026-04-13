@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What are the differences between terms and expressions?
@@ -17,6 +18,7 @@ keywords:
   - "expression"
   - "represents"
 ---
+author: hdnax
 
 
 Expression is used to denote any syntactic constructs.

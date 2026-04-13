@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What are the general strategies for handling partiality in type systems?
@@ -16,6 +17,7 @@ keywords:
   - "type"
   - "truthful"
 ---
+author: hdnax
 
 1. Exception
     - Pros: Simple.

@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What are computation and congruence rules?
@@ -20,6 +21,7 @@ keywords:
   - "current"
   - "term"
 ---
+author: hdnax
 
 
 A computation rule directly reduces the current term.

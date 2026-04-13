@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Expression problem
@@ -22,6 +23,7 @@ keywords:
   - "expression"
   - "problem"
 ---
+author: hdnax
 
 | Approach | Easy to add | Hard to add |
 | --- | --- | --- |

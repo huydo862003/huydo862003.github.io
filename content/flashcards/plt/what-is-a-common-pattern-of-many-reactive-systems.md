@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: "What is a common pattern of many reactive systems?"
@@ -14,6 +15,7 @@ keywords:
   - "guaranteed"
   - "ribs"
 ---
+author: hdnax
 
 - Loop spine.
 - Short and guaranteed ribs.

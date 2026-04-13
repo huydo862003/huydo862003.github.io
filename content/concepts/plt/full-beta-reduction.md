@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Full beta-reduction"
@@ -22,6 +23,7 @@ keywords:
   - "defined"
   - "rules"
 ---
+author: hdnax
 
 In pure lambda calculus, this strategy is defined by the following rules:
 

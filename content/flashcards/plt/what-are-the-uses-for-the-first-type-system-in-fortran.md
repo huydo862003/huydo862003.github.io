@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: "What are the uses for the first type system in fortran?"
@@ -16,6 +17,7 @@ keywords:
   - "point"
   - "numbers"
 ---
+author: hdnax
 
 
 To distinguish between integers and floating point numbers & optimize performance.

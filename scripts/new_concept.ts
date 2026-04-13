@@ -1,17 +1,38 @@
 #!/usr/bin/env node
 import {
+  input, select,
+} from '@inquirer/prompts';
+import {
   scaffoldContent,
 } from './utils/scaffold';
 
-const title = process.argv[2];
-const journey = process.argv[3] || '';
-if (!title) {
-  console.error('Usage: pnpm new:concept "Concept Name" [journey-slug]');
-  process.exit(1);
-}
+const title = await input({
+  message: 'Title:',
+  validate: (v) => v.trim() !== '' || 'Required',
+});
+const journey = await input({
+  message: 'Journey slug (optional):',
+});
+const description = await input({
+  message: 'Description (optional):',
+});
+const status = await select({
+  message: 'Status:',
+  choices: [
+    {
+      value: 'learning',
+    },
+    {
+      value: 'reviewing',
+    },
+    {
+      value: 'mastered',
+    },
+  ],
+});
 
 scaffoldContent({
   contentDir: 'concepts',
   title,
-  frontMatter: `title: ${title}\njourney: ${journey}\ndescription: ""\nstatus: learning\ntags: []\nkeywords: []\nbooks: []\ndependsOn: []\nblocks: []`,
+  frontMatter: `title: "${title}"\njourney: "${journey}"\ndescription: "${description}"\nstatus: ${status}\ntags: []\nkeywords: []\nbooks: []\ndependsOn: []\nblocks: []`,
 });

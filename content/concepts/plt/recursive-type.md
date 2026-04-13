@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Recursive type
@@ -17,5 +18,6 @@ keywords:
   - "reference"
   - "itself"
 ---
+author: hdnax
 
 A type whose definition reference itself.

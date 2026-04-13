@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Derivation"
@@ -22,5 +23,6 @@ keywords:
   - "desired"
   - "judgment"
 ---
+author: hdnax
 
 A finite composition of rules, starting with axioms and ending with a desired Judgment.

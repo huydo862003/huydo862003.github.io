@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: "What does the admitted command do in rocq?"
@@ -16,6 +17,7 @@ keywords:
   - "something"
   - "axiom"
 ---
+author: hdnax
 
 
 It tells Rocq to just treat something as an Axiom.

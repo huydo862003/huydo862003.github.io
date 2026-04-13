@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: "Using robert (bob) harper's notation, what is the definition of variable substitution?"
@@ -18,6 +19,7 @@ keywords:
   - "variable"
   - "notin"
 ---
+author: hdnax
 
 
 Given:

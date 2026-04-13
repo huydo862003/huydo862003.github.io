@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Ordered variadic tree"
@@ -14,3 +15,4 @@ keywords:
   - "variadic"
   - "tree"
 ---
+author: hdnax

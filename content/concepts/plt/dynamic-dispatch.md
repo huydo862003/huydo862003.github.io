@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Dynamic dispatch"
@@ -23,5 +24,6 @@ keywords:
   - "invoke"
   - "based"
 ---
+author: hdnax
 
 A runtime mechanism that selects which method implementation to invoke based on the actual dynamic properties of the object, rather than the declared static properties of the reference, enabling polymorphic behavior.

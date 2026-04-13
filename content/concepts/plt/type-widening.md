@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Type widening"
@@ -23,5 +24,6 @@ keywords:
   - "widen"
   - "set"
 ---
+author: hdnax
 
 Analogy: Think of types as sets, then type widening means to widen a set (subtype → supertype).

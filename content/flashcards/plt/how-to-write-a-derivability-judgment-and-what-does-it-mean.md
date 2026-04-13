@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: How to write a derivability judgment and what does it mean?
@@ -9,3 +10,4 @@ books:
   - chapter-3-hypothetical-and-general-judgments
 tags: []
 ---
+author: hdnax

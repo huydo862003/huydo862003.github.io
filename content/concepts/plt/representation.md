@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Representation
@@ -20,5 +21,6 @@ keywords:
   - "represented"
   - "0x05"
 ---
+author: hdnax
 
 A **concrete encoding** of abstract data (e.g., the numeral `5` can be represented as `"101"`, `S(S(S(S(S O))))`, or `0x05`).

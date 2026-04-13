@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: "Which types are supported in conditional expressions' conditions in rocq? why? which values are truthy/falsy?"
@@ -18,6 +19,7 @@ keywords:
   - "built-in"
   - "boolean"
 ---
+author: hdnax
 
 - Inductive types with two constructors.
 - Why: Rocq does not have a built-in boolean.

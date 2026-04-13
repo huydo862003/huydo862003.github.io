@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Subclass"
@@ -23,6 +24,7 @@ keywords:
   - "paradigm"
   - "extends"
 ---
+author: hdnax
 :::key
 (Semantics, Language feature/design, Programming paradigm) A class that extends a parent class.
 :::

@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What is the relation between objects and closures?
@@ -16,6 +17,7 @@ keywords:
   - "multiple"
   - "entrypoints"
 ---
+author: hdnax
 
 
 An Object is a Closure with multiple entrypoints.

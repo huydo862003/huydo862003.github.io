@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: "What's the relation between the y-combinator and the omega combinator?"
@@ -18,6 +19,7 @@ keywords:
   - "big"
   - "y-combinator"
 ---
+author: hdnax
 
 
 The small omega combinator:

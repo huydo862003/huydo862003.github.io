@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Atomic design
@@ -22,5 +23,6 @@ keywords:
   - "blocks"
   - "atoms"
 ---
+author: hdnax
 
 A methodology that breaks interfaces down into fundamental building blocks (atoms) which are assembled into increasingly complex structures (molecules, organisms, templates, pages) to create scalable systems.

@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: Does the choice of evaluation strategy significantly affect the type system?
@@ -12,6 +13,7 @@ tags: []
 keywords:
   - "evaluation strategy"
 ---
+author: hdnax
 
 
 No.

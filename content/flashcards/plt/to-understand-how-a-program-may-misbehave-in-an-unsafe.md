@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: To understand how a program may misbehave in an unsafe language, what should the programmer do?
@@ -14,6 +15,7 @@ keywords:
   - "runtime"
   - "platform"
 ---
+author: hdnax
 
 
 Know about the internals of the runtime & the platform.

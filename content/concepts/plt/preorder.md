@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Preorder
@@ -17,5 +18,6 @@ keywords:
   - "reflexive"
   - "transitive"
 ---
+author: hdnax
 
 A Binary relation that is Reflexive and Transitive.

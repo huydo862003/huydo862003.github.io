@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Constructor"
@@ -23,6 +24,7 @@ keywords:
   - "languages"
   - "closures"
 ---
+author: hdnax
 :::key
 (Programming paradigm, Language feature/design) In languages with closures or prototypes, a function that returns objects of similar shapes.
 :::

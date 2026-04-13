@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Introduction rule"
@@ -17,6 +18,7 @@ keywords:
   - "frac"
   - "quad"
 ---
+author: hdnax
 
 Example:
 

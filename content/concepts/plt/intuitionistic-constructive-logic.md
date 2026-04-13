@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Intuitionistic/Constructive logic"
@@ -23,6 +24,7 @@ keywords:
   - "land"
   - "end"
 ---
+author: hdnax
 
 - Inference rules
     - Conjunction

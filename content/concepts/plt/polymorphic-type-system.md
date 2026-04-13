@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Polymorphic type system"
@@ -23,5 +24,6 @@ keywords:
   - "list"
   - "enabling"
 ---
+author: hdnax
 
 A type system that allows types to contain variables (like `List<T>`, `∀a. a → a`), enabling one definition to work across many types through type abstraction.

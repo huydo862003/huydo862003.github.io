@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: '2026-03-28'
 updatedAt: '2026-03-28'
 question: What are some examples of intentional and accidental signifier?
@@ -11,4 +12,5 @@ concepts:
 books: []
 tags: []
 ---
+author: hdnax
 

@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Divergent term"
@@ -18,5 +19,6 @@ keywords:
   - "normal"
   - "form"
 ---
+author: hdnax
 
 A term that does not evaluate to a normal form.

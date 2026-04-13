@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: Which evaluation strategies are strict/lazy?
@@ -18,6 +19,7 @@ keywords:
   - "value"
   - "lazy"
 ---
+author: hdnax
 
 - Strict evaluation strategy:
     - Call by value.

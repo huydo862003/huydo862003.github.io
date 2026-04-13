@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What are some senses of the word "functional" in "functional programming"?
@@ -18,6 +19,7 @@ keywords:
   - "pure"
   - "first-class"
 ---
+author: hdnax
 
 - Mathematical functions: To denote the resemblance to "pure" mathematical functions.
 - Functions as first-class values.

@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Empty set"
@@ -15,5 +16,6 @@ keywords:
   - "empty"
   - "element"
 ---
+author: hdnax
 
 A set with no element.

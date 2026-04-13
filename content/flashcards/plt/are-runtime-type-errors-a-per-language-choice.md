@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: Are runtime type errors a per-language choice?
@@ -12,6 +13,7 @@ tags: []
 keywords:
   - "runtime type error"
 ---
+author: hdnax
 
 
 Yes.

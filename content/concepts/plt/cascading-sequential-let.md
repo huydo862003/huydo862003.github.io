@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Cascading/Sequential let
@@ -17,6 +18,7 @@ keywords:
   - "sequential"
   - "scheme"
 ---
+author: hdnax
 
 ```scheme
 (let* ([x 1]

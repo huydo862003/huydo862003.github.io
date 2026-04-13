@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Application/Function call
@@ -19,5 +20,6 @@ keywords:
   - "applying"
   - "argument"
 ---
+author: hdnax
 
 The fundamental operation of applying a function to an argument.

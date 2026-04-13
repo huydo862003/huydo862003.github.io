@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: '2026-03-28'
 updatedAt: '2026-03-28'
 question: Why doesn't a conceptual model have to be correct or precise?
@@ -9,4 +10,5 @@ concepts:
 books: []
 tags: []
 ---
+author: hdnax
 

@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Finite type"
@@ -23,5 +24,6 @@ keywords:
   - "fixed"
   - "variants"
 ---
+author: hdnax
 
 A **type** with a bounded number of inhabitants (like `bool` with 2 or `enum` with fixed variants), often enabling exhaustive enumeration or decidable equality.

@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Functional programming
@@ -22,5 +23,6 @@ keywords:
   - "rather"
   - "statements"
 ---
+author: hdnax
 
 A **programming paradigm** centered on pure functions, immutability, and expressions rather than statements, treating computation as evaluation of mathematical functions.

@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Module system"
@@ -23,5 +24,6 @@ keywords:
   - "namespaced"
   - "units"
 ---
+author: hdnax
 
 A **language feature** that organizes code into namespaced units with controlled visibility, enabling encapsulation, separate compilation, and abstraction through signatures/interfaces.

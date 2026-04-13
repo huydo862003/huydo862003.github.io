@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What are the key considerations in designing conditionals?
@@ -18,6 +19,7 @@ keywords:
   - "values"
   - "truthy"
 ---
+author: hdnax
 
 - Which data types are allowed in conditionals?
     

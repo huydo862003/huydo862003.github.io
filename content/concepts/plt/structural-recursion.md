@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Structural recursion"
@@ -23,5 +24,6 @@ keywords:
   - "guaranteeing"
   - "termination"
 ---
+author: hdnax
 
 A **recursion scheme** that decomposes data along its constructors, guaranteeing termination by recursing only on structurally smaller subterms.

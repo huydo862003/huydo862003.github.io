@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Refined type"
@@ -23,5 +24,6 @@ keywords:
   - "integers"
   - "non-null"
 ---
+author: hdnax
 
 A type that carries additional constraints beyond the base type, such as "positive integers" or "non-null strings". Enables more precise specifications and stronger compile-time guarantees.

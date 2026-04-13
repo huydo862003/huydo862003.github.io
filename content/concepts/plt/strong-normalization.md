@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Strong normalization"
@@ -21,5 +22,6 @@ keywords:
   - "always"
   - "terminates"
 ---
+author: hdnax
 
 The property of a language written in which every program always terminates.

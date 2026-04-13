@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Halt"
@@ -22,5 +23,6 @@ keywords:
   - "term"
   - "normal"
 ---
+author: hdnax
 
 The terminal state of an abstract machine reached when the current term is in normal form (i.e., no evaluation rule applies), signaling completion of evaluation.

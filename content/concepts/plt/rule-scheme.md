@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Rule scheme"
@@ -17,5 +18,6 @@ keywords:
   - "synonymous"
   - "schema"
 ---
+author: hdnax
 
 Synonymous with Rule schema.

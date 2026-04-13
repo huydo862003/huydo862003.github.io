@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: "Is bullet point optional in subgoals in a destruct tactic? if yes, why would you use it?"
@@ -9,3 +10,4 @@ books:
   - chapter-1-basics-functional-programming-in-rocq
 tags: []
 ---
+author: hdnax

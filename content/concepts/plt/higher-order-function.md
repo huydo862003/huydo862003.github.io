@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Higher-order function"
@@ -17,5 +18,6 @@ keywords:
   - "returns"
   - "another"
 ---
+author: hdnax
 
 A function that accepts or returns another function.

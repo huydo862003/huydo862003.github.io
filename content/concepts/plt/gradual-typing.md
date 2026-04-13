@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Gradual typing"
@@ -23,6 +24,7 @@ keywords:
   - "ocaml"
   - "typescript"
 ---
+author: hdnax
 
 ```scheme
 Fully untyped <---------------> Fully typed

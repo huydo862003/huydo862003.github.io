@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Proof by simplification
@@ -22,6 +23,7 @@ keywords:
   - "simplification"
   - "tools"
 ---
+author: hdnax
 
 Tools: Rocq (formerly Coq)
 :::key

@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What is beta reduction?
@@ -18,6 +19,7 @@ keywords:
   - "expression"
   - "substituting"
 ---
+author: hdnax
 
 
 The act of reducing a Beta-redex/Reducible expression by substituting the redex's argument into its function body.

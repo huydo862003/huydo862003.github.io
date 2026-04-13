@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What is the one-step evaluation relation?
@@ -18,6 +19,7 @@ keywords:
   - "successor"
   - "calculus"
 ---
+author: hdnax
 
 
 A relation that relates a term to its immediate successor in a calculus, representing one step of evaluation.

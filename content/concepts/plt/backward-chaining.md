@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Backward chaining"
@@ -23,5 +24,6 @@ keywords:
   - "works"
   - "backwards"
 ---
+author: hdnax
 
 A proof technique for Judgments that starts from the desired judgement and works backwards towards the axioms.

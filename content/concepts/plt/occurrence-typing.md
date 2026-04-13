@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Occurrence typing"
@@ -23,5 +24,6 @@ keywords:
   - "variable's"
   - "differ"
 ---
+author: hdnax
 
 A type system technique where a variable's type can **differ at each occurrence** (use) based on what predicates have been checked - the same variable `x` can have type `Number` in one branch and `String` in another. Synonymous with Flow typing.

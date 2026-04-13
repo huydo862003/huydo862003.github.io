@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Unfold"
@@ -23,5 +24,6 @@ keywords:
   - "expanding"
   - "abbreviations"
 ---
+author: hdnax
 
 A **reduction step** that replaces a defined name with its definition body, expanding abbreviations to expose underlying structure.

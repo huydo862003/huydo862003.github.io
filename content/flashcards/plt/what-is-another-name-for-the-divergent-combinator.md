@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What is another name for the divergent combinator?
@@ -12,6 +13,7 @@ tags: []
 keywords:
   - "divergent big omega combinator"
 ---
+author: hdnax
 
 
 The big omega combinator.

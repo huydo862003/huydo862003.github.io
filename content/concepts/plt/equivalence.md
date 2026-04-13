@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Equivalence
@@ -17,5 +18,6 @@ keywords:
   - "symmetric"
   - "relation"
 ---
+author: hdnax
 
 A Reflexive, Transitive and Symmetric relation.

@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What is a term in grammar?
@@ -15,6 +16,7 @@ keywords:
   - "phrase"
   - "grammar"
 ---
+author: hdnax
 
 
 A syntactic phrase in a grammar.

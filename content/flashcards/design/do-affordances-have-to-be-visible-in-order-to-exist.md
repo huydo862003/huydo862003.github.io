@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: '2026-03-28'
 updatedAt: '2026-03-28'
 question: "Do affordances have to be visible in order to exist? consider people with"
@@ -14,4 +15,5 @@ concepts:
 books: []
 tags: []
 ---
+author: hdnax
 

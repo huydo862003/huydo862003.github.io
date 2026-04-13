@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: '2026-03-28'
 updatedAt: '2026-03-28'
 question: Why does matklad think mod.rs-less system is self-inconsistent?
@@ -14,6 +15,7 @@ keywords:
   - "module"
   - "systems"
 ---
+author: hdnax
 
 Blog posts: Notes on module systems
 

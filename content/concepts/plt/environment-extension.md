@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Environment extension"
@@ -22,5 +23,6 @@ keywords:
   - "variable"
   - "bound"
 ---
+author: hdnax
 
 The operation $\Gamma[x \leftarrow t]$ that creates a **new environment** with all bindings from $\Gamma$ plus variable $x$ bound to term/type/etc. $t$.

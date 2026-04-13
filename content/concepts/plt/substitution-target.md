@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Substitution target"
@@ -20,5 +21,6 @@ keywords:
   - "substituted"
   - "objects"
 ---
+author: hdnax
 
 The parameterized expression whose variables are substituted with objects.

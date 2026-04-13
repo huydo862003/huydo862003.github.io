@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Witness"
@@ -22,5 +23,6 @@ keywords:
   - "exists"
   - "holds"
 ---
+author: hdnax
 
 A specific object that satisfies an existential claim, for example, a concrete value $t$ for $\exists x., P(x)$ such that $P(t)$ holds.

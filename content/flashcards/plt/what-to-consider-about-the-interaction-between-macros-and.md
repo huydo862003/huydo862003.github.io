@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What to consider about the interaction between macros and side effects?
@@ -17,6 +18,7 @@ keywords:
   - "substituted"
   - "macro's"
 ---
+author: hdnax
 
 
 An argument to the macro can be substituted multiple times into the macro's body, causing the argument to be evaluated multiple times. If the argument evaluation has side effects, it can be confusing.

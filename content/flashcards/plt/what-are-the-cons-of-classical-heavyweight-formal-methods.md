@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What are the cons of classical heavyweight formal methods
@@ -14,6 +15,7 @@ keywords:
   - "mathematically"
   - "heavy"
 ---
+author: hdnax
 
 - Cumbersome.
 - Sophisticated and mathematically heavy.

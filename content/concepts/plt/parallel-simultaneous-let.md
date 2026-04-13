@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Parallel/Simultaneous let
@@ -23,6 +24,7 @@ keywords:
   - "python's"
   - "multi-assignment's"
 ---
+author: hdnax
 
 ```scheme
 (let ([x 1]

@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Nominal typing"
@@ -23,5 +24,6 @@ keywords:
   - "explicit"
   - "declarations"
 ---
+author: hdnax
 
 A type system where Type compatibility is determined by **explicit declarations** (class names, inheritance hierarchy), not structure - `class A` and `class B` are different even if identical in shape.

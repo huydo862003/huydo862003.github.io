@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Aliasing
@@ -22,5 +23,6 @@ keywords:
   - "memory"
   - "location"
 ---
+author: hdnax
 
 A semantic phenomenon where multiple identifiers, references, or paths denote the same memory location, causing mutations through one to be observable through the others - complicating reasoning, optimization, and safety guarantees.

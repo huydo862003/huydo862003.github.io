@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: "What is the syntax for conditional expressions in rocq?"
@@ -12,6 +13,7 @@ tags: []
 keywords:
   - "rocq"
 ---
+author: hdnax
 
 
 `if ... then ... else ...`

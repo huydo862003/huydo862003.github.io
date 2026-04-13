@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Nominal type"
@@ -23,5 +24,6 @@ keywords:
   - "regardless"
   - "structure"
 ---
+author: hdnax
 
 A type identified by its **name** - two types are equal only if they have the same declared name, regardless of structure.

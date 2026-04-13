@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Infinite type"
@@ -23,5 +24,6 @@ keywords:
   - "finite"
   - "types"
 ---
+author: hdnax
 
 A **type** that has infinitely many inhabitants (like `nat`, `string`, or `list`), as opposed to finite types like `bool` or enums with fixed members.

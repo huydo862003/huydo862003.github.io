@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What is a macro?
@@ -17,6 +18,7 @@ keywords:
   - "expanded"
   - "code"
 ---
+author: hdnax
 
 
 Macro is a syntactic pattern that gets expanded into other code at compile time.

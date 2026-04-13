@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Lexical/Static scope
@@ -22,5 +23,6 @@ keywords:
   - "textual"
   - "position"
 ---
+author: hdnax
 
 A binding resolution strategy where a variable's binding is determined by its textual position in the source code - the enclosing scope at the point of definition, not the call site at runtime.

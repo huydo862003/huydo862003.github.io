@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: How are types and tests complementary?
@@ -15,6 +16,7 @@ keywords:
   - "test"
   - "dynamic"
 ---
+author: hdnax
 
 - Type: Static verification.
 - Test: Dynamic verification.

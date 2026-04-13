@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Expression"
@@ -23,6 +24,7 @@ keywords:
   - "design"
   - "syntactic"
 ---
+author: hdnax
 :::key
 (Semantics, Syntax & Grammar, Language feature/design) A syntactic construct that evaluates to a value, as opposed to a Statement.
 :::

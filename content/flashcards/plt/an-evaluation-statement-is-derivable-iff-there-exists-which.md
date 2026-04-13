@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: An evaluation statement is derivable iff there exists which derivation tree?
@@ -18,6 +19,7 @@ keywords:
   - "tree"
   - "conforming"
 ---
+author: hdnax
 
 
 An evaluation statement is derivable if there is a derivation tree conforming to the evaluation relation whose root is that evaluation statement.

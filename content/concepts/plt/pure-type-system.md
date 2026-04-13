@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Pure type system"
@@ -23,5 +24,6 @@ keywords:
   - "parameterizing"
   - "lambda"
 ---
+author: hdnax
 
 A general framework parameterizing typed lambda calculi by a triple (sorts, axioms, rules), unifying systems like simply typed λ-calculus, System F, and the calculus of constructions under a single formalism.

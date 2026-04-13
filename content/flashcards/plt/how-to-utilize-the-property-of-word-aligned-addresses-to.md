@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: How to utilize the property of word-aligned addresses to optimize number's placements?
@@ -16,6 +17,7 @@ keywords:
   - "objects"
   - "heap"
 ---
+author: hdnax
 
 - In languages that mostly allocate memory for objects on the heap.
 - These memory should in most case be word-aligned.

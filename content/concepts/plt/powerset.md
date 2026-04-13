@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Powerset
@@ -15,5 +16,6 @@ keywords:
   - "mathcal"
   - "subseteq"
 ---
+author: hdnax
 
 Definition: $\mathcal{P}(S) = \{ s\ |\ s \subseteq S \}$ .

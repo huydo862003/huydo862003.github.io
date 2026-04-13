@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What is the difference between a compiler and an interpreter?
@@ -19,6 +20,7 @@ keywords:
   - "carries"
   - "program"
 ---
+author: hdnax
 
 - A compiler can be treated as a function that carries a program in the source programming language to another target programming language.
     

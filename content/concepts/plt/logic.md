@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Logic"
@@ -22,5 +23,6 @@ keywords:
   - "syntax"
   - "propositions"
 ---
+author: hdnax
 
 A **formal system** for reasoning about truth, validity, and inference, defining syntax for propositions and rules for deriving conclusions.

@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: "How to destruct multiple variables at once in rocq?"
@@ -9,6 +10,7 @@ books:
   - chapter-1-basics-functional-programming-in-rocq
 tags: []
 ---
+author: hdnax
 
 
 Use `intros <intro-pattern>.`

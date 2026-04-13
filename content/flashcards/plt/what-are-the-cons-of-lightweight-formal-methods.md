@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What are the cons of lightweight formal methods
@@ -16,6 +17,7 @@ keywords:
   - "heavy-weight"
   - "methods"
 ---
+author: hdnax
 
 
 Not as strong or general as more heavy-weight methods.

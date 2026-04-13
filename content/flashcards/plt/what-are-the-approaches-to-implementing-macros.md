@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What are the approaches to implementing macros?
@@ -16,6 +17,7 @@ keywords:
   - "parenthetical"
   - "language"
 ---
+author: hdnax
 
 
 AST rewriting 

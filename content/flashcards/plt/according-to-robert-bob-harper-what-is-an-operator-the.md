@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: "According to robert (bob) harper, what is an operator, the arity of an operator?"
@@ -16,6 +17,7 @@ keywords:
   - "node's"
   - "abstract"
 ---
+author: hdnax
 
 
 An operator is a stand-in for an internal node's type of an abstract syntax tree.

@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What is a rule schema and its relation with concrete rules?
@@ -20,6 +21,7 @@ keywords:
   - "representing"
   - "generic"
 ---
+author: hdnax
 
 
 A rule schema is synonymous with inference rule, representing a generic rule with metavariables.

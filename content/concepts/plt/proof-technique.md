@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Proof technique"
@@ -23,6 +24,7 @@ keywords:
   - "language"
   - "feature"
 ---
+author: hdnax
 :::key
 (Formal system, Proof/Reason technique, Language feature/design, Programming paradigm) [Rocq] In Rocq, a **conceptual strategy** for proving goals (like induction or case analysis), typically realized by corresponding tactics.
 :::

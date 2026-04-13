@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Calculus of inductive construction"
@@ -23,6 +24,7 @@ keywords:
   - "formerly"
   - "coq"
 ---
+author: hdnax
 
 Tools: Rocq (formerly Coq)
 :::key

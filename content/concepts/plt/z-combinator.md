@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Z-combinator"
@@ -23,6 +24,7 @@ keywords:
   - "mapsto"
   - "end"
 ---
+author: hdnax
 
 Formula: $\lambda f.\ (\lambda x.\ f\ (\lambda v.\ x\ x\ v))\ (\lambda x.\ f\ (\lambda v.\ x\ x\ v))$
 

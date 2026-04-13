@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Macro system
@@ -22,5 +23,6 @@ keywords:
   - "macros"
   - "enabling"
 ---
+author: hdnax
 
 A language facility that provides programmable syntax transformations through macros, enabling users to define new syntactic forms that expand into existing language constructs at compile time.

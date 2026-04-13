@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Curry/Y-Combinator"
@@ -23,6 +24,7 @@ keywords:
   - "details"
   - "begin"
 ---
+author: hdnax
 
 $$
 \text{fix} = \lambda f.\ (\lambda x.\ f\ (x\ x))\ (\lambda x.\ f (x\ x))

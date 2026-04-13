@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: Why does type inference cause vague error messages?
@@ -18,6 +19,7 @@ keywords:
   - "sometimes"
   - "multiple"
 ---
+author: hdnax
 
 
 Sometimes, multiple types are inferred for a variable at different locations. The question: Which type and which location to report?

@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Proper rule"
@@ -20,5 +21,6 @@ keywords:
   - "least"
   - "premises"
 ---
+author: hdnax
 
 An Inference rule that is not an Axiom, in other words, has at least one Premises.

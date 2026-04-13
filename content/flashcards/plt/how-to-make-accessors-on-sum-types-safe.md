@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: How to make accessors on sum types safe?
@@ -12,6 +13,7 @@ tags: []
 keywords:
   - "pattern matching"
 ---
+author: hdnax
 
 
 Pattern matching

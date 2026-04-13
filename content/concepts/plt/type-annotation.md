@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Type annotation"
@@ -23,5 +24,6 @@ keywords:
   - "guide"
   - "inference"
 ---
+author: hdnax
 
 A syntactic hint to the type checker declaring the intended type of a term, used to guide inference, resolve ambiguity, or make types explicit for documentation.

@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: "What is a tactic in rocq?"
@@ -18,6 +19,7 @@ keywords:
   - "state"
   - "form"
 ---
+author: hdnax
 
 
 A proof command in Rocq, that transforms a goal's state to form a step of a proof.

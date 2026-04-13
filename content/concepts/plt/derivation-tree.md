@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Derivation tree"
@@ -19,5 +20,6 @@ keywords:
   - "tree"
   - "visualization"
 ---
+author: hdnax
 
 A specific visualization of a specific proof that $t \to t'$.

@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: "What's the difference between reflexivity and simpl in rocq?"
@@ -18,6 +19,7 @@ keywords:
   - "performs"
   - "simplification"
 ---
+author: hdnax
 
 
 `reflexivity` performs more simplification than `simpl`.

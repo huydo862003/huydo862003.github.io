@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What is the class pattern?
@@ -16,6 +17,7 @@ keywords:
   - "simple"
   - "racket"
 ---
+author: hdnax
 
 
 Simple class pattern:

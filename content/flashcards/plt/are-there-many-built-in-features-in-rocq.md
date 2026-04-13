@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: "Are there many built-in features in rocq?"
@@ -18,6 +19,7 @@ keywords:
   - "functional"
   - "language"
 ---
+author: hdnax
 
 
 The Rocq's Gallina is a small but expressive functional language.

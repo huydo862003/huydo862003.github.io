@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Lambda term"
@@ -21,5 +22,6 @@ keywords:
   - "abstraction"
   - "application"
 ---
+author: hdnax
 
 Any expression in the lambda calculus grammar: a variable, an abstraction, or an application.

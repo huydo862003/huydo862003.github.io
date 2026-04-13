@@ -6,6 +6,7 @@ import { z } from 'zod';
 const dates = {
   createdAt: z.string().default(''),
   updatedAt: z.string().default(''),
+  author: z.string().default(''),
 };
 
 // Strip the implicit `content` field — we lazy-load bodies via import.meta.glob
@@ -225,6 +226,10 @@ const authors = defineCollection({
     name: z.string(),
     bio: z.string().default(''),
     url: z.string().default(''),
+    dateOfBirth: z.string().default(''),
+    origin: z.string().default(''),
+    education: z.array(z.string()).default([]),
+    interests: z.array(z.string()).default([]),
     tags: z.array(z.string()).default([]),
     content: z.string(),
   }),

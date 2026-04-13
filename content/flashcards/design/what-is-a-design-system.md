@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What is a design system?
@@ -17,6 +18,7 @@ keywords:
   - "reusable"
   - "components"
 ---
+author: hdnax
 
 
 A comprehensive ecosystem of standards, documentation, and reusable components that serves as the single source of truth to enable teams to build consistent, scalable products efficiently.

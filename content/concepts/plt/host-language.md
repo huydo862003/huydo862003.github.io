@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Host language"
@@ -16,5 +17,6 @@ keywords:
   - "compiler"
   - "implemented"
 ---
+author: hdnax
 
 The language a compiler is implemented in.

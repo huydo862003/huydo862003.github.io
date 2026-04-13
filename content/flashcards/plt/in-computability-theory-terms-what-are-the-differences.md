@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: In computability theory terms, what are the differences between parsers and type checkers?
@@ -16,6 +17,7 @@ keywords:
   - "complexity"
   - "checks"
 ---
+author: hdnax
 
 
 

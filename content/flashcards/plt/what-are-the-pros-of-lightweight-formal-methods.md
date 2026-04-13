@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What are the pros of lightweight formal methods
@@ -18,6 +19,7 @@ keywords:
   - "programmer"
   - "accessible"
 ---
+author: hdnax
 
 - Do not require high sophistication from the side of the programmer, more accessible.
 - Practical.

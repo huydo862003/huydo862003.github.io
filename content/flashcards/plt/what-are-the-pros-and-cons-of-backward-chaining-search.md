@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What are the pros and cons of backward chaining search?
@@ -20,6 +21,7 @@ keywords:
   - "eventually"
   - "find"
 ---
+author: hdnax
 
 
 Backward chaining search can eventually find a derivation for a derivable judgment, goal-directed.

@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What's the difference between a judgment and a judgment form?
@@ -16,6 +17,7 @@ keywords:
   - "form"
   - "defines"
 ---
+author: hdnax
 
 
 A Judgment is announcement that there is a proof for something.

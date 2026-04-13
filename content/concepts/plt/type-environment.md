@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Type environment"
@@ -23,5 +24,6 @@ keywords:
   - "written"
   - "gamma"
 ---
+author: hdnax
 
 A mapping from variable names to their types, often written as $\Gamma$, that tracks type bindings in scope during type checking, extended when entering new binding forms.

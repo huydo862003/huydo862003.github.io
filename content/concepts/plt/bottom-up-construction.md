@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Bottom-up construction"
@@ -19,5 +20,6 @@ keywords:
   - "forward"
   - "chaining"
 ---
+author: hdnax
 
 Synonymous with Forward chaining.

@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Judgment"
@@ -21,6 +22,7 @@ keywords:
   - "propositions"
   - "content"
 ---
+author: hdnax
 :::key
 (Logic) The mental act of affirming or denying a Proposition is true.
 :::

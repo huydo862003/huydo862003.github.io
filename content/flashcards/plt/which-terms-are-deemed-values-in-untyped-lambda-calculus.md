@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: Which terms are deemed values in untyped lambda calculus?
@@ -16,6 +17,7 @@ keywords:
   - "functions"
   - "values"
 ---
+author: hdnax
 
 
 Lambda abstractions/Functions are the only values.

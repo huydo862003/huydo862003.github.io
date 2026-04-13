@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: "How to define recursive types in rocq?"
@@ -16,6 +17,7 @@ keywords:
   - "nat"
   - "coq"
 ---
+author: hdnax
 
 
 Just use the `Inductive` type definition. For example:

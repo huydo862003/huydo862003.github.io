@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Dynamic scope"
@@ -23,5 +24,6 @@ keywords:
   - "makes"
   - "programs"
 ---
+author: hdnax
 
 This is considered **unambiguously wrong** in language design - it makes programs unpredictable and tools unreliable.

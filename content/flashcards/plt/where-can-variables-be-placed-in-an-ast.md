@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: Where can variables be placed in an AST?
@@ -12,6 +13,7 @@ tags: []
 keywords:
   - "variable"
 ---
+author: hdnax
 
 
 Leaves.

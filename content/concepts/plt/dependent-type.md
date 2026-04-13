@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Dependent type"
@@ -23,6 +24,7 @@ keywords:
   - "becomes"
   - "signature"
 ---
+author: hdnax
 
 - Elaboration
     - Simple types can say "this is a list" but not "this is a list of length 5".

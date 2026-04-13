@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: How to allow methods to reference each other using lexical scoping?
@@ -16,6 +17,7 @@ keywords:
   - "mk-obj"
   - "args"
 ---
+author: hdnax
 
 
 With mutation:

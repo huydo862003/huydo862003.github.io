@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Recursive let
@@ -17,6 +18,7 @@ keywords:
   - "letrec"
   - "lambda"
 ---
+author: hdnax
 
 ```scheme
 (letrec ([fact (lambda (n)

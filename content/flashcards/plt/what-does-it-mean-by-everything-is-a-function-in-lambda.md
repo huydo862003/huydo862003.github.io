@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What does it mean by "everything is a function" in lambda calculus?
@@ -17,6 +18,7 @@ keywords:
   - "calculus"
   - "functions"
 ---
+author: hdnax
 
 
 Every closed terms in Lambda calculus are functions.

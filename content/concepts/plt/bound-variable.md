@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Bound variable"
@@ -17,5 +18,6 @@ keywords:
   - "enclosing"
   - "lambda"
 ---
+author: hdnax
 
 A variable bound by an enclosing $\lambda$.

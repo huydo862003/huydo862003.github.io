@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: "How to define an enumerated type in rocq?"
@@ -17,6 +18,7 @@ keywords:
   - "coq"
   - "type"
 ---
+author: hdnax
 
 
 Use the `Inductive` keyword:

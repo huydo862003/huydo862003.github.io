@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What are combinators in lambda calculus?
@@ -12,6 +13,7 @@ tags: []
 keywords:
   - "combinator"
 ---
+author: hdnax
 
 
 A term with no free variables.

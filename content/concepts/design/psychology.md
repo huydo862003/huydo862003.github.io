@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Psychology
@@ -19,5 +20,6 @@ keywords:
   - "mind"
   - "functions"
 ---
+author: hdnax
 
 The scientific study of the human mind and its functions.

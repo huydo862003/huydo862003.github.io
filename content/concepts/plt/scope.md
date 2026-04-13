@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Scope"
@@ -23,6 +24,7 @@ keywords:
   - "takes"
   - "effect"
 ---
+author: hdnax
 :::key
 (Semantics) The region of the code that a Binding takes effect.
 :::

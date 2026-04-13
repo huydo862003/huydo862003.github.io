@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: '2026-03-28'
 updatedAt: '2026-03-28'
 question: How does the "flow typing" concept relate to the "parse, do not validate"
@@ -16,6 +17,7 @@ keywords:
   - "projects"
   - "dboxide"
 ---
+author: hdnax
 
 ️ Interpreters & projects : dboxide
 

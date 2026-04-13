@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Multi-step evaluation relation"
@@ -23,5 +24,6 @@ keywords:
   - "often"
   - "denoted"
 ---
+author: hdnax
 
 The reflexive and transitive closure of the One-step evaluation relation. The relation is often denoted as $\to^*$.

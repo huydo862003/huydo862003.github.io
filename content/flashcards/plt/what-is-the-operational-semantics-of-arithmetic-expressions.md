@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What is the operational semantics of arithmetic expressions?
@@ -20,6 +21,7 @@ keywords:
   - "pred"
   - "iszero"
 ---
+author: hdnax
 
 
 Combining arithmetic and boolean expressions.

@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What are the major advantages of denotational semantics?
@@ -18,6 +19,7 @@ keywords:
   - "knowledge"
   - "well-studied"
 ---
+author: hdnax
 
 
 Denotational semantics allows the reuse of knowledge drawn from a well-studied domain into programming language design.

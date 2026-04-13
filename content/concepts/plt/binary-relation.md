@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Binary relation"
@@ -15,5 +16,6 @@ keywords:
   - "binary"
   - "n-place"
 ---
+author: hdnax
 
 An n-place relation where $n = 2$.

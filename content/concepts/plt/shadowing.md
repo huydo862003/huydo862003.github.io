@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Shadowing"
@@ -23,5 +24,6 @@ keywords:
   - "inaccessible"
   - "within"
 ---
+author: hdnax
 
 The phenomenon when an inner binding uses the same name as an outer binding, making the outer one inaccessible within the inner scope.

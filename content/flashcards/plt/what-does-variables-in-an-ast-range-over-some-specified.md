@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What does "variables in an AST range over some specified sorts" mean?
@@ -17,6 +18,7 @@ keywords:
   - "specified"
   - "sorts"
 ---
+author: hdnax
 
 
 Variables are placeholders for ASTs of some specified sorts.

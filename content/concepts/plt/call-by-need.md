@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Call by need"
@@ -22,6 +23,7 @@ keywords:
   - "similar"
   - "name"
 ---
+author: hdnax
 :::key
 (Lambda calculus, Semantics, Pure lambda calculus) An evaluation strategy similar to Call by name, but terms' values are cached to avoid re-evaluation.
 :::

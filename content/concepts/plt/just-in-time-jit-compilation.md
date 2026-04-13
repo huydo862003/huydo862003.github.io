@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Just-in-time (JIT) compilation
@@ -22,5 +23,6 @@ keywords:
   - "monitor"
   - "detect"
 ---
+author: hdnax
 
 An Evaluator that starts out as an Interpreter but includes a monitor to detect, compile and utilize compiled hot code.

@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Desugarer
@@ -22,5 +23,6 @@ keywords:
   - "language"
   - "constructs"
 ---
+author: hdnax
 
 A compiler phase or program that transforms syntactic sugar into core language constructs, typically running before interpretation or further compilation stages.

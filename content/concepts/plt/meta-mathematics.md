@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Meta-mathematics
@@ -22,5 +23,6 @@ keywords:
   - "properties"
   - "consistency"
 ---
+author: hdnax
 
 The study of mathematical systems themselves using mathematical methods - analyzing properties like consistency, completeness, and decidability of formal theories.

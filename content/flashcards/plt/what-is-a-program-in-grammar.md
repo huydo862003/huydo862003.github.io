@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What is a program in grammar?
@@ -15,6 +16,7 @@ keywords:
   - "symbol"
   - "grammar"
 ---
+author: hdnax
 
 
 The starting symbol in the grammar.

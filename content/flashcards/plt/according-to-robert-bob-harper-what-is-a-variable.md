@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: "According to robert (bob) harper, what is a variable?"
@@ -18,6 +19,7 @@ keywords:
   - "placeholder"
   - "ast"
 ---
+author: hdnax
 
 
 An unknown object drawn from a specific domain. In the context of Chapter 1. Abstract syntax, it's the placeholder for an AST of a given sort.

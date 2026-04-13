@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: "How to place declarations inside a module in rocq?"
@@ -17,6 +18,7 @@ keywords:
   - "module"
   - "end"
 ---
+author: hdnax
 
 
 Wrap the declarations inside: `Module X.` and `End X.`

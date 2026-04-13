@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What is automatic memory management?
@@ -18,6 +19,7 @@ keywords:
   - "set"
   - "compile-time"
 ---
+author: hdnax
 
 
 Automatic memory management is a set of compile-time or dynamic techniques that allows the dynamic allocation and deallocation of memory without explicit instructions from the programmer.

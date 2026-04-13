@@ -1,4 +1,5 @@
 ---
+author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Free variable"
@@ -18,5 +19,6 @@ keywords:
   - "enclosing"
   - "lambda"
 ---
+author: hdnax
 
 A variable that is not bound by any enclosing $\lambda$.
