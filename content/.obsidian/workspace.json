@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blogs/plt/notes-on-module-systems.md",
+                "file": "flashcards/plt/according-to-robert-bob-harper-what-are-symbol-symbolic.md",
                 "mode": "source",
-                "source": false,
+                "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "notes-on-module-systems"
+              "title": "according-to-robert-bob-harper-what-are-symbol-symbolic"
             }
           }
         ]
@@ -170,13 +170,15 @@
   },
   "active": "7570a7b8911a2584",
   "lastOpenFiles": [
+    "journeys/plt.md",
+    "journeys/design.md",
+    "blogs/plt/notes-on-module-systems.md",
     "blogs/plt/making-sense-of-typescript-using-set-theory.md",
     "blogs/plt/alexey-kladov-matklad.md",
     "blogs/plt/push-ifs-up-and-fors-down.md",
     "books/practical-foundations-for-programming-languages/preface.md",
     "books/practical-foundations-for-programming-languages/chapter-1-abstract-syntax.md",
     "blogs/plt/robert-harper.md",
-    "blogs/plt/notes-on-module-systems.md",
     "flashcards/plt/what-if-some-hypotheses-are-not-derivable-relative-to.md",
     "flashcards/plt/what-is-a-block-in-programming-language.md",
     "flashcards/plt/why-is-the-property-that-static-types-are-checked-at.md",
@@ -203,9 +205,7 @@
     "_plugins/make-md",
     "books/types-and-programming-languages/chapter-1-introduction.md",
     "blogs/plt/boolean-blindness.md",
-    "books/the-design-of-everyday-things/chapter-1-the-psychopathology-of-everyday-things.md",
     "_plugins/obsidian-front-matter-title-plugin/data.json",
-    "_plugins/excalidraw/Drawing 2026-04-12 22.19.34.excalidraw.md",
     "Untitled.canvas"
   ]
 }

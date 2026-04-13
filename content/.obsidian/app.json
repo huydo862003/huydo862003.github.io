@@ -4,7 +4,7 @@
   "showInlineTitle": true,
   "showTitleInFileExplorer": true,
   "defaultViewMode": "source",
-  "livePreview": true,
+  "livePreview": false,
   "propertiesInDocument": "hidden",
   "foldHeading": true,
   "foldIndent": true,
@@ -14,7 +14,7 @@
   "alwaysUpdateLinks": true,
   "trashOption": "system",
   "showStatusBar": false,
-  "vimMode": true,
+  "vimMode": false,
   "userIgnoreFilters": [
     "(^|/)_",
     "^public$"
