@@ -23,7 +23,8 @@ export function scaffoldContent (opts: {
     process.exit(1);
   }
 
-  const content = `---\n${opts.frontMatter}\n---\n\n`;
+  const today = new Date().toISOString().slice(0, 10);
+  const content = `---\ncreatedAt: "${today}"\nupdatedAt: "${today}"\n${opts.frontMatter}\n---\n\n`;
   writeFileSync(filePath, content);
   console.log(`Created: content/${opts.contentDir}/${slug}.md`);
 }

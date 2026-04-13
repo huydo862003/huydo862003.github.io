@@ -1,5 +1,7 @@
 #!/usr/bin/env node
-import { scaffoldContent } from './utils/scaffold';
+import {
+  scaffoldContent,
+} from './utils/scaffold';
 
 const title = process.argv[2];
 const journey = process.argv[3] || '';

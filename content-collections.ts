@@ -216,6 +216,21 @@ const graph = defineCollection({
   },
 });
 
+const authors = defineCollection({
+  name: 'authors',
+  directory: 'content/authors',
+  include: '**/*.md',
+  schema: z.object({
+    ...dates,
+    name: z.string(),
+    bio: z.string().default(''),
+    url: z.string().default(''),
+    tags: z.array(z.string()).default([]),
+    content: z.string(),
+  }),
+  transform: stripContent,
+});
+
 export default defineConfig({
-  content: [concepts, flashcards, journeys, phases, books, blogs, papers, thoughts, graph],
+  content: [concepts, flashcards, journeys, phases, books, blogs, papers, thoughts, authors, graph],
 });

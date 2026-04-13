@@ -15,5 +15,5 @@ if (!question || !answer) {
 scaffoldContent({
   contentDir: 'flashcards',
   title: question,
-  frontMatter: `question: "${question}"\nanswer: "${answer}"\ndeck: ${deck}\nconcepts: []\nbooks: []`,
+  frontMatter: `question: "${question}"\nanswer: "${answer}"\ndeck: ${deck}\ntags: []\nkeywords: []\nconcepts: []\nbooks: []`,
 });

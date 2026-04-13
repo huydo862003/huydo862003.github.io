@@ -1,5 +1,7 @@
 #!/usr/bin/env node
-import { scaffoldContent } from './utils/scaffold';
+import {
+  scaffoldContent,
+} from './utils/scaffold';
 
 const title = process.argv[2];
 const journey = process.argv[3] || '';
@@ -11,5 +13,5 @@ if (!title) {
 scaffoldContent({
   contentDir: 'concepts',
   title,
-  frontMatter: `title: ${title}\njourney: ${journey}\nstatus: learning\ntags: []\nbooks: []\ndependsOn: []\nblocks: []`,
+  frontMatter: `title: ${title}\njourney: ${journey}\ndescription: ""\nstatus: learning\ntags: []\nkeywords: []\nbooks: []\ndependsOn: []\nblocks: []`,
 });

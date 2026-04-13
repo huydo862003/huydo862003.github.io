@@ -13,7 +13,8 @@
     "new:concept": "tsx scripts/new_concept.ts",
     "new:card": "tsx scripts/new_card.ts",
     "new:journey": "tsx scripts/new_journey.ts",
-    "new:phase": "tsx scripts/new_phase.ts"
+    "new:phase": "tsx scripts/new_phase.ts",
+    "new:author": "tsx scripts/new_author.ts"
   },
   "dependencies": {
     "@content-collections/core": "^0.14.3",
