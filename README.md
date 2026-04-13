@@ -6,6 +6,28 @@ This page tracks my scattered thoughts and learning journeys for many topics + w
 
 Note: Just performed some batch migrations from Notion, so formatting would break here and there.
 
+## Development/Authoring guide
+
+Prerequisites:
+
+- Node (not too old)
+- pnpm
+
+Commands for content management:
+
+```bash
+pnpm install              # install dependencies
+pnpm dev                  # host the blog locally at localhost:3000
+pnpm new:author           # create a new author
+pnpm new:journey          # create a new guided journey
+pnpm new:phase            # create a new phase for a journey
+pnpm new:concept          # create a new concept for a journey
+pnpm new:card             # create a new flashcard for a journey, can be linked to a concept
+pnpm new:post             # create a new (standalone) thought
+```
+
+Alternatively, you can open obsidian in the `./content` folder. Make sure to use one of the registered templates in `./content/_configs/` so that the blog app can render the content properly.
+
 ## Markdown guide
 
 ### Cross-links
