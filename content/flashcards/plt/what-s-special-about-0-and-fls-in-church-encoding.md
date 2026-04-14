@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -20,7 +21,6 @@ keywords:
   - "booleans"
   - "identical"
 ---
-author: hdnax
 
 - 0 in Church numerals: $\lambda a.\ \lambda z.\ z$.
 - false in Church booleans: $\lambda f.\ \lambda s.\ s$.

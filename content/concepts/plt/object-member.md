@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -21,6 +22,5 @@ keywords:
   - "method"
   - "behavior"
 ---
-author: hdnax
 
 A component of an object, either a field (data) or a method (behavior).

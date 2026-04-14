@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -18,7 +19,6 @@ keywords:
   - "environment"
   - "access"
 ---
-author: hdnax
 
 
 A closure is a function that memorizes its surrounding environment, so i can access variables from the outside.

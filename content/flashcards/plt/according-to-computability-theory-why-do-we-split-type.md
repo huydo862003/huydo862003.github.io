@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -17,7 +18,6 @@ keywords:
   - "grammar"
   - "handling"
 ---
-author: hdnax
 
 - Parser: Easy context-free grammar handling. Efficient & Decidable algorithms exist.
 - Type checker: Context-sensitive. Can be inefficient or decidable.

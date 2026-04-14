@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -17,7 +18,6 @@ keywords:
   - "prove"
   - "bad"
 ---
-author: hdnax
 
 
 Generally, a sound type system can prove the absence of certain bad behaviors, but may not always prove the presence of certain bad behaviors.

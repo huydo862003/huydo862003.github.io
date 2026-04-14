@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,6 +25,5 @@ keywords:
   - "scope"
   - "variables"
 ---
-author: hdnax
 
 Hygienic macros are analogous to Lexical/Static scope for Macros: Macro variables are not just names, but rather binding information records.

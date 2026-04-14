@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,6 +25,5 @@ keywords:
   - "returning"
   - "value"
 ---
-author: hdnax
 
 An observable interaction with the outside world or modification of state beyond returning a value, such as I/O, mutation, or exceptions.

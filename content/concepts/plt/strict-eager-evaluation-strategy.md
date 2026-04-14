@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,7 +25,6 @@ keywords:
   - "argument"
   - "evaluated"
 ---
-author: hdnax
 :::key
 (Language feature/design) An Evaluation strategy such that an argument is evaluated before passing into the function call.
 :::

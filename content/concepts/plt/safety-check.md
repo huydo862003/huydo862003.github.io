@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,6 +25,5 @@ keywords:
   - "out"
   - "enforce"
 ---
-author: hdnax
 
 A mechanism, either carried out by the runtime to enforce Language safety/avoid Runtime type error or by programmers to avoid Runtime error.

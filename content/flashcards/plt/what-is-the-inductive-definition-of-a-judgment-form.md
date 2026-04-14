@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -21,7 +22,6 @@ keywords:
   - "form"
   - "inductive"
 ---
-author: hdnax
 
 
 Assume a judgment form $-\ J$, the inductive definition of $J$ would be a set of Rules, typically starting with some Axioms then some Proper rules to derive membership of $J$. Then, $J$ is taken to be the strongest set closed under those rules.

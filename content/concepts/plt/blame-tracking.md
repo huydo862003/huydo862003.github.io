@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,6 +25,5 @@ keywords:
   - "party"
   - "module"
 ---
-author: hdnax
 
 A mechanism that identifies **which party** (module, component, contract boundary) is responsible when a Contract violation occurs.

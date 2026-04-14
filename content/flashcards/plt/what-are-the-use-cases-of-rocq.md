@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -19,7 +20,6 @@ keywords:
   - "tool"
   - "write"
 ---
-author: hdnax
 
 - As a platform to model programming languages.
 - As a tool to write formally certified software and hardware.

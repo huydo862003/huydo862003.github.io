@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -18,7 +19,6 @@ keywords:
   - "design"
   - "tokens"
 ---
-author: hdnax
 
 
 A build system that transforms platform-agnostic design tokens into platform-specific formats for synchronization.

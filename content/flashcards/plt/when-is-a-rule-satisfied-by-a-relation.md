@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -19,7 +20,6 @@ keywords:
   - "fact"
   - "premises"
 ---
-author: hdnax
 
 
 A rule is satisfied by a relation if for every instance of that rule, if the fact that all premises of that instance is in that relation implies that the conclusion of that instance is in that relation.

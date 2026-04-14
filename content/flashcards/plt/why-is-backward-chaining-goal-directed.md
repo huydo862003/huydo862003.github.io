@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -21,7 +22,6 @@ keywords:
   - "works"
   - "backwards"
 ---
-author: hdnax
 
 
 Because Backward chaining starts from the goal and works backwards towards the axioms.

@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,7 +25,6 @@ keywords:
   - "succ"
   - "tru"
 ---
-author: hdnax
 
 Example: In the Untyped calculus of booleans and numbers, the followings are nonsensical:
 

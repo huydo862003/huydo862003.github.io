@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -19,7 +20,6 @@ keywords:
   - "informally"
   - "allow"
 ---
-author: hdnax
 
 
 Informally, a safe language would not allow a programmer to shoot in their foot.

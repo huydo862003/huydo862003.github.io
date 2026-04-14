@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,6 +25,5 @@ keywords:
   - "without"
   - "requiring"
 ---
-author: hdnax
 
 The system's resilience in adjusting to new contexts, theming requirements, or unforeseen use cases without requiring a fundamental redesign.

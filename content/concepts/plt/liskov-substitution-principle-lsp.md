@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,6 +25,5 @@ keywords:
   - "stating"
   - "subtypes"
 ---
-author: hdnax
 
 A design principle for OO inheritance stating that subtypes must **preserve behavioral contracts** of supertypes, ensuring code using parent class works correctly with any child class - preventing bugs from unsafe substitution.

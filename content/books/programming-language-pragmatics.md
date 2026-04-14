@@ -1,4 +1,5 @@
 ---
+published: true
 createdAt: "2026-03-28"
 updatedAt: "2026-04-11"
 title: "Programming language pragmatics"

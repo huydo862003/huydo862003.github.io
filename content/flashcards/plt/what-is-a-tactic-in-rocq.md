@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -19,7 +20,6 @@ keywords:
   - "state"
   - "form"
 ---
-author: hdnax
 
 
 A proof command in Rocq, that transforms a goal's state to form a step of a proof.

@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,6 +25,5 @@ keywords:
   - "downarrow"
   - "stating"
 ---
-author: hdnax
 
 A formal assertion of the form $t \to t'$ or $t \Downarrow v$, stating that a term reduces to another term or evaluates to a value under specific rules.

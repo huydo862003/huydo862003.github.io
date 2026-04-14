@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -23,6 +24,5 @@ keywords:
   - "always"
   - "call"
 ---
-author: hdnax
 
 [Rocq] A **termination check** in Rocq that verifies recursive functions always call themselves on structurally smaller arguments, ensuring all computations terminate (required for logical consistency).

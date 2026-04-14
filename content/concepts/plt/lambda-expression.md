@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,6 +25,5 @@ keywords:
   - "list"
   - "formal"
 ---
-author: hdnax
 
 A syntactic construct denoting an anonymous function, consisting of a list of Formal parameters and a body - e.g., $\lambda x.\ t$ or $(\text{lambda}\ (x)\ t)$.

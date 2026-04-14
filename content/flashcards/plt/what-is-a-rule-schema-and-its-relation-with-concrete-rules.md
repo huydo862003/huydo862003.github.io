@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -21,7 +22,6 @@ keywords:
   - "representing"
   - "generic"
 ---
-author: hdnax
 
 
 A rule schema is synonymous with inference rule, representing a generic rule with metavariables.

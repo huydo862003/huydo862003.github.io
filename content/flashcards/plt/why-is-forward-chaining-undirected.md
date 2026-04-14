@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -19,7 +20,6 @@ keywords:
   - "set"
   - "currently"
 ---
-author: hdnax
 
 
 Forward chaining just keeps track of a set of currently derived judgments and then expands its each step - oblivious of the goal.

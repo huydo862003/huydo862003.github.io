@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,6 +25,5 @@ keywords:
   - "conceptually"
   - "viewed"
 ---
-author: hdnax
 
 [Java] The `{ ... }` part in `class Sub extends Sup { ... }`, can be conceptually viewed as a Mixin specifically applied to `Sup`.

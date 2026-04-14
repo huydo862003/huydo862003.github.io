@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,6 +25,5 @@ keywords:
   - "forms"
   - "typically"
 ---
-author: hdnax
 
 A mechanism for defining new syntax forms, typically through macros, that expand into existing language constructs. Enables language extension without modifying the core implementation.

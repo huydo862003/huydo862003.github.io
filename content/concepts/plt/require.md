@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,6 +25,5 @@ keywords:
   - "memory"
   - "making"
 ---
-author: hdnax
 
 [Rocq] A **command** in Rocq that loads a compiled module into memory, making its contents available but not directly accessible without qualification.

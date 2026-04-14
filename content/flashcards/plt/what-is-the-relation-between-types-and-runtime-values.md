@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -17,7 +18,6 @@ keywords:
   - "behavior"
   - "values"
 ---
-author: hdnax
 
 
 Type is a static approximation of the runtime behavior of values computed by a term.

@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,6 +25,5 @@ keywords:
   - "associated"
   - "union"
 ---
-author: hdnax
 
 A pattern typically associated with Union types in which the type of a value is checked so that specialized logic can be carried out. Flow-sensitive typing is especially useful.

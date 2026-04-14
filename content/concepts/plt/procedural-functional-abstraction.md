@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,6 +25,5 @@ keywords:
   - "named"
   - "interface"
 ---
-author: hdnax
 
 The principle of encapsulating a computation behind a named interface, hiding implementation details and allowing reuse by parameterizing over inputs.

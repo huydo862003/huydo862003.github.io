@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,6 +25,5 @@ keywords:
   - "abstract"
   - "syntax"
 ---
-author: hdnax
 
 A program transformation technique that modifies the abstract syntax tree to implement features like Macros, optimizations, or language extensions before code generation.

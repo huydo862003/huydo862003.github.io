@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -15,7 +16,6 @@ keywords:
   - "notation"
   - "exp"
 ---
-author: hdnax
 
 
 Use `Notation "x <op> y" := exp`.

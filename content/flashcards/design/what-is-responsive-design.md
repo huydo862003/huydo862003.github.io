@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -18,7 +19,6 @@ keywords:
   - "interface"
   - "adapt"
 ---
-author: hdnax
 
 
 A set of design techniques & methodologies to make the interface adapt to different screen sizes.

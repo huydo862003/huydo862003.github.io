@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -23,6 +24,5 @@ keywords:
   - "unlike"
   - "expression"
 ---
-author: hdnax
 
 A term is a syntactic phrase in a grammar that represents computation and evaluates to a value - unlike Expression which broadly encompasses any well-formed syntactic construct including types, patterns, and declarations.

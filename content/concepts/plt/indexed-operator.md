@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -20,6 +21,5 @@ keywords:
   - "available"
   - "symbol"
 ---
-author: hdnax
 
 A family of operators $o$ indexed by symbols $u$, so that $o[u]$ is an operator when $u$ is an available symbol.

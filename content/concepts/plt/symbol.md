@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -23,6 +24,5 @@ keywords:
   - "index"
   - "families"
 ---
-author: hdnax
 
 As per Practical foundations for programming languages 's terminology, an index to the families of operators. Given an Indexed operator $o$ and a symbol $u$, $o[u]$ is an operator.

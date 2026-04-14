@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -23,6 +24,5 @@ keywords:
   - "program"
   - "execution"
 ---
-author: hdnax
 
 A dynamic verification technique that inserts observers to track program execution and detect when behavior deviates from specified properties (e.g., contracts, protocols, temporal constraints).

@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -18,7 +19,6 @@ keywords:
   - "rule"
   - "premise"
 ---
-author: hdnax
 
 
 An axiom is an inference rule with no premise.

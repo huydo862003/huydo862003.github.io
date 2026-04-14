@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -19,7 +20,6 @@ keywords:
   - "relying"
   - "holding"
 ---
-author: hdnax
 
 
 A proof technique that proves some property $P$ for a term $t$ by relying on the property $P$ holding for $t$'s subterms.

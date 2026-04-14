@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -20,7 +21,6 @@ keywords:
   - "special"
   - "parsing"
 ---
-author: hdnax
 
 
 Rocq gives natural numbers special parsing and printing capabilities.

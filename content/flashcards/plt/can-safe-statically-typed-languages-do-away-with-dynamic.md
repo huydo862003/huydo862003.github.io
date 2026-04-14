@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -16,7 +17,6 @@ keywords:
   - "bound"
   - "divide-by-zero"
 ---
-author: hdnax
 
 
 Some checks may be impossible at compile time, like bound checks and divide-by-zero checks, so dynamic checks are necessary.

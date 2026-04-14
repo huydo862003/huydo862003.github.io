@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -18,7 +19,6 @@ keywords:
   - "inclusive"
   - "accommodating"
 ---
-author: hdnax
 
 
 The quality of the interface that's largely inclusive, accommodating users in different environments, with different conditions.

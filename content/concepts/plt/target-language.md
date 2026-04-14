@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -17,6 +18,5 @@ keywords:
   - "compiled"
   - "program"
 ---
-author: hdnax
 
 The language the compiled program is in.

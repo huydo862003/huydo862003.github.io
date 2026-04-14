@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -17,7 +18,6 @@ keywords:
   - "language"
   - "specifications"
 ---
-author: hdnax
 
 - **No**: Languages are not inherently compiled or interpreted.
 - Language specifications only specify syntax and semantics, but usually do not require a specific implementation.

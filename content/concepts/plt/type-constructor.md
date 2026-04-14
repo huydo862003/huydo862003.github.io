@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,6 +25,5 @@ keywords:
   - "list"
   - "array"
 ---
-author: hdnax
 
 A function at the type level that builds new types from existing ones, such as `List`, `Array`, or the arrow constructor ($\to$) that constructs function types.

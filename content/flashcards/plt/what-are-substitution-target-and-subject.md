@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -21,7 +22,6 @@ keywords:
   - "variables"
   - "subject"
 ---
-author: hdnax
 
 
 Substitution target: The target term into which variables are substituted.

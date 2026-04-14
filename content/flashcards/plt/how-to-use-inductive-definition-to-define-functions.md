@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -20,7 +21,6 @@ keywords:
   - "outputs"
   - "using"
 ---
-author: hdnax
 
 - Define a relation between inputs and outputs of the function using Inductive definition.
 - Then prove that for each set of inputs, the output is unique.

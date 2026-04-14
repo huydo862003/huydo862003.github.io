@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -23,7 +24,6 @@ keywords:
   - "design"
   - "reason"
 ---
-author: hdnax
 
 Tools: Rocq (formerly Coq)
 :::key

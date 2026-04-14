@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,6 +25,5 @@ keywords:
   - "producing"
   - "introducing"
 ---
-author: hdnax
 
 The act of modifying a value in place at a memory location, rather than producing a new value - introducing state changes that depend on evaluation order and complicating equational reasoning.

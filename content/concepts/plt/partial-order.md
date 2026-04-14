@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -20,6 +21,5 @@ keywords:
   - "reflexive"
   - "antisymmetric"
 ---
-author: hdnax
 
 A Binary relation that is Transitive, Reflexive and Antisymmetric.

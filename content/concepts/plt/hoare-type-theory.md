@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,6 +25,5 @@ keywords:
   - "specifications"
   - "types"
 ---
-author: hdnax
 
 A **type theory** that integrates Hoare-style specifications into types, allowing pre/postconditions and invariants to be expressed and checked within a dependently typed language.

@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -21,7 +22,6 @@ keywords:
   - "eventually"
   - "find"
 ---
-author: hdnax
 
 
 Backward chaining search can eventually find a derivation for a derivable judgment, goal-directed.

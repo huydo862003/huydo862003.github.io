@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,6 +25,5 @@ keywords:
   - "tasks"
   - "identify"
 ---
-author: hdnax
 
 An empirical research method where representative users perform specific tasks to identify friction points and validate that the design meets user needs.

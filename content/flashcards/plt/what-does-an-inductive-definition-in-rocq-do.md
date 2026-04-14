@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -18,7 +19,6 @@ keywords:
   - "algebraic"
   - "data"
 ---
-author: hdnax
 
 
 It allows defining Algebraic data types in Rocq, including Recursive types.

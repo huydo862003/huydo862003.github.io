@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -16,7 +17,6 @@ keywords:
   - "mathcal"
   - "subsets"
 ---
-author: hdnax
 
 
 Given a set $S$, then $\mathcal{P}(S)$ is the set of all subsets of $S$.

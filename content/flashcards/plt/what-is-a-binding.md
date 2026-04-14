@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -16,7 +17,6 @@ keywords:
   - "variable"
   - "value"
 ---
-author: hdnax
 
 
 A binding is a mapping from a variable to a value.

@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,6 +25,5 @@ keywords:
   - "program"
   - "runs"
 ---
-author: hdnax
 
 A type that is determined and checked at compile time, before the program runs, as opposed to dynamic types which are checked at runtime.

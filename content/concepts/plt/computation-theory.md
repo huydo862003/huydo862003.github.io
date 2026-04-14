@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -23,6 +24,5 @@ keywords:
   - "resources"
   - "includes"
 ---
-author: hdnax
 
 The branch of theoretical computer science studying **what can be computed** and **with what resources** - includes models of computation (Turing machines, lambda calculus), decidability (halting problem, Rice's theorem), complexity classes (P, NP), and the Chomsky hierarchy of formal languages.

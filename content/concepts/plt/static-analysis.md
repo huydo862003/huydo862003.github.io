@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,6 +25,5 @@ keywords:
   - "including"
   - "type"
 ---
-author: hdnax
 
 Program analysis performed without executing the code, including type checking, dataflow analysis, and abstract interpretation. Can detect certain errors and properties before runtime.

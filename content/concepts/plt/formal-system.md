@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -23,6 +24,5 @@ keywords:
   - "axioms"
   - "inference"
 ---
-author: hdnax
 
 A **mathematical framework** consisting of a syntax for forming statements, axioms taken as given, and inference rules for deriving new statements from existing ones.

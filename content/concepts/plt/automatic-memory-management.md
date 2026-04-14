@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -23,6 +24,5 @@ keywords:
   - "deallocation"
   - "without"
 ---
-author: hdnax
 
 A language or runtime mechanism that handles allocation and deallocation of memory without explicit programmer intervention - encompassing techniques like garbage collection, reference counting, and ownership systems.

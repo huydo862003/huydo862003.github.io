@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,6 +25,5 @@ keywords:
   - "general"
   - "pattern"
 ---
-author: hdnax
 
 A specific instance of a Rule schema  where all Metavariables are replaced with actual terms - the schema is the general pattern, the concrete rule is a particular instantiation.

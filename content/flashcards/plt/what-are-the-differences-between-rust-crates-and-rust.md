@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: '2026-03-28'
 updatedAt: '2026-03-28'
@@ -15,7 +16,6 @@ keywords:
   - "module"
   - "systems"
 ---
-author: hdnax
 
 Blog posts: Notes on module systems
 

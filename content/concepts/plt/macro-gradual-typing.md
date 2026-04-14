@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,6 +25,5 @@ keywords:
   - "exist"
   - "separate"
 ---
-author: hdnax
 
 A Gradual typing approach where typed and untyped code exist as **two separate sibling languages** that interact only at **module boundaries**, typically requiring Blame tracking.

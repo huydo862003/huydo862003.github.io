@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -17,7 +18,6 @@ keywords:
   - "binder"
   - "closed"
 ---
-author: hdnax
 
 - Closed term: A term with no free variables.
 - Free variable: A variable that is not bound.

@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,7 +25,6 @@ keywords:
   - "programming"
   - "languages"
 ---
-author: hdnax
 :::key
 (Syntax & Grammar) According to Practical foundations for programming languages , largely analogous with Sort. Roughly means "syntactic type".
 :::

@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -23,6 +24,5 @@ keywords:
   - "construct"
   - "providing"
 ---
-author: hdnax
 
 A more convenient or readable syntax that is transformed into a core language construct, providing expressiveness without extending the language's fundamental semantics.

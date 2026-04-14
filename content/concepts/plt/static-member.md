@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,6 +25,5 @@ keywords:
   - "instances"
   - "shared"
 ---
-author: hdnax
 
 A field or method that belongs to the class itself rather than to instances, shared across all objects of that class and accessible without creating an instance.

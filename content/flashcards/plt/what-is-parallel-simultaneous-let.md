@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -19,7 +20,6 @@ keywords:
   - "scheme"
   - "bindings"
 ---
-author: hdnax
 
 
 A parallel/simultaneous let is a syntactic construct in Scheme in which any bindings in the let definition are not visible within the let definition itself.

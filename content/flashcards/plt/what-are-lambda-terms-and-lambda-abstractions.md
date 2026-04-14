@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -19,7 +20,6 @@ keywords:
   - "calculus"
   - "abstractions"
 ---
-author: hdnax
 
 
 Lambda terms are any syntactic constructs in Lambda calculus.

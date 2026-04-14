@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -17,7 +18,6 @@ keywords:
   - "fore-front"
   - "focus"
 ---
-author: hdnax
 
 
 The proof rules/laws are of the fore-front focus.

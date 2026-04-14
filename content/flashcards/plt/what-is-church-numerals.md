@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -21,7 +22,6 @@ keywords:
   - "natural"
   - "numbers"
 ---
-author: hdnax
 
 
 Church numerals is an encoding of natural numbers in Pure/Untyped lambda calculus.

@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,7 +25,6 @@ keywords:
   - "whenever"
   - "it's"
 ---
-author: hdnax
 
 Formally, assume $a\ \text{tree}$ means that $a$ is a binary tree. To prove that whenever $a\ \text{tree}$, we have $\mathcal{P}(a)$, it's sufficient to show that:
 

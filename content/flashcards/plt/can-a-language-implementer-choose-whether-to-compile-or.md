@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -17,7 +18,6 @@ keywords:
   - "enforce"
   - "compilation"
 ---
-author: hdnax
 
 
 Yes. A language specification doesn't enforce compilation or interpretation.

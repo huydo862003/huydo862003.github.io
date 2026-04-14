@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,6 +25,5 @@ keywords:
   - "written"
   - "placeholder"
 ---
-author: hdnax
 
 Synonymous with an n-place relation. For a unary relation/predicate, a judgment form is usually written as $J\ -$ or $-\ J$, with $-$ being a placeholder for some value drawn from the domain of the predicate.

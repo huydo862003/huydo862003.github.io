@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -17,7 +18,6 @@ keywords:
   - "languages"
   - "internal"
 ---
-author: hdnax
 
 - **Formal language definitions** and **proofs** about languages.
 - The internal workings of **compilers** and **interpreters**, which need to manipulate program structure precisely.

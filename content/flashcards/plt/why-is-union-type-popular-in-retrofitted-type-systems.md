@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -19,7 +20,6 @@ keywords:
   - "previously"
   - "untyped"
 ---
-author: hdnax
 
 
 In previously untyped languages, code can return values of multiple types, for example, valid results & errors.

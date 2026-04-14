@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -21,7 +22,6 @@ keywords:
   - "definitions"
   - "axioms"
 ---
-author: hdnax
 
 - A large library of common definitions and axioms.
 - Powerful tactics for constructing complex proofs semi-automatically.

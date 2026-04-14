@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -18,7 +19,6 @@ keywords:
   - "context-free"
   - "languages"
 ---
-author: hdnax
 
 
 A specific meta-language that is widely used to describe context-free languages.

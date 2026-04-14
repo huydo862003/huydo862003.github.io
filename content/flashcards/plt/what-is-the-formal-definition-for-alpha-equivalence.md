@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -19,7 +20,6 @@ keywords:
   - "asts"
   - "dots"
 ---
-author: hdnax
 
 
 Alpha-equivalence is a relation $=_\alpha$ on the set of terms/ASTs. Given $\mathcal{A}$ as a set of ASTs. Then:

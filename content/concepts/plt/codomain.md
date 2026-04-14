@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -21,6 +22,5 @@ keywords:
   - "produces"
   - "outputs"
 ---
-author: hdnax
 
 A property of a function specifying the set of values it produces as outputs.

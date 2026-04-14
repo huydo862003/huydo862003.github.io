@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -19,6 +20,5 @@ keywords:
   - "values"
   - "domain"
 ---
-author: hdnax
 
 A Partial function that is defined on all values of its domain.

@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -17,7 +18,6 @@ keywords:
   - "correctness"
   - "properties"
 ---
-author: hdnax
 
 
 Able to express and prove very general and strong correctness properties about programs and systems.

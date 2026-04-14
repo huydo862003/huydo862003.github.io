@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -18,7 +19,6 @@ keywords:
   - "lambda"
   - "abstraction"
 ---
-author: hdnax
 
 
 A redex is a term of the form $t_1\ t_2$ such that $t_1$ is a lambda abstraction.

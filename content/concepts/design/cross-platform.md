@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -23,6 +24,5 @@ keywords:
   - "resources"
   - "across"
 ---
-author: hdnax
 
 The ability of a design system to deliver a cohesive experience and shared resources across distinct environments like Web, iOS, and Android.

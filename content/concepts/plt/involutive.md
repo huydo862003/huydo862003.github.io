@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -21,6 +22,5 @@ keywords:
   - "original"
   - "value"
 ---
-author: hdnax
 
 A **property** of a function where applying it twice returns the original value (i.e., `f(f(x)) = x`).

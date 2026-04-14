@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,6 +25,5 @@ keywords:
   - "belongs"
   - "specific"
 ---
-author: hdnax
 
 A function that tests whether a value belongs to a specific type and **informs the type checker** of this fact - enables narrowing after the check (e.g., `mt?`, `string?`, `typeof`).

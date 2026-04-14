@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,7 +25,6 @@ keywords:
   - "const"
   - "requires"
 ---
-author: hdnax
 
 - Requires no evaluation or name lookup.
 - Examples: `42`, `"hello"`, `true`, `3.14`.

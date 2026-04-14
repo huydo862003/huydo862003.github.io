@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -19,7 +20,6 @@ keywords:
   - "successor"
   - "calculus"
 ---
-author: hdnax
 
 
 A relation that relates a term to its immediate successor in a calculus, representing one step of evaluation.

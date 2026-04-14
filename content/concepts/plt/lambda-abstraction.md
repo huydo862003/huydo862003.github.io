@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -23,6 +24,5 @@ keywords:
   - "over"
   - "body"
 ---
-author: hdnax
 
 A Lambda term of the form $\lambda x.\  t$ - a function that binds variable $x$ over body $t$.

@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,6 +25,5 @@ keywords:
   - "node"
   - "unlike"
 ---
-author: hdnax
 
 **Union type:** An **untagged**, **ad-hoc** combination of existing independent types (e.g., `(U mt node)`) - unlike Sum type (Algebraic data types) where Type variant are **tagged** and **defined together** as part of one type.

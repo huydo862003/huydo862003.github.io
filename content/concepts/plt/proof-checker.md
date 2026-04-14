@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,6 +25,5 @@ keywords:
   - "system"
   - "confirming"
 ---
-author: hdnax
 
 A program that verifies whether a given proof is valid according to the rules of a formal system, confirming that each step correctly follows from the Axioms and Inference rules.

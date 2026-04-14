@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -17,7 +18,6 @@ keywords:
   - "defined"
   - "headers"
 ---
-author: hdnax
 
 - Formal parameter: The function parameters as defined in the function headers.
 - Actual parameter: The function arguments.

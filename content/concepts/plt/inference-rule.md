@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -23,7 +24,6 @@ keywords:
   - "consisting"
   - "asserting"
 ---
-author: hdnax
 :::key
 (Logic) A formal statement consisting of premises and a conclusion, asserting that if all premises hold, the conclusion may be derived.
 :::

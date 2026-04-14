@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -17,7 +18,6 @@ keywords:
   - "untrapped"
   - "trapped"
 ---
-author: hdnax
 
 
 Trapped error: An error that causes immediate termination of the process.

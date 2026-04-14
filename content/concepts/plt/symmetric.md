@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -18,6 +19,5 @@ keywords:
   - "relation"
   - "set"
 ---
-author: hdnax
 
 A property of a Binary relation $R$ on a set $T$ such that if $t\ R\ s$ then $s\ R\ t$, for every $t$, $s$ $\in T$..

@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -17,7 +18,6 @@ keywords:
   - "rather"
   - "mixes"
 ---
-author: hdnax
 
 
 Modern programming languages are all multi-paradigms and rather mixes of multiple features. It's outdated to think in terms of paradigms.

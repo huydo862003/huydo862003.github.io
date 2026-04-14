@@ -1,5 +1,6 @@
 import {
   defineCollection, defineConfig,
+  type CollectionContext,
 } from '@content-collections/core';
 import { z } from 'zod';
 
@@ -7,10 +8,15 @@ const dates = {
   createdAt: z.string().default(''),
   updatedAt: z.string().default(''),
   author: z.string().default(''),
+  published: z.boolean().default(true),
 };
 
-// Strip the implicit `content` field — we lazy-load bodies via import.meta.glob
-function stripContent<T extends Record<string, unknown>> (doc: T & { content?: string }) {
+// Strip the implicit `content` field and skip unpublished docs
+function stripContent<T extends Record<string, unknown>> (
+  doc: T & { content?: string; published?: boolean },
+  { skip }: CollectionContext<T>,
+) {
+  if (doc.published === false) return skip('unpublished');
   const { content: _, ...rest } = doc;
   return rest;
 }
@@ -183,6 +189,7 @@ const graph = defineCollection({
   include: '**/*.md',
   exclude: ['_configs/**'],
   schema: z.object({
+    published: z.boolean().default(true),
     title: z.string().default(''),
     question: z.string().default(''),
     journey: z.string().default(''),
@@ -193,7 +200,8 @@ const graph = defineCollection({
     parent: z.string().default(''),
     content: z.string(),
   }),
-  transform (doc) {
+  transform (doc, { skip }) {
+    if (doc.published === false) return skip('unpublished');
     const slug = doc._meta.fileName.replace('.md', '');
     const dir = doc._meta.filePath.split('/')[0]; // concepts, books, etc.
     const bodyLinks = extractLinks(doc.content ?? '');

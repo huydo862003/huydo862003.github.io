@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,6 +25,5 @@ keywords:
   - "beta"
   - "capturing"
 ---
-author: hdnax
 
 A Binary relation that relates terms connected by Beta-reduction  - $(\lambda x.\ t)\ s =_\beta [x\to s]t$ - capturing the fundamental computation rule of function application.

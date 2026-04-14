@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -20,7 +21,6 @@ keywords:
   - "object"
   - "methods"
 ---
-author: hdnax
 
 
 Create a prototype object that contains all the shared methods and default properties.

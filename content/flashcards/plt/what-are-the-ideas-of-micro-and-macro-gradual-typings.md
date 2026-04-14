@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -23,7 +24,6 @@ keywords:
   - "typed"
   - "languages"
 ---
-author: hdnax
 
 
 Gradual typing is often the formal term for retrofitted type systems.

@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -19,7 +20,6 @@ keywords:
   - "subset"
   - "terms"
 ---
-author: hdnax
 
 
 The set of values is a subset of the set of terms.

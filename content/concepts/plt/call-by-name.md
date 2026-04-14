@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -23,7 +24,6 @@ keywords:
   - "normal"
   - "order"
 ---
-author: hdnax
 :::key
 (Lambda calculus, Semantics) An evaluation strategy that is Normal order but Beta-reduction inside Lambda abstraction is not allowed.
 :::

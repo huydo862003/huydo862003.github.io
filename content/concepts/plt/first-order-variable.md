@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -23,6 +24,5 @@ keywords:
   - "records"
   - "opposed"
 ---
-author: hdnax
 
 A variable that ranges over data values (e.g., integers, booleans, records) - as opposed to higher-order variables which can hold functions or other computational entities.

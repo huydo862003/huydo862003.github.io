@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -17,7 +18,6 @@ keywords:
   - "giving"
   - "type"
 ---
-author: hdnax
 
 
 It may, but sometimes, the programmer can provide guidance by giving type annotations.

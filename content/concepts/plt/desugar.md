@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,6 +25,5 @@ keywords:
   - "constructs"
   - "primitive"
 ---
-author: hdnax
 
 The process of transforming syntactic sugar or high-level constructs into more primitive forms in the core language, simplifying the interpreter or compiler implementation.

@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,6 +25,5 @@ keywords:
   - "properties"
   - "physical"
 ---
-author: hdnax
 
 A static verification technique that encodes domain-specific properties (e.g., physical units, array bounds, indices) into types, ensuring operations respect these invariants by detecting mismatches at compile time rather than runtime.

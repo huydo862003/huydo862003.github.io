@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,7 +25,6 @@ keywords:
   - "mathcal"
   - "key"
 ---
-author: hdnax
 :::key
 (Syntax & Grammar) According to Practical foundations for programming languages , a syntactic type signature of an Operator, determining the Sort of an operator and the number and the sorts of the arguments expected by the operator.
 :::

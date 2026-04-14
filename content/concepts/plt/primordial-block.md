@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -23,6 +24,5 @@ keywords:
   - "primitive"
   - "types"
 ---
-author: hdnax
 
 The implicit outermost scope containing built-in definitions (e.g., primitive types, standard functions) that encloses the global scope, making built-ins available without explicit import.

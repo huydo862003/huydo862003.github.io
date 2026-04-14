@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -19,7 +20,6 @@ keywords:
   - "pros"
   - "cons"
 ---
-author: hdnax
 
 
 Quite similar to What are the pros and cons of backward chaining search?, except that forward chaining search is undirected

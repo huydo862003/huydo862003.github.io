@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -17,7 +18,6 @@ keywords:
   - "point"
   - "numbers"
 ---
-author: hdnax
 
 
 To distinguish between integers and floating point numbers & optimize performance.

@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -19,7 +20,6 @@ keywords:
   - "binding"
   - "visible"
 ---
-author: hdnax
 
 
 Recursive let is a syntactic construct in Scheme in which each binding in the let definition is visible anywhere within the let expression.

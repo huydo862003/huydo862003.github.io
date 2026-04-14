@@ -1,4 +1,5 @@
 ---
+published: true
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "A complete guide to TypeScript's never type"

@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -19,7 +20,6 @@ keywords:
   - "mathematical"
   - "systems"
 ---
-author: hdnax
 
 
 A branch of meta-mathematics that studies about the properties of mathematical systems.

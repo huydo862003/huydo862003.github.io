@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -19,7 +20,6 @@ keywords:
   - "unfold"
   - "terms"
 ---
-author: hdnax
 
 
 Two proof tactics that relates to Proof by simplification, that is, they both try to unfold the terms then evaluate the expressions.

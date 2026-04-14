@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -19,7 +20,6 @@ keywords:
   - "mathbb"
   - "exists"
 ---
-author: hdnax
 
 
 A set that is finite, or is infinite and a bijection from it into $\mathbb{N}$ exists.

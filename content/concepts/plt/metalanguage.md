@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -23,6 +24,5 @@ keywords:
   - "notation"
   - "specifying"
 ---
-author: hdnax
 
 The language used to describe, define, or reason about another language (Object language) - e.g., English and mathematical notation when specifying lambda calculus.

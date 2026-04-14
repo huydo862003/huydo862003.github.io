@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -19,7 +20,6 @@ keywords:
   - "values"
   - "without"
 ---
-author: hdnax
 
 
 The wildcard pattern `_` allows matching all values without introducing unnecessary variables.

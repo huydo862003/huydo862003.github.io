@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -23,7 +24,6 @@ keywords:
   - "variables"
   - "values"
 ---
-author: hdnax
 :::key
 (Lambda calculus, Semantics) A finite map from variables to values, used to track substitutions during evaluation.
 :::

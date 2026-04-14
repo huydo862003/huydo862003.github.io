@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,6 +25,5 @@ keywords:
   - "using"
   - "rules"
 ---
-author: hdnax
 
 A property of an Evaluation statement/judgement that it can be derived using the evaluation rules in the calculus.

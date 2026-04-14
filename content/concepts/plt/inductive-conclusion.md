@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,7 +25,6 @@ keywords:
   - "case"
   - "theinstance"
 ---
-author: hdnax
 
 $$
 \displaystyle\frac{a_1\ J \ \dots \ a_k\ J}{a\ J}

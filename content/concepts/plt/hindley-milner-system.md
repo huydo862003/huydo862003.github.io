@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -23,6 +24,5 @@ keywords:
   - "unification"
   - "automatically"
 ---
-author: hdnax
 
 A type system with **complete type inference** via **constraint generation** and **unification** - automatically determines the **most general (principal) type** for all expressions without annotations; basis for ML, OCaml, Haskell.

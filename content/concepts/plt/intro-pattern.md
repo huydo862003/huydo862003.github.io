@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,6 +25,5 @@ keywords:
   - "modifier"
   - "destructures"
 ---
-author: hdnax
 
 [Rocq] A Tactic modifier in Rocq that destructures Hypothesis as they're introduced (like `intros [x y]` to unpack a pair or `intros [H|H]` for a disjunction).

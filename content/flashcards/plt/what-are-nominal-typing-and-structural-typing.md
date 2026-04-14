@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -21,7 +22,6 @@ keywords:
   - "compatibility"
   - "based"
 ---
-author: hdnax
 
 
 Nominal typing is a policy that determines type compatibility based on user-provided declarations.

@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -18,7 +19,6 @@ keywords:
   - "premises"
   - "conclusion"
 ---
-author: hdnax
 
 
 The premises are listed above the horizontal line & the conclusion is listed below the horizontal line.

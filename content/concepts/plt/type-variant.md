@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -17,6 +18,5 @@ keywords:
   - "variant"
   - "sum"
 ---
-author: hdnax
 
 A variant of a Sum type.

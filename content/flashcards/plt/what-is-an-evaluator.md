@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -16,7 +17,6 @@ keywords:
   - "reduces"
   - "value"
 ---
-author: hdnax
 
 
 An evaluator is a program that reduces a program into a value.

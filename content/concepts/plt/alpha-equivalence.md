@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -23,7 +24,6 @@ keywords:
   - "asts"
   - "sort-indexed"
 ---
-author: hdnax
 
 - Formal definition according to Practical foundations for programming languages 
     

@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -20,6 +21,5 @@ keywords:
   - "sorts"
   - "types"
 ---
-author: hdnax
 
 The specification of how many variables a subterm binds and what sorts (types) those variables have.

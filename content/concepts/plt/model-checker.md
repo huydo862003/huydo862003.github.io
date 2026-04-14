@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,6 +25,5 @@ keywords:
   - "state"
   - "space"
 ---
-author: hdnax
 
 An automated verification technique that exhaustively explores the state space of a (typically finite-state) system to detect violations of specified properties such as safety, liveness, or protocol correctness.

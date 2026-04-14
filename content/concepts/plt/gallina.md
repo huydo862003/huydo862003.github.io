@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,6 +25,5 @@ keywords:
   - "writing"
   - "purely"
 ---
-author: hdnax
 
 A functional programming language (Rocq 's specification language) that allows writing purely functional programs and formal proofs, using Dependent type to express precise logical properties.

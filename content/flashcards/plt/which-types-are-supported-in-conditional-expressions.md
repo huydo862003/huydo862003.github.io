@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -19,7 +20,6 @@ keywords:
   - "built-in"
   - "boolean"
 ---
-author: hdnax
 
 - Inductive types with two constructors.
 - Why: Rocq does not have a built-in boolean.

@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -23,7 +24,6 @@ keywords:
   - "witness"
   - "method"
 ---
-author: hdnax
 
 - Intuitionistic logic is syntax-the formal rules.
 - BHK is semantics-what those rules *mean*.

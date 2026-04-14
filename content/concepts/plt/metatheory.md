@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -23,6 +24,5 @@ keywords:
   - "using"
   - "external"
 ---
-author: hdnax
 
 The study of properties about a formal system (e.g., soundness, completeness, termination), using external reasoning to prove facts about the system itself.

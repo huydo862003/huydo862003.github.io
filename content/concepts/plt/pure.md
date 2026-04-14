@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,6 +25,5 @@ keywords:
   - "always"
   - "returns"
 ---
-author: hdnax
 
 The property of a function or computation that has no side effects and always returns the same output for the same input, making it referentially transparent.

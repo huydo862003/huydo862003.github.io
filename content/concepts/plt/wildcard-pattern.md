@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,6 +25,5 @@ keywords:
   - "name"
   - "useful"
 ---
-author: hdnax
 
 A Pattern (usually written `_`) that matches any value without binding it to a name, useful for ignoring irrelevant cases in pattern matching.

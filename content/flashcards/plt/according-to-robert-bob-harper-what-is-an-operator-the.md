@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -17,7 +18,6 @@ keywords:
   - "node's"
   - "abstract"
 ---
-author: hdnax
 
 
 An operator is a stand-in for an internal node's type of an abstract syntax tree.

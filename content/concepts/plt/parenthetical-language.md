@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -23,7 +24,6 @@ keywords:
   - "list"
   - "elements"
 ---
-author: hdnax
 
 ```scheme
 (define-syntax-rule (or a b) (if a a b))

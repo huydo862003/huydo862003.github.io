@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -22,6 +23,5 @@ keywords:
   - "subtype"
   - "substitutes"
 ---
-author: hdnax
 
 Written $X <: Y$, a formal ordering on types meaning "$X$ is a Subtype of $Y$" - $X$ **substitutes for** $Y$.

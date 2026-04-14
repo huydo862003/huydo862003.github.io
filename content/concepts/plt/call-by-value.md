@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -23,7 +24,6 @@ keywords:
   - "key"
   - "strict"
 ---
-author: hdnax
 :::key
 (Lambda calculus, Semantics) A Strict/Eager evaluation strategy in which Beta-redex/Reducible expressions inside lambda abstractions must not be reduced.
 :::

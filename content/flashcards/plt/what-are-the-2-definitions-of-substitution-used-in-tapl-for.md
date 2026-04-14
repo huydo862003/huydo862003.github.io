@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -19,7 +20,6 @@ keywords:
   - "bruijn's"
   - "notation"
 ---
-author: hdnax
 
 - $[x \to s]t$ → Useful for mathematical reasoning, proofs.
 - De Bruijn's notation → Notationally heavier, but useful for compiler's implementation.

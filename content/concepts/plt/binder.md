@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,6 +25,5 @@ keywords:
   - "calculus"
   - "it's"
 ---
-author: hdnax
 
 A syntactic construct that introduces a variable and defines its scope. In lambda calculus, it's the variable directly following $\lambda$.

@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -19,7 +20,6 @@ keywords:
   - "properties"
   - "judgment"
 ---
-author: hdnax
 
 
 Same as for Iterated inductive definition, just that we simultaneously handle more than one properties for more than one judgment forms.

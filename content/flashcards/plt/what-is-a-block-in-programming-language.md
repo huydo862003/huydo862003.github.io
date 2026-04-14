@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -18,7 +19,6 @@ keywords:
   - "statements"
   - "introduces"
 ---
-author: hdnax
 
 
 A block is a syntactic construct that groups statements and introduces a scope for local variables.

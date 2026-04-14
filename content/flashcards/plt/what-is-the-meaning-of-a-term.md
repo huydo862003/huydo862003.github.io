@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -18,7 +19,6 @@ keywords:
   - "abstract"
   - "machine"
 ---
-author: hdnax
 
 
 The meaning of a term can be taken to be the final state of the abstract machine running it.

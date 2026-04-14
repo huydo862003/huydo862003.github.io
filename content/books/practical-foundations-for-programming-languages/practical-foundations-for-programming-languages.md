@@ -1,4 +1,5 @@
 ---
+published: true
 createdAt: 2026-04-12
 updatedAt: 2026-04-12
 title: practical-foundations-for-programming-languages

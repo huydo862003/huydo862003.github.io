@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -23,6 +24,5 @@ keywords:
   - "compute"
   - "side"
 ---
-author: hdnax
 
 A proposition $P$ for which an algorithm exists that, in finite time, either produces a proof of $P$ or a proof of $\neg P$ - i.e., you can compute which side of $P \vee \negP$ holds.

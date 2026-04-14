@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: '2026-03-28'
 updatedAt: '2026-03-28'
@@ -17,7 +18,6 @@ keywords:
   - "small"
   - "omega"
 ---
-author: hdnax
 
 - Recursion: Y-combinator, Z-combinator.
 - Big/small omega combinator.

@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,6 +25,5 @@ keywords:
   - "symbols"
   - "type"
 ---
-author: hdnax
 
 A grammar where production rules can depend on **surrounding symbols** (context) - type systems handle this level; e.g., "variable must be declared before use" requires checking context of the usage site.

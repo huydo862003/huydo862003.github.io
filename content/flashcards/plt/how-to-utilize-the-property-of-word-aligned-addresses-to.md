@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -17,7 +18,6 @@ keywords:
   - "objects"
   - "heap"
 ---
-author: hdnax
 
 - In languages that mostly allocate memory for objects on the heap.
 - These memory should in most case be word-aligned.

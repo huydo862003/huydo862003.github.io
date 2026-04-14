@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,6 +25,5 @@ keywords:
   - "calls"
   - "referencing"
 ---
-author: hdnax
 
 When utilizing the Class pattern to define classes with method calls referencing other methods, a recursion pattern that causes method reference to be resolved immediately right at class definition.

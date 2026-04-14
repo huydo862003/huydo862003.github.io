@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,6 +25,5 @@ keywords:
   - "derivation"
   - "starts"
 ---
-author: hdnax
 
 A search strategy for a derivation of some Judgment that starts from the desired Judgment as the initial goal, picks a rule at each step with the conclusion as the current goal, adds its premises as subgoals into a queue & continues until all subgoals are axioms.

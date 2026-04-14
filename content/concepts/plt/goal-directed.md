@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -23,6 +24,5 @@ keywords:
   - "educated"
   - "steps"
 ---
-author: hdnax
 
 The property of an algorithm that is aware of its goal and uses that knowledge to take educated steps towards the goal, or in the case of Backward chaining search, starting from the goal, and working backwards towards the axioms.

@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -23,6 +24,5 @@ keywords:
   - "variant"
   - "binding"
 ---
-author: hdnax
 
 A language construct that **deconstructs** algebraic datatype values by variant, binding fields to variables and enabling the type checker to **refine types** in each branch - safer than raw predicates + accessors.

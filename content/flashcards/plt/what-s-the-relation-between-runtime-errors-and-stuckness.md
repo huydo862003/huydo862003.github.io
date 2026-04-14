@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -19,7 +20,6 @@ keywords:
   - "machine"
   - "lambda"
 ---
-author: hdnax
 
 
 A runtime error is a state of an abstract machine in which a lambda term become stuck.

@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -17,7 +18,6 @@ keywords:
   - "design"
   - "extend"
 ---
-author: hdnax
 
 
 A fundamental tension in language design - how to extend a data abstraction with both **new variants** (data) and **new operations** (functions) without modifying existing code.

@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,6 +25,5 @@ keywords:
   - "rather"
   - "operating"
 ---
-author: hdnax
 
 [Rocq] A **top-level directive** in Rocq that controls the environment (like `Definition`, `Theorem`, `Print`, `Check`) rather than operating within a proof.

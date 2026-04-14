@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,6 +25,5 @@ keywords:
   - "sizes"
   - "orientations"
 ---
-author: hdnax
 
 A design approach that ensures an interface adapts fluidly to different screen sizes, orientations, and resolutions.

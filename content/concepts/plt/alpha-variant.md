@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -20,6 +21,5 @@ keywords:
   - "relation"
   - "alpha-variants"
 ---
-author: hdnax
 
 If two terms are related by the Alpha-equivalence relation, they are alpha-variants.

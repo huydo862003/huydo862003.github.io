@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -23,6 +24,5 @@ keywords:
   - "roughly"
   - "type"
 ---
-author: hdnax
 
 A Syntactic category that classifies [Abstract syntax tree (AST)](/journeys/plt/concepts/abstract-syntax-tree-ast)s. Roughly a type for ASTs.

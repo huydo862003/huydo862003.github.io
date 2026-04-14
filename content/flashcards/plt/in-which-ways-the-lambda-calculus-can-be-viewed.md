@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -19,7 +20,6 @@ keywords:
   - "described"
   - "mathematical"
 ---
-author: hdnax
 
 - A **simple programming language** in which computations can be described.
 - A **mathematical object** about which rigorous statements can be proved.

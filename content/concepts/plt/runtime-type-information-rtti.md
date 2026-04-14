@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -23,6 +24,5 @@ keywords:
   - "reflection"
   - "value"
 ---
-author: hdnax
 
 A mechanism that allows the reflection of the type of a value at runtime.

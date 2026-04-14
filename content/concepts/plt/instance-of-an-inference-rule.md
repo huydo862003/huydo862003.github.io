@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,6 +25,5 @@ keywords:
   - "yielding"
   - "particular"
 ---
-author: hdnax
 
 A specific substitution of the rule's Metavariables with concrete terms, yielding a particular derivation step.

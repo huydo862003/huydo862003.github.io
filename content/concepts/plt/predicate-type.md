@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,6 +25,5 @@ keywords:
   - "proves"
   - "returning"
 ---
-author: hdnax
 
 A function type annotated with **what it proves** when returning true - e.g., `(-> Any Boolean : mt)` means "takes anything, returns Boolean, and when true, input was `mt`." Essentially, a type of a Type predicate.

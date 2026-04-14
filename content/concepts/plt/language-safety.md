@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,7 +25,6 @@ keywords:
   - "types"
   - "view"
 ---
-author: hdnax
 :::key
 (Language feature/design, Runtime) According to Types and programming languages, from the view of portability, a language whose behavior can be entirely determined by its programmer's manual, that is, it is not subject to the internals of the specific machine it runs on.
 :::

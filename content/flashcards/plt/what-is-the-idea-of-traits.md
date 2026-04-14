@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -18,7 +19,6 @@ keywords:
   - "traits"
   - "applied"
 ---
-author: hdnax
 
 
 Trait is a generalization of mixin, in that, multiple traits can be applied simultaneously to a class, instead of applying one-at-a-time like mixin. This allows for well-defined and automatic conflict-resolution.

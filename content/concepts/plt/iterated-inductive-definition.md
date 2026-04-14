@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,6 +25,5 @@ keywords:
   - "specifies"
   - "elements"
 ---
-author: hdnax
 
 An inductive definition technique that specifies a set of elements as the strongest sets closed under a set of inference rules - each inference rule may only refer to already defined sets or the currently defined one.

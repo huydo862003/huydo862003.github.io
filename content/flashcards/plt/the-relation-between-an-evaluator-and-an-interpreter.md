@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -18,7 +19,6 @@ keywords:
   - "function"
   - "sometimes"
 ---
-author: hdnax
 
 - An interpreter is a program that simulates the execution of a programming language and implements a function that carries a program into a value.
 - An evaluator is a program that reduces a program into a value.

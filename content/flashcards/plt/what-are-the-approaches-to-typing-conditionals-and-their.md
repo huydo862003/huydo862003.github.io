@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -17,7 +18,6 @@ keywords:
   - "pros"
   - "cons"
 ---
-author: hdnax
 
 - 1st approach: True and False branches must be of the same types.
     

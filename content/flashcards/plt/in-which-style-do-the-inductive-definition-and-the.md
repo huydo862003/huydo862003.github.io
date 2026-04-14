@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -10,7 +11,6 @@ books:
   - chapter-3-untyped-arithmetic-expressions
 tags: []
 ---
-author: hdnax
 
 
 Non-constructive.

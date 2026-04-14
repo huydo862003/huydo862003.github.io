@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,7 +25,6 @@ keywords:
   - "according"
   - "robert"
 ---
-author: hdnax
 :::key
 (Type theory, Language feature/design, Semantics) According to Robert (Bob) Harper, the coherence between static and dynamic semantics.
 :::

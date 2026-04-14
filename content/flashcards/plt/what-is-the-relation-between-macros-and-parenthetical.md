@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -18,7 +19,6 @@ keywords:
   - "implement"
   - "systems"
 ---
-author: hdnax
 
 
 It's easier to implement macro systems in parenthetical languages, as syntax and lists have the same structure. Therefore, a macro is literally a function that takes a list and yields another list.

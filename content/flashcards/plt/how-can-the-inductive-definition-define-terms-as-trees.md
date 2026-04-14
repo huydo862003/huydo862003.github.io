@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -18,7 +19,6 @@ keywords:
   - "builds"
   - "composite"
 ---
-author: hdnax
 
 
 The inductive definition starts with a base term and builds a composite term from smaller terms. → A term's structure is hierarchical.

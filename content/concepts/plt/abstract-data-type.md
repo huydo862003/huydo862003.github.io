@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,6 +25,5 @@ keywords:
   - "rather"
   - "implementation"
 ---
-author: hdnax
 
 A type defined by its operations and their specifications rather than its implementation, providing encapsulation by hiding internal representation while exposing a public interface.

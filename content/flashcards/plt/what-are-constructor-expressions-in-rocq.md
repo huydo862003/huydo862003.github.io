@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -20,7 +21,6 @@ keywords:
   - "effectively"
   - "creating"
 ---
-author: hdnax
 
 
 A constructor expression is an expression constructed using a Constructor, effectively creating a member of a set represented by a type.

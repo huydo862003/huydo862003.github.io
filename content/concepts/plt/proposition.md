@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,7 +25,6 @@ keywords:
   - "something"
   - "conflating"
 ---
-author: hdnax
 
 - In Intuitionistic/Constructive logic
     - `true` means "has a proof".

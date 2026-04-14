@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -19,7 +20,6 @@ keywords:
   - "values"
   - "methods"
 ---
-author: hdnax
 
 - A value that maps names to stuff (either other values or "methods").
 - A generalization of Closures.

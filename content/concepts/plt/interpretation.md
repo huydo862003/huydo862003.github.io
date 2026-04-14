@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -23,6 +24,5 @@ keywords:
   - "binary"
   - "bit"
 ---
-author: hdnax
 
 A **semantic mapping** that assigns meaning to a Representation (e.g., `0b101` can interpret as `5` in binary or a bit pattern).

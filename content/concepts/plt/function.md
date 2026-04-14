@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,7 +25,6 @@ keywords:
   - "returns"
   - "result"
 ---
-author: hdnax
 :::key
 (Language feature/design) A reusable piece of code that returns a result.
 :::

@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -24,6 +25,5 @@ keywords:
   - "data"
   - "types"
 ---
-author: hdnax
 
 The structure of algebraic data types - **sum** because variants combine via "or" (one of `mt` or `node`), **product** because each variant's fields combine via "and" (a `node` has `v` and `l` and `r`).

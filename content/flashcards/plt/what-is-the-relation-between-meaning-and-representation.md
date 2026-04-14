@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -18,7 +19,6 @@ keywords:
   - "usage"
   - "meaning"
 ---
-author: hdnax
 
 - One representation can have multiple meanings, depending on its usage.
 - One meaning can have multiple representation.

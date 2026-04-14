@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -17,7 +18,6 @@ keywords:
   - "types"
   - "change"
 ---
-author: hdnax
 
 
 When you refactor, some function signatures or variables' types may change, a type system would catch most locations that the refactor may miss.

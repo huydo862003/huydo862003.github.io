@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -20,7 +21,6 @@ keywords:
   - "carries"
   - "program"
 ---
-author: hdnax
 
 - A compiler can be treated as a function that carries a program in the source programming language to another target programming language.
     

@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -23,6 +24,5 @@ keywords:
   - "serves"
   - "single"
 ---
-author: hdnax
 
 A comprehensive ecosystem of standards, documentation, and reusable components that serves as the single source of truth to enable teams to build consistent, scalable products efficiently.

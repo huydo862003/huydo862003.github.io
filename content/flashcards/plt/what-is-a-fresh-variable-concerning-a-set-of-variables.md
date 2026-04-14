@@ -1,4 +1,5 @@
 ---
+published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
@@ -21,7 +22,6 @@ keywords:
   - "it's"
   - "within"
 ---
-author: hdnax
 
 
 A variable is fresh in a variable set $\mathcal{X}$ if it's not within $\mathcal{X}$.
