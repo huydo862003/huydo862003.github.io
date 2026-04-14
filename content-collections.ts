@@ -8,7 +8,7 @@ const dates = {
   createdAt: z.string().default(''),
   updatedAt: z.string().default(''),
   author: z.string().default(''),
-  published: z.boolean().default(true),
+  published: z.boolean().default(false),
 };
 
 // Strip the implicit `content` field and skip unpublished docs
@@ -189,7 +189,7 @@ const graph = defineCollection({
   include: '**/*.md',
   exclude: ['_configs/**'],
   schema: z.object({
-    published: z.boolean().default(true),
+    published: z.boolean().default(false),
     title: z.string().default(''),
     question: z.string().default(''),
     journey: z.string().default(''),
