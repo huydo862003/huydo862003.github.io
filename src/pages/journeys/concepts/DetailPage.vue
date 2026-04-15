@@ -124,7 +124,6 @@ useSeo({
     if (!c) return undefined;
     return [
       ...c.tags,
-      ...c.keywords,
       c.journey,
       c.status,
       'concept',

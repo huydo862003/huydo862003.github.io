@@ -197,8 +197,6 @@ useSeo({
     return [
       ...(c.tags ?? [
       ]),
-      ...(c.keywords ?? [
-      ]),
       c.deck,
       slug.value,
       'flashcard',
