@@ -4,23 +4,13 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: "What's the relation between the y-combinator and the omega combinator?"
-answer: TODO
 deck: pure-lambda-calculus
 concepts:
   - divergent-big-omega-combinator
 books:
   - chapter-5-the-untyped-pure-lambda-calculus
 tags: []
-keywords:
-  - "divergent big omega combinator"
-  - "lambda"
-  - "omega"
-  - "combinator"
-  - "small"
-  - "big"
-  - "y-combinator"
 ---
-
 
 The small omega combinator:
 

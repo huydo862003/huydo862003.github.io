@@ -4,21 +4,12 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: "What are the use cases of rocq?"
-answer: TODO
 deck: rocq-programming-language
 concepts:
   - rocq
 books:
   - logical-foundations
 tags: []
-keywords:
-  - "rocq"
-  - "programming"
-  - "platform"
-  - "model"
-  - "languages"
-  - "tool"
-  - "write"
 ---
 
 - As a platform to model programming languages.

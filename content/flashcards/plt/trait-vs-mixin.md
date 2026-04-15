@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: Trait vs mixin?
-answer: TODO
 deck: pure-lambda-calculus
 concepts:
   - trait
@@ -12,15 +11,7 @@ concepts:
 books:
   - chapter-4-objects
 tags: []
-keywords:
-  - "trait"
-  - "mixin"
-  - "class"
-  - "classes"
-  - "sense"
-  - "rust's"
 ---
-
 
 Note: Trait in this sense is different from Rust's traits.
 

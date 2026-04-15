@@ -4,15 +4,12 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Hypothetical rule induction"
-description: "\"Hypothetical rule induction\" is a concept in plt (status: learning)."
 journey: plt
 status: learning
 books: ["chapter-3-hypothetical-and-general-judgments"]
 dependsOn: []
 blocks: []
 tags: []
-keywords:
-  - "hypothetical"
-  - "rule"
-  - "induction"
 ---
+
+\"Hypothetical rule induction\" is a concept in plt (status: learning).

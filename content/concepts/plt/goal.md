@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Goal"
-description: "\"Goal\" is a concept in plt (status: reviewing). Topics: formal-system, language-feature-design, logic, programming-paradigm, proof-reason-technique."
 journey: plt
 status: reviewing
 books: ["chapter-1-basics-functional-programming-in-rocq"]
@@ -16,15 +15,9 @@ tags:
   - "logic"
   - "programming-paradigm"
   - "proof-reason-technique"
-keywords:
-  - "rocq"
-  - "formal"
-  - "system"
-  - "reason"
-  - "technique"
-  - "proposition"
-  - "proven"
 ---
+
+\"Goal\" is a concept in plt (status: reviewing). Topics: formal-system, language-feature-design, logic, programming-paradigm, proof-reason-technique.
 
 Tools: Rocq (formerly Coq)
 :::key

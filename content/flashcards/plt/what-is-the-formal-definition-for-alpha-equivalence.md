@@ -4,23 +4,13 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What is the formal definition for alpha-equivalence?
-answer: TODO
 deck: language-theory
 concepts:
   - alpha-equivalence
 books:
   - chapter-1-abstract-syntax
 tags: []
-keywords:
-  - "alpha equivalence"
-  - "vec"
-  - "alpha"
-  - "rhoi"
-  - "set"
-  - "asts"
-  - "dots"
 ---
-
 
 Alpha-equivalence is a relation $=_\alpha$ on the set of terms/ASTs. Given $\mathcal{A}$ as a set of ASTs. Then:
 

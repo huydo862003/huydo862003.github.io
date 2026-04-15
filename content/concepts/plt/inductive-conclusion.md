@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Inductive conclusion"
-description: "\\displaystyle\\frac{a_1\\ J \\ \\dots \\ a_k\\ J}{a\\ J}"
 journey: plt
 status: reviewing
 books: ["chapter-2-inductive-definitions"]
@@ -13,18 +12,9 @@ blocks: []
 tags:
   - "logic"
   - "set-theory-relation"
-keywords:
-  - "mathcal"
-  - "inductive"
-  - "conclusion"
-  - "displaystyle"
-  - "frac"
-  - "dots"
-  - "typically"
-  - "show"
-  - "case"
-  - "theinstance"
 ---
+
+\\displaystyle\\frac{a_1\\ J \\ \\dots \\ a_k\\ J}{a\\ J}
 
 $$
 \displaystyle\frac{a_1\ J \ \dots \ a_k\ J}{a\ J}

@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Lexical analysis"
-description: "(Syntax & Grammar, Linguistics) The process of classifying texts into syntactic categories."
 journey: plt
 status: mastered
 books: ["chapter-5-the-untyped-pure-lambda-calculus"]
@@ -14,17 +13,9 @@ tags:
   - "compiler-implementation"
   - "linguistics"
   - "syntax-grammar"
-keywords:
-  - "lexical"
-  - "analysis"
-  - "removing"
-  - "comments"
-  - "whitespaces"
-  - "categorizing"
-  - "tokens"
-  - "syntax"
-  - "grammar"
 ---
+
+(Syntax & Grammar, Linguistics) The process of classifying texts into syntactic categories.
 
 - Removing comments and whitespaces.
 - Categorizing tokens.

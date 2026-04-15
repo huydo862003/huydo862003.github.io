@@ -4,23 +4,13 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What is language safety, both formally and informally?
-answer: TODO
 deck: programming-language-basic
 concepts:
   - language-safety
 books:
   - chapter-1-introduction
 tags: []
-keywords:
-  - "language safety"
-  - "language"
-  - "safe"
-  - "portability"
-  - "runtime"
-  - "informally"
-  - "allow"
 ---
-
 
 Informally, a safe language would not allow a programmer to shoot in their foot.
 

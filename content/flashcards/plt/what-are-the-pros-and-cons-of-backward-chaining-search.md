@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What are the pros and cons of backward chaining search?
-answer: TODO
 deck: set-theory-relation
 concepts:
   - backward-chaining-search
@@ -12,17 +11,7 @@ concepts:
 books:
   - chapter-2-inductive-definitions
 tags: []
-keywords:
-  - "backward chaining search"
-  - "goal directed"
-  - "backward"
-  - "chaining"
-  - "search"
-  - "judgment"
-  - "eventually"
-  - "find"
 ---
-
 
 Backward chaining search can eventually find a derivation for a derivable judgment, goal-directed.
 

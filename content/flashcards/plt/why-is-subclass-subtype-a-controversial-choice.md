@@ -4,21 +4,12 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: Why is subclass = subtype a controversial choice?
-answer: TODO
 deck: type-theory
 concepts: []
 books:
   - chapter-5-types
 tags: []
-keywords:
-  - "subtyping"
-  - "inheritance"
-  - "type"
-  - "subtype"
-  - "elements"
-  - "subclassing"
 ---
-
 
 **Subtyping** is a form of type polymorphism in which a subtype is a datatype that is related to another datatype (the supertype) by some notion of substitutability, meaning that program elements, typically subroutines or functions, written to operate on  elements of the supertype can also operate on elements of the subtype.
 

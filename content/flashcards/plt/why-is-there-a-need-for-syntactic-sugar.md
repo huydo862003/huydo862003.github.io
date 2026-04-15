@@ -4,21 +4,12 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: Why is there a need for syntactic sugar?
-answer: TODO
 deck: language-theory
 concepts:
   - syntactic-sugar
 books:
   - chapter-3-syntactic-sugar
 tags: []
-keywords:
-  - "syntactic sugar"
-  - "core"
-  - "calculus"
-  - "proofs"
-  - "easily"
-  - "derived"
-  - "surface"
 ---
 
 - The core calculus can be minimal, so that proofs about them can be easily derived and the compiler implementation can be kept simple.

@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Pair encoding"
-description: "\"Pair encoding\" is a concept in plt (status: learning). Topics: lambda-calculus, semantics."
 journey: plt
 status: learning
 books: ["chapter-5-the-untyped-pure-lambda-calculus"]
@@ -13,16 +12,9 @@ blocks: []
 tags:
   - "lambda-calculus"
   - "semantics"
-keywords:
-  - "text"
-  - "lambda"
-  - "pair"
-  - "encoding"
-  - "fst"
-  - "tru"
-  - "snd"
-  - "fls"
 ---
+
+\"Pair encoding\" is a concept in plt (status: learning). Topics: lambda-calculus, semantics.
 
 Encoding:
 

@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Proposition"
-description: "→ true/false do not merely \"corresponds to reality.\""
 journey: plt
 status: mastered
 books: ["chapter-1-basics-functional-programming-in-rocq"]
@@ -12,19 +11,9 @@ dependsOn: []
 blocks: []
 tags:
   - "logic"
-keywords:
-  - "proposition"
-  - "means"
-  - "boolean"
-  - "intuitionistic"
-  - "constructive"
-  - "refutation"
-  - "value"
-  - "propositions"
-  - "called"
-  - "something"
-  - "conflating"
 ---
+
+→ true/false do not merely \"corresponds to reality.\"
 
 - In Intuitionistic/Constructive logic
     - `true` means "has a proof".

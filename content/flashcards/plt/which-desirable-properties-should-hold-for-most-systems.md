@@ -4,21 +4,12 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: Which desirable properties should hold for most systems, which would not?
-answer: TODO
 deck: language-theory
 concepts: []
 books:
   - chapter-3-untyped-arithmetic-expressions
 tags: []
-keywords:
-  - "desired"
-  - "property"
-  - "normal"
-  - "hold"
-  - "evaluation"
-  - "form"
 ---
-
 
 Should hold:
 

@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: "What's the most popular semantic style today? why?"
-answer: TODO
 deck: language-theory
 concepts:
   - small-step-structural-operational-semantics-sos
@@ -14,19 +13,7 @@ concepts:
 books:
   - chapter-3-untyped-arithmetic-expressions
 tags: []
-keywords:
-  - "small step structural operational semantics sos"
-  - "operational semantics"
-  - "denotational semantics"
-  - "axiomatic semantics"
-  - "semantics"
-  - "operational"
-  - "denotational"
-  - "axiomatic"
-  - "popular"
-  - "it's"
 ---
-
 
 Of the three:
 

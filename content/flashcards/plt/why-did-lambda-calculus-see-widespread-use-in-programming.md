@@ -4,19 +4,11 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: Why did lambda calculus see widespread use in programming language specification, type system studies, etc?
-answer: TODO
 deck: pure-lambda-calculus
 concepts: []
 books:
   - chapter-5-the-untyped-pure-lambda-calculus
 tags: []
-keywords:
-  - "language"
-  - "landin"
-  - "core"
-  - "programming"
-  - "understood"
-  - "lambda-calculus"
 ---
 
 - Mid 1960, Peter Landin observed that a **complex programming language** can be understood by:

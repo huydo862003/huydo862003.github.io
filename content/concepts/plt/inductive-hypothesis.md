@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Inductive hypothesis"
-description: "\\displaystyle\\frac{a_1\\ J \\ \\dots \\ a_k\\ J}{a\\ J}"
 journey: plt
 status: reviewing
 books: ["chapter-2-inductive-definitions"]
@@ -14,17 +13,9 @@ tags:
   - "logic"
   - "proof-reason-technique"
   - "set-theory-relation"
-keywords:
-  - "mathcal"
-  - "inductive"
-  - "displaystyle"
-  - "frac"
-  - "dots"
-  - "hypothesis"
-  - "typically"
-  - "show"
-  - "case"
 ---
+
+\\displaystyle\\frac{a_1\\ J \\ \\dots \\ a_k\\ J}{a\\ J}
 
 $$
 \displaystyle\frac{a_1\ J \ \dots \ a_k\ J}{a\ J}

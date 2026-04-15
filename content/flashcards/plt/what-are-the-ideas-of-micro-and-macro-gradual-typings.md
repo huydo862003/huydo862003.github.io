@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What are the ideas of micro and macro gradual typings?
-answer: TODO
 deck: type-theory
 concepts:
   - gradual-typing
@@ -13,18 +12,7 @@ concepts:
 books:
   - chapter-5-types
 tags: []
-keywords:
-  - "gradual typing"
-  - "macro gradual typing"
-  - "micro gradual typing"
-  - "gradual"
-  - "typing"
-  - "untyped"
-  - "type"
-  - "typed"
-  - "languages"
 ---
-
 
 Gradual typing is often the formal term for retrofitted type systems.
 

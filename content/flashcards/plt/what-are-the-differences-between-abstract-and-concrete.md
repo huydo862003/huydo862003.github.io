@@ -4,20 +4,12 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What are the differences between abstract and concrete syntax?
-answer: TODO
 deck: programming-language-basic
 concepts: []
 books:
   - chapter-3-untyped-arithmetic-expressions
   - chapter-5-the-untyped-pure-lambda-calculus
 tags: []
-keywords:
-  - "syntax"
-  - "language"
-  - "abstract"
-  - "concrete"
-  - "surface"
-  - "programmers"
 ---
 
 - Concrete/Surface syntax: The language that the programmers actually programs in - usually a sequence of characters.

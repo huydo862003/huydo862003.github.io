@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Constant"
-description: "The token itself *is* the value-the parser can extract it directly without consulting any environment or performing computation"
 journey: plt
 status: mastered
 books: ["chapter-2-evaluation"]
@@ -16,15 +15,9 @@ tags:
   - "program-analysis"
   - "semantics"
   - "syntax-grammar"
-keywords:
-  - "constant"
-  - "name"
-  - "binding"
-  - "value"
-  - "cannot"
-  - "const"
-  - "requires"
 ---
+
+The token itself *is* the value-the parser can extract it directly without consulting any environment or performing computation
 
 - Requires no evaluation or name lookup.
 - Examples: `42`, `"hello"`, `true`, `3.14`.

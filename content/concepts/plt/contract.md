@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Contract"
-description: "Problem: When typed code is called from untyped code, the type checker can't guarantee arguments will have correct types - untyped code has no static checking."
 journey: plt
 status: learning
 books: ["chapter-5-types"]
@@ -15,16 +14,9 @@ tags:
   - "runtime"
   - "semantics"
   - "type-theory"
-keywords:
-  - "string"
-  - "number"
-  - "contract"
-  - "racket"
-  - "typed"
-  - "code"
-  - "untyped"
-  - "called"
 ---
+
+Problem: When typed code is called from untyped code, the type checker can't guarantee arguments will have correct types - untyped code has no static checking.
 
 - Racket example
     

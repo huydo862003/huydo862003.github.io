@@ -4,23 +4,13 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What are the syntax/values/evaluation relation for the untyped lambda calculus?
-answer: TODO
 deck: pure-lambda-calculus
 concepts:
   - pure-untyped-lambda-calculus
 books:
   - chapter-5-the-untyped-pure-lambda-calculus
 tags: []
-keywords:
-  - "pure untyped lambda calculus"
-  - "aligned"
-  - "lambda"
-  - "begin"
-  - "end"
-  - "displaystyle"
-  - "frac"
 ---
-
 
 Syntax:
 

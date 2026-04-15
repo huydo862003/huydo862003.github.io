@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Mapping
-description: "\"Mapping\" is a concept in design (status: learning)."
 journey: design
 status: learning
 tags: []
@@ -14,3 +13,4 @@ dependsOn: []
 blocks: []
 ---
 
+\"Mapping\" is a concept in design (status: learning).

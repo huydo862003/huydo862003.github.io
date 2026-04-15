@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Subgoal"
-description: "\"Subgoal\" is a concept in plt (status: reviewing). Topics: language-feature-design, logic, proof-reason-technique."
 journey: plt
 status: reviewing
 books: ["chapter-1-basics-functional-programming-in-rocq"]
@@ -14,17 +13,9 @@ tags:
   - "language-feature-design"
   - "logic"
   - "proof-reason-technique"
-keywords:
-  - "rocq"
-  - "goal"
-  - "formal"
-  - "system"
-  - "reason"
-  - "technique"
-  - "splits"
-  - "multiple"
-  - "subgoal"
 ---
+
+\"Subgoal\" is a concept in plt (status: reviewing). Topics: language-feature-design, logic, proof-reason-technique.
 
 Tools: Rocq (formerly Coq)
 :::key

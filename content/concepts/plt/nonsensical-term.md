@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Nonsensical term"
-description: "Example: In the Untyped calculus of booleans and numbers, the followings are nonsensical:"
 journey: plt
 status: mastered
 books: ["chapter-3-untyped-arithmetic-expressions"]
@@ -13,17 +12,6 @@ blocks: []
 tags:
   - "semantics"
   - "syntax-grammar"
-keywords:
-  - "text"
-  - "nonsensical"
-  - "term"
-  - "untyped"
-  - "calculus"
-  - "booleans"
-  - "numbers"
-  - "followings"
-  - "succ"
-  - "tru"
 ---
 
 Example: In the Untyped calculus of booleans and numbers, the followings are nonsensical:

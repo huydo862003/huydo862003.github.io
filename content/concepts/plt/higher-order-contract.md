@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Higher-order contract"
-description: "Contracts on values that are themselves functions (or contain functions), presenting unique challenges because the contract cannot be fully checked immediately."
 journey: plt
 status: learning
 books: []
@@ -16,14 +15,8 @@ tags:
   - "runtime"
   - "semantics"
   - "type-theory"
-keywords:
-  - "contract"
-  - "functions"
-  - "higher-order"
-  - "contracts"
-  - "values"
-  - "themselves"
-  - "contain"
 ---
+
+Contracts on values that are themselves functions (or contain functions), presenting unique challenges because the contract cannot be fully checked immediately.
 
 Contracts on values that are themselves **functions** (or contain functions), presenting unique challenges because the contract cannot be fully checked immediately.

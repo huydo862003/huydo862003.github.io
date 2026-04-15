@@ -4,21 +4,12 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: Disadvantages and advantages of union types compared to sum types?
-answer: TODO
 deck: type-theory
 concepts: []
 books:
   - chapter-5-types
 tags: []
-keywords:
-  - "types"
-  - "union"
-  - "sum"
-  - "language"
-  - "runtime"
-  - "languages"
 ---
-
 
 Depending on the exact language, tooling and runtime:
 

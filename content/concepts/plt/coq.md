@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Coq"
-description: "\"Coq\" is a concept in plt (status: reviewing). Topics: formal-system, language-feature-design, programming-paradigm, proof-reason-technique."
 journey: plt
 status: reviewing
 books: ["logical-foundations"]
@@ -15,16 +14,9 @@ tags:
   - "language-feature-design"
   - "programming-paradigm"
   - "proof-reason-technique"
-keywords:
-  - "coq"
-  - "rocq"
-  - "tools"
-  - "formerly"
-  - "programming"
-  - "paradigm"
-  - "language"
-  - "feature"
 ---
+
+\"Coq\" is a concept in plt (status: reviewing). Topics: formal-system, language-feature-design, programming-paradigm, proof-reason-technique.
 
 Tools: Rocq (formerly Coq)
 :::key

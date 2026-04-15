@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Self-reference"
-description: "(Programming paradigm) A technique in the Class pattern that allows members of a class to reference their owner objects."
 journey: plt
 status: mastered
 books: ["chapter-4-objects"]
@@ -12,19 +11,10 @@ dependsOn: []
 blocks: []
 tags:
   - "programming-paradigm"
-keywords:
-  - "self"
-  - "lambda"
-  - "msg"
-  - "args"
-  - "self-reference"
-  - "mutation"
-  - "scheme"
-  - "o-self"
-  - "case"
-  - "programming"
-  - "class"
 ---
+
+(Programming paradigm) A technique in the Class pattern that allows members of a class to reference their owner objects.
+
 :::key
 (Programming paradigm) A technique in the Class pattern that allows members of a class to reference their owner objects.
 :::

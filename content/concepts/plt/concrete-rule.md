@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Concrete rule"
-description: "A specific instance of a Rule schema  where all Metavariables are replaced with actual terms - the schema is the general pattern, the concrete rule is a particular instantiation."
 journey: plt
 status: reviewing
 books: ["chapter-3-untyped-arithmetic-expressions"]
@@ -12,18 +11,6 @@ dependsOn: []
 blocks: []
 tags:
   - "logic"
-keywords:
-  - "rule"
-  - "concrete"
-  - "schema"
-  - "specific"
-  - "instance"
-  - "metavariables"
-  - "replaced"
-  - "actual"
-  - "terms"
-  - "general"
-  - "pattern"
 ---
 
 A specific instance of a Rule schema  where all Metavariables are replaced with actual terms - the schema is the general pattern, the concrete rule is a particular instantiation.

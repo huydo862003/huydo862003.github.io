@@ -4,21 +4,12 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: "Which types are supported in conditional expressions' conditions in rocq? why? which values are truthy/falsy?"
-answer: TODO
 deck: rocq-programming-language
 concepts:
   - conditional-expression
 books:
   - chapter-1-basics-functional-programming-in-rocq
 tags: []
-keywords:
-  - "conditional expression"
-  - "inductive"
-  - "types"
-  - "constructors"
-  - "rocq"
-  - "built-in"
-  - "boolean"
 ---
 
 - Inductive types with two constructors.

@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Arity"
-description: "(Syntax & Grammar) According to Practical foundations for programming languages , a syntactic type signature of an Operator, determining the Sort of an operator and the number and the sorts of the arg"
 journey: plt
 status: mastered
 books: ["chapter-5-types", "chapter-1-abstract-syntax"]
@@ -15,16 +14,10 @@ tags:
   - "semantics"
   - "set-theory-relation"
   - "syntax-grammar"
-keywords:
-  - "dots"
-  - "operator"
-  - "sort"
-  - "arity"
-  - "vec"
-  - "context"
-  - "mathcal"
-  - "key"
 ---
+
+(Syntax & Grammar) According to Practical foundations for programming languages , a syntactic type signature of an Operator, determining the Sort of an operator and the number and the sorts of the arg
+
 :::key
 (Syntax & Grammar) According to Practical foundations for programming languages , a syntactic type signature of an Operator, determining the Sort of an operator and the number and the sorts of the arguments expected by the operator.
 :::

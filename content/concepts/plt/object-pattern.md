@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Object pattern
-description: "\"Object pattern\" is a concept in plt (status: learning)."
 journey: plt
 status: learning
 books:
@@ -12,15 +11,9 @@ books:
 dependsOn: []
 blocks: []
 tags: []
-keywords:
-  - "lambda"
-  - "prop1"
-  - "prop2"
-  - "object"
-  - "pattern"
-  - "scheme"
-  - "case"
 ---
+
+\"Object pattern\" is a concept in plt (status: learning).
 
 ```scheme
 (define o

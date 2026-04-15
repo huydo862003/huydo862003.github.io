@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: How to implement classes with prototypes?
-answer: TODO
 deck: compiler-implementation
 concepts:
   - prototype
@@ -12,16 +11,7 @@ concepts:
 books:
   - chapter-4-objects
 tags: []
-keywords:
-  - "prototype"
-  - "class"
-  - "create"
-  - "delegates"
-  - "child"
-  - "object"
-  - "methods"
 ---
-
 
 Create a prototype object that contains all the shared methods and default properties.
 

@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Structural induction modulo fresh renaming"
-description: "To show that $\\mathcal{P}[\\mathcal{X}](a)$ holds for every $a \\in \\mathcal{B}[\\mathcal{X}]$, it is enough to show the following:"
 journey: plt
 status: reviewing
 books: ["chapter-1-abstract-syntax"]
@@ -13,18 +12,9 @@ blocks: []
 tags:
   - "proof-reason-technique"
   - "syntax-grammar"
-keywords:
-  - "mathcal"
-  - "vec"
-  - "set"
-  - "variables"
-  - "show"
-  - "dots"
-  - "structural"
-  - "induction"
-  - "modulo"
-  - "fresh"
 ---
+
+To show that $\\mathcal{P}[\\mathcal{X}](a)$ holds for every $a \\in \\mathcal{B}[\\mathcal{X}]$, it is enough to show the following:
 
 - Formulation
     

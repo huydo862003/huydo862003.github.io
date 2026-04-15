@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Preorder
-description: "A Binary relation that is Reflexive and Transitive."
 journey: plt
 status: learning
 books:
@@ -12,12 +11,6 @@ books:
 dependsOn: []
 blocks: []
 tags: []
-keywords:
-  - "preorder"
-  - "binary"
-  - "relation"
-  - "reflexive"
-  - "transitive"
 ---
 
 A Binary relation that is Reflexive and Transitive.

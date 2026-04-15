@@ -4,22 +4,12 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What is the one-step evaluation relation?
-answer: TODO
 deck: pure-lambda-calculus
 concepts:
   - one-step-evaluation-relation
 books:
   - chapter-3-untyped-arithmetic-expressions
 tags: []
-keywords:
-  - "one step evaluation relation"
-  - "relation"
-  - "relates"
-  - "term"
-  - "immediate"
-  - "successor"
-  - "calculus"
 ---
-
 
 A relation that relates a term to its immediate successor in a calculus, representing one step of evaluation.

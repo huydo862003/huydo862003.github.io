@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Calculus of inductive construction"
-description: "\"Calculus of Inductive Construction\" is a concept in plt (status: learning). Topics: computation-theory, formal-system, logic."
 journey: plt
 status: learning
 books: []
@@ -14,17 +13,9 @@ tags:
   - "computation-theory"
   - "formal-system"
   - "logic"
-keywords:
-  - "inductive"
-  - "rocq"
-  - "theory"
-  - "types"
-  - "calculus"
-  - "construction"
-  - "tools"
-  - "formerly"
-  - "coq"
 ---
+
+\"Calculus of Inductive Construction\" is a concept in plt (status: learning). Topics: computation-theory, formal-system, logic.
 
 Tools: Rocq (formerly Coq)
 :::key

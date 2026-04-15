@@ -4,23 +4,13 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: "How to invoke a function in rocq?"
-answer: TODO
 deck: rocq-programming-language
 concepts:
   - rocq
 books:
   - chapter-1-basics-functional-programming-in-rocq
 tags: []
-keywords:
-  - "rocq"
-  - "arg1"
-  - "arg2"
-  - "subexpression"
-  - "top-level"
-  - "compute"
-  - "expectation"
 ---
-
 
 Subexpression: `(fn arg1 arg2 ...)`
 

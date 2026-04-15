@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Literal"
-description: "Synonymous with syntactic Constant."
 journey: plt
 status: mastered
 books: ["chapter-2-evaluation"]
@@ -13,11 +12,6 @@ blocks: []
 tags:
   - "language-feature-design"
   - "syntax-grammar"
-keywords:
-  - "literal"
-  - "synonymous"
-  - "syntactic"
-  - "constant"
 ---
 
 Synonymous with syntactic Constant.

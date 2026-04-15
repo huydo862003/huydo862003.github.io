@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Intuitionistic/Constructive logic"
-description: "\\frac{A \\quad B}{A \\land B} & & (\\land\\text{-intro}) \\\\ \\\\"
 journey: plt
 status: learning
 books: []
@@ -14,17 +13,9 @@ tags:
   - "formal-system"
   - "logic"
   - "syntax-grammar"
-keywords:
-  - "text"
-  - "frac"
-  - "aligned"
-  - "quad"
-  - "elim"
-  - "intro"
-  - "begin"
-  - "land"
-  - "end"
 ---
+
+\\frac{A \\quad B}{A \\land B} & & (\\land\\text{-intro}) \\\\ \\\\
 
 - Inference rules
     - Conjunction

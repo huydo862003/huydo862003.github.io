@@ -4,19 +4,11 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What are the approaches to typing conditionals and their tradeoffs?
-answer: TODO
 deck: type-theory
 concepts: []
 books:
   - chapter-5-types
 tags: []
-keywords:
-  - "type"
-  - "conditionals"
-  - "approach"
-  - "branches"
-  - "pros"
-  - "cons"
 ---
 
 - 1st approach: True and False branches must be of the same types.

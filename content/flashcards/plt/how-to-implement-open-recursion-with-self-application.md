@@ -4,21 +4,12 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: How to implement open recursion with self-application?
-answer: TODO
 deck: pure-lambda-calculus
 concepts: []
 books:
   - chapter-4-objects
 tags: []
-keywords:
-  - "lambda"
-  - "self"
-  - "parent-maker"
-  - "parent-obj"
-  - "scheme"
-  - "cls"
 ---
-
 
 ```scheme
 (define cls (parent-maker args)

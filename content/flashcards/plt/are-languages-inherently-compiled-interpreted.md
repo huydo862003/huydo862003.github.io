@@ -4,19 +4,11 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: Are languages inherently compiled/interpreted?
-answer: TODO
 deck: programming-language-basic
 concepts: []
 books:
   - chapter-2-evaluation
 tags: []
-keywords:
-  - "compiled"
-  - "interpreted"
-  - "languages"
-  - "inherently"
-  - "language"
-  - "specifications"
 ---
 
 - **No**: Languages are not inherently compiled or interpreted.

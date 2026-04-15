@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Tagged union"
-description: "Synonym for Sum type - \"union\" because it combines variants, \"tagged\" because each variant has an explicit Constructor tag distinguishing it (unlike untagged Union type types)."
 journey: plt
 status: mastered
 books: []
@@ -14,16 +13,8 @@ tags:
   - "language-feature-design"
   - "programming-paradigm"
   - "type-theory"
-keywords:
-  - "union"
-  - "tagged"
-  - "type"
-  - "synonym"
-  - "sum"
-  - "combines"
-  - "variants"
-  - "variant"
-  - "explicit"
 ---
+
+Synonym for Sum type - \"union\" because it combines variants, \"tagged\" because each variant has an explicit Constructor tag distinguishing it (unlike untagged Union type types).
 
 Synonym for Sum type - "union" because it combines variants, "tagged" because each variant has an explicit Constructor tag distinguishing it (unlike **untagged** Union type types).

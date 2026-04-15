@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Proof by case analysis"
-description: "\"Proof by case analysis\" is a concept in plt (status: learning). Topics: formal-system, language-feature-design, logic, programming-paradigm, proof-reason-technique."
 journey: plt
 status: learning
 books: ["chapter-1-basics-functional-programming-in-rocq"]
@@ -16,15 +15,9 @@ tags:
   - "logic"
   - "programming-paradigm"
   - "proof-reason-technique"
-keywords:
-  - "technique"
-  - "case"
-  - "rocq"
-  - "reason"
-  - "goal"
-  - "analysis"
-  - "tools"
 ---
+
+\"Proof by case analysis\" is a concept in plt (status: learning). Topics: formal-system, language-feature-design, logic, programming-paradigm, proof-reason-technique.
 
 Tools: Rocq (formerly Coq)
 :::key

@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What is the operational semantics of arithmetic expressions?
-answer: TODO
 deck: language-theory
 concepts:
   - operational-semantics
@@ -12,17 +11,7 @@ concepts:
 books:
   - chapter-3-untyped-arithmetic-expressions
 tags: []
-keywords:
-  - "operational semantics"
-  - "untyped calculus of booleans and numbers"
-  - "text"
-  - "vert"
-  - "succ"
-  - "else"
-  - "pred"
-  - "iszero"
 ---
-
 
 Combining arithmetic and boolean expressions.
 

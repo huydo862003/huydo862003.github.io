@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Tree induction
-description: "Formally, assume $a\\ \\text{tree}$ means that $a$ is a binary tree. To prove that whenever $a\\ \\text{tree}$, we have $\\mathcal{P}(a)$, it's sufficient to show that:"
 journey: plt
 status: learning
 books:
@@ -12,19 +11,9 @@ books:
 dependsOn: []
 blocks: []
 tags: []
-keywords:
-  - "tree"
-  - "text"
-  - "mathcal"
-  - "induction"
-  - "formally"
-  - "assume"
-  - "means"
-  - "binary"
-  - "prove"
-  - "whenever"
-  - "it's"
 ---
+
+Formally, assume $a\\ \\text{tree}$ means that $a$ is a binary tree. To prove that whenever $a\\ \\text{tree}$, we have $\\mathcal{P}(a)$, it's sufficient to show that:
 
 Formally, assume $a\ \text{tree}$ means that $a$ is a binary tree. To prove that whenever $a\ \text{tree}$, we have $\mathcal{P}(a)$, it's sufficient to show that:
 

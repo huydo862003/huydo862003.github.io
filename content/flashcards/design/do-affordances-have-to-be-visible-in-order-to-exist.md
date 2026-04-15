@@ -8,7 +8,6 @@ question: "Do affordances have to be visible in order to exist? consider people 
   the agent's capabilities on one end. So affordances are almost always invisible
   to them. Would affordances in this case still exist? How does this not contradict
   with your first claim?
-answer: TODO
 deck: general
 concepts:
 - affordance

@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What is a rule schema and its relation with concrete rules?
-answer: TODO
 deck: logic-tools
 concepts:
   - inference-rule
@@ -12,17 +11,7 @@ concepts:
 books:
   - chapter-3-untyped-arithmetic-expressions
 tags: []
-keywords:
-  - "inference rule"
-  - "instance of an inference rule"
-  - "rule"
-  - "schema"
-  - "synonymous"
-  - "inference"
-  - "representing"
-  - "generic"
 ---
-
 
 A rule schema is synonymous with inference rule, representing a generic rule with metavariables.
 

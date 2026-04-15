@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Function"
-description: "(Language feature/design) A reusable piece of code that returns a result."
 journey: plt
 status: mastered
 books: ["chapter-2-evaluation"]
@@ -13,18 +12,10 @@ blocks: []
 tags:
   - "language-feature-design"
   - "set-theory-relation"
-keywords:
-  - "function"
-  - "key"
-  - "language"
-  - "feature"
-  - "design"
-  - "reusable"
-  - "piece"
-  - "code"
-  - "returns"
-  - "result"
 ---
+
+(Language feature/design) A reusable piece of code that returns a result.
+
 :::key
 (Language feature/design) A reusable piece of code that returns a result.
 :::

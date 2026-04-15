@@ -4,23 +4,13 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: How to use fix to define recursive functions?
-answer: TODO
 deck: pure-lambda-calculus
 concepts:
   - fixed-point-combinator
 books:
   - chapter-5-the-untyped-pure-lambda-calculus
 tags: []
-keywords:
-  - "fixed point combinator"
-  - "text"
-  - "fact"
-  - "return"
-  - "lambda"
-  - "recursive"
-  - "function"
 ---
-
 
 Sketch a normal recursive function as you will in regular programming languages:
 

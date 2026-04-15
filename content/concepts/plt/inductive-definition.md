@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Inductive definition"
-description: "\"Inductive definition\" is a concept in plt (status: reviewing). Topics: proof-reason-technique, set-theory-relation."
 journey: plt
 status: reviewing
 books: ["chapter-2-inductive-definitions"]
@@ -13,18 +12,9 @@ blocks: []
 tags:
   - "proof-reason-technique"
   - "set-theory-relation"
-keywords:
-  - "set"
-  - "technique"
-  - "reason"
-  - "theory"
-  - "relation"
-  - "specifies"
-  - "rules"
-  - "elements"
-  - "inductive"
-  - "tools"
 ---
+
+\"Inductive definition\" is a concept in plt (status: reviewing). Topics: proof-reason-technique, set-theory-relation.
 
 Tools: Rocq (formerly Coq)
 :::key

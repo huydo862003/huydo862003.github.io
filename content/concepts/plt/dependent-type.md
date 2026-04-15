@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Dependent type"
-description: "Consider the $\\text{head}$ function which returns the first item of a list."
 journey: plt
 status: learning
 books: []
@@ -13,18 +12,9 @@ blocks: []
 tags:
   - "logic"
   - "type-theory"
-keywords:
-  - "text"
-  - "dependent"
-  - "types"
-  - "list"
-  - "head"
-  - "function"
-  - "type"
-  - "length"
-  - "becomes"
-  - "signature"
 ---
+
+Consider the $\\text{head}$ function which returns the first item of a list.
 
 - Elaboration
     - Simple types can say "this is a list" but not "this is a list of length 5".

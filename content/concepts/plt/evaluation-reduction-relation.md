@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Evaluation/Reduction relation
-description: "An n-place relation on the set of terms in a calculus that represents computation, either small-step, big-step or something else."
 journey: plt
 status: learning
 books:
@@ -12,17 +11,6 @@ books:
 dependsOn: []
 blocks: []
 tags: []
-keywords:
-  - "relation"
-  - "evaluation"
-  - "reduction"
-  - "n-place"
-  - "set"
-  - "terms"
-  - "calculus"
-  - "represents"
-  - "computation"
-  - "small-step"
 ---
 
 An n-place relation on the set of terms in a calculus that represents computation, either small-step, big-step or something else.

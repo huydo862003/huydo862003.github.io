@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Pure/Untyped lambda calculus
-description: "\"Pure/Untyped lambda calculus\" is a concept in plt (status: learning)."
 journey: plt
 status: learning
 books:
@@ -12,18 +11,9 @@ books:
 dependsOn: []
 blocks: []
 tags: []
-keywords:
-  - "lambda"
-  - "textbf"
-  - "array"
-  - "dfrac"
-  - "pure"
-  - "untyped"
-  - "calculus"
-  - "begin"
-  - "term"
-  - "value"
 ---
+
+\"Pure/Untyped lambda calculus\" is a concept in plt (status: learning).
 
 $$
 \begin{array}{l r c l}

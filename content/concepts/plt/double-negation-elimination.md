@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Double negation elimination"
-description: "holds. It asserts that if it is false that $A$ is false, then $A$ is true."
 journey: plt
 status: reviewing
 books: []
@@ -13,17 +12,9 @@ blocks: []
 tags:
   - "logic"
   - "syntax-grammar"
-keywords:
-  - "neg"
-  - "double"
-  - "negation"
-  - "elimination"
-  - "holds"
-  - "asserts"
-  - "classical"
-  - "accepts"
-  - "intuitionistic"
 ---
+
+holds. It asserts that if it is false that $A$ is false, then $A$ is true.
 
 $$
 \neg\neg A \to A

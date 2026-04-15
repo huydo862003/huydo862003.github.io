@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Psychopathology
-description: "\"Psychopathology\" is a concept in design (status: reviewing). Topics: design-psychology."
 journey: design
 status: reviewing
 books:
@@ -13,11 +12,8 @@ dependsOn: []
 blocks: []
 tags:
   - "design-psychology"
-keywords:
-  - "psychopathology"
-  - "study"
-  - "mental"
-  - "illness"
 ---
+
+\"Psychopathology\" is a concept in design (status: reviewing). Topics: design-psychology.
 
 The study of mental illness.

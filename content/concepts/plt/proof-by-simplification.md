@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Proof by simplification
-description: "\"Proof by simplification\" is a concept in plt (status: learning)."
 journey: plt
 status: learning
 books:
@@ -12,18 +11,9 @@ books:
 dependsOn: []
 blocks: []
 tags: []
-keywords:
-  - "technique"
-  - "rocq"
-  - "reason"
-  - "reduces"
-  - "expressions"
-  - "using"
-  - "computation"
-  - "rules"
-  - "simplification"
-  - "tools"
 ---
+
+\"Proof by simplification\" is a concept in plt (status: learning).
 
 Tools: Rocq (formerly Coq)
 :::key

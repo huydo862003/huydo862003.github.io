@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Parallel/Simultaneous let
-description: "[y (+ x 1)])  ; this x refers to outer scope, not the x being bound"
 journey: plt
 status: learning
 books:
@@ -12,19 +11,9 @@ books:
 dependsOn: []
 blocks: []
 tags: []
-keywords:
-  - "parallel"
-  - "outer"
-  - "simultaneous"
-  - "scheme"
-  - "refers"
-  - "scope"
-  - "bound"
-  - "error"
-  - "exists"
-  - "python's"
-  - "multi-assignment's"
 ---
+
+[y (+ x 1)])  ; this x refers to outer scope, not the x being bound
 
 ```scheme
 (let ([x 1]

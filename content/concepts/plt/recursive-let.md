@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Recursive let
-description: "\"Recursive let\" is a concept in plt (status: learning)."
 journey: plt
 status: learning
 books:
@@ -12,13 +11,9 @@ books:
 dependsOn: []
 blocks: []
 tags: []
-keywords:
-  - "fact"
-  - "recursive"
-  - "scheme"
-  - "letrec"
-  - "lambda"
 ---
+
+\"Recursive let\" is a concept in plt (status: learning).
 
 ```scheme
 (letrec ([fact (lambda (n)

@@ -4,21 +4,12 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What are the methods of finding derivations?
-answer: TODO
 deck: logic-tools
 concepts:
   - forward-chaining
 books:
   - chapter-2-inductive-definitions
 tags: []
-keywords:
-  - "forward chaining"
-  - "chaining"
-  - "construction"
-  - "start"
-  - "axioms"
-  - "work"
-  - "towards"
 ---
 
 - Forward chaining/Bottom-up construction

@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Occurrence typing"
-description: "A type system technique where a variable's type can differ at each occurrence (use) based on what predicates have been checked - the same variable x can have type Number in one branch and String in an"
 journey: plt
 status: mastered
 books: ["chapter-5-types"]
@@ -16,14 +15,8 @@ tags:
   - "runtime"
   - "semantics"
   - "type-theory"
-keywords:
-  - "type"
-  - "occurrence"
-  - "typing"
-  - "system"
-  - "technique"
-  - "variable's"
-  - "differ"
 ---
+
+A type system technique where a variable's type can differ at each occurrence (use) based on what predicates have been checked - the same variable x can have type Number in one branch and String in an
 
 A type system technique where a variable's type can **differ at each occurrence** (use) based on what predicates have been checked - the same variable `x` can have type `Number` in one branch and `String` in another. Synonymous with Flow typing.

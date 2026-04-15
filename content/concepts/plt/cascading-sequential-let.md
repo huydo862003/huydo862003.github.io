@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Cascading/Sequential let
-description: "[y (+ x 1)]   ; sees x bound to 1"
 journey: plt
 status: learning
 books:
@@ -12,13 +11,9 @@ books:
 dependsOn: []
 blocks: []
 tags: []
-keywords:
-  - "sees"
-  - "bound"
-  - "cascading"
-  - "sequential"
-  - "scheme"
 ---
+
+[y (+ x 1)]   ; sees x bound to 1
 
 ```scheme
 (let* ([x 1]

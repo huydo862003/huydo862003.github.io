@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Parsing"
-description: "(Compiler implementation) The process of converting Concrete/Surface syntax into [Abstract syntax tree (AST)](/journeys/plt/concepts/abstract-syntax-tree-ast)s."
 journey: plt
 status: mastered
 books: ["chapter-5-the-untyped-pure-lambda-calculus"]
@@ -14,17 +13,10 @@ tags:
   - "compiler-implementation"
   - "linguistics"
   - "syntax-grammar"
-keywords:
-  - "syntax"
-  - "process"
-  - "converting"
-  - "grammar"
-  - "parsing"
-  - "key"
-  - "compiler"
-  - "implementation"
-  - "concrete"
 ---
+
+(Compiler implementation) The process of converting Concrete/Surface syntax into [Abstract syntax tree (AST)](/journeys/plt/concepts/abstract-syntax-tree-ast)s.
+
 :::key
 (Compiler implementation) The process of converting Concrete/Surface syntax into [Abstract syntax tree (AST)](/journeys/plt/concepts/abstract-syntax-tree-ast)s.
 :::

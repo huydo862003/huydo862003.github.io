@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Rule scheme"
-description: "\"Rule scheme\" is a concept in plt (status: reviewing). Topics: logic, set-theory-relation."
 journey: plt
 status: reviewing
 books: ["chapter-2-inductive-definitions"]
@@ -13,11 +12,8 @@ blocks: []
 tags:
   - "logic"
   - "set-theory-relation"
-keywords:
-  - "rule"
-  - "scheme"
-  - "synonymous"
-  - "schema"
 ---
+
+\"Rule scheme\" is a concept in plt (status: reviewing). Topics: logic, set-theory-relation.
 
 Synonymous with Rule schema.

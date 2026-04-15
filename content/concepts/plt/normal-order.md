@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Normal order"
-description: "In pure lambda calculus, this strategy is defined by the following rules:"
 journey: plt
 status: mastered
 books: ["chapter-5-the-untyped-pure-lambda-calculus"]
@@ -12,17 +11,6 @@ dependsOn: []
 blocks: []
 tags:
   - "semantics"
-keywords:
-  - "lambda"
-  - "displaystyle"
-  - "frac"
-  - "normal"
-  - "quad"
-  - "text"
-  - "order"
-  - "pure"
-  - "calculus"
-  - "strategy"
 ---
 
 In pure lambda calculus, this strategy is defined by the following rules:

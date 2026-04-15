@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Rule induction
-description: "\\displaystyle\\frac{a_1\\ J \\ \\dots \\ a_k\\ J}{a\\ J}"
 journey: plt
 status: learning
 books:
@@ -12,18 +11,9 @@ books:
 dependsOn: []
 blocks: []
 tags: []
-keywords:
-  - "mathcal"
-  - "displaystyle"
-  - "frac"
-  - "dots"
-  - "rule"
-  - "induction"
-  - "typically"
-  - "show"
-  - "conclude"
-  - "whenever"
 ---
+
+\\displaystyle\\frac{a_1\\ J \\ \\dots \\ a_k\\ J}{a\\ J}
 
 $$
 \displaystyle\frac{a_1\ J \ \dots \ a_k\ J}{a\ J}

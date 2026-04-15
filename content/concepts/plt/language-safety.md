@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Language safety
-description: "(Language feature/design, Runtime) According to Types and programming languages, from the view of portability, a language whose behavior can be entirely determined by its programmer's manual, that is,"
 journey: plt
 status: learning
 books:
@@ -12,19 +11,10 @@ books:
 dependsOn: []
 blocks: []
 tags: []
-keywords:
-  - "language"
-  - "runtime"
-  - "feature"
-  - "design"
-  - "according"
-  - "safety"
-  - "programming"
-  - "languages"
-  - "key"
-  - "types"
-  - "view"
 ---
+
+(Language feature/design, Runtime) According to Types and programming languages, from the view of portability, a language whose behavior can be entirely determined by its programmer's manual, that is,
+
 :::key
 (Language feature/design, Runtime) According to Types and programming languages, from the view of portability, a language whose behavior can be entirely determined by its programmer's manual, that is, it is not subject to the internals of the specific machine it runs on.
 :::

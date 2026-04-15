@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Inductive type"
-description: "\"Inductive type\" is a concept in plt (status: reviewing). Topics: language-feature-design, type-theory."
 journey: plt
 status: reviewing
 books: []
@@ -13,18 +12,9 @@ blocks: []
 tags:
   - "language-feature-design"
   - "type-theory"
-keywords:
-  - "type"
-  - "inductive"
-  - "tools"
-  - "rocq"
-  - "formerly"
-  - "coq"
-  - "theory"
-  - "formal"
-  - "system"
-  - "defined"
 ---
+
+\"Inductive type\" is a concept in plt (status: reviewing). Topics: language-feature-design, type-theory.
 
 Tools: Rocq (formerly Coq)
 :::key

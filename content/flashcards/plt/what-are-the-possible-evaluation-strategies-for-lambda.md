@@ -4,19 +4,11 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What are the possible evaluation strategies for lambda calculus?
-answer: TODO
 deck: pure-lambda-calculus
 concepts: []
 books:
   - chapter-5-the-untyped-pure-lambda-calculus
 tags: []
-keywords:
-  - "reduced"
-  - "call"
-  - "redexes"
-  - "normal"
-  - "order"
-  - "redex"
 ---
 
 - Full beta-reduction.

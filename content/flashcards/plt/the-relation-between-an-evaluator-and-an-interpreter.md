@@ -4,20 +4,12 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: The relation between an evaluator and an interpreter?
-answer: TODO
 deck: programming-language-basic
 concepts:
   - evaluator
 books:
   - chapter-2-evaluation
 tags: []
-keywords:
-  - "evaluator"
-  - "program"
-  - "interpreter"
-  - "value"
-  - "function"
-  - "sometimes"
 ---
 
 - An interpreter is a program that simulates the execution of a programming language and implements a function that carries a program into a value.

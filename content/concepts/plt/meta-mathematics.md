@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Meta-mathematics
-description: "The study of mathematical systems themselves using mathematical methods - analyzing properties like consistency, completeness, and decidability of formal theories."
 journey: plt
 status: learning
 books:
@@ -12,17 +11,6 @@ books:
 dependsOn: []
 blocks: []
 tags: []
-keywords:
-  - "mathematical"
-  - "meta-mathematics"
-  - "study"
-  - "systems"
-  - "themselves"
-  - "using"
-  - "methods"
-  - "analyzing"
-  - "properties"
-  - "consistency"
 ---
 
 The study of mathematical systems themselves using mathematical methods - analyzing properties like consistency, completeness, and decidability of formal theories.

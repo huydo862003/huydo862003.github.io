@@ -4,21 +4,12 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: How to allow methods to reference each other using lexical scoping?
-answer: TODO
 deck: general
 concepts: []
 books:
   - chapter-4-objects
 tags: []
-keywords:
-  - "self"
-  - "lambda"
-  - "mutation"
-  - "racket"
-  - "mk-obj"
-  - "args"
 ---
-
 
 With mutation:
 

@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Constraint
-description: "\"Constraint\" is a concept in design (status: learning)."
 journey: design
 status: learning
 tags: []
@@ -14,3 +13,4 @@ dependsOn: []
 blocks: []
 ---
 
+\"Constraint\" is a concept in design (status: learning).

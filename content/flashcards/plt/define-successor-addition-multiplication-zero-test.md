@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: "Define successor, addition, multiplication, zero test, subtraction, predecessor, equality for church numerals?"
-answer: TODO
 deck: pure-lambda-calculus
 concepts:
   - pure-untyped-lambda-calculus
@@ -12,17 +11,7 @@ concepts:
 books:
   - chapter-5-the-untyped-pure-lambda-calculus
 tags: []
-keywords:
-  - "pure untyped lambda calculus"
-  - "church numeral"
-  - "text"
-  - "lambda"
-  - "iszero"
-  - "sub"
-  - "cdots"
-  - "succ"
 ---
-
 
 Church numerals:
 

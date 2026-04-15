@@ -4,21 +4,12 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: In which ways the lambda calculus can be viewed?
-answer: TODO
 deck: pure-lambda-calculus
 concepts:
   - lambda-calculus
 books:
   - chapter-5-the-untyped-pure-lambda-calculus
 tags: []
-keywords:
-  - "lambda calculus"
-  - "simple"
-  - "programming"
-  - "language"
-  - "computations"
-  - "described"
-  - "mathematical"
 ---
 
 - A **simple programming language** in which computations can be described.

@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Closure
-description: "(Language feature/design, Semantics) A function value that remembers its surrounding Environment."
 journey: plt
 status: learning
 books:
@@ -12,18 +11,10 @@ books:
 dependsOn: []
 blocks: []
 tags: []
-keywords:
-  - "closure"
-  - "key"
-  - "language"
-  - "feature"
-  - "design"
-  - "semantics"
-  - "function"
-  - "value"
-  - "remembers"
-  - "surrounding"
 ---
+
+(Language feature/design, Semantics) A function value that remembers its surrounding Environment.
+
 :::key
 (Language feature/design, Semantics) A function value that remembers its surrounding Environment.
 :::

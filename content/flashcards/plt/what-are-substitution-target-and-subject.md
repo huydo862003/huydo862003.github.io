@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What are substitution target and subject?
-answer: TODO
 deck: language-theory
 concepts:
   - substitution-subject
@@ -12,17 +11,7 @@ concepts:
 books:
   - chapter-1-abstract-syntax
 tags: []
-keywords:
-  - "substitution subject"
-  - "substitution target"
-  - "substitution"
-  - "target"
-  - "substituted"
-  - "term"
-  - "variables"
-  - "subject"
 ---
-
 
 Substitution target: The target term into which variables are substituted.
 

@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Garbage collection
-description: "An Automatic memory management technique that identifies and reclaims heap-allocated memory no longer reachable by the program, freeing the programmer from explicit deallocation and preventing memory "
 journey: plt
 status: learning
 books:
@@ -12,17 +11,6 @@ books:
 dependsOn: []
 blocks: []
 tags: []
-keywords:
-  - "memory"
-  - "garbage"
-  - "collection"
-  - "automatic"
-  - "management"
-  - "technique"
-  - "identifies"
-  - "reclaims"
-  - "heap-allocated"
-  - "longer"
 ---
 
 An Automatic memory management technique that identifies and reclaims heap-allocated memory no longer reachable by the program, freeing the programmer from explicit deallocation and preventing memory leaks and dangling references.

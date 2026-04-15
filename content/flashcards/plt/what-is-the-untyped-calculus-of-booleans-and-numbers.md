@@ -4,21 +4,12 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What is the untyped calculus of booleans and numbers?
-answer: TODO
 deck: language-theory
 concepts: []
 books:
   - chapter-3-untyped-arithmetic-expressions
 tags: []
-keywords:
-  - "text"
-  - "vert"
-  - "succ"
-  - "else"
-  - "iszero"
-  - "aligned"
 ---
-
 
 A simple language with only natural numbers and booleans as primitives.
 

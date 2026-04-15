@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Z-combinator"
-description: "Formula: $\\lambda f.\\ (\\lambda x.\\ f\\ (\\lambda v.\\ x\\ x\\ v))\\ (\\lambda x.\\ f\\ (\\lambda v.\\ x\\ x\\ v))$"
 journey: plt
 status: learning
 books: ["chapter-5-the-untyped-pure-lambda-calculus"]
@@ -13,18 +12,9 @@ blocks: []
 tags:
   - "lambda-calculus"
   - "semantics"
-keywords:
-  - "lambda"
-  - "text"
-  - "fix"
-  - "aligned"
-  - "z-combinator"
-  - "formula"
-  - "details"
-  - "begin"
-  - "mapsto"
-  - "end"
 ---
+
+Formula: $\\lambda f.\\ (\\lambda x.\\ f\\ (\\lambda v.\\ x\\ x\\ v))\\ (\\lambda x.\\ f\\ (\\lambda v.\\ x\\ x\\ v))$
 
 Formula: $\lambda f.\ (\lambda x.\ f\ (\lambda v.\ x\ x\ v))\ (\lambda x.\ f\ (\lambda v.\ x\ x\ v))$
 

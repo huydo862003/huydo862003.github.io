@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: Is inheritance = subtyping?
-answer: TODO
 deck: type-theory
 concepts:
   - inheritance
@@ -12,15 +11,7 @@ concepts:
 books:
   - chapter-5-types
 tags: []
-keywords:
-  - "inheritance"
-  - "subtyping"
-  - "introduce"
-  - "subclassing"
-  - "code"
-  - "reuse"
 ---
-
 
 No.
 

@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Curry-Howard correspondence"
-description: "Remark. [Brouwer-Heyting-Kolmogorov (BHK) interpretation](/journeys/plt/concepts/brouwer-heyting-kolmogorov-bhk-interpretation) makes this correspondence explicit:"
 journey: plt
 status: learning
 books: []
@@ -14,17 +13,9 @@ tags:
   - "logic"
   - "semantics"
   - "type-theory"
-keywords:
-  - "type"
-  - "function"
-  - "proofs"
-  - "terms"
-  - "correspondence"
-  - "types"
-  - "term"
-  - "dependent"
-  - "bhk"
 ---
+
+Remark. [Brouwer-Heyting-Kolmogorov (BHK) interpretation](/journeys/plt/concepts/brouwer-heyting-kolmogorov-bhk-interpretation) makes this correspondence explicit:
 
 - Propositions ~ types.
 - Proofs ~ terms inhabiting those types.

@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Binding
-description: "An association between a name and an entity (value, location, type, function, etc.) within a given scope."
 journey: plt
 status: learning
 books:
@@ -12,17 +11,6 @@ books:
 dependsOn: []
 blocks: []
 tags: []
-keywords:
-  - "binding"
-  - "association"
-  - "between"
-  - "name"
-  - "entity"
-  - "value"
-  - "location"
-  - "type"
-  - "function"
-  - "within"
 ---
 
 An association between a name and an entity (value, location, type, function, etc.) within a given scope.

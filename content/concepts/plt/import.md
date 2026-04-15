@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Import"
-description: "[Rocq] A command in Rocq that brings names from a loaded module into the current namespace, allowing unqualified access (often combined as Require Import)."
 journey: plt
 status: learning
 books: []
@@ -15,15 +14,8 @@ tags:
   - "programming-paradigm"
   - "semantics"
   - "syntax-grammar"
-keywords:
-  - "import"
-  - "rocq"
-  - "command"
-  - "brings"
-  - "names"
-  - "loaded"
-  - "module"
-  - "current"
 ---
+
+[Rocq] A command in Rocq that brings names from a loaded module into the current namespace, allowing unqualified access (often combined as Require Import).
 
 [Rocq] A **command** in Rocq that brings names from a loaded module into the current namespace, allowing unqualified access (often combined as `Require Import`).

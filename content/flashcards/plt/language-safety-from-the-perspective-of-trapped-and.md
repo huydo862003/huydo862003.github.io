@@ -4,21 +4,12 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: Language safety from the perspective of trapped and untrapped errors?
-answer: TODO
 deck: language-theory
 concepts: []
 books:
   - chapter-1-introduction
 tags: []
-keywords:
-  - "error"
-  - "immediate"
-  - "termination"
-  - "process"
-  - "untrapped"
-  - "trapped"
 ---
-
 
 Trapped error: An error that causes immediate termination of the process.
 

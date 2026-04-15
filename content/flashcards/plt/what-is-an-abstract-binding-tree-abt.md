@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What is an abstract binding tree (ABT)?
-answer: TODO
 deck: language-theory
 concepts:
   - abstract-binding-tree-abt
@@ -13,18 +12,7 @@ concepts:
 books:
   - chapter-1-abstract-syntax
 tags: []
-keywords:
-  - "abstract binding tree abt"
-  - "valence"
-  - "abstractor"
-  - "operator's"
-  - "now"
-  - "arguments"
-  - "ast"
-  - "enriched"
-  - "bindings"
 ---
-
 
 An AST that is enriched with bindings and scopes.
 

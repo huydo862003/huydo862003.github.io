@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Local binding form
-description: "; Local binding - x only exists inside the let"
 journey: plt
 status: learning
 books:
@@ -12,15 +11,9 @@ books:
 dependsOn: []
 blocks: []
 tags: []
-keywords:
-  - "local"
-  - "binding"
-  - "form"
-  - "scheme"
-  - "exists"
-  - "inside"
-  - "error"
 ---
+
+; Local binding - x only exists inside the let
 
 ```scheme
 ; Local binding - x only exists inside the let

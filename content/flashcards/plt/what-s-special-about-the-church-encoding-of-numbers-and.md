@@ -4,21 +4,12 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: "What's special about the church encoding of numbers and lists?"
-answer: TODO
 deck: pure-lambda-calculus
 concepts:
   - church-numeral
 books:
   - chapter-5-the-untyped-pure-lambda-calculus
 tags: []
-keywords:
-  - "church numeral"
-  - "list"
-  - "value"
-  - "number"
-  - "lambda"
-  - "stands"
-  - "empty"
 ---
 
 - Both have a base value:

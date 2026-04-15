@@ -4,7 +4,6 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: "Big-step/Natural operational semantics"
-description: "A style of semantic which defines evaluation via Evaluation statement/judgement of the form $t \\Downarrow v$, relating a term directly to its final value in a single derivation rather than through int"
 journey: plt
 status: reviewing
 books: ["chapter-3-untyped-arithmetic-expressions"]
@@ -13,16 +12,8 @@ blocks: []
 tags:
   - "formal-system"
   - "semantics"
-keywords:
-  - "evaluation"
-  - "big-step"
-  - "natural"
-  - "operational"
-  - "style"
-  - "semantic"
-  - "defines"
-  - "via"
-  - "statement"
 ---
+
+A style of semantic which defines evaluation via Evaluation statement/judgement of the form $t \\Downarrow v$, relating a term directly to its final value in a single derivation rather than through int
 
 A style of semantic which defines evaluation via Evaluation statement/judgement of the form $t \Downarrow v$, relating a term directly to its final value in a single derivation rather than through intermediate steps.

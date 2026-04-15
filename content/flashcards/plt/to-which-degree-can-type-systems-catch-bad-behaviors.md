@@ -4,21 +4,12 @@ author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: To which degree can type systems catch bad behaviors?
-answer: TODO
 deck: type-theory
 concepts: []
 books:
   - chapter-1-introduction
 tags: []
-keywords:
-  - "program"
-  - "type"
-  - "system"
-  - "sound"
-  - "prove"
-  - "bad"
 ---
-
 
 Generally, a sound type system can prove the absence of certain bad behaviors, but may not always prove the presence of certain bad behaviors.
 
