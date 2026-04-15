@@ -39,5 +39,6 @@ scaffoldContent({
   contentDir: 'concepts',
   title,
   author,
-  frontMatter: `title: "${title}"\njourney: "${journey}"\ndescription: "${description}"\nstatus: ${status}\ntags: []\nkeywords: []\nbooks: []\ndependsOn: []\nblocks: []`,
+  frontMatter: `title: "${title}"\njourney: "${journey}"\nstatus: ${status}\ntags: []\nbooks: []\ndependsOn: []\nblocks: []`,
+  body: description || undefined,
 });

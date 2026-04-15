@@ -17,6 +17,7 @@ export function scaffoldContent (opts: {
   title: string;
   frontMatter: string;
   author: string;
+  body?: string;
 }): void {
   const slug = slugify(opts.title);
   const filePath = resolve(import.meta.dirname, '../../content', opts.contentDir, `${slug}.md`);
@@ -29,7 +30,8 @@ export function scaffoldContent (opts: {
   const today = new Date().toISOString()
     .slice(0, 10);
   const author = opts.author ?? 'hdnax';
-  const content = `---\npublished: true\nauthor: ${author}\ncreatedAt: "${today}"\nupdatedAt: "${today}"\n${opts.frontMatter}\n---\n\n`;
+  const body = opts.body ? `${opts.body}\n` : '';
+  const content = `---\npublished: true\nauthor: ${author}\ncreatedAt: "${today}"\nupdatedAt: "${today}"\n${opts.frontMatter}\n---\n\n${body}`;
   writeFileSync(filePath, content);
   console.log(`Created: content/${opts.contentDir}/${slug}.md`);
 }

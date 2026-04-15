@@ -7,7 +7,6 @@ export interface Concept {
   description: string;
   status: 'learning' | 'reviewing' | 'mastered';
   tags: string[];
-  keywords: string[];
   books: string[];
   dependsOn: string[];
   blocks: string[];

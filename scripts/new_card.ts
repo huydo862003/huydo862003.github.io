@@ -27,5 +27,6 @@ scaffoldContent({
   contentDir: 'flashcards',
   title: question,
   author,
-  frontMatter: `question: "${question}"\nanswer: "${answer}"\ndeck: "${deck}"\ntags: []\nkeywords: []\nconcepts: []\nbooks: []`,
+  frontMatter: `question: "${question}"\ndeck: "${deck}"\ntags: []\nconcepts: []\nbooks: []`,
+  body: answer || undefined,
 });

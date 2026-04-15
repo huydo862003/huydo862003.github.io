@@ -29,16 +29,19 @@ const concepts = defineCollection({
     ...dates,
     title: z.string(),
     journey: z.string().default(''),
-    description: z.string().default(''),
     status: z.enum(['learning', 'reviewing', 'mastered']).default('learning'),
     tags: z.array(z.string()).default([]),
-    keywords: z.array(z.string()).default([]),
     books: z.array(z.string()).default([]),
     dependsOn: z.array(z.string()).default([]),
     blocks: z.array(z.string()).default([]),
     content: z.string(),
   }),
-  transform: stripContent,
+  transform (doc, { skip }) {
+    if (doc.published === false) return skip('unpublished');
+    const { content, ...rest } = doc;
+    const description = content.trim().split(/\n\n/)[0]?.trim() ?? '';
+    return { ...rest, description };
+  },
 });
 
 const flashcards = defineCollection({
@@ -48,15 +51,17 @@ const flashcards = defineCollection({
   schema: z.object({
     ...dates,
     question: z.string().default(''),
-    answer: z.string().default(''),
     deck: z.string().default('general'),
     tags: z.array(z.string()).default([]),
-    keywords: z.array(z.string()).default([]),
     concepts: z.array(z.string()).default([]),
     books: z.array(z.string()).default([]),
     content: z.string(),
   }),
-  transform: stripContent,
+  transform (doc, { skip }) {
+    if (doc.published === false) return skip('unpublished');
+    const { content, ...rest } = doc;
+    return { ...rest, answer: content.trim() };
+  },
 });
 
 const journeys = defineCollection({

@@ -6,7 +6,6 @@ export interface Flashcard {
   answer: string;
   deck: string;
   tags: string[];
-  keywords: string[];
   concepts: string[];
   books: string[];
 }
