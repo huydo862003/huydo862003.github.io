@@ -11,5 +11,3 @@ dependsOn: []
 blocks: []
 tags: []
 ---
-
-\"Derivability judgment\" is a concept in plt (status: learning).

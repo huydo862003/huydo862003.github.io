@@ -12,4 +12,3 @@ dependsOn: []
 blocks: []
 ---
 
-\"Interner\" is a concept in plt (status: learning).

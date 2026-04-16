@@ -12,4 +12,3 @@ dependsOn: []
 blocks: []
 ---
 
-\"Admissibility\" is a concept in plt (status: learning).

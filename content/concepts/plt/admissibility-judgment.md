@@ -12,4 +12,3 @@ blocks: []
 tags: []
 ---
 
-\"Admissibility judgment\" is a concept in plt (status: learning).

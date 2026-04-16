@@ -12,5 +12,3 @@ books:
 dependsOn: []
 blocks: []
 ---
-
-\"Experience design\" is a concept in design (status: learning).

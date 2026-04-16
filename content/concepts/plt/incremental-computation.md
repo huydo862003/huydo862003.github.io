@@ -12,4 +12,3 @@ blocks: []
 tags: []
 ---
 
-\"Incremental computation\" is a concept in plt (status: learning).

@@ -12,4 +12,3 @@ dependsOn: []
 blocks: []
 ---
 
-\"Proliferation\" is a concept in plt (status: learning).

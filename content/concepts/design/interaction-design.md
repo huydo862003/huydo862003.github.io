@@ -12,5 +12,3 @@ books:
 dependsOn: []
 blocks: []
 ---
-
-\"Interaction design\" is a concept in design (status: learning).

@@ -13,6 +13,4 @@ tags:
   - "syntax-grammar"
 ---
 
-\"Symbolic parameter\" is a concept in plt (status: reviewing). Topics: syntax-grammar.
-
 Analogous to Symbol.

@@ -12,5 +12,3 @@ books:
 dependsOn: []
 blocks: []
 ---
-
-\"Discoverable\" is a concept in design (status: learning).

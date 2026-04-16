@@ -15,4 +15,3 @@ tags:
   - "syntax-grammar"
 ---
 
-\"2-dimensional inference rule format\" is a concept in plt (status: learning). Topics: logic, set-theory-relation, syntax-grammar.

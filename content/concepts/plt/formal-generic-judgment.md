@@ -11,5 +11,3 @@ dependsOn: []
 blocks: []
 tags: []
 ---
-
-\"Formal generic judgment\" is a concept in plt (status: learning).

@@ -11,5 +11,3 @@ books: []
 dependsOn: []
 blocks: []
 ---
-
-\"Turbofish\" is a concept in plt (status: learning).

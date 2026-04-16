@@ -13,8 +13,6 @@ blocks: []
 tags: []
 ---
 
-\"Proof by simplification\" is a concept in plt (status: learning).
-
 Tools: Rocq (formerly Coq)
 :::key
 (Proof/Reason technique, Logic) A Proof technique that reduces expressions to simpler forms using definitional equalities, computation rules, or algebraic identities.

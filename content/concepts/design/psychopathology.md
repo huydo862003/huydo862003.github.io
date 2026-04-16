@@ -14,6 +14,4 @@ tags:
   - "design-psychology"
 ---
 
-\"Psychopathology\" is a concept in design (status: reviewing). Topics: design-psychology.
-
 The study of mental illness.

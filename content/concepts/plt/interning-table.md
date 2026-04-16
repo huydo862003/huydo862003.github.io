@@ -12,4 +12,3 @@ dependsOn: []
 blocks: []
 ---
 
-\"Interning table\" is a concept in plt (status: learning).

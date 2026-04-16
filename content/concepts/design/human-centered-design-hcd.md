@@ -12,5 +12,3 @@ dependsOn: []
 blocks: []
 tags: []
 ---
-
-\"Human-centered design (HCD)\" is a concept in design (status: learning).

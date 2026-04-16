@@ -12,5 +12,3 @@ books:
 dependsOn: []
 blocks: []
 ---
-
-\"Affordance\" is a concept in design (status: learning).

@@ -13,6 +13,4 @@ tags:
   - "logic"
 ---
 
-\"Axiom\" is a concept in plt (status: reviewing). Topics: logic.
-
 A Rule with no Premise.

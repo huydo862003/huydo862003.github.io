@@ -12,5 +12,3 @@ books:
 dependsOn: []
 blocks: []
 ---
-
-\"Mental model\" is a concept in design (status: learning).

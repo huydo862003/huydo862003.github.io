@@ -12,4 +12,3 @@ blocks: []
 tags: []
 ---
 
-\"Generic inductive definition\" is a concept in plt (status: learning).

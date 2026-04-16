@@ -12,4 +12,3 @@ dependsOn: []
 blocks: []
 ---
 
-\"Global variable\" is a concept in plt (status: learning).

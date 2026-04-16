@@ -12,4 +12,3 @@ dependsOn: []
 blocks: []
 ---
 
-\"Uniformity\" is a concept in plt (status: learning).

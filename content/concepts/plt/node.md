@@ -12,4 +12,3 @@ dependsOn: []
 blocks: []
 ---
 
-\"Node\" is a concept in plt (status: learning).

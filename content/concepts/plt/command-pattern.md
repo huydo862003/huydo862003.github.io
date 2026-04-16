@@ -11,5 +11,3 @@ books: []
 dependsOn: []
 blocks: []
 ---
-
-\"Command pattern\" is a concept in plt (status: learning).

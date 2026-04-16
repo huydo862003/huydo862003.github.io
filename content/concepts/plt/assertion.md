@@ -13,6 +13,4 @@ tags:
   - "logic"
 ---
 
-\"Assertion\" is a concept in plt (status: reviewing). Topics: logic.
-
 Synonymous with Judgment.

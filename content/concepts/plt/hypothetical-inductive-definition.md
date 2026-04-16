@@ -12,4 +12,3 @@ blocks: []
 tags: []
 ---
 
-\"Hypothetical inductive definition\" is a concept in plt (status: learning).

@@ -11,5 +11,3 @@ books: ["chapter-3-hypothetical-and-general-judgments"]
 dependsOn: []
 blocks: []
 ---
-
-\"Closed (under)\" is a concept in plt (status: learning).

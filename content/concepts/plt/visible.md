@@ -12,4 +12,3 @@ dependsOn: []
 blocks: []
 ---
 
-\"Visible\" is a concept in plt (status: learning).

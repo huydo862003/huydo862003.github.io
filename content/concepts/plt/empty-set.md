@@ -13,6 +13,4 @@ tags:
   - "set-theory-relation"
 ---
 
-\"Empty set\" is a concept in plt (status: mastered). Topics: set-theory-relation.
-
 A set with no element.

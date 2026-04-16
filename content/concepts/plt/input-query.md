@@ -11,5 +11,3 @@ books: []
 dependsOn: []
 blocks: []
 ---
-
-\"Input query\" is a concept in plt (status: learning).

@@ -11,5 +11,3 @@ books: []
 dependsOn: []
 blocks: []
 ---
-
-\"Roslyn\" is a concept in plt (status: learning).

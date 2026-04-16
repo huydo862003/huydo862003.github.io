@@ -11,5 +11,3 @@ dependsOn: []
 blocks: []
 tags: []
 ---
-
-\"Parametric (general) judgment\" is a concept in plt (status: learning).

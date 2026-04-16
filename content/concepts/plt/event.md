@@ -12,4 +12,3 @@ dependsOn: []
 blocks: []
 ---
 
-\"Event\" is a concept in plt (status: learning).

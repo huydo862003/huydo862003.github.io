@@ -11,5 +11,3 @@ books: []
 dependsOn: []
 blocks: []
 ---
-
-\"Error recovery\" is a concept in plt (status: learning).

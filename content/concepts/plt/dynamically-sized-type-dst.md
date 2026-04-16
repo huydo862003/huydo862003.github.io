@@ -12,4 +12,3 @@ blocks: []
 tags: []
 ---
 
-\"Dynamically sized type (DST)\" is a concept in plt (status: learning).

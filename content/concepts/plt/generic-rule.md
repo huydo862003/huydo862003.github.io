@@ -12,4 +12,3 @@ dependsOn: []
 blocks: []
 ---
 
-\"Generic rule\" is a concept in plt (status: learning).

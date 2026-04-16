@@ -12,4 +12,3 @@ dependsOn: []
 blocks: []
 ---
 
-\"Structural rule\" is a concept in plt (status: learning).

@@ -14,6 +14,4 @@ tags:
   - "set-theory-relation"
 ---
 
-\"Rule scheme\" is a concept in plt (status: reviewing). Topics: logic, set-theory-relation.
-
 Synonymous with Rule schema.

@@ -11,5 +11,3 @@ dependsOn: []
 blocks: []
 tags: []
 ---
-
-\"Architecture invariant\" is a concept in plt (status: learning).

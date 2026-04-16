@@ -12,4 +12,3 @@ dependsOn: []
 blocks: []
 ---
 
-\"Module\" is a concept in plt (status: learning).

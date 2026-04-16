@@ -13,9 +13,6 @@ tags:
   - "compiler-implementation"
 ---
 
-\"Rocq kernel\" is a concept in plt (status: learning). Topics: compiler-implementation.
-
 Tools: Rocq (formerly Coq)
-:::key
-(Compiler implementation) The **trusted core** of Rocq that type-checks proof terms against the Calculus of Inductive Constructions, ensuring all accepted proofs are valid.
-:::
+
+- (Compiler implementation) The **trusted core** of Rocq that type-checks proof terms against the Calculus of Inductive Constructions, ensuring all accepted proofs are valid.

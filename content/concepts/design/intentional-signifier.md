@@ -12,5 +12,3 @@ dependsOn: []
 blocks: []
 tags: []
 ---
-
-\"Intentional signifier\" is a concept in design (status: learning).

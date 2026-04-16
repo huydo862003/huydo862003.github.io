@@ -12,4 +12,3 @@ dependsOn: []
 blocks: []
 ---
 
-\"Recursive descent\" is a concept in plt (status: learning).

@@ -13,8 +13,6 @@ tags:
   - "logic"
 ---
 
-\"Elimination rule\" is a concept in plt (status: mastered). Topics: logic.
-
 Example:
 
 $$

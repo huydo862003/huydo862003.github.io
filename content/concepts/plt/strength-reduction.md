@@ -12,4 +12,3 @@ dependsOn: []
 blocks: []
 ---
 
-\"Strength reduction\" is a concept in plt (status: learning).

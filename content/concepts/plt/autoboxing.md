@@ -15,8 +15,6 @@ tags:
   - "semantics"
 ---
 
-\"Autoboxing\" is a concept in plt (status: learning). Topics: language-feature-design, runtime, semantics.
-
 Example:
 
 ```tsx

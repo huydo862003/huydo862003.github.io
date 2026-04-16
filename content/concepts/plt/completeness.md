@@ -12,4 +12,3 @@ dependsOn: []
 blocks: []
 ---
 
-\"Completeness\" is a concept in plt (status: reviewing). Topics: formal-system, logic, set-theory-relation.

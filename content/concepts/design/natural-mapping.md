@@ -12,5 +12,3 @@ books:
 dependsOn: []
 blocks: []
 ---
-
-\"Natural mapping\" is a concept in design (status: learning).

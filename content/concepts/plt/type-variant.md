@@ -14,6 +14,4 @@ tags:
   - "type-theory"
 ---
 
-\"Type variant\" is a concept in plt (status: mastered). Topics: language-feature-design, type-theory.
-
 A variant of a Sum type.

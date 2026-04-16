@@ -12,4 +12,3 @@ dependsOn: []
 blocks: []
 ---
 
-\"Substitution\" is a concept in plt (status: learning).

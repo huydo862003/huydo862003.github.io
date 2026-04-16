@@ -16,9 +16,5 @@ tags:
   - "proof-reason-technique"
 ---
 
-\"Coq\" is a concept in plt (status: reviewing). Topics: formal-system, language-feature-design, programming-paradigm, proof-reason-technique.
-
 Tools: Rocq (formerly Coq)
-:::key
-(Programming paradigm, Language feature/design, Formal system, Proof/Reason technique) The **former name** of the Rocq proof assistant (1984-2024), still widely used in literature and older documentation.
-:::
+- (Programming paradigm, Language feature/design, Formal system, Proof/Reason technique) The **former name** of the Rocq proof assistant (1984-2024), still widely used in literature and older documentation.

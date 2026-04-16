@@ -12,4 +12,3 @@ dependsOn: []
 blocks: []
 ---
 
-\"Stable\" is a concept in plt (status: learning).

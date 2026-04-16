@@ -12,4 +12,3 @@ dependsOn: []
 blocks: []
 ---
 
-\"Link\" is a concept in plt (status: learning).

@@ -13,8 +13,6 @@ blocks: []
 tags: []
 ---
 
-\"Tactic\" is a concept in plt (status: learning).
-
 Tools: Rocq (formerly Coq)
 :::key
 (Language feature/design, Formal system, Proof/Reason technique) A **proof Command** in Rocq that transforms the current goal state, automating proof steps (like `intros`, `apply`, `rewrite`) to incrementally construct a proof term.

@@ -12,4 +12,3 @@ dependsOn: []
 blocks: []
 ---
 
-\"Evidence\" is a concept in plt (status: learning).

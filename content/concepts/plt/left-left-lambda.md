@@ -15,8 +15,6 @@ tags:
   - "syntax-grammar"
 ---
 
-\"Left-left-lambda\" is a concept in plt (status: mastered). Topics: language-feature-design, programming-paradigm, syntax-grammar.
-
 ```scheme
 ((lambda (x) body) arg)
 │││

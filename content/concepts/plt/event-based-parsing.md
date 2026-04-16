@@ -12,4 +12,3 @@ dependsOn: []
 blocks: []
 ---
 
-\"Event-based parsing\" is a concept in plt (status: learning).

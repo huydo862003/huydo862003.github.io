@@ -17,12 +17,7 @@ tags:
   - "proof-reason-technique"
 ---
 
-\"Proof by case analysis\" is a concept in plt (status: learning). Topics: formal-system, language-feature-design, logic, programming-paradigm, proof-reason-technique.
-
 Tools: Rocq (formerly Coq)
-:::key
-(Proof/Reason technique, Logic) A Proof technique that considers all possible forms of a value or Proposition separately, proving the Goal holds in each case.
-:::
-:::key
-(Formal system, Proof/Reason technique, Language feature/design, Programming paradigm) [Rocq] A **proof technique** in Rocq (via `destruct` or `case`) that splits a Goal into Subgoals for each constructor of an inductive type.
-:::
+
+- (Proof/Reason technique, Logic) A Proof technique that considers all possible forms of a value or Proposition separately, proving the Goal holds in each case.
+- (Formal system, Proof/Reason technique, Language feature/design, Programming paradigm) A **proof technique** in Rocq (via `destruct` or `case`) that splits a Goal into Subgoals for each constructor of an inductive type.

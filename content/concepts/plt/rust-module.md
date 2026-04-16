@@ -12,4 +12,3 @@ dependsOn: []
 blocks: []
 ---
 
-\"Rust module\" is a concept in plt (status: learning).

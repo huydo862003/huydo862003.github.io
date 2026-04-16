@@ -12,9 +12,5 @@ blocks: []
 tags: []
 ---
 
-\"Reflexivity\" is a concept in plt (status: learning).
-
 Tools: Rocq (formerly Coq)
-:::key
-()
-:::
+- ()

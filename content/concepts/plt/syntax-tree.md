@@ -12,4 +12,3 @@ dependsOn: []
 blocks: []
 ---
 
-\"Syntax tree\" is a concept in plt (status: learning).

@@ -15,12 +15,6 @@ tags:
   - "proof-reason-technique"
 ---
 
-\"Subgoal\" is a concept in plt (status: reviewing). Topics: language-feature-design, logic, proof-reason-technique.
-
 Tools: Rocq (formerly Coq)
-:::key
-(Formal system, Proof/Reason technique, Logic) A **subsidiary goal** generated when a proof splits into multiple cases, each requiring independent proof before the original goal is resolved.
-:::
-:::key
-(Formal system, Proof/Reason technique, Language feature/design, Programming paradigm) [Rocq] In Rocq, a **derived goal** created when a tactic splits the proof into multiple obligations (e.g., one per constructor or conjunct), all of which must be discharged.
-:::
+- (Formal system, Proof/Reason technique, Logic) A **subsidiary goal** generated when a proof splits into multiple cases, each requiring independent proof before the original goal is resolved.
+- (Formal system, Proof/Reason technique, Language feature/design, Programming paradigm) In Rocq, a **derived goal** created when a tactic splits the proof into multiple obligations (e.g., one per constructor or conjunct), all of which must be discharged.

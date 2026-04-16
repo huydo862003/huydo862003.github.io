@@ -12,4 +12,3 @@ dependsOn: []
 blocks: []
 ---
 
-\"Admissible\" is a concept in plt (status: learning).

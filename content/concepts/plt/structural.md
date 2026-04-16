@@ -12,4 +12,3 @@ dependsOn: []
 blocks: []
 ---
 
-\"Structural\" is a concept in plt (status: learning).

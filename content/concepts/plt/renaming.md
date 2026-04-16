@@ -12,4 +12,3 @@ dependsOn: []
 blocks: []
 ---
 
-\"Renaming\" is a concept in plt (status: learning).

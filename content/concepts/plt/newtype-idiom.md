@@ -12,4 +12,3 @@ dependsOn: []
 blocks: []
 ---
 
-\"newtype idiom\" is a concept in plt (status: learning).

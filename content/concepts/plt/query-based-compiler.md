@@ -12,4 +12,3 @@ blocks: []
 tags: []
 ---
 
-\"Query-based compiler\" is a concept in plt (status: learning).

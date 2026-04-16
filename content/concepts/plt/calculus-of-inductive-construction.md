@@ -15,9 +15,5 @@ tags:
   - "logic"
 ---
 
-\"Calculus of Inductive Construction\" is a concept in plt (status: learning). Topics: computation-theory, formal-system, logic.
-
 Tools: Rocq (formerly Coq)
-:::key
-(Formal system, Logic, Computation theory) A **type theory** combining Dependent types, Inductive types, and a hierarchy of universes, serving as the theoretical foundation of Rocq.
-:::
+- (Formal system, Logic, Computation theory) A **type theory** combining Dependent types, Inductive types, and a hierarchy of universes, serving as the theoretical foundation of Rocq.

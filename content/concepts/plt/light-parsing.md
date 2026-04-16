@@ -11,5 +11,3 @@ books: []
 dependsOn: []
 blocks: []
 ---
-
-\"Light-parsing\" is a concept in plt (status: learning).

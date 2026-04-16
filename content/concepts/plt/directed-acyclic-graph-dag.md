@@ -13,7 +13,5 @@ tags:
   - "data-structure-algorithm"
 ---
 
-\"Directed acyclic graph (DAG)\" is a concept in plt (status: mastered). Topics: data-structure-algorithm.
-
 - Edges have a direction (from one node to another).
 - There are no cycles (you can't follow edges and return to where you started).

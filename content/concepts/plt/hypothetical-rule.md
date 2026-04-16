@@ -12,4 +12,3 @@ dependsOn: []
 blocks: []
 ---
 
-\"Hypothetical rule\" is a concept in plt (status: learning).

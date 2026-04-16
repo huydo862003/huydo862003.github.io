@@ -13,6 +13,4 @@ tags:
   - "runtime"
 ---
 
-\"Heap address\" is a concept in plt (status: mastered). Topics: runtime.
-
 An address on the Heap.

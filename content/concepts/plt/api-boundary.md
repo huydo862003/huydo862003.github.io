@@ -12,4 +12,3 @@ dependsOn: []
 blocks: []
 ---
 
-\"API boundary\" is a concept in plt (status: learning).

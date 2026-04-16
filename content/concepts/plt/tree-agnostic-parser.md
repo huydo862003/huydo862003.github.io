@@ -12,4 +12,3 @@ blocks: []
 tags: []
 ---
 
-\"Tree-agnostic parser\" is a concept in plt (status: learning).

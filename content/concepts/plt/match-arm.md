@@ -12,4 +12,3 @@ dependsOn: []
 blocks: []
 ---
 
-\"Match arm\" is a concept in plt (status: learning).

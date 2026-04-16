@@ -12,4 +12,3 @@ dependsOn: []
 blocks: []
 ---
 
-\"Kotlin\" is a concept in plt (status: learning).

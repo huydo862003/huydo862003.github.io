@@ -12,4 +12,3 @@ dependsOn: []
 blocks: []
 ---
 
-\"Weakening\" is a concept in plt (status: learning).

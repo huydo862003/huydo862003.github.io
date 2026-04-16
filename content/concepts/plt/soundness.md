@@ -11,5 +11,3 @@ books: ["chapter-2-inductive-definitions"]
 dependsOn: []
 blocks: []
 ---
-
-\"Soundness\" is a concept in plt (status: reviewing). Topics: formal-system, logic, set-theory-relation.

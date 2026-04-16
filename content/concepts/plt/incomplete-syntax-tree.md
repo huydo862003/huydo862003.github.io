@@ -11,5 +11,3 @@ dependsOn: []
 blocks: []
 tags: []
 ---
-
-\"Incomplete syntax tree\" is a concept in plt (status: learning).

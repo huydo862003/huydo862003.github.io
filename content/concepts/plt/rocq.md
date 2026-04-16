@@ -13,12 +13,8 @@ blocks: []
 tags: []
 ---
 
-\"Rocq\" is a concept in plt (status: learning).
-
 Tools: Rocq (formerly Coq)
-:::key
-(Formal system, Language feature/design, Proof/Reason technique) An **interactive theorem prover** (formerly Coq) that enables formal verification of mathematical proofs and program correctness, using dependent types and the Calculus of Inductive Constructions.
-:::
+- (Formal system, Language feature/design, Proof/Reason technique) An **interactive theorem prover** (formerly Coq) that enables formal verification of mathematical proofs and program correctness, using dependent types and the Calculus of Inductive Constructions.
 
 - Name history
     

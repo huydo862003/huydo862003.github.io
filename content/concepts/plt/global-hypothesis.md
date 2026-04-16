@@ -12,4 +12,3 @@ dependsOn: []
 blocks: []
 ---
 
-\"Global hypothesis\" is a concept in plt (status: learning).

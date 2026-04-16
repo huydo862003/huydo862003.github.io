@@ -12,5 +12,3 @@ books:
 dependsOn: []
 blocks: []
 ---
-
-\"Anti-affordance\" is a concept in design (status: learning).

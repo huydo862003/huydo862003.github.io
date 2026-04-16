@@ -12,4 +12,3 @@ dependsOn: []
 blocks: []
 ---
 
-\"Implicit form\" is a concept in plt (status: learning).

@@ -12,4 +12,3 @@ dependsOn: []
 blocks: []
 ---
 
-\"Query database\" is a concept in plt (status: learning).

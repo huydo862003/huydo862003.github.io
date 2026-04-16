@@ -13,8 +13,6 @@ blocks: []
 tags: []
 ---
 
-\"Untyped calculus of booleans and numbers\" is a concept in plt (status: learning).
-
 $$
 \begin{array}{l r c l}
 \textbf{term} \\

@@ -12,4 +12,3 @@ blocks: []
 tags: []
 ---
 
-\"Formal derivability judgment\" is a concept in plt (status: learning).

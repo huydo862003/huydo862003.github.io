@@ -12,4 +12,3 @@ dependsOn: []
 blocks: []
 ---
 
-\"Token\" is a concept in plt (status: learning).

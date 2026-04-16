@@ -11,5 +11,3 @@ dependsOn: []
 blocks: []
 tags: []
 ---
-
-\"On-demand computation\" is a concept in plt (status: learning).

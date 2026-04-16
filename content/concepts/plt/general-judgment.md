@@ -12,4 +12,3 @@ dependsOn: []
 blocks: []
 ---
 
-\"General judgment\" is a concept in plt (status: learning).

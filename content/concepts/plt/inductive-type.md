@@ -14,8 +14,6 @@ tags:
   - "type-theory"
 ---
 
-\"Inductive type\" is a concept in plt (status: reviewing). Topics: language-feature-design, type-theory.
-
 Tools: Rocq (formerly Coq)
 :::key
 (Type theory, Formal system) A **type** defined by a finite set of constructors that specify all possible ways to build its values, enabling pattern matching and structural recursion (like `nat`, `list`, or `tree`).

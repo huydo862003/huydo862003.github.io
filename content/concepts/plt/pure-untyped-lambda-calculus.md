@@ -13,8 +13,6 @@ blocks: []
 tags: []
 ---
 
-\"Pure/Untyped lambda calculus\" is a concept in plt (status: learning).
-
 $$
 \begin{array}{l r c l}
 \textbf{term} \\

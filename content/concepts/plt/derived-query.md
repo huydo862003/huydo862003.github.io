@@ -12,4 +12,3 @@ dependsOn: []
 blocks: []
 ---
 
-\"Derived query\" is a concept in plt (status: learning).

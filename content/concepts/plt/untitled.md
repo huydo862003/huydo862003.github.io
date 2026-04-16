@@ -12,4 +12,3 @@ dependsOn: []
 blocks: []
 ---
 
-\"Untitled\" is a concept in plt (status: learning).

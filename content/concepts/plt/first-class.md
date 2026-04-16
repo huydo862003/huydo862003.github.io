@@ -15,8 +15,6 @@ tags:
   - "syntax-grammar"
 ---
 
-\"First-class\" is a concept in plt (status: mastered). Topics: language-feature-design, semantics, syntax-grammar.
-
 - Can be stored in variables.
 - Passed as arguments.
 - Returned from functions.

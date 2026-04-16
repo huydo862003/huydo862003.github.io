@@ -12,5 +12,3 @@ dependsOn: []
 blocks: []
 tags: []
 ---
-
-\"Spatial correspondence\" is a concept in design (status: learning).

@@ -12,4 +12,3 @@ dependsOn: []
 blocks: []
 ---
 
-\"String interner\" is a concept in plt (status: learning).

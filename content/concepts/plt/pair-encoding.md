@@ -14,8 +14,6 @@ tags:
   - "semantics"
 ---
 
-\"Pair encoding\" is a concept in plt (status: learning). Topics: lambda-calculus, semantics.
-
 Encoding:
 
 - $\text{pair} = \lambda f.\ \lambda s.\ \lambda t.\ t\ f\ s$

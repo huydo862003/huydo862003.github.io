@@ -12,4 +12,3 @@ dependsOn: []
 blocks: []
 ---
 
-\"Basic judgment\" is a concept in plt (status: learning).

@@ -12,4 +12,3 @@ blocks: []
 tags: []
 ---
 
-\"Hypothetical judgment\" is a concept in plt (status: learning).

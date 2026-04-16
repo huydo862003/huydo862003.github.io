@@ -12,5 +12,3 @@ dependsOn: []
 blocks: []
 tags: []
 ---
-
-\"Perceived affordance\" is a concept in design (status: learning).

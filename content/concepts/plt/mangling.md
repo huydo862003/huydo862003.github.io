@@ -12,4 +12,3 @@ dependsOn: []
 blocks: []
 ---
 
-\"Mangling\" is a concept in plt (status: learning).

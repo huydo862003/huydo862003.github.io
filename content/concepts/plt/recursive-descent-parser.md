@@ -11,5 +11,3 @@ dependsOn: []
 blocks: []
 tags: []
 ---
-
-\"Recursive descent parser\" is a concept in plt (status: learning).

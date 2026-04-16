@@ -12,4 +12,3 @@ blocks: []
 tags: []
 ---
 
-\"Hypothetical rule induction\" is a concept in plt (status: learning).

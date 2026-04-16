@@ -12,4 +12,3 @@ blocks: []
 tags: []
 ---
 
-\"Ordered variadic tree\" is a concept in plt (status: learning).

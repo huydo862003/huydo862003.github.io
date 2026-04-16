@@ -12,4 +12,3 @@ dependsOn: []
 blocks: []
 ---
 
-\"Local form\" is a concept in plt (status: learning).

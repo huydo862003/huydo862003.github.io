@@ -12,4 +12,3 @@ dependsOn: []
 blocks: []
 ---
 
-\"Code semantic model\" is a concept in plt (status: learning).

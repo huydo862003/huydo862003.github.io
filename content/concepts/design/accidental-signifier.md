@@ -12,5 +12,3 @@ dependsOn: []
 blocks: []
 tags: []
 ---
-
-\"Accidental signifier\" is a concept in design (status: learning).

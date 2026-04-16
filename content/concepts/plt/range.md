@@ -13,6 +13,4 @@ tags:
   - "set-theory-relation"
 ---
 
-\"Range\" is a concept in plt (status: mastered). Topics: set-theory-relation.
-
 Synonymous with Codomain.

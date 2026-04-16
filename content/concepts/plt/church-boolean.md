@@ -14,8 +14,6 @@ tags:
   - "semantics"
 ---
 
-\"Church boolean\" is a concept in plt (status: learning). Topics: lambda-calculus, semantics.
-
 Encoding:
 
 - $\text{tru} = \lambda f.\ \lambda s.\  f$

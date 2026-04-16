@@ -13,9 +13,5 @@ tags:
   - "syntax-grammar"
 ---
 
-\"Tactic modifier\" is a concept in plt (status: learning). Topics: syntax-grammar.
-
 Tools: Rocq (formerly Coq)
-:::key
-(Syntax & Grammar, Language feature/design) [Rocq] A **syntactic addition** to a tactic that alters its behavior, such as intro patterns for `intros` or occurrence selectors for `rewrite`.
-:::
+- (Syntax & Grammar, Language feature/design) A **syntactic addition** to a tactic that alters its behavior, such as intro patterns for `intros` or occurrence selectors for `rewrite`.

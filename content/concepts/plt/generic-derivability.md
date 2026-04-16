@@ -12,4 +12,3 @@ blocks: []
 tags: []
 ---
 
-\"Generic derivability\" is a concept in plt (status: learning).

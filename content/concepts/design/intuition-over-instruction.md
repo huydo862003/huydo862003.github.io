@@ -12,5 +12,3 @@ dependsOn: []
 blocks: []
 tags: []
 ---
-
-\"Intuition over Instruction\" is a concept in design (status: learning).

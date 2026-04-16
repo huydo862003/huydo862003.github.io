@@ -12,4 +12,3 @@ dependsOn: []
 blocks: []
 ---
 
-\"Pratt parsing\" is a concept in plt (status: learning).

@@ -12,4 +12,3 @@ dependsOn: []
 blocks: []
 ---
 
-\"Circular dependency\" is a concept in plt (status: learning).

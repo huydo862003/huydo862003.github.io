@@ -13,9 +13,5 @@ blocks: []
 tags: []
 ---
 
-\"Proof assistant/Prover\" is a concept in plt (status: learning).
-
 Tools: Rocq (formerly Coq)
-:::key
-(Logic, Proof/Reason technique, Formal system) A **tool** that helps users construct and verify formal proofs, combining human guidance with automated checking (like Rocq, Lean, Isabelle).
-:::
+- (Logic, Proof/Reason technique, Formal system) A **tool** that helps users construct and verify formal proofs, combining human guidance with automated checking (like Rocq, Lean, Isabelle).

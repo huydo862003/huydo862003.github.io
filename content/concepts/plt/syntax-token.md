@@ -12,4 +12,3 @@ dependsOn: []
 blocks: []
 ---
 
-\"Syntax token\" is a concept in plt (status: learning).

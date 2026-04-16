@@ -14,12 +14,6 @@ tags:
   - "set-theory-relation"
 ---
 
-\"Inductive definition\" is a concept in plt (status: reviewing). Topics: proof-reason-technique, set-theory-relation.
-
 Tools: Rocq (formerly Coq)
-:::key
-(Proof/Reason technique, Set theory & Relation) A **definition technique** that specifies a set or type by its base cases and rules for building new elements from existing ones.
-:::
-:::key
-(Proof/Reason technique, Set theory & Relation) A definition technique that specifies a set as the strongest set that is closed under a set of rules to derive membership of its elements.
-:::
+- (Proof/Reason technique, Set theory & Relation) A **definition technique** that specifies a set or type by its base cases and rules for building new elements from existing ones.
+- (Proof/Reason technique, Set theory & Relation) A definition technique that specifies a set as the strongest set that is closed under a set of rules to derive membership of its elements.

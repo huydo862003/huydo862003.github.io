@@ -12,4 +12,3 @@ dependsOn: []
 blocks: []
 ---
 
-\"Antisymmetry\" is a concept in plt (status: learning).

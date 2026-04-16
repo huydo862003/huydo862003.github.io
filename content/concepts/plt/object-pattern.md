@@ -13,8 +13,6 @@ blocks: []
 tags: []
 ---
 
-\"Object pattern\" is a concept in plt (status: learning).
-
 ```scheme
 (define o
 	(let ([prop1 (...)]

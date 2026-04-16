@@ -17,12 +17,6 @@ tags:
   - "proof-reason-technique"
 ---
 
-\"Goal\" is a concept in plt (status: reviewing). Topics: formal-system, language-feature-design, logic, programming-paradigm, proof-reason-technique.
-
 Tools: Rocq (formerly Coq)
-:::key
-(Formal system, Proof/Reason technique, Language feature/design, Programming paradigm) [Rocq] In Rocq, the Proposition **to be proven** at any point during a proof, which tactics transform until it becomes trivially true.
-:::
-:::key
-(Formal system, Proof/Reason technique, Logic) A Proposition to be proven.
-:::
+- (Formal system, Proof/Reason technique, Language feature/design, Programming paradigm) In Rocq, the Proposition **to be proven** at any point during a proof, which tactics transform until it becomes trivially true.
+- (Formal system, Proof/Reason technique, Logic) A Proposition to be proven.

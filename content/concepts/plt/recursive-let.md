@@ -13,8 +13,6 @@ blocks: []
 tags: []
 ---
 
-\"Recursive let\" is a concept in plt (status: learning).
-
 ```scheme
 (letrec ([fact (lambda (n)
                  (if (= n 0) 1 (* n (fact (- n 1)))))])

@@ -12,4 +12,3 @@ dependsOn: []
 blocks: []
 ---
 
-\"Lifetime\" is a concept in plt (status: learning).

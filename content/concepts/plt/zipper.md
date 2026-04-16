@@ -12,4 +12,3 @@ dependsOn: []
 blocks: []
 ---
 
-\"Zipper\" is a concept in plt (status: learning).

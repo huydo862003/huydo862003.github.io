@@ -12,4 +12,3 @@ dependsOn: []
 blocks: []
 ---
 
-\"System\" is a concept in plt (status: learning).

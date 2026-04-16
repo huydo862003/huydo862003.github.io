@@ -12,4 +12,3 @@ dependsOn: []
 blocks: []
 ---
 
-\"Universality\" is a concept in plt (status: learning).

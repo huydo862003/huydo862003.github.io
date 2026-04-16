@@ -15,8 +15,6 @@ tags:
   - "programming-paradigm"
 ---
 
-\"Message passing\" is a concept in plt (status: mastered). Topics: concurrency-theory, design-principle, programming-paradigm.
-
 ```scheme
 (define msg (obj name . args)
 	((obj name) args))
