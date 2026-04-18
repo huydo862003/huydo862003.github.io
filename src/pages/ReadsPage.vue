@@ -93,7 +93,7 @@ const readsStats = computed(() => {
     : bookStore.books.filter((b) => !b.parent);
   const blogs = js.length
     ? js.flatMap((j) => blogStore.getPosts(j))
-    : blogStore.blogs.filter((b) => b.posts.length === 0);
+    : blogStore.posts;
   const papers = js.length
     ? js.flatMap((j) => paperStore.getByJourney(j))
     : paperStore.papers;
@@ -135,7 +135,7 @@ const readsItems = computed(() => {
       ].filter(Boolean).join(' · '),
     }));
 
-  const blogs = (js.length ? js.flatMap((j) => blogStore.getPosts(j)) : blogStore.blogs.filter((b) => b.posts.length === 0))
+  const blogs = (js.length ? js.flatMap((j) => blogStore.getPosts(j)) : blogStore.posts)
     .map((b) => ({
       slug: b.slug,
       type: 'post',

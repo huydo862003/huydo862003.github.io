@@ -232,7 +232,7 @@ const searchItems = computed<PaletteItem[]>(() => {
     });
   }
 
-  for (const b of blogStore.blogs) {
+  for (const b of blogStore.posts) {
     items.push({
       label: b.title,
       to: `/journeys/${b.journey}/blogs`,
