@@ -207,7 +207,6 @@ function onFilterUpdate (values: string[][]) {
 <style scoped>
 @reference "../style.css";
 .reads-page {
-  max-width: 42rem;
 }
 .heading {
   @apply text-base font-bold mb-4 pb-2 border-b border-border;
@@ -217,7 +216,7 @@ function onFilterUpdate (values: string[][]) {
 }
 .reads-item {
   @apply border-b border-border/50;
-  height: 3.25rem;
+  height: 2.75rem;
 }
 .reads-item-empty {
   @apply border-b border-border/20;
@@ -225,7 +224,7 @@ function onFilterUpdate (values: string[][]) {
 .reads-item-row {
   @apply flex items-start gap-2 no-underline w-full h-full px-1 -mx-1 rounded-sm
          transition-colors cursor-pointer;
-  padding-top: 0.625rem;
+  padding-top: 0.5rem;
 }
 .reads-item-row:hover {
   @apply bg-bg-subtle;
@@ -243,12 +242,12 @@ function onFilterUpdate (values: string[][]) {
   @apply flex flex-col min-w-0 flex-1;
 }
 .reads-item-title {
-  @apply text-xs text-fg-muted transition-colors truncate;
+  @apply text-xs text-fg-muted transition-colors truncate capitalize;
   line-height: 1.2rem;
   margin-bottom: 0.2rem;
 }
 .reads-item-meta {
-  @apply text-fg-faint truncate;
+  @apply text-fg-faint truncate capitalize;
   font-size: 0.625rem;
   line-height: 1rem;
 }
