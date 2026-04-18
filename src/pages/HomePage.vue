@@ -9,7 +9,7 @@
           Just batch migrated from Notion for easier customization & decentralized backups, so things may currently be scrambled up a bit.
         </p>
         <p>
-          Disclaimer: The frontend page (not the note content) is AI-generated. I wrote the notes myself. That's fine because I want to go into noting as soon as possible.
+          Disclaimer: Migrating from AI slop...
         </p>
       </div>
 
