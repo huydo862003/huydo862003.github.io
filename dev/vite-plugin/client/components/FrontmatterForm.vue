@@ -14,7 +14,7 @@
       <span
         v-else
         class="text-lg font-semibold cursor-text"
-        @dblclick="editingTitle = true"
+        @click="editingTitle = true"
       >{{ displayTitle || 'Untitled' }}</span>
     </div>
 
@@ -305,4 +305,5 @@ function update (key: string, value: unknown) {
 .fm-input::placeholder { @apply text-gray-300; }
 .fm-input:hover { @apply bg-gray-50; }
 .fm-input:focus { @apply bg-gray-100 outline-none; white-space: normal; overflow: visible; }
+.fm-input[type="date"] { @apply cursor-pointer; }
 </style>

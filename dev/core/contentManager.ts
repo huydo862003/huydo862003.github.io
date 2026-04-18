@@ -3,7 +3,7 @@ import {
   RootJail,
 } from './rootJail';
 import {
-  ContentType, type TreeNode,
+  ContentType, type TreeNode, type JourneyTree, type JourneyGroup, type ContentItem,
 } from './types';
 
 export {
@@ -60,10 +60,24 @@ function slugify (title: string): string {
 export class ContentManager {
   private readonly contentJail: RootJail;
   private readonly schemaJail: RootJail;
+  private readonly fmCache = new Map<string, Record<string, unknown>>();
 
   constructor (root: string) {
     this.contentJail = new RootJail(root);
     this.schemaJail = new RootJail(`${root}/.schemas`);
+  }
+
+  private getCachedFrontmatter (path: string): Record<string, unknown> {
+    const cached = this.fmCache.get(path);
+    if (cached) return cached;
+    const raw = this.contentJail.readFileSync(path);
+    const fm = this.parseFrontmatter(raw);
+    this.fmCache.set(path, fm);
+    return fm;
+  }
+
+  private invalidateCache (path: string) {
+    this.fmCache.delete(path);
   }
 
   get root () {
@@ -84,10 +98,12 @@ export class ContentManager {
     if (!this.contentJail.existsSync(path)) throw new Error(`not found: ${path}`);
     this.contentJail.unlinkSync(path);
     this.contentJail.writeFileSync(path, content);
+    this.invalidateCache(path);
   }
 
   deleteContent (path: string): void {
     this.contentJail.unlinkSync(path);
+    this.invalidateCache(path);
   }
 
   contentExists (path: string): boolean {
@@ -330,15 +346,22 @@ export class ContentManager {
     return schemas;
   }
 
-  // list items of a content type with titles extracted from frontmatter
-  listContent (contentType: string): { slug: string; title: string; path: string }[] {
-    const results: { slug: string; title: string; path: string }[] = [];
+  listContent (contentType: string): ContentItem[] {
+    const displayField = this.getDisplayField(contentType);
+    return this.traverseContent(contentType, (path, slug, fm) => ({
+      slug,
+      title: fm[displayField] ? String(fm[displayField]) : slug.replace(/-/g, ' '),
+      path,
+    }));
+  }
 
-    // resolve displayName field from schema
+  private getDisplayField (contentType: string): string {
     const allSchemas = this.schemas() as Record<string, { displayName?: string }>;
-    const schema = allSchemas[contentType];
-    const displayField = schema?.displayName ?? 'title';
+    return allSchemas[contentType]?.displayName ?? 'title';
+  }
 
+  private traverseContent<T> (contentType: string, transform: (path: string, slug: string, fm: Record<string, unknown>) => T | null): T[] {
+    const results: T[] = [];
     const collect = (dir: string) => {
       let entries: string[];
       try { entries = this.contentJail.readdirSync(dir); } catch { return; }
@@ -350,18 +373,88 @@ export class ContentManager {
         if (stat.isDirectory()) { collect(full); continue; }
         if (!entry.endsWith('.md')) continue;
         const slug = entry.replace(/\.md$/, '');
-        let title = slug.replace(/-/g, ' ');
-        try {
-          const raw = this.contentJail.readFileSync(full);
-          const fm = this.parseFrontmatter(raw);
-          if (fm[displayField]) title = String(fm[displayField]);
-        } catch { /* use slug as title */ }
-        results.push({ slug, title, path: full });
+        let fm: Record<string, unknown> = {};
+        try { fm = this.getCachedFrontmatter(full); } catch { /* empty fm */ }
+        const item = transform(full, slug, fm);
+        if (item) results.push(item);
       }
     };
     collect(contentType);
-    if (results.length === 0) collect('.');
     return results;
+  }
+
+  // journey-centric tree
+  journeyTree (): JourneyTree {
+    const allSchemas = this.schemas() as Record<string, { displayName?: string }>;
+    const GROUPED_TYPES = [ContentType.Concepts, ContentType.Flashcards, ContentType.Phases, ContentType.Blogs] as const;
+    const FM_GROUPED_TYPES = [ContentType.Books, ContentType.Papers] as const;
+    const STANDALONE_TYPES = [ContentType.Thoughts, ContentType.Authors] as const;
+
+    // load journeys
+    const journeyItems = this.listContent('journeys');
+    const journeys: JourneyGroup[] = journeyItems.map((j) => ({
+      slug: j.slug,
+      title: j.title,
+      path: j.path,
+      resources: {} as Record<string, ContentItem[]>,
+    }));
+
+    // dir-grouped types: concepts/{journey}/, flashcards/{journey}/, etc.
+    for (const type of GROUPED_TYPES) {
+      const displayField = allSchemas[type]?.displayName ?? 'title';
+      for (const journey of journeys) {
+        const dir = `${type}/${journey.slug}`;
+        const items: ContentItem[] = [];
+        let entries: string[];
+        try { entries = this.contentJail.readdirSync(dir); } catch { continue; }
+        for (const entry of entries) {
+          if (!entry.endsWith('.md')) continue;
+          const path = `${dir}/${entry}`;
+          const slug = entry.replace(/\.md$/, '');
+          let title = slug.replace(/-/g, ' ');
+          try {
+            const fm = this.getCachedFrontmatter(path);
+            if (fm[displayField]) title = String(fm[displayField]);
+          } catch { /* use slug */ }
+          items.push({ slug, title, path });
+        }
+        if (items.length) journey.resources[type] = items;
+      }
+    }
+
+    // frontmatter-grouped types: books, papers (have `journey` field)
+    for (const type of FM_GROUPED_TYPES) {
+      const all = this.listContentWithJourney(type);
+      for (const item of all) {
+        const journey = journeys.find((j) => j.slug === item.journey);
+        if (!journey) continue;
+        if (!journey.resources[type]) journey.resources[type] = [];
+        journey.resources[type].push({ slug: item.slug, title: item.title, path: item.path });
+      }
+    }
+
+    // standalone types
+    const standalone: Record<string, ContentItem[]> = {};
+    for (const type of STANDALONE_TYPES) {
+      const items = this.listContent(type);
+      if (items.length) standalone[type] = items;
+    }
+
+    return { journeys, standalone };
+  }
+
+  private listContentWithJourney (contentType: string): (ContentItem & { journey: string })[] {
+    const displayField = this.getDisplayField(contentType);
+    return this.traverseContent(contentType, (path, slug, fm) => {
+      const journey = fm.journey ? String(fm.journey) : '';
+      if (!journey) return null;
+      return {
+        slug,
+        title: fm[displayField] ? String(fm[displayField]) : slug.replace(/-/g, ' '),
+        path,
+        journey,
+      };
+    });
   }
 
   // tree

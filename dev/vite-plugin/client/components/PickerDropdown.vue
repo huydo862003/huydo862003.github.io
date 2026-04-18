@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col w-72 max-h-80 bg-white rounded-lg shadow-lg">
+  <div class="flex flex-col w-96 max-h-80 bg-white rounded-lg shadow-lg">
     <!-- search -->
     <div class="flex items-center border-b border-gray-100 px-3">
       <input

@@ -6,7 +6,10 @@
         class="sidebar-panel"
         :class="{ 'sidebar-collapsed': !showSidebar }"
       >
-        <ContentTree @select="openFile" />
+        <ContentTree
+          @select="openFile"
+          @hide="showSidebar = false"
+        />
       </div>
 
       <Splitpanes class="flex-1 min-w-0 overflow-hidden splitter-styled">
@@ -81,6 +84,13 @@
         >
           <PhFloppyDisk :size="14" />
         </button>
+        <span
+          v-if="fileStore.currentPath"
+          class="text-xs"
+          :class="fileStore.saving ? 'text-amber-500' : fileStore.dirty ? 'text-gray-400' : 'text-emerald-500'"
+        >
+          {{ fileStore.saving ? 'Saving...' : fileStore.dirty ? 'Unsaved' : 'Saved' }}
+        </span>
       </template>
     </GitPanel>
   </div>
@@ -130,9 +140,11 @@ const previewUrl = computed(() => {
   const slug = p.replace(/\.md$/, '').split('/').pop();
   const parts = p.split('/');
   const type = parts[0];
-  const journey = frontmatter.value.journey as string | undefined;
+  // journey from frontmatter or from directory structure (e.g., concepts/plt/foo.md -> plt)
+  const journey = (frontmatter.value.journey as string | undefined) || (parts.length >= 3 ? parts[1] : '');
   if (type === 'thoughts') return `/thoughts/${slug}`;
   if (type === 'journeys') return `/journeys/${slug}`;
+  if (type === 'authors') return '';
   if (journey) {
     if (type === 'concepts') return `/journeys/${journey}/concepts/${slug}`;
     if (type === 'flashcards') return `/journeys/${journey}/flashcards/${slug}`;
@@ -188,18 +200,26 @@ function onFrontmatterUpdate (key: string, value: unknown) {
 }
 
 // file open
+let navigating = false;
 async function openFile (path: string) {
+  navigating = true;
+  clearTimeout(autosaveTimer);
   await fileStore.openFile(path);
+  navigating = false;
 }
 
+let saving = false;
 async function save () {
-  await fileStore.save();
+  if (saving || navigating) return;
+  saving = true;
+  try { await fileStore.save(); }
+  finally { saving = false; }
 }
 
 // autosave
 let autosaveTimer: ReturnType<typeof setTimeout> | undefined;
 watch(() => fileStore.content, () => {
-  if (!fileStore.dirty) return;
+  if (!fileStore.dirty || navigating || saving) return;
   clearTimeout(autosaveTimer);
   autosaveTimer = setTimeout(save, 2000);
 });

@@ -37,6 +37,24 @@ export interface ContentSchema {
   fields: Record<string, FieldSchema>;
 }
 
+export interface ContentItem {
+  slug: string;
+  title: string;
+  path: string;
+}
+
+export interface JourneyGroup {
+  slug: string;
+  title: string;
+  path: string;
+  resources: Record<string, ContentItem[]>;
+}
+
+export interface JourneyTree {
+  journeys: JourneyGroup[];
+  standalone: Record<string, ContentItem[]>;
+}
+
 export interface FileData {
   path: string;
   content: string;

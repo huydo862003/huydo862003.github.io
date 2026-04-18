@@ -1,12 +1,11 @@
 ---
 published: true
-author: hdnax
+author: "hdnax"
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: Are anti-affordances affordances themselves?
-deck: general
+question: "According to Don Norman, what is the paradox of technology?"
+deck: "general"
 concepts: []
 books: []
 tags: []
 ---
-

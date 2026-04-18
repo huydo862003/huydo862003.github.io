@@ -29,6 +29,12 @@ export function list (manager: ContentManager) {
   };
 }
 
+export function journeyTree (manager: ContentManager) {
+  return (_req: Request, res: Response) => {
+    res.json(manager.journeyTree());
+  };
+}
+
 export function tree (manager: ContentManager) {
   return (_req: Request, res: Response) => {
     res.json(manager.tree());

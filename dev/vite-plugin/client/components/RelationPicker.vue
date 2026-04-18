@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col gap-0.5 min-w-0 w-full">
+  <div class="flex flex-col gap-1 min-w-0 w-full">
     <!-- SINGLE REF -->
     <template v-if="single">
       <VDropdown
@@ -121,7 +121,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted } from 'vue';
+import { ref, computed, onMounted, watch } from 'vue';
 import { Dropdown as VDropdown } from 'floating-vue';
 import { PhFileText } from '@phosphor-icons/vue';
 import { httpClient } from '../services/http.client';
@@ -213,8 +213,8 @@ function focusSearch () {
   // handled by PickerDropdown
 }
 
-onMounted(async () => {
-  if (props.enumOptions) {
+async function loadOptions () {
+  if (props.enumOptions?.length) {
     options.value = props.enumOptions.map((v) => ({ value: v, label: v }));
   } else if (props.contentType) {
     try {
@@ -222,7 +222,11 @@ onMounted(async () => {
       options.value = data.map((d: { slug: string; title: string }) => ({ value: d.slug, label: d.title }));
     } catch { /* fallback to empty */ }
   }
-});
+}
+
+onMounted(loadOptions);
+watch(() => props.contentType, loadOptions);
+watch(() => props.enumOptions, loadOptions);
 </script>
 
 <style>
