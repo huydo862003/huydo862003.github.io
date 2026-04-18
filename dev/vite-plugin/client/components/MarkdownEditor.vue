@@ -66,9 +66,11 @@ onMounted(async () => {
 
   // render <details><summary> as interactive toggle lists
   renderDetailsBlocks();
+  let detailsTimer: ReturnType<typeof setTimeout> | undefined;
   crepe.on((api) => {
     api.markdownUpdated(() => {
-      setTimeout(renderDetailsBlocks, 50);
+      clearTimeout(detailsTimer);
+      detailsTimer = setTimeout(renderDetailsBlocks, 300);
     });
   });
 });
