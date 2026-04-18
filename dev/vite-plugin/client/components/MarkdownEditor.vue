@@ -63,7 +63,33 @@ onMounted(async () => {
   });
 
   await crepe.create();
+
+  // render <details><summary> as interactive toggle lists
+  renderDetailsBlocks();
+  crepe.on((api) => {
+    api.markdownUpdated(() => {
+      setTimeout(renderDetailsBlocks, 50);
+    });
+  });
 });
+
+function renderDetailsBlocks () {
+  if (!editorEl.value) return;
+  const htmlBlocks = editorEl.value.querySelectorAll('[data-node-type="html"] , .html_block');
+  for (const block of htmlBlocks) {
+    const text = block.textContent ?? '';
+    if (!text.includes('<details>') && !text.includes('<summary>')) continue;
+    // already rendered
+    if (block.querySelector('details')) continue;
+    const wrapper = document.createElement('div');
+    wrapper.innerHTML = text;
+    const details = wrapper.querySelector('details');
+    if (!details) continue;
+    details.classList.add('cm-toggle');
+    block.innerHTML = '';
+    block.appendChild(details);
+  }
+}
 
 onUnmounted(async () => {
   await crepe?.destroy();
@@ -74,13 +100,16 @@ onUnmounted(async () => {
 @reference "tailwindcss";
 
 .markdown-editor {
-  @apply flex-1 min-h-0 overflow-visible relative;
+  @apply overflow-visible relative;
 }
 .markdown-editor :deep(.milkdown) {
-  @apply h-full overflow-y-auto overflow-x-hidden;
+  @apply overflow-visible;
 }
 .markdown-editor :deep(.editor) {
-  @apply py-4 pr-6 pl-4 outline-none min-h-full;
+  @apply py-4 pr-6 pl-20 outline-none min-h-full text-sm;
+}
+.markdown-editor :deep(.milkdown-block-handle) {
+  @apply overflow-visible;
 }
 .markdown-editor :deep(.tableWrapper td),
 .markdown-editor :deep(.tableWrapper th) {
@@ -93,5 +122,26 @@ onUnmounted(async () => {
 .markdown-editor :deep(.tableWrapper th p) {
   visibility: visible !important;
   opacity: 1 !important;
+}
+.markdown-editor :deep(.cm-toggle) {
+  @apply border border-gray-200 rounded-md my-2;
+}
+.markdown-editor :deep(.cm-toggle summary) {
+  @apply px-3 py-2 cursor-pointer font-medium text-sm list-none;
+}
+.markdown-editor :deep(.cm-toggle summary::marker),
+.markdown-editor :deep(.cm-toggle summary::-webkit-details-marker) {
+  display: none;
+}
+.markdown-editor :deep(.cm-toggle summary::before) {
+  content: '▶';
+  @apply mr-2 text-xs text-gray-400 inline-block;
+  transition: transform 0.15s;
+}
+.markdown-editor :deep(.cm-toggle[open] summary::before) {
+  transform: rotate(90deg);
+}
+.markdown-editor :deep(.cm-toggle > :not(summary)) {
+  @apply px-3 pb-2 text-sm;
 }
 </style>

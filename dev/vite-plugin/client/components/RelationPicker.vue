@@ -3,8 +3,9 @@
     <!-- SINGLE REF -->
     <template v-if="single">
       <VDropdown
-        :distance="4"
+        :distance="6"
         placement="bottom-start"
+        :arrow-overflow="false"
       >
         <span
           v-if="items.length"
@@ -16,44 +17,25 @@
           />
           <span class="truncate underline underline-offset-2 decoration-gray-300 group-hover:decoration-gray-700">{{ resolveTitle(items[0]) }}</span>
         </span>
-        <button
+        <span
           v-else
-          class="w-full h-6 flex items-center justify-center text-sm text-gray-400 border border-dashed border-gray-300 rounded cursor-pointer hover:bg-gray-50 hover:text-gray-700"
+          class="h-7 flex items-center text-sm text-gray-300 cursor-pointer hover:text-gray-500 hover:bg-gray-50 rounded px-1"
         >
-          Select...
-        </button>
+          Empty
+        </span>
         <template #popper>
-          <div class="rp-dropdown">
-            <input
-              ref="searchInput"
-              v-model="search"
-              class="px-2 py-1.5 border-none border-b border-gray-200 text-sm outline-none"
-              placeholder="Search..."
-              @vue:mounted="focusSearch"
-            >
-            <div class="overflow-y-auto max-h-56">
-              <button
-                v-for="opt in filtered"
-                :key="opt.value"
-                class="flex items-center justify-between w-full px-2 py-1.5 text-sm text-left border-none bg-transparent cursor-pointer hover:bg-gray-100"
-                :class="{ 'text-blue-500': items.includes(opt.value) }"
-                @click="selectSingle(opt.value)"
-              >
-                <span class="truncate">{{ opt.label }}</span>
-                <span
-                  v-if="items.includes(opt.value)"
-                  class="text-blue-500 text-xs shrink-0"
-                >✓</span>
-              </button>
-              <button
-                v-if="search.trim() && !exactMatch"
-                class="flex items-center w-full px-2 py-1.5 text-sm text-blue-500 font-medium border-none bg-transparent cursor-pointer hover:bg-gray-100"
-                @click="selectSingle(search.trim())"
-              >
-                Add "{{ search.trim() }}"
-              </button>
-            </div>
-          </div>
+          <PickerDropdown
+            v-model:search="search"
+            :selected="items"
+            :filtered="filtered"
+            :exact-match="exactMatch"
+            :title-map="titleMap"
+            :content-type="contentType"
+            @select="selectSingle"
+            @remove="remove"
+            @add="selectSingle"
+            @mounted="focusSearch"
+          />
         </template>
       </VDropdown>
     </template>
@@ -75,47 +57,22 @@
         :distance="4"
         placement="bottom-start"
       >
-        <span class="h-7 flex items-center text-sm text-gray-400 cursor-pointer hover:text-gray-600">
+        <span class="h-7 flex items-center text-sm text-gray-300 cursor-pointer hover:text-gray-500 hover:bg-gray-50 rounded px-1">
           {{ items.length > maxVisible ? `${items.length - maxVisible} more...` : items.length ? 'Edit...' : 'Empty' }}
         </span>
         <template #popper>
-          <div class="rp-dropdown">
-            <input
-              ref="searchInput"
-              v-model="search"
-              class="px-2 py-1.5 border-none border-b border-gray-200 text-sm outline-none"
-              placeholder="Search..."
-              @vue:mounted="focusSearch"
-            >
-            <div class="overflow-y-auto max-h-56">
-              <button
-                v-for="opt in filtered"
-                :key="opt.value"
-                class="flex items-center justify-between w-full px-2 py-1.5 text-sm text-left border-none bg-transparent cursor-pointer hover:bg-gray-100"
-                :class="{ 'text-blue-500': items.includes(opt.value) }"
-                @click="toggle(opt.value)"
-              >
-                <span class="truncate">{{ opt.label }}</span>
-                <span
-                  v-if="items.includes(opt.value)"
-                  class="text-blue-500 text-xs shrink-0"
-                >✓</span>
-              </button>
-              <button
-                v-if="search.trim() && !exactMatch"
-                class="flex items-center w-full px-2 py-1.5 text-sm text-blue-500 font-medium border-none bg-transparent cursor-pointer hover:bg-gray-100"
-                @click="add(search.trim())"
-              >
-                Add "{{ search.trim() }}"
-              </button>
-              <div
-                v-if="!filtered.length && !search.trim()"
-                class="p-2 text-sm text-gray-400 text-center"
-              >
-                No options
-              </div>
-            </div>
-          </div>
+          <PickerDropdown
+            v-model:search="search"
+            :selected="items"
+            :filtered="filtered"
+            :exact-match="exactMatch"
+            :title-map="titleMap"
+            :content-type="contentType"
+            @select="toggle"
+            @remove="remove"
+            @add="add"
+            @mounted="focusSearch"
+          />
         </template>
       </VDropdown>
     </template>
@@ -141,47 +98,22 @@
         :distance="4"
         placement="bottom-start"
       >
-        <span class="h-7 flex items-center text-sm text-gray-400 cursor-pointer hover:text-gray-600">
+        <span class="h-7 flex items-center text-sm text-gray-300 cursor-pointer hover:text-gray-500 hover:bg-gray-50 rounded px-1">
           {{ items.length > maxVisible ? `${items.length - maxVisible} more...` : items.length ? 'Edit...' : 'Empty' }}
         </span>
         <template #popper>
-          <div class="rp-dropdown">
-            <input
-              ref="searchInput"
-              v-model="search"
-              class="px-2 py-1.5 border-none border-b border-gray-200 text-sm outline-none"
-              placeholder="Search..."
-              @vue:mounted="focusSearch"
-            >
-            <div class="overflow-y-auto max-h-56">
-              <button
-                v-for="opt in filtered"
-                :key="opt.value"
-                class="flex items-center justify-between w-full px-2 py-1.5 text-sm text-left border-none bg-transparent cursor-pointer hover:bg-gray-100"
-                :class="{ 'text-blue-500': items.includes(opt.value) }"
-                @click="toggle(opt.value)"
-              >
-                <span class="truncate">{{ opt.label }}</span>
-                <span
-                  v-if="items.includes(opt.value)"
-                  class="text-blue-500 text-xs shrink-0"
-                >✓</span>
-              </button>
-              <button
-                v-if="search.trim() && !exactMatch"
-                class="flex items-center w-full px-2 py-1.5 text-sm text-blue-500 font-medium border-none bg-transparent cursor-pointer hover:bg-gray-100"
-                @click="add(search.trim())"
-              >
-                Add "{{ search.trim() }}"
-              </button>
-              <div
-                v-if="!filtered.length && !search.trim()"
-                class="p-2 text-sm text-gray-400 text-center"
-              >
-                No options
-              </div>
-            </div>
-          </div>
+          <PickerDropdown
+            v-model:search="search"
+            :selected="items"
+            :filtered="filtered"
+            :exact-match="exactMatch"
+            :title-map="titleMap"
+            :content-type="contentType"
+            @select="toggle"
+            @remove="remove"
+            @add="add"
+            @mounted="focusSearch"
+          />
         </template>
       </VDropdown>
     </template>
@@ -193,6 +125,7 @@ import { ref, computed, onMounted } from 'vue';
 import { Dropdown as VDropdown } from 'floating-vue';
 import { PhFileText } from '@phosphor-icons/vue';
 import { httpClient } from '../services/http.client';
+import PickerDropdown from './PickerDropdown.vue';
 
 const model = defineModel<string[]>({ required: true });
 const props = defineProps<{
@@ -277,7 +210,7 @@ function chipColor (value: string): Record<string, string> {
 }
 
 function focusSearch () {
-  setTimeout(() => searchInput.value?.focus(), 50);
+  // handled by PickerDropdown
 }
 
 onMounted(async () => {
@@ -292,11 +225,11 @@ onMounted(async () => {
 });
 </script>
 
-<style scoped>
-.rp-dropdown {
-  width: 15rem;
-  max-height: 17.5rem;
-  display: flex;
-  flex-direction: column;
+<style>
+.v-popper--theme-dropdown .v-popper__arrow-container {
+  display: none !important;
+}
+.v-popper--theme-dropdown .v-popper__inner {
+  border: none !important;
 }
 </style>

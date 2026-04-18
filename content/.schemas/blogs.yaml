@@ -3,7 +3,7 @@ displayName: title
 
 enums:
   tags:
-    plt: [PLT, blog]
+    plt: []
 
 fields:
   title:

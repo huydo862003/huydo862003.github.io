@@ -18,6 +18,7 @@ fields:
   date:
     type: string
     label: Publication Date
+    hidden: true
   journey:
     type: string
     ref: journeys
@@ -28,12 +29,14 @@ fields:
   isbn:
     type: string
     label: ISBN
+    hidden: true
   url:
     type: string
     label: URL
   cover:
     type: string
     label: Cover Image URL
+    hidden: true
   tags:
     type: array
     itemType: string

@@ -1,20 +1,25 @@
 <template>
   <div class="border-b border-gray-200 mb-1 overflow-visible">
-    <div
-      class="flex items-center gap-1.5 px-3 py-2 cursor-pointer select-none hover:bg-gray-50"
-      @click="expanded = !expanded"
-    >
-      <PhCaretRight
-        class="shrink-0 transition-transform duration-150"
-        :class="{ 'rotate-90': expanded }"
-        :size="12"
-      />
-      <span class="text-sm font-semibold">{{ displayTitle || 'Properties' }}</span>
+    <!-- editable title -->
+    <div class="px-3 pt-3 pb-1">
+      <input
+        v-if="editingTitle"
+        ref="titleInput"
+        :value="displayTitle ?? ''"
+        class="text-lg font-semibold w-full border-none outline-none bg-transparent"
+        @blur="finishTitleEdit"
+        @keydown.enter="finishTitleEdit"
+        @vue:mounted="($el: HTMLInputElement) => $el.focus()"
+      >
+      <span
+        v-else
+        class="text-lg font-semibold cursor-text"
+        @dblclick="editingTitle = true"
+      >{{ displayTitle || 'Untitled' }}</span>
     </div>
-    <div
-      v-if="expanded"
-      class="px-3 pb-2 overflow-visible"
-    >
+
+    <!-- properties -->
+    <div class="px-3 pb-2 overflow-visible">
       <!-- common: published -->
       <div class="fm-row">
         <div class="fm-label">
@@ -40,27 +45,13 @@
           <input
             :value="frontmatter.author ?? ''"
             class="fm-input"
+            placeholder="Empty"
             @input="update('author', ($event.target as HTMLInputElement).value)"
           >
         </div>
       </div>
 
       <!-- common: dates -->
-      <div class="fm-row">
-        <div class="fm-label">
-          <PhCalendar :size="14" />
-          <span class="truncate">Created</span>
-        </div>
-        <div class="fm-value">
-          <input
-            type="date"
-            :value="frontmatter.createdAt ?? ''"
-            class="fm-input"
-            @input="update('createdAt', ($event.target as HTMLInputElement).value)"
-          >
-        </div>
-      </div>
-
       <div class="fm-row">
         <div class="fm-label">
           <PhCalendar :size="14" />
@@ -101,7 +92,8 @@
           <!-- enum: pill badge with dropdown -->
           <VDropdown
             v-else-if="fieldSchema.type === 'enum'"
-            :distance="4"
+            :distance="6"
+            :arrow-overflow="false"
             placement="bottom-start"
           >
             <span
@@ -135,6 +127,7 @@
             type="date"
             :value="fieldValue(fieldName, fieldSchema)"
             class="fm-input"
+            placeholder="Empty"
             @input="update(String(fieldName), ($event.target as HTMLInputElement).value)"
           >
 
@@ -144,6 +137,7 @@
             type="number"
             :value="fieldValue(fieldName, fieldSchema)"
             class="fm-input"
+            placeholder="Empty"
             @input="update(String(fieldName), Number(($event.target as HTMLInputElement).value))"
           >
 
@@ -172,6 +166,7 @@
             v-else
             :value="fieldValue(fieldName, fieldSchema)"
             class="fm-input"
+            placeholder="Empty"
             @input="update(String(fieldName), ($event.target as HTMLInputElement).value)"
           >
         </div>
@@ -183,7 +178,7 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue';
 import {
-  PhCaretRight, PhCheckSquare, PhUser, PhCalendar,
+  PhCheckSquare, PhUser, PhCalendar,
   PhTextAa, PhHash, PhToggleLeft, PhListBullets, PhTag, PhArrowSquareOut,
 } from '@phosphor-icons/vue';
 import { Dropdown as VDropdown } from 'floating-vue';
@@ -196,17 +191,22 @@ const props = defineProps<{
 }>();
 const emit = defineEmits<{ update: [key: string, value: unknown] }>();
 
-const expanded = ref(false);
+const editingTitle = ref(false);
+const titleInput = ref<HTMLInputElement>();
+
+const displayNameField = computed(() => props.schema?.displayName ?? 'title');
 
 const displayTitle = computed(() => {
   const field = props.schema?.displayName ?? 'title';
   return props.frontmatter[field] as string | undefined;
 });
 
+const COMMON_FIELDS = new Set(['published', 'author', 'createdAt', 'updatedAt']);
+
 const visibleFields = computed(() => {
   if (!props.schema?.fields) return {};
   return Object.fromEntries(
-    Object.entries(props.schema.fields).filter(([, f]) => !f.hidden),
+    Object.entries(props.schema.fields).filter(([k, f]) => !f.hidden && !COMMON_FIELDS.has(k)),
   );
 });
 
@@ -268,6 +268,13 @@ function enumDotColor (value: string): string {
   return (ENUM_COLORS[value] ?? DEFAULT_PILL).dot;
 }
 
+function finishTitleEdit () {
+  if (titleInput.value) {
+    update(displayNameField.value, titleInput.value.value);
+  }
+  editingTitle.value = false;
+}
+
 function update (key: string, value: unknown) {
   emit('update', key, value);
 }
@@ -295,6 +302,7 @@ function update (key: string, value: unknown) {
   @apply w-full h-7 px-1.5 border-none rounded text-sm bg-transparent truncate;
   box-sizing: border-box;
 }
+.fm-input::placeholder { @apply text-gray-300; }
 .fm-input:hover { @apply bg-gray-50; }
 .fm-input:focus { @apply bg-gray-100 outline-none; white-space: normal; overflow: visible; }
 </style>

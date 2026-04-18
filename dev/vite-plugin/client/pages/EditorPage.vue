@@ -9,10 +9,10 @@
         <ContentTree @select="openFile" />
       </div>
 
-      <Splitpanes class="flex-1 overflow-hidden splitter-styled">
+      <Splitpanes class="flex-1 min-w-0 overflow-hidden splitter-styled">
         <!-- Center: frontmatter + editor -->
         <Pane :size="45">
-          <div class="flex flex-col h-full">
+          <div class="flex flex-col h-full min-w-0">
             <div
               v-if="fileStore.loading"
               class="flex items-center justify-center h-full text-sm text-gray-500"
@@ -24,12 +24,13 @@
                 <FrontmatterForm
                   :frontmatter="frontmatter"
                   :schema="fileStore.currentSchema"
+                  class="shrink-0"
                   @update="onFrontmatterUpdate"
                 />
                 <MarkdownEditor
                   :key="fileStore.currentPath"
                   v-model="bodyContent"
-                  class="flex-1"
+                  class="shrink-0"
                 />
               </div>
             </template>
@@ -42,22 +43,6 @@
           </div>
         </Pane>
 
-        <!-- Preview (toggleable) -->
-        <Pane
-          v-if="showPreview"
-          :size="35"
-        >
-          <MarkdownPreview
-            v-if="fileStore.currentPath"
-            :content="fileStore.content"
-          />
-          <div
-            v-else
-            class="flex items-center justify-center h-full text-sm text-gray-500"
-          >
-            Preview
-          </div>
-        </Pane>
       </Splitpanes>
     </div>
 
@@ -79,14 +64,15 @@
         >
           <PhSidebar :size="14" />
         </button>
-        <button
+        <a
+          v-if="previewUrl"
           class="icon-btn"
-          :class="showPreview ? 'active' : ''"
-          title="Toggle preview"
-          @click="showPreview = !showPreview"
+          :href="previewUrl"
+          target="_blank"
+          title="Open preview"
         >
           <PhEye :size="14" />
-        </button>
+        </a>
         <button
           class="icon-btn"
           :disabled="!fileStore.dirty || fileStore.saving"
@@ -122,14 +108,12 @@ import {
 } from '../stores/tree.store';
 import ContentTree from '../components/ContentTree.vue';
 import MarkdownEditor from '../components/MarkdownEditor.vue';
-import MarkdownPreview from '../components/MarkdownPreview.vue';
 import FrontmatterForm from '../components/FrontmatterForm.vue';
 import GitPanel from '../components/GitPanel.vue';
 import {
   parseFrontMatter,
 } from '@/utils/content';
 
-const showPreview = ref(false);
 const showSidebar = ref(true);
 const fileStore = useFileStore();
 const treeStore = useTreeStore();
@@ -138,6 +122,26 @@ const router = useRouter();
 
 watch(() => fileStore.currentPath, (path) => {
   if (path) router.replace({ hash: `#${path}` });
+});
+
+const previewUrl = computed(() => {
+  const p = fileStore.currentPath;
+  if (!p) return '';
+  const slug = p.replace(/\.md$/, '').split('/').pop();
+  const parts = p.split('/');
+  const type = parts[0];
+  const journey = frontmatter.value.journey as string | undefined;
+  if (type === 'thoughts') return `/thoughts/${slug}`;
+  if (type === 'journeys') return `/journeys/${slug}`;
+  if (journey) {
+    if (type === 'concepts') return `/journeys/${journey}/concepts/${slug}`;
+    if (type === 'flashcards') return `/journeys/${journey}/flashcards/${slug}`;
+    if (type === 'phases') return `/journeys/${journey}/phases/${slug}`;
+    if (type === 'books') return `/journeys/${journey}/books/${slug}`;
+    if (type === 'blogs') return `/journeys/${journey}/blogs/${slug}`;
+    if (type === 'papers') return `/journeys/${journey}/papers/${slug}`;
+  }
+  return '';
 });
 
 // Parse frontmatter + body from raw content
