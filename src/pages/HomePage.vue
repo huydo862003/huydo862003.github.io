@@ -2,7 +2,10 @@
   <div>
     <section class="main-section page">
       <div class="hero">
-        <h1>Scrambled Kitchen</h1>
+        <h1>
+          Scrambled Kitchen
+          <a href="https://github.com/huydo862003/Fck-AI-Slop#plan"><img src="https://img.shields.io/badge/AI%20slop-FA003F"></a>
+        </h1>
         <p>
           Scrambled thoughts. Scrambled journeys. And scrambled eggs.
 
