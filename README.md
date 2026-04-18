@@ -1,5 +1,7 @@
 # scrambled
 
+<a href="https://github.com/huydo862003/Fck-AI-Slop#plan"><img src="https://img.shields.io/badge/AI%20slop-FA003F"></a>
+
 A static page hosted on Github Pages with a lightweight free-tier database to persist some non-private data.
 
 This page tracks my scattered thoughts and learning journeys for many topics + with a flashcard system for revision.
