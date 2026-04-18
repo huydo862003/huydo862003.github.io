@@ -215,18 +215,17 @@ function onFilterUpdate (values: string[][]) {
   @apply list-none p-0 m-0 flex flex-col;
 }
 .reads-item {
-  @apply border-b border-border/50;
-  height: 2.75rem;
+  @apply border-b border-border/50 h-14;
 }
 .reads-item-empty {
   @apply border-b border-border/20;
 }
 .reads-item-row {
-  @apply flex items-start gap-2 no-underline w-full h-full px-1 -mx-1 rounded-sm
+  @apply flex items-start gap-2 no-underline w-full h-full rounded-sm p-1
          transition-colors cursor-pointer;
   padding-top: 0.5rem;
 }
-.reads-item-row:hover {
+.reads-item:hover {
   @apply bg-bg-subtle;
 }
 .reads-item-row:hover .reads-item-title {
