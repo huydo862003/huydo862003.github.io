@@ -61,7 +61,7 @@ export class RootJail {
     }
   }
 
-  // fs wrappers — all take jail-relative paths, all throw on escape
+  // fs wrappers - all take jail-relative paths, all throw on escape
   existsSync (p: string): boolean {
     return existsSync(this.resolve(p));
   }
@@ -70,7 +70,7 @@ export class RootJail {
     return readFileSync(this.resolve(p), 'utf-8');
   }
 
-  // always creates new — throws if file already exists
+  // always creates new - throws if file already exists
   writeFileSync (p: string, content: string): void {
     const abs = this.resolve(p);
     if (existsSync(abs)) throw new Error(`file already exists: ${p}`);
