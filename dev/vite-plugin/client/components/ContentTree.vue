@@ -153,7 +153,7 @@ import { onMounted, reactive } from 'vue';
 import {
   PhArrowClockwise, PhCaretRight, PhCompass, PhFileText, PhFile,
   PhBooks, PhLightbulb, PhFlashlight, PhMapTrifold, PhArticle, PhNewspaper,
-  PhNotebook, PhUser, PhSidebarSimple,
+  PhNotebook, PhUser, PhSidebarSimple, PhGlobe,
 } from '@phosphor-icons/vue';
 import { useTreeStore } from '../stores/tree.store';
 import { useFileStore } from '../stores/file.store';
@@ -170,7 +170,8 @@ const TYPE_CONFIG: Record<string, { icon: unknown; color: string; label: string 
   concepts: { icon: PhLightbulb, color: 'text-emerald-500', label: 'Concepts' },
   flashcards: { icon: PhFlashlight, color: 'text-violet-500', label: 'Flashcards' },
   phases: { icon: PhMapTrifold, color: 'text-blue-500', label: 'Phases' },
-  blogs: { icon: PhArticle, color: 'text-rose-500', label: 'Blogs' },
+  blogs: { icon: PhArticle, color: 'text-rose-500', label: 'Blog Posts' },
+  blogsites: { icon: PhGlobe, color: 'text-rose-400', label: 'Blog Sites' },
   papers: { icon: PhNewspaper, color: 'text-cyan-500', label: 'Papers' },
   thoughts: { icon: PhNotebook, color: 'text-gray-500', label: 'Thoughts' },
   authors: { icon: PhUser, color: 'text-gray-500', label: 'Authors' },

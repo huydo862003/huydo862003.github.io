@@ -7,9 +7,6 @@ url: Notes on module systems
 author: ""
 journey: plt
 site: alexey-kladov-matklad
-latestPost: ""
-lastChecked: ""
-posts: []
 tags: []
 ---
 

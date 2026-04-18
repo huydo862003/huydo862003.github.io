@@ -7,9 +7,6 @@ url: "A complete guide to TypeScript's never type"
 author: ""
 journey: "plt"
 site: ""
-latestPost: ""
-lastChecked: ""
-posts: []
 tags: []
 ---
 # 1. What is `never`?

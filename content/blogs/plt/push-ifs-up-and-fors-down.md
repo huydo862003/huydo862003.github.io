@@ -7,9 +7,6 @@ url: Push Ifs up and Fors down
 author: ""
 journey: plt
 site: alexey-kladov-matklad
-latestPost: ""
-lastChecked: ""
-posts: []
 tags: []
 ---
 

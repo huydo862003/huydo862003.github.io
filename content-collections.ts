@@ -4,7 +4,7 @@ import {
 } from '@content-collections/core';
 import { z } from 'zod';
 import {
-  authorsSchema, blogsSchema, booksSchema, conceptsSchema,
+  authorsSchema, blogsSchema, blogsitesSchema, booksSchema, conceptsSchema,
   flashcardsSchema, journeysSchema, papersSchema, phasesSchema, thoughtsSchema,
 } from './dev/core/__generated__/schemas';
 
@@ -71,6 +71,14 @@ const blogs = defineCollection({
   directory: 'content/blogs',
   include: '**/*.md',
   schema: blogsSchema,
+  transform: stripContent,
+});
+
+const blogsites = defineCollection({
+  name: 'blogsites',
+  directory: 'content/blogsites',
+  include: '**/*.md',
+  schema: blogsitesSchema,
   transform: stripContent,
 });
 
@@ -145,5 +153,5 @@ const authors = defineCollection({
 });
 
 export default defineConfig({
-  content: [concepts, flashcards, journeys, phases, books, blogs, papers, thoughts, authors, graph],
+  content: [concepts, flashcards, journeys, phases, books, blogs, blogsites, papers, thoughts, authors, graph],
 });

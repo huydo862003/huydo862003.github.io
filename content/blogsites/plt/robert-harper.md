@@ -10,5 +10,4 @@ latestPost: October 1, 2017
 lastChecked: March 4, 2026
 posts:
   - Boolean Blindness
-tags: []
 ---

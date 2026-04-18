@@ -11,5 +11,4 @@ lastChecked: March 4, 2026
 posts:
   - Push Ifs up and Fors down
   - Notes on module systems
-tags: []
 ---

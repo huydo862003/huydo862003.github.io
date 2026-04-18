@@ -32,13 +32,23 @@ export const blogsSchema = z.object({
   author: z.string().default(''),
   journey: z.string().default(''),
   site: z.string().default(''),
-  latestPost: z.string().default(''),
-  lastChecked: z.string().default(''),
-  posts: z.array(z.string()).default([]),
   tags: z.array(z.string()).default([]),
   content: z.string(),
 });
 export type Blogs = z.infer<typeof blogsSchema>;
+
+export const blogsitesSchema = z.object({
+  ...dates,
+  title: z.string(),
+  url: z.string().default(''),
+  author: z.string().default(''),
+  journey: z.string().default(''),
+  latestPost: z.string().default(''),
+  lastChecked: z.string().default(''),
+  posts: z.array(z.string()).default([]),
+  content: z.string(),
+});
+export type Blogsites = z.infer<typeof blogsitesSchema>;
 
 export const booksSchema = z.object({
   ...dates,
@@ -135,6 +145,7 @@ export type Thoughts = z.infer<typeof thoughtsSchema>;
 export const allSchemas = {
   authors: authorsSchema,
   blogs: blogsSchema,
+  blogsites: blogsitesSchema,
   books: booksSchema,
   concepts: conceptsSchema,
   flashcards: flashcardsSchema,
@@ -147,6 +158,7 @@ export const allSchemas = {
 export enum ContentType {
   Authors = 'authors',
   Blogs = 'blogs',
+  Blogsites = 'blogsites',
   Books = 'books',
   Concepts = 'concepts',
   Flashcards = 'flashcards',

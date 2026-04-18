@@ -134,6 +134,11 @@ watch(() => fileStore.currentPath, (path) => {
   if (path) router.replace({ hash: `#${path}` });
 });
 
+watch(() => frontmatter.value, (fm) => {
+  const title = fm?.title || fm?.question || fm?.name || 'Untitled';
+  document.title = `Editor - ${title}`;
+}, { immediate: true });
+
 const previewUrl = computed(() => {
   const p = fileStore.currentPath;
   if (!p) return '';

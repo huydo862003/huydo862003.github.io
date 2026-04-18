@@ -7,9 +7,6 @@ url: Boolean Blindness
 author: ""
 journey: plt
 site: robert-harper
-latestPost: ""
-lastChecked: ""
-posts: []
 tags: []
 ---
 ## Phase 1

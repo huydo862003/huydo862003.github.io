@@ -386,7 +386,7 @@ export class ContentManager {
   // journey-centric tree
   journeyTree (): JourneyTree {
     const allSchemas = this.schemas() as Record<string, { displayName?: string }>;
-    const GROUPED_TYPES = [ContentType.Concepts, ContentType.Flashcards, ContentType.Phases, ContentType.Blogs] as const;
+    const GROUPED_TYPES = [ContentType.Concepts, ContentType.Flashcards, ContentType.Phases, ContentType.Blogs, ContentType.Blogsites] as const;
     const FM_GROUPED_TYPES = [ContentType.Books, ContentType.Papers] as const;
     const STANDALONE_TYPES = [ContentType.Thoughts, ContentType.Authors] as const;
 

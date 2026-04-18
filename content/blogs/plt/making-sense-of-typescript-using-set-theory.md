@@ -7,9 +7,6 @@ url: Making sense of TypeScript using set theory
 author: ""
 journey: plt
 site: ""
-latestPost: ""
-lastChecked: ""
-posts: []
 tags: []
 ---
 # First pass
