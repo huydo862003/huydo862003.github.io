@@ -195,8 +195,7 @@ useSeo({
     const c = card.value;
     if (!c) return undefined;
     return [
-      ...(c.tags ?? [
-      ]),
+      ...(c.tags ?? []),
       c.deck,
       slug.value,
       'flashcard',
@@ -265,8 +264,7 @@ const masteryLabel = computed(() => {
 });
 
 const resolvedBooks = computed(() =>
-  (card.value?.books ?? [
-  ])
+  (card.value?.books ?? [])
     .map((s) => bookStore.getBySlug(s))
     .filter((b): b is NonNullable<typeof b> => !!b));
 </script>

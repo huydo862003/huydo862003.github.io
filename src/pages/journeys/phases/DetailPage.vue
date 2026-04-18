@@ -199,10 +199,8 @@ watch(phase, () => reloadContent());
 
 const rootBooks = computed(() => {
   const seen = new Set<string>();
-  const roots: NonNullable<ReturnType<typeof bookStore.getBySlug>>[] = [
-  ];
-  for (const s of phase.value?.books ?? [
-  ]) {
+  const roots: NonNullable<ReturnType<typeof bookStore.getBySlug>>[] = [];
+  for (const s of phase.value?.books ?? []) {
     let b = bookStore.getBySlug(s);
     if (!b) continue;
     while (b.parent) {
@@ -239,8 +237,7 @@ const conceptSearch = ref('');
 const conceptPage = ref(1);
 
 const filteredConcepts = computed(() => {
-  const all = phase.value?.concepts ?? [
-  ];
+  const all = phase.value?.concepts ?? [];
   if (!conceptSearch.value) return all;
   const q = conceptSearch.value.toLowerCase();
   return all.filter((c) => c.toLowerCase().includes(q));

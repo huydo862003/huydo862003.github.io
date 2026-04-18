@@ -2,13 +2,11 @@
 published: true
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Chapter 5. types"
+title: Chapter 5. types
 author: Shriram Krishnamurthi
 date: ""
 journey: plt
-tags:
-  - PLT
-  - chapter
+tags: []
 concepts:
   - language-safety-partiality
   - hindley-milner-system

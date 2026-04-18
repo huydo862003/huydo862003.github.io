@@ -122,8 +122,7 @@ useSeo({
 
 const papers = computed(() => paperStore.getByJourney(slug.value));
 const search = ref('');
-const statusFilter = ref<string[]>([
-]);
+const statusFilter = ref<string[]>([]);
 
 const statusGroup = [
   {

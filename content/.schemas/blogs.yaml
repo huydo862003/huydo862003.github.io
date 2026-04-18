@@ -1,0 +1,42 @@
+id: _meta.fileName
+displayName: title
+
+enums:
+  tags:
+    plt: [PLT, blog]
+
+fields:
+  title:
+    type: string
+    required: true
+    hidden: true
+    label: Title
+  url:
+    type: string
+    label: URL
+  author:
+    type: string
+    label: Author
+  journey:
+    type: string
+    ref: journeys
+    label: Journey
+  site:
+    type: string
+    label: Site Name
+  latestPost:
+    type: string
+    label: Latest Post
+  lastChecked:
+    type: date
+    label: Last Checked
+  posts:
+    type: array
+    itemType: string
+    label: Posts
+  tags:
+    type: array
+    itemType: string
+    enum: tags
+    conditionOn: journey
+    label: Tags

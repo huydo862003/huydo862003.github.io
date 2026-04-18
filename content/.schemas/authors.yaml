@@ -1,0 +1,32 @@
+id: _meta.fileName
+displayName: name
+enums: {}
+fields:
+  name:
+    type: string
+    required: true
+    label: Name
+  bio:
+    type: string
+    label: Bio
+  url:
+    type: string
+    label: URL
+  dateOfBirth:
+    type: date
+    label: Date of Birth
+  origin:
+    type: string
+    label: Origin
+  education:
+    type: array
+    itemType: string
+    label: Education
+  interests:
+    type: array
+    itemType: string
+    label: Interests
+  tags:
+    type: array
+    itemType: string
+    label: Tags

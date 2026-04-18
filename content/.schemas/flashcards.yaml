@@ -1,0 +1,26 @@
+id: _meta.fileName
+displayName: question
+enums: {}
+fields:
+  question:
+    type: string
+    label: Question
+    hidden: true
+  deck:
+    type: string
+    default: general
+    label: Deck
+  tags:
+    type: array
+    itemType: string
+    label: Tags
+  concepts:
+    type: array
+    itemType: string
+    ref: concepts
+    label: Concepts
+  books:
+    type: array
+    itemType: string
+    ref: books
+    label: Books

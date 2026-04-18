@@ -194,10 +194,9 @@ const phaseStats = computed(() => {
   };
 });
 
-function ringStyle (s: {segments: {pct: number;
-  color: string;}[];}) {
-  const parts: string[] = [
-  ];
+function ringStyle (s: { segments: { pct: number;
+  color: string; }[]; }) {
+  const parts: string[] = [];
   let acc = 0;
   for (const seg of s.segments) {
     parts.push(`${seg.color} ${acc}% ${acc + seg.pct}%`);

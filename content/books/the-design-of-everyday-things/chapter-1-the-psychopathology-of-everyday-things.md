@@ -2,13 +2,11 @@
 published: true
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Chapter 1. the psychopathology of everyday things"
+title: Chapter 1. the psychopathology of everyday things
 author: Don Norman
 date: ""
 journey: design
-tags:
-  - design
-  - chapter
+tags: []
 concepts:
   - psychopathology
   - psychology

@@ -2,22 +2,21 @@
 published: true
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Boolean blindness"
-url: "Boolean Blindness"
+title: Boolean blindness
+url: Boolean Blindness
 author: ""
 journey: plt
 site: robert-harper
 latestPost: ""
 lastChecked: ""
 posts: []
-tags: ["PLT", "blog"]
+tags: []
 ---
-
 ## Phase 1
 
 - Intro
     
-    > "I hate Booleans! But isn't everything 'just bits'? Aren't computers built from gates? And aren't gates just the logical connectives? How can a Computer Scientist possibly hate Booleans?"
+    > n"I hate Booleans! But isn't everything 'just bits'? Aren't computers built from gates? And aren't gates just the logical connectives? How can a Computer Scientist possibly hate Booleans?"
     > 
 - Leading sentences
     
@@ -133,14 +132,14 @@ tags: ["PLT", "blog"]
     5. **"You cannot test equality of propositions!"** - A sharp consequence of the distinction. Mathematical equality of functions exists but is not computable.
 - Flow Assessment
     
-    **Strengths:**
+    **Strengths**:
     
     - The rhetorical opening hooks the reader.
     - The philosophical setup (bool vs prop) is necessary for the deeper argument.
     - The `plus` example is concrete and convincing.
     - The null pointer challenge at the end generalizes the point.
     
-    **Disconnections/Weaknesses:**
+    **Disconnections/Weaknesses**:
     
     - The "logicians vs combinatorialists" framing is introduced but never developed-it's a rhetorical aside that doesn't connect to the main argument.
     - The jump from "equality test" to "Boolean blindness proper" is slightly abrupt-he's making two related but distinct harms.
@@ -173,7 +172,7 @@ Calling null pointer analysis "pointless" ignores the reality that we inherit co
 
 ### Rephrasing in Our Terms
 
-**What Harper is really saying:**
+**What Harper is really saying**:
 
 > Booleans are a form of premature abstraction. When you test a condition and reduce the result to true/false, you throw away the witness-the evidence that made the condition hold. Later code that branches on the boolean must either (a) trust the provenance, (b) re-check the condition, or (c) use external analysis to recover what was lost.
 > 
@@ -183,7 +182,7 @@ Calling null pointer analysis "pointless" ignores the reality that we inherit co
 > **This is ultimately about making invariants explicit in types.** A boolean test establishes an invariant ("$x$ is non-zero"), but that invariant exists only in the programmer's head. A sum type makes the invariant structural: you literally cannot access the predecessor unless you're in the $S(x')$ branch.
 > 
 
-**A more practical formulation:**
+**A more practical formulation**:
 
 | Anti-pattern | Problem | Solution |
 | --- | --- | --- |
@@ -191,12 +190,12 @@ Calling null pointer analysis "pointless" ignores the reality that we inherit co
 | `if isEmpty(list) then ... else head(list)` | `head` must re-check or trust provenance | `match list with [] -> ... | (h::t) -> use(h, t)` |
 | `if x == 0 then ... else f(x-1)` | `x-1` must re-validate non-zero | `match x with Z -> ... | S(n) -> f(n)` |
 
-**The general principle:**
+**The general principle**:
 
 > Don't ask questions; demand answers. A boolean test asks "is this condition true?" and gets back a yes/no. Pattern matching demands "show me which case you are" and gets back the case plus its contents. The difference is whether the evidence survives.
 > 
 
-**Where Harper's advice applies and doesn't:**
+**Where Harper's advice applies and doesn't**:
 
 | Applies well | Applies poorly |
 | --- | --- |

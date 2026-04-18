@@ -7,8 +7,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 function slugsFromDir (dir: string): string[] {
-  if (!fs.existsSync(dir)) return [
-  ];
+  if (!fs.existsSync(dir)) return [];
   return fs.readdirSync(dir, {
     recursive: true,
   })

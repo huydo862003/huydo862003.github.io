@@ -2,11 +2,11 @@
 published: true
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Chapter 4. an ML implementation of arithmetic expressions"
-author: "Benjamin C. Pierce"
+title: Chapter 4. an ML implementation of arithmetic expressions
+author: Benjamin C. Pierce
 date: ""
 journey: plt
-tags: ["PLT", "chapter"]
+tags: []
 concepts: []
 parent: part-i-untyped-systems
 children: []

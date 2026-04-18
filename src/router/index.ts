@@ -98,6 +98,21 @@ export const routes: RouteRecordRaw[] = [
     name: 'graph',
     component: () => import('@/pages/graph/KnowledgeGraphPage.vue'),
   },
+  // Dev-only editor routes
+  ...(import.meta.env.DEV
+    ? [
+      {
+        path: '/edit',
+        name: 'editor-browser',
+        component: () => import('@dev/vite-plugin/client/pages/EditorPage.vue'),
+      },
+      {
+        path: '/:pathMatch(.*)/edit',
+        name: 'editor',
+        component: () => import('@dev/vite-plugin/client/pages/EditorPage.vue'),
+      },
+    ]
+    : []),
   {
     path: '/:pathMatch(.*)*',
     name: 'not-found',

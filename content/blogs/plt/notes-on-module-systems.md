@@ -1,16 +1,16 @@
 ---
 published: true
 createdAt: "2026-03-28"
-updatedAt: 2026-04-12
-title: "Notes on module systems"
-url: "Notes on module systems"
+updatedAt: 2026-04-12T00:00:00.000Z
+title: Notes on module systems
+url: Notes on module systems
 author: ""
 journey: plt
 site: alexey-kladov-matklad
 latestPost: ""
 lastChecked: ""
 posts: []
-tags: ["PLT", "blog"]
+tags: []
 ---
 
 Same context as On the Criteria To Be Used in Decomposing Systems into Modules.
@@ -19,13 +19,13 @@ Same context as On the Criteria To Be Used in Decomposing Systems into Modules.
 
 - Title: Notes on module system.
 
-    → Not much to say, but it conveys a highly personal take.
+    -> Not much to say, but it conveys a highly personal take.
     
 - Summary: What a better Module system for Rust would look like…
 - Introduction:
     - Rust's module system is its second most exciting feature after the Borrow checker.
 
-        → Why?
+        -> Why?
         
     - Reasons why the decentralized ecosystems of libraries like [crates.io](http://crates.io/) robust:
         - Explicit separation between crates and modules.
@@ -39,7 +39,7 @@ Same context as On the Criteria To Be Used in Decomposing Systems into Modules.
                 extern_log = { package = "log", version = "1.0" }.
                 ```
 
-        → Because names are localized to the "edges" between crates, `crates.io` doesn't need a central authority to ensure that crate A and crate B don't use the same internal names.
+        -> Because names are localized to the "edges" between crates, `crates.io` doesn't need a central authority to ensure that crate A and crate B don't use the same internal names.
 
         **Rust allows linking-in several versions of the same crate without the fear of naming conflicts (via Mangling).**
         
@@ -59,7 +59,7 @@ The 5Cs:
     - The Rust module system is awesome, offering a way to maintain & manage robust & flexible ecosystem of crates, without some common problems, say namespace pollution, etc.
     - However, it's still very confusing.
 
-    → The Rust module system can be better.
+    -> The Rust module system can be better.
     
 - Contributions:
     - Some skin-in-the-game opinions about better ways to structure a module system.
@@ -76,9 +76,9 @@ The 5Cs:
         - Separation between Rust crates (physical units of compilation) and Rust modules (logical organization that doesn't really affect compilation).
         - No single global namespace for crates.
 
-            → Rust allows linking several versions of the same crate without naming conflicts.
+            -> Rust allows linking several versions of the same crate without naming conflicts.
 
-→ Quite insightful from the part of the author, however, it can require a bit of context.
+-> Quite insightful from the part of the author, however, it can require a bit of context.
 
 - Limitations of the state of affairs:
     - Module system is confusing (just after Lifetime, in a pre-2018 survey).
@@ -87,7 +87,7 @@ The 5Cs:
 - First point: Be more precise about Visibility.
     - The most important question about a Rust item: Can it be visible outside of the Compilation unit?
 
-        → 2 answers leading to 2 assumptions:
+        -> 2 answers leading to 2 assumptions:
         
         - Closed world (every usage of the item is known).
         - Open world (usages of the item are not knowable).
@@ -97,15 +97,15 @@ The 5Cs:
         > - Closed world may allow for aggressive optimization and flexibility, but I think it causes a lot of compilation overhead, as this requires informing a crate of external crates when we're compiling external crates, so the used crates cannot be compiled first.
         > - Open world offers the opposite.
 
-        **→ This should be reflected in the module system.**
+        **-> This should be reflected in the module system.**
         
-        - `pub` → Visible inside the whole Compilation unit, but not further (I thought this is visible to the whole world?)
-        - `export` (I don't recall Rust has this) or `pub*` → Visible to the whole world.
+        - `pub` -> Visible inside the whole Compilation unit, but not further (I thought this is visible to the whole world?)
+        - `export` (I don't recall Rust has this) or `pub*` -> Visible to the whole world.
         
         > Remarks: Things are a bit confusing here, a link to elaborate will be appreciated.
         > 
         > 
-        > → Hmm, it seems like this is only the author's desired state?
+        > -> Hmm, it seems like this is only the author's desired state?
         > 
     - These can be achieved in today's Rust with `pub(crate)`, `-Dunreachable_pub` + some tolerance for compiler's false positive.
 
@@ -136,7 +136,7 @@ The 5Cs:
         > Though, as Rust has namespaces, looking at `pub use submod::thing` doesn't tell you whether the thing is a type or a value, so this might not be a meaningful property after all.
         > 
 
-        → So having namespaces (like one for types and one for values) defeats the purpose of banning glob re-exports… The import should be explicitly spelling out if an imported item is a type or a value.
+        -> So having namespaces (like one for types and one for values) defeats the purpose of banning glob re-exports… The import should be explicitly spelling out if an imported item is a type or a value.
         
 - Second point: Improve module tree/directory structure mapping.
 
@@ -282,38 +282,32 @@ The 5Cs:
     ### Context
 
     An informal, unedited reflection (confidence ~0.5) on improving Rust's module system, written Nov 27, 2021.
-    
-    ---
-    
+
     ### What Rust Gets Right
     
     - Clear separation between **crates** (DAG) and **modules** (can be mutually dependent)
     - No global namespace - crate names live on dependency edges, not on crates themselves
     - Multiple versions of the same crate can coexist without naming conflicts
-    
-    ---
-    
+
     ### Problem 1: Visibility System
 
-    **Current issues:** `pub` is ambiguous about whether something is crate-internal or externally exported.
+    **Current issues**: `pub` is ambiguous about whether something is crate-internal or externally exported.
 
-    **Proposed fix - three explicit tiers:**
+    **Proposed fix - three explicit tiers**:
     
-    - No modifier → visible in current module only
-    - `pub` → visible anywhere within the crate
-    - `pub*` / `export` → visible to external crates
+    - No modifier -> visible in current module only
+    - `pub` -> visible anywhere within the crate
+    - `pub*` / `export` -> visible to external crates
 
-    **Other suggestions:**
+    **Other suggestions**:
     
     - `pub(in some::path)` doesn't pull its weight - too complex for too little benefit
     - `use` should only introduce names locally; re-exports should be explicit and separate
     - Consider banning glob re-exports so all names in a module are spelled out explicitly
-    
-    ---
-    
+
     ### Problem 2: Module Tree / Directory Structure
 
-    **Common pitfalls today:**
+    **Common pitfalls today**:
     
     - `mod foo;` accidentally placed in both `main.rs` and `lib.rs`
     - Inline `mod foo { }` blocks inside `foo.rs`
@@ -322,13 +316,13 @@ The 5Cs:
     - Source files accidentally left unlinked from the module tree
     - Tooling can't process crate files in parallel since the tree must be discovered incrementally
 
-    **Proposed fix - directory = compilation unit:**
+    **Proposed fix - directory = compilation unit**:
     
     - File paths map directly to module paths; no `mod foo;` or `mod foo {}` declarations needed
     - Replace `mod.rs` with `_modulename.rs` (sorts first alphabetically, uniquely fuzzy-findable)
     - `lib.rs` / `main.rs` replaced by a consistent naming convention
 
-    **Example structure:**
+    **Example structure**:
 
     ```
     src/
@@ -341,9 +335,7 @@ The 5Cs:
         dfa.rs
         nfa.rs
     ```
-    
-    ---
-    
+
     ### Problem 3: Conditional Compilation
     
     - Proposed: use `use`-based re-exports with `#[cfg(...)]` per file rather than cutting the AST

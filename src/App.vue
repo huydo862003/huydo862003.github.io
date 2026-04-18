@@ -1,7 +1,7 @@
 <template>
   <div class="layout">
     <NavBar
-      v-if="!isGraph"
+      v-if="!isGraph && !isEditor"
       @open-palette="palette?.show()"
     />
     <div class="workspace">
@@ -20,7 +20,7 @@
       </main>
       <GraphSidePanel ref="graphPanel" />
     </div>
-    <FooterBar v-if="!isGraph" />
+    <FooterBar v-if="!isGraph && !isEditor" />
     <CommandPalette
       ref="palette"
       @open-graph-side="graphPanel?.toggle()"
@@ -52,6 +52,10 @@ const {
 } = useKeyboard();
 
 const isGraph = computed(() => router.currentRoute.value.path === '/graph');
+const isEditor = computed(() => {
+  const path = router.currentRoute.value.path;
+  return path === '/edit' || path.endsWith('/edit');
+});
 
 function go (path: string) {
   palette.value?.close();

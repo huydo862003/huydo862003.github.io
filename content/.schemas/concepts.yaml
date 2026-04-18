@@ -1,0 +1,45 @@
+id: _meta.fileName
+displayName: title
+
+enums:
+  conceptStatus: [learning, reviewing, mastered]
+  tags:
+    plt: [type-theory, lambda-calculus, formal-system, logic, set-theory-relation, semantics, parsing, compilation, runtime, memory, concurrency]
+    design: [typography, layout, color, interaction, accessibility, systems, motion, research]
+
+fields:
+  title:
+    type: string
+    required: true
+    hidden: true
+    label: Title
+  journey:
+    type: string
+    ref: journeys
+    label: Journey
+  status:
+    type: enum
+    enum: conceptStatus
+    default: learning
+    label: Status
+  tags:
+    type: array
+    itemType: string
+    enum: tags
+    conditionOn: journey
+    label: Tags
+  books:
+    type: array
+    itemType: string
+    ref: books
+    label: Books
+  dependsOn:
+    type: array
+    itemType: string
+    ref: concepts
+    label: Depends On
+  blocks:
+    type: array
+    itemType: string
+    ref: concepts
+    label: Blocks

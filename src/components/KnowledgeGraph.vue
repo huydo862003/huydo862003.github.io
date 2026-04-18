@@ -84,7 +84,7 @@ import {
   useGraph,
 } from '@/composables/useGraph';
 
-const props = withDefaults(defineProps<{inPanel?: boolean}>(), {
+const props = withDefaults(defineProps<{ inPanel?: boolean }>(), {
   inPanel: false,
 });
 
@@ -130,9 +130,7 @@ let observer: IntersectionObserver | undefined;
 onMounted(() => {
   if (wrap.value) {
     observer = new IntersectionObserver(
-      ([
-        entry,
-      ]) => {
+      ([entry]) => {
         inView.value = entry.isIntersecting;
       },
       {

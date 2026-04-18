@@ -1,10 +1,15 @@
 #!/usr/bin/env node
 import {
+  resolve,
+} from 'node:path';
+import {
   input, select,
 } from '@inquirer/prompts';
 import {
-  scaffoldContent,
-} from './utils/scaffold';
+  ContentManager,
+} from '../core/contentManager';
+
+const manager = new ContentManager(resolve(import.meta.dirname, '../../content'));
 
 const author = await input({
   message: 'Author:',
@@ -15,10 +20,8 @@ const title = await input({
   validate: (v) => v.trim() !== '' || 'Required',
 });
 const journey = await input({
-  message: 'Journey slug (optional):',
-});
-const description = await input({
-  message: 'Description (optional):',
+  message: 'Journey slug:',
+  validate: (v) => v.trim() !== '' || 'Required',
 });
 const status = await select({
   message: 'Status:',
@@ -35,10 +38,8 @@ const status = await select({
   ],
 });
 
-scaffoldContent({
-  contentDir: 'concepts',
-  title,
+const path = manager.createConcept(journey, title, {
   author,
-  frontMatter: `title: "${title}"\njourney: "${journey}"\nstatus: ${status}\ntags: []\nbooks: []\ndependsOn: []\nblocks: []`,
-  body: description || undefined,
+  status,
 });
+console.log(`Created: ${path}`);

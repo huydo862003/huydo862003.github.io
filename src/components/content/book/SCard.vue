@@ -84,15 +84,13 @@ const to = computed(() => {
 
 const showMeta = computed(() => 0 < props.config.metaKeys?.length ?? 0);
 const hasMeta = computed(() => {
-  const metaKeys = props.config.metaKeys ?? [
-  ];
+  const metaKeys = props.config.metaKeys ?? [];
   const data = props.data as Record<string, any>;
   return metaKeys.some((key) => data[key as string]);
 });
 
 const metaDisplay = computed(() => {
-  const metaKeys = props.config.metaKeys ?? [
-  ];
+  const metaKeys = props.config.metaKeys ?? [];
   const data = props.data as Record<string, any>;
   const result: Record<string, any> = {};
 
@@ -105,8 +103,7 @@ const metaDisplay = computed(() => {
 
 const children = computed(() => {
   const resolver = props.config.childrenResolver;
-  if (!resolver) return [
-  ];
+  if (!resolver) return [];
   return resolver(props.data);
 });
 

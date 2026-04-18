@@ -2,13 +2,11 @@
 published: true
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Chapter 2. evaluation"
+title: Chapter 2. evaluation
 author: Shriram Krishnamurthi
 date: ""
 journey: plt
-tags:
-  - PLT
-  - chapter
+tags: []
 concepts:
   - evaluator
   - compiler-interpreter
@@ -20,66 +18,86 @@ concepts:
 parent: programming-languages-application-and-interpretation
 children: []
 ---
-
 # Overview
 
-- This document covers **SImPl** (Standard Implementation Plan) - a systematic approach to building programming language Evaluators.
-- The core idea:
-    1. Represent programs as data.
-    2. Write programs that process that data.
+* This document covers **SImPl** (Standard Implementation Plan) - a systematic approach to building programming language Evaluators.
+
+* The core idea:
+
+  1. Represent programs as data.
+  2. Write programs that process that data.
 
 # Evaluation on Paper
 
 ## Two kinds of Evaluators
 
-- An **evaluator** reduces programs to values.
-- There are two fundamental strategies:
-    - **Interpreter**:
-        - Directly simulate program execution.
-        - Take a program, produces a value.
-    - **Compiler**:
-        - Transform a program into another program in a **target language**.
-        - That output must then be evaluated further (interpreted or compiled again).
-    - **Hybrid** systems combine both.
-        
-        Example: **JIT (Just-In-Time) compilation** starts interpreting, then compiles frequently-used code.
-:::tip
-The phrase "**interpreted language**" or "**compiled language**" is meaningless. Languages do not mandate implementation strategy - implementers choose freely.
-:::
+* An **evaluator** reduces programs to values.
+
+* There are two fundamental strategies:
+
+  * **Interpreter**:
+
+    * Directly simulate program execution.
+
+    * Take a program, produces a value.
+
+  * **Compiler**:
+
+    * Transform a program into another program in a **target language**.
+
+    * That output must then be evaluated further (interpreted or compiled again).
+
+  * **Hybrid** systems combine both.
+
+    Example: **JIT (Just-In-Time) compilation** starts interpreting, then compiles frequently-used code.
+    :::tip
+    The phrase "**interpreted language**" or "**compiled language**" is meaningless. Languages do not mandate implementation strategy - implementers choose freely.
+    :::
 
 A **REPL** (Read-Eval-Print Loop) is just an interactive interface; it reveals nothing about underlying implementation.
 
 # Simulating evaluation by hand
 
-- When a function is called:
-    - **Formal parameter**s: The variable names declared in the function definition.
-    - Actual parameter/Arguments: The expressions passed at the call site.
-- **Evaluation strategy** determines when arguments are evaluated:
-    - Strict/Eager evaluation strategy: Evaluate arguments to values before entering the function body. SMoL uses this.
-    - Lazy evaluation strategy: Defer argument evaluation until the value is actually needed.
-- **Evaluation order** determines sequencing:
-    - Sequential evaluation: Finish one computation before starting another.
-    - **Parallel evaluation**: Evaluate multiple expressions simultaneously.
-    - SMoL uses sequential, left-to-right order.
+* When a function is called:
+
+  * **Formal parameter**s: The variable names declared in the function definition.
+
+  * Actual parameter/Arguments: The expressions passed at the call site.
+
+* **Evaluation strategy** determines when arguments are evaluated:
+
+  * Strict/Eager evaluation strategy: Evaluate arguments to values before entering the function body. SMoL uses this.
+
+  * Lazy evaluation strategy: Defer argument evaluation until the value is actually needed.
+
+* **Evaluation order** determines sequencing:
+
+  * Sequential evaluation: Finish one computation before starting another.
+
+  * **Parallel evaluation**: Evaluate multiple expressions simultaneously.
+
+  * SMoL uses sequential, left-to-right order.
 
 # Representing programs
 
 ## Surface syntax vs abstract syntax
 
-- Concrete/Surface syntax: The textual form programmers write.
-    - Examples: `1 + 2`, `(+ 1 2)`, visual blocks in Scratch.
-    - Important for human factors but distracting when studying language semantics.
-- Structural/Abstract syntax: The essential structure of a program, stripped of superficial details.
-:::tip
-Multiple Concrete/Surface syntaxes can map to identical Structural/Abstract syntax.
-:::
+* Concrete/Surface syntax: The textual form programmers write.
+
+  * Examples: `1 + 2`, `(+ 1 2)`, visual blocks in Scratch.
+
+  * Important for human factors but distracting when studying language semantics.
+
+* Structural/Abstract syntax: The essential structure of a program, stripped of superficial details.
+  :::tip
+  Multiple Concrete/Surface syntaxes can map to identical Structural/Abstract syntax.
+  :::
 
 ## Abstract syntax trees
 
-- [Abstract syntax tree (AST)](/journeys/plt/concepts/abstract-syntax-tree-ast): A tree-structured data representation of abstract syntax.
-    
-    → Analogous to Sentence diagram in linguistics - turning linear text into hierarchical structure.
-    
+* [Abstract syntax tree (AST)](/journeys/plt/concepts/abstract-syntax-tree-ast): A tree-structured data representation of abstract syntax.
+
+  → Analogous to Sentence diagram in linguistics - turning linear text into hierarchical structure.
 
 ```racket
 #lang plai-typed
@@ -89,20 +107,26 @@ Multiple Concrete/Surface syntaxes can map to identical Structural/Abstract synt
   [plusE (left : Exp) (right : Exp)])
 ```
 
-- Key properties:
-    - Ambiguity (like operator precedence) must be resolved before AST construction.
-    - Operations become **constructor** names, not parameters.
-    - The AST ignores which Concrete/Surface syntax was used.
-:::tip
-[Abstract syntax tree (AST)](/journeys/plt/concepts/abstract-syntax-tree-ast)s let us **represent programs in programs**.
-:::
+* Key properties:
+
+  * Ambiguity (like operator precedence) must be resolved before AST construction.
+
+  * Operations become **constructor** names, not parameters.
+
+  * The AST ignores which Concrete/Surface syntax was used.
+    :::tip
+    [Abstract syntax tree (AST)](/journeys/plt/concepts/abstract-syntax-tree-ast)s let us **represent programs in programs**.
+    :::
 
 → Builds on foundational work by:
 
-- Gödel (encoding).
-- Turing (universal machine).
-- von Neumann (stored program computer).
-- McCarthy (metacircular interpreter).
+* Gödel (encoding).
+
+* Turing (universal machine).
+
+* von Neumann (stored program computer).
+
+* McCarthy (metacircular interpreter).
 
 # Evaluating arithmetic
 
@@ -117,85 +141,97 @@ Multiple Concrete/Surface syntaxes can map to identical Structural/Abstract synt
     [plusE (l r) (+ (calc l) (calc r))]))
 ```
 
-- Type signature: `Exp -> Number`.
-- The evaluator pattern-matches on AST constructors:
-    - For **`num`**: Return the wrapped number directly.
-    - For **`plus`**: Recursively evaluate both sub-expressions, then add results.
-- By using the Host language's primitives (like `+`), we inherit its semantics.
-    - Pros: Powerful (reuse existing functionality).
-    - Cons: Dangerous (we might accidentally adopt unwanted behavior like floating-point quirks).
+* Type signature: `Exp -> Number`.
+
+* The evaluator pattern-matches on AST constructors:
+
+  * For **`num`**: Return the wrapped number directly.
+
+  * For **`plus`**: Recursively evaluate both sub-expressions, then add results.
+
+* By using the Host language's primitives (like `+`), we inherit its semantics.
+
+  * Pros: Powerful (reuse existing functionality).
+
+  * Cons: Dangerous (we might accidentally adopt unwanted behavior like floating-point quirks).
 
 # Parsing
 
-- Parsing: Converting Concrete/Surface syntax into [Abstract syntax tree (AST)](/journeys/plt/concepts/abstract-syntax-tree-ast)s.
-- S-expression/Symbolic expression: A parenthetical syntax providing a balance between human convenience and implementation simplicity.
-- SImPl picks a Concrete/Surface syntax that is **S-expression/Symbolic expression**:
-    - Strike a reasonable balance between **convenience and simplicity**.
-    - Have special support in The Plait programming language.
-    - Made convenient to work with in Racket.
-    
-    ```racket
-    1
-    (+ 1 2)
-    (+ 1 (+ 2 3))
-    ```
-    
-- Convention (that Racket doesn't care about, because it treats `()`, `[]`, and `{}` interchangeably): **Programs are represented using `{}` instead of `()`.**
-    
-    ```racket
-    1
-    {+ 1 2}
-    {+ 1 {+ 2 3}}
-    ```
-    
-- In The Plait programming language:
-    - A special data type `s-expression`.
-    - A value of this data type is preceded by a **back-tick**.
-    
-    ```racket
-    #lang plai-typed
-    
-    `1 ; number s-expression
-    `{1 + 2} ; list s-expression
-    `+ ; symbol
-    ```
-    
-- In The Plait programming language, to check the specific kind of an `s-expression`:
-    
-    ```racket
-    #lang plai-typed
-    
-    > (s-exp-number? `1)
-    - boolean
-    #t
-    
-    > (s-exp-list? `{1 + 2})
-    - boolean
-    #t
-    
-    > (s-exp-symbol? `+)
-    - boolean
-    #t
-    ```
-    
-- The `s-expression` values are wrappers around the actual data, this data can be accessed by:
-    
-    ```racket
-    #lang plai-typed
-    
-    > (s-exp->number `1)
-    - number
-    1
-    
-    > (s-exp->list `{+ 1 2})
-    - (listof s-expression)
-    '(+ 1 2)
-    
-    > (s-exp->symbol `+)
-    - symbol
-    '+
-    ```
-    
+* Parsing: Converting Concrete/Surface syntax into [Abstract syntax tree (AST)](/journeys/plt/concepts/abstract-syntax-tree-ast)s.
+
+* S-expression/Symbolic expression: A parenthetical syntax providing a balance between human convenience and implementation simplicity.
+
+* SImPl picks a Concrete/Surface syntax that is **S-expression/Symbolic expression**:
+
+  * Strike a reasonable balance between **convenience and simplicity**.
+
+  * Have special support in The Plait programming language.
+
+  * Made convenient to work with in Racket.
+
+  ```racket
+  1
+  (+ 1 2)
+  (+ 1 (+ 2 3))
+  ```
+
+* Convention (that Racket doesn't care about, because it treats `()`, `[]`, and `{}` interchangeably): **Programs are represented using** **`{}`** **instead of** **`()`.**
+
+  ```racket
+  1
+  {+ 1 2}
+  {+ 1 {+ 2 3}}
+  ```
+
+* In The Plait programming language:
+
+  * A special data type `s-expression`.
+
+  * A value of this data type is preceded by a **back-tick**.
+
+  ```racket
+  #lang plai-typed
+
+  `1 ; number s-expression
+  `{1 + 2} ; list s-expression
+  `+ ; symbol
+  ```
+
+* In The Plait programming language, to check the specific kind of an `s-expression`:
+
+  ```racket
+  #lang plai-typed
+
+  > (s-exp-number? `1)
+  - boolean
+  #t
+
+  > (s-exp-list? `{1 + 2})
+  - boolean
+  #t
+
+  > (s-exp-symbol? `+)
+  - boolean
+  #t
+  ```
+
+* The `s-expression` values are wrappers around the actual data, this data can be accessed by:
+
+  ```racket
+  #lang plai-typed
+
+  > (s-exp->number `1)
+  - number
+  1
+
+  > (s-exp->list `{+ 1 2})
+  - (listof s-expression)
+  '(+ 1 2)
+
+  > (s-exp->symbol `+)
+  - symbol
+  '+
+  ```
 
 ## Parser structure
 
@@ -217,26 +253,31 @@ Multiple Concrete/Surface syntaxes can map to identical Structural/Abstract synt
                  (parse (third l)))]))]))
 ```
 
-- A parser:
-    - Check s-expression type.
-    - Extract components.
-    - Recursively build AST nodes.
-    - Error handling catches malformed input.
-- Test cases:
-    
-    ```racket
-    #lang plai-typed
-    
-    ; Positive tests
-    (test (parse `1) (num 1))
-    (test (parse `2.3) (num 2.3))
-    (test (parse `{+ 1 2}) (plus (num 1) (num 2)))
-    
-    ; Negative tests
-    (test/exn (parse `{1 + 2}) "Expect a symbol as the first term")
-    ```
-    
-- The parser composes with the evaluator: `run = calc ∘ parse`.
+* A parser:
+
+  * Check s-expression type.
+
+  * Extract components.
+
+  * Recursively build AST nodes.
+
+  * Error handling catches malformed input.
+
+* Test cases:
+
+  ```racket
+  #lang plai-typed
+
+  ; Positive tests
+  (test (parse `1) (num 1))
+  (test (parse `2.3) (num 2.3))
+  (test (parse `{+ 1 2}) (plus (num 1) (num 2)))
+
+  ; Negative tests
+  (test/exn (parse `{1 + 2}) "Expect a symbol as the first term")
+  ```
+
+* The parser composes with the evaluator: `run = calc ∘ parse`.
 
 # Evaluating conditionals
 
@@ -244,13 +285,19 @@ Add conditionals to the current `parse` function: An `if` expression with 3 part
 
 **Design space** - Even simple conditionals require multiple design decisions:
 
-- **Test expression values**: What can appear in the condition?
-    - **Strict approach**: Must be Boolean.
-    - **Permissive approach**: Allow **truthy/falsy** values. Different languages disagree wildly on which values are falsy (0, empty string, null, empty list, etc.).
-    - Scheme's elegant compromise: Only `#false` is falsy; everything else is truthy.
-- **Branch types**: Are branches statements (no return value) or expressions (produce values)?
-    - Some languages allow 2 syntactic forms: Ternary operator (for expressions) and `if` (for statements).
-- **Branch value agreement**: Must both branches produce the same type?
+* **Test expression values**: What can appear in the condition?
+
+  * **Strict approach**: Must be Boolean.
+
+  * **Permissive approach**: Allow **truthy/falsy** values. Different languages disagree wildly on which values are falsy (0, empty string, null, empty list, etc.).
+
+  * Scheme's elegant compromise: Only `#false` is falsy; everything else is truthy.
+
+* **Branch types**: Are branches statements (no return value) or expressions (produce values)?
+
+  * Some languages allow 2 syntactic forms: Ternary operator (for expressions) and `if` (for statements).
+
+* **Branch value agreement**: Must both branches produce the same type?
 
 ```racket
 #lang plai-typed
@@ -320,10 +367,13 @@ Add conditionals to the current `parse` function: An `if` expression with 3 part
 
 ## Evaluating local binding
 
-- Binding: Associating a name with a value.
-- Scope : The region of a program where a binding is visible.
-- **Local binding**: A binding limited to a specific scope.
-- Shadowing: An inner binding temporarily hides an outer binding of the same name.
+* Binding: Associating a name with a value.
+
+* Scope : The region of a program where a binding is visible.
+
+* **Local binding**: A binding limited to a specific scope.
+
+* Shadowing: An inner binding temporarily hides an outer binding of the same name.
 
 ### The problem with conventional syntax
 
@@ -352,10 +402,13 @@ BNF grammar:
          | <var>
 ```
 
-- The **`let1`** construct has three parts: a **variable name**, a **value expression**, and a **body expression**.
-- The **`var`** production allows variable usage. Without this, we can bind but not use variables.
-- The first `<expr>` in let1 is evaluated and bound to `<var>`.
-- The second `<expr>` is the body where the binding is visible.
+* The **`let1`** construct has three parts: a **variable name**, a **value expression**, and a **body expression**.
+
+* The **`var`** production allows variable usage. Without this, we can bind but not use variables.
+
+* The first `<expr>` in let1 is evaluated and bound to `<var>`.
+
+* The second `<expr>` is the body where the binding is visible.
 
 ### The meaning of local binding
 
@@ -398,14 +451,17 @@ x
 
 ## Static scoping
 
-- **Static scope** (or **lexical scope**): A variable's binding is determined by its **position in the source program**, not by the order of execution. You can determine bindings by examining program structure alone.
-- **Dynamic scope**: A variable's binding depends on the **runtime execution order**. The same variable reference might resolve differently depending on execution path.
+* **Static scope** (or **lexical scope**): A variable's binding is determined by its **position in the source program**, not by the order of execution. You can determine bindings by examining program structure alone.
+
+* **Dynamic scope**: A variable's binding depends on the **runtime execution order**. The same variable reference might resolve differently depending on execution path.
 
 **Pitfall**: Dynamic scope is **unambiguously wrong** in language design.
 
-- Original Lisp had it; Scheme fixed it over a decade later.
-- Early Python and JavaScript had forms of dynamic scope. Removing it was a herculean effort.
-- Those who don't know history are doomed to repeat it.
+* Original Lisp had it; Scheme fixed it over a decade later.
+
+* Early Python and JavaScript had forms of dynamic scope. Removing it was a herculean effort.
+
+* Those who don't know history are doomed to repeat it.
 
 **Why dynamic scope is wrong** - consider this progression:
 
@@ -437,9 +493,11 @@ With dynamic scope, the inner binding might affect the outer `x`. Now consider:
 
 **Consequence**: With dynamic scope, you cannot determine binding structure just by looking at the program. Neither can your tools:
 
-- IDEs cannot draw arrows between bound and binding instances.
-- Refactoring tools cannot safely rename variables.
-- See Appendix 2 of research papers on Python semantics for examples of broken tooling.
+* IDEs cannot draw arrows between bound and binding instances.
+
+* Refactoring tools cannot safely rename variables.
+
+* See Appendix 2 of research papers on Python semantics for examples of broken tooling.
 
 **Static scope is a defining characteristic of SMoL.**
 
@@ -447,16 +505,21 @@ With dynamic scope, the inner binding might affect the outer `x`. Now consider:
 
 **Substitution**: Textually replacing variables with values.
 
-- Correctly defines semantics.
-- **Inefficient**: Time linear in program size for each binding.
-- Requires constantly rewriting program text.
-- Not how real implementations work.
+* Correctly defines semantics.
+
+* **Inefficient**: Time linear in program size for each binding.
+
+* Requires constantly rewriting program text.
+
+* Not how real implementations work.
 
 **Environment**: A **space-time tradeoff** that caches pending substitutions.
 
-- A data structure mapping names to values (key-value pairs).
-- When encountering a **binding**: extend the environment.
-- When encountering a **variable**: look it up.
+* A data structure mapping names to values (key-value pairs).
+
+* When encountering a **binding**: extend the environment.
+
+* When encountering a **variable**: look it up.
 
 **Pitfall**: The environment is a **cache**. It should only improve performance, not change meaning. Substitution still defines **what answer** to produce; the environment is **how** we produce it efficiently.
 
@@ -592,18 +655,27 @@ Key cases:
 
 ## Core concepts
 
-- Introduction rule: A construct that **creates** a new kind of value.
-- Elimination rule: A construct that **uses/consumes** a value.
-- Lambda expression: A function without an inherent name.
-- Application/Function call: Applying a function to an argument.
-- Closure: A function value that stores its **defining Environment**.
-- Free variable: A variable used in an expression but not bound within it.
-- Closed term: An expression with no unbound (free) variables.
+* Introduction rule: A construct that **creates** a new kind of value.
 
-- Procedure : An encapsulation that does **not** produce a value; must have side-effects to be useful.
-- Function: An encapsulation that **always** produces a value (may be expected to have no side-effects).
-- Pure: For a given input, always produces the same output, with no side-effects.
-- Side-effect: A change to the system visible from outside the function body (e.g., modifying external variables, network I/O, file changes).
+* Elimination rule: A construct that **uses/consumes** a value.
+
+* Lambda expression: A function without an inherent name.
+
+* Application/Function call: Applying a function to an argument.
+
+* Closure: A function value that stores its **defining Environment**.
+
+* Free variable: A variable used in an expression but not bound within it.
+
+* Closed term: An expression with no unbound (free) variables.
+
+* Procedure : An encapsulation that does **not** produce a value; must have side-effects to be useful.
+
+* Function: An encapsulation that **always** produces a value (may be expected to have no side-effects).
+
+* Pure: For a given input, always produces the same output, with no side-effects.
+
+* Side-effect: A change to the system visible from outside the function body (e.g., modifying external variables, network I/O, file changes).
 
 **Note**: The procedure/function distinction has been scrambled over the years; people now use the terms interchangeably.
 
@@ -611,9 +683,11 @@ Key cases:
 
 Many languages have **top-level functions** only (like C). Most modern languages support:
 
-- **Nested functions**: Functions defined inside other functions.
-- **Returning functions**: Functions as return values.
-- **Anonymous functions**: Functions without names.
+* **Nested functions**: Functions defined inside other functions.
+
+* **Returning functions**: Functions as return values.
+
+* **Anonymous functions**: Functions without names.
 
 **Key insight**: With anonymous functions (lambdas) and `let1`, we don't need named function syntax:
 
@@ -636,9 +710,11 @@ BNF grammar extension:
          | {<expr> <expr>}
 ```
 
-- **`lam`** introduces new functions (takes parameter name and body).
-- **Application** `{<expr> <expr>}` eliminates functions (takes function expression and argument expression).
-- We assume **single-argument functions** for simplicity.
+* **`lam`** introduces new functions (takes parameter name and body).
+
+* **Application** `{<expr> <expr>}` eliminates functions (takes function expression and argument expression).
+
+* We assume **single-argument functions** for simplicity.
 
 **Exercise awareness**: Extending to multiple arguments raises issues - how to handle different numbers of arguments, parameter/argument count mismatch, etc.
 
@@ -711,14 +787,14 @@ Both branches produce `funV` with no distinguishing information. We cannot perfo
 
 ## Evaluating functions (naive approach)
 
-**`lamE` case** - straightforward:
+**`lamE`** **case** - straightforward:
 
 ```racket
 [lamE (v b) (funV v b)]
 
 ```
 
-**`appE` case** - the process:
+**`appE`** **case** - the process:
 
 1. Evaluate the **function position** to get a value.
 2. Evaluate the **argument position** (eager evaluation, SMoL style).
@@ -743,7 +819,6 @@ At this point, we have a **full programming language** in roughly **20 lines of 
 **Alan Kay quote** (Turing Award winner):
 
 > "Yes, that was the big revelation to me when I was in graduate school-when I finally understood that the half page of code on the bottom of page 13 of the Lisp 1.5 manual was Lisp in itself. These were 'Maxwell's Equations of Software!' This is the whole world of programming in a few lines that I can put my hand over."
-> 
 
 The power of an interpreter: it lets you **exploit features already built** in the host language instead of reimplementing everything from scratch.
 
@@ -760,8 +835,9 @@ The power of an interpreter: it lets you **exploit features already built** in t
       {f 10}}}}
 ```
 
-- **Expected** (static scope): Returns **1**. The `x` in `f` refers to the `x` when `f` was defined.
-- **Broken** (dynamic scope): Returns **2**. The `x` in `f` picks up the most recent binding.
+* **Expected** (static scope): Returns **1**. The `x` in `f` refers to the `x` when `f` was defined.
+
+* **Broken** (dynamic scope): Returns **2**. The `x` in `f` picks up the most recent binding.
 
 **Test case 2** (even worse):
 
@@ -771,8 +847,9 @@ The power of an interpreter: it lets you **exploit features already built** in t
     {f 10}}}
 ```
 
-- **Expected**: **Unbound identifier error** (`x` not defined when `f` is created).
-- **Broken interpreter**: Returns **1** (finds `x` from later binding).
+* **Expected**: **Unbound identifier error** (`x` not defined when `f` is created).
+
+* **Broken interpreter**: Returns **1** (finds `x` from later binding).
 
 **This is dynamic scope** - the binding depends on the runtime call stack, not the source position.
 
@@ -825,8 +902,9 @@ A **closure** stores the environment at function creation time.
 
 **Terminology**:
 
-- Closed term: An expression with no unbound variables.
-- The Closure "closes" over the defining environment, ensuring free variables in the body can get values from the stored environment.
+* Closed term: An expression with no unbound variables.
+
+* The Closure "closes" over the defining environment, ensuring free variables in the body can get values from the stored environment.
 
 **Cormac Flanagan quote**: "Save the environment! Create a closure today!"
 
@@ -862,10 +940,13 @@ A **closure** stores the environment at function creation time.
  4}
 ```
 
-- The lambda captures `x = 3` in its closure.
-- The let1 evaluates to the closure (the closure **escapes** the let1 scope).
-- This closure is then applied to 4.
-- Result: **7** (uses stored `x = 3`).
+* The lambda captures `x = 3` in its closure.
+
+* The let1 evaluates to the closure (the closure **escapes** the let1 scope).
+
+* This closure is then applied to 4.
+
+* Result: **7** (uses stored `x = 3`).
 
 **Another test** - parameter shadowing:
 
@@ -875,7 +956,11 @@ A **closure** stores the environment at function creation time.
  5}
 ```
 
-- The lambda captures environment where `y = 3`.
-- But the lambda's **own parameter** is also `y`.
-- When applied to 5, the parameter `y` shadows the captured `y`.
-- Result: **6** (not 4).
+* The lambda captures environment where `y = 3`.
+
+* But the lambda's **own parameter** is also `y`.
+
+* When applied to 5, the parameter `y` shadows the captured `y`.
+
+* Result: **6** (not 4).
+

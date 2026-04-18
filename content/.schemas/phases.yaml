@@ -1,0 +1,33 @@
+id: _meta.fileName
+displayName: title
+enums:
+  phaseStatus: [active, on-hold, completed]
+fields:
+  title:
+    type: string
+    required: true
+    hidden: true
+    label: Title
+  journey:
+    type: string
+    ref: journeys
+    label: Journey
+  status:
+    type: enum
+    enum: phaseStatus
+    default: on-hold
+    label: Status
+  order:
+    type: number
+    default: 0
+    label: Order
+  books:
+    type: array
+    itemType: string
+    ref: books
+    label: Books
+  concepts:
+    type: array
+    itemType: string
+    ref: concepts
+    label: Concepts

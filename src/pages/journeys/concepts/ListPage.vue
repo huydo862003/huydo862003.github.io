@@ -230,9 +230,7 @@ const filteredConcepts = computed(() =>
 
 const sortedConcepts = computed(() => {
   if (!sortKey.value) return filteredConcepts.value;
-  const list = [
-    ...filteredConcepts.value,
-  ];
+  const list = [...filteredConcepts.value];
   const dir = sortAsc.value ? 1 : -1;
   if (sortKey.value === 'status') {
     list.sort((a, b) => dir * (statusOrder[a.status] - statusOrder[b.status]) || dir * a.title.localeCompare(b.title));
@@ -266,8 +264,7 @@ const {
 watch(selected, () => reloadContent());
 
 const bookItems = computed(() =>
-  (expanded.value?.books ?? [
-  ]).map((b) => ({
+  (expanded.value?.books ?? []).map((b) => ({
     value: b,
     label: formatSlug(b),
     to: `/journeys/${slug.value}/books/${b}`,

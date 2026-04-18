@@ -94,14 +94,12 @@ const hasActive = computed(() => props.modelValues.some((g) => 0 < g.length));
 const totalActive = computed(() => props.modelValues.reduce((sum, g) => sum + g.length, 0));
 
 const activeChips = computed(() => {
-  const chips: {gi: number;
+  const chips: { gi: number;
     value: string;
     label: string;
-    colorClass?: string;}[] = [
-  ];
+    colorClass?: string; }[] = [];
   for (let gi = 0; gi < props.groups.length; gi++) {
-    for (const value of props.modelValues[gi] ?? [
-    ]) {
+    for (const value of props.modelValues[gi] ?? []) {
       const opt = props.groups[gi].find((o) => o.value === value);
       if (opt) chips.push({
         gi,
@@ -119,11 +117,8 @@ function isSelected (gi: number, value: string): boolean {
 }
 
 function toggle (gi: number, value: string) {
-  const next = props.modelValues.map((g) => [
-    ...g,
-  ]);
-  const group = next[gi] ?? [
-  ];
+  const next = props.modelValues.map((g) => [...g]);
+  const group = next[gi] ?? [];
   const idx = group.indexOf(value);
   if (0 <= idx) {
     group.splice(idx, 1);

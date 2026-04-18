@@ -1,10 +1,15 @@
 #!/usr/bin/env node
 import {
+  resolve,
+} from 'node:path';
+import {
   input,
 } from '@inquirer/prompts';
 import {
-  scaffoldContent,
-} from './utils/scaffold';
+  ContentManager,
+} from '../core/contentManager';
+
+const manager = new ContentManager(resolve(import.meta.dirname, '../../content'));
 
 const author = await input({
   message: 'Author:',
@@ -17,12 +22,9 @@ const title = await input({
 const description = await input({
   message: 'Description (optional):',
 });
-const date = new Date().toISOString()
-  .slice(0, 10);
 
-scaffoldContent({
-  contentDir: 'thoughts',
-  title,
+const path = manager.createThought(title, {
   author,
-  frontMatter: `title: "${title}"\ndate: ${date}\ndescription: "${description}"\ntags: []\narchived: false\nconcepts: []\njourneys: []`,
+  description: description || undefined,
 });
+console.log(`Created: ${path}`);

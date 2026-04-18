@@ -36,10 +36,9 @@ export function useSeo ({
   useHead({
     title: fullTitle,
     meta: computed(() => {
-      const m: {name?: string;
+      const m: { name?: string;
         property?: string;
-        content: string;}[] = [
-      ];
+        content: string; }[] = [];
 
       if (desc.value) {
         m.push({

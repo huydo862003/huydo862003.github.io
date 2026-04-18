@@ -2,13 +2,11 @@
 published: true
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Chapter 1. introduction"
+title: Chapter 1. introduction
 author: Benjamin C. Pierce
 date: ""
 journey: plt
-tags:
-  - PLT
-  - chapter
+tags: []
 concepts:
   - type-system
   - hoare-logic

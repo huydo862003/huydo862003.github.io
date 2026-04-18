@@ -1,14 +1,12 @@
 ---
 published: true
-createdAt: 2026-03-28
-updatedAt: 2026-04-12
+createdAt: "2026-03-28T00:00:00.000Z"
+updatedAt: "2026-04-12T00:00:00.000Z"
 title: Chapter 1. abstract syntax
 author: Robert Harper
 date: ""
 journey: plt
-tags:
-  - PLT
-  - chapter
+tags: []
 concepts:
   - operator-arity
   - sort
@@ -29,7 +27,6 @@ parent: part-i-judgments-and-rules
 children: []
 aliases: []
 ---
-
 - Programming languages describe **computations** for **humans and machines**.
 - Syntax explains how phrases form programs, but "syntax" actually has layers:
     - **Concrete (surface) syntax**: how code is written/displayed as character strings (ASCII/Unicode).

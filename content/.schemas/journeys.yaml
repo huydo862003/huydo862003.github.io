@@ -1,0 +1,26 @@
+id: _meta.fileName
+displayName: title
+
+enums:
+  journeyStatus: [active, paused, completed]
+  tags: [UI, UX, accessibility, design-systems, formal-methods, lambda-calculus, type-theory]
+
+fields:
+  title:
+    type: string
+    required: true
+    hidden: true
+    label: Title
+  description:
+    type: string
+    label: Description
+  status:
+    type: enum
+    enum: journeyStatus
+    default: active
+    label: Status
+  tags:
+    type: array
+    itemType: string
+    enum: tags
+    label: Tags

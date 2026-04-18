@@ -12,6 +12,7 @@ export default [
       '*.config.js',
       '*.config.ts',
       'content-collections.ts',
+      'dev/core/__generated__',
     ],
   },
   ...config,

@@ -1,0 +1,56 @@
+id: _meta.fileName
+displayName: title
+
+enums:
+  tags:
+    plt: [Coq, Rocq, Scheme, closures, compilers, continuation-passing style, formal verification, interpreters, lambda calculus, language design, operational semantics, programming languages, proof theory, semantics, textbook, theorem proving, type systems, type theory]
+    design: [HCI, UX, affordances, design, mental models, user-centered design]
+
+fields:
+  title:
+    type: string
+    required: true
+    hidden: true
+    label: Title
+  author:
+    type: string
+    label: Author
+  date:
+    type: string
+    label: Publication Date
+  journey:
+    type: string
+    ref: journeys
+    label: Journey
+  description:
+    type: string
+    label: Description
+  isbn:
+    type: string
+    label: ISBN
+  url:
+    type: string
+    label: URL
+  cover:
+    type: string
+    label: Cover Image URL
+  tags:
+    type: array
+    itemType: string
+    enum: tags
+    conditionOn: journey
+    label: Tags
+  concepts:
+    type: array
+    itemType: string
+    ref: concepts
+    label: Concepts
+  parent:
+    type: string
+    ref: books
+    label: Parent Book
+  children:
+    type: array
+    itemType: string
+    ref: books
+    label: Chapters

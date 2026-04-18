@@ -2,14 +2,17 @@
 published: true
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Part i. untyped systems"
-author: "Benjamin C. Pierce"
+title: Part i. untyped systems
+author: Benjamin C. Pierce
 date: ""
 journey: plt
-tags: ["PLT", "chapter"]
+tags: []
 concepts: []
-parent: "types-and-programming-languages"
-children: ["chapter-3-untyped-arithmetic-expressions", "chapter-4-an-ml-implementation-of-arithmetic-expressions", "chapter-5-the-untyped-pure-lambda-calculus"]
+parent: types-and-programming-languages
+children:
+  - chapter-3-untyped-arithmetic-expressions
+  - chapter-4-an-ml-implementation-of-arithmetic-expressions
+  - chapter-5-the-untyped-pure-lambda-calculus
 ---
 
 

@@ -6,13 +6,11 @@ title: "Programming languages: application and interpretation"
 author: Shriram Krishnamurthi
 date: "2012"
 journey: plt
-description: "An accessible introduction to programming language design through implementation. Builds interpreters from scratch, covering closures, objects, mutation, and types using the SMoL (Standard Model of Languages) framework."
+description: An accessible introduction to programming language design through implementation. Builds interpreters from scratch, covering closures, objects, mutation, and types using the SMoL (Standard Model of Languages) framework.
 isbn: ""
-url: "https://www.plai.org/"
+url: https://www.plai.org/
 cover: ""
 tags:
-  - PLT
-  - textbook
   - interpreters
   - language design
   - programming languages

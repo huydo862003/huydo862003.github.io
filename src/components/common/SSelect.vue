@@ -31,8 +31,8 @@ import SDropdown from './SDropdown.vue';
 
 const props = defineProps<{
   modelValue: string;
-  options: {value: string;
-    label: string;}[];
+  options: { value: string;
+    label: string; }[];
   placeholder?: string;
 }>();
 

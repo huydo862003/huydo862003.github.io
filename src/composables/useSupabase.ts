@@ -157,8 +157,7 @@ export function useReviewSync () {
       }
 
       const state: Record<string, unknown> = {};
-      for (const row of data ?? [
-      ]) {
+      for (const row of data ?? []) {
         state[row.slug] = {
           easeFactor: row.ease_factor,
           interval: row.interval,

@@ -21,7 +21,7 @@ let mdInstance: MarkdownItType | undefined;
 async function getMd () {
   if (mdInstance) return mdInstance;
 
-  const LANG_IMPORTS: [string, () => Promise<{default: unknown}>][] = [
+  const LANG_IMPORTS: [string, () => Promise<{ default: unknown }>][] = [
     [
       'haskell',
       () => import('highlight.js/lib/languages/haskell'),
@@ -92,9 +92,7 @@ async function getMd () {
   ]);
 
   type LanguageFn = Parameters<typeof hljs.registerLanguage>[1];
-  LANG_IMPORTS.forEach(([
-    name,
-  ], i) => hljs.registerLanguage(name, (langMods[i] as {default: LanguageFn}).default));
+  LANG_IMPORTS.forEach(([name], i) => hljs.registerLanguage(name, (langMods[i] as { default: LanguageFn }).default));
   hljs.registerAliases([
     'coq',
     'rocq',
@@ -140,7 +138,7 @@ async function getMd () {
   ];
   for (const type of CALLOUT_TYPES) {
     md.use(container, type, {
-      render (tokens: {nesting: number}[], idx: number) {
+      render (tokens: { nesting: number }[], idx: number) {
         return tokens[idx].nesting === 1
           ? `<div class="callout callout-${type}"><span class="callout-label">${type}</span>\n`
           : '</div>\n';

@@ -1,0 +1,41 @@
+id: _meta.fileName
+displayName: title
+enums:
+  paperStatus: [to-read, reading, read]
+fields:
+  title:
+    type: string
+    required: true
+    hidden: true
+    label: Title
+  authors:
+    type: array
+    itemType: string
+    label: Authors
+  year:
+    type: string
+    label: Year
+  venue:
+    type: string
+    label: Venue
+  url:
+    type: string
+    label: URL
+  journey:
+    type: string
+    ref: journeys
+    label: Journey
+  tags:
+    type: array
+    itemType: string
+    label: Tags
+  concepts:
+    type: array
+    itemType: string
+    ref: concepts
+    label: Concepts
+  status:
+    type: enum
+    enum: paperStatus
+    default: to-read
+    label: Status

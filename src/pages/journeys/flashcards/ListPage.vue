@@ -336,9 +336,7 @@ const activeDeck = computed(() => (route.query.deck as string) || undefined);
 const journeyConcepts = computed(() => conceptStore.getByJourney(slug.value));
 const journeyConceptSlugs = computed(() => journeyConcepts.value.map((c) => c.slug));
 const journeyCards = computed(() => flashcardStore.getByJourney(journeyConceptSlugs.value));
-const journeyDecks = computed(() => [
-  ...new Set(journeyCards.value.map((c) => c.deck)),
-].sort());
+const journeyDecks = computed(() => [...new Set(journeyCards.value.map((c) => c.deck))].sort());
 const journeyStats = computed(() => flashcardStore.statsForCards(journeyCards.value));
 
 const {
@@ -350,9 +348,7 @@ const activePool = computed(() => {
     ? journeyCards.value.filter((c) => c.deck === activeDeck.value)
     : journeyCards.value;
   if (!tableSortKey.value) return pool;
-  const list = [
-    ...pool,
-  ];
+  const list = [...pool];
   const dir = tableSortAsc.value ? 1 : -1;
   const k = tableSortKey.value;
   const states = new Map(list.map((c) => [
@@ -372,8 +368,8 @@ const activePool = computed(() => {
 });
 
 const deckStats = computed(() => {
-  const stats = new Map<string, {count: number;
-    due: number;}>();
+  const stats = new Map<string, { count: number;
+    due: number; }>();
   for (const c of journeyCards.value) {
     const s = stats.get(c.deck) || {
       count: 0,
@@ -446,8 +442,7 @@ function lastReviewed (cardSlug: string): string {
   return s.lastReviewedAt || '-';
 }
 
-const queue = ref<Flashcard[]>([
-]);
+const queue = ref<Flashcard[]>([]);
 const currentIndex = ref(0);
 const flipped = ref(false);
 const sessionRight = ref(0);
@@ -482,9 +477,7 @@ function startQuiz () {
   const due = flashcardStore.getDueCards(activePool.value);
   const pool = due.length ? due : activePool.value;
   if (!pool.length) return;
-  queue.value = [
-    ...pool,
-  ];
+  queue.value = [...pool];
   currentIndex.value = 0;
   flipped.value = false;
   sessionRight.value = 0;

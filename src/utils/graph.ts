@@ -40,8 +40,7 @@ const nodeMap = new Map(nodes.map((n) => [
   n,
 ]));
 
-export const edges: GraphEdge[] = [
-];
+export const edges: GraphEdge[] = [];
 for (const n of allGraphs) {
   for (const target of n.forwardLinks) {
     if (slugSet.has(target) && target !== n.slug) {

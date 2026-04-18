@@ -2,13 +2,11 @@
 published: true
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Chapter 4. objects"
+title: Chapter 4. objects
 author: Shriram Krishnamurthi
 date: ""
 journey: plt
-tags:
-  - PLT
-  - chapter
+tags: []
 concepts:
   - object
   - object-closure

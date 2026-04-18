@@ -2,13 +2,11 @@
 published: true
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Chapter 2. inductive definitions"
+title: Chapter 2. inductive definitions
 author: Benjamin C. Pierce et al.
 date: ""
 journey: plt
-tags:
-  - PLT
-  - chapter
+tags: []
 concepts:
   - axiom-inference-rule
   - judgment-assertion-judgment-form-judgment-form-instance-s

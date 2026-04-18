@@ -1,21 +1,26 @@
 #!/usr/bin/env node
 import {
+  resolve,
+} from 'node:path';
+import {
   input,
 } from '@inquirer/prompts';
 import {
-  scaffoldContent,
-} from './utils/scaffold';
+  ContentManager,
+} from '../core/contentManager';
+
+const manager = new ContentManager(resolve(import.meta.dirname, '../../content'));
 
 const author = await input({
   message: 'Author:',
   validate: (v) => v.trim() === 'hdnax' || v.trim() === 'cosmos',
 });
-const question = await input({
-  message: 'Question:',
+const journey = await input({
+  message: 'Journey slug:',
   validate: (v) => v.trim() !== '' || 'Required',
 });
-const answer = await input({
-  message: 'Answer:',
+const question = await input({
+  message: 'Question:',
   validate: (v) => v.trim() !== '' || 'Required',
 });
 const deck = await input({
@@ -23,10 +28,8 @@ const deck = await input({
   default: 'general',
 });
 
-scaffoldContent({
-  contentDir: 'flashcards',
-  title: question,
+const path = manager.createFlashcard(journey, question, {
   author,
-  frontMatter: `question: "${question}"\ndeck: "${deck}"\ntags: []\nconcepts: []\nbooks: []`,
-  body: answer || undefined,
+  deck,
 });
+console.log(`Created: ${path}`);

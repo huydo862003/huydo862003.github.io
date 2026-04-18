@@ -2,13 +2,11 @@
 published: true
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Chapter 3. syntactic sugar"
+title: Chapter 3. syntactic sugar
 author: Shriram Krishnamurthi
 date: ""
 journey: plt
-tags:
-  - PLT
-  - chapter
+tags: []
 concepts:
   - macro
   - macro-system

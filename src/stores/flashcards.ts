@@ -129,9 +129,7 @@ export const useFlashcardStore = defineStore('flashcards', () => {
     await pushState(reviewState.value);
   }
 
-  const decks = computed(() => [
-    ...new Set(cards.map((c) => c.deck)),
-  ].sort());
+  const decks = computed(() => [...new Set(cards.map((c) => c.deck))].sort());
 
   function statsForCards (pool: Flashcard[]) {
     const today = todayISO();

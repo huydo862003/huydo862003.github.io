@@ -2,13 +2,11 @@
 published: true
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Chapter 2. mathematical preliminaries"
+title: Chapter 2. mathematical preliminaries
 author: Benjamin C. Pierce
 date: ""
 journey: plt
-tags:
-  - PLT
-  - chapter
+tags: []
 concepts:
   - powerset
   - countable-set

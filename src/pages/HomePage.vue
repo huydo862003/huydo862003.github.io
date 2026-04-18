@@ -222,9 +222,7 @@ const projects = [
     docs: 'https://huydo862003.github.io/sqlingo.js/',
     npm: 'https://www.npmjs.com/package/@hdnax/sqlingo.js',
     status: 'alpha',
-    tags: [
-      'sql',
-    ],
+    tags: ['sql'],
   },
   {
     name: 'dboxide',
@@ -244,9 +242,7 @@ const projects = [
     docs: 'https://huydo862003.github.io/RNA/',
     npm: 'https://www.npmjs.com/package/@hdnax/splicer.js',
     status: 'researching',
-    tags: [
-      'incremental',
-    ],
+    tags: ['incremental'],
   },
   {
     name: 'MPiSC',

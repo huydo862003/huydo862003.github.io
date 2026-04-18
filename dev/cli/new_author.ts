@@ -1,10 +1,15 @@
 #!/usr/bin/env node
 import {
+  resolve,
+} from 'node:path';
+import {
   input,
 } from '@inquirer/prompts';
 import {
-  scaffoldContent,
-} from './utils/scaffold';
+  ContentManager,
+} from '../core/contentManager';
+
+const manager = new ContentManager(resolve(import.meta.dirname, '../../content'));
 
 const name = await input({
   message: 'Name:',
@@ -23,9 +28,10 @@ const origin = await input({
   message: 'Origin (optional):',
 });
 
-scaffoldContent({
-  contentDir: 'authors',
-  title: name,
-  author: name,
-  frontMatter: `name: "${name}"\nbio: "${bio}"\nurl: "${url}"\ndateOfBirth: "${dateOfBirth}"\norigin: "${origin}"\neducation: []\ninterests: []\ntags: []`,
+const path = manager.createAuthor(name, {
+  bio: bio || undefined,
+  url: url || undefined,
+  dateOfBirth: dateOfBirth || undefined,
+  origin: origin || undefined,
 });
+console.log(`Created: ${path}`);

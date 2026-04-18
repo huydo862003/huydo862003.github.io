@@ -112,9 +112,7 @@ useSeo({
     const c = concept.value;
     if (!c) return undefined;
     if (c.description) return c.description;
-    const parts: string[] = [
-      `A ${c.status} concept in the ${slug.value} journey.`,
-    ];
+    const parts: string[] = [`A ${c.status} concept in the ${slug.value} journey.`];
     if (c.tags.length) parts.push(`Topics: ${c.tags.join(', ')}.`);
     if (c.dependsOn.length) parts.push(`Builds on: ${c.dependsOn.join(', ')}.`);
     return parts.join(' ');
@@ -157,12 +155,10 @@ const {
 watch(concept, () => reloadContent());
 
 const displayTags = computed(() =>
-  (concept.value?.tags ?? [
-  ]).filter((t) => t !== slug.value));
+  (concept.value?.tags ?? []).filter((t) => t !== slug.value));
 
 const bookItems = computed(() =>
-  (concept.value?.books ?? [
-  ]).map((b) => ({
+  (concept.value?.books ?? []).map((b) => ({
     value: b,
     label: formatSlug(b),
     to: `/journeys/${slug.value}/books/${b}`,

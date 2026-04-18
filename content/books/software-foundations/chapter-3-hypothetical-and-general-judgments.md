@@ -2,13 +2,11 @@
 published: true
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Chapter 3. hypothetical and general judgments"
+title: Chapter 3. hypothetical and general judgments
 author: Benjamin C. Pierce et al.
 date: ""
 journey: plt
-tags:
-  - PLT
-  - chapter
+tags: []
 concepts: []
 parent: logical-foundations
 children: []

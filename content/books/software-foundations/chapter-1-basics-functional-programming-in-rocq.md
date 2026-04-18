@@ -2,13 +2,11 @@
 published: true
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Chapter 1. basics - functional programming in rocq"
+title: Chapter 1. basics - functional programming in rocq
 author: Benjamin C. Pierce et al.
 date: ""
 journey: plt
-tags:
-  - PLT
-  - chapter
+tags: []
 concepts:
   - first-class-functional-programming-pure
   - rocq-gallina

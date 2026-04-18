@@ -80,8 +80,8 @@ import {
 } from '@/stores/journeys';
 
 const props = defineProps<{
-  crumbs: {label: string;
-    to: string;}[];
+  crumbs: { label: string;
+    to: string; }[];
 }>();
 
 const journeyStore = useJourneyStore();

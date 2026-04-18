@@ -1,0 +1,33 @@
+id: _meta.fileName
+displayName: title
+enums: {}
+fields:
+  title:
+    type: string
+    required: true
+    hidden: true
+    label: Title
+  date:
+    type: date
+    label: Date
+  description:
+    type: string
+    label: Description
+  tags:
+    type: array
+    itemType: string
+    label: Tags
+  archived:
+    type: boolean
+    default: false
+    label: Archived
+  concepts:
+    type: array
+    itemType: string
+    ref: concepts
+    label: Concepts
+  journeys:
+    type: array
+    itemType: string
+    ref: journeys
+    label: Journeys

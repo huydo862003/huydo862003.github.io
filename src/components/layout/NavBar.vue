@@ -120,7 +120,7 @@ import SLogo from '@/components/common/SLogo.vue';
 import UserMenu from '@/components/layout/UserMenu.vue';
 import SKbdShortcut from '@/components/common/SKbdShortcut.vue';
 
-const emit = defineEmits<{(e: 'open-palette'): void}>();
+const emit = defineEmits<{ (e: 'open-palette'): void }>();
 
 const themeStore = useThemeStore();
 const {

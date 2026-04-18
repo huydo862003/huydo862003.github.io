@@ -2,13 +2,11 @@
 published: true
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Chapter 3. untyped arithmetic expressions"
+title: Chapter 3. untyped arithmetic expressions
 author: Benjamin C. Pierce
 date: ""
 journey: plt
-tags:
-  - PLT
-  - chapter
+tags: []
 concepts:
   - term
   - BNF

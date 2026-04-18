@@ -1,22 +1,23 @@
 #!/usr/bin/env node
 import {
+  resolve,
+} from 'node:path';
+import {
   input, select,
 } from '@inquirer/prompts';
 import {
-  scaffoldContent,
-} from './utils/scaffold';
+  ContentManager,
+} from '../core/contentManager';
+
+const manager = new ContentManager(resolve(import.meta.dirname, '../../content'));
 
 const author = await input({
   message: 'Author:',
   validate: (v) => v.trim() === 'hdnax' || v.trim() === 'cosmos',
 });
-
 const title = await input({
   message: 'Title:',
   validate: (v) => v.trim() !== '' || 'Required',
-});
-const description = await input({
-  message: 'Description (optional):',
 });
 const status = await select({
   message: 'Status:',
@@ -33,9 +34,8 @@ const status = await select({
   ],
 });
 
-scaffoldContent({
-  contentDir: 'journeys',
-  title,
+const path = manager.createJourney(title, {
   author,
-  frontMatter: `title: "${title}"\ndescription: "${description}"\nstatus: ${status}\ntags: []`,
+  status,
 });
+console.log(`Created: ${path}`);

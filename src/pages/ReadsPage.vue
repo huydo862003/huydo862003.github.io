@@ -82,10 +82,8 @@ const blogStore = useBlogs();
 const paperStore = usePaperStore();
 
 const READS_PAGE_SIZE = 5;
-const readsJourneys = ref<string[]>([
-]);
-const readsTypes = ref<string[]>([
-]);
+const readsJourneys = ref<string[]>([]);
+const readsTypes = ref<string[]>([]);
 const readsPage = ref(1);
 
 const readsStats = computed(() => {

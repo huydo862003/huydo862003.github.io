@@ -245,10 +245,8 @@ watch(book, () => reloadContent());
 
 // Flat list of all books in this journey for prev/next navigation
 const allJourneyBooks = computed(() => {
-  if (!book.value) return [
-  ];
-  const flat: Book[] = [
-  ];
+  if (!book.value) return [];
+  const flat: Book[] = [];
   function collect (slugs: string[]) {
     for (const s of slugs) {
       const b = bookStore.getBySlug(s);
@@ -271,8 +269,7 @@ const conceptSearch = ref('');
 const conceptPage = ref(1);
 
 const filteredConcepts = computed(() => {
-  const all = book.value?.concepts ?? [
-  ];
+  const all = book.value?.concepts ?? [];
   if (!conceptSearch.value) return all;
   const q = conceptSearch.value.toLowerCase();
   return all.filter((c) => c.toLowerCase().includes(q));

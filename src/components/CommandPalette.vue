@@ -142,7 +142,7 @@ const activeIndex = ref(0);
 const inputEl = ref<HTMLInputElement>();
 const router = useRouter();
 
-const emit = defineEmits<{(e: 'open-graph-side'): void}>();
+const emit = defineEmits<{ (e: 'open-graph-side'): void }>();
 
 const conceptStore = useConceptStore();
 const flashcardStore = useFlashcardStore();
@@ -196,8 +196,7 @@ const navItems = computed<PaletteItem[]>(() => [
 ]);
 
 const searchItems = computed<PaletteItem[]>(() => {
-  const items: PaletteItem[] = [
-  ];
+  const items: PaletteItem[] = [];
 
   for (const c of conceptStore.concepts) {
     items.push({

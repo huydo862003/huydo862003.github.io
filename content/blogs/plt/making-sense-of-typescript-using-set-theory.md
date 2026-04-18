@@ -2,15 +2,15 @@
 published: true
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Making sense of TypeScript using set theory"
-url: "Making sense of TypeScript using set theory"
+title: Making sense of TypeScript using set theory
+url: Making sense of TypeScript using set theory
 author: ""
 journey: plt
 site: ""
 latestPost: ""
 lastChecked: ""
 posts: []
-tags: ["PLT", "blog"]
+tags: []
 ---
 # First pass
 
@@ -37,12 +37,12 @@ tags: ["PLT", "blog"]
         - `const num: 0 = zoo` is definitely invalid.
         - `const num: 0 | 1 = zero` is definitely valid.
         
-        → `typeof zero` is a subtype of `typeof zoo`.
+        -> `typeof zero` is a subtype of `typeof zoo`.
         
     2. This one is obvious to me (at least).
-    3. Type narrowing → An unsafe cast of a supertype into a subtype.
+    3. Type narrowing -> An unsafe cast of a supertype into a subtype.
         
-        Type widening → A safe cast of a subtype into a supertype.
+        Type widening -> A safe cast of a subtype into a supertype.
         
     4. We would want `&`.
         

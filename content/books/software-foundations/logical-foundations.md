@@ -2,20 +2,18 @@
 published: true
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Logical foundations"
+title: Logical foundations
 author: Benjamin C. Pierce et al.
 date: "2010"
 journey: plt
-tags:
-  - PLT
-  - textbook
+tags: []
 concepts:
   - proof-assistant-prover
   - automated-theorem-prover-sat-solver-smt-solver
   - rocq-tactic
   - rocq-dependent-type
   - functional-programming
-parent: "software-foundations"
+parent: software-foundations
 children:
   - chapter-1-basics-functional-programming-in-rocq
   - chapter-2-inductive-definitions
