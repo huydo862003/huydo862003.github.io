@@ -6,6 +6,8 @@ This page tracks my scattered thoughts and learning journeys for many topics + w
 
 Note: Just performed some batch migrations from Notion, so formatting would break here and there.
 
+Disclaimer: The frontend page (not the note content) is AI-generated. I wrote the notes myself. That's fine because I want to go into noting as soon as possible.
+
 ## Development/Authoring guide
 
 Prerequisites:
