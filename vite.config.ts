@@ -16,7 +16,10 @@ export default defineConfig({
     vue(),
     tailwindcss(),
     contentCollections(),
-    sitemap({ dynamicRoutes: routes }),
+    sitemap({
+     hostname: 'https://huydo862003.github.io',
+     dynamicRoutes: routes,
+    }),
     editorPlugin(),
   ],
   resolve: {
