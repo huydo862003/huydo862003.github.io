@@ -1,13 +1,13 @@
 ---
 published: true
-author: "hdnax"
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Abstract binding graph"
-journey: "plt"
-status: "learning"
+title: Abstract binding graph
+journey: plt
+status: learning
 books:
-  - "chapter-1-abstract-syntax"
+  - chapter-1-abstract-syntax
 dependsOn: []
 blocks: []
 tags: []

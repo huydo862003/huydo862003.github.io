@@ -1,18 +1,19 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Concurrent programming"
+title: Concurrent programming
 journey: plt
 status: reviewing
-books: ["logical-foundations"]
+books:
+  - logical-foundations
 dependsOn: []
 blocks: []
 tags:
-  - "concurrency-theory"
-  - "language-feature-design"
-  - "programming-paradigm"
+  - concurrency-theory
+  - language-feature-design
+  - programming-paradigm
 ---
 
 A programming paradigm where multiple computations execute in overlapping time periods, managing shared resources and coordination through synchronization primitives.

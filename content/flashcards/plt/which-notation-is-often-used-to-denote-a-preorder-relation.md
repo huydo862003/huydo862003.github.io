@@ -1,6 +1,6 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: Which notation is often used to denote a preorder relation?

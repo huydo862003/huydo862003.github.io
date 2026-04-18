@@ -1,6 +1,6 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Consistency
@@ -10,7 +10,7 @@ books: []
 dependsOn: []
 blocks: []
 tags:
-  - "design-system"
+  - design-system
 ---
 
 The disciplined adherence to established visual and functional patterns across an entire product to reduce cognitive load and increase predictability for the user.

@@ -1,9 +1,9 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: "What is the name of rocq's native functional programming language?"
+question: What is the name of rocq's native functional programming language?
 deck: rocq-programming-language
 concepts:
   - rocq

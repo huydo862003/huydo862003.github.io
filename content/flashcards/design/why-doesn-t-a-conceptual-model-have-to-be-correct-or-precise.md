@@ -1,12 +1,12 @@
 ---
 published: true
-author: hdnax
-createdAt: '2026-03-28'
-updatedAt: '2026-03-28'
+author: Hdnax
+createdAt: "2026-03-28"
+updatedAt: "2026-03-28"
 question: Why doesn't a conceptual model have to be correct or precise?
 deck: general
 concepts:
-- conceptual-model
+  - conceptual-model
 books: []
 tags: []
 ---

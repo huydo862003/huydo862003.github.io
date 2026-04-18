@@ -1,19 +1,20 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Coq"
+title: Coq
 journey: plt
 status: reviewing
-books: ["logical-foundations"]
+books:
+  - logical-foundations
 dependsOn: []
 blocks: []
 tags:
-  - "formal-system"
-  - "language-feature-design"
-  - "programming-paradigm"
-  - "proof-reason-technique"
+  - formal-system
+  - language-feature-design
+  - programming-paradigm
+  - proof-reason-technique
 ---
 
 Tools: Rocq (formerly Coq)

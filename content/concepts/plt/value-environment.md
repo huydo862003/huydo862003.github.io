@@ -1,17 +1,18 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Value environment"
+title: Value environment
 journey: plt
 status: reviewing
-books: ["chapter-5-types"]
+books:
+  - chapter-5-types
 dependsOn: []
 blocks: []
 tags:
-  - "runtime"
-  - "semantics"
+  - runtime
+  - semantics
 ---
 
 A mapping from variable names to runtime values used during interpretation.

@@ -1,18 +1,18 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Calculus of inductive construction"
+title: Calculus of inductive construction
 journey: plt
 status: learning
 books: []
 dependsOn: []
 blocks: []
 tags:
-  - "computation-theory"
-  - "formal-system"
-  - "logic"
+  - computation-theory
+  - formal-system
+  - logic
 ---
 
 Tools: Rocq (formerly Coq)

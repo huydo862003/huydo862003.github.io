@@ -1,18 +1,19 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Subgoal"
+title: Subgoal
 journey: plt
 status: reviewing
-books: ["chapter-1-basics-functional-programming-in-rocq"]
+books:
+  - chapter-1-basics-functional-programming-in-rocq
 dependsOn: []
 blocks: []
 tags:
-  - "language-feature-design"
-  - "logic"
-  - "proof-reason-technique"
+  - language-feature-design
+  - logic
+  - proof-reason-technique
 ---
 
 Tools: Rocq (formerly Coq)

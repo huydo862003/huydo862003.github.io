@@ -1,9 +1,9 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: "Are there many built-in features in rocq?"
+question: Are there many built-in features in rocq?
 deck: rocq-programming-language
 concepts:
   - rocq

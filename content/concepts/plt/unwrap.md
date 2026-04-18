@@ -1,18 +1,19 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Unwrap"
+title: Unwrap
 journey: plt
 status: reviewing
-books: ["chapter-1-basics-functional-programming-in-rocq"]
+books:
+  - chapter-1-basics-functional-programming-in-rocq
 dependsOn: []
 blocks: []
 tags:
-  - "language-feature-design"
-  - "semantics"
-  - "syntax-grammar"
+  - language-feature-design
+  - semantics
+  - syntax-grammar
 ---
 
 An operation that extracts inner values from a wrapper type via pattern matching (like getting x from Some x), exposing the contained data for use.

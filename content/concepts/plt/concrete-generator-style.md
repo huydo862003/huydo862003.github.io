@@ -1,17 +1,18 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Concrete generator style"
+title: Concrete generator style
 journey: plt
 status: learning
-books: ["chapter-3-untyped-arithmetic-expressions"]
+books:
+  - chapter-3-untyped-arithmetic-expressions
 dependsOn: []
 blocks: []
 tags:
-  - "set-theory-relation"
-  - "syntax-grammar"
+  - set-theory-relation
+  - syntax-grammar
 ---
 
 A style of formal definition that defines a set as a union of a sequence $S_0 \\subseteq S_1 \\subseteq \\dots$  where each $S_i+_1$ is built from $S_i$ using rules - e.g., for naturals: $S_0 = \\emptyset

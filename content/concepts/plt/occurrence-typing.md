@@ -1,20 +1,21 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Occurrence typing"
+title: Occurrence typing
 journey: plt
 status: mastered
-books: ["chapter-5-types"]
+books:
+  - chapter-5-types
 dependsOn: []
 blocks: []
 tags:
-  - "language-feature-design"
-  - "program-analysis"
-  - "runtime"
-  - "semantics"
-  - "type-theory"
+  - language-feature-design
+  - program-analysis
+  - runtime
+  - semantics
+  - type-theory
 ---
 
 A type system technique where a variable's type can differ at each occurrence (use) based on what predicates have been checked - the same variable x can have type Number in one branch and String in an

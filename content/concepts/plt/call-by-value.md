@@ -1,17 +1,18 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Call by value"
+title: Call by value
 journey: plt
 status: mastered
-books: ["chapter-5-the-untyped-pure-lambda-calculus"]
+books:
+  - chapter-5-the-untyped-pure-lambda-calculus
 dependsOn: []
 blocks: []
 tags:
-  - "language-feature-design"
-  - "semantics"
+  - language-feature-design
+  - semantics
 ---
 
 (Lambda calculus, Semantics) A Strict/Eager evaluation strategy in which Beta-redex/Reducible expressions inside lambda abstractions must not be reduced.

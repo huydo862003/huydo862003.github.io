@@ -1,9 +1,9 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: "According to robert (bob) harper, what is an operator, the arity of an operator?"
+question: According to robert (bob) harper, what is an operator, the arity of an operator?
 deck: language-theory
 concepts: []
 books:

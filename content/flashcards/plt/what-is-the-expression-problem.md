@@ -1,12 +1,14 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: "What is the expression problem?"
+question: What is the expression problem?
 deck: language-theory
-concepts: ["expression-problem"]
-books: ["chapter-5-types"]
+concepts:
+  - expression-problem
+books:
+  - chapter-5-types
 tags: []
 ---
 

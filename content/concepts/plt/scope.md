@@ -1,18 +1,21 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Scope"
+title: Scope
 journey: plt
 status: mastered
-books: ["chapter-5-the-untyped-pure-lambda-calculus", "chapter-2-evaluation", "chapter-1-abstract-syntax"]
+books:
+  - chapter-5-the-untyped-pure-lambda-calculus
+  - chapter-2-evaluation
+  - chapter-1-abstract-syntax
 dependsOn: []
 blocks: []
 tags:
-  - "lambda-calculus"
-  - "semantics"
-  - "syntax-grammar"
+  - lambda-calculus
+  - semantics
+  - syntax-grammar
 ---
 
 (Semantics) The region of the code that a Binding takes effect.

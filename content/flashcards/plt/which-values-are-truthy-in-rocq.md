@@ -1,9 +1,9 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: "Which values are truthy in rocq?"
+question: Which values are truthy in rocq?
 deck: rocq-programming-language
 concepts:
   - rocq

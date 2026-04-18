@@ -1,16 +1,16 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Programming paradigm"
+title: Programming paradigm
 journey: plt
 status: reviewing
 books: []
 dependsOn: []
 blocks: []
 tags:
-  - "programming-paradigm"
+  - programming-paradigm
 ---
 
 A style or philosophy of programming characterized by its core concepts and patterns (like functional, imperative, object-oriented, or logic programming).

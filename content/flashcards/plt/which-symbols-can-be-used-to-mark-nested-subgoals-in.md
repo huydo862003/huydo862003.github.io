@@ -1,9 +1,9 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: "Which symbols can be used to mark nested subgoals in destruct in rocq?"
+question: Which symbols can be used to mark nested subgoals in destruct in rocq?
 deck: general
 concepts: []
 books:

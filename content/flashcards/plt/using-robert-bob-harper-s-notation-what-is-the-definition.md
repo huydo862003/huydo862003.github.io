@@ -1,9 +1,9 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: "Using robert (bob) harper's notation, what is the definition of variable substitution?"
+question: Using robert (bob) harper's notation, what is the definition of variable substitution?
 deck: language-theory
 concepts:
   - capture-avoiding-substitution

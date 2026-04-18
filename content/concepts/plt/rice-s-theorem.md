@@ -1,18 +1,19 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Rice's theorem"
+title: Rice's theorem
 journey: plt
 status: learning
-books: ["chapter-5-types"]
+books:
+  - chapter-5-types
 dependsOn: []
 blocks: []
 tags:
-  - "computation-theory"
-  - "logic"
-  - "program-analysis"
+  - computation-theory
+  - logic
+  - program-analysis
 ---
 
 A theorem stating that any non-trivial semantic property of programs is undecidable - we cannot automatically determine arbitrary properties about what programs compute (e.g., \"does this function alwa

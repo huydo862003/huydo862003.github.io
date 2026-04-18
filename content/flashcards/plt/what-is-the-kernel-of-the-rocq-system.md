@@ -1,9 +1,9 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: "What is the kernel of the rocq system?"
+question: What is the kernel of the rocq system?
 deck: general
 concepts: []
 books:

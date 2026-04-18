@@ -1,20 +1,21 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Type predicate"
+title: Type predicate
 journey: plt
 status: mastered
-books: ["chapter-5-types"]
+books:
+  - chapter-5-types
 dependsOn: []
 blocks: []
 tags:
-  - "language-feature-design"
-  - "program-analysis"
-  - "runtime"
-  - "semantics"
-  - "type-theory"
+  - language-feature-design
+  - program-analysis
+  - runtime
+  - semantics
+  - type-theory
 ---
 
 A function that tests whether a value belongs to a specific type and informs the type checker of this fact - enables narrowing after the check (e.g., mt?, string?, typeof).

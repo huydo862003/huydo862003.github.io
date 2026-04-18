@@ -1,9 +1,9 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: "Other than hypotheses, what can be used with rewrite tactics in rocq?"
+question: Other than hypotheses, what can be used with rewrite tactics in rocq?
 deck: general
 concepts: []
 books:

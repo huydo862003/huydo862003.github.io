@@ -1,9 +1,9 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: "Define boolean operations and, or, not for church booleans?"
+question: Define boolean operations and, or, not for church booleans?
 deck: pure-lambda-calculus
 concepts:
   - pure-untyped-lambda-calculus

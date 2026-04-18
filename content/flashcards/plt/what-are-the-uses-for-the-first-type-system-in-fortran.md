@@ -1,9 +1,9 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: "What are the uses for the first type system in fortran?"
+question: What are the uses for the first type system in fortran?
 deck: type-theory
 concepts: []
 books:

@@ -1,9 +1,9 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: "Functions that diverge vs functions that can fail?"
+question: Functions that diverge vs functions that can fail?
 deck: set-theory-relation
 concepts: []
 books:

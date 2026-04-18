@@ -1,18 +1,18 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Autoboxing"
+title: Autoboxing
 journey: plt
 status: learning
 books: []
 dependsOn: []
 blocks: []
 tags:
-  - "language-feature-design"
-  - "runtime"
-  - "semantics"
+  - language-feature-design
+  - runtime
+  - semantics
 ---
 
 Example:

@@ -1,9 +1,9 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: "Where can operators (in a bob harper's sense) be placed in an AST?"
+question: Where can operators (in a bob harper's sense) be placed in an AST?
 deck: language-theory
 concepts: []
 books:

@@ -1,6 +1,6 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Grid system
@@ -10,8 +10,8 @@ books: []
 dependsOn: []
 blocks: []
 tags:
-  - "design-pattern"
-  - "design-tool"
+  - design-pattern
+  - design-tool
 ---
 
 A structural framework of intersecting vertical and horizontal lines that organizes content alignment to ensure visual order and responsiveness across different screen sizes.

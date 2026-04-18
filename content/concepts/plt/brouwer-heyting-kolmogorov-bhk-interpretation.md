@@ -1,17 +1,17 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Brouwer-Heyting-Kolmogorov (BHK) interpretation"
+title: Brouwer-Heyting-Kolmogorov (BHK) interpretation
 journey: plt
 status: learning
 books: []
 dependsOn: []
 blocks: []
 tags:
-  - "logic"
-  - "semantics"
+  - logic
+  - semantics
 ---
 
 Motivation. Classical logic tells you *that* something exists, not *how* to find it. BHK says to prove something exists, you must exhibit a witness.

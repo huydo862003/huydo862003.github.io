@@ -1,17 +1,18 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Function"
+title: Function
 journey: plt
 status: mastered
-books: ["chapter-2-evaluation"]
+books:
+  - chapter-2-evaluation
 dependsOn: []
 blocks: []
 tags:
-  - "language-feature-design"
-  - "set-theory-relation"
+  - language-feature-design
+  - set-theory-relation
 ---
 
 (Language feature/design) A reusable piece of code that returns a result.

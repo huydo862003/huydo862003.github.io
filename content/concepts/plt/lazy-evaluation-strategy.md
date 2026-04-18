@@ -1,17 +1,18 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Lazy evaluation strategy"
+title: Lazy evaluation strategy
 journey: plt
 status: mastered
-books: ["chapter-5-the-untyped-pure-lambda-calculus"]
+books:
+  - chapter-5-the-untyped-pure-lambda-calculus
 dependsOn: []
 blocks: []
 tags:
-  - "language-feature-design"
-  - "semantics"
+  - language-feature-design
+  - semantics
 ---
 
 (Language feature/design) An Evaluation strategy in which the argument is not evaluated before substituted into the function call.

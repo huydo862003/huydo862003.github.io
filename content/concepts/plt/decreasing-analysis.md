@@ -1,16 +1,17 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Decreasing analysis"
+title: Decreasing analysis
 journey: plt
 status: reviewing
-books: ["chapter-1-basics-functional-programming-in-rocq"]
+books:
+  - chapter-1-basics-functional-programming-in-rocq
 dependsOn: []
 blocks: []
 tags:
-  - "program-analysis"
+  - program-analysis
 ---
 
 [Rocq] A termination check in Rocq that verifies recursive functions always call themselves on structurally smaller arguments, ensuring all computations terminate (required for logical consistency).

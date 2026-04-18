@@ -1,9 +1,9 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: "What is the wildcard pattern in rocq?"
+question: What is the wildcard pattern in rocq?
 deck: rocq-programming-language
 concepts:
   - rocq

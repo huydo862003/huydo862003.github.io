@@ -1,18 +1,19 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Sound"
+title: Sound
 journey: plt
 status: reviewing
-books: ["chapter-2-inductive-definitions"]
+books:
+  - chapter-2-inductive-definitions
 dependsOn: []
 blocks: []
 tags:
-  - "formal-system"
-  - "logic"
-  - "set-theory-relation"
+  - formal-system
+  - logic
+  - set-theory-relation
 ---
 
 The adjective form of Soundness.

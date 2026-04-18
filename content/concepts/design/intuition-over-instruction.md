@@ -1,9 +1,9 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Intuition over instruction"
+title: Intuition over instruction
 journey: design
 status: learning
 books:

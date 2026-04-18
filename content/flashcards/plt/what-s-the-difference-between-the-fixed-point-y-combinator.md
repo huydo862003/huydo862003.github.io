@@ -1,9 +1,9 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: "What's the difference between the fixed-point y-combinator and the fixed-point z-combinator?"
+question: What's the difference between the fixed-point y-combinator and the fixed-point z-combinator?
 deck: pure-lambda-calculus
 concepts: []
 books:

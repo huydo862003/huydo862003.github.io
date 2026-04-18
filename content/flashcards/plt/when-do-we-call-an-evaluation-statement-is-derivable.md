@@ -1,6 +1,6 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: When do we call an evaluation statement is derivable?

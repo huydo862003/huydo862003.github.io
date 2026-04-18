@@ -1,16 +1,17 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Premise"
+title: Premise
 journey: plt
 status: learning
-books: ["chapter-3-untyped-arithmetic-expressions"]
+books:
+  - chapter-3-untyped-arithmetic-expressions
 dependsOn: []
 blocks: []
 tags:
-  - "logic"
+  - logic
 ---
 
 An antecedent judgment in an Inference rule that must be Derivable for the rule to derive its Conclusion.

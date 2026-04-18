@@ -1,17 +1,17 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Dependent type"
+title: Dependent type
 journey: plt
 status: learning
 books: []
 dependsOn: []
 blocks: []
 tags:
-  - "logic"
-  - "type-theory"
+  - logic
+  - type-theory
 ---
 
 Consider the $\\text{head}$ function which returns the first item of a list.

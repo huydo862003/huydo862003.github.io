@@ -1,18 +1,18 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Intuitionistic/Constructive logic"
+title: Intuitionistic/Constructive logic
 journey: plt
 status: learning
 books: []
 dependsOn: []
 blocks: []
 tags:
-  - "formal-system"
-  - "logic"
-  - "syntax-grammar"
+  - formal-system
+  - logic
+  - syntax-grammar
 ---
 
 \\frac{A \\quad B}{A \\land B} & & (\\land\\text{-intro}) \\\\ \\\\

@@ -1,17 +1,18 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Field"
+title: Field
 journey: plt
 status: mastered
-books: ["chapter-4-objects"]
+books:
+  - chapter-4-objects
 dependsOn: []
 blocks: []
 tags:
-  - "language-feature-design"
-  - "programming-paradigm"
+  - language-feature-design
+  - programming-paradigm
 ---
 
 A named data member of a class or object that stores part of the object's state, accessed via dot notation or accessor methods.

@@ -1,9 +1,9 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Recursive descent"
+title: Recursive descent
 journey: plt
 status: learning
 tags: []

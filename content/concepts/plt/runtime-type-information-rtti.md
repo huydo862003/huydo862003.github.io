@@ -1,19 +1,20 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Runtime type information (RTTI)"
+title: Runtime type information (RTTI)
 journey: plt
 status: reviewing
-books: ["chapter-5-types"]
+books:
+  - chapter-5-types
 dependsOn: []
 blocks: []
 tags:
-  - "language-feature-design"
-  - "metaprogramming-self-reflection"
-  - "runtime"
-  - "type-theory"
+  - language-feature-design
+  - metaprogramming-self-reflection
+  - runtime
+  - type-theory
 ---
 
 A mechanism that allows the reflection of the type of a value at runtime.

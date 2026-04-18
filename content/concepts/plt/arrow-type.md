@@ -1,18 +1,19 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Arrow type"
+title: Arrow type
 journey: plt
 status: learning
-books: ["preface"]
+books:
+  - preface
 dependsOn: []
 blocks: []
 tags:
-  - "formal-system"
-  - "language-feature-design"
-  - "type-theory"
+  - formal-system
+  - language-feature-design
+  - type-theory
 ---
 
 This generalization unifies simple function types, universal types ($\\forall\\alpha.T$), and dependent function types under a single constructor.

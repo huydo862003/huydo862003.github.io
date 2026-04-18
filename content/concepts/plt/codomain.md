@@ -1,16 +1,17 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Codomain"
+title: Codomain
 journey: plt
 status: mastered
-books: ["chapter-2-mathematical-preliminaries"]
+books:
+  - chapter-2-mathematical-preliminaries
 dependsOn: []
 blocks: []
 tags:
-  - "set-theory-relation"
+  - set-theory-relation
 ---
 
 A property of a function specifying the set of values it produces as outputs.

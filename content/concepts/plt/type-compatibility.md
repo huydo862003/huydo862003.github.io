@@ -1,19 +1,20 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Type compatibility"
+title: Type compatibility
 journey: plt
 status: reviewing
-books: ["chapter-5-types"]
+books:
+  - chapter-5-types
 dependsOn: []
 blocks: []
 tags:
-  - "language-feature-design"
-  - "semantics"
-  - "set-theory-relation"
-  - "type-theory"
+  - language-feature-design
+  - semantics
+  - set-theory-relation
+  - type-theory
 ---
 
 A relation between types that implies Substitutability. A static approximation of Substitutability.

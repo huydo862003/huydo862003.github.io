@@ -1,9 +1,9 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: "In rocq, which values can block simplification?"
+question: In rocq, which values can block simplification?
 deck: general
 concepts: []
 books:

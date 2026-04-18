@@ -1,13 +1,17 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Completeness"
+title: Completeness
 journey: plt
 status: reviewing
-tags: ["formal-system", "logic", "set-theory-relation"]
-books: ["chapter-2-inductive-definitions"]
+tags:
+  - formal-system
+  - logic
+  - set-theory-relation
+books:
+  - chapter-2-inductive-definitions
 dependsOn: []
 blocks: []
 ---

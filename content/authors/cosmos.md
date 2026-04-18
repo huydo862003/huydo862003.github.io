@@ -1,9 +1,9 @@
 ---
 published: true
-author: "cosmos"
+author: Cosmos
 createdAt: "2026-04-13"
 updatedAt: "2026-04-13"
-name: "cosmos"
+name: Cosmos
 bio: ""
 url: ""
 dateOfBirth: ""

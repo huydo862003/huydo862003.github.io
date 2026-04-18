@@ -1,9 +1,9 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: "Which types are supported in conditional expressions' conditions in rocq? why? which values are truthy/falsy?"
+question: Which types are supported in conditional expressions' conditions in rocq? why? which values are truthy/falsy?
 deck: rocq-programming-language
 concepts:
   - conditional-expression

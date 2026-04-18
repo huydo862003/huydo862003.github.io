@@ -1,16 +1,17 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Rule schema"
+title: Rule schema
 journey: plt
 status: reviewing
-books: ["chapter-3-untyped-arithmetic-expressions"]
+books:
+  - chapter-3-untyped-arithmetic-expressions
 dependsOn: []
 blocks: []
 tags:
-  - "logic"
+  - logic
 ---
 
 An parameterized inference rules with Metavariables that can be instantiated to Concrete rules or Inference rule.

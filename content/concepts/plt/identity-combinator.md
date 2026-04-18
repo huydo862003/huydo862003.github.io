@@ -1,17 +1,18 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Identity combinator"
+title: Identity combinator
 journey: plt
 status: mastered
-books: ["chapter-5-the-untyped-pure-lambda-calculus"]
+books:
+  - chapter-5-the-untyped-pure-lambda-calculus
 dependsOn: []
 blocks: []
 tags:
-  - "lambda-calculus"
-  - "semantics"
+  - lambda-calculus
+  - semantics
 ---
 
 Formula: $\\text{id} = \\lambda x.\\ x$

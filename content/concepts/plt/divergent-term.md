@@ -1,17 +1,18 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Divergent term"
+title: Divergent term
 journey: plt
 status: reviewing
-books: ["chapter-5-the-untyped-pure-lambda-calculus"]
+books:
+  - chapter-5-the-untyped-pure-lambda-calculus
 dependsOn: []
 blocks: []
 tags:
-  - "lambda-calculus"
-  - "semantics"
+  - lambda-calculus
+  - semantics
 ---
 
 A term that does not evaluate to a normal form.

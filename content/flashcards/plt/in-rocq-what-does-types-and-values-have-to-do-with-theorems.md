@@ -1,9 +1,9 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: "In rocq, what does types and values have to do with theorems and proofs?"
+question: In rocq, what does types and values have to do with theorems and proofs?
 deck: general
 concepts: []
 books:

@@ -1,17 +1,18 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Alpha conversion/renaming"
+title: Alpha conversion/renaming
 journey: plt
 status: learning
-books: ["chapter-5-the-untyped-pure-lambda-calculus"]
+books:
+  - chapter-5-the-untyped-pure-lambda-calculus
 dependsOn: []
 blocks: []
 tags:
-  - "lambda-calculus"
-  - "semantics"
+  - lambda-calculus
+  - semantics
 ---
 
 (\\lambda x.\\ \\lambda y.\\ x)\\ y \\to [x \\to y] \\lambda y.\\ x

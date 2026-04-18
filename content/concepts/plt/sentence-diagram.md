@@ -1,17 +1,18 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Sentence diagram"
+title: Sentence diagram
 journey: plt
 status: reviewing
-books: ["chapter-2-evaluation"]
+books:
+  - chapter-2-evaluation
 dependsOn: []
 blocks: []
 tags:
-  - "formal-system"
-  - "proof-reason-technique"
+  - formal-system
+  - proof-reason-technique
 ---
 
 A syntactic structure of a given sentence.

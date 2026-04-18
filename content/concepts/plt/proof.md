@@ -1,20 +1,20 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Proof"
+title: Proof
 journey: plt
 status: reviewing
 books: []
 dependsOn: []
 blocks: []
 tags:
-  - "formal-system"
-  - "language-feature-design"
-  - "logic"
-  - "programming-paradigm"
-  - "proof-reason-technique"
+  - formal-system
+  - language-feature-design
+  - logic
+  - programming-paradigm
+  - proof-reason-technique
 ---
 
 Tools: Rocq (formerly Coq)

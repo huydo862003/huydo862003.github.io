@@ -1,6 +1,6 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 question: What are closed terms, free variables, bound variables, binders in lambda calculus?

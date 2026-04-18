@@ -1,18 +1,19 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Bottom-up construction"
+title: Bottom-up construction
 journey: plt
 status: reviewing
-books: ["chapter-2-inductive-definitions"]
+books:
+  - chapter-2-inductive-definitions
 dependsOn: []
 blocks: []
 tags:
-  - "logic"
-  - "proof-reason-technique"
-  - "set-theory-relation"
+  - logic
+  - proof-reason-technique
+  - set-theory-relation
 ---
 
 Synonymous with Forward chaining.

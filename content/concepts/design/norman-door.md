@@ -1,6 +1,6 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Norman door
@@ -11,8 +11,8 @@ books:
 dependsOn: []
 blocks: []
 tags:
-  - "design-antipattern"
-  - "design-psychology"
+  - design-antipattern
+  - design-psychology
 ---
 
 A door with confusing usability features and signs, named after Don Norman.

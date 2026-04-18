@@ -1,17 +1,18 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Type environment"
+title: Type environment
 journey: plt
 status: reviewing
-books: ["chapter-5-types"]
+books:
+  - chapter-5-types
 dependsOn: []
 blocks: []
 tags:
-  - "semantics"
-  - "type-theory"
+  - semantics
+  - type-theory
 ---
 
 A mapping from variable names to their types, often written as $\\Gamma$, that tracks type bindings in scope during type checking, extended when entering new binding forms.

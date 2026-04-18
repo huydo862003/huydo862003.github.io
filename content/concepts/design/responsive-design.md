@@ -1,6 +1,6 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Responsive design
@@ -10,8 +10,8 @@ books: []
 dependsOn: []
 blocks: []
 tags:
-  - "design-pattern"
-  - "UI-UX"
+  - design-pattern
+  - UI-UX
 ---
 
 A design approach that ensures an interface adapts fluidly to different screen sizes, orientations, and resolutions.

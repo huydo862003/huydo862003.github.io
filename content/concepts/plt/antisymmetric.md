@@ -1,16 +1,17 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Antisymmetric"
+title: Antisymmetric
 journey: plt
 status: mastered
-books: ["chapter-2-mathematical-preliminaries"]
+books:
+  - chapter-2-mathematical-preliminaries
 dependsOn: []
 blocks: []
 tags:
-  - "set-theory-relation"
+  - set-theory-relation
 ---
 
 A property of a Binary relation $R$ such that if $t\\ R\\ s$ and $s\\ R\\ t$ then $s = t$, for every $t$, $s$ $\\in T$.

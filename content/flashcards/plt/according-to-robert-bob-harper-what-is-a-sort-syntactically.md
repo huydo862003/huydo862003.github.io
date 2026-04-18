@@ -1,9 +1,9 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: "According to robert (bob) harper, what is a sort, syntactically?"
+question: According to robert (bob) harper, what is a sort, syntactically?
 deck: language-theory
 concepts:
   - sort

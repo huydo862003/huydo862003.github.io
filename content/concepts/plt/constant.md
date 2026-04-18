@@ -1,20 +1,21 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Constant"
+title: Constant
 journey: plt
 status: mastered
-books: ["chapter-2-evaluation"]
+books:
+  - chapter-2-evaluation
 dependsOn: []
 blocks: []
 tags:
-  - "compiler-implementation"
-  - "language-feature-design"
-  - "program-analysis"
-  - "semantics"
-  - "syntax-grammar"
+  - compiler-implementation
+  - language-feature-design
+  - program-analysis
+  - semantics
+  - syntax-grammar
 ---
 
 The token itself *is* the value-the parser can extract it directly without consulting any environment or performing computation

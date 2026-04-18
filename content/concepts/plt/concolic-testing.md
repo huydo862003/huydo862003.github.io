@@ -1,16 +1,17 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Concolic testing"
+title: Concolic testing
 journey: plt
 status: learning
-books: ["chapter-5-types"]
+books:
+  - chapter-5-types
 dependsOn: []
 blocks: []
 tags:
-  - "design-principle"
+  - design-principle
 ---
 
 A testing technique combining concrete execution with symbolic reasoning - runs program with real values while simultaneously tracking symbolic constraints, then solves constraints to generate inputs 

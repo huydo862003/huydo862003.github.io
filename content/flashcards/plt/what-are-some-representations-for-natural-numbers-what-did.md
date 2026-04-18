@@ -1,9 +1,9 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: "What are some representations for natural numbers? what did we choose in rocq?"
+question: What are some representations for natural numbers? what did we choose in rocq?
 deck: rocq-programming-language
 concepts:
   - rocq

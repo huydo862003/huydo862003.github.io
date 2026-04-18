@@ -1,9 +1,9 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: "How to place declarations inside a module in rocq?"
+question: How to place declarations inside a module in rocq?
 deck: rocq-programming-language
 concepts:
   - rocq

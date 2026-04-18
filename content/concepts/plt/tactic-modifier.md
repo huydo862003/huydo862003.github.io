@@ -1,16 +1,16 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Tactic modifier"
+title: Tactic modifier
 journey: plt
 status: learning
 books: []
 dependsOn: []
 blocks: []
 tags:
-  - "syntax-grammar"
+  - syntax-grammar
 ---
 
 Tools: Rocq (formerly Coq)

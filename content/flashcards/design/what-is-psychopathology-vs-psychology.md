@@ -1,13 +1,13 @@
 ---
 published: true
-author: hdnax
-createdAt: '2026-03-28'
-updatedAt: '2026-03-28'
+author: Hdnax
+createdAt: "2026-03-28"
+updatedAt: "2026-03-28"
 question: What is psychopathology vs psychology?
 deck: general
 concepts:
-- psychology
-- psychopathology
+  - psychology
+  - psychopathology
 books: []
 tags: []
 ---

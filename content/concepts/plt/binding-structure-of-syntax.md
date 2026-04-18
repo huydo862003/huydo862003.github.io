@@ -1,18 +1,19 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Binding structure of syntax"
+title: Binding structure of syntax
 journey: plt
 status: reviewing
-books: ["chapter-1-abstract-syntax"]
+books:
+  - chapter-1-abstract-syntax
 dependsOn: []
 blocks: []
 tags:
-  - "compiler-implementation"
-  - "semantics"
-  - "syntax-grammar"
+  - compiler-implementation
+  - semantics
+  - syntax-grammar
 ---
 
 A generalization of [Abstract binding tree (ABT)](/journeys/plt/concepts/abstract-binding-tree-abt).

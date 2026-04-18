@@ -1,6 +1,6 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Handoff
@@ -10,7 +10,7 @@ books: []
 dependsOn: []
 blocks: []
 tags:
-  - "design-ops"
+  - design-ops
 ---
 
 The specific workflow phase where designers deliver finalized specifications, assets, and redlines to developers for implementation.

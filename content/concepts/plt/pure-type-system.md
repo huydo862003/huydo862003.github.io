@@ -1,18 +1,19 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Pure type system"
+title: Pure type system
 journey: plt
 status: learning
-books: ["preface"]
+books:
+  - preface
 dependsOn: []
 blocks: []
 tags:
-  - "formal-system"
-  - "language-feature-design"
-  - "type-theory"
+  - formal-system
+  - language-feature-design
+  - type-theory
 ---
 
 A general framework parameterizing typed lambda calculi by a triple (sorts, axioms, rules), unifying systems like simply typed λ-calculus, System F, and the calculus of constructions under a single formalism.

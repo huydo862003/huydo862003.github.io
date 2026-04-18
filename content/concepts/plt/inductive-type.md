@@ -1,17 +1,17 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Inductive type"
+title: Inductive type
 journey: plt
 status: reviewing
 books: []
 dependsOn: []
 blocks: []
 tags:
-  - "language-feature-design"
-  - "type-theory"
+  - language-feature-design
+  - type-theory
 ---
 
 Tools: Rocq (formerly Coq)

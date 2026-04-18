@@ -1,17 +1,17 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Boolean blindness"
+title: Boolean blindness
 journey: plt
 status: learning
 books: []
 dependsOn: []
 blocks: []
 tags:
-  - "design-principle"
-  - "type-theory"
+  - design-principle
+  - type-theory
 ---
 
 → The boolean discards it; you must later \"remember\" what it meant.

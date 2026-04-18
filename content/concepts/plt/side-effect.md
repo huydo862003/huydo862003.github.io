@@ -1,17 +1,18 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Side-effect"
+title: Side-effect
 journey: plt
 status: mastered
-books: ["chapter-2-evaluation"]
+books:
+  - chapter-2-evaluation
 dependsOn: []
 blocks: []
 tags:
-  - "language-feature-design"
-  - "programming-paradigm"
+  - language-feature-design
+  - programming-paradigm
 ---
 
 An observable interaction with the outside world or modification of state beyond returning a value, such as I/O, mutation, or exceptions.

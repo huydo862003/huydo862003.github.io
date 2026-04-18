@@ -1,9 +1,9 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: "What does an inductive definition in rocq do?"
+question: What does an inductive definition in rocq do?
 deck: rocq-programming-language
 concepts:
   - rocq

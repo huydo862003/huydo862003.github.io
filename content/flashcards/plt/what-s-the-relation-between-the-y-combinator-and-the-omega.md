@@ -1,9 +1,9 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: "What's the relation between the y-combinator and the omega combinator?"
+question: What's the relation between the y-combinator and the omega combinator?
 deck: pure-lambda-calculus
 concepts:
   - divergent-big-omega-combinator

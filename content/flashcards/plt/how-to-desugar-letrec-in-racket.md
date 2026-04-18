@@ -1,9 +1,9 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: "How to desugar letrec in racket?"
+question: How to desugar letrec in racket?
 deck: general
 concepts: []
 books:

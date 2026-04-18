@@ -1,16 +1,17 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Chomsky hierarchy"
+title: Chomsky hierarchy
 journey: plt
 status: learning
-books: ["chapter-5-types"]
+books:
+  - chapter-5-types
 dependsOn: []
 blocks: []
 tags:
-  - "linguistics"
+  - linguistics
 ---
 
 A classification of formal grammars by expressiveness - from simplest to most powerful: regular, context-free (parsers), context-sensitive (type systems), recursively enumerable; explains why parsing 

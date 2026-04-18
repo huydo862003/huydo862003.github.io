@@ -1,16 +1,17 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Computation theory"
+title: Computation theory
 journey: plt
 status: reviewing
-books: ["chapter-5-types"]
+books:
+  - chapter-5-types
 dependsOn: []
 blocks: []
 tags:
-  - "computation-theory"
+  - computation-theory
 ---
 
 The branch of theoretical computer science studying what can be computed and with what resources - includes models of computation (Turing machines, lambda calculus), decidability (halting problem, Ric

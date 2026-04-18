@@ -1,16 +1,17 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "The plait programming language"
+title: The plait programming language
 journey: plt
 status: learning
-books: ["chapter-2-evaluation"]
+books:
+  - chapter-2-evaluation
 dependsOn: []
 blocks: []
 tags:
-  - "language-feature-design"
+  - language-feature-design
 ---
 
 A dialect of Lisp, based on Racket, but with type system resembling that of ML.

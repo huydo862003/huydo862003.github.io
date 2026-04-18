@@ -1,17 +1,19 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Abstract syntax tree (AST)"
+title: Abstract syntax tree (AST)
 journey: plt
 status: mastered
-books: ["chapter-5-the-untyped-pure-lambda-calculus", "chapter-1-abstract-syntax"]
+books:
+  - chapter-5-the-untyped-pure-lambda-calculus
+  - chapter-1-abstract-syntax
 dependsOn: []
 blocks: []
 tags:
-  - "compiler-implementation"
-  - "syntax-grammar"
+  - compiler-implementation
+  - syntax-grammar
 ---
 
 (Syntax & Grammar) According to Practical foundations for programming languages , a tree representation of a term's essential structure (not necessarily a program), omitting superficial syntactic deta

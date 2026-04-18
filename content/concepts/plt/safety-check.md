@@ -1,19 +1,20 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Safety check"
+title: Safety check
 journey: plt
 status: reviewing
-books: ["chapter-5-types"]
+books:
+  - chapter-5-types
 dependsOn: []
 blocks: []
 tags:
-  - "design-principle"
-  - "language-feature-design"
-  - "programming-paradigm"
-  - "runtime"
+  - design-principle
+  - language-feature-design
+  - programming-paradigm
+  - runtime
 ---
 
 A mechanism, either carried out by the runtime to enforce Language safety/avoid Runtime type error or by programmers to avoid Runtime error.

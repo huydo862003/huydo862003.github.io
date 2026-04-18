@@ -1,19 +1,20 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Contract"
+title: Contract
 journey: plt
 status: learning
-books: ["chapter-5-types"]
+books:
+  - chapter-5-types
 dependsOn: []
 blocks: []
 tags:
-  - "language-feature-design"
-  - "runtime"
-  - "semantics"
-  - "type-theory"
+  - language-feature-design
+  - runtime
+  - semantics
+  - type-theory
 ---
 
 Problem: When typed code is called from untyped code, the type checker can't guarantee arguments will have correct types - untyped code has no static checking.

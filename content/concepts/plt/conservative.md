@@ -1,18 +1,19 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Conservative"
+title: Conservative
 journey: plt
 status: mastered
-books: ["chapter-5-types"]
+books:
+  - chapter-5-types
 dependsOn: []
 blocks: []
 tags:
-  - "compiler-implementation"
-  - "language-feature-design"
-  - "type-theory"
+  - compiler-implementation
+  - language-feature-design
+  - type-theory
 ---
 
 A type checker that considers all possible executions rather than just actual ones - may reject programs that would run safely (false positives) because it can't know which branch will execute at runt

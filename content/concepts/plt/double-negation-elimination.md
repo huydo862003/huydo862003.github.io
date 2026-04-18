@@ -1,17 +1,17 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Double negation elimination"
+title: Double negation elimination
 journey: plt
 status: reviewing
 books: []
 dependsOn: []
 blocks: []
 tags:
-  - "logic"
-  - "syntax-grammar"
+  - logic
+  - syntax-grammar
 ---
 
 holds. It asserts that if it is false that $A$ is false, then $A$ is true.

@@ -1,16 +1,19 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Judgment"
+title: Judgment
 journey: plt
 status: reviewing
-books: ["chapter-5-types", "chapter-2-inductive-definitions", "chapter-3-hypothetical-and-general-judgments"]
+books:
+  - chapter-5-types
+  - chapter-2-inductive-definitions
+  - chapter-3-hypothetical-and-general-judgments
 dependsOn: []
 blocks: []
 tags:
-  - "logic"
+  - logic
 ---
 
 (Logic) The mental act of affirming or denying a Proposition is true.

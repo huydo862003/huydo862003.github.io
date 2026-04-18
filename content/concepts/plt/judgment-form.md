@@ -1,17 +1,18 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Judgment form"
+title: Judgment form
 journey: plt
 status: reviewing
-books: ["chapter-2-inductive-definitions"]
+books:
+  - chapter-2-inductive-definitions
 dependsOn: []
 blocks: []
 tags:
-  - "logic"
-  - "set-theory-relation"
+  - logic
+  - set-theory-relation
 ---
 
 Synonymous with an n-place relation. For a unary relation/predicate, a judgment form is usually written as $J\\ -$ or $-\\ J$, with $-$ being a placeholder for some value drawn from the domain of the pr

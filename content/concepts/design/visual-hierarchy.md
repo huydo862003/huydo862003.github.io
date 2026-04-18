@@ -1,6 +1,6 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Visual hierarchy
@@ -10,8 +10,8 @@ books: []
 dependsOn: []
 blocks: []
 tags:
-  - "design-pattern"
-  - "UI-UX"
+  - design-pattern
+  - UI-UX
 ---
 
 The strategic arrangement and styling of elements-using size, color, and contrast-to guide the user's eye sequentially through the most important information.

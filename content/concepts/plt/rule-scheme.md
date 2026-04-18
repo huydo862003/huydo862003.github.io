@@ -1,17 +1,18 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Rule scheme"
+title: Rule scheme
 journey: plt
 status: reviewing
-books: ["chapter-2-inductive-definitions"]
+books:
+  - chapter-2-inductive-definitions
 dependsOn: []
 blocks: []
 tags:
-  - "logic"
-  - "set-theory-relation"
+  - logic
+  - set-theory-relation
 ---
 
 Synonymous with Rule schema.

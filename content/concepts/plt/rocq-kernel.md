@@ -1,16 +1,17 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Rocq kernel"
+title: Rocq kernel
 journey: plt
 status: learning
-books: ["logical-foundations"]
+books:
+  - logical-foundations
 dependsOn: []
 blocks: []
 tags:
-  - "compiler-implementation"
+  - compiler-implementation
 ---
 
 Tools: Rocq (formerly Coq)

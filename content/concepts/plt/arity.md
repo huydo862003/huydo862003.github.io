@@ -1,19 +1,21 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Arity"
+title: Arity
 journey: plt
 status: mastered
-books: ["chapter-5-types", "chapter-1-abstract-syntax"]
+books:
+  - chapter-5-types
+  - chapter-1-abstract-syntax
 dependsOn: []
 blocks: []
 tags:
-  - "language-feature-design"
-  - "semantics"
-  - "set-theory-relation"
-  - "syntax-grammar"
+  - language-feature-design
+  - semantics
+  - set-theory-relation
+  - syntax-grammar
 ---
 
 (Syntax & Grammar) According to Practical foundations for programming languages , a syntactic type signature of an Operator, determining the Sort of an operator and the number and the sorts of the arg

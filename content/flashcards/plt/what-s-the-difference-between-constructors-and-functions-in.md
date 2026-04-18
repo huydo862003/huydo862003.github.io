@@ -1,9 +1,9 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: "What's the difference between constructors and functions in rocq?"
+question: What's the difference between constructors and functions in rocq?
 deck: rocq-programming-language
 concepts:
   - rocq

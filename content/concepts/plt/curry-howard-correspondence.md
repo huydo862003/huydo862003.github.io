@@ -1,18 +1,18 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Curry-Howard correspondence"
+title: Curry-Howard correspondence
 journey: plt
 status: learning
 books: []
 dependsOn: []
 blocks: []
 tags:
-  - "logic"
-  - "semantics"
-  - "type-theory"
+  - logic
+  - semantics
+  - type-theory
 ---
 
 Remark. [Brouwer-Heyting-Kolmogorov (BHK) interpretation](/journeys/plt/concepts/brouwer-heyting-kolmogorov-bhk-interpretation) makes this correspondence explicit:

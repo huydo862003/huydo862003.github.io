@@ -1,17 +1,18 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Nonsensical term"
+title: Nonsensical term
 journey: plt
 status: mastered
-books: ["chapter-3-untyped-arithmetic-expressions"]
+books:
+  - chapter-3-untyped-arithmetic-expressions
 dependsOn: []
 blocks: []
 tags:
-  - "semantics"
-  - "syntax-grammar"
+  - semantics
+  - syntax-grammar
 ---
 
 Example: In the Untyped calculus of booleans and numbers, the followings are nonsensical:

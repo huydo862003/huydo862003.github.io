@@ -1,17 +1,18 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Labeled tree"
+title: Labeled tree
 journey: plt
 status: mastered
-books: ["chapter-5-the-untyped-pure-lambda-calculus"]
+books:
+  - chapter-5-the-untyped-pure-lambda-calculus
 dependsOn: []
 blocks: []
 tags:
-  - "compiler-implementation"
-  - "syntax-grammar"
+  - compiler-implementation
+  - syntax-grammar
 ---
 
 Synonymous with [Abstract syntax tree (AST)](/journeys/plt/concepts/abstract-syntax-tree-ast).

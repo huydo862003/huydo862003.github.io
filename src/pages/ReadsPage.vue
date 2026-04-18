@@ -242,12 +242,12 @@ function onFilterUpdate (values: string[][]) {
   @apply flex flex-col min-w-0 flex-1;
 }
 .reads-item-title {
-  @apply text-xs text-fg-muted transition-colors truncate capitalize;
+  @apply text-xs text-fg-muted transition-colors truncate;
   line-height: 1.2rem;
   margin-bottom: 0.2rem;
 }
 .reads-item-meta {
-  @apply text-fg-faint truncate capitalize;
+  @apply text-fg-faint truncate;
   font-size: 0.625rem;
   line-height: 1rem;
 }

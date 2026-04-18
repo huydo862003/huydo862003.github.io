@@ -1,18 +1,19 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Dimensional analysis"
+title: Dimensional analysis
 journey: plt
 status: learning
-books: ["chapter-1-introduction"]
+books:
+  - chapter-1-introduction
 dependsOn: []
 blocks: []
 tags:
-  - "other-mathematics"
-  - "program-analysis"
-  - "type-theory"
+  - other-mathematics
+  - program-analysis
+  - type-theory
 ---
 
 A static verification technique that encodes domain-specific properties (e.g., physical units, array bounds, indices) into types, ensuring operations respect these invariants by detecting mismatches at compile time rather than runtime.

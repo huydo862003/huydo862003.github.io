@@ -1,6 +1,6 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
 title: Adaptability
@@ -10,7 +10,7 @@ books: []
 dependsOn: []
 blocks: []
 tags:
-  - "design-system"
+  - design-system
 ---
 
 The system's resilience in adjusting to new contexts, theming requirements, or unforeseen use cases without requiring a fundamental redesign.

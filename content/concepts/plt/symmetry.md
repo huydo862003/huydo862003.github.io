@@ -1,13 +1,14 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Symmetry"
+title: Symmetry
 journey: plt
 status: learning
 tags: []
-books: ["chapter-3-hypothetical-and-general-judgments"]
+books:
+  - chapter-3-hypothetical-and-general-judgments
 dependsOn: []
 blocks: []
 ---

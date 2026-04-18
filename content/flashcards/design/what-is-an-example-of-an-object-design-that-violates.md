@@ -1,12 +1,12 @@
 ---
 published: true
-author: hdnax
-createdAt: '2026-03-28'
-updatedAt: '2026-03-28'
+author: Hdnax
+createdAt: "2026-03-28"
+updatedAt: "2026-03-28"
 question: What is an example of an object design that violates "intuition over instruction"?
 deck: general
 concepts:
-- intuition-over-instruction
+  - intuition-over-instruction
 books: []
 tags: []
 ---

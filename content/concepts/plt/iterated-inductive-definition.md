@@ -1,18 +1,19 @@
 ---
 published: true
-author: hdnax
+author: Hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-title: "Iterated inductive definition"
+title: Iterated inductive definition
 journey: plt
 status: reviewing
-books: ["chapter-2-inductive-definitions"]
+books:
+  - chapter-2-inductive-definitions
 dependsOn: []
 blocks: []
 tags:
-  - "logic"
-  - "proof-reason-technique"
-  - "set-theory-relation"
+  - logic
+  - proof-reason-technique
+  - set-theory-relation
 ---
 
 An inductive definition technique that specifies a set of elements as the strongest sets closed under a set of inference rules - each inference rule may only refer to already defined sets or the currently defined one.
