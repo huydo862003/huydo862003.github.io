@@ -12,7 +12,7 @@
           Just batch migrated from Notion for easier customization & decentralized backups, so things may currently be scrambled up a bit.
         </p>
         <p>
-          Disclaimer: Migrating from AI slop...
+          Notice: Migrating from AI slop (the frontend of the blog, not the note content)...
         </p>
       </div>
 
