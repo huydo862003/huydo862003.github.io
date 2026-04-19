@@ -21,7 +21,7 @@ defineProps<{
 
 <style scoped>
 @reference "../../style.css";
-@reference "../../style.css";
+
 .kbd-group {
   @apply inline-flex items-center gap-1;
 }
