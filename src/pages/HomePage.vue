@@ -296,13 +296,15 @@ const projects = [
   @apply text-xl font-bold mb-1;
 }
 .hero p {
-  @apply text-sm text-fg-muted max-w-lg mb-10;
+  @apply text-sm max-w-lg mb-10;
+  color: var(--gui-neutral-fg-muted);
 }
 .section {
   @apply mb-10;
 }
 .section h2 {
-  @apply text-base font-bold mb-4 pb-2 border-b border-border;
+  @apply text-base font-bold mb-4 pb-2 border-b;
+  border-color: var(--gui-neutral-border);
 }
 .section-link {
   @apply no-underline hover:underline;
@@ -311,10 +313,12 @@ const projects = [
   @apply list-none p-0 m-0 flex flex-col gap-3;
 }
 .item {
-  @apply border-l-2 border-fg-faint/30 pl-3 py-1 rounded-sm transition-colors;
+  @apply border-l-2 pl-3 py-1 rounded-sm transition-colors;
+  border-color: color-mix(in oklch, var(--gui-neutral-solid) 30%, transparent);
 }
 .item:has(.item-body-link:hover) {
-  @apply bg-bg-subtle border-accent-blue/50;
+  background-color: var(--gui-neutral-bg-subtle);
+  border-color: color-mix(in oklch, var(--gui-info-solid) 50%, transparent);
 }
 .item-body {
   @apply flex flex-col;
@@ -323,7 +327,7 @@ const projects = [
   @apply no-underline cursor-pointer;
 }
 .item-body-link:hover .item-link {
-  @apply text-accent-blue;
+  color: var(--gui-info-solid);
 }
 .ext-icon {
   @apply inline-block mr-1 opacity-50 shrink-0;
@@ -332,13 +336,15 @@ const projects = [
   @apply flex flex-wrap gap-x-3 gap-y-0.5 items-baseline;
 }
 .date {
-  @apply text-xs text-fg-faint shrink-0 tabular-nums;
+  @apply text-xs shrink-0 tabular-nums;
+  color: var(--gui-neutral-solid);
 }
 .item-link {
   @apply text-sm font-medium;
 }
 .desc {
-  @apply text-xs text-fg-muted mt-0.5;
+  @apply text-xs mt-0.5;
+  color: var(--gui-neutral-fg-muted);
 }
 .project-header {
   @apply flex flex-wrap items-center gap-1.5;
@@ -347,7 +353,9 @@ const projects = [
   @apply flex flex-wrap gap-1 mt-1;
 }
 .cat-tag {
-  @apply text-fg-muted border border-border rounded-sm px-1.5;
+  @apply border rounded-sm px-1.5;
+  color: var(--gui-neutral-fg-muted);
+  border-color: var(--gui-neutral-border);
   font-size: 0.625rem;
   line-height: 1.25rem;
 }
@@ -355,11 +363,12 @@ const projects = [
   @apply flex flex-wrap items-center gap-x-3 gap-y-0.5 mt-0.5;
 }
 .plink {
-  @apply inline-flex items-center gap-1 text-xs text-fg-muted
-         no-underline hover:text-accent-blue transition-colors
-         py-1;
+  @apply inline-flex items-center gap-1 text-xs no-underline transition-colors py-1;
+  color: var(--gui-neutral-fg-muted);
+  &:hover { color: var(--gui-info-solid); }
 }
 .empty {
-  @apply text-sm text-fg-muted;
+  @apply text-sm;
+  color: var(--gui-neutral-fg-muted);
 }
 </style>

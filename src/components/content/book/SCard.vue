@@ -1,8 +1,8 @@
 <template>
-  <div class="border border-border rounded-sm px-4 py-3">
+  <div class="scard border rounded-sm px-4 py-3">
     <router-link
       :to="to"
-      class="flex items-center gap-2 text-sm font-semibold text-fg no-underline hover:text-accent-blue transition-colors"
+      class="scard-link flex items-center gap-2 text-sm font-semibold no-underline transition-colors"
     >
       <GIcon
         v-if="icon"
@@ -12,7 +12,7 @@
     </router-link>
     <p
       v-if="showMeta && hasMeta"
-      class="text-xs text-fg-faint mt-0.5 ml-5 mb-2"
+      class="scard-meta text-xs mt-0.5 ml-5 mb-2"
     >
       <span
         v-for="(value, key, idx) in metaDisplay"
@@ -105,3 +105,18 @@ const listConfig = computed((): SCardConfig<T> => ({
   renderChildren: false,
 }));
 </script>
+
+<style>
+.scard {
+  border-color: var(--gui-neutral-border);
+}
+.scard-link {
+  color: var(--gui-neutral-fg);
+}
+.scard-link:hover {
+  color: var(--gui-info-solid);
+}
+.scard-meta {
+  color: var(--gui-neutral-solid);
+}
+</style>

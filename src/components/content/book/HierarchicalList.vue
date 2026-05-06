@@ -132,24 +132,30 @@ function metaValue (item: T): string {
   @apply list-none p-0 m-0 flex flex-col gap-0.5;
 }
 .items > li {
-  @apply border-l-2 border-border pl-3 py-1.5;
+  @apply border-l-2 pl-3 py-1.5;
+  border-color: var(--gui-neutral-border);
 }
 .sub-items {
   @apply list-none p-0 m-0 ml-2 mt-1 flex flex-col gap-0.5;
 }
 .sub-items > li {
-  @apply border-l border-border/50 pl-3 py-1;
+  @apply border-l pl-3 py-1;
+  border-color: color-mix(in oklch, var(--gui-neutral-border) 50%, transparent);
 }
 .item-row {
   @apply flex items-center justify-between gap-2;
 }
 .item-link {
-  @apply text-xs text-fg-muted no-underline hover:text-accent-blue transition-colors;
+  @apply text-xs no-underline transition-colors;
+  color: var(--gui-neutral-fg-muted);
+  &:hover { color: var(--gui-info-solid); }
 }
 .item-link.active {
-  @apply text-fg font-semibold;
+  @apply font-semibold;
+  color: var(--gui-neutral-fg);
 }
 .item-meta {
-  @apply text-xs text-fg-faint shrink-0 hidden sm:inline;
+  @apply text-xs shrink-0 hidden sm:inline;
+  color: var(--gui-neutral-solid);
 }
 </style>

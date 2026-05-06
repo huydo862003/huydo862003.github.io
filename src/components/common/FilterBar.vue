@@ -6,10 +6,9 @@
         placement="bottom-start"
       >
         <button
-          class="flex items-center gap-2 text-xs px-2 py-0.5 border border-border rounded-sm
-                 text-fg-faint cursor-pointer hover:border-fg-faint hover:text-fg transition-colors
-                 shrink-0 whitespace-nowrap w-32"
-          :class="{ 'border-fg-faint/60 text-fg': hasActive }"
+          class="filter-btn flex items-center gap-2 text-xs px-2 py-0.5 border rounded-sm
+                 cursor-pointer transition-colors shrink-0 whitespace-nowrap w-32"
+          :class="{ 'filter-btn-active': hasActive }"
         >
           <GIcon
             :name="GIconName.Filter"
@@ -58,13 +57,13 @@
       <span
         v-for="chip in activeChips"
         :key="`${chip.groupIndex}-${chip.value}`"
-        class="flex items-center gap-1 text-fg-faint border border-border rounded-sm px-1.5 shrink-0"
+        class="chip flex items-center gap-1 border rounded-sm px-1.5 shrink-0"
         :class="chip.colorClass"
         style="font-size: 0.625rem; line-height: 1.25rem;"
       >
         {{ chip.label }}
         <button
-          class="cursor-pointer text-fg-faint/60 hover:text-fg transition-colors"
+          class="chip-remove cursor-pointer transition-colors"
           style="font-size: 0.75rem; line-height: 1; background: none; border: none; padding: 0;"
           @click="toggle(chip.groupIndex, chip.value)"
         >×</button>
@@ -144,6 +143,28 @@ function toggle (groupIndex: number, value: string) {
 
 <style>
 @reference "@/style.css";
+.filter-btn {
+  border-color: var(--gui-neutral-border);
+  color: var(--gui-neutral-solid);
+}
+.filter-btn:hover {
+  border-color: var(--gui-neutral-solid);
+  color: var(--gui-neutral-fg);
+}
+.filter-btn-active {
+  border-color: color-mix(in oklch, var(--gui-neutral-solid) 60%, transparent);
+  color: var(--gui-neutral-fg);
+}
+.chip {
+  color: var(--gui-neutral-solid);
+  border-color: var(--gui-neutral-border);
+}
+.chip-remove {
+  color: color-mix(in oklch, var(--gui-neutral-solid) 60%, transparent);
+}
+.chip-remove:hover {
+  color: var(--gui-neutral-fg);
+}
 .v-popper--theme-dropdown .v-popper__inner {
   background: var(--gui-neutral-bg) !important;
   color: var(--gui-neutral-fg) !important;
@@ -183,9 +204,9 @@ function toggle (groupIndex: number, value: string) {
   color: var(--gui-neutral-fg);
 }
 .item.active { color: var(--gui-neutral-fg); font-weight: 500; }
-.item.book.active { color: var(--color-accent-blue-9); }
-.item.post.active { color: var(--color-accent-green-9); }
-.item.paper.active { color: var(--color-accent-yellow-9); }
+.item.book.active { color: var(--gui-info-solid); }
+.item.post.active { color: var(--gui-success-solid); }
+.item.paper.active { color: var(--gui-warning-solid); }
 .check {
   font-size: 10px;
   width: 10px;

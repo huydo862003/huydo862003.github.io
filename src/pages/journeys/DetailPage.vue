@@ -22,9 +22,9 @@
           v-for="s in statCards"
           :key="s.label"
           :to="s.to"
-          class="grid justify-items-center sm:justify-items-start border border-border rounded-sm
+          class="journey-stat-card grid justify-items-center sm:justify-items-start border rounded-sm
                  py-2.5 px-3 sm:py-4 sm:px-4 text-center sm:text-left no-underline cursor-pointer
-                 hover:border-fg-faint hover:bg-bg-subtle/50 transition-colors"
+                 transition-colors"
         >
           <div class="relative w-8 h-8 sm:w-16 sm:h-16 shrink-0">
             <div
@@ -34,17 +34,17 @@
             />
           </div>
           <div class="flex flex-col">
-            <span class="text-xs sm:text-sm font-semibold text-fg">{{ s.count }} {{ s.label }}</span>
+            <span class="journey-stat-title text-xs sm:text-sm font-semibold">{{ s.count }} {{ s.label }}</span>
             <div class="hidden sm:flex flex-col gap-0.5 mt-0.5">
               <span
                 v-for="line in s.lines"
                 :key="line.label"
                 class="text-xs"
                 :class="{
-                  'text-accent-green': line.color === 'green',
-                  'text-accent-yellow': line.color === 'yellow',
-                  'text-accent-red': line.color === 'red',
-                  'text-fg-faint': line.color === 'muted',
+                  'journey-line-green': line.color === 'green',
+                  'journey-line-yellow': line.color === 'yellow',
+                  'journey-line-red': line.color === 'red',
+                  'journey-line-muted': line.color === 'muted',
                 }"
               >{{ line.value }} {{ line.label }}</span>
             </div>
@@ -57,15 +57,15 @@
           v-for="r in resources"
           :key="r.to"
           :to="r.to"
-          class="flex items-center gap-2 px-3 py-2 rounded-sm no-underline text-fg-muted hover:bg-bg-subtle transition-colors"
+          class="journey-resource-link flex items-center gap-2 px-3 py-2 rounded-sm no-underline transition-colors"
         >
           <GIcon
             :name="r.icon"
             :size="16"
-            class="text-fg-faint"
+            class="journey-resource-icon"
           />
           <span class="text-sm">{{ r.label }}</span>
-          <span class="text-xs text-fg-faint ml-auto">{{ r.count }}</span>
+          <span class="journey-resource-count text-xs ml-auto">{{ r.count }}</span>
         </router-link>
       </nav>
 
@@ -76,7 +76,7 @@
       />
       <p
         v-else
-        class="text-fg-faint text-sm"
+        class="journey-empty text-sm"
       >
         No content yet.
       </p>
@@ -219,7 +219,7 @@ function ringStyle (s: {
     parts.push(`${seg.color} ${acc}% ${acc + seg.pct}%`);
     acc += seg.pct;
   }
-  parts.push(`var(--color-bg-subtle) ${acc}% 100%`);
+  parts.push(`var(--gui-neutral-bg-subtle) ${acc}% 100%`);
   return {
     background: `conic-gradient(${parts.join(', ')})`,
   };
@@ -255,11 +255,11 @@ const statCards = computed(() => {
       segments: [
         {
           pct: pct(cs.mastered, cs.total),
-          color: 'var(--color-accent-green)',
+          color: 'var(--gui-success-solid)',
         },
         {
           pct: pct(cs.reviewing, cs.total),
-          color: 'var(--color-accent-yellow)',
+          color: 'var(--gui-warning-solid)',
         },
       ],
       lines: [
@@ -287,7 +287,7 @@ const statCards = computed(() => {
       segments: [
         {
           pct: pct(reviewed, fs.dueToday || 1),
-          color: 'var(--color-accent-green)',
+          color: 'var(--gui-success-solid)',
         },
       ],
       lines: [
@@ -315,11 +315,11 @@ const statCards = computed(() => {
       segments: [
         {
           pct: pct(ps.completed, ps.total),
-          color: 'var(--color-accent-green)',
+          color: 'var(--gui-success-solid)',
         },
         {
           pct: pct(ps.active, ps.total),
-          color: 'var(--color-accent-yellow)',
+          color: 'var(--gui-warning-solid)',
         },
       ],
       lines: [
@@ -389,3 +389,21 @@ const resources = computed(() => {
   ].filter((r) => 0 < r.count);
 });
 </script>
+
+<style>
+.journey-stat-card { border-color: var(--gui-neutral-border); }
+.journey-stat-card:hover {
+  border-color: var(--gui-neutral-solid);
+  background-color: color-mix(in oklch, var(--gui-neutral-bg-subtle) 50%, transparent);
+}
+.journey-stat-title { color: var(--gui-neutral-fg); }
+.journey-line-green { color: var(--gui-success-solid); }
+.journey-line-yellow { color: var(--gui-warning-solid); }
+.journey-line-red { color: var(--gui-danger-solid); }
+.journey-line-muted { color: var(--gui-neutral-solid); }
+.journey-resource-link { color: var(--gui-neutral-fg-muted); }
+.journey-resource-link:hover { background-color: var(--gui-neutral-bg-subtle); }
+.journey-resource-icon { color: var(--gui-neutral-solid); }
+.journey-resource-count { color: var(--gui-neutral-solid); }
+.journey-empty { color: var(--gui-neutral-solid); }
+</style>

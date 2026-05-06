@@ -24,7 +24,7 @@
 
     <p
       v-if="!rootBooks.length"
-      class="text-fg-faint text-sm"
+      class="books-empty text-sm"
     >
       No books yet.
     </p>
@@ -86,3 +86,7 @@ const bookConfig = computed((): SCardConfig<Book> => ({
   renderChildren: true,
 }));
 </script>
+
+<style>
+.books-empty { color: var(--gui-neutral-solid); }
+</style>

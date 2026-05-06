@@ -16,6 +16,7 @@ defineProps<{
 <style scoped>
 @reference "@/style.css";
 .updated-date {
-  @apply text-xs text-fg-faint;
+  @apply text-xs;
+  color: var(--gui-neutral-solid);
 }
 </style>

@@ -18,10 +18,14 @@ const year = new Date().getFullYear();
 @reference "@/style.css";
 
 .foot {
-  @apply h-12 flex items-center justify-center gap-2 border-t border-b border-border text-xs text-fg-muted shrink-0;
-  background: var(--color-bg-subtle);
+  @apply h-12 flex items-center justify-center gap-2 border-t border-b text-xs shrink-0;
+  border-color: var(--gui-neutral-border);
+  color: var(--gui-neutral-fg-muted);
+  background: var(--gui-neutral-bg-subtle);
 }
 .foot a {
-  @apply text-fg-muted no-underline hover:text-fg;
+  @apply no-underline;
+  color: var(--gui-neutral-fg-muted);
+  &:hover { color: var(--gui-neutral-fg); }
 }
 </style>

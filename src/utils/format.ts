@@ -18,9 +18,9 @@ export function statusProgress (status: string): string {
 
 export function ringColor (progress: string | number): string {
   const progressValue = Number(progress);
-  if (100 <= progressValue) return 'var(--color-accent-green)';
-  if (60 <= progressValue) return 'var(--color-accent-yellow)';
-  if (40 <= progressValue) return 'var(--color-accent-orange)';
-  if (20 <= progressValue) return 'var(--color-accent-red)';
-  return 'var(--color-border)';
+  if (100 <= progressValue) return 'var(--gui-success-solid)';
+  if (60 <= progressValue) return 'var(--gui-warning-solid)';
+  if (40 <= progressValue) return 'var(--gui-notice-solid)';
+  if (20 <= progressValue) return 'var(--gui-danger-solid)';
+  return 'var(--gui-neutral-border)';
 }

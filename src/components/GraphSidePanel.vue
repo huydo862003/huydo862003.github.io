@@ -165,8 +165,8 @@ defineExpose({
 
   display: flex;
   flex-direction: column;
-  border-left: 1px solid var(--color-border);
-  background: var(--color-bg);
+  border-left: 1px solid var(--gui-neutral-border);
+  background: var(--gui-neutral-bg);
   min-width: 280px;
   max-width: 900px;
   flex-shrink: 0;
@@ -184,16 +184,20 @@ defineExpose({
   background: oklch(0.6 0.15 250 / 0.25);
 }
 .pane-header {
-  @apply flex items-center justify-between px-3 py-2 border-b border-border shrink-0;
+  @apply flex items-center justify-between px-3 py-2 border-b shrink-0;
+  border-color: var(--gui-neutral-border);
 }
 .pane-title {
-  @apply text-xs font-semibold text-fg-muted;
+  @apply text-xs font-semibold;
+  color: var(--gui-neutral-fg-muted);
 }
 .header-controls {
   @apply flex items-center gap-0.5;
 }
 .ctrl-btn {
-  @apply p-1.5 rounded-sm cursor-pointer transition-colors text-fg-faint hover:text-fg no-underline;
+  @apply p-1.5 rounded-sm cursor-pointer transition-colors no-underline;
+  color: var(--gui-neutral-solid);
+  &:hover { color: var(--gui-neutral-fg); }
 }
 .close-btn {
   @apply ml-1;

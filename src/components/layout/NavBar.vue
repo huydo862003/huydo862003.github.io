@@ -157,7 +157,9 @@ const navLinks = [
 <style scoped>
 @reference "@/style.css";
 .nav {
-  @apply border-b border-border bg-bg;
+  @apply border-b;
+  border-color: var(--gui-neutral-border);
+  background-color: var(--gui-neutral-bg);
 }
 .inner {
   max-width: 64rem;
@@ -171,7 +173,8 @@ const navLinks = [
   @apply no-underline flex items-center gap-0.5;
 }
 .logo-icon {
-  @apply h-14 w-14 text-fg;
+  @apply h-14 w-14;
+  color: var(--gui-neutral-fg);
 }
 .logo-text {
   @apply text-sm font-bold;
@@ -180,21 +183,29 @@ const navLinks = [
   @apply hidden sm:flex items-center gap-4 ml-auto;
 }
 .nav-link {
-  @apply text-xs text-fg-muted no-underline hover:text-fg;
+  @apply text-xs no-underline;
+  color: var(--gui-neutral-fg-muted);
+  &:hover { color: var(--gui-neutral-fg); }
 }
 .icon-btn {
-  @apply text-fg-faint hover:text-fg p-1 cursor-pointer;
+  @apply p-1 cursor-pointer;
+  color: var(--gui-neutral-solid);
+  &:hover { color: var(--gui-neutral-fg); }
 }
 .mobile-right {
   @apply sm:hidden flex items-center gap-1 ml-auto;
 }
 .mobile-menu {
-  @apply sm:hidden border-t border-border-muted px-4 py-2 flex flex-col gap-1;
+  @apply sm:hidden border-t px-4 py-2 flex flex-col gap-1;
+  border-color: var(--gui-neutral-border-subtle);
 }
 .mobile-link {
-  @apply text-sm text-fg-muted no-underline hover:text-fg py-1;
+  @apply text-sm no-underline py-1;
+  color: var(--gui-neutral-fg-muted);
+  &:hover { color: var(--gui-neutral-fg); }
 }
 .tooltip-search {
-  @apply flex items-center gap-2 text-xs text-fg-muted;
+  @apply flex items-center gap-2 text-xs;
+  color: var(--gui-neutral-fg-muted);
 }
 </style>

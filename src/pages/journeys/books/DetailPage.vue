@@ -16,7 +16,7 @@
           v-if="book.cover"
           :src="`/book-covers/${book.cover}`"
           :alt="book.title"
-          class="w-24 shrink-0 rounded-sm object-cover self-start border border-border/50"
+          class="book-cover w-24 shrink-0 rounded-sm object-cover self-start border"
         >
         <div class="flex flex-col min-w-0">
           <h1 class="text-xl font-bold mb-1">
@@ -24,13 +24,13 @@
           </h1>
           <p
             v-if="book.author"
-            class="text-xs text-fg-faint mt-0.5"
+            class="book-author text-xs mt-0.5"
           >
             {{ book.author }}
           </p>
           <p
             v-if="book.date"
-            class="text-xs text-fg-faint/60"
+            class="book-date text-xs"
           >
             {{ book.date }}
           </p>
@@ -40,7 +40,7 @@
               :href="book.url"
               target="_blank"
               rel="noopener"
-              class="inline-flex items-center gap-1 text-xs text-accent-blue no-underline hover:underline"
+              class="book-url inline-flex items-center gap-1 text-xs no-underline hover:underline"
             >
               <GIcon
                 :name="GIconName.ExternalLink"
@@ -49,12 +49,12 @@
             </a>
             <span
               v-if="book.isbn"
-              class="text-xs text-fg-faint/60 font-mono"
+              class="book-isbn text-xs font-mono"
             >ISBN {{ book.isbn }}</span>
           </div>
           <p
             v-if="book.description && !book.parent"
-            class="text-xs text-fg-muted mt-1 max-w-prose"
+            class="book-description text-xs mt-1 max-w-prose"
           >
             {{ book.description }}
           </p>
@@ -91,7 +91,7 @@
           >
             <router-link
               :to="`/journeys/${slug}/concepts/${c}`"
-              class="block text-sm text-fg-muted no-underline hover:text-accent-blue truncate transition-colors py-1 border-b border-border"
+              class="book-concept-link block text-sm no-underline truncate transition-colors py-1 border-b"
             >
               {{ formatSlug(c) }}
             </router-link>
@@ -100,7 +100,7 @@
       </div>
 
       <div class="mb-6">
-        <h3 class="text-xs font-semibold text-fg-faint uppercase tracking-wider mb-3 pb-1 border-b border-border">
+        <h3 class="book-section-label text-xs font-semibold uppercase tracking-wider mb-3 pb-1 border-b">
           Content
         </h3>
         <div
@@ -110,7 +110,7 @@
         />
         <p
           v-else
-          class="text-fg-faint text-sm"
+          class="book-empty text-sm"
         >
           No content yet.
         </p>
@@ -249,3 +249,16 @@ const prevChapter = computed(() => allJourneyBooks.value[currentIndex.value - 1]
 const nextChapter = computed(() => allJourneyBooks.value[currentIndex.value + 1]);
 
 </script>
+
+<style>
+.book-cover { border-color: color-mix(in oklch, var(--gui-neutral-border) 50%, transparent); }
+.book-author { color: var(--gui-neutral-solid); }
+.book-date { color: color-mix(in oklch, var(--gui-neutral-solid) 60%, transparent); }
+.book-url { color: var(--gui-info-solid); }
+.book-isbn { color: color-mix(in oklch, var(--gui-neutral-solid) 60%, transparent); }
+.book-description { color: var(--gui-neutral-fg-muted); }
+.book-concept-link { color: var(--gui-neutral-fg-muted); border-color: var(--gui-neutral-border); }
+.book-concept-link:hover { color: var(--gui-info-solid); }
+.book-section-label { color: var(--gui-neutral-solid); border-color: var(--gui-neutral-border); }
+.book-empty { color: var(--gui-neutral-solid); }
+</style>

@@ -39,7 +39,7 @@
       />
 
       <div class="mb-6">
-        <h3 class="text-xs font-semibold text-fg-faint uppercase tracking-wider mb-3 pb-1 border-b border-border">
+        <h3 class="concept-detail-label text-xs font-semibold uppercase tracking-wider mb-3 pb-1 border-b">
           Content
         </h3>
         <div
@@ -49,7 +49,7 @@
         />
         <p
           v-else
-          class="text-fg-faint text-sm"
+          class="concept-detail-empty text-sm"
         >
           No content yet.
         </p>
@@ -172,3 +172,8 @@ const bookItems = computed(() =>
     as: RouterLink,
   })));
 </script>
+
+<style>
+.concept-detail-label { color: var(--gui-neutral-solid); border-color: var(--gui-neutral-border); }
+.concept-detail-empty { color: var(--gui-neutral-solid); }
+</style>

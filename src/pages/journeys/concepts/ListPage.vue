@@ -10,7 +10,7 @@
       <JourneyBreadcrumb :crumbs="[{ label: 'Journeys', to: '/journeys' }, { label: slug, to: `/journeys/${slug}` }, { label: 'Concepts', to: `/journeys/${slug}/concepts` }]" />
     </div>
     <h1 class="text-xl font-bold mb-6">
-      Concepts <span class="text-sm font-normal text-fg-faint">({{ filteredConcepts.length }})</span>
+      Concepts <span class="concept-count text-sm font-normal">({{ filteredConcepts.length }})</span>
     </h1>
 
     <div class="flex flex-wrap items-center gap-2 mb-6">
@@ -62,7 +62,7 @@
             v-for="concept in filteredConcepts"
             :key="concept.slug"
             :row-data="{ title: concept.title, status: statusOrder[concept.status] ?? 0 }"
-            class="cursor-pointer hover:bg-bg-subtle transition-colors"
+            class="concept-row cursor-pointer transition-colors"
             @click="router.push(`/journeys/${slug}/concepts/${concept.slug}`)"
           >
             <GTableCell
@@ -72,7 +72,7 @@
             >
               <router-link
                 :to="`/journeys/${slug}/concepts/${concept.slug}`"
-                class="text-xs text-fg no-underline hover:text-accent-blue hover:underline"
+                class="concept-link text-xs no-underline hover:underline"
                 @click.stop
               >
                 {{ concept.title }}
@@ -113,7 +113,7 @@
                   v-for="book in concept.books"
                   :key="book"
                   :to="`/journeys/${slug}/books`"
-                  class="inline-block text-xs text-fg-muted no-underline hover:underline mr-1"
+                  class="concept-book-link inline-block text-xs no-underline hover:underline mr-1"
                   @click.stop
                 >
                   {{ formatSlug(book) }}
@@ -126,7 +126,7 @@
     </div>
     <p
       v-else-if="!filteredConcepts.length"
-      class="text-fg-faint text-sm mt-4"
+      class="concept-empty text-sm mt-4"
     >
       No concepts match.
     </p>
@@ -160,7 +160,7 @@
           :items="bookItems"
         />
         <div v-if="content">
-          <h3 class="text-xs font-semibold text-fg-faint uppercase tracking-wider mb-3 pb-1 border-b border-border">
+          <h3 class="concept-section-label text-xs font-semibold uppercase tracking-wider mb-3 pb-1 border-b">
             Content
           </h3>
           <div
@@ -170,7 +170,7 @@
         </div>
         <p
           v-else
-          class="text-sm text-fg-faint"
+          class="concept-no-content text-sm"
         >
           No content yet.
         </p>
@@ -276,6 +276,14 @@ function tooltipContent (conceptSlug: string): string {
 </script>
 
 <style>
+.concept-count { color: var(--gui-neutral-solid); }
+.concept-row:hover { background-color: var(--gui-neutral-bg-subtle); }
+.concept-link { color: var(--gui-neutral-fg); }
+.concept-link:hover { color: var(--gui-info-solid); }
+.concept-book-link { color: var(--gui-neutral-fg-muted); }
+.concept-empty { color: var(--gui-neutral-solid); }
+.concept-section-label { color: var(--gui-neutral-solid); border-color: var(--gui-neutral-border); }
+.concept-no-content { color: var(--gui-neutral-solid); }
 .tooltip-def {
   max-width: 400px;
   max-height: 200px;

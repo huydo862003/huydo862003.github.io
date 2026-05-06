@@ -292,19 +292,22 @@ defineExpose({
 <style scoped>
 @reference "@/style.css";
 .palette {
-  @apply bg-bg border border-border rounded-sm shadow-2xl
-         w-[90vw] max-w-xl h-[70vh] flex flex-col overflow-hidden
-         mt-[5vh];
+  @apply rounded-sm shadow-2xl w-[90vw] max-w-xl h-[70vh] flex flex-col overflow-hidden mt-[5vh] border;
+  background-color: var(--gui-neutral-bg);
+  border-color: var(--gui-neutral-border);
 }
 .search-row {
-  @apply flex items-center gap-2 px-4 py-3 border-b border-border;
+  @apply flex items-center gap-2 px-4 py-3 border-b;
+  border-color: var(--gui-neutral-border);
 }
 .search-icon {
-  @apply text-fg-faint shrink-0;
+  @apply shrink-0;
+  color: var(--gui-neutral-solid);
 }
 .search-input {
-  @apply flex-1 bg-transparent text-sm text-fg outline-none
-         placeholder:text-fg-faint/40;
+  @apply flex-1 bg-transparent text-sm outline-none;
+  color: var(--gui-neutral-fg);
+  &::placeholder { color: color-mix(in oklch, var(--gui-neutral-solid) 40%, transparent); }
 }
 .results {
   @apply flex-1 overflow-y-auto py-2;
@@ -313,31 +316,40 @@ defineExpose({
   @apply px-2;
 }
 .group-label {
-  @apply text-xs text-fg-faint px-2 py-1;
+  @apply text-xs px-2 py-1;
+  color: var(--gui-neutral-solid);
 }
 .result {
   @apply flex items-center gap-2 w-full px-2 py-1.5 rounded-sm
-         text-left text-sm text-fg-muted cursor-pointer transition-colors;
+         text-left text-sm cursor-pointer transition-colors;
+  color: var(--gui-neutral-fg-muted);
 }
 .result.active {
-  @apply bg-bg-subtle text-fg;
+  background-color: var(--gui-neutral-bg-subtle);
+  color: var(--gui-neutral-fg);
 }
 .result-icon {
-  @apply text-fg-faint shrink-0;
+  @apply shrink-0;
+  color: var(--gui-neutral-solid);
 }
 .result-type {
-  @apply text-xs text-fg-faint bg-bg-subtle px-1 py-px rounded-sm shrink-0 min-w-16 text-center;
+  @apply text-xs px-1 py-px rounded-sm shrink-0 min-w-16 text-center;
+  color: var(--gui-neutral-solid);
+  background-color: var(--gui-neutral-bg-subtle);
 }
 .result-label {
   @apply truncate;
 }
 .empty {
-  @apply text-sm text-fg-faint text-center py-8;
+  @apply text-sm text-center py-8;
+  color: var(--gui-neutral-solid);
 }
 .footer {
-  @apply flex items-center gap-4 px-4 py-2 border-t border-border;
+  @apply flex items-center gap-4 px-4 py-2 border-t;
+  border-color: var(--gui-neutral-border);
 }
 .hint {
-  @apply flex items-center gap-1 text-xs text-fg-faint;
+  @apply flex items-center gap-1 text-xs;
+  color: var(--gui-neutral-solid);
 }
 </style>

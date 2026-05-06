@@ -15,10 +15,10 @@
         {{ paper.title }}
       </h1>
 
-      <div class="flex flex-wrap items-center gap-x-2 gap-y-0.5 mb-3 text-xs text-fg-faint">
+      <div class="paper-detail-meta flex flex-wrap items-center gap-x-2 gap-y-0.5 mb-3 text-xs">
         <span v-if="paper.authors.length">{{ paper.authors.join(', ') }}</span>
         <template v-if="paper.venue || paper.year">
-          <span class="text-fg-faint/50">&middot;</span>
+          <span class="paper-detail-dot">&middot;</span>
           <span v-if="paper.venue">{{ paper.venue }}</span>
           <span
             v-if="paper.year"
@@ -36,7 +36,7 @@
           :href="paper.url"
           target="_blank"
           rel="noopener"
-          class="inline-flex items-center gap-1 text-xs text-accent-blue no-underline hover:underline"
+          class="paper-url inline-flex items-center gap-1 text-xs no-underline hover:underline"
         >
           <GIcon
             :name="GIconName.ExternalLink"
@@ -61,7 +61,7 @@
       </div>
 
       <div class="mb-6">
-        <h3 class="text-xs font-semibold text-fg-faint uppercase tracking-wider mb-3 pb-1 border-b border-border">
+        <h3 class="paper-section-label text-xs font-semibold uppercase tracking-wider mb-3 pb-1 border-b">
           Notes
         </h3>
         <div
@@ -71,7 +71,7 @@
         />
         <p
           v-else
-          class="text-sm text-fg-faint"
+          class="paper-empty text-sm"
         >
           No notes yet.
         </p>
@@ -132,3 +132,11 @@ const {
 );
 watch(paper, () => reloadContent());
 </script>
+
+<style>
+.paper-detail-meta { color: var(--gui-neutral-solid); }
+.paper-detail-dot { color: color-mix(in oklch, var(--gui-neutral-solid) 50%, transparent); }
+.paper-url { color: var(--gui-info-solid); }
+.paper-section-label { color: var(--gui-neutral-solid); border-color: var(--gui-neutral-border); }
+.paper-empty { color: var(--gui-neutral-solid); }
+</style>

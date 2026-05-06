@@ -53,7 +53,8 @@ h1 {
   @apply text-xl font-bold mb-1;
 }
 .subtitle {
-  @apply text-sm text-fg-faint mb-6;
+  @apply text-sm mb-6;
+  color: var(--gui-neutral-solid);
 }
 .list {
   @apply list-none p-0 m-0;
@@ -62,12 +63,14 @@ h1 {
   @apply py-1 flex gap-4 items-baseline;
 }
 .date {
-  @apply text-xs text-fg-faint shrink-0 tabular-nums;
+  @apply text-xs shrink-0 tabular-nums;
+  color: var(--gui-neutral-solid);
 }
 .link {
   @apply text-sm no-underline hover:underline;
 }
 .empty {
-  @apply text-fg-faint text-sm;
+  @apply text-sm;
+  color: var(--gui-neutral-solid);
 }
 </style>

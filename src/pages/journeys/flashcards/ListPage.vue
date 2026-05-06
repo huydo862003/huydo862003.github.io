@@ -50,11 +50,11 @@
           label="All"
         >
           <button
-            class="w-full border border-border rounded-sm px-4 py-3 text-left text-sm hover:border-fg-faint transition-colors flex flex-wrap items-center justify-between gap-1 cursor-pointer"
+            class="deck-btn w-full border rounded-sm px-4 py-3 text-left text-sm transition-colors flex flex-wrap items-center justify-between gap-1 cursor-pointer"
             @click="openDeck()"
           >
             <span class="font-medium">All</span>
-            <span class="text-xs text-fg-faint">{{ journeyStats.total }} cards · {{ journeyStats.dueToday }} due</span>
+            <span class="deck-meta text-xs">{{ journeyStats.total }} cards · {{ journeyStats.dueToday }} due</span>
           </button>
         </GFilterableItem>
         <GFilterableItem
@@ -64,17 +64,17 @@
           :label="formatSlug(d)"
         >
           <button
-            class="w-full border border-border rounded-sm px-4 py-3 text-left text-sm hover:border-fg-faint transition-colors flex flex-wrap items-center justify-between gap-1 cursor-pointer"
+            class="deck-btn w-full border rounded-sm px-4 py-3 text-left text-sm transition-colors flex flex-wrap items-center justify-between gap-1 cursor-pointer"
             @click="openDeck(d)"
           >
             <span class="font-medium">{{ formatSlug(d) }}</span>
-            <span class="text-xs text-fg-faint">{{ deckStats.get(d)?.count ?? 0 }} cards · {{ deckStats.get(d)?.due ?? 0 }} due</span>
+            <span class="deck-meta text-xs">{{ deckStats.get(d)?.count ?? 0 }} cards · {{ deckStats.get(d)?.due ?? 0 }} due</span>
           </button>
         </GFilterableItem>
       </GFilterable>
       <p
         v-if="!journeyCards.length"
-        class="text-center text-sm text-fg-faint py-8"
+        class="fc-empty text-center text-sm py-8"
       >
         No flashcards for this journey yet.
       </p>
@@ -151,13 +151,13 @@
             <GTableRow
               v-for="card in activePool"
               :key="card.slug"
-              class="cursor-pointer hover:bg-bg-subtle transition-colors"
+              class="fc-table-row cursor-pointer transition-colors"
               @click="$router.push(`/journeys/${slug}/flashcards/${card.slug}`)"
             >
               <GTableCell class="max-w-md truncate px-3">
                 <router-link
                   :to="`/journeys/${slug}/flashcards/${card.slug}`"
-                  class="text-fg no-underline hover:text-accent-blue hover:underline truncate block"
+                  class="fc-question-link no-underline hover:underline truncate block"
                 >
                   {{ card.question }}
                 </router-link>
@@ -172,10 +172,10 @@
               <GTableCell>
                 <span
                   v-if="cardIsStale(card.slug)"
-                  class="text-xs text-accent-red"
+                  class="fc-stale text-xs"
                 >stale</span>
               </GTableCell>
-              <GTableCell class="text-xs text-fg-faint whitespace-nowrap px-3">
+              <GTableCell class="fc-last-reviewed text-xs whitespace-nowrap px-3">
                 {{ lastReviewed(card.slug) }}
               </GTableCell>
               <GTableCell class="flex gap-1 px-3">
@@ -214,7 +214,7 @@
     <div v-if="mode === 'quiz'">
       <div v-if="currentCard">
         <div class="mb-4">
-          <span class="text-xs text-fg-faint mb-2 block">{{ currentIndex + 1 }}/{{ queue.length }}</span>
+          <span class="fc-quiz-counter text-xs mb-2 block">{{ currentIndex + 1 }}/{{ queue.length }}</span>
           <div class="flex items-center gap-2">
             <GButton
               v-if="!flipped"
@@ -255,7 +255,7 @@
         </div>
 
         <div
-          class="border border-border rounded-sm p-6 cursor-pointer"
+          class="fc-card-wrap border rounded-sm p-6 cursor-pointer"
           style="perspective: 800px;"
           @click="flipped = !flipped"
         >
@@ -269,7 +269,7 @@
               class="flex flex-col"
               style="min-height: 10.5rem;"
             >
-              <div class="text-xs text-fg-faint mb-4">
+              <div class="fc-card-label text-xs mb-4">
                 question
               </div>
               <div
@@ -283,7 +283,7 @@
               class="flex flex-col"
               style="min-height: 10.5rem;"
             >
-              <div class="text-xs text-fg-faint mb-4">
+              <div class="fc-card-label text-xs mb-4">
                 answer
               </div>
               <div
@@ -297,20 +297,20 @@
 
       <div
         v-else
-        class="border border-border rounded-sm p-6 text-center"
+        class="fc-card-wrap border rounded-sm p-6 text-center"
       >
         <h2 class="text-base font-bold mb-1">
           Done.
         </h2>
-        <p class="text-sm text-fg-muted mb-3">
+        <p class="fc-quiz-score text-sm mb-3">
           {{ sessionRight }} right, {{ sessionWrong }} wrong
         </p>
         <div
           v-if="sessionRight + sessionWrong > 0"
-          class="w-48 h-1.5 bg-accent-red/20 rounded-sm mx-auto overflow-hidden"
+          class="fc-progress-bg w-48 h-1.5 rounded-sm mx-auto overflow-hidden"
         >
           <div
-            class="h-full bg-accent-green rounded-sm transition-[width] duration-300"
+            class="fc-progress-bar h-full rounded-sm transition-[width] duration-300"
             :style="{ width: `${(sessionRight / (sessionRight + sessionWrong)) * 100}%` }"
           />
         </div>
@@ -518,7 +518,7 @@ const {
   if (!card) return '';
   const body = await loadContent(card.slug);
   if (body) return body;
-  return card.answer && card.answer !== 'TODO' ? await renderMarkdown(card.answer) : '<p class="text-fg-faint">No answer yet.</p>';
+  return card.answer && card.answer !== 'TODO' ? await renderMarkdown(card.answer) : '<p style="color: var(--gui-neutral-solid)">No answer yet.</p>';
 }, '');
 
 watch(currentCard, () => {
@@ -560,6 +560,21 @@ function answer (correct: boolean) {
 </script>
 
 <style>
+.deck-btn { border-color: var(--gui-neutral-border); }
+.deck-btn:hover { border-color: var(--gui-neutral-solid); }
+.deck-meta { color: var(--gui-neutral-solid); }
+.fc-empty { color: var(--gui-neutral-solid); }
+.fc-table-row:hover { background-color: var(--gui-neutral-bg-subtle); }
+.fc-question-link { color: var(--gui-neutral-fg); }
+.fc-question-link:hover { color: var(--gui-info-solid); }
+.fc-stale { color: var(--gui-danger-solid); }
+.fc-last-reviewed { color: var(--gui-neutral-solid); }
+.fc-quiz-counter { color: var(--gui-neutral-solid); }
+.fc-card-label { color: var(--gui-neutral-solid); }
+.fc-card-wrap { border-color: var(--gui-neutral-border); }
+.fc-quiz-score { color: var(--gui-neutral-fg-muted); }
+.fc-progress-bg { background-color: color-mix(in oklch, var(--gui-danger-solid) 20%, transparent); }
+.fc-progress-bar { background-color: var(--gui-success-solid); }
 .flip-enter-active,
 .flip-leave-active {
   transition: transform 0.25s ease, opacity 0.25s ease;

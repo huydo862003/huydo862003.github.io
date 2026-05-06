@@ -21,9 +21,11 @@
   @apply flex flex-col items-center justify-center min-h-[60vh];
 }
 .big-404 {
-  @apply text-8xl font-bold text-fg-faint/20 leading-none;
+  @apply text-8xl font-bold leading-none;
+  color: color-mix(in oklch, var(--gui-neutral-solid) 20%, transparent);
 }
 .msg {
-  @apply text-sm text-fg-muted mb-4 mt-2;
+  @apply text-sm mb-4 mt-2;
+  color: var(--gui-neutral-fg-muted);
 }
 </style>

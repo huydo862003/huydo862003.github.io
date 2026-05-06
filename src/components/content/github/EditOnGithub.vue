@@ -32,7 +32,8 @@ const editUrl = computed(() =>
 <style scoped>
 @reference "@/style.css";
 .edit-link {
-  @apply inline-flex items-center gap-1 text-xs text-fg-faint no-underline
-         hover:text-fg-muted transition-colors;
+  @apply inline-flex items-center gap-1 text-xs no-underline transition-colors;
+  color: var(--gui-neutral-solid);
+  &:hover { color: var(--gui-neutral-fg-muted); }
 }
 </style>

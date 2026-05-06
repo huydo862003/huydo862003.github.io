@@ -107,6 +107,7 @@ h1 {
   @apply text-xl font-bold mb-1;
 }
 .meta {
-  @apply text-xs text-fg-faint mb-8;
+  @apply text-xs mb-8;
+  color: var(--gui-neutral-solid);
 }
 </style>

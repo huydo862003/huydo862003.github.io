@@ -35,11 +35,14 @@ defineEmits<{
   @apply flex items-center justify-center gap-3;
 }
 .pager-btn {
-  @apply text-sm px-2 py-1 border border-border rounded-sm text-fg-muted
-         hover:border-fg-faint transition-colors cursor-pointer
+  @apply text-sm px-2 py-1 border rounded-sm transition-colors cursor-pointer
          disabled:opacity-30 disabled:cursor-default;
+  border-color: var(--gui-neutral-border);
+  color: var(--gui-neutral-fg-muted);
+  &:hover { border-color: var(--gui-neutral-solid); }
 }
 .pager-info {
-  @apply text-xs text-fg-faint;
+  @apply text-xs;
+  color: var(--gui-neutral-solid);
 }
 </style>

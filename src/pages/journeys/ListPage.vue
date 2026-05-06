@@ -21,13 +21,13 @@
         v-for="j in journeys"
         :key="j.slug"
         :to="`/journeys/${j.slug}`"
-        class="block border border-border rounded-sm px-3 py-2.5 sm:px-4 sm:py-3 no-underline hover:border-fg-faint transition-colors"
+        class="journey-card block border rounded-sm px-3 py-2.5 sm:px-4 sm:py-3 no-underline transition-colors"
       >
         <div class="flex flex-wrap items-center justify-between gap-1">
-          <span class="text-sm font-semibold text-fg">{{ j.title }}</span>
+          <span class="journey-card-title text-sm font-semibold">{{ j.title }}</span>
           <span :class="`card-status status-${j.status}`">{{ j.status }}</span>
         </div>
-        <div class="flex flex-wrap gap-x-3 gap-y-0.5 mt-1 text-xs text-fg-faint">
+        <div class="journey-card-stats flex flex-wrap gap-x-3 gap-y-0.5 mt-1 text-xs">
           <span>{{ plural(getConceptStats(j.slug).total, 'concept') }}</span>
           <span>{{ plural(getFlashcardCount(j.slug), 'flashcard') }}</span>
           <span>{{ plural(getPhaseCount(j.slug), 'phase') }}</span>
@@ -37,7 +37,7 @@
 
     <p
       v-else
-      class="text-fg-faint text-sm"
+      class="journeys-empty text-sm"
     >
       No journeys yet.
     </p>
@@ -95,3 +95,15 @@ function getPhaseCount (journeySlug: string) {
   return phaseStore.getByJourney(journeySlug).length;
 }
 </script>
+
+<style>
+.journey-card {
+  border-color: var(--gui-neutral-border);
+}
+.journey-card:hover {
+  border-color: var(--gui-neutral-solid);
+}
+.journey-card-title { color: var(--gui-neutral-fg); }
+.journey-card-stats { color: var(--gui-neutral-solid); }
+.journeys-empty { color: var(--gui-neutral-solid); }
+</style>

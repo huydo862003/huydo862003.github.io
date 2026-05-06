@@ -59,30 +59,39 @@ const {
 <style scoped>
 @reference "@/style.css";
 .avatar {
-  @apply w-5 h-5 rounded-full cursor-pointer border border-fg;
+  @apply w-5 h-5 rounded-full cursor-pointer border;
+  border-color: var(--gui-neutral-fg);
 }
 .avatar-fallback {
-  @apply w-5 h-5 rounded-full bg-bg-subtle text-fg-faint text-xs
-         flex items-center justify-center cursor-pointer border border-fg;
+  @apply w-5 h-5 rounded-full text-xs flex items-center justify-center cursor-pointer border;
+  background-color: var(--gui-neutral-bg-subtle);
+  color: var(--gui-neutral-solid);
+  border-color: var(--gui-neutral-fg);
 }
 .sign-in-btn {
   @apply flex items-center gap-1 text-xs px-2.5 py-1 rounded-sm
-         bg-fg text-bg hover:opacity-80 transition-opacity cursor-pointer;
+         hover:opacity-80 transition-opacity cursor-pointer;
+  background-color: var(--gui-neutral-fg);
+  color: var(--gui-neutral-bg);
 }
 .sign-in-text {
   @apply hidden sm:inline;
 }
 .user-menu {
-  @apply flex flex-col min-w-36 bg-bg text-fg;
+  @apply flex flex-col min-w-36;
+  background-color: var(--gui-neutral-bg);
+  color: var(--gui-neutral-fg);
 }
 .user-info {
   @apply px-3 py-2;
 }
 .user-name {
-  @apply text-xs font-medium text-fg;
+  @apply text-xs font-medium;
+  color: var(--gui-neutral-fg);
 }
 .menu-btn {
-  @apply text-left text-xs text-fg-muted px-3 py-2 cursor-pointer
-         hover:bg-bg-subtle transition-colors;
+  @apply text-left text-xs px-3 py-2 cursor-pointer transition-colors;
+  color: var(--gui-neutral-fg-muted);
+  &:hover { background-color: var(--gui-neutral-bg-subtle); }
 }
 </style>

@@ -14,7 +14,7 @@
       <h1 class="text-xl font-bold mb-1">
         {{ card.question }}
       </h1>
-      <p class="text-xs text-fg-faint mb-5">
+      <p class="fc-detail-deck text-xs mb-5">
         {{ formatSlug(card.deck) }}
       </p>
 
@@ -36,7 +36,7 @@
         >
           {{ reviewedToday ? 'Reviewed' : 'Right' }}
         </GButton>
-        <span class="flex items-center gap-1.5 text-xs text-fg-faint ml-auto">
+        <span class="fc-mastery-info flex items-center gap-1.5 text-xs ml-auto">
           <span
             class="status-ring"
             :style="{ '--progress': masteryProgress, '--ring-color': ringColor(masteryProgress) }"
@@ -47,7 +47,7 @@
 
       <GFlippable
         :flipped="flipped"
-        class="border border-border rounded-sm mb-4"
+        class="fc-flippable border rounded-sm mb-4"
         :trigger="GFlipTrigger.Click"
       >
         <template #front>
@@ -55,7 +55,7 @@
             class="p-4 sm:p-6 flex flex-col"
             style="min-height: 10.5rem;"
           >
-            <div class="text-xs text-fg-faint mb-4">
+            <div class="fc-card-label text-xs mb-4">
               question
             </div>
             <div class="text-base">
@@ -75,7 +75,7 @@
                     v-for="c in card.concepts"
                     :key="c"
                     :to="`/journeys/${slug}/concepts/${c}`"
-                    class="flex items-center gap-1.5 text-xs text-fg-faint no-underline hover:text-accent-blue transition-colors"
+                    class="fc-hint-link flex items-center gap-1.5 text-xs no-underline transition-colors"
                   >
                     <GIcon
                       :name="GIconName.Brain"
@@ -87,7 +87,7 @@
                     v-for="b in resolvedBooks"
                     :key="b.slug"
                     :to="`/journeys/${slug}/books/${b.slug}`"
-                    class="flex items-center gap-1.5 text-xs text-fg-faint no-underline hover:text-accent-blue transition-colors"
+                    class="fc-hint-link flex items-center gap-1.5 text-xs no-underline transition-colors"
                   >
                     <GIcon
                       :name="GIconName.Book"
@@ -105,7 +105,7 @@
             class="p-4 sm:p-6 flex flex-col"
             style="min-height: 10.5rem;"
           >
-            <div class="text-xs text-fg-faint mb-4">
+            <div class="fc-card-label text-xs mb-4">
               answer
             </div>
             <div
@@ -115,7 +115,7 @@
             />
             <p
               v-else
-              class="text-base text-fg-faint"
+              class="fc-no-answer text-base"
             >
               No answer yet.
             </p>
@@ -276,3 +276,13 @@ const resolvedBooks = computed(() =>
     .map((s) => bookStore.getBySlug(s))
     .filter((b): b is NonNullable<typeof b> => !!b));
 </script>
+
+<style>
+.fc-flippable { border-color: var(--gui-neutral-border); }
+.fc-detail-deck { color: var(--gui-neutral-solid); }
+.fc-mastery-info { color: var(--gui-neutral-solid); }
+.fc-hint-link { color: var(--gui-neutral-solid); }
+.fc-hint-link:hover { color: var(--gui-info-solid); }
+.fc-card-label { color: var(--gui-neutral-solid); }
+.fc-no-answer { color: var(--gui-neutral-solid); }
+</style>

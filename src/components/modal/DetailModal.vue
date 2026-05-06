@@ -11,7 +11,7 @@
             <h2>{{ title }}</h2>
             <span
               v-if="status"
-              :class="['text-xs px-1.5 py-0.5 rounded-sm bg-bg-subtle shrink-0', `status-${status}`]"
+              :class="['text-xs px-1.5 py-0.5 rounded-sm modal-status-bg shrink-0', `status-${status}`]"
             >{{ status }}</span>
           </div>
           <GButton
@@ -50,6 +50,9 @@ defineEmits<{
 
 <style scoped>
 @reference "@/style.css";
+.modal-status-bg {
+  background-color: var(--gui-neutral-bg-subtle);
+}
 .detail-body {
   flex: 1;
   overflow-y: auto;

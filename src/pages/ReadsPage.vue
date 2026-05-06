@@ -209,16 +209,19 @@ function onFilterUpdate (values: string[][]) {
 .reads-page {
 }
 .heading {
-  @apply text-base font-bold mb-4 pb-2 border-b border-border;
+  @apply text-base font-bold mb-4 pb-2 border-b;
+  border-color: var(--gui-neutral-border);
 }
 .reads-list {
   @apply list-none p-0 m-0 flex flex-col;
 }
 .reads-item {
-  @apply border-b border-border/50 h-14;
+  @apply border-b h-14;
+  border-color: color-mix(in oklch, var(--gui-neutral-border) 50%, transparent);
 }
 .reads-item-empty {
-  @apply border-b border-border/20;
+  @apply border-b;
+  border-color: color-mix(in oklch, var(--gui-neutral-border) 20%, transparent);
 }
 .reads-item-row {
   @apply flex items-start gap-2 no-underline w-full h-full rounded-sm p-1
@@ -226,27 +229,29 @@ function onFilterUpdate (values: string[][]) {
   padding-top: 0.5rem;
 }
 .reads-item:hover {
-  @apply bg-bg-subtle;
+  background-color: var(--gui-neutral-bg-subtle);
 }
 .reads-item-row:hover .reads-item-title {
-  @apply text-accent-blue;
+  color: var(--gui-info-solid);
 }
 .reads-item-no-link {
   @apply cursor-default;
 }
 .reads-item-no-link:hover {
-  @apply bg-transparent;
+  background: transparent;
 }
 .reads-item-body {
   @apply flex flex-col min-w-0 flex-1;
 }
 .reads-item-title {
-  @apply text-xs text-fg-muted transition-colors truncate;
+  @apply text-xs transition-colors truncate;
+  color: var(--gui-neutral-fg-muted);
   line-height: 1.2rem;
   margin-bottom: 0.2rem;
 }
 .reads-item-meta {
-  @apply text-fg-faint truncate;
+  @apply truncate;
+  color: var(--gui-neutral-solid);
   font-size: 0.625rem;
   line-height: 1rem;
 }
@@ -256,12 +261,15 @@ function onFilterUpdate (values: string[][]) {
   line-height: 1.2rem;
 }
 .reads-type-book {
-  @apply bg-accent-blue/10 text-accent-blue;
+  background-color: color-mix(in oklch, var(--gui-info-solid) 10%, transparent);
+  color: var(--gui-info-solid);
 }
 .reads-type-post {
-  @apply bg-accent-green/10 text-accent-green;
+  background-color: color-mix(in oklch, var(--gui-success-solid) 10%, transparent);
+  color: var(--gui-success-solid);
 }
 .reads-type-paper {
-  @apply bg-accent-yellow/10 text-accent-yellow;
+  background-color: color-mix(in oklch, var(--gui-warning-solid) 10%, transparent);
+  color: var(--gui-warning-solid);
 }
 </style>

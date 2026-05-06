@@ -67,7 +67,7 @@
           <GTableRow
             v-for="paper in filtered"
             :key="paper.slug"
-            class="hover:bg-bg-subtle transition-colors"
+            class="paper-row transition-colors"
           >
             <GTableCell class="px-3">
               <a
@@ -75,15 +75,15 @@
                 :href="paper.url"
                 target="_blank"
                 rel="noopener"
-                class="text-sm font-medium text-fg-muted no-underline hover:text-accent-blue transition-colors"
+                class="paper-title-link text-sm font-medium no-underline transition-colors"
               >{{ paper.title }}</a>
               <span
                 v-else
-                class="text-sm font-medium text-fg-muted"
+                class="paper-title text-sm font-medium"
               >{{ paper.title }}</span>
               <div
                 v-if="paper.venue || paper.year"
-                class="flex gap-2 text-xs text-fg-faint mt-0.5"
+                class="paper-meta flex gap-2 text-xs mt-0.5"
               >
                 <span v-if="paper.venue">{{ paper.venue }}</span>
                 <span
@@ -92,7 +92,7 @@
                 >{{ paper.year }}</span>
               </div>
             </GTableCell>
-            <GTableCell class="px-3 text-xs text-fg-faint whitespace-nowrap">
+            <GTableCell class="paper-authors px-3 text-xs whitespace-nowrap">
               {{ paper.authors.join(', ') }}
             </GTableCell>
             <GTableCell class="px-3">
@@ -118,13 +118,13 @@
 
     <p
       v-else-if="papers.length && !filtered.length"
-      class="text-fg-faint text-sm"
+      class="papers-empty text-sm"
     >
       No papers match your filter.
     </p>
     <p
       v-else
-      class="text-fg-faint text-sm"
+      class="papers-empty text-sm"
     >
       No papers yet.
     </p>
@@ -195,3 +195,13 @@ const filtered = computed(() => {
   return result;
 });
 </script>
+
+<style>
+.paper-row:hover { background-color: var(--gui-neutral-bg-subtle); }
+.paper-title-link { color: var(--gui-neutral-fg-muted); }
+.paper-title-link:hover { color: var(--gui-info-solid); }
+.paper-title { color: var(--gui-neutral-fg-muted); }
+.paper-meta { color: var(--gui-neutral-solid); }
+.paper-authors { color: var(--gui-neutral-solid); }
+.papers-empty { color: var(--gui-neutral-solid); }
+</style>

@@ -68,6 +68,7 @@ watch(dark, updateTheme);
 <style scoped>
 @reference "@/style.css";
 .giscus-wrap {
-  @apply mt-16 border-t border-border pt-8;
+  @apply mt-16 border-t pt-8;
+  border-color: var(--gui-neutral-border);
 }
 </style>

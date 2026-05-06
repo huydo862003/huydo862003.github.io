@@ -26,15 +26,15 @@
       >
         <router-link
           :to="`/journeys/${slug}/phases/${phase.slug}`"
-          class="block border border-border rounded-sm px-4 py-3 no-underline hover:border-fg-faint transition-colors"
+          class="phase-card block border rounded-sm px-4 py-3 no-underline transition-colors"
         >
           <div class="flex flex-wrap items-center justify-between gap-1">
-            <span class="text-sm font-medium text-fg">{{ phase.title }}</span>
+            <span class="phase-card-title text-sm font-medium">{{ phase.title }}</span>
             <span :class="`status-${phase.status}`">{{ phase.status }}</span>
           </div>
           <div
             v-if="phase.concepts.length || phase.books.length"
-            class="flex flex-wrap gap-x-3 gap-y-0.5 mt-2 text-xs text-fg-faint"
+            class="phase-card-stats flex flex-wrap gap-x-3 gap-y-0.5 mt-2 text-xs"
           >
             <span v-if="phase.concepts.length">{{ phase.concepts.length }} concepts</span>
             <span v-if="phase.books.length">{{ phase.books.length }} books</span>
@@ -45,7 +45,7 @@
 
     <p
       v-if="!phases.length"
-      class="text-fg-faint text-sm"
+      class="phases-empty text-sm"
     >
       No phases yet.
     </p>
@@ -82,3 +82,11 @@ useSeo({
 
 const phases = computed(() => phaseStore.getByJourney(slug.value));
 </script>
+
+<style>
+.phase-card { border-color: var(--gui-neutral-border); }
+.phase-card:hover { border-color: var(--gui-neutral-solid); }
+.phase-card-title { color: var(--gui-neutral-fg); }
+.phase-card-stats { color: var(--gui-neutral-solid); }
+.phases-empty { color: var(--gui-neutral-solid); }
+</style>

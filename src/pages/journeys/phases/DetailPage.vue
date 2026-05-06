@@ -25,7 +25,7 @@
       />
       <p
         v-else
-        class="text-fg-faint text-sm"
+        class="phase-empty text-sm"
       >
         No content yet.
       </p>
@@ -34,7 +34,7 @@
         v-if="rootBooks.length"
         class="mb-8"
       >
-        <h2 class="text-xs font-semibold text-fg-faint uppercase tracking-wider mb-3 pb-1 border-b border-border">
+        <h2 class="phase-section-label text-xs font-semibold uppercase tracking-wider mb-3 pb-1 border-b">
           Books
         </h2>
         <div class="flex flex-col gap-3">
@@ -70,7 +70,7 @@
           >
             <router-link
               :to="`/journeys/${slug}/concepts/${c}`"
-              class="block text-sm text-fg-muted no-underline hover:text-accent-blue truncate transition-colors py-1 border-b border-border"
+              class="phase-concept-link block text-sm no-underline truncate transition-colors py-1 border-b"
             >
               {{ formatSlug(c) }}
             </router-link>
@@ -212,3 +212,10 @@ const bookConfig = computed((): SCardConfig<Book> => ({
 }));
 
 </script>
+
+<style>
+.phase-empty { color: var(--gui-neutral-solid); }
+.phase-section-label { color: var(--gui-neutral-solid); border-color: var(--gui-neutral-border); }
+.phase-concept-link { color: var(--gui-neutral-fg-muted); border-color: var(--gui-neutral-border); }
+.phase-concept-link:hover { color: var(--gui-info-solid); }
+</style>
