@@ -86,7 +86,7 @@
 </template>
 
 <style>
-@reference "../../style.css";
+@reference "@/style.css";
 .curd { fill-opacity: 0.15; stroke-opacity: 0.6; }
 .curd-1 { fill-opacity: 0.15; }
 .curd-2 { fill-opacity: 0.10; }

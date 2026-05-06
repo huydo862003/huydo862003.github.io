@@ -1,4 +1,7 @@
 import {
+  join,
+} from 'node:path';
+import {
   Router,
 } from 'express';
 import type {
@@ -19,9 +22,6 @@ import {
 import {
   assetsRoutes,
 } from './assets.routes';
-import {
-  join,
-} from 'node:path';
 
 export function createRouter (manager: ContentManager, projectDir: string): Router {
   const router = Router();

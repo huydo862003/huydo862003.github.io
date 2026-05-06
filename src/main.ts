@@ -6,6 +6,7 @@ import {
 } from 'pinia';
 import FloatingVue from 'floating-vue';
 import 'floating-vue/dist/style.css';
+import '@hdnax/genuix/style.css';
 import './style.css';
 import App from './App.vue';
 import {

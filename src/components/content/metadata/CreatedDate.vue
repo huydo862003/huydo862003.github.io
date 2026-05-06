@@ -14,8 +14,7 @@ defineProps<{
 </script>
 
 <style scoped>
-@reference "../../../style.css";
-@reference "../../../style.css";
+@reference "@/style.css";
 .created-date {
   @apply text-xs text-fg-faint mb-4;
 }

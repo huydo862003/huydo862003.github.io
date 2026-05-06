@@ -11,9 +11,9 @@ const HUES = [
 ];
 
 function hash (s: string): number {
-  let h = 0;
-  for (const ch of s) h = ((h << 5) - h + ch.charCodeAt(0)) | 0;
-  return Math.abs(h);
+  let hashCode = 0;
+  for (const ch of s) hashCode = ((hashCode << 5) - hashCode + ch.charCodeAt(0)) | 0;
+  return Math.abs(hashCode);
 }
 
 export function tagHue (tag: string): number {

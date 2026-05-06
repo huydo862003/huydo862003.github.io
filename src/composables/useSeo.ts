@@ -25,8 +25,8 @@ export function useSeo ({
   title, description, path, type = 'article', image, publishedTime, modifiedTime, tags, author,
 }: SeoOptions) {
   const fullTitle = computed(() => {
-    const t = title.value;
-    return t ? `${t} | ${SITE}` : SITE;
+    const pageTitle = title.value;
+    return pageTitle ? `${pageTitle} | ${SITE}` : SITE;
   });
 
   const desc = computed(() => description?.value || '');
@@ -61,7 +61,6 @@ export function useSeo ({
         });
       }
 
-      // Open Graph
       m.push({
         property: 'og:title',
         content: fullTitle.value,
@@ -85,7 +84,6 @@ export function useSeo ({
         });
       }
 
-      // Article metadata
       if (type === 'article') {
         if (publishedTime?.value) {
           m.push({
@@ -109,7 +107,6 @@ export function useSeo ({
         }
       }
 
-      // Twitter Card
       m.push({
         name: 'twitter:card',
         content: 'summary_large_image',

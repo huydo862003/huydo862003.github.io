@@ -5,7 +5,7 @@ import {
   realpathSync,
 } from 'node:fs';
 import type {
-  Plugin, ViteDevServer,
+  Plugin,
 } from 'vite';
 import express from 'express';
 import cors from 'cors';
@@ -37,7 +37,9 @@ export function editorPlugin (): Plugin {
         console.log(`  ->  Editor API: http://${EDITOR_HOST}:${EDITOR_PORT}/`);
       });
     },
-    handleHotUpdate ({ file }) {
+    handleHotUpdate ({
+      file,
+    }) {
       if (file.startsWith(contentDir) && file.endsWith('.md')) return [];
     },
   };

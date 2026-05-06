@@ -7,21 +7,22 @@
       >
         &larr; back to journey
       </router-link>
-      <SBreadcrumb :crumbs="[{ label: 'Journeys', to: '/journeys' }, { label: slug, to: `/journeys/${slug}` }, { label: 'Papers', to: `/journeys/${slug}/papers` }]" />
+      <JourneyBreadcrumb :crumbs="[{ label: 'Journeys', to: '/journeys' }, { label: slug, to: `/journeys/${slug}` }, { label: 'Papers', to: `/journeys/${slug}/papers` }]" />
     </div>
-    <h1>Papers</h1>
+    <h1 class="text-xl font-bold mb-4">
+      Papers
+    </h1>
 
     <div
       v-if="papers.length"
-      class="filter-row"
+      class="flex flex-wrap items-center gap-2 mb-6"
     >
-      <input
+      <GTextInput
         v-model="search"
-        type="text"
         placeholder="Filter papers..."
-        class="filter-input"
-      >
-      <SFilterBar
+        class="flex-1 min-w-40"
+      />
+      <FilterBar
         :groups="[statusGroup]"
         :model-values="[statusFilter]"
         placeholder="Status"
@@ -29,65 +30,101 @@
       />
     </div>
 
-    <ul
+    <div
       v-if="filtered.length"
-      class="list"
+      class="overflow-auto"
     >
-      <li
-        v-for="paper in filtered"
-        :key="paper.slug"
-        class="item"
-      >
-        <div class="item-row">
-          <a
-            v-if="paper.url"
-            :href="paper.url"
-            target="_blank"
-            rel="noopener"
-            class="item-title"
-          >{{ paper.title }}</a>
-          <span
-            v-else
-            class="item-title no-link"
-          >{{ paper.title }}</span>
-          <span :class="`status-${paper.status}`">{{ paper.status }}</span>
-        </div>
-        <div class="item-meta">
-          <span
-            v-if="paper.authors.length"
-            class="authors"
-          >{{ paper.authors.join(', ') }}</span>
-          <span
-            v-if="paper.venue"
-            class="venue"
-          >{{ paper.venue }}</span>
-          <span
-            v-if="paper.year"
-            class="year"
-          >{{ paper.year }}</span>
-        </div>
-        <div
-          v-if="paper.tags.length"
-          class="tags"
-        >
-          <span
-            v-for="t in paper.tags"
-            :key="t"
-            class="tag"
-          >{{ t }}</span>
-        </div>
-      </li>
-    </ul>
+      <GTable>
+        <GTableHeader>
+          <GTableRow>
+            <GTableCell
+              header
+              class="px-3"
+            >
+              Paper
+            </GTableCell>
+            <GTableCell
+              header
+              class="px-3"
+            >
+              Authors
+            </GTableCell>
+            <GTableCell
+              header
+              class="px-3"
+            >
+              Status
+            </GTableCell>
+            <GTableCell
+              header
+              class="px-3"
+            >
+              Tags
+            </GTableCell>
+          </GTableRow>
+        </GTableHeader>
+        <GTableBody>
+          <GTableRow
+            v-for="paper in filtered"
+            :key="paper.slug"
+            class="hover:bg-bg-subtle transition-colors"
+          >
+            <GTableCell class="px-3">
+              <a
+                v-if="paper.url"
+                :href="paper.url"
+                target="_blank"
+                rel="noopener"
+                class="text-sm font-medium text-fg-muted no-underline hover:text-accent-blue transition-colors"
+              >{{ paper.title }}</a>
+              <span
+                v-else
+                class="text-sm font-medium text-fg-muted"
+              >{{ paper.title }}</span>
+              <div
+                v-if="paper.venue || paper.year"
+                class="flex gap-2 text-xs text-fg-faint mt-0.5"
+              >
+                <span v-if="paper.venue">{{ paper.venue }}</span>
+                <span
+                  v-if="paper.year"
+                  class="tabular-nums"
+                >{{ paper.year }}</span>
+              </div>
+            </GTableCell>
+            <GTableCell class="px-3 text-xs text-fg-faint whitespace-nowrap">
+              {{ paper.authors.join(', ') }}
+            </GTableCell>
+            <GTableCell class="px-3">
+              <span :class="`status-${paper.status}`">{{ paper.status }}</span>
+            </GTableCell>
+            <GTableCell class="px-3">
+              <div class="flex flex-nowrap overflow-hidden gap-1">
+                <GPill
+                  v-for="t in paper.tags"
+                  :key="t"
+                  :prominence="GProminence.Secondary"
+                  :size="GPillSize.Xs"
+                  :color="GPillColor.Gray"
+                >
+                  {{ t }}
+                </GPill>
+              </div>
+            </GTableCell>
+          </GTableRow>
+        </GTableBody>
+      </GTable>
+    </div>
 
     <p
       v-else-if="papers.length && !filtered.length"
-      class="empty"
+      class="text-fg-faint text-sm"
     >
       No papers match your filter.
     </p>
     <p
       v-else
-      class="empty"
+      class="text-fg-faint text-sm"
     >
       No papers yet.
     </p>
@@ -101,8 +138,12 @@ import {
 import {
   useRoute,
 } from 'vue-router';
-import SBreadcrumb from '@/components/common/SBreadcrumb.vue';
-import SFilterBar from '@/components/common/SFilterBar.vue';
+import {
+  GPill, GPillColor, GPillSize, GProminence, GTextInput,
+  GTable, GTableHeader, GTableBody, GTableRow, GTableCell,
+} from '@hdnax/genuix';
+import JourneyBreadcrumb from '@/components/common/JourneyBreadcrumb.vue';
+import FilterBar from '@/components/common/FilterBar.vue';
 import {
   usePaperStore,
 } from '@/stores/papers';
@@ -145,65 +186,12 @@ const filtered = computed(() => {
     result = result.filter((p) => statusFilter.value.includes(p.status));
   }
   if (search.value) {
-    const q = search.value.toLowerCase();
+    const searchQuery = search.value.toLowerCase();
     result = result.filter((p) =>
-      p.title.toLowerCase().includes(q)
-      || p.authors.some((a) => a.toLowerCase().includes(q))
-      || p.venue.toLowerCase().includes(q));
+      p.title.toLowerCase().includes(searchQuery)
+      || p.authors.some((a) => a.toLowerCase().includes(searchQuery))
+      || p.venue.toLowerCase().includes(searchQuery));
   }
   return result;
 });
 </script>
-
-<style scoped>
-@reference "../../../style.css";
-h1 {
-  @apply text-xl font-bold mb-4;
-}
-.filter-row {
-  @apply flex flex-wrap items-center gap-2 mb-6;
-}
-.filter-input {
-  @apply text-xs px-2 py-1 bg-transparent text-fg border border-border
-         rounded-sm outline-none flex-1 min-w-40 placeholder:text-fg-faint/40
-         focus:border-fg-faint transition-colors;
-}
-.list {
-  @apply list-none p-0 m-0 flex flex-col gap-3;
-}
-.item {
-  @apply border-l-2 border-border pl-3 py-1.5;
-}
-.item-row {
-  @apply flex flex-wrap items-center justify-between gap-2;
-}
-.item-title {
-  @apply text-sm font-medium text-fg-muted no-underline hover:text-accent-blue transition-colors;
-}
-.item-title.no-link {
-  @apply hover:text-fg-muted cursor-default;
-}
-.item-meta {
-  @apply flex flex-wrap items-center gap-x-2 mt-0.5;
-}
-.authors {
-  @apply text-xs text-fg-faint;
-}
-.venue {
-  @apply text-xs text-fg-faint before:content-['·'] before:mr-2;
-}
-.year {
-  @apply text-xs text-fg-faint tabular-nums;
-}
-.tags {
-  @apply flex flex-wrap gap-1 mt-1;
-}
-.tag {
-  @apply text-fg-faint border border-border rounded-sm px-1.5;
-  font-size: 0.625rem;
-  line-height: 1.25rem;
-}
-.empty {
-  @apply text-fg-faint text-sm;
-}
-</style>

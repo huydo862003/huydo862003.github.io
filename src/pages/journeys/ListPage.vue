@@ -7,25 +7,27 @@
       >
         &larr; home
       </router-link>
-      <SBreadcrumb :crumbs="[{ label: 'Journeys', to: '/journeys' }]" />
+      <JourneyBreadcrumb :crumbs="[{ label: 'Journeys', to: '/journeys' }]" />
     </div>
-    <h1>Scrambled Journeys</h1>
+    <h1 class="text-xl font-bold mb-6">
+      Scrambled Journeys
+    </h1>
 
     <div
       v-if="journeys.length"
-      class="journey-list"
+      class="flex flex-col gap-2"
     >
       <router-link
         v-for="j in journeys"
         :key="j.slug"
         :to="`/journeys/${j.slug}`"
-        class="journey-card"
+        class="block border border-border rounded-sm px-3 py-2.5 sm:px-4 sm:py-3 no-underline hover:border-fg-faint transition-colors"
       >
-        <div class="card-top">
-          <span class="card-title">{{ j.title }}</span>
-          <span :class="['card-status', `status-${j.status}`]">{{ j.status }}</span>
+        <div class="flex flex-wrap items-center justify-between gap-1">
+          <span class="text-sm font-semibold text-fg">{{ j.title }}</span>
+          <span :class="`card-status status-${j.status}`">{{ j.status }}</span>
         </div>
-        <div class="card-stats">
+        <div class="flex flex-wrap gap-x-3 gap-y-0.5 mt-1 text-xs text-fg-faint">
           <span>{{ plural(getConceptStats(j.slug).total, 'concept') }}</span>
           <span>{{ plural(getFlashcardCount(j.slug), 'flashcard') }}</span>
           <span>{{ plural(getPhaseCount(j.slug), 'phase') }}</span>
@@ -35,7 +37,7 @@
 
     <p
       v-else
-      class="empty"
+      class="text-fg-faint text-sm"
     >
       No journeys yet.
     </p>
@@ -46,7 +48,7 @@
 import {
   ref,
 } from 'vue';
-import SBreadcrumb from '@/components/common/SBreadcrumb.vue';
+import JourneyBreadcrumb from '@/components/common/JourneyBreadcrumb.vue';
 import {
   useJourneyStore,
 } from '@/stores/journeys';
@@ -92,31 +94,4 @@ function getFlashcardCount (journeySlug: string) {
 function getPhaseCount (journeySlug: string) {
   return phaseStore.getByJourney(journeySlug).length;
 }
-
 </script>
-
-<style scoped>
-@reference "../../style.css";
-h1 {
-  @apply text-xl font-bold mb-6;
-}
-.journey-list {
-  @apply flex flex-col gap-2;
-}
-.journey-card {
-  @apply block border border-border rounded-sm px-3 py-2.5 sm:px-4 sm:py-3 no-underline
-         hover:border-fg-faint transition-colors;
-}
-.card-top {
-  @apply flex flex-wrap items-center justify-between gap-1;
-}
-.card-title {
-  @apply text-sm font-semibold text-fg;
-}
-.card-stats {
-  @apply flex flex-wrap gap-x-3 gap-y-0.5 mt-1 text-xs text-fg-faint;
-}
-.empty {
-  @apply text-fg-faint text-sm;
-}
-</style>

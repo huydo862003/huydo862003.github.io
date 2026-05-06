@@ -6,8 +6,12 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from 'vue';
-import { Crepe, CrepeFeature } from '@milkdown/crepe';
+import {
+  ref, onMounted, onUnmounted,
+} from 'vue';
+import {
+  Crepe, CrepeFeature,
+} from '@milkdown/crepe';
 import '@milkdown/crepe/theme/common/prosemirror.css';
 import '@milkdown/crepe/theme/common/reset.css';
 import '@milkdown/crepe/theme/common/block-edit.css';
@@ -22,7 +26,9 @@ import '@milkdown/crepe/theme/common/table.css';
 import '@milkdown/crepe/theme/common/latex.css';
 import '@milkdown/crepe/theme/frame.css';
 
-const model = defineModel<string>({ required: true });
+const model = defineModel<string>({
+  required: true,
+});
 
 const editorEl = ref<HTMLElement>();
 let crepe: Crepe | undefined;
@@ -48,7 +54,11 @@ onMounted(async () => {
     },
     featureConfigs: {
       [CrepeFeature.Latex]: {
-        katexOptions: { throwOnError: false, strict: false, trust: true },
+        katexOptions: {
+          throwOnError: false,
+          strict: false,
+          trust: true,
+        },
       },
       [CrepeFeature.Placeholder]: {
         text: 'Start writing...',

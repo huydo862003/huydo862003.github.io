@@ -8,7 +8,7 @@
         >
           &larr; all thoughts
         </router-link>
-        <SBreadcrumb :crumbs="[{ label: 'Thoughts', to: '/thoughts' }]" />
+        <JourneyBreadcrumb :crumbs="[{ label: 'Thoughts', to: '/thoughts' }]" />
       </div>
       <article>
         <h1>{{ post.title }}</h1>
@@ -65,7 +65,7 @@ import {
   loadContent,
 } from '@/utils/content';
 import ResourcePagination from '@/components/content/ResourcePagination.vue';
-import SBreadcrumb from '@/components/common/SBreadcrumb.vue';
+import JourneyBreadcrumb from '@/components/common/JourneyBreadcrumb.vue';
 
 const GiscusComment = defineAsyncComponent(() => import('@/components/content/github/GiscusComment.vue'));
 
@@ -82,17 +82,17 @@ useSeo({
 
 const currentIdx = computed(() => thoughtStore.thoughts.findIndex((t) => t.slug === postSlug.value));
 const prevPost = computed(() => {
-  const t = thoughtStore.thoughts[currentIdx.value - 1];
-  return t && {
-    to: `/thoughts/${t.slug}`,
-    title: t.title,
+  const thought = thoughtStore.thoughts[currentIdx.value - 1];
+  return thought && {
+    to: `/thoughts/${thought.slug}`,
+    title: thought.title,
   };
 });
 const nextPost = computed(() => {
-  const t = thoughtStore.thoughts[currentIdx.value + 1];
-  return t && {
-    to: `/thoughts/${t.slug}`,
-    title: t.title,
+  const thought = thoughtStore.thoughts[currentIdx.value + 1];
+  return thought && {
+    to: `/thoughts/${thought.slug}`,
+    title: thought.title,
   };
 });
 const {
@@ -102,7 +102,7 @@ watch(post, () => reloadContent());
 </script>
 
 <style scoped>
-@reference "../../style.css";
+@reference "@/style.css";
 h1 {
   @apply text-xl font-bold mb-1;
 }

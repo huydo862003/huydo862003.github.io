@@ -51,7 +51,6 @@ const context = computed(() => props.context ?? {});
 
 const itemKeyField = computed(() => {
   const config = props.config;
-  // Try to find a common key field (id, slug, etc)
   for (const item of props.items) {
     if ('slug' in item) return 'slug';
     if ('id' in item) return 'id';
@@ -100,7 +99,6 @@ function getChildren (item: T): T[] {
 
 const showMeta = computed(() => {
   const config = props.config;
-  // Check if first item has a metadata field we can display
   if (!props.items.length || !config.metaKeys?.length) return false;
 
   const first = props.items[0] as Record<string, any>;
@@ -118,7 +116,6 @@ function metaValue (item: T): string {
   for (const key of metaKeys) {
     const value = data[key as string];
     if (value) {
-      // Handle arrays like concepts
       if (Array.isArray(value)) {
         return `${value.length} ${String(key).toLowerCase()}`;
       }
@@ -130,7 +127,7 @@ function metaValue (item: T): string {
 </script>
 
 <style scoped>
-@reference "../../../style.css";
+@reference "@/style.css";
 .items {
   @apply list-none p-0 m-0 flex flex-col gap-0.5;
 }

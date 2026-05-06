@@ -98,8 +98,8 @@ export const useFlashcardStore = defineStore('flashcards', () => {
     return cards.filter((c) => c.deck === deck);
   }
 
-  function getByConcept (s: string) {
-    return cards.filter((c) => c.concepts.includes(s));
+  function getByConcept (conceptSlug: string) {
+    return cards.filter((c) => c.concepts.includes(conceptSlug));
   }
 
   function getByJourney (conceptSlugs: string[]) {
@@ -135,10 +135,10 @@ export const useFlashcardStore = defineStore('flashcards', () => {
     const today = todayISO();
     let dueToday = 0;
     let mastered = 0;
-    for (const c of pool) {
-      const s = getState(c.slug);
-      if (isDue(s, today)) dueToday++;
-      if (MASTERED_INTERVAL_DAYS <= s.interval) mastered++;
+    for (const card of pool) {
+      const cardState = getState(card.slug);
+      if (isDue(cardState, today)) dueToday++;
+      if (MASTERED_INTERVAL_DAYS <= cardState.interval) mastered++;
     }
     return {
       total: pool.length,

@@ -23,7 +23,10 @@
       <!-- common: published -->
       <div class="fm-row">
         <div class="fm-label">
-          <PhCheckSquare :size="14" />
+          <GIcon
+            :name="GIconName.CheckSquare"
+            :size="14"
+          />
           <span class="truncate">Published</span>
         </div>
         <div class="fm-value">
@@ -38,7 +41,10 @@
       <!-- common: author -->
       <div class="fm-row">
         <div class="fm-label">
-          <PhUser :size="14" />
+          <GIcon
+            :name="GIconName.User"
+            :size="14"
+          />
           <span class="truncate">Author</span>
         </div>
         <div class="fm-value">
@@ -54,7 +60,10 @@
       <!-- common: dates -->
       <div class="fm-row">
         <div class="fm-label">
-          <PhCalendar :size="14" />
+          <GIcon
+            :name="GIconName.Calendar"
+            :size="14"
+          />
           <span class="truncate">Updated</span>
         </div>
         <div class="fm-value">
@@ -74,8 +83,8 @@
         class="fm-row"
       >
         <div class="fm-label">
-          <component
-            :is="fieldSchema.ref ? PhArrowSquareOut : fieldIcon(fieldSchema.type)"
+          <GIcon
+            :name="fieldSchema.ref ? GIconName.ExternalLink : fieldIcon(fieldSchema.type)"
             :size="14"
           />
           <span class="truncate">{{ fieldSchema.label ?? fieldName }}</span>
@@ -176,13 +185,18 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from 'vue';
 import {
-  PhCheckSquare, PhUser, PhCalendar,
-  PhTextAa, PhHash, PhToggleLeft, PhListBullets, PhTag, PhArrowSquareOut,
-} from '@phosphor-icons/vue';
-import { Dropdown as VDropdown } from 'floating-vue';
-import type { ContentSchema, FieldSchema } from '../services/schema.service';
+  ref, computed,
+} from 'vue';
+import {
+  GIcon, GIconName,
+} from '@hdnax/genuix';
+import {
+  Dropdown as VDropdown,
+} from 'floating-vue';
+import type {
+  ContentSchema, FieldSchema,
+} from '../services/schema.service';
 import RelationPicker from './RelationPicker.vue';
 
 const props = defineProps<{
@@ -201,26 +215,34 @@ const displayTitle = computed(() => {
   return props.frontmatter[field] as string | undefined;
 });
 
-const COMMON_FIELDS = new Set(['published', 'author', 'createdAt', 'updatedAt']);
+const COMMON_FIELDS = new Set([
+  'published',
+  'author',
+  'createdAt',
+  'updatedAt',
+]);
 
 const visibleFields = computed(() => {
   if (!props.schema?.fields) return {};
   return Object.fromEntries(
-    Object.entries(props.schema.fields).filter(([k, f]) => !f.hidden && !COMMON_FIELDS.has(k)),
+    Object.entries(props.schema.fields).filter(([
+      k,
+      f,
+    ]) => !f.hidden && !COMMON_FIELDS.has(k)),
   );
 });
 
-const FIELD_ICONS: Record<string, unknown> = {
-  string: PhTextAa,
-  number: PhHash,
-  boolean: PhToggleLeft,
-  enum: PhTag,
-  array: PhListBullets,
-  date: PhCalendar,
+const FIELD_ICONS: Record<string, string> = {
+  string: GIconName.TextAa,
+  number: GIconName.Hash,
+  boolean: GIconName.ToggleLeft,
+  enum: GIconName.Tag,
+  array: GIconName.ListBullets,
+  date: GIconName.Calendar,
 };
 
-function fieldIcon (type: string) {
-  return FIELD_ICONS[type] ?? PhTextAa;
+function fieldIcon (type: string): string {
+  return FIELD_ICONS[type] ?? GIconName.TextAa;
 }
 
 function fieldValue (name: string | number, schema: FieldSchema) {
@@ -245,23 +267,72 @@ function toArray (val: unknown): string[] {
   return [];
 }
 
-const ENUM_COLORS: Record<string, { bg: string; fg: string; dot: string }> = {
-  active: { bg: '#dbeafe', fg: '#1e40af', dot: '#3b82f6' },
-  learning: { bg: '#dbeafe', fg: '#1e40af', dot: '#3b82f6' },
-  reading: { bg: '#fef3c7', fg: '#92400e', dot: '#f59e0b' },
-  reviewing: { bg: '#ede9fe', fg: '#5b21b6', dot: '#8b5cf6' },
-  mastered: { bg: '#d1fae5', fg: '#065f46', dot: '#10b981' },
-  completed: { bg: '#d1fae5', fg: '#065f46', dot: '#10b981' },
-  paused: { bg: '#f3f4f6', fg: '#6b7280', dot: '#9ca3af' },
-  'on-hold': { bg: '#f3f4f6', fg: '#6b7280', dot: '#9ca3af' },
-  'to-read': { bg: '#fce7f3', fg: '#9d174d', dot: '#ec4899' },
-  read: { bg: '#d1fae5', fg: '#065f46', dot: '#10b981' },
+const ENUM_COLORS: Record<string, { bg: string;
+  fg: string;
+  dot: string; }> = {
+  active: {
+    bg: '#dbeafe',
+    fg: '#1e40af',
+    dot: '#3b82f6',
+  },
+  learning: {
+    bg: '#dbeafe',
+    fg: '#1e40af',
+    dot: '#3b82f6',
+  },
+  reading: {
+    bg: '#fef3c7',
+    fg: '#92400e',
+    dot: '#f59e0b',
+  },
+  reviewing: {
+    bg: '#ede9fe',
+    fg: '#5b21b6',
+    dot: '#8b5cf6',
+  },
+  mastered: {
+    bg: '#d1fae5',
+    fg: '#065f46',
+    dot: '#10b981',
+  },
+  completed: {
+    bg: '#d1fae5',
+    fg: '#065f46',
+    dot: '#10b981',
+  },
+  paused: {
+    bg: '#f3f4f6',
+    fg: '#6b7280',
+    dot: '#9ca3af',
+  },
+  'on-hold': {
+    bg: '#f3f4f6',
+    fg: '#6b7280',
+    dot: '#9ca3af',
+  },
+  'to-read': {
+    bg: '#fce7f3',
+    fg: '#9d174d',
+    dot: '#ec4899',
+  },
+  read: {
+    bg: '#d1fae5',
+    fg: '#065f46',
+    dot: '#10b981',
+  },
 };
-const DEFAULT_PILL = { bg: '#f3f4f6', fg: '#374151', dot: '#9ca3af' };
+const DEFAULT_PILL = {
+  bg: '#f3f4f6',
+  fg: '#374151',
+  dot: '#9ca3af',
+};
 
 function enumPillColor (value: string): Record<string, string> {
-  const c = ENUM_COLORS[value] ?? DEFAULT_PILL;
-  return { background: c.bg, color: c.fg };
+  const pillColor = ENUM_COLORS[value] ?? DEFAULT_PILL;
+  return {
+    background: pillColor.bg,
+    color: pillColor.fg,
+  };
 }
 
 function enumDotColor (value: string): string {

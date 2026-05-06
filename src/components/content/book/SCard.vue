@@ -1,18 +1,18 @@
 <template>
-  <div class="card">
+  <div class="border border-border rounded-sm px-4 py-3">
     <router-link
       :to="to"
-      class="card-title"
+      class="flex items-center gap-2 text-sm font-semibold text-fg no-underline hover:text-accent-blue transition-colors"
     >
-      <component
-        :is="icon"
-        :size="14"
+      <GIcon
+        v-if="icon"
+        :name="icon"
       />
       {{ data[titleKey] }}
     </router-link>
     <p
       v-if="showMeta && hasMeta"
-      class="card-meta"
+      class="text-xs text-fg-faint mt-0.5 ml-5 mb-2"
     >
       <span
         v-for="(value, key, idx) in metaDisplay"
@@ -37,26 +37,21 @@ import {
   computed,
 } from 'vue';
 import type {
-  Component,
-} from 'vue';
+  GIconName,
+} from '@hdnax/genuix';
+import {
+  GIcon,
+} from '@hdnax/genuix';
 import HierarchicalList from '@/components/content/book/HierarchicalList.vue';
 
 export interface SCardConfig<T> {
-  /** Key in data object for item title */
   titleKey: keyof T | string;
-  /** Icon component to display */
-  icon?: Component;
-  /** Route template with {key} placeholders. e.g. "/journeys/{journeySlug}/books/{slug}" */
+  icon?: GIconName;
   routeTemplate: string;
-  /** Route parameters context. Keys must match those in routeTemplate */
   routeParams?: Record<string, string>;
-  /** Metadata keys to display from data. e.g. ["author", "date"] */
   metaKeys?: (keyof T | string)[];
-  /** Function to resolve children from an item */
   childrenResolver?: (item: T) => T[];
-  /** Current active item slug for highlighting */
   currentSlug?: string;
-  /** Whether to render children list */
   renderChildren?: boolean;
 }
 
@@ -78,7 +73,6 @@ const to = computed(() => {
     ...context.value,
     ...data,
   };
-
   return template.replace(/{(\w+)}/g, (_, key) => params[key] ?? '');
 });
 
@@ -93,7 +87,6 @@ const metaDisplay = computed(() => {
   const metaKeys = props.config.metaKeys ?? [];
   const data = props.data as Record<string, any>;
   const result: Record<string, any> = {};
-
   for (const key of metaKeys) {
     const value = data[key as string];
     if (value) result[key as string] = value;
@@ -109,20 +102,6 @@ const children = computed(() => {
 
 const listConfig = computed((): SCardConfig<T> => ({
   ...props.config,
-  renderChildren: false, // Prevent infinite nesting of child lists
+  renderChildren: false,
 }));
 </script>
-
-<style scoped>
-@reference "../../../style.css";
-.card {
-  @apply border border-border rounded-sm px-4 py-3;
-}
-.card-title {
-  @apply flex items-center gap-2 text-sm font-semibold text-fg no-underline
-         hover:text-accent-blue transition-colors;
-}
-.card-meta {
-  @apply text-xs text-fg-faint mt-0.5 ml-5 mb-2;
-}
-</style>

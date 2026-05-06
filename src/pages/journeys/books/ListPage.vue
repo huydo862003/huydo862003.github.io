@@ -7,11 +7,13 @@
       >
         &larr; back to journey
       </router-link>
-      <SBreadcrumb :crumbs="[{ label: 'Journeys', to: '/journeys' }, { label: slug, to: `/journeys/${slug}` }, { label: 'Books', to: `/journeys/${slug}/books` }]" />
+      <JourneyBreadcrumb :crumbs="[{ label: 'Journeys', to: '/journeys' }, { label: slug, to: `/journeys/${slug}` }, { label: 'Books', to: `/journeys/${slug}/books` }]" />
     </div>
-    <h1>Books</h1>
+    <h1 class="text-xl font-bold mb-6">
+      Books
+    </h1>
 
-    <div class="book-list">
+    <div class="flex flex-col gap-3">
       <SCard
         v-for="book in rootBooks"
         :key="book.slug"
@@ -22,7 +24,7 @@
 
     <p
       v-if="!rootBooks.length"
-      class="empty"
+      class="text-fg-faint text-sm"
     >
       No books yet.
     </p>
@@ -37,9 +39,9 @@ import {
   useRoute,
 } from 'vue-router';
 import {
-  PhBook,
-} from '@phosphor-icons/vue';
-import SBreadcrumb from '@/components/common/SBreadcrumb.vue';
+  GIconName,
+} from '@hdnax/genuix';
+import JourneyBreadcrumb from '@/components/common/JourneyBreadcrumb.vue';
 import {
   useBookStore,
 } from '@/stores/books';
@@ -69,7 +71,7 @@ const rootBooks = computed(() => journeyBooks.value.filter((b) => !b.parent));
 
 const bookConfig = computed((): SCardConfig<Book> => ({
   titleKey: 'title',
-  icon: PhBook,
+  icon: GIconName.Book,
   routeTemplate: '/journeys/{journeySlug}/books/{slug}',
   routeParams: {
     journeySlug: slug.value,
@@ -84,16 +86,3 @@ const bookConfig = computed((): SCardConfig<Book> => ({
   renderChildren: true,
 }));
 </script>
-
-<style scoped>
-@reference "../../../style.css";
-h1 {
-  @apply text-xl font-bold mb-6;
-}
-.book-list {
-  @apply flex flex-col gap-3;
-}
-.empty {
-  @apply text-fg-faint text-sm;
-}
-</style>

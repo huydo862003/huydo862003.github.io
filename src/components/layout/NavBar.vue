@@ -5,7 +5,7 @@
         to="/"
         class="logo"
       >
-        <SLogo class="logo-icon" />
+        <SiteLogo class="logo-icon" />
         <span class="logo-text">scrambled</span>
       </router-link>
       <div class="right">
@@ -23,13 +23,14 @@
             aria-label="Open search"
             @click="emit('open-palette')"
           >
-            <PhMagnifyingGlass
+            <GIcon
+              :name="GIconName.Search"
               :size="16"
               weight="bold"
             />
           </button>
           <template #popper>
-            <span class="tooltip-search">Search <SKbdShortcut :keys="['Alt', 'P']" /></span>
+            <span class="tooltip-search">Search <GKbdShortcut :keys="[GKbdKeyName.Alt, GKbdKeyName.P]" /></span>
           </template>
         </VTooltip>
         <button
@@ -37,13 +38,15 @@
           :title="isDark ? 'Light mode' : 'Dark mode'"
           @click="toggle"
         >
-          <PhMoon
+          <GIcon
             v-if="!isDark"
+            :name="GIconName.Moon"
             :size="16"
             weight="bold"
           />
-          <PhSun
+          <GIcon
             v-else
+            :name="GIconName.Sun"
             :size="16"
             weight="bold"
           />
@@ -56,13 +59,15 @@
           :aria-label="open ? 'Close menu' : 'Open menu'"
           @click="open = !open"
         >
-          <PhX
+          <GIcon
             v-if="open"
+            :name="GIconName.X"
             :size="18"
             weight="bold"
           />
-          <PhList
+          <GIcon
             v-else
+            :name="GIconName.Menu"
             :size="18"
             weight="bold"
           />
@@ -72,13 +77,15 @@
           :aria-label="isDark ? 'Switch to light mode' : 'Switch to dark mode'"
           @click="toggle"
         >
-          <PhMoon
+          <GIcon
             v-if="!isDark"
+            :name="GIconName.Moon"
             :size="16"
             weight="bold"
           />
-          <PhSun
+          <GIcon
             v-else
+            :name="GIconName.Sun"
             :size="16"
             weight="bold"
           />
@@ -111,14 +118,14 @@ import {
   storeToRefs,
 } from 'pinia';
 import {
-  PhSun, PhMoon, PhList, PhX, PhMagnifyingGlass,
-} from '@phosphor-icons/vue';
+  GIcon, GIconName,
+  GKbdShortcut, GKbdKeyName,
+} from '@hdnax/genuix';
 import {
   useThemeStore,
 } from '@/stores/theme';
-import SLogo from '@/components/common/SLogo.vue';
+import SiteLogo from '@/components/layout/SiteLogo.vue';
 import UserMenu from '@/components/layout/UserMenu.vue';
-import SKbdShortcut from '@/components/common/SKbdShortcut.vue';
 
 const emit = defineEmits<{ (e: 'open-palette'): void }>();
 
@@ -148,7 +155,7 @@ const navLinks = [
 </script>
 
 <style scoped>
-@reference "../../style.css";
+@reference "@/style.css";
 .nav {
   @apply border-b border-border bg-bg;
 }

@@ -8,53 +8,64 @@
         >
           &larr; all journeys
         </router-link>
-        <SBreadcrumb :crumbs="[{ label: 'Journeys', to: '/journeys' }, { label: journey?.title ?? slug, to: `/journeys/${slug}` }]" />
+        <JourneyBreadcrumb :crumbs="[{ label: 'Journeys', to: '/journeys' }, { label: journey?.title ?? slug, to: `/journeys/${slug}` }]" />
       </div>
-      <div class="title-row">
-        <h1>{{ journey.title }}</h1>
+      <div class="flex flex-wrap items-center gap-x-3 gap-y-1 mb-6">
+        <h1 class="text-xl font-bold">
+          {{ journey.title }}
+        </h1>
         <span :class="`status-${journey.status}`">{{ journey.status }}</span>
       </div>
 
-      <div class="stats-row">
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 mb-6">
         <router-link
           v-for="s in statCards"
           :key="s.label"
           :to="s.to"
-          class="stat-card"
+          class="grid justify-items-center sm:justify-items-start border border-border rounded-sm
+                 py-2.5 px-3 sm:py-4 sm:px-4 text-center sm:text-left no-underline cursor-pointer
+                 hover:border-fg-faint hover:bg-bg-subtle/50 transition-colors"
         >
-          <div class="ring-wrap">
+          <div class="relative w-8 h-8 sm:w-16 sm:h-16 shrink-0">
             <div
-              class="ring"
+              class="absolute inset-0 rounded-full"
+              style="mask: radial-gradient(farthest-side, transparent 65%, #000 67%); -webkit-mask: radial-gradient(farthest-side, transparent 65%, #000 67%);"
               :style="ringStyle(s)"
             />
           </div>
-          <div class="stat-body">
-            <span class="stat-title">{{ s.count }} {{ s.label }}</span>
-            <div class="stat-lines">
+          <div class="flex flex-col">
+            <span class="text-xs sm:text-sm font-semibold text-fg">{{ s.count }} {{ s.label }}</span>
+            <div class="hidden sm:flex flex-col gap-0.5 mt-0.5">
               <span
                 v-for="line in s.lines"
                 :key="line.label"
-                :class="['stat-line', line.color]"
+                class="text-xs"
+                :class="{
+                  'text-accent-green': line.color === 'green',
+                  'text-accent-yellow': line.color === 'yellow',
+                  'text-accent-red': line.color === 'red',
+                  'text-fg-faint': line.color === 'muted',
+                }"
               >{{ line.value }} {{ line.label }}</span>
             </div>
           </div>
         </router-link>
       </div>
 
-      <nav class="resource-list">
+      <nav class="flex flex-col gap-1 mb-8">
         <router-link
           v-for="r in resources"
           :key="r.to"
           :to="r.to"
-          class="resource"
+          class="flex items-center gap-2 px-3 py-2 rounded-sm no-underline text-fg-muted hover:bg-bg-subtle transition-colors"
         >
-          <component
-            :is="r.icon"
+          <GIcon
+            :name="r.icon"
             :size="16"
-            class="resource-icon"
+            class="text-fg-faint"
           />
-          <span class="resource-label">{{ r.label }}</span>
-          <span class="resource-count">{{ r.count }}</span>
+          <span class="text-sm">{{ r.label }}</span>
+          <span class="text-xs text-fg-faint ml-auto">{{ r.count }}</span>
         </router-link>
       </nav>
 
@@ -65,7 +76,7 @@
       />
       <p
         v-else
-        class="empty"
+        class="text-fg-faint text-sm"
       >
         No content yet.
       </p>
@@ -99,8 +110,8 @@ import {
   useRoute,
 } from 'vue-router';
 import {
-  PhFlag, PhBrain, PhCards, PhBook, PhRss, PhNewspaper,
-} from '@phosphor-icons/vue';
+  GIcon, GIconName,
+} from '@hdnax/genuix';
 import {
   useSeo,
 } from '@/composables/useSeo';
@@ -129,7 +140,7 @@ import {
   loadContent,
 } from '@/utils/content';
 import ResourcePagination from '@/components/content/ResourcePagination.vue';
-import SBreadcrumb from '@/components/common/SBreadcrumb.vue';
+import JourneyBreadcrumb from '@/components/common/JourneyBreadcrumb.vue';
 
 const GiscusComment = defineAsyncComponent(() => import('@/components/content/github/GiscusComment.vue'));
 
@@ -171,12 +182,14 @@ const nextJourney = computed(() => {
 });
 const {
   state: content, execute: reloadContent,
-} = useAsyncState(async () => journey.value ? loadContent(journey.value.slug) : '', '');
+} = useAsyncState(
+  async () => journey.value ? loadContent(journey.value.slug) : '',
+  '',
+);
 watch(journey, () => reloadContent());
 
 const journeyConcepts = computed(() => conceptStore.getByJourney(slug.value));
 const journeyConceptSlugs = computed(() => journeyConcepts.value.map((c) => c.slug));
-
 const conceptStats = computed(() => conceptStore.statsByJourney(slug.value));
 
 const flashcardStats = computed(() => {
@@ -194,8 +207,12 @@ const phaseStats = computed(() => {
   };
 });
 
-function ringStyle (s: { segments: { pct: number;
-  color: string; }[]; }) {
+function ringStyle (s: {
+  segments: {
+    pct: number;
+    color: string;
+  }[];
+}) {
   const parts: string[] = [];
   let acc = 0;
   for (const seg of s.segments) {
@@ -210,54 +227,55 @@ function ringStyle (s: { segments: { pct: number;
 
 const reviewedToday = computed(() => {
   const cards = flashcardStore.getByJourney(journeyConceptSlugs.value);
-  const today = new Date().toISOString()
+  const today = new Date()
+    .toISOString()
     .slice(0, 10);
   return cards.filter((c) => {
-    const s = flashcardStore.getState(c.slug);
-    return s.lastReviewedAt === today;
+    const cardState = flashcardStore.getState(c.slug);
+    return cardState.lastReviewedAt === today;
   }).length;
 });
 
 const statCards = computed(() => {
-  const j = slug.value;
+  const journeySlug = slug.value;
   const cs = conceptStats.value;
   const fs = flashcardStats.value;
   const ps = phaseStats.value;
   const reviewed = reviewedToday.value;
 
-  function p (n: number, t: number) {
-    return t ? Math.round((n / t) * 100) : 0;
+  function pct (numerator: number, total: number) {
+    return total ? Math.round((numerator / total) * 100) : 0;
   }
 
   return [
     {
       label: 'concepts',
       count: cs.total,
-      to: `/journeys/${j}/concepts`,
+      to: `/journeys/${journeySlug}/concepts`,
       segments: [
         {
-          pct: p(cs.mastered, cs.total),
+          pct: pct(cs.mastered, cs.total),
           color: 'var(--color-accent-green)',
         },
         {
-          pct: p(cs.reviewing, cs.total),
+          pct: pct(cs.reviewing, cs.total),
           color: 'var(--color-accent-yellow)',
         },
       ],
       lines: [
         {
           value: cs.mastered,
-          label: `mastered (${p(cs.mastered, cs.total)}%)`,
+          label: `mastered (${pct(cs.mastered, cs.total)}%)`,
           color: 'green',
         },
         {
           value: cs.reviewing,
-          label: `reviewing (${p(cs.reviewing, cs.total)}%)`,
+          label: `reviewing (${pct(cs.reviewing, cs.total)}%)`,
           color: 'yellow',
         },
         {
           value: cs.learning,
-          label: `learning (${p(cs.learning, cs.total)}%)`,
+          label: `learning (${pct(cs.learning, cs.total)}%)`,
           color: 'muted',
         },
       ],
@@ -265,10 +283,10 @@ const statCards = computed(() => {
     {
       label: 'flashcards',
       count: fs.total,
-      to: `/journeys/${j}/flashcards`,
+      to: `/journeys/${journeySlug}/flashcards`,
       segments: [
         {
-          pct: p(reviewed, fs.dueToday || 1),
+          pct: pct(reviewed, fs.dueToday || 1),
           color: 'var(--color-accent-green)',
         },
       ],
@@ -293,26 +311,26 @@ const statCards = computed(() => {
     {
       label: 'phases',
       count: ps.total,
-      to: `/journeys/${j}/phases`,
+      to: `/journeys/${journeySlug}/phases`,
       segments: [
         {
-          pct: p(ps.completed, ps.total),
+          pct: pct(ps.completed, ps.total),
           color: 'var(--color-accent-green)',
         },
         {
-          pct: p(ps.active, ps.total),
+          pct: pct(ps.active, ps.total),
           color: 'var(--color-accent-yellow)',
         },
       ],
       lines: [
         {
           value: ps.active,
-          label: `active (${p(ps.active, ps.total)}%)`,
+          label: `active (${pct(ps.active, ps.total)}%)`,
           color: 'yellow',
         },
         {
           value: ps.completed,
-          label: `completed (${p(ps.completed, ps.total)}%)`,
+          label: `completed (${pct(ps.completed, ps.total)}%)`,
           color: 'green',
         },
         {
@@ -326,114 +344,48 @@ const statCards = computed(() => {
 });
 
 const resources = computed(() => {
-  const s = slug.value;
+  const currentSlug = slug.value;
   const ps = phaseStats.value;
-  const books = bookStore.getByJourney(s);
-  const blogs = blogStore.getByJourney(s);
-  const papers = paperStore.getByJourney(s);
+  const books = bookStore.getByJourney(currentSlug);
+  const blogs = blogStore.getByJourney(currentSlug);
+  const papers = paperStore.getByJourney(currentSlug);
   return [
     {
       label: 'Phases',
       count: ps.total,
-      to: `/journeys/${s}/phases`,
-      icon: PhFlag,
+      to: `/journeys/${currentSlug}/phases`,
+      icon: GIconName.Flag,
     },
     {
       label: 'Concepts',
       count: conceptStats.value.total,
-      to: `/journeys/${s}/concepts`,
-      icon: PhBrain,
+      to: `/journeys/${currentSlug}/concepts`,
+      icon: GIconName.Brain,
     },
     {
       label: 'Flashcards',
       count: flashcardStats.value.total,
-      to: `/journeys/${s}/flashcards`,
-      icon: PhCards,
+      to: `/journeys/${currentSlug}/flashcards`,
+      icon: GIconName.Cards,
     },
     {
       label: 'Books',
       count: books.length,
-      to: `/journeys/${s}/books`,
-      icon: PhBook,
+      to: `/journeys/${currentSlug}/books`,
+      icon: GIconName.Book,
     },
     {
       label: 'Blogs',
       count: blogs.length,
-      to: `/journeys/${s}/blogs`,
-      icon: PhRss,
+      to: `/journeys/${currentSlug}/blogs`,
+      icon: GIconName.Rss,
     },
     {
       label: 'Papers',
       count: papers.length,
-      to: `/journeys/${s}/papers`,
-      icon: PhNewspaper,
+      to: `/journeys/${currentSlug}/papers`,
+      icon: GIconName.Newspaper,
     },
   ].filter((r) => 0 < r.count);
 });
 </script>
-
-<style scoped>
-@reference "../../style.css";
-h1 {
-  @apply text-xl font-bold;
-}
-.title-row {
-  @apply flex flex-wrap items-center gap-x-3 gap-y-1 mb-6;
-}
-.stats-row {
-  @apply grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 mb-6;
-}
-.stat-card {
-  @apply grid justify-items-center sm:justify-items-start border border-border rounded-sm
-         py-2.5 px-3 sm:py-4 sm:px-4 text-center sm:text-left
-         no-underline cursor-pointer hover:border-fg-faint hover:bg-bg-subtle/50 transition-colors;
-}
-.ring-wrap {
-  @apply relative w-8 h-8 sm:w-16 sm:h-16 shrink-0;
-}
-.ring {
-  @apply absolute inset-0 rounded-full;
-  mask: radial-gradient(farthest-side, transparent 65%, #000 67%);
-  -webkit-mask: radial-gradient(farthest-side, transparent 65%, #000 67%);
-}
-.stat-body {
-  @apply flex flex-col;
-}
-.stat-title {
-  @apply text-xs sm:text-sm font-semibold text-fg;
-}
-.stat-lines {
-  @apply hidden sm:flex flex-col gap-0.5 mt-0.5;
-}
-.stat-line {
-  @apply text-xs;
-}
-.stat-line.green {
-  @apply text-accent-green;
-}
-.stat-line.yellow {
-  @apply text-accent-yellow;
-}
-.stat-line.red {
-  @apply text-accent-red;
-}
-.stat-line.muted {
-  @apply text-fg-faint;
-}
-.resource-list {
-  @apply flex flex-col gap-1 mb-8;
-}
-.resource {
-  @apply flex items-center gap-2 px-3 py-2 rounded-sm no-underline
-         text-fg-muted hover:bg-bg-subtle transition-colors;
-}
-.resource-icon {
-  @apply text-fg-faint;
-}
-.resource-label {
-  @apply text-sm;
-}
-.resource-count {
-  @apply text-xs text-fg-faint ml-auto;
-}
-</style>

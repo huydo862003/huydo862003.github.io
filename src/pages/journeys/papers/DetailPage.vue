@@ -7,26 +7,22 @@
       >
         &larr; back to papers
       </router-link>
-      <SBreadcrumb :crumbs="[{ label: 'Journeys', to: '/journeys' }, { label: slug, to: `/journeys/${slug}` }, { label: 'Papers', to: `/journeys/${slug}/papers` }]" />
+      <JourneyBreadcrumb :crumbs="[{ label: 'Journeys', to: '/journeys' }, { label: slug, to: `/journeys/${slug}` }, { label: 'Papers', to: `/journeys/${slug}/papers` }]" />
     </div>
 
     <template v-if="paper">
-      <h1>{{ paper.title }}</h1>
+      <h1 class="text-xl font-bold mb-2">
+        {{ paper.title }}
+      </h1>
 
-      <div class="meta">
-        <span
-          v-if="paper.authors.length"
-          class="authors"
-        >{{ paper.authors.join(', ') }}</span>
+      <div class="flex flex-wrap items-center gap-x-2 gap-y-0.5 mb-3 text-xs text-fg-faint">
+        <span v-if="paper.authors.length">{{ paper.authors.join(', ') }}</span>
         <template v-if="paper.venue || paper.year">
-          <span class="sep">&middot;</span>
-          <span
-            v-if="paper.venue"
-            class="venue"
-          >{{ paper.venue }}</span>
+          <span class="text-fg-faint/50">&middot;</span>
+          <span v-if="paper.venue">{{ paper.venue }}</span>
           <span
             v-if="paper.year"
-            class="year"
+            class="tabular-nums"
           >{{ paper.year }}</span>
         </template>
         <span :class="`status-${paper.status} ml-auto`">{{ paper.status }}</span>
@@ -34,31 +30,38 @@
 
       <div
         v-if="paper.url"
-        class="external-link-row"
+        class="mb-4"
       >
         <a
           :href="paper.url"
           target="_blank"
           rel="noopener"
-          class="external-link"
+          class="inline-flex items-center gap-1 text-xs text-accent-blue no-underline hover:underline"
         >
-          <PhArrowSquareOut :size="13" /> Read paper
+          <GIcon
+            :name="GIconName.ExternalLink"
+            :size="13"
+          /> Read paper
         </a>
       </div>
 
       <div
         v-if="paper.tags.length"
-        class="tags"
+        class="flex flex-wrap gap-1 mb-6"
       >
-        <span
+        <GPill
           v-for="t in paper.tags"
           :key="t"
-          class="tag"
-        >{{ t }}</span>
+          :prominence="GProminence.Secondary"
+          :size="GPillSize.Xs"
+          :color="GPillColor.Gray"
+        >
+          {{ t }}
+        </GPill>
       </div>
 
-      <div class="section">
-        <h3 class="section-label">
+      <div class="mb-6">
+        <h3 class="text-xs font-semibold text-fg-faint uppercase tracking-wider mb-3 pb-1 border-b border-border">
           Notes
         </h3>
         <div
@@ -68,7 +71,7 @@
         />
         <p
           v-else
-          class="empty"
+          class="text-sm text-fg-faint"
         >
           No notes yet.
         </p>
@@ -95,8 +98,8 @@ import {
   useRoute,
 } from 'vue-router';
 import {
-  PhArrowSquareOut,
-} from '@phosphor-icons/vue';
+  GIcon, GIconName, GPill, GPillColor, GPillSize, GProminence,
+} from '@hdnax/genuix';
 import {
   useSeo,
 } from '@/composables/useSeo';
@@ -106,7 +109,7 @@ import {
 import {
   loadContent,
 } from '@/utils/content';
-import SBreadcrumb from '@/components/common/SBreadcrumb.vue';
+import JourneyBreadcrumb from '@/components/common/JourneyBreadcrumb.vue';
 
 const route = useRoute();
 const slug = computed(() => route.params.slug as string);
@@ -123,42 +126,9 @@ useSeo({
 
 const {
   state: content, execute: reloadContent,
-} = useAsyncState(async () => paper.value ? loadContent(paper.value.slug) : '', '');
+} = useAsyncState(
+  async () => paper.value ? loadContent(paper.value.slug) : '',
+  '',
+);
 watch(paper, () => reloadContent());
 </script>
-
-<style scoped>
-@reference "../../../style.css";
-h1 {
-  @apply text-xl font-bold mb-2;
-}
-.meta {
-  @apply flex flex-wrap items-center gap-x-2 gap-y-0.5 mb-3 text-xs text-fg-faint;
-}
-.sep {
-  @apply text-fg-faint/50;
-}
-.external-link-row {
-  @apply mb-4;
-}
-.external-link {
-  @apply inline-flex items-center gap-1 text-xs text-accent-blue no-underline hover:underline;
-}
-.tags {
-  @apply flex flex-wrap gap-1 mb-6;
-}
-.tag {
-  @apply text-fg-faint border border-border rounded-sm px-1.5;
-  font-size: 0.625rem;
-  line-height: 1.25rem;
-}
-.section {
-  @apply mb-6;
-}
-.section-label {
-  @apply text-xs font-semibold text-fg-faint uppercase tracking-wider mb-3 pb-1 border-b border-border;
-}
-.empty {
-  @apply text-sm text-fg-faint;
-}
-</style>

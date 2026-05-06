@@ -1,4 +1,6 @@
-import { Router } from 'express';
+import {
+  Router,
+} from 'express';
 import * as assetsController from '../controllers/assets.controller';
 
 export function assetsRoutes (assetsDir: string): Router {

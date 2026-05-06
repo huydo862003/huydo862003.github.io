@@ -11,7 +11,8 @@
           v-if="items.length"
           class="flex items-center gap-2 h-8 text-sm text-gray-700 cursor-pointer min-w-0 group"
         >
-          <PhFileText
+          <GIcon
+            :name="GIconName.File"
             :size="14"
             class="shrink-0 text-gray-400"
           />
@@ -47,7 +48,8 @@
         :key="item"
         class="flex items-center gap-2 h-8 text-sm text-gray-700 min-w-0"
       >
-        <PhFileText
+        <GIcon
+          :name="GIconName.File"
           :size="14"
           class="shrink-0 text-gray-400"
         />
@@ -121,13 +123,23 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted, watch } from 'vue';
-import { Dropdown as VDropdown } from 'floating-vue';
-import { PhFileText } from '@phosphor-icons/vue';
-import { httpClient } from '../services/http.client';
+import {
+  ref, computed, onMounted, watch,
+} from 'vue';
+import {
+  Dropdown as VDropdown,
+} from 'floating-vue';
+import {
+  GIcon, GIconName,
+} from '@hdnax/genuix';
+import {
+  httpClient,
+} from '../services/http.client';
 import PickerDropdown from './PickerDropdown.vue';
 
-const model = defineModel<string[]>({ required: true });
+const model = defineModel<string[]>({
+  required: true,
+});
 const props = defineProps<{
   contentType?: string;
   enumOptions?: string[];
@@ -138,17 +150,17 @@ const props = defineProps<{
 const isRelation = computed(() => !!props.contentType && !props.enumOptions?.length);
 
 const search = ref('');
-const searchInput = ref<HTMLInputElement>();
-const options = ref<{ value: string; label: string }[]>([]);
+const options = ref<{ value: string;
+  label: string; }[]>([]);
 const maxVisible = computed(() => props.maxVisible ?? 5);
 
 const items = computed(() => model.value ?? []);
 const visibleItems = computed(() => items.value.slice(0, maxVisible.value));
 
 const titleMap = computed(() => {
-  const m = new Map<string, string>();
-  for (const o of options.value) m.set(o.value, o.label);
-  return m;
+  const labelMap = new Map<string, string>();
+  for (const o of options.value) labelMap.set(o.value, o.label);
+  return labelMap;
 });
 
 function resolveTitle (slug: string) {
@@ -156,15 +168,13 @@ function resolveTitle (slug: string) {
 }
 
 const filtered = computed(() => {
-  const q = search.value.toLowerCase();
+  const searchQuery = search.value.toLowerCase();
   return options.value.filter((o) =>
-    o.label.toLowerCase().includes(q) || o.value.toLowerCase().includes(q),
-  );
+    o.label.toLowerCase().includes(searchQuery) || o.value.toLowerCase().includes(searchQuery));
 });
 
 const exactMatch = computed(() =>
-  options.value.some((o) => o.value === search.value.trim() || o.label.toLowerCase() === search.value.trim().toLowerCase()),
-);
+  options.value.some((o) => o.value === search.value.trim() || o.label.toLowerCase() === search.value.trim().toLowerCase()));
 
 function selectSingle (value: string) {
   model.value = [value];
@@ -177,7 +187,10 @@ function toggle (value: string) {
 }
 
 function add (value: string) {
-  if (!items.value.includes(value)) model.value = [...items.value, value];
+  if (!items.value.includes(value)) model.value = [
+    ...items.value,
+    value,
+  ];
   search.value = '';
 }
 
@@ -186,27 +199,60 @@ function remove (value: string) {
 }
 
 const TAG_COLORS = [
-  { bg: '#dbeafe', fg: '#1e40af' },
-  { bg: '#fce7f3', fg: '#9d174d' },
-  { bg: '#d1fae5', fg: '#065f46' },
-  { bg: '#fef3c7', fg: '#92400e' },
-  { bg: '#ede9fe', fg: '#5b21b6' },
-  { bg: '#fee2e2', fg: '#991b1b' },
-  { bg: '#ccfbf1', fg: '#115e59' },
-  { bg: '#fae8ff', fg: '#86198f' },
-  { bg: '#e0e7ff', fg: '#3730a3' },
-  { bg: '#ecfccb', fg: '#3f6212' },
+  {
+    bg: '#dbeafe',
+    fg: '#1e40af',
+  },
+  {
+    bg: '#fce7f3',
+    fg: '#9d174d',
+  },
+  {
+    bg: '#d1fae5',
+    fg: '#065f46',
+  },
+  {
+    bg: '#fef3c7',
+    fg: '#92400e',
+  },
+  {
+    bg: '#ede9fe',
+    fg: '#5b21b6',
+  },
+  {
+    bg: '#fee2e2',
+    fg: '#991b1b',
+  },
+  {
+    bg: '#ccfbf1',
+    fg: '#115e59',
+  },
+  {
+    bg: '#fae8ff',
+    fg: '#86198f',
+  },
+  {
+    bg: '#e0e7ff',
+    fg: '#3730a3',
+  },
+  {
+    bg: '#ecfccb',
+    fg: '#3f6212',
+  },
 ];
 
 function hashStr (s: string): number {
-  let h = 0;
-  for (let i = 0; i < s.length; i++) h = ((h << 5) - h + s.charCodeAt(i)) | 0;
-  return Math.abs(h);
+  let hashCode = 0;
+  for (let i = 0; i < s.length; i++) hashCode = ((hashCode << 5) - hashCode + s.charCodeAt(i)) | 0;
+  return Math.abs(hashCode);
 }
 
 function chipColor (value: string): Record<string, string> {
-  const c = TAG_COLORS[hashStr(value) % TAG_COLORS.length];
-  return { background: c.bg, color: c.fg };
+  const tagColor = TAG_COLORS[hashStr(value) % TAG_COLORS.length];
+  return {
+    background: tagColor.bg,
+    color: tagColor.fg,
+  };
 }
 
 function focusSearch () {
@@ -215,11 +261,24 @@ function focusSearch () {
 
 async function loadOptions () {
   if (props.enumOptions?.length) {
-    options.value = props.enumOptions.map((v) => ({ value: v, label: v }));
+    options.value = props.enumOptions.map((v) => ({
+      value: v,
+      label: v,
+    }));
   } else if (props.contentType) {
     try {
-      const { data } = await httpClient.get('/list', { params: { type: props.contentType } });
-      options.value = data.map((d: { slug: string; title: string }) => ({ value: d.slug, label: d.title }));
+      const {
+        data,
+      } = await httpClient.get('/list', {
+        params: {
+          type: props.contentType,
+        },
+      });
+      options.value = data.map((d: { slug: string;
+        title: string; }) => ({
+        value: d.slug,
+        label: d.title,
+      }));
     } catch { /* fallback to empty */ }
   }
 }

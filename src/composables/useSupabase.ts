@@ -105,7 +105,7 @@ export function useReviewSync () {
         slug,
         state,
       ]) => {
-        const s = state as {
+        const sessionState = state as {
           easeFactor: number;
           interval: number;
           repetitions: number;
@@ -115,11 +115,11 @@ export function useReviewSync () {
         return {
           user_id: user.value?.id ?? '',
           slug,
-          ease_factor: s.easeFactor,
-          interval: s.interval,
-          repetitions: s.repetitions,
-          next_review_date: s.nextReviewDate,
-          last_reviewed_at: s.lastReviewedAt ?? null,
+          ease_factor: sessionState.easeFactor,
+          interval: sessionState.interval,
+          repetitions: sessionState.repetitions,
+          next_review_date: sessionState.nextReviewDate,
+          last_reviewed_at: sessionState.lastReviewedAt ?? null,
         };
       });
 

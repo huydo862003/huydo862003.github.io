@@ -7,80 +7,126 @@
       >
         &larr; back to journey
       </router-link>
-      <SBreadcrumb :crumbs="[{ label: 'Journeys', to: '/journeys' }, { label: slug, to: `/journeys/${slug}` }, { label: 'Concepts', to: `/journeys/${slug}/concepts` }]" />
+      <JourneyBreadcrumb :crumbs="[{ label: 'Journeys', to: '/journeys' }, { label: slug, to: `/journeys/${slug}` }, { label: 'Concepts', to: `/journeys/${slug}/concepts` }]" />
     </div>
-    <h1>Concepts <span class="count">({{ filteredConcepts.length }})</span></h1>
+    <h1 class="text-xl font-bold mb-6">
+      Concepts <span class="text-sm font-normal text-fg-faint">({{ filteredConcepts.length }})</span>
+    </h1>
 
-    <div class="filters">
-      <input
+    <div class="flex flex-wrap items-center gap-2 mb-6">
+      <GTextInput
         v-model="search"
-        type="text"
         placeholder="Search..."
-        class="input"
-      >
+      />
     </div>
 
-    <STable
-      v-if="pagedConcepts.length"
-      :columns="columns"
-      :sort-key="sortKey"
-      :sort-asc="sortAsc"
-      :page="page"
-      :pages="totalPages"
-      @update:sort-key="sortKey = $event"
-      @update:sort-asc="sortAsc = $event"
-      @update:page="page = $event"
+    <div
+      v-if="filteredConcepts.length"
+      class="overflow-auto"
     >
-      <tr
-        v-for="concept in pagedConcepts"
-        :key="concept.slug"
-        class="row"
-        @click="router.push(`/journeys/${slug}/concepts/${concept.slug}`)"
-      >
-        <td
-          v-tooltip="{ content: tooltipContent(concept.slug), html: true, delay: { show: 300, hide: 0 }, placement: 'top-start' }"
-          class="font-medium p-3"
-        >
-          <router-link
-            :to="`/journeys/${slug}/concepts/${concept.slug}`"
-            class="concept-link"
-            @click.stop
+      <GTable :page-size="PAGE_SIZE">
+        <GTableHeader>
+          <GTableRow>
+            <GTableCell
+              header
+              class="px-3"
+              style="min-width: 10rem"
+            >
+              Concept <GTableSorter col-key="title" />
+            </GTableCell>
+            <GTableCell
+              header
+              class="px-3"
+              style="min-width: 4rem"
+            >
+              Status <GTableSorter col-key="status" />
+            </GTableCell>
+            <GTableCell
+              header
+              class="px-3"
+              style="min-width: 8rem"
+            >
+              Tags
+            </GTableCell>
+            <GTableCell
+              header
+              class="px-3"
+              style="min-width: 8rem"
+            >
+              Books
+            </GTableCell>
+          </GTableRow>
+        </GTableHeader>
+        <GTableBody>
+          <GTableRow
+            v-for="concept in filteredConcepts"
+            :key="concept.slug"
+            :row-data="{ title: concept.title, status: statusOrder[concept.status] ?? 0 }"
+            class="cursor-pointer hover:bg-bg-subtle transition-colors"
+            @click="router.push(`/journeys/${slug}/concepts/${concept.slug}`)"
           >
-            {{ concept.title }}
-          </router-link>
-        </td>
-        <td>
-          <span
-            v-tooltip="concept.status"
-            class="status-ring"
-            :style="{ '--progress': statusProgress(concept.status), '--ring-color': ringColor(statusProgress(concept.status)) }"
-          />
-        </td>
-        <td>
-          <span
-            v-for="tag in displayTags(concept)"
-            :key="tag"
-            class="tag"
-            :style="{ '--tag-hue': tagHue(tag) }"
-          >{{ formatSlug(tag) }}</span>
-        </td>
-        <td>
-          <router-link
-            v-for="book in concept.books"
-            :key="book"
-            :to="`/journeys/${slug}/books`"
-            class="book-link"
-            @click.stop
-          >
-            {{ formatSlug(book) }}
-          </router-link>
-        </td>
-      </tr>
-    </STable>
-
+            <GTableCell
+              v-tooltip="{ content: tooltipContent(concept.slug), html: true, delay: { show: 300, hide: 0 }, placement: 'top-start' }"
+              class="font-medium px-3"
+              style="min-width: 10rem"
+            >
+              <router-link
+                :to="`/journeys/${slug}/concepts/${concept.slug}`"
+                class="text-xs text-fg no-underline hover:text-accent-blue hover:underline"
+                @click.stop
+              >
+                {{ concept.title }}
+              </router-link>
+            </GTableCell>
+            <GTableCell
+              class="px-3"
+              style="min-width: 4rem"
+            >
+              <span
+                v-tooltip="concept.status"
+                class="status-ring"
+                :style="{ '--progress': statusProgress(concept.status), '--ring-color': ringColor(statusProgress(concept.status)) }"
+              />
+            </GTableCell>
+            <GTableCell
+              class="px-3"
+              style="min-width: 8rem"
+            >
+              <div class="flex flex-nowrap overflow-hidden items-center gap-1">
+                <GPill
+                  v-for="tag in displayTags(concept)"
+                  :key="tag"
+                  :prominence="GProminence.Secondary"
+                  :size="GPillSize.Xs"
+                  :color="GPillColor.Gray"
+                >
+                  {{ formatSlug(tag) }}
+                </GPill>
+              </div>
+            </GTableCell>
+            <GTableCell
+              class="px-3"
+              style="min-width: 8rem"
+            >
+              <div class="flex flex-nowrap overflow-hidden items-center gap-1">
+                <router-link
+                  v-for="book in concept.books"
+                  :key="book"
+                  :to="`/journeys/${slug}/books`"
+                  class="inline-block text-xs text-fg-muted no-underline hover:underline mr-1"
+                  @click.stop
+                >
+                  {{ formatSlug(book) }}
+                </router-link>
+              </div>
+            </GTableCell>
+          </GTableRow>
+        </GTableBody>
+      </GTable>
+    </div>
     <p
-      v-else-if="!pagedConcepts.length"
-      class="empty"
+      v-else-if="!filteredConcepts.length"
+      class="text-fg-faint text-sm mt-4"
     >
       No concepts match.
     </p>
@@ -91,27 +137,30 @@
       @close="selected = undefined"
     >
       <template v-if="expanded">
-        <div class="detail-meta">
+        <div class="flex items-center gap-2 mb-4">
           <span
             v-tooltip="expanded.status"
             class="status-ring"
             :style="{ '--progress': statusProgress(expanded.status), '--ring-color': ringColor(statusProgress(expanded.status)) }"
           />
-          <span
+          <GPill
             v-for="tag in displayTags(expanded)"
             :key="tag"
-            class="tag"
-            :style="{ '--tag-hue': tagHue(tag) }"
-          >{{ formatSlug(tag) }}</span>
+            :prominence="GProminence.Secondary"
+            :size="GPillSize.Xs"
+            :color="GPillColor.Gray"
+          >
+            {{ formatSlug(tag) }}
+          </GPill>
         </div>
-        <SCollapsible
+        <GFilterable
           v-if="expanded.books.length"
           label="Books"
           :columns="1"
           :items="bookItems"
         />
         <div v-if="content">
-          <h3 class="section-label">
+          <h3 class="text-xs font-semibold text-fg-faint uppercase tracking-wider mb-3 pb-1 border-b border-border">
             Content
           </h3>
           <div
@@ -138,16 +187,15 @@ import {
   useAsyncState,
 } from '@vueuse/core';
 import {
-  useRoute, useRouter,
+  useRoute, useRouter, RouterLink,
 } from 'vue-router';
-import SBreadcrumb from '@/components/common/SBreadcrumb.vue';
-import STable from '@/components/common/STable.vue';
-import type {
-  TableColumn,
-} from '@/components/common/STable.vue';
 import {
-  useTableSort,
-} from '@/composables/useTableSort';
+  GFilterable,
+  GTable, GTableHeader, GTableBody, GTableRow, GTableCell, GTableSorter,
+  GPill, GPillColor, GPillSize, GProminence,
+  GTextInput,
+} from '@hdnax/genuix';
+import JourneyBreadcrumb from '@/components/common/JourneyBreadcrumb.vue';
 import {
   useConceptStore,
 } from '@/stores/concepts';
@@ -160,10 +208,6 @@ import {
 import {
   formatSlug, statusProgress, ringColor,
 } from '@/utils/format';
-import {
-  tagHue,
-} from '@/utils/color';
-import SCollapsible from '@/components/common/SCollapsible.vue';
 import DetailModal from '@/components/modal/DetailModal.vue';
 import type {
   Concept,
@@ -183,35 +227,6 @@ useSeo({
 });
 
 const search = ref('');
-const {
-  sortKey, sortAsc,
-} = useTableSort('title');
-const page = ref(1);
-
-const columns: TableColumn[] = [
-  {
-    key: 'title',
-    label: 'Concept',
-    sortable: true,
-    class: 'col-concept',
-  },
-  {
-    key: 'status',
-    label: 'Status',
-    sortable: true,
-    class: 'col-status',
-  },
-  {
-    key: 'tags',
-    label: 'Tags',
-    class: 'col-tags',
-  },
-  {
-    key: 'books',
-    label: 'Books',
-    class: 'col-books',
-  },
-];
 const selected = ref<string | undefined>();
 
 const statusOrder: Record<string, number> = {
@@ -228,39 +243,15 @@ const filteredConcepts = computed(() =>
     return true;
   }));
 
-const sortedConcepts = computed(() => {
-  if (!sortKey.value) return filteredConcepts.value;
-  const list = [...filteredConcepts.value];
-  const dir = sortAsc.value ? 1 : -1;
-  if (sortKey.value === 'status') {
-    list.sort((a, b) => dir * (statusOrder[a.status] - statusOrder[b.status]) || dir * a.title.localeCompare(b.title));
-  } else {
-    list.sort((a, b) => dir * a.title.localeCompare(b.title));
-  }
-  return list;
-});
-
-const totalPages = computed(() => Math.max(1, Math.ceil(sortedConcepts.value.length / PAGE_SIZE)));
-
-const pagedConcepts = computed(() => {
-  const start = (page.value - 1) * PAGE_SIZE;
-  return sortedConcepts.value.slice(start, start + PAGE_SIZE);
-});
-
-watch([
-  search,
-  sortKey,
-  sortAsc,
-], () => {
-  page.value = 1;
-});
-
 const expanded = computed(() =>
   journeyConcepts.value.find((c) => c.slug === selected.value));
 
 const {
   state: content, execute: reloadContent,
-} = useAsyncState(async () => selected.value ? loadContent(selected.value) : '', '');
+} = useAsyncState(
+  async () => selected.value ? loadContent(selected.value) : '',
+  '',
+);
 watch(selected, () => reloadContent());
 
 const bookItems = computed(() =>
@@ -268,6 +259,7 @@ const bookItems = computed(() =>
     value: b,
     label: formatSlug(b),
     to: `/journeys/${slug.value}/books/${b}`,
+    as: RouterLink,
   })));
 
 function displayTags (concept: Concept): string[] {
@@ -281,53 +273,9 @@ function tooltipContent (conceptSlug: string): string {
   const preview = firstP ? firstP[0] : html.slice(0, 400);
   return `<div class="tooltip-def">${preview}</div>`;
 }
-
 </script>
 
-<style scoped>
-@reference "../../../style.css";
-h1 {
-  @apply text-xl font-bold mb-6;
-}
-.count {
-  @apply text-sm font-normal text-fg-faint;
-}
-.filters {
-  @apply flex flex-wrap items-center gap-2 mb-6;
-}
-.concept-link {
-  @apply text-xs text-fg no-underline hover:text-accent-blue hover:underline;
-}
-.col-concept { min-width: 10rem; }
-.col-status { min-width: 4rem; }
-.col-tags { min-width: 8rem; }
-.col-books { min-width: 8rem; }
-.row {
-  @apply cursor-pointer hover:bg-bg-subtle transition-colors;
-}
-.empty {
-  @apply text-fg-faint text-sm mt-4;
-}
-.tag {
-  @apply inline-block font-medium px-1 py-0 rounded mr-1 mb-0.5
-         max-w-20 truncate align-middle;
-  font-size: 0.6875rem;
-  background: oklch(0.85 0.07 var(--tag-hue));
-  color: oklch(0.38 0.1 var(--tag-hue));
-}
-.book-link {
-  @apply inline-block text-xs text-fg-muted no-underline hover:underline mr-1;
-}
-.detail-meta {
-  @apply flex items-center gap-2 mb-4;
-}
-</style>
-
 <style>
-.dark .tag {
-  background: oklch(0.28 0.05 var(--tag-hue)) !important;
-  color: oklch(0.82 0.06 var(--tag-hue)) !important;
-}
 .tooltip-def {
   max-width: 400px;
   max-height: 200px;

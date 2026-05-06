@@ -15,7 +15,7 @@ const year = new Date().getFullYear();
 </script>
 
 <style scoped>
-@reference "../../style.css";
+@reference "@/style.css";
 
 .foot {
   @apply h-12 flex items-center justify-center gap-2 border-t border-b border-border text-xs text-fg-muted shrink-0;

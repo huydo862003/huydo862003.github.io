@@ -7,7 +7,8 @@
     >
       <div class="palette">
         <div class="search-row">
-          <PhMagnifyingGlass
+          <GIcon
+            :name="GIconName.Search"
             :size="16"
             class="search-icon"
           />
@@ -40,14 +41,14 @@
               @click="go(item)"
               @mouseenter="activeIndex = i"
             >
-              <component
-                :is="item.icon"
+              <GIcon
                 v-if="item.icon"
+                :name="item.icon"
                 :size="14"
                 class="result-icon"
               />
               <span class="result-label">{{ item.label }}</span>
-              <SKbdShortcut
+              <GKbdShortcut
                 v-if="item.shortcutKeys"
                 :keys="item.shortcutKeys"
                 class="ml-auto"
@@ -82,13 +83,13 @@
 
         <div class="footer">
           <span class="hint">
-            <SKbdShortcut :keys="['↑', '↓']" /> navigate
+            <GKbdShortcut :keys="[GKbdKeyName.ArrowUp, GKbdKeyName.ArrowDown]" /> navigate
           </span>
           <span class="hint">
-            <SKbdShortcut :keys="['↵']" /> open
+            <GKbdShortcut :keys="[GKbdKeyName.Enter]" /> open
           </span>
           <span class="hint">
-            <SKbdShortcut :keys="['Esc']" /> close
+            <GKbdShortcut :keys="[GKbdKeyName.Escape]" /> close
           </span>
         </div>
       </div>
@@ -104,9 +105,9 @@ import {
   useRouter,
 } from 'vue-router';
 import {
-  PhHouse, PhFlag, PhArticle, PhGraph,
-  PhMagnifyingGlass,
-} from '@phosphor-icons/vue';
+  GIcon, GIconName,
+  GKbdShortcut, GKbdKeyName,
+} from '@hdnax/genuix';
 import {
   useConceptStore,
 } from '@/stores/concepts';
@@ -125,15 +126,14 @@ import {
 import {
   useJourneyStore,
 } from '@/stores/journeys';
-import SKbdShortcut from '@/components/common/SKbdShortcut.vue';
 
 interface PaletteItem {
   label: string;
   to?: string;
   action?: () => void;
   type?: string;
-  icon?: object;
-  shortcutKeys?: string[];
+  icon?: GIconName;
+  shortcutKeys?: GKbdKeyName[];
 }
 
 const open = ref(false);
@@ -155,43 +155,43 @@ const navItems = computed<PaletteItem[]>(() => [
   {
     label: 'Home',
     to: '/',
-    icon: PhHouse,
+    icon: GIconName.Home,
     shortcutKeys: [
-      'Alt',
-      'H',
+      GKbdKeyName.Alt,
+      GKbdKeyName.h,
     ],
   },
   {
     label: 'Thoughts',
     to: '/thoughts',
-    icon: PhArticle,
+    icon: GIconName.Article,
     shortcutKeys: [
-      'Alt',
-      'T',
+      GKbdKeyName.Alt,
+      GKbdKeyName.t,
     ],
   },
   {
     label: 'Journeys',
     to: '/journeys',
-    icon: PhFlag,
+    icon: GIconName.Flag,
     shortcutKeys: [
-      'Alt',
-      'J',
+      GKbdKeyName.Alt,
+      GKbdKeyName.j,
     ],
   },
   {
     label: 'Open Graph (Side)',
     action: () => emit('open-graph-side'),
-    icon: PhGraph,
+    icon: GIconName.Graph,
     shortcutKeys: [
-      'Alt',
-      'G',
+      GKbdKeyName.Alt,
+      GKbdKeyName.g,
     ],
   },
   ...journeyStore.journeys.map((j) => ({
     label: j.title,
     to: `/journeys/${j.slug}`,
-    icon: PhFlag,
+    icon: GIconName.Flag,
   })),
 ]);
 
@@ -251,9 +251,9 @@ const searchItems = computed<PaletteItem[]>(() => {
 
 const filtered = computed(() => {
   if (!query.value) return navItems.value;
-  const q = query.value.toLowerCase();
+  const searchQuery = query.value.toLowerCase();
   return searchItems.value
-    .filter((item) => item.label.toLowerCase().includes(q))
+    .filter((item) => item.label.toLowerCase().includes(searchQuery))
     .slice(0, 20);
 });
 
@@ -290,8 +290,7 @@ defineExpose({
 </script>
 
 <style scoped>
-@reference "../style.css";
-@reference "../style.css";
+@reference "@/style.css";
 .palette {
   @apply bg-bg border border-border rounded-sm shadow-2xl
          w-[90vw] max-w-xl h-[70vh] flex flex-col overflow-hidden

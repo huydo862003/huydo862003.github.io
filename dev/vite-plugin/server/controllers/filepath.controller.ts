@@ -82,9 +82,9 @@ function resolveFilepath (manager: ContentManager, route: string): string | unde
     re,
     fn,
   ] of ROUTE_PATTERNS) {
-    const m = route.match(re);
-    if (!m) continue;
-    const candidates = fn(m);
+    const match = route.match(re);
+    if (!match) continue;
+    const candidates = fn(match);
     for (const candidate of candidates) {
       if (manager.contentExists(candidate)) return candidate;
     }

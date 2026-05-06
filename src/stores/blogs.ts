@@ -1,6 +1,12 @@
-import { defineStore } from 'pinia';
-import { allBlogs, allBlogsites } from 'content-collections';
-import type { BlogPost, BlogSite } from '@/types/blog';
+import {
+  defineStore,
+} from 'pinia';
+import {
+  allBlogs, allBlogsites,
+} from 'content-collections';
+import type {
+  BlogPost, BlogSite,
+} from '@/types/blog';
 
 const posts: BlogPost[] = allBlogs.map((b) => ({
   slug: b._meta.fileName.replace('.md', ''),
@@ -27,16 +33,34 @@ const sites: BlogSite[] = allBlogsites.map((b) => ({
   posts: b.posts ?? [],
 })).sort((a, b) => a.title.localeCompare(b.title));
 
-const postsBySlug = new Map(posts.map((p) => [p.slug, p]));
-const sitesBySlug = new Map(sites.map((s) => [s.slug, s]));
+const postsBySlug = new Map(posts.map((p) => [
+  p.slug,
+  p,
+]));
+const sitesBySlug = new Map(sites.map((s) => [
+  s.slug,
+  s,
+]));
 
 export const useBlogs = defineStore('blogs', () => {
-  function getPostBySlug (slug: string) { return postsBySlug.get(slug); }
-  function getSiteBySlug (slug: string) { return sitesBySlug.get(slug); }
-  function getByJourney (j: string) { return posts.filter((p) => p.journey === j); }
-  function getSites (j: string) { return sites.filter((s) => s.journey === j); }
-  function getPosts (j: string) { return posts.filter((p) => p.journey === j); }
-  function getPostsBySite (s: string) { return posts.filter((p) => p.site === s); }
+  function getPostBySlug (slug: string) {
+    return postsBySlug.get(slug);
+  }
+  function getSiteBySlug (slug: string) {
+    return sitesBySlug.get(slug);
+  }
+  function getByJourney (j: string) {
+    return posts.filter((p) => p.journey === j);
+  }
+  function getSites (j: string) {
+    return sites.filter((s) => s.journey === j);
+  }
+  function getPosts (j: string) {
+    return posts.filter((p) => p.journey === j);
+  }
+  function getPostsBySite (s: string) {
+    return posts.filter((p) => p.site === s);
+  }
 
   return {
     posts,

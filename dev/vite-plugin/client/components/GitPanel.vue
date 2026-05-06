@@ -13,9 +13,14 @@
           :disabled="gitStore.loading"
           @click="refresh"
         >
-          <PhArrowClockwise :size="14" />
+          <GIcon
+            :name="GIconName.ArrowClockwise"
+            :size="14"
+          />
         </button>
-        <template #popper>Refresh status</template>
+        <template #popper>
+          Refresh status
+        </template>
       </VTooltip>
       <div
         v-if="gitStore.files.length"
@@ -25,7 +30,8 @@
           class="git-badge"
           @click="showFiles = !showFiles"
         >
-          {{ gitStore.files.length }} changed <PhCaretUp
+          {{ gitStore.files.length }} changed <GIcon
+            :name="GIconName.ChevronUp"
             :size="10"
             :class="showFiles ? 'rotate-180' : ''"
             style="transition: transform 0.15s"
@@ -58,9 +64,14 @@
           :disabled="!commitMsg.trim() || committing"
           @click="commit"
         >
-          <PhGitCommit :size="14" />
+          <GIcon
+            :name="GIconName.Check"
+            :size="14"
+          />
         </button>
-        <template #popper>{{ committing ? 'Committing…' : 'Commit' }}</template>
+        <template #popper>
+          {{ committing ? 'Committing…' : 'Commit' }}
+        </template>
       </VTooltip>
     </div>
   </div>
@@ -71,8 +82,8 @@ import {
   ref, onMounted,
 } from 'vue';
 import {
-  PhArrowClockwise, PhGitCommit, PhCaretUp,
-} from '@phosphor-icons/vue';
+  GIcon, GIconName,
+} from '@hdnax/genuix';
 import {
   Tooltip as VTooltip,
 } from 'floating-vue';

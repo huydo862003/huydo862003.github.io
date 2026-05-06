@@ -44,8 +44,8 @@ export function isAnsweredToday (state: ReviewState, today?: string): boolean {
 
 export function isStale (state: ReviewState, today?: string): boolean {
   if (!state.lastReviewedAt) return true;
-  const t = today ?? todayISO();
-  return state.lastReviewedAt < addDaysISO(-7) && isDue(state, t);
+  const todayDate = today ?? todayISO();
+  return state.lastReviewedAt < addDaysISO(-7) && isDue(state, todayDate);
 }
 
 export function qualityFromCorrect (correct: boolean): number {

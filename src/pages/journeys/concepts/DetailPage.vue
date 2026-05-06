@@ -7,34 +7,39 @@
       >
         &larr; back to concepts
       </router-link>
-      <SBreadcrumb :crumbs="[{ label: 'Journeys', to: '/journeys' }, { label: slug, to: `/journeys/${slug}` }, { label: 'Concepts', to: `/journeys/${slug}/concepts` }]" />
+      <JourneyBreadcrumb :crumbs="[{ label: 'Journeys', to: '/journeys' }, { label: slug, to: `/journeys/${slug}` }, { label: 'Concepts', to: `/journeys/${slug}/concepts` }]" />
     </div>
 
     <template v-if="concept">
-      <h1>{{ concept.title }}</h1>
-      <div class="meta">
+      <h1 class="text-xl font-bold mb-2">
+        {{ concept.title }}
+      </h1>
+      <div class="flex items-center gap-2 mb-6">
         <span
           v-tooltip="concept.status"
           class="status-ring"
           :style="{ '--progress': statusProgress(concept.status), '--ring-color': ringColor(statusProgress(concept.status)) }"
         />
-        <span
+        <GPill
           v-for="tag in displayTags"
           :key="tag"
-          class="tag"
-          :style="{ '--tag-hue': tagHue(tag) }"
-        >{{ formatSlug(tag) }}</span>
+          :prominence="GProminence.Secondary"
+          :size="GPillSize.Xs"
+          :color="GPillColor.Gray"
+        >
+          {{ formatSlug(tag) }}
+        </GPill>
       </div>
 
-      <SCollapsible
+      <GFilterable
         v-if="concept.books.length"
         label="Books"
         :columns="1"
         :items="bookItems"
       />
 
-      <div class="section">
-        <h3 class="section-label">
+      <div class="mb-6">
+        <h3 class="text-xs font-semibold text-fg-faint uppercase tracking-wider mb-3 pb-1 border-b border-border">
           Content
         </h3>
         <div
@@ -44,7 +49,7 @@
         />
         <p
           v-else
-          class="empty"
+          class="text-fg-faint text-sm"
         >
           No content yet.
         </p>
@@ -76,8 +81,11 @@ import {
   useAsyncState,
 } from '@vueuse/core';
 import {
-  useRoute,
+  useRoute, RouterLink,
 } from 'vue-router';
+import {
+  GFilterable, GPill, GPillColor, GPillSize, GProminence,
+} from '@hdnax/genuix';
 import {
   useSeo,
 } from '@/composables/useSeo';
@@ -90,12 +98,8 @@ import {
 import {
   formatSlug, statusProgress, ringColor,
 } from '@/utils/format';
-import {
-  tagHue,
-} from '@/utils/color';
-import SCollapsible from '@/components/common/SCollapsible.vue';
 import ResourcePagination from '@/components/content/ResourcePagination.vue';
-import SBreadcrumb from '@/components/common/SBreadcrumb.vue';
+import JourneyBreadcrumb from '@/components/common/JourneyBreadcrumb.vue';
 
 const GiscusComment = defineAsyncComponent(() => import('@/components/content/github/GiscusComment.vue'));
 
@@ -109,21 +113,21 @@ const concept = computed(() => conceptStore.getBySlug(conceptSlug.value));
 useSeo({
   title: computed(() => concept.value?.title),
   description: computed(() => {
-    const c = concept.value;
-    if (!c) return undefined;
-    if (c.description) return c.description;
-    const parts: string[] = [`A ${c.status} concept in the ${slug.value} journey.`];
-    if (c.tags.length) parts.push(`Topics: ${c.tags.join(', ')}.`);
-    if (c.dependsOn.length) parts.push(`Builds on: ${c.dependsOn.join(', ')}.`);
+    const currentConcept = concept.value;
+    if (!currentConcept) return undefined;
+    if (currentConcept.description) return currentConcept.description;
+    const parts: string[] = [`A ${currentConcept.status} concept in the ${slug.value} journey.`];
+    if (currentConcept.tags.length) parts.push(`Topics: ${currentConcept.tags.join(', ')}.`);
+    if (currentConcept.dependsOn.length) parts.push(`Builds on: ${currentConcept.dependsOn.join(', ')}.`);
     return parts.join(' ');
   }),
   tags: computed(() => {
-    const c = concept.value;
-    if (!c) return undefined;
+    const currentConcept = concept.value;
+    if (!currentConcept) return undefined;
     return [
-      ...c.tags,
-      c.journey,
-      c.status,
+      ...currentConcept.tags,
+      currentConcept.journey,
+      currentConcept.status,
       'concept',
       'programming language theory',
     ];
@@ -136,22 +140,25 @@ useSeo({
 const journeyConcepts = computed(() => conceptStore.getByJourney(slug.value));
 const currentIdx = computed(() => journeyConcepts.value.findIndex((c) => c.slug === conceptSlug.value));
 const prevConcept = computed(() => {
-  const c = journeyConcepts.value[currentIdx.value - 1];
-  return c && {
-    to: `/journeys/${slug.value}/concepts/${c.slug}`,
-    title: c.title,
+  const prev = journeyConcepts.value[currentIdx.value - 1];
+  return prev && {
+    to: `/journeys/${slug.value}/concepts/${prev.slug}`,
+    title: prev.title,
   };
 });
 const nextConcept = computed(() => {
-  const c = journeyConcepts.value[currentIdx.value + 1];
-  return c && {
-    to: `/journeys/${slug.value}/concepts/${c.slug}`,
-    title: c.title,
+  const next = journeyConcepts.value[currentIdx.value + 1];
+  return next && {
+    to: `/journeys/${slug.value}/concepts/${next.slug}`,
+    title: next.title,
   };
 });
 const {
   state: content, execute: reloadContent,
-} = useAsyncState(async () => concept.value ? loadContent(concept.value.slug) : '', '');
+} = useAsyncState(
+  async () => concept.value ? loadContent(concept.value.slug) : '',
+  '',
+);
 watch(concept, () => reloadContent());
 
 const displayTags = computed(() =>
@@ -162,28 +169,6 @@ const bookItems = computed(() =>
     value: b,
     label: formatSlug(b),
     to: `/journeys/${slug.value}/books/${b}`,
+    as: RouterLink,
   })));
-
 </script>
-
-<style scoped>
-@reference "../../../style.css";
-h1 {
-  @apply text-xl font-bold mb-2;
-}
-.meta {
-  @apply flex items-center gap-2 mb-6;
-}
-.tag {
-  @apply inline-block text-xs font-semibold px-1.5 py-0.5 rounded;
-  background: oklch(0.85 0.07 var(--tag-hue));
-  color: oklch(0.38 0.1 var(--tag-hue));
-}
-:global(.dark) .tag {
-  background: oklch(0.28 0.05 var(--tag-hue));
-  color: oklch(0.82 0.06 var(--tag-hue));
-}
-.section {
-  @apply mb-6;
-}
-</style>

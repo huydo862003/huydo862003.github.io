@@ -32,15 +32,18 @@
     aria-label="Sign in with GitHub"
     @click="signInWithGithub"
   >
-    <PhGithubLogo :size="14" />
+    <GIcon
+      :name="GIconName.GithubLogo"
+      :size="14"
+    />
     <span class="sign-in-text">Sign in</span>
   </button>
 </template>
 
 <script setup lang="ts">
 import {
-  PhGithubLogo,
-} from '@phosphor-icons/vue';
+  GIcon, GIconName,
+} from '@hdnax/genuix';
 import {
   Dropdown,
 } from 'floating-vue';
@@ -54,8 +57,7 @@ const {
 </script>
 
 <style scoped>
-@reference "../../style.css";
-@reference "../../style.css";
+@reference "@/style.css";
 .avatar {
   @apply w-5 h-5 rounded-full cursor-pointer border border-fg;
 }

@@ -17,10 +17,10 @@ export function statusProgress (status: string): string {
 }
 
 export function ringColor (progress: string | number): string {
-  const p = Number(progress);
-  if (100 <= p) return 'var(--color-accent-green)';
-  if (60 <= p) return 'var(--color-accent-yellow)';
-  if (40 <= p) return 'var(--color-accent-orange)';
-  if (20 <= p) return 'var(--color-accent-red)';
+  const progressValue = Number(progress);
+  if (100 <= progressValue) return 'var(--color-accent-green)';
+  if (60 <= progressValue) return 'var(--color-accent-yellow)';
+  if (40 <= progressValue) return 'var(--color-accent-orange)';
+  if (20 <= progressValue) return 'var(--color-accent-red)';
   return 'var(--color-border)';
 }

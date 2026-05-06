@@ -6,7 +6,10 @@
         title="Back"
         @click="$router.back()"
       >
-        <PhArrowLeft :size="14" />
+        <GIcon
+          :name="GIconName.ArrowLeft"
+          :size="14"
+        />
       </button>
       <span class="info">{{ nodes.length }} nodes, {{ edges.length }} edges</span>
       <div class="controls">
@@ -15,28 +18,40 @@
           title="Zoom in"
           @click="zoomIn"
         >
-          <PhPlus :size="14" />
+          <GIcon
+            :name="GIconName.Plus"
+            :size="14"
+          />
         </button>
         <button
           class="ctrl-btn"
           title="Zoom out"
           @click="zoomOut"
         >
-          <PhMinus :size="14" />
+          <GIcon
+            :name="GIconName.Minus"
+            :size="14"
+          />
         </button>
         <button
           class="ctrl-btn"
           title="Fit to view"
           @click="zoomFit"
         >
-          <PhArrowsOut :size="14" />
+          <GIcon
+            :name="GIconName.Expand"
+            :size="14"
+          />
         </button>
         <button
           class="ctrl-btn"
           title="Recenter"
           @click="recenter"
         >
-          <PhCrosshair :size="14" />
+          <GIcon
+            :name="GIconName.Crosshair"
+            :size="14"
+          />
         </button>
       </div>
     </div>
@@ -52,8 +67,8 @@ import {
   ref, computed,
 } from 'vue';
 import {
-  PhArrowLeft, PhPlus, PhMinus, PhArrowsOut, PhCrosshair,
-} from '@phosphor-icons/vue';
+  GIcon, GIconName,
+} from '@hdnax/genuix';
 import {
   useGraph,
 } from '@/composables/useGraph';
@@ -72,15 +87,15 @@ useSeo({
 });
 
 const container = ref<HTMLElement>();
-const h = computed(() => window.innerHeight - 40);
+const graphHeight = computed(() => window.innerHeight - 40);
 
 const {
   zoomIn, zoomOut, zoomFit, recenter,
-} = useGraph(container, h);
+} = useGraph(container, graphHeight);
 </script>
 
 <style scoped>
-@reference "../../style.css";
+@reference "@/style.css";
 .graph-page {
   @apply flex flex-col h-screen;
   background: #141414;

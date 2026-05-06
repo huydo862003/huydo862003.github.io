@@ -66,8 +66,7 @@ watch(dark, updateTheme);
 </script>
 
 <style scoped>
-@reference "../../../style.css";
-@reference "../../../style.css";
+@reference "@/style.css";
 .giscus-wrap {
   @apply mt-16 border-t border-border pt-8;
 }

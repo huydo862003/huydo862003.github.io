@@ -29,8 +29,8 @@ export function useGraph (container: Ref<HTMLElement | undefined>, height: Ref<n
 
   function handleResize () {
     if (!graph || !container.value) return;
-    const h = typeof height === 'number' ? height : height.value;
-    graph.width(container.value.clientWidth).height(h);
+    const containerHeight = typeof height === 'number' ? height : height.value;
+    graph.width(container.value.clientWidth).height(containerHeight);
   }
 
   onMounted(async () => {
@@ -38,7 +38,7 @@ export function useGraph (container: Ref<HTMLElement | undefined>, height: Ref<n
     const {
       default: ForceGraph,
     } = await import('force-graph');
-    const h = typeof height === 'number' ? height : height.value;
+    const containerHeight = typeof height === 'number' ? height : height.value;
 
     // force-graph types don't match its runtime API
     graph = (ForceGraph as any)()(container.value)
@@ -58,7 +58,7 @@ export function useGraph (container: Ref<HTMLElement | undefined>, height: Ref<n
       .linkWidth(0.3)
       .backgroundColor('#141414')
       .width(container.value.clientWidth)
-      .height(h)
+      .height(containerHeight)
       .warmupTicks(100)
       .cooldownTicks(0)
       .onNodeClick((n: unknown) => {

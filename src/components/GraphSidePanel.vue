@@ -19,28 +19,40 @@
             title="Zoom in"
             @click="graphRef?.zoomIn()"
           >
-            <PhPlus :size="13" />
+            <GIcon
+              :name="GIconName.Plus"
+              :size="13"
+            />
           </button>
           <button
             class="ctrl-btn"
             title="Zoom out"
             @click="graphRef?.zoomOut()"
           >
-            <PhMinus :size="13" />
+            <GIcon
+              :name="GIconName.Minus"
+              :size="13"
+            />
           </button>
           <button
             class="ctrl-btn"
             title="Fit to view"
             @click="graphRef?.zoomFit()"
           >
-            <PhArrowsOut :size="13" />
+            <GIcon
+              :name="GIconName.Expand"
+              :size="13"
+            />
           </button>
           <button
             class="ctrl-btn"
             title="Recenter"
             @click="graphRef?.recenter()"
           >
-            <PhCrosshair :size="13" />
+            <GIcon
+              :name="GIconName.Crosshair"
+              :size="13"
+            />
           </button>
           <router-link
             to="/graph"
@@ -48,14 +60,18 @@
             title="Fullscreen"
             @click="open = false"
           >
-            <PhFrameCorners :size="13" />
+            <GIcon
+              :name="GIconName.FrameCorners"
+              :size="13"
+            />
           </router-link>
           <button
             class="ctrl-btn close-btn"
             title="Close graph"
             @click="open = false"
           >
-            <PhX
+            <GIcon
+              :name="GIconName.X"
               :size="14"
               weight="bold"
             />
@@ -78,15 +94,14 @@ import {
   ref, defineAsyncComponent, onUnmounted,
 } from 'vue';
 import {
-  PhX, PhPlus, PhMinus, PhArrowsOut, PhCrosshair, PhFrameCorners,
-} from '@phosphor-icons/vue';
+  GIcon, GIconName,
+} from '@hdnax/genuix';
 
 const KnowledgeGraph = defineAsyncComponent(() => import('@/components/KnowledgeGraph.vue'));
 
 const open = ref(false);
 const graphRef = ref<InstanceType<typeof KnowledgeGraph>>();
 
-// ── Drag-to-resize ──────────────────────────────────────────────────────────
 const MIN_WIDTH = 280;
 const MAX_WIDTH = 900;
 const paneWidth = ref(
@@ -122,7 +137,6 @@ function stopResize () {
 
 onUnmounted(stopResize);
 
-// ── Public API ──────────────────────────────────────────────────────────────
 function show () {
   open.value = true;
 }
@@ -142,9 +156,8 @@ defineExpose({
 </script>
 
 <style scoped>
-@reference "../style.css";
+@reference "@/style.css";
 .graph-pane {
-  /* Stays in the viewport while left content scrolls */
   position: sticky;
   top: 0;
   height: 100svh;

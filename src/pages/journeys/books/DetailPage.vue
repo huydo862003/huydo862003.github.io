@@ -7,49 +7,54 @@
       >
         &larr; back to books
       </router-link>
-      <SBreadcrumb :crumbs="[{ label: 'Journeys', to: '/journeys' }, { label: slug, to: `/journeys/${slug}` }, { label: 'Books', to: `/journeys/${slug}/books` }]" />
+      <JourneyBreadcrumb :crumbs="[{ label: 'Journeys', to: '/journeys' }, { label: slug, to: `/journeys/${slug}` }, { label: 'Books', to: `/journeys/${slug}/books` }]" />
     </div>
 
     <template v-if="book">
-      <div class="book-header">
+      <div class="flex gap-5 mb-6">
         <img
           v-if="book.cover"
           :src="`/book-covers/${book.cover}`"
           :alt="book.title"
-          class="book-cover"
+          class="w-24 shrink-0 rounded-sm object-cover self-start border border-border/50"
         >
-        <div class="book-header-meta">
-          <h1>{{ book.title }}</h1>
+        <div class="flex flex-col min-w-0">
+          <h1 class="text-xl font-bold mb-1">
+            {{ book.title }}
+          </h1>
           <p
             v-if="book.author"
-            class="author"
+            class="text-xs text-fg-faint mt-0.5"
           >
             {{ book.author }}
           </p>
           <p
             v-if="book.date"
-            class="year"
+            class="text-xs text-fg-faint/60"
           >
             {{ book.date }}
           </p>
-          <div class="book-links">
+          <div class="flex flex-wrap items-center gap-x-4 gap-y-0.5 mt-2 mb-2">
             <a
               v-if="book.url"
               :href="book.url"
               target="_blank"
               rel="noopener"
-              class="book-ext-link"
+              class="inline-flex items-center gap-1 text-xs text-accent-blue no-underline hover:underline"
             >
-              <PhArrowSquareOut :size="12" /> Publisher / Author page
+              <GIcon
+                :name="GIconName.ExternalLink"
+                :size="12"
+              /> Publisher / Author page
             </a>
             <span
               v-if="book.isbn"
-              class="book-isbn"
+              class="text-xs text-fg-faint/60 font-mono"
             >ISBN {{ book.isbn }}</span>
           </div>
           <p
             v-if="book.description && !book.parent"
-            class="book-desc"
+            class="text-xs text-fg-muted mt-1 max-w-prose"
           >
             {{ book.description }}
           </p>
@@ -65,61 +70,37 @@
 
       <div
         v-if="book.concepts.length"
-        class="section"
+        class="mb-6"
       >
-        <div class="section-header">
-          <h3 class="section-label">
-            Concepts
-          </h3>
-          <input
+        <GFilterable
+          label="Concepts"
+          :columns="1"
+          :page-size="PAGE_SIZE"
+        >
+          <template
             v-if="book.concepts.length > 10"
-            v-model="conceptSearch"
-            type="text"
-            placeholder="Filter..."
-            class="filter-input"
+            #search
           >
-          <span
-            v-if="conceptSearch"
-            class="section-count"
-          >{{ filteredConcepts.length }} results</span>
-        </div>
-        <ul class="concept-list">
-          <li
-            v-for="c in pagedConcepts"
+            <GFilterableSearchBox placeholder="Filter..." />
+          </template>
+          <GFilterableItem
+            v-for="c in book.concepts"
             :key="c"
+            :value="c"
+            :label="formatSlug(c)"
           >
             <router-link
               :to="`/journeys/${slug}/concepts/${c}`"
-              class="concept-link"
+              class="block text-sm text-fg-muted no-underline hover:text-accent-blue truncate transition-colors py-1 border-b border-border"
             >
               {{ formatSlug(c) }}
             </router-link>
-          </li>
-        </ul>
-        <div
-          v-if="conceptPages > 1"
-          class="paging"
-        >
-          <button
-            :disabled="conceptPage <= 1"
-            class="page-btn"
-            @click="conceptPage--"
-          >
-            &larr;
-          </button>
-          <span class="page-info">{{ conceptPage }} / {{ conceptPages }}</span>
-          <button
-            :disabled="conceptPage >= conceptPages"
-            class="page-btn"
-            @click="conceptPage++"
-          >
-            &rarr;
-          </button>
-        </div>
+          </GFilterableItem>
+        </GFilterable>
       </div>
 
-      <div class="section">
-        <h3 class="section-label">
+      <div class="mb-6">
+        <h3 class="text-xs font-semibold text-fg-faint uppercase tracking-wider mb-3 pb-1 border-b border-border">
           Content
         </h3>
         <div
@@ -129,7 +110,7 @@
         />
         <p
           v-else
-          class="empty"
+          class="text-fg-faint text-sm"
         >
           No content yet.
         </p>
@@ -155,7 +136,7 @@
 
 <script setup lang="ts">
 import {
-  ref, computed, watch, defineAsyncComponent,
+  computed, watch, defineAsyncComponent,
 } from 'vue';
 import {
   useAsyncState,
@@ -164,8 +145,8 @@ import {
   useRoute,
 } from 'vue-router';
 import {
-  PhBook, PhArrowSquareOut,
-} from '@phosphor-icons/vue';
+  GIcon, GIconName, GFilterable, GFilterableItem, GFilterableSearchBox,
+} from '@hdnax/genuix';
 import {
   useSeo,
 } from '@/composables/useSeo';
@@ -186,7 +167,7 @@ import type {
   SCardConfig,
 } from '@/components/content/book/SCard.vue';
 import ResourcePagination from '@/components/content/ResourcePagination.vue';
-import SBreadcrumb from '@/components/common/SBreadcrumb.vue';
+import JourneyBreadcrumb from '@/components/common/JourneyBreadcrumb.vue';
 
 const GiscusComment = defineAsyncComponent(() => import('@/components/content/github/GiscusComment.vue'));
 
@@ -201,7 +182,7 @@ const book = computed(() => bookStore.getBySlug(bookSlug.value));
 
 const bookConfig = computed((): SCardConfig<Book> => ({
   titleKey: 'title',
-  icon: PhBook,
+  icon: GIconName.Book,
   routeTemplate: '/journeys/{journeySlug}/books/{slug}',
   routeParams: {
     journeySlug: slug.value,
@@ -230,34 +211,36 @@ useSeo({
 });
 
 const rootBook = computed(() => {
-  let b = book.value;
-  while (b?.parent) {
-    const parent = bookStore.getBySlug(b.parent);
+  let current = book.value;
+  while (current?.parent) {
+    const parent = bookStore.getBySlug(current.parent);
     if (!parent) break;
-    b = parent;
+    current = parent;
   }
-  return b;
+  return current;
 });
 const {
   state: content, execute: reloadContent,
-} = useAsyncState(async () => book.value ? loadContent(book.value.slug) : '', '');
+} = useAsyncState(
+  async () => book.value ? loadContent(book.value.slug) : '',
+  '',
+);
 watch(book, () => reloadContent());
 
-// Flat list of all books in this journey for prev/next navigation
 const allJourneyBooks = computed(() => {
   if (!book.value) return [];
   const flat: Book[] = [];
   function collect (slugs: string[]) {
-    for (const s of slugs) {
-      const b = bookStore.getBySlug(s);
-      if (b) {
-        flat.push(b);
-        if (b.children.length) collect(b.children);
+    for (const bookSlugEntry of slugs) {
+      const bookEntry = bookStore.getBySlug(bookSlugEntry);
+      if (bookEntry) {
+        flat.push(bookEntry);
+        if (bookEntry.children.length) collect(bookEntry.children);
       }
     }
   }
-  const roots = bookStore.getByJourney(slug.value).filter((b) => !b.parent);
-  collect(roots.map((b) => b.slug));
+  const roots = bookStore.getByJourney(slug.value).filter((bookEntry) => !bookEntry.parent);
+  collect(roots.map((bookEntry) => bookEntry.slug));
   return flat;
 });
 
@@ -265,117 +248,4 @@ const currentIndex = computed(() => allJourneyBooks.value.findIndex((s) => s.slu
 const prevChapter = computed(() => allJourneyBooks.value[currentIndex.value - 1]);
 const nextChapter = computed(() => allJourneyBooks.value[currentIndex.value + 1]);
 
-const conceptSearch = ref('');
-const conceptPage = ref(1);
-
-const filteredConcepts = computed(() => {
-  const all = book.value?.concepts ?? [];
-  if (!conceptSearch.value) return all;
-  const q = conceptSearch.value.toLowerCase();
-  return all.filter((c) => c.toLowerCase().includes(q));
-});
-
-const conceptPages = computed(() => Math.max(1, Math.ceil(filteredConcepts.value.length / PAGE_SIZE)));
-
-const pagedConcepts = computed(() => {
-  const start = (conceptPage.value - 1) * PAGE_SIZE;
-  return filteredConcepts.value.slice(start, start + PAGE_SIZE);
-});
-
-watch(conceptSearch, () => {
-  conceptPage.value = 1;
-});
 </script>
-
-<style scoped>
-@reference "../../../style.css";
-h1 {
-  @apply text-xl font-bold mb-1;
-}
-.book-header {
-  @apply flex gap-5 mb-6;
-}
-.book-cover {
-  @apply w-24 shrink-0 rounded-sm object-cover self-start border border-border/50;
-}
-.book-header-meta {
-  @apply flex flex-col min-w-0;
-}
-.author {
-  @apply text-xs text-fg-faint mt-0.5;
-}
-.year {
-  @apply text-xs text-fg-faint/60;
-}
-.book-links {
-  @apply flex flex-wrap items-center gap-x-4 gap-y-0.5 mt-2 mb-2;
-}
-.book-ext-link {
-  @apply inline-flex items-center gap-1 text-xs text-accent-blue no-underline hover:underline;
-}
-.book-isbn {
-  @apply text-xs text-fg-faint/60 font-mono;
-}
-.book-desc {
-  @apply text-xs text-fg-muted mt-1 max-w-prose;
-}
-.section {
-  @apply mb-6;
-}
-.chapter-list {
-  @apply list-none p-0 m-0 flex flex-col gap-0.5;
-}
-.chapter-list li {
-  @apply border-l-2 border-border pl-3 py-1.5;
-}
-.sub-chapter-list {
-  @apply list-none p-0 m-0 ml-3 mt-0.5 flex flex-col gap-0.5;
-}
-.sub-chapter-list li {
-  @apply border-l border-border/50 pl-3 py-1;
-}
-.chapter-row {
-  @apply flex items-center justify-between;
-}
-.chapter-link {
-  @apply text-sm text-fg-muted no-underline hover:text-accent-blue transition-colors;
-}
-.sub-chapter-list .chapter-link {
-  @apply text-xs;
-}
-.chapter-meta {
-  @apply text-xs text-fg-faint;
-}
-.section-header {
-  @apply flex items-baseline gap-2 mb-3;
-}
-.section-count {
-  @apply text-xs text-fg-faint ml-auto;
-}
-.filter-input {
-  @apply text-xs px-2 py-1 bg-transparent text-fg border border-border
-         rounded-sm outline-none w-28 placeholder:text-fg-faint/40
-         focus:border-fg-faint transition-colors;
-}
-.concept-list {
-  @apply list-none p-0 m-0;
-}
-.concept-list li {
-  @apply py-1 border-b border-border;
-}
-.concept-link {
-  @apply block text-sm text-fg-muted no-underline hover:text-accent-blue
-         truncate transition-colors;
-}
-.paging {
-  @apply flex items-center justify-center gap-3 mt-4;
-}
-.page-btn {
-  @apply text-sm px-2 py-1 border border-border rounded-sm text-fg-muted
-         hover:border-fg-faint transition-colors cursor-pointer
-         disabled:opacity-30 disabled:cursor-default;
-}
-.page-info {
-  @apply text-xs text-fg-faint;
-}
-</style>

@@ -8,14 +8,20 @@
           title="Refresh"
           @click="store.loadJourneyTree()"
         >
-          <PhArrowClockwise :size="14" />
+          <GIcon
+            :name="GIconName.ArrowClockwise"
+            :size="14"
+          />
         </button>
         <button
           class="p-1 rounded hover:bg-gray-100 text-gray-400"
           title="Hide sidebar"
           @click="emit('hide')"
         >
-          <PhSidebarSimple :size="14" />
+          <GIcon
+            :name="GIconName.SidebarSimple"
+            :size="14"
+          />
         </button>
       </div>
     </div>
@@ -38,12 +44,14 @@
           class="flex items-center gap-1.5 px-1 py-1 rounded cursor-pointer hover:bg-gray-100 font-medium text-gray-700"
           @click="toggleJourney(journey.slug)"
         >
-          <PhCaretRight
+          <GIcon
+            :name="GIconName.ChevronRight"
             :size="10"
             class="shrink-0 text-gray-400 transition-transform duration-150"
             :class="{ 'rotate-90': openJourneys.has(journey.slug) }"
           />
-          <PhCompass
+          <GIcon
+            :name="GIconName.Compass"
             :size="14"
             class="shrink-0 text-blue-500"
           />
@@ -62,13 +70,14 @@
               class="flex items-center gap-1.5 px-1 py-0.5 rounded cursor-pointer hover:bg-gray-50 text-gray-500 mt-1"
               @click="toggleSection(`${journey.slug}/${type}`)"
             >
-              <PhCaretRight
+              <GIcon
+                :name="GIconName.ChevronRight"
                 :size="9"
                 class="shrink-0 text-gray-300 transition-transform duration-150"
                 :class="{ 'rotate-90': openSections.has(`${journey.slug}/${type}`) }"
               />
-              <component
-                :is="TYPE_CONFIG[type]?.icon ?? PhFile"
+              <GIcon
+                :name="TYPE_CONFIG[type]?.icon ?? GIconName.File"
                 :size="13"
                 class="shrink-0"
                 :class="TYPE_CONFIG[type]?.color ?? 'text-gray-400'"
@@ -88,7 +97,8 @@
                 :class="{ 'bg-blue-50 text-blue-700 font-medium': fileStore.currentPath === item.path }"
                 @click="emit('select', item.path)"
               >
-                <PhFileText
+                <GIcon
+                  :name="GIconName.File"
                   :size="12"
                   class="shrink-0 text-gray-300"
                 />
@@ -109,13 +119,14 @@
             class="flex items-center gap-1.5 px-1 py-1 rounded cursor-pointer hover:bg-gray-100 font-medium text-gray-700"
             @click="toggleSection(String(type))"
           >
-            <PhCaretRight
+            <GIcon
+              :name="GIconName.ChevronRight"
               :size="10"
               class="shrink-0 text-gray-400 transition-transform duration-150"
               :class="{ 'rotate-90': openSections.has(String(type)) }"
             />
-            <component
-              :is="TYPE_CONFIG[type]?.icon ?? PhFile"
+            <GIcon
+              :name="TYPE_CONFIG[type]?.icon ?? GIconName.File"
               :size="14"
               class="shrink-0"
               :class="TYPE_CONFIG[type]?.color ?? 'text-gray-400'"
@@ -135,7 +146,8 @@
               :class="{ 'bg-blue-50 text-blue-700 font-medium': fileStore.currentPath === item.path }"
               @click="emit('select', item.path)"
             >
-              <PhFileText
+              <GIcon
+                :name="GIconName.File"
                 :size="12"
                 class="shrink-0 text-gray-300"
               />
@@ -149,32 +161,75 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, reactive } from 'vue';
 import {
-  PhArrowClockwise, PhCaretRight, PhCompass, PhFileText, PhFile,
-  PhBooks, PhLightbulb, PhFlashlight, PhMapTrifold, PhArticle, PhNewspaper,
-  PhNotebook, PhUser, PhSidebarSimple, PhGlobe,
-} from '@phosphor-icons/vue';
-import { useTreeStore } from '../stores/tree.store';
-import { useFileStore } from '../stores/file.store';
+  onMounted, reactive,
+} from 'vue';
+import {
+  GIcon, GIconName,
+} from '@hdnax/genuix';
+import {
+  useTreeStore,
+} from '../stores/tree.store';
+import {
+  useFileStore,
+} from '../stores/file.store';
 
 const store = useTreeStore();
 const fileStore = useFileStore();
-const emit = defineEmits<{ select: [path: string]; hide: [] }>();
+const emit = defineEmits<{ select: [path: string];
+  hide: []; }>();
 
 const openJourneys = reactive(new Set<string>());
 const openSections = reactive(new Set<string>());
 
-const TYPE_CONFIG: Record<string, { icon: unknown; color: string; label: string }> = {
-  books: { icon: PhBooks, color: 'text-amber-500', label: 'Books & Chapters' },
-  concepts: { icon: PhLightbulb, color: 'text-emerald-500', label: 'Concepts' },
-  flashcards: { icon: PhFlashlight, color: 'text-violet-500', label: 'Flashcards' },
-  phases: { icon: PhMapTrifold, color: 'text-blue-500', label: 'Phases' },
-  blogs: { icon: PhArticle, color: 'text-rose-500', label: 'Blog Posts' },
-  blogsites: { icon: PhGlobe, color: 'text-rose-400', label: 'Blog Sites' },
-  papers: { icon: PhNewspaper, color: 'text-cyan-500', label: 'Papers' },
-  thoughts: { icon: PhNotebook, color: 'text-gray-500', label: 'Thoughts' },
-  authors: { icon: PhUser, color: 'text-gray-500', label: 'Authors' },
+const TYPE_CONFIG: Record<string, { icon: string;
+  color: string;
+  label: string; }> = {
+  books: {
+    icon: GIconName.Books,
+    color: 'text-amber-500',
+    label: 'Books & Chapters',
+  },
+  concepts: {
+    icon: GIconName.Lightbulb,
+    color: 'text-emerald-500',
+    label: 'Concepts',
+  },
+  flashcards: {
+    icon: GIconName.Flashlight,
+    color: 'text-violet-500',
+    label: 'Flashcards',
+  },
+  phases: {
+    icon: GIconName.MapTrifold,
+    color: 'text-blue-500',
+    label: 'Phases',
+  },
+  blogs: {
+    icon: GIconName.Article,
+    color: 'text-rose-500',
+    label: 'Blog Posts',
+  },
+  blogsites: {
+    icon: GIconName.Globe,
+    color: 'text-rose-400',
+    label: 'Blog Sites',
+  },
+  papers: {
+    icon: GIconName.Newspaper,
+    color: 'text-cyan-500',
+    label: 'Papers',
+  },
+  thoughts: {
+    icon: GIconName.Notebook,
+    color: 'text-gray-500',
+    label: 'Thoughts',
+  },
+  authors: {
+    icon: GIconName.User,
+    color: 'text-gray-500',
+    label: 'Authors',
+  },
 };
 
 function toggleJourney (slug: string) {

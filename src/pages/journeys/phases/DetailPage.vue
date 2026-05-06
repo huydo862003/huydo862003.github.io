@@ -7,12 +7,14 @@
       >
         &larr; back to phases
       </router-link>
-      <SBreadcrumb :crumbs="[{ label: 'Journeys', to: '/journeys' }, { label: slug, to: `/journeys/${slug}` }, { label: 'Phases', to: `/journeys/${slug}/phases` }]" />
+      <JourneyBreadcrumb :crumbs="[{ label: 'Journeys', to: '/journeys' }, { label: slug, to: `/journeys/${slug}` }, { label: 'Phases', to: `/journeys/${slug}/phases` }]" />
     </div>
 
     <template v-if="phase">
-      <div class="title-row">
-        <h1>{{ phase.title }}</h1>
+      <div class="flex flex-wrap items-center gap-x-3 gap-y-1 mb-6">
+        <h1 class="text-xl font-bold">
+          {{ phase.title }}
+        </h1>
         <span :class="`status-${phase.status}`">{{ phase.status }}</span>
       </div>
 
@@ -23,19 +25,19 @@
       />
       <p
         v-else
-        class="empty"
+        class="text-fg-faint text-sm"
       >
         No content yet.
       </p>
 
       <div
         v-if="rootBooks.length"
-        class="section"
+        class="mb-8"
       >
-        <h2 class="section-label">
+        <h2 class="text-xs font-semibold text-fg-faint uppercase tracking-wider mb-3 pb-1 border-b border-border">
           Books
         </h2>
-        <div class="book-cards">
+        <div class="flex flex-col gap-3">
           <SCard
             v-for="b in rootBooks"
             :key="b.slug"
@@ -47,57 +49,33 @@
 
       <div
         v-if="phase.concepts.length"
-        class="section"
+        class="mb-8"
       >
-        <div class="section-header">
-          <h2 class="section-label">
-            Concepts
-          </h2>
-          <input
+        <GFilterable
+          label="Concepts"
+          :columns="1"
+          :page-size="PAGE_SIZE"
+        >
+          <template
             v-if="phase.concepts.length > 10"
-            v-model="conceptSearch"
-            type="text"
-            placeholder="Filter..."
-            class="filter-input"
+            #search
           >
-          <span
-            v-if="conceptSearch"
-            class="section-count"
-          >{{ filteredConcepts.length }} results</span>
-        </div>
-        <ul class="concept-list">
-          <li
-            v-for="c in pagedConcepts"
+            <GFilterableSearchBox placeholder="Filter..." />
+          </template>
+          <GFilterableItem
+            v-for="c in phase.concepts"
             :key="c"
+            :value="c"
+            :label="formatSlug(c)"
           >
             <router-link
               :to="`/journeys/${slug}/concepts/${c}`"
-              class="concept-link"
+              class="block text-sm text-fg-muted no-underline hover:text-accent-blue truncate transition-colors py-1 border-b border-border"
             >
               {{ formatSlug(c) }}
             </router-link>
-          </li>
-        </ul>
-        <div
-          v-if="conceptPages > 1"
-          class="paging"
-        >
-          <button
-            :disabled="conceptPage <= 1"
-            class="page-btn"
-            @click="conceptPage--"
-          >
-            &larr;
-          </button>
-          <span class="page-info">{{ conceptPage }} / {{ conceptPages }}</span>
-          <button
-            :disabled="conceptPage >= conceptPages"
-            class="page-btn"
-            @click="conceptPage++"
-          >
-            &rarr;
-          </button>
-        </div>
+          </GFilterableItem>
+        </GFilterable>
       </div>
 
       <ResourcePagination
@@ -120,7 +98,7 @@
 
 <script setup lang="ts">
 import {
-  ref, computed, watch, defineAsyncComponent,
+  computed, watch, defineAsyncComponent,
 } from 'vue';
 import {
   useAsyncState,
@@ -129,8 +107,8 @@ import {
   useRoute,
 } from 'vue-router';
 import {
-  PhBook,
-} from '@phosphor-icons/vue';
+  GIconName, GFilterable, GFilterableItem, GFilterableSearchBox,
+} from '@hdnax/genuix';
 import {
   useSeo,
 } from '@/composables/useSeo';
@@ -154,7 +132,7 @@ import {
   formatSlug,
 } from '@/utils/format';
 import ResourcePagination from '@/components/content/ResourcePagination.vue';
-import SBreadcrumb from '@/components/common/SBreadcrumb.vue';
+import JourneyBreadcrumb from '@/components/common/JourneyBreadcrumb.vue';
 
 const GiscusComment = defineAsyncComponent(() => import('@/components/content/github/GiscusComment.vue'));
 
@@ -200,17 +178,17 @@ watch(phase, () => reloadContent());
 const rootBooks = computed(() => {
   const seen = new Set<string>();
   const roots: NonNullable<ReturnType<typeof bookStore.getBySlug>>[] = [];
-  for (const s of phase.value?.books ?? []) {
-    let b = bookStore.getBySlug(s);
-    if (!b) continue;
-    while (b.parent) {
-      const p = bookStore.getBySlug(b.parent);
-      if (!p) break;
-      b = p;
+  for (const bookSlug of phase.value?.books ?? []) {
+    let book = bookStore.getBySlug(bookSlug);
+    if (!book) continue;
+    while (book.parent) {
+      const parent = bookStore.getBySlug(book.parent);
+      if (!parent) break;
+      book = parent;
     }
-    if (!seen.has(b.slug)) {
-      seen.add(b.slug);
-      roots.push(b);
+    if (!seen.has(book.slug)) {
+      seen.add(book.slug);
+      roots.push(book);
     }
   }
   return roots;
@@ -218,7 +196,7 @@ const rootBooks = computed(() => {
 
 const bookConfig = computed((): SCardConfig<Book> => ({
   titleKey: 'title',
-  icon: PhBook,
+  icon: GIconName.Book,
   routeTemplate: '/journeys/{journeySlug}/books/{slug}',
   routeParams: {
     journeySlug: slug.value,
@@ -233,72 +211,4 @@ const bookConfig = computed((): SCardConfig<Book> => ({
   renderChildren: true,
 }));
 
-const conceptSearch = ref('');
-const conceptPage = ref(1);
-
-const filteredConcepts = computed(() => {
-  const all = phase.value?.concepts ?? [];
-  if (!conceptSearch.value) return all;
-  const q = conceptSearch.value.toLowerCase();
-  return all.filter((c) => c.toLowerCase().includes(q));
-});
-
-const conceptPages = computed(() => Math.max(1, Math.ceil(filteredConcepts.value.length / PAGE_SIZE)));
-
-const pagedConcepts = computed(() => {
-  const start = (conceptPage.value - 1) * PAGE_SIZE;
-  return filteredConcepts.value.slice(start, start + PAGE_SIZE);
-});
-
-watch(conceptSearch, () => {
-  conceptPage.value = 1;
-});
 </script>
-
-<style scoped>
-@reference "../../../style.css";
-h1 {
-  @apply text-xl font-bold;
-}
-.title-row {
-  @apply flex flex-wrap items-center gap-x-3 gap-y-1 mb-6;
-}
-.section {
-  @apply mb-8;
-}
-.section-header {
-  @apply flex items-baseline gap-2 mb-3;
-}
-.section-count {
-  @apply text-xs text-fg-faint ml-auto;
-}
-.filter-input {
-  @apply text-xs px-2 py-1 bg-transparent text-fg border border-border
-         rounded-sm outline-none w-28 placeholder:text-fg-faint/40
-         focus:border-fg-faint transition-colors;
-}
-.book-cards {
-  @apply flex flex-col gap-3;
-}
-.concept-list {
-  @apply list-none p-0 m-0;
-}
-.concept-list li {
-  @apply py-1 border-b border-border;
-}
-.concept-link {
-  @apply block text-sm text-fg-muted no-underline hover:text-accent-blue
-         truncate transition-colors;
-}
-.paging {
-  @apply flex items-center justify-center gap-3 mt-4;
-}
-.page-btn {
-  @apply text-sm px-2 py-1 border border-border rounded-sm text-fg-muted
-         hover:border-fg-faint transition-colors cursor-pointer
-         disabled:opacity-30 disabled:cursor-default;
-}
-.page-info {
-  @apply text-xs text-fg-faint;
-}
-</style>

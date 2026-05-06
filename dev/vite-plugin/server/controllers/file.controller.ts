@@ -19,12 +19,16 @@ const fileBody = z.object({
   content: z.string(),
 });
 
-const typeQuery = z.object({ type: z.string().min(1) });
+const typeQuery = z.object({
+  type: z.string().min(1),
+});
 
 export function list (manager: ContentManager) {
   return (req: Request, res: Response) => {
     const parsed = typeQuery.safeParse(req.query);
-    if (!parsed.success) return res.status(400).json({ error: parsed.error.issues[0].message });
+    if (!parsed.success) return res.status(400).json({
+      error: parsed.error.issues[0].message,
+    });
     res.json(manager.listContent(parsed.data.type));
   };
 }

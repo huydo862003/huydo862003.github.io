@@ -1,12 +1,23 @@
-import { defineStore } from 'pinia';
-import { ref } from 'vue';
-import type { JourneyTree } from '../services/tree.service';
-import type { ContentSchema } from '../services/schema.service';
+import {
+  defineStore,
+} from 'pinia';
+import {
+  ref,
+} from 'vue';
+import type {
+  JourneyTree,
+} from '../services/tree.service';
+import type {
+  ContentSchema,
+} from '../services/schema.service';
 import * as treeService from '../services/tree.service';
 import * as schemaService from '../services/schema.service';
 
 export const useTreeStore = defineStore('tree', () => {
-  const journeyTree = ref<JourneyTree>({ journeys: [], standalone: {} });
+  const journeyTree = ref<JourneyTree>({
+    journeys: [],
+    standalone: {},
+  });
   const treeLoading = ref(false);
   const schemas = ref<Record<string, ContentSchema>>({});
 

@@ -98,7 +98,6 @@ export const routes: RouteRecordRaw[] = [
     name: 'graph',
     component: () => import('@/pages/graph/KnowledgeGraphPage.vue'),
   },
-  // Dev-only editor routes
   ...(import.meta.env.DEV
     ? [
       {

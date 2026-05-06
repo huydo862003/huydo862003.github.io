@@ -16,7 +16,7 @@
 </template>
 
 <style scoped>
-@reference "../style.css";
+@reference "@/style.css";
 .center {
   @apply flex flex-col items-center justify-center min-h-[60vh];
 }

@@ -7,54 +7,56 @@
       >
         &larr; back to journey
       </router-link>
-      <SBreadcrumb :crumbs="[{ label: 'Journeys', to: '/journeys' }, { label: slug, to: `/journeys/${slug}` }, { label: 'Blogs', to: `/journeys/${slug}/blogs` }]" />
+      <JourneyBreadcrumb :crumbs="[{ label: 'Journeys', to: '/journeys' }, { label: slug, to: `/journeys/${slug}` }, { label: 'Blogs', to: `/journeys/${slug}/blogs` }]" />
     </div>
-    <h1>Blogs</h1>
+    <h1 class="text-xl font-bold mb-6">
+      Blogs
+    </h1>
 
     <div
       v-if="sites.length"
-      class="section"
+      class="mb-6"
     >
-      <h2 class="section-label">
+      <h2 class="text-xs font-semibold text-fg-faint uppercase tracking-wider mb-3 pb-1 border-b border-border">
         Sites
       </h2>
       <div
         v-for="site in sites"
         :key="site.slug"
-        class="site"
+        class="mb-4"
       >
-        <div class="site-header">
+        <div class="flex flex-wrap items-center gap-1 mb-1">
           <a
             v-if="site.url"
             :href="site.url"
             target="_blank"
             rel="noopener"
-            class="site-title"
+            class="text-sm font-medium text-accent-blue no-underline hover:underline"
           >{{ site.title }}</a>
           <span
             v-else
-            class="site-title"
+            class="text-sm font-medium text-accent-blue"
           >{{ site.title }}</span>
           <span
             v-if="site.author"
-            class="site-author"
+            class="text-xs text-fg-faint"
           > - {{ site.author }}</span>
         </div>
         <ul
           v-if="sitePosts(site.slug).length"
-          class="post-list"
+          class="list-none p-0 m-0 ml-4 flex flex-col"
         >
           <li
             v-for="post in sitePosts(site.slug)"
             :key="post.slug"
-            class="post"
+            class="flex items-center justify-between border-l-2 border-border pl-3 py-1.5 text-sm text-fg-muted"
           >
             <a
               v-if="post.url"
               :href="post.url"
               target="_blank"
               rel="noopener"
-              class="post-link"
+              class="text-fg-muted no-underline hover:text-accent-blue transition-colors"
             >{{ post.title }}</a>
             <span v-else>{{ post.title }}</span>
           </li>
@@ -64,28 +66,28 @@
 
     <div
       v-if="standalonePosts.length"
-      class="section"
+      class="mb-6"
     >
-      <h2 class="section-label">
+      <h2 class="text-xs font-semibold text-fg-faint uppercase tracking-wider mb-3 pb-1 border-b border-border">
         Posts
       </h2>
-      <ul class="post-list standalone">
+      <ul class="list-none p-0 m-0 flex flex-col">
         <li
           v-for="post in standalonePosts"
           :key="post.slug"
-          class="post"
+          class="flex items-center justify-between border-l-2 border-border pl-3 py-1.5 text-sm text-fg-muted"
         >
           <a
             v-if="post.url"
             :href="post.url"
             target="_blank"
             rel="noopener"
-            class="post-link"
+            class="text-fg-muted no-underline hover:text-accent-blue transition-colors"
           >{{ post.title }}</a>
           <span v-else>{{ post.title }}</span>
           <span
             v-if="post.author"
-            class="post-author"
+            class="text-xs text-fg-faint"
           >{{ post.author }}</span>
         </li>
       </ul>
@@ -93,7 +95,7 @@
 
     <p
       v-if="!sites.length && !standalonePosts.length"
-      class="empty"
+      class="text-fg-faint text-sm"
     >
       No blogs yet.
     </p>
@@ -107,7 +109,7 @@ import {
 import {
   useRoute,
 } from 'vue-router';
-import SBreadcrumb from '@/components/common/SBreadcrumb.vue';
+import JourneyBreadcrumb from '@/components/common/JourneyBreadcrumb.vue';
 import {
   useBlogs,
 } from '@/stores/blogs';
@@ -124,45 +126,3 @@ function sitePosts (siteSlug: string) {
   return blogStore.getPostsBySite(siteSlug);
 }
 </script>
-
-<style scoped>
-@reference "../../../style.css";
-
-h1 {
-  @apply text-xl font-bold mb-6;
-}
-.section {
-  @apply mb-6;
-}
-.site {
-  @apply mb-4;
-}
-.site-header {
-  @apply flex flex-wrap items-center gap-1 mb-1;
-}
-.site-title {
-  @apply text-sm font-medium text-accent-blue no-underline hover:underline;
-}
-.site-author {
-  @apply text-xs text-fg-faint;
-}
-.post-list {
-  @apply list-none p-0 m-0 ml-4 flex flex-col;
-}
-.post-list.standalone {
-  @apply ml-0;
-}
-.post {
-  @apply flex items-center justify-between border-l-2 border-border pl-3 py-1.5
-         text-sm text-fg-muted;
-}
-.post-link {
-  @apply text-fg-muted no-underline hover:text-accent-blue transition-colors;
-}
-.post-author {
-  @apply text-xs text-fg-faint;
-}
-.empty {
-  @apply text-fg-faint text-sm;
-}
-</style>

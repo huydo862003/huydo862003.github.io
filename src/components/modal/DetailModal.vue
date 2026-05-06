@@ -7,16 +7,20 @@
     >
       <div class="modal detail">
         <div class="detail-header">
-          <div class="detail-title-row">
+          <div class="flex items-center gap-2 min-w-0">
             <h2>{{ title }}</h2>
             <span
               v-if="status"
-              :class="['detail-badge', `status-${status}`]"
+              :class="['text-xs px-1.5 py-0.5 rounded-sm bg-bg-subtle shrink-0', `status-${status}`]"
             >{{ status }}</span>
           </div>
-          <button @click="$emit('close')">
+          <GButton
+            :prominence="GButtonProminence.Ghost"
+            :size="GButtonSize.Xs"
+            @click="$emit('close')"
+          >
             &times;
-          </button>
+          </GButton>
         </div>
         <div class="detail-body">
           <slot />
@@ -27,6 +31,10 @@
 </template>
 
 <script setup lang="ts">
+import {
+  GButton, GButtonProminence, GButtonSize,
+} from '@hdnax/genuix';
+
 const {
   open, title, status = '',
 } = defineProps<{
@@ -41,14 +49,7 @@ defineEmits<{
 </script>
 
 <style scoped>
-@reference "../../style.css";
-@reference "../../style.css";
-.detail-title-row {
-  @apply flex items-center gap-2 min-w-0;
-}
-.detail-badge {
-  @apply text-xs px-1.5 py-0.5 rounded-sm bg-bg-subtle shrink-0;
-}
+@reference "@/style.css";
 .detail-body {
   flex: 1;
   overflow-y: auto;

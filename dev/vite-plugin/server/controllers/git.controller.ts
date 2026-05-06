@@ -44,11 +44,27 @@ export function commit (projectDir: string) {
       message, files,
     } = parsed.data;
     if (files && 0 < files.length) {
-      execFileSync('git', ['add', ...files.map((f) => join('content', f))], { cwd: projectDir });
+      execFileSync('git', [
+        'add',
+        ...files.map((f) => join('content', f)),
+      ], {
+        cwd: projectDir,
+      });
     } else {
-      execFileSync('git', ['add', 'content/'], { cwd: projectDir });
+      execFileSync('git', [
+        'add',
+        'content/',
+      ], {
+        cwd: projectDir,
+      });
     }
-    execFileSync('git', ['commit', '-m', message], { cwd: projectDir });
+    execFileSync('git', [
+      'commit',
+      '-m',
+      message,
+    ], {
+      cwd: projectDir,
+    });
     res.json({
       ok: true,
     });

@@ -30,7 +30,7 @@ defineEmits<{
 </script>
 
 <style scoped>
-@reference "../../style.css";
+@reference "@/style.css";
 .pager {
   @apply flex items-center justify-center gap-3;
 }

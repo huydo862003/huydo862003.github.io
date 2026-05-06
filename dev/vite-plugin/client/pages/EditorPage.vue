@@ -45,7 +45,6 @@
             </div>
           </div>
         </Pane>
-
       </Splitpanes>
     </div>
 
@@ -57,7 +56,10 @@
           class="flex items-center gap-1 text-sm font-semibold text-blue-500 no-underline"
           title="Back to site"
         >
-          <PhArrowLeft :size="14" />
+          <GIcon
+            :name="GIconName.ArrowLeft"
+            :size="14"
+          />
         </router-link>
         <button
           class="icon-btn"
@@ -65,7 +67,10 @@
           title="Toggle sidebar"
           @click="showSidebar = !showSidebar"
         >
-          <PhSidebar :size="14" />
+          <GIcon
+            :name="GIconName.Sidebar"
+            :size="14"
+          />
         </button>
         <a
           v-if="previewUrl"
@@ -74,7 +79,10 @@
           target="_blank"
           title="Open preview"
         >
-          <PhEye :size="14" />
+          <GIcon
+            :name="GIconName.Eye"
+            :size="14"
+          />
         </a>
         <button
           class="icon-btn"
@@ -82,7 +90,10 @@
           :title="fileStore.saving ? 'Saving…' : fileStore.dirty ? 'Save (Ctrl+S)' : 'Saved'"
           @click="save"
         >
-          <PhFloppyDisk :size="14" />
+          <GIcon
+            :name="GIconName.FloppyDisk"
+            :size="14"
+          />
         </button>
         <span
           v-if="fileStore.currentPath"
@@ -104,8 +115,8 @@ import {
   useRoute, useRouter,
 } from 'vue-router';
 import {
-  PhArrowLeft, PhFloppyDisk, PhEye, PhSidebar,
-} from '@phosphor-icons/vue';
+  GIcon, GIconName,
+} from '@hdnax/genuix';
 import {
   Splitpanes, Pane,
 } from 'splitpanes';
@@ -131,22 +142,27 @@ const route = useRoute();
 const router = useRouter();
 
 watch(() => fileStore.currentPath, (path) => {
-  if (path) router.replace({ hash: `#${path}` });
+  if (path) router.replace({
+    hash: `#${path}`,
+  });
 });
 
 watch(() => frontmatter.value, (fm) => {
   const title = fm?.title || fm?.question || fm?.name || 'Untitled';
   document.title = `Editor - ${title}`;
-}, { immediate: true });
+}, {
+  immediate: true,
+});
 
 const previewUrl = computed(() => {
-  const p = fileStore.currentPath;
-  if (!p) return '';
-  const slug = p.replace(/\.md$/, '').split('/').pop();
-  const parts = p.split('/');
+  const currentPath = fileStore.currentPath;
+  if (!currentPath) return '';
+  const slug = currentPath.replace(/\.md$/, '').split('/')
+    .pop();
+  const parts = currentPath.split('/');
   const type = parts[0];
   // journey from frontmatter or from directory structure (e.g., concepts/plt/foo.md -> plt)
-  const journey = (frontmatter.value.journey as string | undefined) || (parts.length >= 3 ? parts[1] : '');
+  const journey = (frontmatter.value.journey as string | undefined) || (3 <= parts.length ? parts[1] : '');
   if (type === 'thoughts') return `/thoughts/${slug}`;
   if (type === 'journeys') return `/journeys/${slug}`;
   if (type === 'authors') return '';
@@ -217,8 +233,11 @@ let saving = false;
 async function save () {
   if (saving || navigating) return;
   saving = true;
-  try { await fileStore.save(); }
-  finally { saving = false; }
+  try {
+    await fileStore.save();
+  } finally {
+    saving = false;
+  }
 }
 
 // autosave

@@ -31,12 +31,10 @@ export function generateRoutes (): string[] {
     '/graph',
   ];
 
-  // Thoughts
   for (const slug of slugsFromDir('content/thoughts')) {
     routes.push(`/thoughts/${slug}`);
   }
 
-  // Journeys + sub-pages
   const journeySlugs = slugsFromDir('content/journeys');
   for (const j of journeySlugs) {
     routes.push(`/journeys/${j}`);
@@ -52,7 +50,6 @@ export function generateRoutes (): string[] {
     }
   }
 
-  // Concepts, flashcards, phases - grouped by journey
   const types = [
     'concepts',
     'flashcards',

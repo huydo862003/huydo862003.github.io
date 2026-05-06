@@ -364,17 +364,29 @@ export class ContentManager {
     const results: T[] = [];
     const collect = (dir: string) => {
       let entries: string[];
-      try { entries = this.contentJail.readdirSync(dir); } catch { return; }
+      try {
+        entries = this.contentJail.readdirSync(dir);
+      } catch {
+        return;
+      }
       for (const entry of entries) {
         const full = dir === '.' ? entry : `${dir}/${entry}`;
         if (!full.startsWith(contentType)) continue;
         let stat;
-        try { stat = this.contentJail.statSync(full); } catch { continue; }
-        if (stat.isDirectory()) { collect(full); continue; }
+        try {
+          stat = this.contentJail.statSync(full);
+        } catch {
+          continue;
+        }
+        if (stat.isDirectory()) {
+          collect(full); continue;
+        }
         if (!entry.endsWith('.md')) continue;
         const slug = entry.replace(/\.md$/, '');
         let fm: Record<string, unknown> = {};
-        try { fm = this.getCachedFrontmatter(full); } catch { /* empty fm */ }
+        try {
+          fm = this.getCachedFrontmatter(full);
+        } catch { /* empty fm */ }
         const item = transform(full, slug, fm);
         if (item) results.push(item);
       }
@@ -386,9 +398,21 @@ export class ContentManager {
   // journey-centric tree
   journeyTree (): JourneyTree {
     const allSchemas = this.schemas() as Record<string, { displayName?: string }>;
-    const GROUPED_TYPES = [ContentType.Concepts, ContentType.Flashcards, ContentType.Phases, ContentType.Blogs, ContentType.Blogsites] as const;
-    const FM_GROUPED_TYPES = [ContentType.Books, ContentType.Papers] as const;
-    const STANDALONE_TYPES = [ContentType.Thoughts, ContentType.Authors] as const;
+    const GROUPED_TYPES = [
+      ContentType.Concepts,
+      ContentType.Flashcards,
+      ContentType.Phases,
+      ContentType.Blogs,
+      ContentType.Blogsites,
+    ] as const;
+    const FM_GROUPED_TYPES = [
+      ContentType.Books,
+      ContentType.Papers,
+    ] as const;
+    const STANDALONE_TYPES = [
+      ContentType.Thoughts,
+      ContentType.Authors,
+    ] as const;
 
     // load journeys
     const journeyItems = this.listContent('journeys');
@@ -406,7 +430,11 @@ export class ContentManager {
         const dir = `${type}/${journey.slug}`;
         const items: ContentItem[] = [];
         let entries: string[];
-        try { entries = this.contentJail.readdirSync(dir); } catch { continue; }
+        try {
+          entries = this.contentJail.readdirSync(dir);
+        } catch {
+          continue;
+        }
         for (const entry of entries) {
           if (!entry.endsWith('.md')) continue;
           const path = `${dir}/${entry}`;
@@ -416,7 +444,11 @@ export class ContentManager {
             const fm = this.getCachedFrontmatter(path);
             if (fm[displayField]) title = String(fm[displayField]);
           } catch { /* use slug */ }
-          items.push({ slug, title, path });
+          items.push({
+            slug,
+            title,
+            path,
+          });
         }
         if (items.length) journey.resources[type] = items;
       }
@@ -429,7 +461,11 @@ export class ContentManager {
         const journey = journeys.find((j) => j.slug === item.journey);
         if (!journey) continue;
         if (!journey.resources[type]) journey.resources[type] = [];
-        journey.resources[type].push({ slug: item.slug, title: item.title, path: item.path });
+        journey.resources[type].push({
+          slug: item.slug,
+          title: item.title,
+          path: item.path,
+        });
       }
     }
 
@@ -440,7 +476,10 @@ export class ContentManager {
       if (items.length) standalone[type] = items;
     }
 
-    return { journeys, standalone };
+    return {
+      journeys,
+      standalone,
+    };
   }
 
   private listContentWithJourney (contentType: string): (ContentItem & { journey: string })[] {

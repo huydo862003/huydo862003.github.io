@@ -31,13 +31,15 @@
           @click="$emit('remove', item)"
         >
           <span class="flex items-center gap-2 truncate min-w-0">
-            <PhFileText
+            <GIcon
+              :name="GIconName.File"
               :size="14"
               class="shrink-0 text-gray-400"
             />
             <span class="truncate">{{ resolve(item) }}</span>
           </span>
-          <PhMinus
+          <GIcon
+            :name="GIconName.Minus"
             :size="14"
             class="shrink-0 text-gray-400"
           />
@@ -64,7 +66,8 @@
           class="flex items-center gap-2 w-full px-3 py-2 text-sm text-left border-none bg-transparent cursor-pointer hover:bg-gray-50"
           @click="$emit('select', opt.value)"
         >
-          <PhFileText
+          <GIcon
+            :name="GIconName.File"
             :size="14"
             class="shrink-0 text-gray-400"
           />
@@ -91,13 +94,18 @@
 </template>
 
 <script setup lang="ts">
-import { computed, ref } from 'vue';
-import { PhFileText, PhMinus } from '@phosphor-icons/vue';
+import {
+  computed, ref,
+} from 'vue';
+import {
+  GIcon, GIconName,
+} from '@hdnax/genuix';
 
 const props = defineProps<{
   search: string;
   selected: string[];
-  filtered: { value: string; label: string }[];
+  filtered: { value: string;
+    label: string; }[];
   exactMatch: boolean;
   titleMap: Map<string, string>;
   contentType?: string;
@@ -114,8 +122,7 @@ defineEmits<{
 const searchEl = ref<HTMLInputElement>();
 
 const unselected = computed(() =>
-  props.filtered.filter((o) => !props.selected.includes(o.value)),
-);
+  props.filtered.filter((o) => !props.selected.includes(o.value)));
 
 function resolve (slug: string) {
   return props.titleMap.get(slug) || slug.replace(/-/g, ' ');

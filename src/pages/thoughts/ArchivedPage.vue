@@ -7,7 +7,7 @@
       >
         &larr; all thoughts
       </router-link>
-      <SBreadcrumb :crumbs="[{ label: 'Thoughts', to: '/thoughts' }, { label: 'Archived', to: '/archived' }]" />
+      <JourneyBreadcrumb :crumbs="[{ label: 'Thoughts', to: '/thoughts' }, { label: 'Archived', to: '/archived' }]" />
     </div>
     <h1>Archived</h1>
     <p class="subtitle">
@@ -37,7 +37,7 @@
 </template>
 
 <script setup lang="ts">
-import SBreadcrumb from '@/components/common/SBreadcrumb.vue';
+import JourneyBreadcrumb from '@/components/common/JourneyBreadcrumb.vue';
 import {
   useThoughtStore,
 } from '@/stores/thoughts';
@@ -48,7 +48,7 @@ const {
 </script>
 
 <style scoped>
-@reference "../../style.css";
+@reference "@/style.css";
 h1 {
   @apply text-xl font-bold mb-1;
 }

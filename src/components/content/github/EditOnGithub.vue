@@ -5,7 +5,10 @@
     rel="noopener"
     class="edit-link"
   >
-    <PhPencilSimple :size="14" />
+    <GIcon
+      :name="GIconName.PencilSimple"
+      :size="14"
+    />
     Edit on GitHub
   </a>
 </template>
@@ -15,8 +18,8 @@ import {
   computed,
 } from 'vue';
 import {
-  PhPencilSimple,
-} from '@phosphor-icons/vue';
+  GIcon, GIconName,
+} from '@hdnax/genuix';
 
 const props = defineProps<{
   path: string;
@@ -27,8 +30,7 @@ const editUrl = computed(() =>
 </script>
 
 <style scoped>
-@reference "../../../style.css";
-@reference "../../../style.css";
+@reference "@/style.css";
 .edit-link {
   @apply inline-flex items-center gap-1 text-xs text-fg-faint no-underline
          hover:text-fg-muted transition-colors;

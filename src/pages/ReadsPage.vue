@@ -3,7 +3,7 @@
     <h1 class="heading">
       Scrambled Reads
     </h1>
-    <SFilterBar
+    <FilterBar
       :groups="filterGroups"
       :model-values="filterValues"
       class="mb-4"
@@ -37,7 +37,7 @@
         class="reads-item reads-item-empty"
       />
     </ul>
-    <SPager
+    <PagePager
       v-model="readsPage"
       :total="readsPages"
       class="mt-4"
@@ -49,6 +49,7 @@
 import {
   ref, computed, watch,
 } from 'vue';
+import PagePager from './PagePager.vue';
 import {
   useSeo,
 } from '@/composables/useSeo';
@@ -64,8 +65,7 @@ import {
 import {
   usePaperStore,
 } from '@/stores/papers';
-import SFilterBar from '@/components/common/SFilterBar.vue';
-import SPager from '@/components/common/SPager.vue';
+import FilterBar from '@/components/common/FilterBar.vue';
 
 useSeo({
   title: ref('Scrambled Reads'),
@@ -205,7 +205,7 @@ function onFilterUpdate (values: string[][]) {
 </script>
 
 <style scoped>
-@reference "../style.css";
+@reference "@/style.css";
 .reads-page {
 }
 .heading {

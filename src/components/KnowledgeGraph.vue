@@ -12,14 +12,20 @@
         title="Exit graph (scroll up)"
         @click="scrollUp"
       >
-        <PhCaretDoubleUp :size="14" />
+        <GIcon
+          :name="GIconName.CaretDoubleUp"
+          :size="14"
+        />
       </button>
       <button
         class="scroll-btn"
         title="Skip to bottom"
         @click="scrollDown"
       >
-        <PhCaretDoubleDown :size="14" />
+        <GIcon
+          :name="GIconName.CaretDoubleDown"
+          :size="14"
+        />
       </button>
     </div>
     <div
@@ -33,35 +39,50 @@
           title="Zoom in"
           @click="zoomIn"
         >
-          <PhPlus :size="13" />
+          <GIcon
+            :name="GIconName.Plus"
+            :size="13"
+          />
         </button>
         <button
           class="ctrl-btn"
           title="Zoom out"
           @click="zoomOut"
         >
-          <PhMinus :size="13" />
+          <GIcon
+            :name="GIconName.Minus"
+            :size="13"
+          />
         </button>
         <button
           class="ctrl-btn"
           title="Fit to view"
           @click="zoomFit"
         >
-          <PhArrowsOut :size="13" />
+          <GIcon
+            :name="GIconName.Expand"
+            :size="13"
+          />
         </button>
         <button
           class="ctrl-btn"
           title="Recenter"
           @click="recenter"
         >
-          <PhCrosshair :size="13" />
+          <GIcon
+            :name="GIconName.Crosshair"
+            :size="13"
+          />
         </button>
         <router-link
           to="/graph"
           class="ctrl-btn"
           title="Fullscreen"
         >
-          <PhFrameCorners :size="13" />
+          <GIcon
+            :name="GIconName.FrameCorners"
+            :size="13"
+          />
         </router-link>
       </div>
     </div>
@@ -77,16 +98,17 @@ import {
   ref, computed, onMounted, onUnmounted,
 } from 'vue';
 import {
-  PhPlus, PhMinus, PhArrowsOut, PhCrosshair, PhFrameCorners,
-  PhCaretDoubleUp, PhCaretDoubleDown,
-} from '@phosphor-icons/vue';
+  GIcon, GIconName,
+} from '@hdnax/genuix';
 import {
   useGraph,
 } from '@/composables/useGraph';
 
-const props = withDefaults(defineProps<{ inPanel?: boolean }>(), {
-  inPanel: false,
-});
+const {
+  inPanel = false,
+} = defineProps<{
+  inPanel?: boolean;
+}>();
 
 const wrap = ref<HTMLElement>();
 const container = ref<HTMLElement>();
@@ -98,11 +120,11 @@ const panelHeight = ref(typeof window !== 'undefined' ? window.innerHeight - PAN
 function updatePanelHeight () {
   panelHeight.value = window.innerHeight - PANEL_HEADER_PX;
 }
-if (props.inPanel && typeof window !== 'undefined') {
+if (inPanel && typeof window !== 'undefined') {
   window.addEventListener('resize', updatePanelHeight);
 }
 
-const graphHeight = computed(() => (props.inPanel ? panelHeight.value : 700));
+const graphHeight = computed(() => (inPanel ? panelHeight.value : 700));
 
 const {
   zoomIn, zoomOut, zoomFit, recenter,
@@ -143,7 +165,7 @@ onMounted(() => {
 
 onUnmounted(() => {
   observer?.disconnect();
-  if (props.inPanel) {
+  if (inPanel) {
     window.removeEventListener('resize', updatePanelHeight);
   }
 });
@@ -157,7 +179,7 @@ defineExpose({
 </script>
 
 <style scoped>
-@reference "../style.css";
+@reference "@/style.css";
 .graph-wrap {
   @apply rounded-sm overflow-hidden relative;
   background: #141414;
