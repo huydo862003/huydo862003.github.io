@@ -15,8 +15,8 @@ importers:
         specifier: ^0.3.0
         version: 0.3.0(@content-collections/core@0.15.0(typescript@6.0.3))(vite@8.0.10(@types/node@25.6.0)(esbuild@0.27.7)(jiti@2.7.0)(terser@5.46.2)(tsx@4.21.0)(yaml@2.8.4))
       '@hdnax/genuix':
-        specifier: ^0.13.0
-        version: 0.13.0(@phosphor-icons/vue@2.2.1(vue@3.5.34(typescript@6.0.3)))(eslint@10.3.0(jiti@2.7.0))(highlight.js@11.11.1)(vue@3.5.34(typescript@6.0.3))
+        specifier: ^0.13.1
+        version: 0.13.1(@phosphor-icons/vue@2.2.1(vue@3.5.34(typescript@6.0.3)))(eslint@10.3.0(jiti@2.7.0))(highlight.js@11.11.1)(vue@3.5.34(typescript@6.0.3))
       '@milkdown/crepe':
         specifier: ^7.20.0
         version: 7.20.0(prosemirror-model@1.25.4)(prosemirror-state@1.4.4)(prosemirror-view@1.41.8)(typescript@6.0.3)
@@ -736,8 +736,8 @@ packages:
   '@floating-ui/utils@0.2.11':
     resolution: {integrity: sha512-RiB/yIh78pcIxl6lLMG0CgBXAZ2Y0eVHqMPYugu+9U0AeT6YBeiJpf7lbdJNIugFP5SIjwNRgo4DhR1Qxi26Gg==}
 
-  '@hdnax/genuix@0.13.0':
-    resolution: {integrity: sha512-mHywbddEzVaV3Z1ZMeLNHDUmNwwa7YzD45xW4CpjDKM+qDKUYQzn7SyPhwhHnni+BiYA+60yDbce/Aa5xRIuBA==}
+  '@hdnax/genuix@0.13.1':
+    resolution: {integrity: sha512-Ga+dLeU/7Sa2yAburcg43UJ6c2V4mFxszQI6U4ixABYzVkLGAywaQ+eMi64IoUTJ5eLc7M9MYqN3OxMmEX9C2w==}
     peerDependencies:
       '@phosphor-icons/vue': ^2.2.1
       highlight.js: ^11.0.0
@@ -5237,7 +5237,7 @@ snapshots:
 
   '@floating-ui/utils@0.2.11': {}
 
-  '@hdnax/genuix@0.13.0(@phosphor-icons/vue@2.2.1(vue@3.5.34(typescript@6.0.3)))(eslint@10.3.0(jiti@2.7.0))(highlight.js@11.11.1)(vue@3.5.34(typescript@6.0.3))':
+  '@hdnax/genuix@0.13.1(@phosphor-icons/vue@2.2.1(vue@3.5.34(typescript@6.0.3)))(eslint@10.3.0(jiti@2.7.0))(highlight.js@11.11.1)(vue@3.5.34(typescript@6.0.3))':
     dependencies:
       '@hdnax/stdx': 0.3.3(eslint@10.3.0(jiti@2.7.0))
       '@phosphor-icons/vue': 2.2.1(vue@3.5.34(typescript@6.0.3))
