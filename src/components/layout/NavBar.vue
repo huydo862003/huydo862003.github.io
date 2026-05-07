@@ -127,7 +127,9 @@ import {
 import SiteLogo from '@/components/layout/SiteLogo.vue';
 import UserMenu from '@/components/layout/UserMenu.vue';
 
-const emit = defineEmits<{ (e: 'open-palette'): void }>();
+const emit = defineEmits<{
+  (event: 'open-palette'): void;
+}>();
 
 const themeStore = useThemeStore();
 const {

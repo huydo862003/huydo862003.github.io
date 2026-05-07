@@ -10,8 +10,12 @@ import type {
 import type {
   ContentSchema,
 } from '../services/schema.service';
-import * as treeService from '../services/tree.service';
-import * as schemaService from '../services/schema.service';
+import {
+  fetchJourneyTree,
+} from '../services/tree.service';
+import {
+  fetchSchemas,
+} from '../services/schema.service';
 
 export const useTreeStore = defineStore('tree', () => {
   const journeyTree = ref<JourneyTree>({
@@ -24,14 +28,14 @@ export const useTreeStore = defineStore('tree', () => {
   async function loadJourneyTree () {
     treeLoading.value = true;
     try {
-      journeyTree.value = await treeService.loadJourneyTree();
+      journeyTree.value = await fetchJourneyTree();
     } finally {
       treeLoading.value = false;
     }
   }
 
   async function loadSchemas () {
-    schemas.value = await schemaService.loadSchemas();
+    schemas.value = await fetchSchemas();
   }
 
   function schemaFor (contentType: string): ContentSchema | undefined {

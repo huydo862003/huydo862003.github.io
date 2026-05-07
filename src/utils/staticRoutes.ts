@@ -6,13 +6,13 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
-function slugsFromDir (dir: string): string[] {
-  if (!fs.existsSync(dir)) return [];
-  return fs.readdirSync(dir, {
+function slugsFromDirectory (directory: string): string[] {
+  if (!fs.existsSync(directory)) return [];
+  return fs.readdirSync(directory, {
     recursive: true,
   })
-    .filter((f) => String(f).endsWith('.md'))
-    .map((f) => path.basename(String(f), '.md'));
+    .filter((file) => String(file).endsWith('.md'))
+    .map((file) => path.basename(String(file), '.md'));
 }
 
 function frontmatterField (filePath: string, field: string): string {
@@ -31,13 +31,13 @@ export function generateRoutes (): string[] {
     '/graph',
   ];
 
-  for (const slug of slugsFromDir('content/thoughts')) {
+  for (const slug of slugsFromDirectory('content/thoughts')) {
     routes.push(`/thoughts/${slug}`);
   }
 
-  const journeySlugs = slugsFromDir('content/journeys');
-  for (const j of journeySlugs) {
-    routes.push(`/journeys/${j}`);
+  const journeySlugs = slugsFromDirectory('content/journeys');
+  for (const index of journeySlugs) {
+    routes.push(`/journeys/${index}`);
     for (const sub of [
       'concepts',
       'flashcards',
@@ -46,7 +46,7 @@ export function generateRoutes (): string[] {
       'blogs',
       'papers',
     ]) {
-      routes.push(`/journeys/${j}/${sub}`);
+      routes.push(`/journeys/${index}/${sub}`);
     }
   }
 
@@ -56,23 +56,23 @@ export function generateRoutes (): string[] {
     'phases',
   ] as const;
   for (const type of types) {
-    for (const j of journeySlugs) {
-      for (const slug of slugsFromDir(`content/${type}/${j}`)) {
-        routes.push(`/journeys/${j}/${type}/${slug}`);
+    for (const index of journeySlugs) {
+      for (const slug of slugsFromDirectory(`content/${type}/${index}`)) {
+        routes.push(`/journeys/${index}/${type}/${slug}`);
       }
     }
   }
 
   // Books - journey comes from frontmatter, not directory
-  const walkBooks = (dir: string) => {
-    if (!fs.existsSync(dir)) return;
-    for (const entry of fs.readdirSync(dir, {
+  const walkBooks = (directory: string) => {
+    if (!fs.existsSync(directory)) return;
+    for (const entry of fs.readdirSync(directory, {
       withFileTypes: true,
     })) {
       if (entry.isDirectory()) {
-        walkBooks(path.join(dir, entry.name));
+        walkBooks(path.join(directory, entry.name));
       } else if (entry.name.endsWith('.md')) {
-        const fp = path.join(dir, entry.name);
+        const fp = path.join(directory, entry.name);
         const journey = frontmatterField(fp, 'journey');
         if (journey) {
           routes.push(`/journeys/${journey}/books/${path.basename(entry.name, '.md')}`);
@@ -85,7 +85,7 @@ export function generateRoutes (): string[] {
   // Papers - journey comes from frontmatter
   for (const entry of fs.readdirSync('content/papers', {
     withFileTypes: true,
-  }).filter((e) => e.isFile() && e.name.endsWith('.md'))) {
+  }).filter((entry) => entry.isFile() && entry.name.endsWith('.md'))) {
     const fp = path.join('content/papers', entry.name);
     const journey = frontmatterField(fp, 'journey');
     if (journey) {

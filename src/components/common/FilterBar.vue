@@ -66,7 +66,7 @@
           class="chip-remove cursor-pointer transition-colors"
           style="font-size: 0.75rem; line-height: 1; background: none; border: none; padding: 0;"
           @click="toggle(chip.groupIndex, chip.value)"
-        >×</button>
+        >*</button>
       </span>
     </div>
   </div>
@@ -99,8 +99,8 @@ const emit = defineEmits<{
   'update:modelValues': [values: string[][]];
 }>();
 
-const hasActive = computed(() => props.modelValues.some((g) => 0 < g.length));
-const totalActive = computed(() => props.modelValues.reduce((sum, g) => sum + g.length, 0));
+const hasActive = computed(() => props.modelValues.some((group) => 0 < group.length));
+const totalActive = computed(() => props.modelValues.reduce((sum, group) => sum + group.length, 0));
 
 const activeChips = computed(() => {
   const chips: {
@@ -111,7 +111,7 @@ const activeChips = computed(() => {
   }[] = [];
   for (let groupIndex = 0; groupIndex < props.groups.length; groupIndex++) {
     for (const value of props.modelValues[groupIndex] ?? []) {
-      const option = props.groups[groupIndex].find((o) => o.value === value);
+      const option = props.groups[groupIndex].find((opt) => opt.value === value);
       if (option) chips.push({
         groupIndex,
         value,

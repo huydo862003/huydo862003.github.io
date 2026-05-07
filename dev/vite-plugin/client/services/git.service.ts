@@ -9,14 +9,14 @@ export type {
   GitFile,
 } from '@dev/core/types';
 
-export async function loadStatus (): Promise<GitFile[]> {
+export async function fetchGitStatus (): Promise<GitFile[]> {
   const {
     data,
   } = await httpClient.get('/git/status');
   return data.files;
 }
 
-export async function commit (message: string, files?: string[]): Promise<void> {
+export async function submitCommit (message: string, files?: string[]): Promise<void> {
   await httpClient.post('/git/commit', {
     message,
     files,

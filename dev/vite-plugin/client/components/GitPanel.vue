@@ -7,7 +7,7 @@
       <slot name="leading" />
     </div>
     <div class="git-group">
-      <VTooltip placement="top">
+      <Tooltip placement="top">
         <button
           class="btn-sm"
           :disabled="gitStore.loading"
@@ -21,7 +21,7 @@
         <template #popper>
           Refresh status
         </template>
-      </VTooltip>
+      </Tooltip>
       <div
         v-if="gitStore.files.length"
         class="git-changes"
@@ -53,15 +53,15 @@
       </div>
       <div class="git-divider" />
       <input
-        v-model="commitMsg"
+        v-model="commitMessage"
         class="git-input"
-        placeholder="Commit message…"
+        placeholder="Commit message..."
         @keydown.enter="commit"
       >
-      <VTooltip placement="top">
+      <Tooltip placement="top">
         <button
           class="btn-commit"
-          :disabled="!commitMsg.trim() || committing"
+          :disabled="!commitMessage.trim() || committing"
           @click="commit"
         >
           <GIcon
@@ -70,9 +70,9 @@
           />
         </button>
         <template #popper>
-          {{ committing ? 'Committing…' : 'Commit' }}
+          {{ committing ? 'Committing...' : 'Commit' }}
         </template>
-      </VTooltip>
+      </Tooltip>
     </div>
   </div>
 </template>
@@ -85,14 +85,14 @@ import {
   GIcon, GIconName,
 } from '@hdnax/genuix';
 import {
-  Tooltip as VTooltip,
+  Tooltip,
 } from 'floating-vue';
 import {
   useGitStore,
 } from '../stores/git.store';
 
 const gitStore = useGitStore();
-const commitMsg = ref('');
+const commitMessage = ref('');
 const committing = ref(false);
 const showFiles = ref(false);
 
@@ -101,11 +101,11 @@ async function refresh () {
 }
 
 async function commit () {
-  if (!commitMsg.value.trim()) return;
+  if (!commitMessage.value.trim()) return;
   committing.value = true;
   try {
-    await gitStore.commit(commitMsg.value);
-    commitMsg.value = '';
+    await gitStore.commit(commitMessage.value);
+    commitMessage.value = '';
   } finally {
     committing.value = false;
   }

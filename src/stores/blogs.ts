@@ -8,38 +8,38 @@ import type {
   BlogPost, BlogSite,
 } from '@/types/blog';
 
-const posts: BlogPost[] = allBlogs.map((b) => ({
-  slug: b._meta.fileName.replace('.md', ''),
-  createdAt: b.createdAt ?? '',
-  updatedAt: b.updatedAt ?? '',
-  title: b.title,
-  url: b.url,
-  author: b.author ?? '',
-  journey: b.journey,
-  site: b.site ?? '',
-  tags: b.tags ?? [],
-})).sort((a, b) => a.title.localeCompare(b.title));
+const posts: BlogPost[] = allBlogs.map((post) => ({
+  slug: post._meta.fileName.replace('.md', ''),
+  createdAt: post.createdAt ?? '',
+  updatedAt: post.updatedAt ?? '',
+  title: post.title,
+  url: post.url,
+  author: post.author ?? '',
+  journey: post.journey,
+  site: post.site ?? '',
+  tags: post.tags ?? [],
+})).sort((first, second) => first.title.localeCompare(second.title));
 
-const sites: BlogSite[] = allBlogsites.map((b) => ({
-  slug: b._meta.fileName.replace('.md', ''),
-  createdAt: b.createdAt ?? '',
-  updatedAt: b.updatedAt ?? '',
-  title: b.title,
-  url: b.url,
-  author: b.author ?? '',
-  journey: b.journey,
-  latestPost: b.latestPost ?? '',
-  lastChecked: b.lastChecked ?? '',
-  posts: b.posts ?? [],
-})).sort((a, b) => a.title.localeCompare(b.title));
+const sites: BlogSite[] = allBlogsites.map((site) => ({
+  slug: site._meta.fileName.replace('.md', ''),
+  createdAt: site.createdAt ?? '',
+  updatedAt: site.updatedAt ?? '',
+  title: site.title,
+  url: site.url,
+  author: site.author ?? '',
+  journey: site.journey,
+  latestPost: site.latestPost ?? '',
+  lastChecked: site.lastChecked ?? '',
+  posts: site.posts ?? [],
+})).sort((first, second) => first.title.localeCompare(second.title));
 
-const postsBySlug = new Map(posts.map((p) => [
-  p.slug,
-  p,
+const postsBySlug = new Map(posts.map((post) => [
+  post.slug,
+  post,
 ]));
-const sitesBySlug = new Map(sites.map((s) => [
-  s.slug,
-  s,
+const sitesBySlug = new Map(sites.map((site) => [
+  site.slug,
+  site,
 ]));
 
 export const useBlogs = defineStore('blogs', () => {
@@ -49,17 +49,17 @@ export const useBlogs = defineStore('blogs', () => {
   function getSiteBySlug (slug: string) {
     return sitesBySlug.get(slug);
   }
-  function getByJourney (j: string) {
-    return posts.filter((p) => p.journey === j);
+  function getByJourney (index: string) {
+    return posts.filter((post) => post.journey === index);
   }
-  function getSites (j: string) {
-    return sites.filter((s) => s.journey === j);
+  function getSites (index: string) {
+    return sites.filter((site) => site.journey === index);
   }
-  function getPosts (j: string) {
-    return posts.filter((p) => p.journey === j);
+  function getPosts (index: string) {
+    return posts.filter((post) => post.journey === index);
   }
-  function getPostsBySite (s: string) {
-    return posts.filter((p) => p.site === s);
+  function getPostsBySite (siteSlug: string) {
+    return posts.filter((post) => post.site === siteSlug);
   }
 
   return {

@@ -1,5 +1,5 @@
-export function formatSlug (s: string): string {
-  return s.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+export function formatSlug (slug: string): string {
+  return slug.replace(/-/g, ' ').replace(/\b\w/g, (char) => char.toUpperCase());
 }
 
 export function pct (n: number, total: number): string {

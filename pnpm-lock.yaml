@@ -15,8 +15,8 @@ importers:
         specifier: ^0.3.0
         version: 0.3.0(@content-collections/core@0.15.0(typescript@6.0.3))(vite@8.0.10(@types/node@25.6.0)(esbuild@0.27.7)(jiti@2.7.0)(terser@5.46.2)(tsx@4.21.0)(yaml@2.8.4))
       '@hdnax/genuix':
-        specifier: ^0.13.1
-        version: 0.13.1(@phosphor-icons/vue@2.2.1(vue@3.5.34(typescript@6.0.3)))(eslint@10.3.0(jiti@2.7.0))(highlight.js@11.11.1)(vue@3.5.34(typescript@6.0.3))
+        specifier: ^0.13.3
+        version: 0.13.3(@phosphor-icons/vue@2.2.1(vue@3.5.34(typescript@6.0.3)))(eslint@10.3.0(jiti@2.7.0))(highlight.js@11.11.1)(vue@3.5.34(typescript@6.0.3))
       '@milkdown/crepe':
         specifier: ^7.20.0
         version: 7.20.0(prosemirror-model@1.25.4)(prosemirror-state@1.4.4)(prosemirror-view@1.41.8)(typescript@6.0.3)
@@ -91,8 +91,8 @@ importers:
         version: 4.4.3
     devDependencies:
       '@hdnax/nuclint':
-        specifier: ^0.14.4
-        version: 0.14.4(@typescript-eslint/parser@8.59.2(eslint@10.3.0(jiti@2.7.0))(typescript@6.0.3))(@typescript-eslint/utils@8.59.2(eslint@10.3.0(jiti@2.7.0))(typescript@6.0.3))(eslint-import-resolver-node@0.3.10)(eslint@10.3.0(jiti@2.7.0))(ts-declaration-location@1.0.7(typescript@6.0.3))(typescript@6.0.3)
+        specifier: ^0.16.0
+        version: 0.16.0(@typescript-eslint/parser@8.59.2(eslint@10.3.0(jiti@2.7.0))(typescript@6.0.3))(@typescript-eslint/utils@8.59.2(eslint@10.3.0(jiti@2.7.0))(typescript@6.0.3))(eslint-import-resolver-node@0.3.10)(eslint@10.3.0(jiti@2.7.0))(ts-declaration-location@1.0.7(typescript@6.0.3))(typescript@6.0.3)
       '@inquirer/prompts':
         specifier: ^8.4.2
         version: 8.4.2(@types/node@25.6.0)
@@ -736,20 +736,20 @@ packages:
   '@floating-ui/utils@0.2.11':
     resolution: {integrity: sha512-RiB/yIh78pcIxl6lLMG0CgBXAZ2Y0eVHqMPYugu+9U0AeT6YBeiJpf7lbdJNIugFP5SIjwNRgo4DhR1Qxi26Gg==}
 
-  '@hdnax/genuix@0.13.1':
-    resolution: {integrity: sha512-Ga+dLeU/7Sa2yAburcg43UJ6c2V4mFxszQI6U4ixABYzVkLGAywaQ+eMi64IoUTJ5eLc7M9MYqN3OxMmEX9C2w==}
+  '@hdnax/genuix@0.13.3':
+    resolution: {integrity: sha512-kfqD4mkhd20OCPQkbD1Er9rgBcCBHa0YjXl21tNdUAtAHQJWTYGtBMWQ8dADWu8aXayS+Rgy6FXmK/D8wJrExg==}
     peerDependencies:
       '@phosphor-icons/vue': ^2.2.1
       highlight.js: ^11.0.0
       vue: ^3.5.26
 
-  '@hdnax/nuclint@0.14.4':
-    resolution: {integrity: sha512-oOd9IOSgDeNkyxAt8sa7gFm25hhcaJmAy5Bd62tMZSltm6vMG05frzN7ywRi+SOfDgzw/xqMxJMlLMQ5cst+ww==}
+  '@hdnax/nuclint@0.16.0':
+    resolution: {integrity: sha512-8JKtxHlz17k4ehDPP9+jBYX/bI+t/Zx6VXDFMSorFoJCOQYNLKsifkdqD5r8T0lUAQjvXIzGY0luM8oKFSIDeQ==}
     peerDependencies:
       eslint: ^9.39.2
 
-  '@hdnax/stdx@0.3.3':
-    resolution: {integrity: sha512-vMt6LpaFHS8MkZfpI53ill5e4W7ZdeGTDQCR+27+LsdwY3U8JnTLz+v0tstSe7r5TVagI8TQjyt6k4E8GNM9hQ==}
+  '@hdnax/stdx@0.3.4':
+    resolution: {integrity: sha512-lKbnT1duXLS7rLZq+n38wYu15fo4O+WeW4sWrLe6vr1dyI+8BLm9c3NtZpqDAHdJrnja/JBv6YlntDokDYOCTQ==}
     peerDependencies:
       eslint: ^9.39.2
 
@@ -2565,8 +2565,8 @@ packages:
   ee-first@1.1.1:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
 
-  electron-to-chromium@1.5.351:
-    resolution: {integrity: sha512-9D7Iqx8RImSvCnOsj86rCH6eQjZFQoM04Jn6HnZVM0Nu/G58/gmKYQ1d12MZTbjQbQSTGI8nwEy07ErsA2slLA==}
+  electron-to-chromium@1.5.352:
+    resolution: {integrity: sha512-9wHk8x6dyuimoe18EdiDPWKExNdxYqo4fn4FwOVVper6RxT3cmpBwBkWWfSOCYJjQdIco/nPhJhNLmn4Ufg1Yg==}
 
   elkjs@0.9.3:
     resolution: {integrity: sha512-f/ZeWvW/BCXbhGEf1Ujp29EASo/lk1FDnETgNKwJrsVvGZhUWCZyg3xLJjAsxfOmt8KjswHmI5EwCQcPMpOYhQ==}
@@ -5237,9 +5237,9 @@ snapshots:
 
   '@floating-ui/utils@0.2.11': {}
 
-  '@hdnax/genuix@0.13.1(@phosphor-icons/vue@2.2.1(vue@3.5.34(typescript@6.0.3)))(eslint@10.3.0(jiti@2.7.0))(highlight.js@11.11.1)(vue@3.5.34(typescript@6.0.3))':
+  '@hdnax/genuix@0.13.3(@phosphor-icons/vue@2.2.1(vue@3.5.34(typescript@6.0.3)))(eslint@10.3.0(jiti@2.7.0))(highlight.js@11.11.1)(vue@3.5.34(typescript@6.0.3))':
     dependencies:
-      '@hdnax/stdx': 0.3.3(eslint@10.3.0(jiti@2.7.0))
+      '@hdnax/stdx': 0.3.4(eslint@10.3.0(jiti@2.7.0))
       '@phosphor-icons/vue': 2.2.1(vue@3.5.34(typescript@6.0.3))
       dompurify: 3.4.2
       floating-vue: 5.2.2(vue@3.5.34(typescript@6.0.3))
@@ -5251,7 +5251,7 @@ snapshots:
       - '@nuxt/kit'
       - eslint
 
-  '@hdnax/nuclint@0.14.4(@typescript-eslint/parser@8.59.2(eslint@10.3.0(jiti@2.7.0))(typescript@6.0.3))(@typescript-eslint/utils@8.59.2(eslint@10.3.0(jiti@2.7.0))(typescript@6.0.3))(eslint-import-resolver-node@0.3.10)(eslint@10.3.0(jiti@2.7.0))(ts-declaration-location@1.0.7(typescript@6.0.3))(typescript@6.0.3)':
+  '@hdnax/nuclint@0.16.0(@typescript-eslint/parser@8.59.2(eslint@10.3.0(jiti@2.7.0))(typescript@6.0.3))(@typescript-eslint/utils@8.59.2(eslint@10.3.0(jiti@2.7.0))(typescript@6.0.3))(eslint-import-resolver-node@0.3.10)(eslint@10.3.0(jiti@2.7.0))(ts-declaration-location@1.0.7(typescript@6.0.3))(typescript@6.0.3)':
     dependencies:
       '@stylistic/eslint-plugin': 5.10.0(eslint@10.3.0(jiti@2.7.0))
       eslint: 10.3.0(jiti@2.7.0)
@@ -5269,7 +5269,7 @@ snapshots:
       - ts-declaration-location
       - typescript
 
-  '@hdnax/stdx@0.3.3(eslint@10.3.0(jiti@2.7.0))':
+  '@hdnax/stdx@0.3.4(eslint@10.3.0(jiti@2.7.0))':
     dependencies:
       eslint: 10.3.0(jiti@2.7.0)
 
@@ -6796,7 +6796,7 @@ snapshots:
     dependencies:
       baseline-browser-mapping: 2.10.27
       caniuse-lite: 1.0.30001792
-      electron-to-chromium: 1.5.351
+      electron-to-chromium: 1.5.352
       node-releases: 2.0.38
       update-browserslist-db: 1.2.3(browserslist@4.28.2)
 
@@ -7277,7 +7277,7 @@ snapshots:
 
   ee-first@1.1.1: {}
 
-  electron-to-chromium@1.5.351: {}
+  electron-to-chromium@1.5.352: {}
 
   elkjs@0.9.3: {}
 

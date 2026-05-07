@@ -183,14 +183,14 @@ const statusGroup = [
 const filtered = computed(() => {
   let result = papers.value;
   if (statusFilter.value.length) {
-    result = result.filter((p) => statusFilter.value.includes(p.status));
+    result = result.filter((paper) => statusFilter.value.includes(paper.status));
   }
   if (search.value) {
     const searchQuery = search.value.toLowerCase();
-    result = result.filter((p) =>
-      p.title.toLowerCase().includes(searchQuery)
-      || p.authors.some((a) => a.toLowerCase().includes(searchQuery))
-      || p.venue.toLowerCase().includes(searchQuery));
+    result = result.filter((paper) =>
+      paper.title.toLowerCase().includes(searchQuery)
+      || paper.authors.some((author) => author.toLowerCase().includes(searchQuery))
+      || paper.venue.toLowerCase().includes(searchQuery));
   }
   return result;
 });

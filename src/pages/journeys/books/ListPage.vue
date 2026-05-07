@@ -67,7 +67,7 @@ useSeo({
 });
 
 const journeyBooks = computed(() => bookStore.getByJourney(slug.value));
-const rootBooks = computed(() => journeyBooks.value.filter((b) => !b.parent));
+const rootBooks = computed(() => journeyBooks.value.filter((book) => !book.parent));
 
 const bookConfig = computed((): SCardConfig<Book> => ({
   titleKey: 'title',
@@ -81,8 +81,8 @@ const bookConfig = computed((): SCardConfig<Book> => ({
     'date',
   ],
   childrenResolver: (book) => book.children
-    .map((s) => bookStore.getBySlug(s))
-    .filter((c): c is NonNullable<typeof c> => !!c),
+    .map((slug) => bookStore.getBySlug(slug))
+    .filter((child): child is NonNullable<typeof child> => !!child),
   renderChildren: true,
 }));
 </script>

@@ -80,7 +80,7 @@
 
       <ResourcePagination
         kind="phase"
-        :prev="prevPhase"
+        :prev="previousPhase"
         :next="nextPhase"
       />
 
@@ -152,19 +152,19 @@ useSeo({
 });
 
 const journeyPhases = computed(() => phaseStore.getByJourney(slug.value));
-const currentIdx = computed(() => journeyPhases.value.findIndex((p) => p.slug === phaseSlug.value));
-const prevPhase = computed(() => {
-  const p = journeyPhases.value[currentIdx.value - 1];
-  return p && {
-    to: `/journeys/${slug.value}/phases/${p.slug}`,
-    title: p.title,
+const currentIndex = computed(() => journeyPhases.value.findIndex((phase) => phase.slug === phaseSlug.value));
+const previousPhase = computed(() => {
+  const phase = journeyPhases.value[currentIndex.value - 1];
+  return phase && {
+    to: `/journeys/${slug.value}/phases/${phase.slug}`,
+    title: phase.title,
   };
 });
 const nextPhase = computed(() => {
-  const p = journeyPhases.value[currentIdx.value + 1];
-  return p && {
-    to: `/journeys/${slug.value}/phases/${p.slug}`,
-    title: p.title,
+  const phase = journeyPhases.value[currentIndex.value + 1];
+  return phase && {
+    to: `/journeys/${slug.value}/phases/${phase.slug}`,
+    title: phase.title,
   };
 });
 const {
@@ -206,8 +206,8 @@ const bookConfig = computed((): SCardConfig<Book> => ({
     'date',
   ],
   childrenResolver: (book) => book.children
-    .map((s) => bookStore.getBySlug(s))
-    .filter((c): c is NonNullable<typeof c> => !!c),
+    .map((bookSlug) => bookStore.getBySlug(bookSlug))
+    .filter((child): child is NonNullable<typeof child> => !!child),
   renderChildren: true,
 }));
 

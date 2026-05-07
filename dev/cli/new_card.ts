@@ -13,15 +13,15 @@ const manager = new ContentManager(resolve(import.meta.dirname, '../../content')
 
 const author = await input({
   message: 'Author:',
-  validate: (v) => v.trim() === 'hdnax' || v.trim() === 'cosmos',
+  validate: (value) => value.trim() === 'hdnax' || v.trim() === 'cosmos',
 });
 const journey = await input({
   message: 'Journey slug:',
-  validate: (v) => v.trim() !== '' || 'Required',
+  validate: (value) => value.trim() !== '' || 'Required',
 });
 const question = await input({
   message: 'Question:',
-  validate: (v) => v.trim() !== '' || 'Required',
+  validate: (value) => value.trim() !== '' || 'Required',
 });
 const deck = await input({
   message: 'Deck:',

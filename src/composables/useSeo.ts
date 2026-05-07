@@ -36,49 +36,51 @@ export function useSeo ({
   useHead({
     title: fullTitle,
     meta: computed(() => {
-      const m: { name?: string;
+      const metaTags: {
+        name?: string;
         property?: string;
-        content: string; }[] = [];
+        content: string;
+      }[] = [];
 
       if (desc.value) {
-        m.push({
+        metaTags.push({
           name: 'description',
           content: desc.value,
         });
       }
 
       if (tags?.value?.length) {
-        m.push({
+        metaTags.push({
           name: 'keywords',
           content: tags.value.join(', '),
         });
       }
 
       if (author?.value) {
-        m.push({
+        metaTags.push({
           name: 'author',
           content: author.value,
         });
       }
 
-      m.push({
+      metaTags.push({
         property: 'og:title',
         content: fullTitle.value,
       });
-      m.push({
+      metaTags.push({
         property: 'og:url',
         content: url.value,
       });
-      m.push({
+      metaTags.push({
         property: 'og:type',
         content: type,
       });
-      m.push({
+      metaTags.push({
         property: 'og:image',
         content: img.value,
       });
       if (desc.value) {
-        m.push({
+        metaTags.push({
           property: 'og:description',
           content: desc.value,
         });
@@ -86,20 +88,20 @@ export function useSeo ({
 
       if (type === 'article') {
         if (publishedTime?.value) {
-          m.push({
+          metaTags.push({
             property: 'article:published_time',
             content: publishedTime.value,
           });
         }
         if (modifiedTime?.value) {
-          m.push({
+          metaTags.push({
             property: 'article:modified_time',
             content: modifiedTime.value,
           });
         }
         if (tags?.value?.length) {
           for (const tag of tags.value) {
-            m.push({
+            metaTags.push({
               property: 'article:tag',
               content: tag,
             });
@@ -107,26 +109,26 @@ export function useSeo ({
         }
       }
 
-      m.push({
+      metaTags.push({
         name: 'twitter:card',
         content: 'summary_large_image',
       });
-      m.push({
+      metaTags.push({
         name: 'twitter:title',
         content: fullTitle.value,
       });
-      m.push({
+      metaTags.push({
         name: 'twitter:image',
         content: img.value,
       });
       if (desc.value) {
-        m.push({
+        metaTags.push({
           name: 'twitter:description',
           content: desc.value,
         });
       }
 
-      return m;
+      return metaTags;
     }),
     link: computed(() => [
       {

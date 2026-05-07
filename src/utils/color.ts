@@ -10,9 +10,9 @@ const HUES = [
   0,
 ];
 
-function hash (s: string): number {
+function hash (value: string): number {
   let hashCode = 0;
-  for (const ch of s) hashCode = ((hashCode << 5) - hashCode + ch.charCodeAt(0)) | 0;
+  for (const ch of value) hashCode = ((hashCode << 5) - hashCode + ch.charCodeAt(0)) | 0;
   return Math.abs(hashCode);
 }
 

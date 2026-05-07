@@ -118,7 +118,7 @@
 
       <ResourcePagination
         kind="chapter"
-        :prev="prevChapter && { to: `/journeys/${slug}/books/${prevChapter.slug}`, title: prevChapter.title }"
+        :prev="previousChapter && { to: `/journeys/${slug}/books/${previousChapter.slug}`, title: previousChapter.title }"
         :next="nextChapter && { to: `/journeys/${slug}/books/${nextChapter.slug}`, title: nextChapter.title }"
       />
 
@@ -192,8 +192,8 @@ const bookConfig = computed((): SCardConfig<Book> => ({
     'date',
   ],
   childrenResolver: (book) => book.children
-    .map((s) => bookStore.getBySlug(s))
-    .filter((c): c is NonNullable<typeof c> => !!c),
+    .map((slug) => bookStore.getBySlug(slug))
+    .filter((child): child is NonNullable<typeof child> => !!child),
   currentSlug: bookSlug.value,
   renderChildren: true,
 }));
@@ -244,8 +244,8 @@ const allJourneyBooks = computed(() => {
   return flat;
 });
 
-const currentIndex = computed(() => allJourneyBooks.value.findIndex((s) => s.slug === bookSlug.value));
-const prevChapter = computed(() => allJourneyBooks.value[currentIndex.value - 1]);
+const currentIndex = computed(() => allJourneyBooks.value.findIndex((entry) => entry.slug === bookSlug.value));
+const previousChapter = computed(() => allJourneyBooks.value[currentIndex.value - 1]);
 const nextChapter = computed(() => allJourneyBooks.value[currentIndex.value + 1]);
 
 </script>

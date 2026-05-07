@@ -8,21 +8,21 @@ import type {
   Phase,
 } from '@/types/phase';
 
-const all: Phase[] = allPhases.map((p) => ({
-  slug: p._meta.fileName.replace('.md', ''),
-  createdAt: p.createdAt ?? '',
-  updatedAt: p.updatedAt ?? '',
-  title: p.title,
-  journey: p.journey,
-  status: p.status as Phase['status'],
-  order: p.order,
-  books: p.books,
-  concepts: p.concepts,
-})).sort((a, b) => a.order - b.order);
+const all: Phase[] = allPhases.map((phase) => ({
+  slug: phase._meta.fileName.replace('.md', ''),
+  createdAt: phase.createdAt ?? '',
+  updatedAt: phase.updatedAt ?? '',
+  title: phase.title,
+  journey: phase.journey,
+  status: phase.status as Phase['status'],
+  order: phase.order,
+  books: phase.books,
+  concepts: phase.concepts,
+})).sort((first, second) => first.order - second.order);
 
-const bySlug = new Map(all.map((p) => [
-  p.slug,
-  p,
+const bySlug = new Map(all.map((phase) => [
+  phase.slug,
+  phase,
 ]));
 
 export const usePhaseStore = defineStore('phases', () => {
@@ -30,8 +30,8 @@ export const usePhaseStore = defineStore('phases', () => {
   function getBySlug (slug: string) {
     return bySlug.get(slug);
   }
-  function getByJourney (j: string) {
-    return all.filter((p) => p.journey === j);
+  function getByJourney (index: string) {
+    return all.filter((phase) => phase.journey === index);
   }
   return {
     phases,

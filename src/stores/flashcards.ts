@@ -25,16 +25,16 @@ import {
 
 const STORAGE_KEY = 'scrambled_review_state';
 
-const allCards: Flashcard[] = allFlashcards.map((c) => ({
-  slug: c._meta.fileName.replace('.md', ''),
-  createdAt: c.createdAt,
-  updatedAt: c.updatedAt,
-  question: c.question,
-  answer: c.answer,
-  deck: c.deck,
-  tags: c.tags ?? [],
-  concepts: c.concepts,
-  books: c.books,
+const allCards: Flashcard[] = allFlashcards.map((card) => ({
+  slug: card._meta.fileName.replace('.md', ''),
+  createdAt: card.createdAt,
+  updatedAt: card.updatedAt,
+  question: card.question,
+  answer: card.answer,
+  deck: card.deck,
+  tags: card.tags ?? [],
+  concepts: card.concepts,
+  books: card.books,
 }));
 
 function loadReviewState (): Record<string, ReviewState> {
@@ -95,21 +95,21 @@ export const useFlashcardStore = defineStore('flashcards', () => {
   }
 
   function getByDeck (deck: string) {
-    return cards.filter((c) => c.deck === deck);
+    return cards.filter((card) => card.deck === deck);
   }
 
   function getByConcept (conceptSlug: string) {
-    return cards.filter((c) => c.concepts.includes(conceptSlug));
+    return cards.filter((card) => card.concepts.includes(conceptSlug));
   }
 
   function getByJourney (conceptSlugs: string[]) {
     const set = new Set(conceptSlugs);
-    return cards.filter((c) => c.concepts.some((s) => set.has(s)));
+    return cards.filter((card) => card.concepts.some((slug) => set.has(slug)));
   }
 
   function getDueCards (pool?: Flashcard[]) {
     const today = todayISO();
-    return (pool ?? cards).filter((c) => isDue(getState(c.slug), today));
+    return (pool ?? cards).filter((card) => isDue(getState(card.slug), today));
   }
 
   function reviewCard (slug: string, correct: boolean) {
@@ -129,7 +129,7 @@ export const useFlashcardStore = defineStore('flashcards', () => {
     await pushState(reviewState.value);
   }
 
-  const decks = computed(() => [...new Set(cards.map((c) => c.deck))].sort());
+  const decks = computed(() => [...new Set(cards.map((card) => card.deck))].sort());
 
   function statsForCards (pool: Flashcard[]) {
     const today = todayISO();

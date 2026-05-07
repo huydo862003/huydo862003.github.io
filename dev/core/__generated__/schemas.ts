@@ -1,7 +1,9 @@
 // AUTO-GENERATED from content/.schemas/*.yaml
 // do not edit manually - run `pnpm run codegen` to regenerate
 
-import { z } from 'zod';
+import {
+  z,
+} from 'zod';
 
 // common fields shared by all content types
 const dates = {
@@ -72,7 +74,11 @@ export const conceptsSchema = z.object({
   ...dates,
   title: z.string(),
   journey: z.string().default(''),
-  status: z.enum(['learning', 'reviewing', 'mastered']).default('learning'),
+  status: z.enum([
+    'learning',
+    'reviewing',
+    'mastered',
+  ]).default('learning'),
   tags: z.array(z.string()).default([]),
   books: z.array(z.string()).default([]),
   dependsOn: z.array(z.string()).default([]),
@@ -96,7 +102,11 @@ export const journeysSchema = z.object({
   ...dates,
   title: z.string(),
   description: z.string().default(''),
-  status: z.enum(['active', 'paused', 'completed']).default('active'),
+  status: z.enum([
+    'active',
+    'paused',
+    'completed',
+  ]).default('active'),
   tags: z.array(z.string()).default([]),
   content: z.string(),
 });
@@ -112,7 +122,11 @@ export const papersSchema = z.object({
   journey: z.string().default(''),
   tags: z.array(z.string()).default([]),
   concepts: z.array(z.string()).default([]),
-  status: z.enum(['to-read', 'reading', 'read']).default('to-read'),
+  status: z.enum([
+    'to-read',
+    'reading',
+    'read',
+  ]).default('to-read'),
   content: z.string(),
 });
 export type Papers = z.infer<typeof papersSchema>;
@@ -121,7 +135,11 @@ export const phasesSchema = z.object({
   ...dates,
   title: z.string(),
   journey: z.string().default(''),
-  status: z.enum(['active', 'on-hold', 'completed']).default('on-hold'),
+  status: z.enum([
+    'active',
+    'on-hold',
+    'completed',
+  ]).default('on-hold'),
   order: z.number().default(0),
   books: z.array(z.string()).default([]),
   concepts: z.array(z.string()).default([]),

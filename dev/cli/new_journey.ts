@@ -13,11 +13,11 @@ const manager = new ContentManager(resolve(import.meta.dirname, '../../content')
 
 const author = await input({
   message: 'Author:',
-  validate: (v) => v.trim() === 'hdnax' || v.trim() === 'cosmos',
+  validate: (value) => value.trim() === 'hdnax' || v.trim() === 'cosmos',
 });
 const title = await input({
   message: 'Title:',
-  validate: (v) => v.trim() !== '' || 'Required',
+  validate: (value) => value.trim() !== '' || 'Required',
 });
 const status = await select({
   message: 'Status:',

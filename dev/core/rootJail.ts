@@ -29,14 +29,14 @@ export class RootJail {
   }
 
   // resolve relative path to contained absolute path, throws on escape
-  resolve (p: string): string {
-    if (/\0/.test(p)) throw new JailEscapeError(p, this.root);
-    const contained = normalize(resolve(this.root, p));
-    if (!this.inside(contained)) throw new JailEscapeError(p, this.root);
+  resolve (path: string): string {
+    if (/\0/.test(path)) throw new JailEscapeError(path, this.root);
+    const contained = normalize(resolve(this.root, path));
+    if (!this.inside(contained)) throw new JailEscapeError(path, this.root);
 
     if (existsSync(contained)) {
       const real = realpathSync(contained);
-      if (!this.inside(real)) throw new JailEscapeError(p, this.root);
+      if (!this.inside(real)) throw new JailEscapeError(path, this.root);
       return real;
     }
 
@@ -44,10 +44,10 @@ export class RootJail {
     let ancestor = contained;
     while (!existsSync(ancestor)) {
       const parent = join(ancestor, '..');
-      if (parent === ancestor) throw new JailEscapeError(p, this.root);
+      if (parent === ancestor) throw new JailEscapeError(path, this.root);
       ancestor = parent;
     }
-    if (!this.inside(realpathSync(ancestor))) throw new JailEscapeError(p, this.root);
+    if (!this.inside(realpathSync(ancestor))) throw new JailEscapeError(path, this.root);
     return contained;
   }
 
@@ -62,36 +62,36 @@ export class RootJail {
   }
 
   // fs wrappers - all take jail-relative paths, all throw on escape
-  existsSync (p: string): boolean {
-    return existsSync(this.resolve(p));
+  existsSync (path: string): boolean {
+    return existsSync(this.resolve(path));
   }
 
-  readFileSync (p: string): string {
-    return readFileSync(this.resolve(p), 'utf-8');
+  readFileSync (path: string): string {
+    return readFileSync(this.resolve(path), 'utf-8');
   }
 
   // always creates new - throws if file already exists
-  writeFileSync (p: string, content: string): void {
-    const abs = this.resolve(p);
-    if (existsSync(abs)) throw new Error(`file already exists: ${p}`);
+  writeFileSync (path: string, content: string): void {
+    const abs = this.resolve(path);
+    if (existsSync(abs)) throw new Error(`file already exists: ${path}`);
     writeFileSync(abs, content, 'utf-8');
   }
 
-  mkdirSync (p: string): void {
-    mkdirSync(this.resolve(p), {
+  mkdirSync (path: string): void {
+    mkdirSync(this.resolve(path), {
       recursive: true,
     });
   }
 
-  unlinkSync (p: string): void {
-    unlinkSync(this.resolve(p));
+  unlinkSync (path: string): void {
+    unlinkSync(this.resolve(path));
   }
 
-  readdirSync (p: string): string[] {
-    return readdirSync(this.resolve(p));
+  readdirSync (path: string): string[] {
+    return readdirSync(this.resolve(path));
   }
 
-  statSync (p: string): ReturnType<typeof statSync> {
-    return statSync(this.resolve(p));
+  statSync (path: string): ReturnType<typeof statSync> {
+    return statSync(this.resolve(path));
   }
 }

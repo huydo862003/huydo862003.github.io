@@ -1,11 +1,13 @@
 import {
   Router,
 } from 'express';
-import * as gitController from '../controllers/git.controller';
+import {
+  status, commit,
+} from '../controllers/git.controller';
 
-export function gitRoutes (projectDir: string): Router {
+export function gitRoutes (projectDirectory: string): Router {
   const router = Router();
-  router.get('/git/status', gitController.status(projectDir));
-  router.post('/git/commit', gitController.commit(projectDir));
+  router.get('/git/status', status(projectDirectory));
+  router.post('/git/commit', commit(projectDirectory));
   return router;
 }

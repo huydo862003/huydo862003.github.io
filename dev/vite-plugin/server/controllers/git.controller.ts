@@ -16,10 +16,10 @@ const commitBody = z.object({
   files: z.array(z.string()).optional(),
 });
 
-export function status (projectDir: string) {
-  return (_req: Request, res: Response) => {
+export function status (projectDirectory: string) {
+  return (_request: Request, response: Response) => {
     const output = execSync('git status --porcelain content/', {
-      cwd: projectDir,
+      cwd: projectDirectory,
       encoding: 'utf-8',
     });
     const files = output.trim().split('\n')
@@ -28,16 +28,16 @@ export function status (projectDir: string) {
         status: line.substring(0, 2).trim(),
         path: line.substring(3),
       }));
-    res.json({
+    response.json({
       files,
     });
   };
 }
 
-export function commit (projectDir: string) {
-  return (req: Request, res: Response) => {
-    const parsed = commitBody.safeParse(req.body);
-    if (!parsed.success) return res.status(400).json({
+export function commit (projectDirectory: string) {
+  return (request: Request, response: Response) => {
+    const parsed = commitBody.safeParse(request.body);
+    if (!parsed.success) return response.status(400).json({
       error: parsed.error.issues[0].message,
     });
     const {
@@ -46,16 +46,16 @@ export function commit (projectDir: string) {
     if (files && 0 < files.length) {
       execFileSync('git', [
         'add',
-        ...files.map((f) => join('content', f)),
+        ...files.map((file) => join('content', file)),
       ], {
-        cwd: projectDir,
+        cwd: projectDirectory,
       });
     } else {
       execFileSync('git', [
         'add',
         'content/',
       ], {
-        cwd: projectDir,
+        cwd: projectDirectory,
       });
     }
     execFileSync('git', [
@@ -63,9 +63,9 @@ export function commit (projectDir: string) {
       '-m',
       message,
     ], {
-      cwd: projectDir,
+      cwd: projectDirectory,
     });
-    res.json({
+    response.json({
       ok: true,
     });
   };

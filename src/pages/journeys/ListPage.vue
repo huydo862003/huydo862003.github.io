@@ -87,7 +87,7 @@ function getConceptStats (journeySlug: string) {
 }
 
 function getFlashcardCount (journeySlug: string) {
-  const slugs = conceptStore.getByJourney(journeySlug).map((c) => c.slug);
+  const slugs = conceptStore.getByJourney(journeySlug).map((concept) => concept.slug);
   return flashcardStore.getByJourney(slugs).length;
 }
 

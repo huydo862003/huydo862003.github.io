@@ -46,8 +46,8 @@ export function useGraph (container: Ref<HTMLElement | undefined>, height: Ref<n
         nodes: nodes.map((n) => ({
           ...n,
         })),
-        links: edges.map((e) => ({
-          ...e,
+        links: edges.map((edge) => ({
+          ...edge,
         })),
       })
       .nodeId('id')

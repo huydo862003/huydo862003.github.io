@@ -4,10 +4,12 @@ import {
 import type {
   ContentManager,
 } from '../../../core/contentManager';
-import * as filepathController from '../controllers/filepath.controller';
+import {
+  lookup,
+} from '../controllers/filepath.controller';
 
 export function filepathRoutes (manager: ContentManager): Router {
   const router = Router();
-  router.get('/filepath', filepathController.lookup(manager));
+  router.get('/filepath', lookup(manager));
   return router;
 }

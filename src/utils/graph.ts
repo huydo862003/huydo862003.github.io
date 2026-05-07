@@ -48,9 +48,9 @@ for (const n of allGraphs) {
         source: n.slug,
         target,
       });
-      const src = nodeMap.get(n.slug);
+      const source = nodeMap.get(n.slug);
       const tgt = nodeMap.get(target);
-      if (src) src.links++;
+      if (source) source.links++;
       if (tgt) tgt.links++;
     }
   }

@@ -99,7 +99,7 @@
           >
 
           <!-- enum: pill badge with dropdown -->
-          <VDropdown
+          <Dropdown
             v-else-if="fieldSchema.type === 'enum'"
             :distance="6"
             :arrow-overflow="false"
@@ -128,7 +128,7 @@
                 </button>
               </div>
             </template>
-          </VDropdown>
+          </Dropdown>
 
           <!-- date -->
           <input
@@ -192,7 +192,7 @@ import {
   GIcon, GIconName,
 } from '@hdnax/genuix';
 import {
-  Dropdown as VDropdown,
+  Dropdown,
 } from 'floating-vue';
 import type {
   ContentSchema, FieldSchema,
@@ -203,7 +203,9 @@ const props = defineProps<{
   frontmatter: Record<string, unknown>;
   schema?: ContentSchema;
 }>();
-const emit = defineEmits<{ update: [key: string, value: unknown] }>();
+const emit = defineEmits<{
+  update: [key: string, value: unknown];
+}>();
 
 const editingTitle = ref(false);
 const titleInput = ref<HTMLInputElement>();
@@ -226,9 +228,9 @@ const visibleFields = computed(() => {
   if (!props.schema?.fields) return {};
   return Object.fromEntries(
     Object.entries(props.schema.fields).filter(([
-      k,
-      f,
-    ]) => !f.hidden && !COMMON_FIELDS.has(k)),
+      key,
+      field,
+    ]) => !field.hidden && !COMMON_FIELDS.has(key)),
   );
 });
 
@@ -251,25 +253,27 @@ function fieldValue (name: string | number, schema: FieldSchema) {
 
 function resolveEnum (field: FieldSchema): string[] {
   if (!field.enum || !props.schema) return [];
-  const enumDef = props.schema.enums?.[field.enum];
-  if (!enumDef) return [];
-  if (Array.isArray(enumDef)) return enumDef;
+  const enumDefinition = props.schema.enums?.[field.enum];
+  if (!enumDefinition) return [];
+  if (Array.isArray(enumDefinition)) return enumDefinition;
   if (field.conditionOn) {
     const key = String(props.frontmatter[field.conditionOn] ?? '');
-    return enumDef[key] ?? [];
+    return enumDefinition[key] ?? [];
   }
   return [];
 }
 
-function toArray (val: unknown): string[] {
-  if (Array.isArray(val)) return val as string[];
-  if (val && typeof val === 'string') return [val];
+function toArray (value: unknown): string[] {
+  if (Array.isArray(value)) return value as string[];
+  if (value && typeof value === 'string') return [value];
   return [];
 }
 
-const ENUM_COLORS: Record<string, { bg: string;
+const ENUM_COLORS: Record<string, {
+  bg: string;
   fg: string;
-  dot: string; }> = {
+  dot: string;
+}> = {
   active: {
     bg: '#dbeafe',
     fg: '#1e40af',

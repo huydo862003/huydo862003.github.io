@@ -238,13 +238,13 @@ const statusOrder: Record<string, number> = {
 const journeyConcepts = computed(() => conceptStore.getByJourney(slug.value));
 
 const filteredConcepts = computed(() =>
-  journeyConcepts.value.filter((c) => {
-    if (search.value && !c.title.toLowerCase().includes(search.value.toLowerCase())) return false;
+  journeyConcepts.value.filter((concept) => {
+    if (search.value && !concept.title.toLowerCase().includes(search.value.toLowerCase())) return false;
     return true;
   }));
 
 const expanded = computed(() =>
-  journeyConcepts.value.find((c) => c.slug === selected.value));
+  journeyConcepts.value.find((concept) => concept.slug === selected.value));
 
 const {
   state: content, execute: reloadContent,
@@ -255,10 +255,10 @@ const {
 watch(selected, () => reloadContent());
 
 const bookItems = computed(() =>
-  (expanded.value?.books ?? []).map((b) => ({
-    value: b,
-    label: formatSlug(b),
-    to: `/journeys/${slug.value}/books/${b}`,
+  (expanded.value?.books ?? []).map((bookSlug) => ({
+    value: bookSlug,
+    label: formatSlug(bookSlug),
+    to: `/journeys/${slug.value}/books/${bookSlug}`,
     as: RouterLink,
   })));
 

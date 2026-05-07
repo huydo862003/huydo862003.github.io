@@ -114,7 +114,7 @@ const wrap = ref<HTMLElement>();
 const container = ref<HTMLElement>();
 const inView = ref(false);
 
-// When embedded in the side panel the pane is 100svh; subtract the header (~36px).
+// When embedded in the side panel the pane is 100svh; subtract the header (~36px)
 const PANEL_HEADER_PX = 36;
 const panelHeight = ref(typeof window !== 'undefined' ? window.innerHeight - PANEL_HEADER_PX : 664);
 function updatePanelHeight () {

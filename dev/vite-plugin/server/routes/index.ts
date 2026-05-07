@@ -23,14 +23,14 @@ import {
   assetsRoutes,
 } from './assets.routes';
 
-export function createRouter (manager: ContentManager, projectDir: string): Router {
+export function createRouter (manager: ContentManager, projectDirectory: string): Router {
   const router = Router();
 
   router.use(fileRoutes(manager));
-  router.use(gitRoutes(projectDir));
+  router.use(gitRoutes(projectDirectory));
   router.use(schemaRoutes(manager));
   router.use(filepathRoutes(manager));
-  router.use(assetsRoutes(join(projectDir, 'public/assets')));
+  router.use(assetsRoutes(join(projectDirectory, 'public/assets')));
 
   return router;
 }

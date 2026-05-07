@@ -2,7 +2,7 @@
   <div class="flex flex-col gap-1 min-w-0 w-full">
     <!-- SINGLE REF -->
     <template v-if="single">
-      <VDropdown
+      <Dropdown
         :distance="6"
         placement="bottom-start"
         :arrow-overflow="false"
@@ -38,7 +38,7 @@
             @mounted="focusSearch"
           />
         </template>
-      </VDropdown>
+      </Dropdown>
     </template>
 
     <!-- MULTI: relation (page-link style) -->
@@ -55,7 +55,7 @@
         />
         <span class="truncate underline underline-offset-2 decoration-gray-300">{{ resolveTitle(item) }}</span>
       </span>
-      <VDropdown
+      <Dropdown
         :distance="4"
         placement="bottom-start"
       >
@@ -76,7 +76,7 @@
             @mounted="focusSearch"
           />
         </template>
-      </VDropdown>
+      </Dropdown>
     </template>
 
     <!-- MULTI: tags/enums (colored chips) -->
@@ -96,7 +96,7 @@
           x
         </button>
       </span>
-      <VDropdown
+      <Dropdown
         :distance="4"
         placement="bottom-start"
       >
@@ -117,7 +117,7 @@
             @mounted="focusSearch"
           />
         </template>
-      </VDropdown>
+      </Dropdown>
     </template>
   </div>
 </template>
@@ -127,7 +127,7 @@ import {
   ref, computed, onMounted, watch,
 } from 'vue';
 import {
-  Dropdown as VDropdown,
+  Dropdown,
 } from 'floating-vue';
 import {
   GIcon, GIconName,
@@ -150,8 +150,10 @@ const props = defineProps<{
 const isRelation = computed(() => !!props.contentType && !props.enumOptions?.length);
 
 const search = ref('');
-const options = ref<{ value: string;
-  label: string; }[]>([]);
+const options = ref<{
+  value: string;
+  label: string;
+}[]>([]);
 const maxVisible = computed(() => props.maxVisible ?? 5);
 
 const items = computed(() => model.value ?? []);
@@ -159,7 +161,7 @@ const visibleItems = computed(() => items.value.slice(0, maxVisible.value));
 
 const titleMap = computed(() => {
   const labelMap = new Map<string, string>();
-  for (const o of options.value) labelMap.set(o.value, o.label);
+  for (const option of options.value) labelMap.set(option.value, option.label);
   return labelMap;
 });
 
@@ -169,12 +171,12 @@ function resolveTitle (slug: string) {
 
 const filtered = computed(() => {
   const searchQuery = search.value.toLowerCase();
-  return options.value.filter((o) =>
-    o.label.toLowerCase().includes(searchQuery) || o.value.toLowerCase().includes(searchQuery));
+  return options.value.filter((option) =>
+    option.label.toLowerCase().includes(searchQuery) || option.value.toLowerCase().includes(searchQuery));
 });
 
 const exactMatch = computed(() =>
-  options.value.some((o) => o.value === search.value.trim() || o.label.toLowerCase() === search.value.trim().toLowerCase()));
+  options.value.some((option) => option.value === search.value.trim() || option.label.toLowerCase() === search.value.trim().toLowerCase()));
 
 function selectSingle (value: string) {
   model.value = [value];
@@ -195,7 +197,7 @@ function add (value: string) {
 }
 
 function remove (value: string) {
-  model.value = items.value.filter((v) => v !== value);
+  model.value = items.value.filter((item) => item !== value);
 }
 
 const TAG_COLORS = [
@@ -241,14 +243,14 @@ const TAG_COLORS = [
   },
 ];
 
-function hashStr (s: string): number {
+function hashString (slug: string): number {
   let hashCode = 0;
-  for (let i = 0; i < s.length; i++) hashCode = ((hashCode << 5) - hashCode + s.charCodeAt(i)) | 0;
+  for (let index = 0; index < slug.length; index++) hashCode = ((hashCode << 5) - hashCode + slug.charCodeAt(index)) | 0;
   return Math.abs(hashCode);
 }
 
 function chipColor (value: string): Record<string, string> {
-  const tagColor = TAG_COLORS[hashStr(value) % TAG_COLORS.length];
+  const tagColor = TAG_COLORS[hashString(value) % TAG_COLORS.length];
   return {
     background: tagColor.bg,
     color: tagColor.fg,
@@ -261,9 +263,9 @@ function focusSearch () {
 
 async function loadOptions () {
   if (props.enumOptions?.length) {
-    options.value = props.enumOptions.map((v) => ({
-      value: v,
-      label: v,
+    options.value = props.enumOptions.map((value) => ({
+      value: value,
+      label: value,
     }));
   } else if (props.contentType) {
     try {
@@ -274,10 +276,12 @@ async function loadOptions () {
           type: props.contentType,
         },
       });
-      options.value = data.map((d: { slug: string;
-        title: string; }) => ({
-        value: d.slug,
-        label: d.title,
+      options.value = data.map((definition: {
+        slug: string;
+        title: string;
+      }) => ({
+        value: definition.slug,
+        label: definition.title,
       }));
     } catch { /* fallback to empty */ }
   }

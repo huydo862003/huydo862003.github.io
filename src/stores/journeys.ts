@@ -14,19 +14,19 @@ const STATUS_ORDER = {
   completed: 2,
 } as const;
 
-const all: Journey[] = allJourneys.map((j) => ({
-  slug: j._meta.fileName.replace('.md', ''),
-  createdAt: j.createdAt ?? '',
-  updatedAt: j.updatedAt ?? '',
-  title: j.title,
-  description: j.description,
-  status: j.status as Journey['status'],
-  tags: j.tags,
-})).sort((a, b) => STATUS_ORDER[a.status] - STATUS_ORDER[b.status]);
+const all: Journey[] = allJourneys.map((index) => ({
+  slug: index._meta.fileName.replace('.md', ''),
+  createdAt: index.createdAt ?? '',
+  updatedAt: index.updatedAt ?? '',
+  title: index.title,
+  description: index.description,
+  status: index.status as Journey['status'],
+  tags: index.tags,
+})).sort((first, second) => STATUS_ORDER[first.status] - STATUS_ORDER[second.status]);
 
-const bySlug = new Map(all.map((j) => [
-  j.slug,
-  j,
+const bySlug = new Map(all.map((index) => [
+  index.slug,
+  index,
 ]));
 
 export const useJourneyStore = defineStore('journeys', () => {

@@ -176,15 +176,19 @@ import {
 
 const store = useTreeStore();
 const fileStore = useFileStore();
-const emit = defineEmits<{ select: [path: string];
-  hide: []; }>();
+const emit = defineEmits<{
+  select: [path: string];
+  hide: [];
+}>();
 
 const openJourneys = reactive(new Set<string>());
 const openSections = reactive(new Set<string>());
 
-const TYPE_CONFIG: Record<string, { icon: string;
+const TYPE_CONFIG: Record<string, {
+  icon: string;
   color: string;
-  label: string; }> = {
+  label: string;
+}> = {
   books: {
     icon: GIconName.Books,
     color: 'text-amber-500',

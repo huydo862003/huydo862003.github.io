@@ -16,7 +16,7 @@ export async function loadTree (): Promise<TreeNode[]> {
   return data;
 }
 
-export async function loadJourneyTree (): Promise<JourneyTree> {
+export async function fetchJourneyTree (): Promise<JourneyTree> {
   const {
     data,
   } = await httpClient.get('/journey-tree');

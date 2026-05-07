@@ -8,27 +8,27 @@ import type {
   Book,
 } from '@/types/book';
 
-const all: Book[] = allBooks.map((b) => ({
-  slug: b._meta.fileName.replace('.md', ''),
-  createdAt: b.createdAt ?? '',
-  updatedAt: b.updatedAt ?? '',
-  title: b.title,
-  author: b.author,
-  date: String(b.date ?? ''),
-  journey: b.journey,
-  description: b.description ?? '',
-  isbn: b.isbn ?? '',
-  url: b.url ?? '',
-  cover: b.cover ?? '',
-  tags: b.tags,
-  concepts: b.concepts,
-  parent: b.parent,
-  children: b.children,
-})).sort((a, b) => a.title.localeCompare(b.title));
+const all: Book[] = allBooks.map((book) => ({
+  slug: book._meta.fileName.replace('.md', ''),
+  createdAt: book.createdAt ?? '',
+  updatedAt: book.updatedAt ?? '',
+  title: book.title,
+  author: book.author,
+  date: String(book.date ?? ''),
+  journey: book.journey,
+  description: book.description ?? '',
+  isbn: book.isbn ?? '',
+  url: book.url ?? '',
+  cover: book.cover ?? '',
+  tags: book.tags,
+  concepts: book.concepts,
+  parent: book.parent,
+  children: book.children,
+})).sort((first, second) => first.title.localeCompare(second.title));
 
-const bySlug = new Map(all.map((b) => [
-  b.slug,
-  b,
+const bySlug = new Map(all.map((book) => [
+  book.slug,
+  book,
 ]));
 
 export const useBookStore = defineStore('books', () => {
@@ -36,8 +36,8 @@ export const useBookStore = defineStore('books', () => {
   function getBySlug (slug: string) {
     return bySlug.get(slug);
   }
-  function getByJourney (j: string) {
-    return all.filter((b) => b.journey === j);
+  function getByJourney (index: string) {
+    return all.filter((book) => book.journey === index);
   }
   return {
     books,

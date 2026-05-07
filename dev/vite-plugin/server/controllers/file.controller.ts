@@ -24,40 +24,40 @@ const typeQuery = z.object({
 });
 
 export function list (manager: ContentManager) {
-  return (req: Request, res: Response) => {
-    const parsed = typeQuery.safeParse(req.query);
-    if (!parsed.success) return res.status(400).json({
+  return (request: Request, response: Response) => {
+    const parsed = typeQuery.safeParse(request.query);
+    if (!parsed.success) return response.status(400).json({
       error: parsed.error.issues[0].message,
     });
-    res.json(manager.listContent(parsed.data.type));
+    response.json(manager.listContent(parsed.data.type));
   };
 }
 
 export function journeyTree (manager: ContentManager) {
-  return (_req: Request, res: Response) => {
-    res.json(manager.journeyTree());
+  return (_request: Request, response: Response) => {
+    response.json(manager.journeyTree());
   };
 }
 
 export function tree (manager: ContentManager) {
-  return (_req: Request, res: Response) => {
-    res.json(manager.tree());
+  return (_request: Request, response: Response) => {
+    response.json(manager.tree());
   };
 }
 
 export function get (manager: ContentManager) {
-  return (req: Request, res: Response) => {
-    const parsed = pathQuery.safeParse(req.query);
-    if (!parsed.success) return res.status(400).json({
+  return (request: Request, response: Response) => {
+    const parsed = pathQuery.safeParse(request.query);
+    if (!parsed.success) return response.status(400).json({
       error: parsed.error.issues[0].message,
     });
     try {
-      res.json(manager.getContent(parsed.data.path));
+      response.json(manager.getContent(parsed.data.path));
     } catch (error) {
-      if (error instanceof JailEscapeError) return res.status(403).json({
+      if (error instanceof JailEscapeError) return response.status(403).json({
         error: 'forbidden',
       });
-      return res.status(404).json({
+      return response.status(404).json({
         error: 'not found',
       });
     }
@@ -65,21 +65,21 @@ export function get (manager: ContentManager) {
 }
 
 export function update (manager: ContentManager) {
-  return (req: Request, res: Response) => {
-    const parsed = fileBody.safeParse(req.body);
-    if (!parsed.success) return res.status(400).json({
+  return (request: Request, response: Response) => {
+    const parsed = fileBody.safeParse(request.body);
+    if (!parsed.success) return response.status(400).json({
       error: parsed.error.issues[0].message,
     });
     try {
       manager.updateContent(parsed.data.path, parsed.data.content);
-      res.json({
+      response.json({
         ok: true,
       });
     } catch (error) {
-      if (error instanceof JailEscapeError) return res.status(403).json({
+      if (error instanceof JailEscapeError) return response.status(403).json({
         error: 'forbidden',
       });
-      return res.status(404).json({
+      return response.status(404).json({
         error: 'not found',
       });
     }
@@ -87,21 +87,21 @@ export function update (manager: ContentManager) {
 }
 
 export function remove (manager: ContentManager) {
-  return (req: Request, res: Response) => {
-    const parsed = pathQuery.safeParse(req.query);
-    if (!parsed.success) return res.status(400).json({
+  return (request: Request, response: Response) => {
+    const parsed = pathQuery.safeParse(request.query);
+    if (!parsed.success) return response.status(400).json({
       error: parsed.error.issues[0].message,
     });
     try {
       manager.deleteContent(parsed.data.path);
-      res.json({
+      response.json({
         ok: true,
       });
     } catch (error) {
-      if (error instanceof JailEscapeError) return res.status(403).json({
+      if (error instanceof JailEscapeError) return response.status(403).json({
         error: 'forbidden',
       });
-      return res.status(404).json({
+      return response.status(404).json({
         error: 'not found',
       });
     }

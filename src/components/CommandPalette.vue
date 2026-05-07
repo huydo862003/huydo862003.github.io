@@ -13,7 +13,7 @@
             class="search-icon"
           />
           <input
-            ref="inputEl"
+            ref="inputElementement"
             v-model="query"
             type="text"
             placeholder="Search pages, concepts, flashcards..."
@@ -139,10 +139,12 @@ interface PaletteItem {
 const open = ref(false);
 const query = ref('');
 const activeIndex = ref(0);
-const inputEl = ref<HTMLInputElement>();
+const inputElement = ref<HTMLInputElement>();
 const router = useRouter();
 
-const emit = defineEmits<{ (e: 'open-graph-side'): void }>();
+const emit = defineEmits<{
+  (event: 'open-graph-side'): void;
+}>();
 
 const conceptStore = useConceptStore();
 const flashcardStore = useFlashcardStore();
@@ -188,9 +190,9 @@ const navItems = computed<PaletteItem[]>(() => [
       GKbdKeyName.g,
     ],
   },
-  ...journeyStore.journeys.map((j) => ({
-    label: j.title,
-    to: `/journeys/${j.slug}`,
+  ...journeyStore.journeys.map((index) => ({
+    label: index.title,
+    to: `/journeys/${index.slug}`,
     icon: GIconName.Flag,
   })),
 ]);
@@ -198,44 +200,44 @@ const navItems = computed<PaletteItem[]>(() => [
 const searchItems = computed<PaletteItem[]>(() => {
   const items: PaletteItem[] = [];
 
-  for (const c of conceptStore.concepts) {
+  for (const concept of conceptStore.concepts) {
     items.push({
-      label: c.title,
-      to: `/journeys/${c.journey}/concepts/${c.slug}`,
+      label: concept.title,
+      to: `/journeys/${concept.journey}/concepts/${concept.slug}`,
       type: 'concept',
     });
   }
 
-  for (const f of flashcardStore.cards.slice(0, 200)) {
-    const concept = f.concepts[0] ? conceptStore.getBySlug(f.concepts[0]) : undefined;
+  for (const flashcard of flashcardStore.cards.slice(0, 200)) {
+    const concept = flashcard.concepts[0] ? conceptStore.getBySlug(flashcard.concepts[0]) : undefined;
     const journey = concept?.journey || 'plt';
     items.push({
-      label: f.question,
-      to: `/journeys/${journey}/flashcards/${f.slug}`,
+      label: flashcard.question,
+      to: `/journeys/${journey}/flashcards/${flashcard.slug}`,
       type: 'flashcard',
     });
   }
 
-  for (const b of bookStore.books) {
+  for (const book of bookStore.books) {
     items.push({
-      label: b.title,
-      to: `/journeys/${b.journey}/books/${b.slug}`,
+      label: book.title,
+      to: `/journeys/${book.journey}/books/${book.slug}`,
       type: 'book',
     });
   }
 
-  for (const p of phaseStore.phases) {
+  for (const phase of phaseStore.phases) {
     items.push({
-      label: p.title,
-      to: `/journeys/${p.journey}/phases/${p.slug}`,
+      label: phase.title,
+      to: `/journeys/${phase.journey}/phases/${phase.slug}`,
       type: 'phase',
     });
   }
 
-  for (const b of blogStore.posts) {
+  for (const post of blogStore.posts) {
     items.push({
-      label: b.title,
-      to: `/journeys/${b.journey}/blogs`,
+      label: post.title,
+      to: `/journeys/${post.journey}/blogs`,
       type: 'blog',
     });
   }
@@ -265,7 +267,7 @@ function show () {
   open.value = true;
   query.value = '';
   activeIndex.value = 0;
-  nextTick(() => inputEl.value?.focus());
+  nextTick(() => inputElement.value?.focus());
 }
 
 function close () {

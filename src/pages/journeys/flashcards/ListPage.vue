@@ -385,9 +385,9 @@ const mode = computed(() => (route.query.mode as string) || 'decks');
 const activeDeck = computed(() => (route.query.deck as string) || undefined);
 
 const journeyConcepts = computed(() => conceptStore.getByJourney(slug.value));
-const journeyConceptSlugs = computed(() => journeyConcepts.value.map((c) => c.slug));
+const journeyConceptSlugs = computed(() => journeyConcepts.value.map((concept) => concept.slug));
 const journeyCards = computed(() => flashcardStore.getByJourney(journeyConceptSlugs.value));
-const journeyDecks = computed(() => [...new Set(journeyCards.value.map((c) => c.deck))].sort());
+const journeyDecks = computed(() => [...new Set(journeyCards.value.map((card) => card.deck))].sort());
 const journeyStats = computed(() => flashcardStore.statsForCards(journeyCards.value));
 
 const {
@@ -396,23 +396,23 @@ const {
 
 const activePool = computed(() => {
   const pool = activeDeck.value
-    ? journeyCards.value.filter((c) => c.deck === activeDeck.value)
+    ? journeyCards.value.filter((card) => card.deck === activeDeck.value)
     : journeyCards.value;
   if (!tableSortKey.value) return pool;
   const list = [...pool];
-  const dir = tableSortAsc.value ? 1 : -1;
+  const direction = tableSortAsc.value ? 1 : -1;
   const sortKey = tableSortKey.value;
-  const states = new Map(list.map((c) => [
-    c.slug,
-    flashcardStore.getState(c.slug),
+  const states = new Map(list.map((card) => [
+    card.slug,
+    flashcardStore.getState(card.slug),
   ]));
-  list.sort((a, b) => {
-    if (sortKey === 'question') return dir * a.question.localeCompare(b.question);
-    const sa = states.get(a.slug) ?? flashcardStore.getState(a.slug);
-    const sb = states.get(b.slug) ?? flashcardStore.getState(b.slug);
-    if (sortKey === 'mastery') return dir * (sa.interval - sb.interval);
-    if (sortKey === 'stale') return dir * (Number(isStale(sa)) - Number(isStale(sb)));
-    if (sortKey === 'lastReviewed') return dir * (sa.lastReviewedAt || '').localeCompare(sb.lastReviewedAt || '');
+  list.sort((first, second) => {
+    if (sortKey === 'question') return direction * first.question.localeCompare(second.question);
+    const sa = states.get(first.slug) ?? flashcardStore.getState(first.slug);
+    const sb = states.get(second.slug) ?? flashcardStore.getState(second.slug);
+    if (sortKey === 'mastery') return direction * (sa.interval - sb.interval);
+    if (sortKey === 'stale') return direction * (Number(isStale(sa)) - Number(isStale(sb)));
+    if (sortKey === 'lastReviewed') return direction * (sa.lastReviewedAt || '').localeCompare(sb.lastReviewedAt || '');
     return 0;
   });
   return list;
@@ -423,25 +423,25 @@ const deckStats = computed(() => {
     count: number;
     due: number;
   }>();
-  for (const c of journeyCards.value) {
-    const deckStat = stats.get(c.deck) || {
+  for (const card of journeyCards.value) {
+    const deckStat = stats.get(card.deck) || {
       count: 0,
       due: 0,
     };
     deckStat.count++;
-    if (isDue(flashcardStore.getState(c.slug))) deckStat.due++;
-    stats.set(c.deck, deckStat);
+    if (isDue(flashcardStore.getState(card.slug))) deckStat.due++;
+    stats.set(card.deck, deckStat);
   }
   return stats;
 });
 
-function setQuery (q: Record<string, string | undefined>) {
+function setQuery (queryInput: Record<string, string | undefined>) {
   const query: Record<string, string> = {};
   for (const [
     key,
-    v,
-  ] of Object.entries(q)) {
-    if (v) query[key] = v;
+    value,
+  ] of Object.entries(queryInput)) {
+    if (value) query[key] = value;
   }
   router.replace({
     query,

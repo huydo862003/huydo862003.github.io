@@ -83,7 +83,7 @@
 
       <ResourcePagination
         kind="journey"
-        :prev="prevJourney"
+        :prev="previousJourney"
         :next="nextJourney"
       />
 
@@ -165,19 +165,19 @@ useSeo({
   path: computed(() => `/journeys/${slug.value}`),
 });
 
-const currentIdx = computed(() => journeyStore.journeys.findIndex((j) => j.slug === slug.value));
-const prevJourney = computed(() => {
-  const j = journeyStore.journeys[currentIdx.value - 1];
-  return j && {
-    to: `/journeys/${j.slug}`,
-    title: j.title,
+const currentIndex = computed(() => journeyStore.journeys.findIndex((index) => index.slug === slug.value));
+const previousJourney = computed(() => {
+  const index = journeyStore.journeys[currentIndex.value - 1];
+  return index && {
+    to: `/journeys/${index.slug}`,
+    title: index.title,
   };
 });
 const nextJourney = computed(() => {
-  const j = journeyStore.journeys[currentIdx.value + 1];
-  return j && {
-    to: `/journeys/${j.slug}`,
-    title: j.title,
+  const index = journeyStore.journeys[currentIndex.value + 1];
+  return index && {
+    to: `/journeys/${index.slug}`,
+    title: index.title,
   };
 });
 const {
@@ -189,7 +189,7 @@ const {
 watch(journey, () => reloadContent());
 
 const journeyConcepts = computed(() => conceptStore.getByJourney(slug.value));
-const journeyConceptSlugs = computed(() => journeyConcepts.value.map((c) => c.slug));
+const journeyConceptSlugs = computed(() => journeyConcepts.value.map((concept) => concept.slug));
 const conceptStats = computed(() => conceptStore.statsByJourney(slug.value));
 
 const flashcardStats = computed(() => {
@@ -201,25 +201,25 @@ const phaseStats = computed(() => {
   const phases = phaseStore.getByJourney(slug.value);
   return {
     total: phases.length,
-    active: phases.filter((p) => p.status === 'active').length,
-    completed: phases.filter((p) => p.status === 'completed').length,
-    onHold: phases.filter((p) => p.status === 'on-hold').length,
+    active: phases.filter((phase) => phase.status === 'active').length,
+    completed: phases.filter((phase) => phase.status === 'completed').length,
+    onHold: phases.filter((phase) => phase.status === 'on-hold').length,
   };
 });
 
-function ringStyle (s: {
+function ringStyle (stat: {
   segments: {
     pct: number;
     color: string;
   }[];
 }) {
   const parts: string[] = [];
-  let acc = 0;
-  for (const seg of s.segments) {
-    parts.push(`${seg.color} ${acc}% ${acc + seg.pct}%`);
-    acc += seg.pct;
+  let accumulator = 0;
+  for (const seg of stat.segments) {
+    parts.push(`${seg.color} ${accumulator}% ${accumulator + seg.pct}%`);
+    accumulator += seg.pct;
   }
-  parts.push(`var(--gui-neutral-bg-subtle) ${acc}% 100%`);
+  parts.push(`var(--gui-neutral-bg-subtle) ${accumulator}% 100%`);
   return {
     background: `conic-gradient(${parts.join(', ')})`,
   };
@@ -230,8 +230,8 @@ const reviewedToday = computed(() => {
   const today = new Date()
     .toISOString()
     .slice(0, 10);
-  return cards.filter((c) => {
-    const cardState = flashcardStore.getState(c.slug);
+  return cards.filter((card) => {
+    const cardState = flashcardStore.getState(card.slug);
     return cardState.lastReviewedAt === today;
   }).length;
 });
@@ -340,7 +340,7 @@ const statCards = computed(() => {
         },
       ],
     },
-  ].filter((c) => 0 < c.count);
+  ].filter((card) => 0 < card.count);
 });
 
 const resources = computed(() => {
@@ -386,7 +386,7 @@ const resources = computed(() => {
       to: `/journeys/${currentSlug}/papers`,
       icon: GIconName.Newspaper,
     },
-  ].filter((r) => 0 < r.count);
+  ].filter((resource) => 0 < resource.count);
 });
 </script>
 

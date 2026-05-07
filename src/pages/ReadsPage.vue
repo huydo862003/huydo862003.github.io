@@ -89,13 +89,13 @@ const readsPage = ref(1);
 const readsStats = computed(() => {
   const js = readsJourneys.value;
   const books = js.length
-    ? js.flatMap((j) => bookStore.getByJourney(j)).filter((b) => !b.parent)
-    : bookStore.books.filter((b) => !b.parent);
+    ? js.flatMap((index) => bookStore.getByJourney(index)).filter((book) => !book.parent)
+    : bookStore.books.filter((book) => !book.parent);
   const blogs = js.length
-    ? js.flatMap((j) => blogStore.getPosts(j))
+    ? js.flatMap((index) => blogStore.getPosts(index))
     : blogStore.posts;
   const papers = js.length
-    ? js.flatMap((j) => paperStore.getByJourney(j))
+    ? js.flatMap((index) => paperStore.getByJourney(index))
     : paperStore.papers;
 
   return [
@@ -121,40 +121,40 @@ const readsItems = computed(() => {
   const js = readsJourneys.value;
   const ts = readsTypes.value;
 
-  const books = (js.length ? js.flatMap((j) => bookStore.getByJourney(j)) : bookStore.books)
-    .filter((b) => !b.parent)
-    .map((b) => ({
-      slug: b.slug,
+  const books = (js.length ? js.flatMap((index) => bookStore.getByJourney(index)) : bookStore.books)
+    .filter((book) => !book.parent)
+    .map((book) => ({
+      slug: book.slug,
       type: 'book',
-      title: b.title,
-      to: `/journeys/${b.journey}/books/${b.slug}`,
+      title: book.title,
+      to: `/journeys/${book.journey}/books/${book.slug}`,
       url: '',
       meta: [
-        b.author,
-        b.date,
+        book.author,
+        book.date,
       ].filter(Boolean).join(' · '),
     }));
 
-  const blogs = (js.length ? js.flatMap((j) => blogStore.getPosts(j)) : blogStore.posts)
-    .map((b) => ({
-      slug: b.slug,
+  const blogs = (js.length ? js.flatMap((index) => blogStore.getPosts(index)) : blogStore.posts)
+    .map((post) => ({
+      slug: post.slug,
       type: 'post',
-      title: b.title,
-      url: b.url,
-      meta: b.author,
+      title: post.title,
+      url: post.url,
+      meta: post.author,
     }));
 
-  const papers = (js.length ? js.flatMap((j) => paperStore.getByJourney(j)) : paperStore.papers)
-    .map((p) => ({
-      slug: p.slug,
+  const papers = (js.length ? js.flatMap((index) => paperStore.getByJourney(index)) : paperStore.papers)
+    .map((paper) => ({
+      slug: paper.slug,
       type: 'paper',
-      title: p.title,
-      to: `/journeys/${p.journey}/papers/${p.slug}`,
-      url: p.url,
+      title: paper.title,
+      to: `/journeys/${paper.journey}/papers/${paper.slug}`,
+      url: paper.url,
       meta: [
-        p.authors.join(', '),
-        p.venue,
-        p.year,
+        paper.authors.join(', '),
+        paper.venue,
+        paper.year,
       ].filter(Boolean).join(' · '),
     }));
 
@@ -182,14 +182,14 @@ watch([
 });
 
 const filterGroups = computed(() => [
-  journeys.map((j) => ({
-    label: j.title,
-    value: j.slug,
+  journeys.map((index) => ({
+    label: index.title,
+    value: index.slug,
   })),
-  readsStats.value.map((r) => ({
-    label: `${r.count} ${r.label}`,
-    value: r.type,
-    colorClass: r.type,
+  readsStats.value.map((stat) => ({
+    label: `${stat.count} ${stat.label}`,
+    value: stat.type,
+    colorClass: stat.type,
   })),
 ]);
 

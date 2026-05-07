@@ -6,7 +6,7 @@ import type {
 } from '../../../core/contentManager';
 
 export function list (manager: ContentManager) {
-  return (_req: Request, res: Response) => {
-    res.json(manager.schemas());
+  return (_request: Request, response: Response) => {
+    response.json(manager.schemas());
   };
 }

@@ -3,7 +3,7 @@
     <!-- search -->
     <div class="flex items-center border-b border-gray-100 px-3">
       <input
-        ref="searchEl"
+        ref="searchElement"
         :value="search"
         class="flex-1 py-2.5 text-sm border-none outline-none bg-transparent"
         :placeholder="contentType ? `Search linked pages...` : 'Search...'"
@@ -104,8 +104,10 @@ import {
 const props = defineProps<{
   search: string;
   selected: string[];
-  filtered: { value: string;
-    label: string; }[];
+  filtered: {
+    value: string;
+    label: string;
+  }[];
   exactMatch: boolean;
   titleMap: Map<string, string>;
   contentType?: string;
@@ -119,10 +121,10 @@ defineEmits<{
   mounted: [];
 }>();
 
-const searchEl = ref<HTMLInputElement>();
+const searchElement = ref<HTMLInputElement>();
 
 const unselected = computed(() =>
-  props.filtered.filter((o) => !props.selected.includes(o.value)));
+  props.filtered.filter((option) => !props.selected.includes(option.value)));
 
 function resolve (slug: string) {
   return props.titleMap.get(slug) || slug.replace(/-/g, ' ');

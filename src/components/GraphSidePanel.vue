@@ -17,7 +17,7 @@
           <button
             class="ctrl-btn"
             title="Zoom in"
-            @click="graphRef?.zoomIn()"
+            @click="graphReference?.zoomIn()"
           >
             <GIcon
               :name="GIconName.Plus"
@@ -27,7 +27,7 @@
           <button
             class="ctrl-btn"
             title="Zoom out"
-            @click="graphRef?.zoomOut()"
+            @click="graphReference?.zoomOut()"
           >
             <GIcon
               :name="GIconName.Minus"
@@ -37,7 +37,7 @@
           <button
             class="ctrl-btn"
             title="Fit to view"
-            @click="graphRef?.zoomFit()"
+            @click="graphReference?.zoomFit()"
           >
             <GIcon
               :name="GIconName.Expand"
@@ -47,7 +47,7 @@
           <button
             class="ctrl-btn"
             title="Recenter"
-            @click="graphRef?.recenter()"
+            @click="graphReference?.recenter()"
           >
             <GIcon
               :name="GIconName.Crosshair"
@@ -81,7 +81,7 @@
 
       <div class="pane-body">
         <KnowledgeGraph
-          ref="graphRef"
+          ref="graphReferenceerence"
           :in-panel="true"
         />
       </div>
@@ -100,7 +100,7 @@ import {
 const KnowledgeGraph = defineAsyncComponent(() => import('@/components/KnowledgeGraph.vue'));
 
 const open = ref(false);
-const graphRef = ref<InstanceType<typeof KnowledgeGraph>>();
+const graphReference = ref<InstanceType<typeof KnowledgeGraph>>();
 
 const MIN_WIDTH = 280;
 const MAX_WIDTH = 900;
@@ -112,7 +112,7 @@ const paneWidth = ref(
 
 let dragging = false;
 
-function startResize (_e: MouseEvent) {
+function startResize (_event: MouseEvent) {
   dragging = true;
   document.body.style.cursor = 'ew-resize';
   document.body.style.userSelect = 'none';
@@ -120,9 +120,9 @@ function startResize (_e: MouseEvent) {
   window.addEventListener('mouseup', stopResize);
 }
 
-function onMouseMove (e: MouseEvent) {
+function onMouseMove (event: MouseEvent) {
   if (!dragging) return;
-  paneWidth.value = Math.min(MAX_WIDTH, Math.max(MIN_WIDTH, window.innerWidth - e.clientX));
+  paneWidth.value = Math.min(MAX_WIDTH, Math.max(MIN_WIDTH, window.innerWidth - event.clientX));
   window.dispatchEvent(new Event('resize'));
 }
 

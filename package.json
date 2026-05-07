@@ -21,7 +21,7 @@
   "dependencies": {
     "@content-collections/core": "^0.15.0",
     "@content-collections/vite": "^0.3.0",
-    "@hdnax/genuix": "^0.13.1",
+    "@hdnax/genuix": "^0.13.3",
     "@milkdown/crepe": "^7.20.0",
     "@milkdown/kit": "^7.20.0",
     "@milkdown/plugin-diagram": "^7.7.0",
@@ -48,7 +48,7 @@
     "zod": "^4.4.3"
   },
   "devDependencies": {
-    "@hdnax/nuclint": "^0.14.4",
+    "@hdnax/nuclint": "^0.16.0",
     "@inquirer/prompts": "^8.4.2",
     "@phosphor-icons/vue": "^2.2.1",
     "@tailwindcss/vite": "^4.2.4",

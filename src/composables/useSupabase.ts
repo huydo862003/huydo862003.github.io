@@ -27,7 +27,7 @@ supabase.auth.getSession().then(({
 
   // Workaround for SPA
   // when the user was directed to github oauth then back to the old path
-  // it tells Github Pages to look for a non-existent path...
+  // it tells Github Pages to look for a non-existent path
   // Solution: Redirect to the root path so Github Pages would return our page first, then navigate back to the page user was on before OAuth via session storage
   if (typeof sessionStorage !== 'undefined') {
     const returnPath = sessionStorage.getItem('auth-return');
@@ -124,16 +124,16 @@ export function useReviewSync () {
       });
 
       const {
-        error: err,
+        error: error_,
       } = await supabase
         .from('review_state')
         .upsert(rows, {
           onConflict: 'user_id,slug',
         });
 
-      if (err) error.value = err.message;
-    } catch (e) {
-      error.value = (e as Error).message;
+      if (error_) error.value = error_.message;
+    } catch (error_) {
+      error.value = (error_ as Error).message;
     } finally {
       syncing.value = false;
     }
@@ -145,14 +145,14 @@ export function useReviewSync () {
     error.value = '';
     try {
       const {
-        data, error: err,
+        data, error: error_,
       } = await supabase
         .from('review_state')
         .select('*')
         .eq('user_id', user.value.id);
 
-      if (err) {
-        error.value = err.message;
+      if (error_) {
+        error.value = error_.message;
         return undefined;
       }
 
@@ -167,8 +167,8 @@ export function useReviewSync () {
         };
       }
       return state;
-    } catch (e) {
-      error.value = (e as Error).message;
+    } catch (error_) {
+      error.value = (error_ as Error).message;
       return undefined;
     } finally {
       syncing.value = false;

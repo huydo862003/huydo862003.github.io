@@ -9,49 +9,49 @@ import type {
 } from 'express';
 import multer from 'multer';
 
-export function upload (assetsDir: string) {
-  if (!existsSync(assetsDir)) mkdirSync(assetsDir, {
+export function upload (assetsDirectory: string) {
+  if (!existsSync(assetsDirectory)) mkdirSync(assetsDirectory, {
     recursive: true,
   });
 
   const storage = multer.diskStorage({
-    destination: assetsDir,
-    filename: (_req, file, cb) => cb(null, basename(file.originalname)),
+    destination: assetsDirectory,
+    filename: (_request, file, callback) => callback(null, basename(file.originalname)),
   });
 
   const uploader = multer({
     storage,
   }).single('file');
 
-  return (req: Request, res: Response) => {
-    uploader(req, res, (err) => {
-      if (err) return res.status(500).json({
-        error: err.message,
+  return (request: Request, response: Response) => {
+    uploader(request, response, (error) => {
+      if (error) return response.status(500).json({
+        error: error.message,
       });
-      if (!req.file) return res.status(400).json({
+      if (!request.file) return response.status(400).json({
         error: 'no file',
       });
       // return path relative to public/ so it works as a URL
-      const rel = '/assets/' + req.file.filename;
-      res.json({
-        path: rel,
+      const relative = '/assets/' + request.file.filename;
+      response.json({
+        path: relative,
       });
     });
   };
 }
 
-export function list (assetsDir: string) {
-  return (_req: Request, res: Response) => {
-    if (!existsSync(assetsDir)) return res.json({
+export function list (assetsDirectory: string) {
+  return (_request: Request, response: Response) => {
+    if (!existsSync(assetsDirectory)) return response.json({
       files: [],
     });
-    const files = readdirSync(assetsDir)
-      .filter((f) => !f.startsWith('.'))
-      .map((f) => ({
-        name: f,
-        url: `/assets/${f}`,
+    const files = readdirSync(assetsDirectory)
+      .filter((file) => !file.startsWith('.'))
+      .map((file) => ({
+        name: file,
+        url: `/assets/${file}`,
       }));
-    res.json({
+    response.json({
       files,
     });
   };

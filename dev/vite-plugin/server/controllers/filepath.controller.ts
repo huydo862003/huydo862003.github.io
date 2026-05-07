@@ -21,39 +21,39 @@ const filepathQuery = z.object({
 const ROUTE_PATTERNS: [RegExp, (m: RegExpMatchArray) => string[]][] = [
   [
     /^\/journeys\/([^/]+)\/concepts\/([^/]+)$/,
-    (m) => [`concepts/${m[1]}/${m[2]}.md`],
+    (match) => [`concepts/${match[1]}/${match[2]}.md`],
   ],
   [
     /^\/journeys\/([^/]+)\/flashcards\/([^/]+)$/,
-    (m) => [`flashcards/${m[1]}/${m[2]}.md`],
+    (match) => [`flashcards/${match[1]}/${match[2]}.md`],
   ],
   [
     /^\/journeys\/([^/]+)\/phases\/([^/]+)$/,
-    (m) => [`phases/${m[1]}/${m[2]}.md`],
+    (match) => [`phases/${match[1]}/${match[2]}.md`],
   ],
   // books can be nested in subdirectories
   [
     /^\/journeys\/([^/]+)\/books\/([^/]+)$/,
-    (m) => [
-      `books/${m[2]}.md`,
-      `books/${m[2]}/${m[2]}.md`,
+    (match) => [
+      `books/${match[2]}.md`,
+      `books/${match[2]}/${match[2]}.md`,
     ],
   ],
   [
     /^\/journeys\/([^/]+)\/papers\/([^/]+)$/,
-    (m) => [`papers/${m[2]}.md`],
+    (match) => [`papers/${match[2]}.md`],
   ],
   [
     /^\/journeys\/([^/]+)\/blogs\/([^/]+)$/,
-    (m) => [`blogs/${m[1]}/${m[2]}.md`],
+    (match) => [`blogs/${match[1]}/${match[2]}.md`],
   ],
   [
     /^\/journeys\/([^/]+)$/,
-    (m) => [`journeys/${m[1]}.md`],
+    (match) => [`journeys/${match[1]}.md`],
   ],
   [
     /^\/thoughts\/([^/]+)$/,
-    (m) => [`thoughts/${m[1]}.md`],
+    (match) => [`thoughts/${match[1]}.md`],
   ],
 ];
 
@@ -80,11 +80,11 @@ function findFile (directory: string, filename: string): string | undefined {
 function resolveFilepath (manager: ContentManager, route: string): string | undefined {
   for (const [
     re,
-    fn,
+    function_,
   ] of ROUTE_PATTERNS) {
     const match = route.match(re);
     if (!match) continue;
-    const candidates = fn(match);
+    const candidates = function_(match);
     for (const candidate of candidates) {
       if (manager.contentExists(candidate)) return candidate;
     }
@@ -97,16 +97,16 @@ function resolveFilepath (manager: ContentManager, route: string): string | unde
 }
 
 export function lookup (manager: ContentManager) {
-  return (req: Request, res: Response) => {
-    const parsed = filepathQuery.safeParse(req.query);
-    if (!parsed.success) return res.status(400).json({
+  return (request: Request, response: Response) => {
+    const parsed = filepathQuery.safeParse(request.query);
+    if (!parsed.success) return response.status(400).json({
       error: parsed.error.issues[0].message,
     });
     const filePath = resolveFilepath(manager, parsed.data.route);
-    if (!filePath) return res.status(404).json({
+    if (!filePath) return response.status(404).json({
       error: 'no match',
     });
-    res.json({
+    response.json({
       path: filePath,
     });
   };

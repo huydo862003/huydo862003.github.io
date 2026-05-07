@@ -9,7 +9,7 @@ export type {
   FileData,
 } from '@dev/core/types';
 
-export async function openFile (path: string): Promise<FileData> {
+export async function fetchFile (path: string): Promise<FileData> {
   const {
     data,
   } = await httpClient.get('/file', {

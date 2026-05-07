@@ -125,7 +125,7 @@
 
       <ResourcePagination
         kind="flashcard"
-        :prev="prevCard"
+        :prev="previousCard"
         :next="nextCard"
       />
 
@@ -188,15 +188,15 @@ const flashcardStore = useFlashcardStore();
 const conceptStore = useConceptStore();
 const bookStore = useBookStore();
 
-const card = computed(() => flashcardStore.cards.find((c) => c.slug === cardSlug.value));
+const card = computed(() => flashcardStore.cards.find((flashcard) => flashcard.slug === cardSlug.value));
 
 useSeo({
   title: computed(() => card.value?.question),
   description: computed(() => {
     const currentCard = card.value;
     if (!currentCard) return undefined;
-    const a = currentCard.answer && currentCard.answer !== 'TODO' ? ` Answer: ${currentCard.answer.slice(0, 120)}${120 < currentCard.answer.length ? '…' : ''}` : '';
-    return `Flashcard from the ${currentCard.deck} deck.${a}`;
+    const answerPreview = currentCard.answer && currentCard.answer !== 'TODO' ? ` Answer: ${currentCard.answer.slice(0, 120)}${120 < currentCard.answer.length ? '...' : ''}` : '';
+    return `Flashcard from the ${currentCard.deck} deck.${answerPreview}`;
   }),
   tags: computed(() => {
     const currentCard = card.value;
@@ -219,19 +219,19 @@ watch(cardSlug, () => {
 });
 
 const journeyCards = computed(() => {
-  const slugs = conceptStore.getByJourney(slug.value).map((c) => c.slug);
+  const slugs = conceptStore.getByJourney(slug.value).map((concept) => concept.slug);
   return flashcardStore.getByJourney(slugs);
 });
-const currentIdx = computed(() => journeyCards.value.findIndex((c) => c.slug === cardSlug.value));
-const prevCard = computed(() => {
-  const prev = journeyCards.value[currentIdx.value - 1];
-  return prev && {
-    to: `/journeys/${slug.value}/flashcards/${prev.slug}`,
-    title: prev.question,
+const currentIndex = computed(() => journeyCards.value.findIndex((flashcard) => flashcard.slug === cardSlug.value));
+const previousCard = computed(() => {
+  const previous = journeyCards.value[currentIndex.value - 1];
+  return previous && {
+    to: `/journeys/${slug.value}/flashcards/${previous.slug}`,
+    title: previous.question,
   };
 });
 const nextCard = computed(() => {
-  const next = journeyCards.value[currentIdx.value + 1];
+  const next = journeyCards.value[currentIndex.value + 1];
   return next && {
     to: `/journeys/${slug.value}/flashcards/${next.slug}`,
     title: next.question,
@@ -273,8 +273,8 @@ const masteryLabel = computed(() => {
 
 const resolvedBooks = computed(() =>
   (card.value?.books ?? [])
-    .map((s) => bookStore.getBySlug(s))
-    .filter((b): b is NonNullable<typeof b> => !!b));
+    .map((bookSlug) => bookStore.getBySlug(bookSlug))
+    .filter((book): book is NonNullable<typeof book> => !!book));
 </script>
 
 <style>

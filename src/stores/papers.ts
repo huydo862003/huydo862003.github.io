@@ -8,24 +8,24 @@ import type {
   Paper,
 } from '@/types/paper';
 
-const all: Paper[] = allPapers.map((p) => ({
-  slug: p._meta.fileName.replace('.md', ''),
-  createdAt: p.createdAt ?? '',
-  updatedAt: p.updatedAt ?? '',
-  title: p.title,
-  authors: p.authors,
-  year: String(p.year ?? ''),
-  venue: p.venue,
-  url: p.url,
-  journey: p.journey,
-  tags: p.tags,
-  concepts: p.concepts,
-  status: p.status,
-})).sort((a, b) => a.title.localeCompare(b.title));
+const all: Paper[] = allPapers.map((paper) => ({
+  slug: paper._meta.fileName.replace('.md', ''),
+  createdAt: paper.createdAt ?? '',
+  updatedAt: paper.updatedAt ?? '',
+  title: paper.title,
+  authors: paper.authors,
+  year: String(paper.year ?? ''),
+  venue: paper.venue,
+  url: paper.url,
+  journey: paper.journey,
+  tags: paper.tags,
+  concepts: paper.concepts,
+  status: paper.status,
+})).sort((first, second) => first.title.localeCompare(second.title));
 
-const bySlug = new Map(all.map((p) => [
-  p.slug,
-  p,
+const bySlug = new Map(all.map((paper) => [
+  paper.slug,
+  paper,
 ]));
 
 export const usePaperStore = defineStore('papers', () => {
@@ -33,8 +33,8 @@ export const usePaperStore = defineStore('papers', () => {
   function getBySlug (slug: string) {
     return bySlug.get(slug);
   }
-  function getByJourney (j: string) {
-    return all.filter((p) => p.journey === j);
+  function getByJourney (index: string) {
+    return all.filter((paper) => paper.journey === index);
   }
   return {
     papers,

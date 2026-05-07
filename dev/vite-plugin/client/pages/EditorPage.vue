@@ -20,7 +20,7 @@
               v-if="fileStore.loading"
               class="flex items-center justify-center h-full text-sm text-gray-500"
             >
-              Loading…
+              Loading...
             </div>
             <template v-else-if="fileStore.currentPath">
               <div class="flex flex-col flex-1 overflow-y-auto p-2">
@@ -87,7 +87,7 @@
         <button
           class="icon-btn"
           :disabled="!fileStore.dirty || fileStore.saving"
-          :title="fileStore.saving ? 'Saving…' : fileStore.dirty ? 'Save (Ctrl+S)' : 'Saved'"
+          :title="fileStore.saving ? 'Saving...' : fileStore.dirty ? 'Save (Ctrl+S)' : 'Saved'"
           @click="save"
         >
           <GIcon
@@ -192,24 +192,24 @@ function rebuildContent (fm: Record<string, unknown>, body: string): string {
   const lines: string[] = ['---'];
   for (const [
     key,
-    val,
+    value,
   ] of Object.entries(fm)) {
-    lines.push(formatYamlLine(key, val));
+    lines.push(formatYamlLine(key, value));
   }
   lines.push('---');
   lines.push(body);
   return lines.join('\n');
 }
 
-function formatYamlLine (key: string, val: unknown): string {
-  if (Array.isArray(val)) {
-    if (val.length === 0) return `${key}: []`;
-    return `${key}:\n${val.map((v) => `  - "${v}"`).join('\n')}`;
+function formatYamlLine (key: string, value: unknown): string {
+  if (Array.isArray(value)) {
+    if (value.length === 0) return `${key}: []`;
+    return `${key}:\n${value.map((item) => `  - "${item}"`).join('\n')}`;
   }
-  if (typeof val === 'boolean') return `${key}: ${val}`;
-  if (typeof val === 'number') return `${key}: ${val}`;
-  if (typeof val === 'string') return `${key}: "${val}"`;
-  return `${key}: ${JSON.stringify(val)}`;
+  if (typeof value === 'boolean') return `${key}: ${value}`;
+  if (typeof value === 'number') return `${key}: ${value}`;
+  if (typeof value === 'string') return `${key}: "${value}"`;
+  return `${key}: ${JSON.stringify(value)}`;
 }
 
 function onFrontmatterUpdate (key: string, value: unknown) {
@@ -249,9 +249,9 @@ watch(() => fileStore.content, () => {
 });
 
 // keyboard shortcut
-function onKeydown (e: KeyboardEvent) {
-  if ((e.ctrlKey || e.metaKey) && e.key === 's') {
-    e.preventDefault();
+function onKeydown (event: KeyboardEvent) {
+  if ((event.ctrlKey || event.metaKey) && event.key === 's') {
+    event.preventDefault();
     save();
   }
 }

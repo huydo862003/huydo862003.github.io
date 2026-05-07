@@ -1,11 +1,13 @@
 import {
   Router,
 } from 'express';
-import * as assetsController from '../controllers/assets.controller';
+import {
+  list, upload,
+} from '../controllers/assets.controller';
 
-export function assetsRoutes (assetsDir: string): Router {
+export function assetsRoutes (assetsDirectory: string): Router {
   const router = Router();
-  router.get('/assets', assetsController.list(assetsDir));
-  router.post('/assets/upload', assetsController.upload(assetsDir));
+  router.get('/assets', list(assetsDirectory));
+  router.post('/assets/upload', upload(assetsDirectory));
   return router;
 }

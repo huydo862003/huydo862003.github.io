@@ -1,6 +1,6 @@
 <template>
   <div
-    ref="editorEl"
+    ref="editorElement"
     class="markdown-editor"
   />
 </template>
@@ -30,15 +30,15 @@ const model = defineModel<string>({
   required: true,
 });
 
-const editorEl = ref<HTMLElement>();
+const editorElement = ref<HTMLElement>();
 let crepe: Crepe | undefined;
 let updating = false;
 
 onMounted(async () => {
-  if (!editorEl.value) return;
+  if (!editorElement.value) return;
 
   crepe = new Crepe({
-    root: editorEl.value,
+    root: editorElement.value,
     defaultValue: model.value,
     features: {
       [CrepeFeature.CodeMirror]: true,
@@ -67,7 +67,7 @@ onMounted(async () => {
   });
 
   crepe.on((api) => {
-    api.markdownUpdated((_ctx, md) => {
+    api.markdownUpdated((_context, md) => {
       if (!updating) model.value = md;
     });
   });
@@ -86,8 +86,8 @@ onMounted(async () => {
 });
 
 function renderDetailsBlocks () {
-  if (!editorEl.value) return;
-  const htmlBlocks = editorEl.value.querySelectorAll('[data-node-type="html"] , .html_block');
+  if (!editorElement.value) return;
+  const htmlBlocks = editorElement.value.querySelectorAll('[data-node-type="html"] , .html_block');
   for (const block of htmlBlocks) {
     const text = block.textContent ?? '';
     if (!text.includes('<details>') && !text.includes('<summary>')) continue;

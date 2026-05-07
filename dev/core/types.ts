@@ -28,12 +28,12 @@ export interface FieldSchema {
   hidden?: boolean;
 }
 
-export type EnumDef = string[] | Record<string, string[]>;
+export type EnumDefinition = string[] | Record<string, string[]>;
 
 export interface ContentSchema {
   id: string;
   displayName: string;
-  enums: Record<string, EnumDef>;
+  enums: Record<string, EnumDefinition>;
   fields: Record<string, FieldSchema>;
 }
 

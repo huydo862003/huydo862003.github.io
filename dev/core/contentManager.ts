@@ -24,16 +24,16 @@ function toMarkdown (fm: Frontmatter, body = ''): string {
   const lines = ['---'];
   for (const [
     key,
-    val,
+    value,
   ] of Object.entries(fm)) {
-    if (Array.isArray(val)) {
-      lines.push(val.length === 0 ? `${key}: []` : `${key}:\n${val.map((v) => `  - "${v}"`).join('\n')}`);
-    } else if (typeof val === 'boolean') {
-      lines.push(`${key}: ${val}`);
-    } else if (typeof val === 'number') {
-      lines.push(`${key}: ${val}`);
+    if (Array.isArray(value)) {
+      lines.push(value.length === 0 ? `${key}: []` : `${key}:\n${value.map((item) => `  - "${item}"`).join('\n')}`);
+    } else if (typeof value === 'boolean') {
+      lines.push(`${key}: ${value}`);
+    } else if (typeof value === 'number') {
+      lines.push(`${key}: ${value}`);
     } else {
-      lines.push(`${key}: "${val}"`);
+      lines.push(`${key}: "${value}"`);
     }
   }
   lines.push('---', '', body);
@@ -86,8 +86,10 @@ export class ContentManager {
 
   // reading + updating existing content
 
-  getContent (path: string): { path: string;
-    content: string; } {
+  getContent (path: string): {
+    path: string;
+    content: string;
+  } {
     return {
       path,
       content: this.contentJail.readFileSync(path),
@@ -356,21 +358,23 @@ export class ContentManager {
   }
 
   private getDisplayField (contentType: string): string {
-    const allSchemas = this.schemas() as Record<string, { displayName?: string }>;
+    const allSchemas = this.schemas() as Record<string, {
+      displayName?: string;
+    }>;
     return allSchemas[contentType]?.displayName ?? 'title';
   }
 
   private traverseContent<T> (contentType: string, transform: (path: string, slug: string, fm: Record<string, unknown>) => T | null): T[] {
     const results: T[] = [];
-    const collect = (dir: string) => {
+    const collect = (directory: string) => {
       let entries: string[];
       try {
-        entries = this.contentJail.readdirSync(dir);
+        entries = this.contentJail.readdirSync(directory);
       } catch {
         return;
       }
       for (const entry of entries) {
-        const full = dir === '.' ? entry : `${dir}/${entry}`;
+        const full = directory === '.' ? entry : `${directory}/${entry}`;
         if (!full.startsWith(contentType)) continue;
         let stat;
         try {
@@ -397,7 +401,9 @@ export class ContentManager {
 
   // journey-centric tree
   journeyTree (): JourneyTree {
-    const allSchemas = this.schemas() as Record<string, { displayName?: string }>;
+    const allSchemas = this.schemas() as Record<string, {
+      displayName?: string;
+    }>;
     const GROUPED_TYPES = [
       ContentType.Concepts,
       ContentType.Flashcards,
@@ -416,28 +422,28 @@ export class ContentManager {
 
     // load journeys
     const journeyItems = this.listContent('journeys');
-    const journeys: JourneyGroup[] = journeyItems.map((j) => ({
-      slug: j.slug,
-      title: j.title,
-      path: j.path,
+    const journeys: JourneyGroup[] = journeyItems.map((index) => ({
+      slug: index.slug,
+      title: index.title,
+      path: index.path,
       resources: {} as Record<string, ContentItem[]>,
     }));
 
-    // dir-grouped types: concepts/{journey}/, flashcards/{journey}/, etc.
+    // dir-grouped types: concepts/{journey}/, flashcards/{journey}/, etc
     for (const type of GROUPED_TYPES) {
       const displayField = allSchemas[type]?.displayName ?? 'title';
       for (const journey of journeys) {
-        const dir = `${type}/${journey.slug}`;
+        const directory = `${type}/${journey.slug}`;
         const items: ContentItem[] = [];
         let entries: string[];
         try {
-          entries = this.contentJail.readdirSync(dir);
+          entries = this.contentJail.readdirSync(directory);
         } catch {
           continue;
         }
         for (const entry of entries) {
           if (!entry.endsWith('.md')) continue;
-          const path = `${dir}/${entry}`;
+          const path = `${directory}/${entry}`;
           const slug = entry.replace(/\.md$/, '');
           let title = slug.replace(/-/g, ' ');
           try {
@@ -458,7 +464,7 @@ export class ContentManager {
     for (const type of FM_GROUPED_TYPES) {
       const all = this.listContentWithJourney(type);
       for (const item of all) {
-        const journey = journeys.find((j) => j.slug === item.journey);
+        const journey = journeys.find((index) => index.slug === item.journey);
         if (!journey) continue;
         if (!journey.resources[type]) journey.resources[type] = [];
         journey.resources[type].push({
@@ -482,7 +488,9 @@ export class ContentManager {
     };
   }
 
-  private listContentWithJourney (contentType: string): (ContentItem & { journey: string })[] {
+  private listContentWithJourney (contentType: string): (ContentItem & {
+    journey: string;
+  })[] {
     const displayField = this.getDisplayField(contentType);
     return this.traverseContent(contentType, (path, slug, fm) => {
       const journey = fm.journey ? String(fm.journey) : '';

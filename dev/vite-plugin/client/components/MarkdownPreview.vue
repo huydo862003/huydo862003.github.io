@@ -18,7 +18,9 @@ import {
   renderMarkdown, parseFrontMatter,
 } from '@/utils/content';
 
-const props = defineProps<{ content: string }>();
+const props = defineProps<{
+  content: string;
+}>();
 const renderedHtml = ref('');
 
 let debounceTimer: ReturnType<typeof setTimeout>;

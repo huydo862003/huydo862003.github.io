@@ -6,10 +6,10 @@ import {
 } from './http.client';
 
 export type {
-  FieldSchema, EnumDef, ContentSchema,
+  FieldSchema, EnumDefinition, ContentSchema,
 } from '@dev/core/types';
 
-export async function loadSchemas (): Promise<Record<string, ContentSchema>> {
+export async function fetchSchemas (): Promise<Record<string, ContentSchema>> {
   const {
     data,
   } = await httpClient.get('/schema');

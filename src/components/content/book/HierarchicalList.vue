@@ -67,12 +67,12 @@ function itemKey (item: T): string {
 function itemRoute (item: T): string {
   const template = props.config.routeTemplate;
   const data = item as Record<string, any>;
-  const params = {
+  const parameters = {
     ...context.value,
     ...data,
   };
 
-  return template.replace(/{(\w+)}/g, (_, key) => params[key] ?? '');
+  return template.replace(/{(\w+)}/g, (_, key) => parameters[key] ?? '');
 }
 
 function isActive (item: T): boolean {

@@ -15,18 +15,18 @@ export interface KeyBinding {
 
 const globalBindings = ref<KeyBinding[]>([]);
 
-function matches (e: KeyboardEvent, b: KeyBinding): boolean {
-  return e.key.toLowerCase() === b.key.toLowerCase()
-    && !!b.meta === (e.metaKey || e.ctrlKey)
-    && !!b.shift === e.shiftKey
-    && !!b.alt === e.altKey;
+function matches (event: KeyboardEvent, binding: KeyBinding): boolean {
+  return event.key.toLowerCase() === binding.key.toLowerCase()
+    && !!binding.meta === (event.metaKey || event.ctrlKey)
+    && !!binding.shift === event.shiftKey
+    && !!binding.alt === event.altKey;
 }
 
-function onKeyDown (e: KeyboardEvent) {
-  for (const b of globalBindings.value) {
-    if (matches(e, b)) {
-      e.preventDefault();
-      b.handler();
+function onKeyDown (event: KeyboardEvent) {
+  for (const binding of globalBindings.value) {
+    if (matches(event, binding)) {
+      event.preventDefault();
+      binding.handler();
       return;
     }
   }
@@ -43,7 +43,7 @@ export function useKeyboard () {
   function register (bindings: KeyBinding[]) {
     globalBindings.value.push(...bindings);
     onUnmounted(() => {
-      globalBindings.value = globalBindings.value.filter((b) => !bindings.includes(b));
+      globalBindings.value = globalBindings.value.filter((binding) => !bindings.includes(binding));
     });
   }
 
@@ -53,11 +53,11 @@ export function useKeyboard () {
   };
 }
 
-export function formatShortcut (b: KeyBinding): string[] {
+export function formatShortcut (binding: KeyBinding): string[] {
   const parts: string[] = [];
-  if (b.meta) parts.push(navigator?.platform?.includes('Mac') ? '⌘' : 'Ctrl');
-  if (b.shift) parts.push('⇧');
-  if (b.alt) parts.push(navigator?.platform?.includes('Mac') ? '⌥' : 'Alt');
-  parts.push(b.key.length === 1 ? b.key.toUpperCase() : b.key);
+  if (binding.meta) parts.push(navigator?.platform?.includes('Mac') ? '⌘' : 'Ctrl');
+  if (binding.shift) parts.push('⇧');
+  if (binding.alt) parts.push(navigator?.platform?.includes('Mac') ? '⌥' : 'Alt');
+  parts.push(binding.key.length === 1 ? binding.key.toUpperCase() : binding.key);
   return parts;
 }

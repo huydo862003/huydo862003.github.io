@@ -69,11 +69,11 @@ const renderChildren = computed(() => props.config.renderChildren !== false);
 const to = computed(() => {
   const template = props.config.routeTemplate;
   const data = props.data as Record<string, any>;
-  const params = {
+  const parameters = {
     ...context.value,
     ...data,
   };
-  return template.replace(/{(\w+)}/g, (_, key) => params[key] ?? '');
+  return template.replace(/{(\w+)}/g, (_, key) => parameters[key] ?? '');
 });
 
 const showMeta = computed(() => 0 < props.config.metaKeys?.length ?? 0);

@@ -57,7 +57,7 @@
 
       <ResourcePagination
         kind="concept"
-        :prev="prevConcept"
+        :prev="previousConcept"
         :next="nextConcept"
       />
 
@@ -138,16 +138,16 @@ useSeo({
 });
 
 const journeyConcepts = computed(() => conceptStore.getByJourney(slug.value));
-const currentIdx = computed(() => journeyConcepts.value.findIndex((c) => c.slug === conceptSlug.value));
-const prevConcept = computed(() => {
-  const prev = journeyConcepts.value[currentIdx.value - 1];
-  return prev && {
-    to: `/journeys/${slug.value}/concepts/${prev.slug}`,
-    title: prev.title,
+const currentIndex = computed(() => journeyConcepts.value.findIndex((concept) => concept.slug === conceptSlug.value));
+const previousConcept = computed(() => {
+  const previous = journeyConcepts.value[currentIndex.value - 1];
+  return previous && {
+    to: `/journeys/${slug.value}/concepts/${previous.slug}`,
+    title: previous.title,
   };
 });
 const nextConcept = computed(() => {
-  const next = journeyConcepts.value[currentIdx.value + 1];
+  const next = journeyConcepts.value[currentIndex.value + 1];
   return next && {
     to: `/journeys/${slug.value}/concepts/${next.slug}`,
     title: next.title,
@@ -162,13 +162,13 @@ const {
 watch(concept, () => reloadContent());
 
 const displayTags = computed(() =>
-  (concept.value?.tags ?? []).filter((t) => t !== slug.value));
+  (concept.value?.tags ?? []).filter((tag) => tag !== slug.value));
 
 const bookItems = computed(() =>
-  (concept.value?.books ?? []).map((b) => ({
-    value: b,
-    label: formatSlug(b),
-    to: `/journeys/${slug.value}/books/${b}`,
+  (concept.value?.books ?? []).map((bookSlug) => ({
+    value: bookSlug,
+    label: formatSlug(bookSlug),
+    to: `/journeys/${slug.value}/books/${bookSlug}`,
     as: RouterLink,
   })));
 </script>

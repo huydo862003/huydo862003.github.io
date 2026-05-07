@@ -21,7 +21,9 @@ let mdInstance: MarkdownItType | undefined;
 async function getMd () {
   if (mdInstance) return mdInstance;
 
-  const LANG_IMPORTS: [string, () => Promise<{ default: unknown }>][] = [
+  const LANG_IMPORTS: [string, () => Promise<{
+    default: unknown;
+  }>][] = [
     [
       'haskell',
       () => import('highlight.js/lib/languages/haskell'),
@@ -84,15 +86,17 @@ async function getMd () {
     import('katex'),
     import('highlight.js/lib/core'),
     ...LANG_IMPORTS.map(([
-      , fn,
-    ]) => fn()),
+      , function_,
+    ]) => function_()),
     // Side-effect CSS imports (no value needed)
     import('katex/dist/katex.min.css'),
     import('highlight.js/styles/github.css'),
   ]);
 
-  type LanguageFn = Parameters<typeof hljs.registerLanguage>[1];
-  LANG_IMPORTS.forEach(([name], i) => hljs.registerLanguage(name, (langMods[i] as { default: LanguageFn }).default));
+  type LanguageFunction = Parameters<typeof hljs.registerLanguage>[1];
+  LANG_IMPORTS.forEach(([name], index) => hljs.registerLanguage(name, (langMods[index] as {
+    default: LanguageFunction;
+  }).default));
   hljs.registerAliases([
     'coq',
     'rocq',
@@ -105,10 +109,10 @@ async function getMd () {
     html: true,
     linkify: true,
     typographer: false,
-    highlight (str: string, lang: string) {
+    highlight (string_: string, lang: string) {
       if (lang && hljs.getLanguage(lang)) {
         try {
-          return hljs.highlight(str, {
+          return hljs.highlight(string_, {
             language: lang,
           }).value;
         } catch { /* fall through */ }
@@ -138,8 +142,10 @@ async function getMd () {
   ];
   for (const type of CALLOUT_TYPES) {
     md.use(container, type, {
-      render (tokens: { nesting: number }[], idx: number) {
-        return tokens[idx].nesting === 1
+      render (tokens: {
+        nesting: number;
+      }[], index: number) {
+        return tokens[index].nesting === 1
           ? `<div class="callout callout-${type}"><span class="callout-label">${type}</span>\n`
           : '</div>\n';
       },
@@ -158,8 +164,8 @@ async function getMd () {
   // Wiki-link [[slug]] or [[slug|label]] resolver
   const crossLinks = buildCrossLinks();
   md.inline.ruler.push('wiki_link', (state) => {
-    const src = state.src.slice(state.pos);
-    const match = src.match(/^\[\[([^\]|]+)(?:\|([^\]]+))?\]\]/);
+    const source = state.src.slice(state.pos);
+    const match = source.match(/^\[\[([^\]|]+)(?:\|([^\]]+))?\]\]/);
     if (!match) return false;
 
     const slug = match[1].trim();
@@ -189,63 +195,63 @@ interface CrossLink {
 function buildCrossLinks (): Map<string, CrossLink> {
   const map = new Map<string, CrossLink>();
 
-  for (const c of allConcepts) {
-    const slug = c._meta.fileName.replace('.md', '');
-    const journey = (c as Record<string, unknown>).journey as string || '';
+  for (const concept of allConcepts) {
+    const slug = concept._meta.fileName.replace('.md', '');
+    const journey = (concept as Record<string, unknown>).journey as string || '';
     map.set(slug, {
       to: `/journeys/${journey}/concepts/${slug}`,
-      title: c.title,
+      title: concept.title,
     });
   }
 
-  for (const b of allBooks) {
-    const slug = b._meta.fileName.replace('.md', '');
-    const journey = (b as Record<string, unknown>).journey as string || '';
+  for (const book of allBooks) {
+    const slug = book._meta.fileName.replace('.md', '');
+    const journey = (book as Record<string, unknown>).journey as string || '';
     map.set(slug, {
       to: `/journeys/${journey}/books/${slug}`,
-      title: b.title,
+      title: book.title,
     });
   }
 
-  for (const f of allFlashcards) {
-    const slug = f._meta.fileName.replace('.md', '');
+  for (const flashcard of allFlashcards) {
+    const slug = flashcard._meta.fileName.replace('.md', '');
     map.set(slug, {
       to: `/journeys/plt/flashcards/${slug}`,
-      title: f.question,
+      title: flashcard.question,
     });
   }
 
-  for (const p of allPhases) {
-    const slug = p._meta.fileName.replace('.md', '');
-    const journey = (p as Record<string, unknown>).journey as string || '';
+  for (const phase of allPhases) {
+    const slug = phase._meta.fileName.replace('.md', '');
+    const journey = (phase as Record<string, unknown>).journey as string || '';
     map.set(slug, {
       to: `/journeys/${journey}/phases/${slug}`,
-      title: p.title,
+      title: phase.title,
     });
   }
 
-  for (const j of allJourneys) {
-    const slug = j._meta.fileName.replace('.md', '');
+  for (const index of allJourneys) {
+    const slug = index._meta.fileName.replace('.md', '');
     map.set(slug, {
       to: `/journeys/${slug}`,
-      title: j.title,
+      title: index.title,
     });
   }
 
-  for (const t of allThoughts) {
-    const slug = t._meta.fileName.replace('.md', '');
+  for (const thought of allThoughts) {
+    const slug = thought._meta.fileName.replace('.md', '');
     map.set(slug, {
       to: `/thoughts/${slug}`,
-      title: t.title,
+      title: thought.title,
     });
   }
 
-  for (const b of allBlogs) {
-    const slug = b._meta.fileName.replace('.md', '');
-    const journey = (b as Record<string, unknown>).journey as string || '';
+  for (const blog of allBlogs) {
+    const slug = blog._meta.fileName.replace('.md', '');
+    const journey = (blog as Record<string, unknown>).journey as string || '';
     map.set(slug, {
       to: `/journeys/${journey}/blogs/${slug}`,
-      title: b.title,
+      title: blog.title,
     });
   }
 

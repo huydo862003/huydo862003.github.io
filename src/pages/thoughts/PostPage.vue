@@ -29,7 +29,7 @@
       </article>
       <ResourcePagination
         kind="thought"
-        :prev="prevPost"
+        :prev="previousPost"
         :next="nextPost"
       />
 
@@ -80,16 +80,16 @@ useSeo({
   path: computed(() => `/thoughts/${postSlug.value}`),
 });
 
-const currentIdx = computed(() => thoughtStore.thoughts.findIndex((t) => t.slug === postSlug.value));
-const prevPost = computed(() => {
-  const thought = thoughtStore.thoughts[currentIdx.value - 1];
+const currentIndex = computed(() => thoughtStore.thoughts.findIndex((thought) => thought.slug === postSlug.value));
+const previousPost = computed(() => {
+  const thought = thoughtStore.thoughts[currentIndex.value - 1];
   return thought && {
     to: `/thoughts/${thought.slug}`,
     title: thought.title,
   };
 });
 const nextPost = computed(() => {
-  const thought = thoughtStore.thoughts[currentIdx.value + 1];
+  const thought = thoughtStore.thoughts[currentIndex.value + 1];
   return thought && {
     to: `/thoughts/${thought.slug}`,
     title: thought.title,

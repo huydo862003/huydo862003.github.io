@@ -8,23 +8,23 @@ import type {
   Concept,
 } from '@/types/concept';
 
-const all: Concept[] = allConcepts.map((c) => ({
-  slug: c._meta.fileName.replace('.md', ''),
-  createdAt: c.createdAt,
-  updatedAt: c.updatedAt,
-  title: c.title,
-  journey: c.journey,
-  description: c.description ?? '',
-  status: c.status as Concept['status'],
-  tags: c.tags,
-  books: c.books,
-  dependsOn: c.dependsOn,
-  blocks: c.blocks,
-})).sort((a, b) => a.title.localeCompare(b.title));
+const all: Concept[] = allConcepts.map((concept) => ({
+  slug: concept._meta.fileName.replace('.md', ''),
+  createdAt: concept.createdAt,
+  updatedAt: concept.updatedAt,
+  title: concept.title,
+  journey: concept.journey,
+  description: concept.description ?? '',
+  status: concept.status as Concept['status'],
+  tags: concept.tags,
+  books: concept.books,
+  dependsOn: concept.dependsOn,
+  blocks: concept.blocks,
+})).sort((first, second) => first.title.localeCompare(second.title));
 
-const bySlug = new Map(all.map((c) => [
-  c.slug,
-  c,
+const bySlug = new Map(all.map((concept) => [
+  concept.slug,
+  concept,
 ]));
 
 export const useConceptStore = defineStore('concepts', () => {
@@ -32,18 +32,18 @@ export const useConceptStore = defineStore('concepts', () => {
   function getBySlug (slug: string) {
     return bySlug.get(slug);
   }
-  function getByJourney (j: string) {
-    return all.filter((c) => c.journey === j);
+  function getByJourney (index: string) {
+    return all.filter((concept) => concept.journey === index);
   }
-  function statsByJourney (j?: string) {
-    const pool = j ? getByJourney(j) : all;
+  function statsByJourney (index?: string) {
+    const pool = index ? getByJourney(index) : all;
     const counts = {
       total: pool.length,
       learning: 0,
       reviewing: 0,
       mastered: 0,
     };
-    for (const c of pool) counts[c.status]++;
+    for (const concept of pool) counts[concept.status]++;
     return counts;
   }
   return {

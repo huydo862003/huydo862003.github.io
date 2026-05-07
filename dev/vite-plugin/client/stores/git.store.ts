@@ -7,7 +7,9 @@ import {
 import type {
   GitFile,
 } from '../services/git.service';
-import * as gitService from '../services/git.service';
+import {
+  fetchGitStatus, submitCommit,
+} from '../services/git.service';
 
 export const useGitStore = defineStore('git', () => {
   const files = ref<GitFile[]>([]);
@@ -16,15 +18,15 @@ export const useGitStore = defineStore('git', () => {
   async function loadStatus () {
     loading.value = true;
     try {
-      files.value = await gitService.loadStatus();
+      files.value = await fetchGitStatus();
     } finally {
       loading.value = false;
     }
   }
 
   async function commit (message: string) {
-    await gitService.commit(message);
-    await loadStatus();
+    await submitCommit(message);
+    await fetchGitStatus();
   }
 
   return {

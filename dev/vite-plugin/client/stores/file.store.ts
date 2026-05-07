@@ -4,7 +4,9 @@ import {
 import {
   ref, computed,
 } from 'vue';
-import * as fileService from '../services/file.service';
+import {
+  fetchFile, resolveFilepath, updateFile,
+} from '../services/file.service';
 import {
   useTreeStore,
 } from './tree.store';
@@ -31,7 +33,7 @@ export const useFileStore = defineStore('file', () => {
   async function openFile (path: string) {
     loading.value = true;
     try {
-      const data = await fileService.openFile(path);
+      const data = await fetchFile(path);
       currentPath.value = path;
       originalContent.value = data.content;
       content.value = data.content;
@@ -42,7 +44,7 @@ export const useFileStore = defineStore('file', () => {
 
   async function openFromRoute (route: string) {
     try {
-      const path = await fileService.resolveFilepath(route);
+      const path = await resolveFilepath(route);
       await openFile(path);
     } catch {
       // route couldn't be resolved
@@ -53,7 +55,7 @@ export const useFileStore = defineStore('file', () => {
     if (!currentPath.value || !dirty.value) return;
     saving.value = true;
     try {
-      await fileService.updateFile(currentPath.value, content.value);
+      await updateFile(currentPath.value, content.value);
       originalContent.value = content.value;
     } finally {
       saving.value = false;

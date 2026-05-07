@@ -120,7 +120,7 @@ const blogStore = useBlogs();
 
 const sites = computed(() => blogStore.getSites(slug.value));
 const standalonePosts = computed(() =>
-  blogStore.getPosts(slug.value).filter((p) => !p.site));
+  blogStore.getPosts(slug.value).filter((post) => !post.site));
 
 function sitePosts (siteSlug: string) {
   return blogStore.getPostsBySite(siteSlug);

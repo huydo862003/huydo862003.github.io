@@ -20,13 +20,13 @@ import {
 } from './server/routes';
 
 export function editorPlugin (): Plugin {
-  const contentDir = realpathSync(join(process.cwd(), 'content'));
+  const contentDirectory = realpathSync(join(process.cwd(), 'content'));
 
   return {
     name: 'local-editor',
     apply: 'serve',
     configureServer () {
-      const manager = new ContentManager(contentDir);
+      const manager = new ContentManager(contentDirectory);
 
       const app = express();
       app.use(cors());
@@ -40,7 +40,7 @@ export function editorPlugin (): Plugin {
     handleHotUpdate ({
       file,
     }) {
-      if (file.startsWith(contentDir) && file.endsWith('.md')) return [];
+      if (file.startsWith(contentDirectory) && file.endsWith('.md')) return [];
     },
   };
 }

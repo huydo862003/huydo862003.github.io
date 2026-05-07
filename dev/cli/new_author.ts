@@ -13,7 +13,7 @@ const manager = new ContentManager(resolve(import.meta.dirname, '../../content')
 
 const name = await input({
   message: 'Name:',
-  validate: (v) => v.trim() !== '' || 'Required',
+  validate: (value) => value.trim() !== '' || 'Required',
 });
 const bio = await input({
   message: 'Bio (optional):',
