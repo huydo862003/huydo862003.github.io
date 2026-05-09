@@ -2,17 +2,26 @@
   <div class="page">
     <template v-if="post">
       <div class="top-bar">
-        <router-link
+        <RouterLink
           to="/thoughts"
           class="back"
         >
           &larr; all thoughts
-        </router-link>
-        <JourneyBreadcrumb :crumbs="[{ label: 'Thoughts', to: '/thoughts' }]" />
+        </RouterLink>
+        <JourneyBreadcrumb
+          :crumbs="[
+            {
+              label: 'Thoughts',
+              to: '/thoughts',
+            },
+          ]"
+        />
       </div>
       <article>
-        <h1>{{ post.title }}</h1>
-        <p class="meta">
+        <h1 class="text-xl font-bold mb-1">
+          {{ post.title }}
+        </h1>
+        <p class="post-date text-xs mb-8">
           {{ post.date }}
         </p>
         <div
@@ -37,9 +46,9 @@
     </template>
     <template v-else>
       <p>
-        Not found. <router-link to="/thoughts">
+        Not found. <RouterLink to="/thoughts">
           Back to thoughts
-        </router-link>
+        </RouterLink>
       </p>
     </template>
   </div>
@@ -83,6 +92,7 @@ useSeo({
 const currentIndex = computed(() => thoughtStore.thoughts.findIndex((thought) => thought.slug === postSlug.value));
 const previousPost = computed(() => {
   const thought = thoughtStore.thoughts[currentIndex.value - 1];
+
   return thought && {
     to: `/thoughts/${thought.slug}`,
     title: thought.title,
@@ -90,6 +100,7 @@ const previousPost = computed(() => {
 });
 const nextPost = computed(() => {
   const thought = thoughtStore.thoughts[currentIndex.value + 1];
+
   return thought && {
     to: `/thoughts/${thought.slug}`,
     title: thought.title,
@@ -98,16 +109,10 @@ const nextPost = computed(() => {
 const {
   state: content, execute: reloadContent,
 } = useAsyncState(async () => post.value ? loadContent(post.value.slug) : '', '');
+
 watch(post, () => reloadContent());
 </script>
 
 <style scoped>
-@reference "@/style.css";
-h1 {
-  @apply text-xl font-bold mb-1;
-}
-.meta {
-  @apply text-xs mb-8;
-  color: var(--gui-neutral-solid);
-}
+.post-date { color: var(--gui-neutral-solid); }
 </style>

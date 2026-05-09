@@ -29,12 +29,15 @@ const bySlug = new Map(all.map((thought) => [
 export const useThoughtStore = defineStore('thoughts', () => {
   const thoughts = all.filter((thought) => !thought.archived);
   const archivedThoughts = all.filter((thought) => thought.archived);
+
   function getBySlug (slug: string) {
     return bySlug.get(slug);
   }
+
   function getRecent (n: number) {
     return thoughts.slice(0, n);
   }
+
   return {
     thoughts,
     archivedThoughts,

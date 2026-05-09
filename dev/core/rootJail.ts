@@ -20,6 +20,7 @@ export class RootJail {
 
   constructor (root: string) {
     const resolved = realpathSync(normalize(root));
+
     if (!statSync(resolved).isDirectory()) throw new Error(`root must be a directory: ${resolved}`);
     this.root = resolved.endsWith(sep) ? resolved : resolved + sep;
   }
@@ -32,29 +33,37 @@ export class RootJail {
   resolve (path: string): string {
     if (/\0/.test(path)) throw new JailEscapeError(path, this.root);
     const contained = normalize(resolve(this.root, path));
+
     if (!this.inside(contained)) throw new JailEscapeError(path, this.root);
 
     if (existsSync(contained)) {
       const real = realpathSync(contained);
+
       if (!this.inside(real)) throw new JailEscapeError(path, this.root);
+
       return real;
     }
 
     // new path: check nearest existing ancestor
     let ancestor = contained;
+
     while (!existsSync(ancestor)) {
       const parent = join(ancestor, '..');
+
       if (parent === ancestor) throw new JailEscapeError(path, this.root);
       ancestor = parent;
     }
     if (!this.inside(realpathSync(ancestor))) throw new JailEscapeError(path, this.root);
+
     return contained;
   }
 
   isUnsafeSymlink (abs: string): boolean {
     try {
       const stat = lstatSync(abs);
+
       if (!stat.isSymbolicLink()) return false;
+
       return !this.inside(realpathSync(abs));
     } catch {
       return true;
@@ -73,6 +82,7 @@ export class RootJail {
   // always creates new - throws if file already exists
   writeFileSync (path: string, content: string): void {
     const abs = this.resolve(path);
+
     if (existsSync(abs)) throw new Error(`file already exists: ${path}`);
     writeFileSync(abs, content, 'utf-8');
   }

@@ -1,20 +1,35 @@
 <template>
   <div class="page">
     <div class="top-bar">
-      <router-link
+      <RouterLink
         :to="`/journeys/${slug}`"
         class="back"
       >
         &larr; back to journey
-      </router-link>
-      <JourneyBreadcrumb :crumbs="[{ label: 'Journeys', to: '/journeys' }, { label: slug, to: `/journeys/${slug}` }, { label: 'Books', to: `/journeys/${slug}/books` }]" />
+      </RouterLink>
+      <JourneyBreadcrumb
+        :crumbs="[
+          {
+            label: 'Journeys',
+            to: '/journeys',
+          },
+          {
+            label: slug,
+            to: `/journeys/${slug}`,
+          },
+          {
+            label: 'Books',
+            to: `/journeys/${slug}/books`,
+          },
+        ]"
+      />
     </div>
     <h1 class="text-xl font-bold mb-6">
       Books
     </h1>
 
     <div class="flex flex-col gap-3">
-      <SCard
+      <BookCard
         v-for="book in rootBooks"
         :key="book.slug"
         :data="book"
@@ -48,10 +63,10 @@ import {
 import {
   useSeo,
 } from '@/composables/useSeo';
-import SCard from '@/components/content/book/SCard.vue';
+import BookCard from '@/components/content/book/BookCard.vue';
 import type {
-  SCardConfig,
-} from '@/components/content/book/SCard.vue';
+  BookCardConfig,
+} from '@/components/content/book/BookCard.vue';
 import type {
   Book,
 } from '@/types/book';
@@ -69,7 +84,7 @@ useSeo({
 const journeyBooks = computed(() => bookStore.getByJourney(slug.value));
 const rootBooks = computed(() => journeyBooks.value.filter((book) => !book.parent));
 
-const bookConfig = computed((): SCardConfig<Book> => ({
+const bookConfig = computed((): BookCardConfig<Book> => ({
   titleKey: 'title',
   icon: GIconName.Book,
   routeTemplate: '/journeys/{journeySlug}/books/{slug}',
@@ -87,6 +102,6 @@ const bookConfig = computed((): SCardConfig<Book> => ({
 }));
 </script>
 
-<style>
+<style scoped>
 .books-empty { color: var(--gui-neutral-solid); }
 </style>

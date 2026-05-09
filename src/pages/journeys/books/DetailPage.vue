@@ -1,13 +1,28 @@
 <template>
   <div class="page">
     <div class="top-bar">
-      <router-link
+      <RouterLink
         :to="`/journeys/${slug}/books`"
         class="back"
       >
         &larr; back to books
-      </router-link>
-      <JourneyBreadcrumb :crumbs="[{ label: 'Journeys', to: '/journeys' }, { label: slug, to: `/journeys/${slug}` }, { label: 'Books', to: `/journeys/${slug}/books` }]" />
+      </RouterLink>
+      <JourneyBreadcrumb
+        :crumbs="[
+          {
+            label: 'Journeys',
+            to: '/journeys',
+          },
+          {
+            label: slug,
+            to: `/journeys/${slug}`,
+          },
+          {
+            label: 'Books',
+            to: `/journeys/${slug}/books`,
+          },
+        ]"
+      />
     </div>
 
     <template v-if="book">
@@ -39,8 +54,8 @@
               v-if="book.url"
               :href="book.url"
               target="_blank"
-              rel="noopener"
-              class="book-url inline-flex items-center gap-1 text-xs no-underline hover:underline"
+              rel="noopener noreferrer"
+              class="book-ext-link inline-flex items-center gap-1 text-xs no-underline hover:underline"
             >
               <GIcon
                 :name="GIconName.ExternalLink"
@@ -54,14 +69,14 @@
           </div>
           <p
             v-if="book.description && !book.parent"
-            class="book-description text-xs mt-1 max-w-prose"
+            class="book-desc text-xs mt-1 max-w-prose"
           >
             {{ book.description }}
           </p>
         </div>
       </div>
 
-      <SCard
+      <BookCard
         v-if="rootBook"
         :data="rootBook"
         :config="bookConfig"
@@ -89,18 +104,18 @@
             :value="c"
             :label="formatSlug(c)"
           >
-            <router-link
+            <RouterLink
               :to="`/journeys/${slug}/concepts/${c}`"
               class="book-concept-link block text-sm no-underline truncate transition-colors py-1 border-b"
             >
               {{ formatSlug(c) }}
-            </router-link>
+            </RouterLink>
           </GFilterableItem>
         </GFilterable>
       </div>
 
       <div class="mb-6">
-        <h3 class="book-section-label text-xs font-semibold uppercase tracking-wider mb-3 pb-1 border-b">
+        <h3 class="section-label text-xs font-semibold uppercase tracking-wider mb-3 pb-1 border-b">
           Content
         </h3>
         <div
@@ -110,7 +125,7 @@
         />
         <p
           v-else
-          class="book-empty text-sm"
+          class="content-empty text-sm"
         >
           No content yet.
         </p>
@@ -118,17 +133,23 @@
 
       <ResourcePagination
         kind="chapter"
-        :prev="previousChapter && { to: `/journeys/${slug}/books/${previousChapter.slug}`, title: previousChapter.title }"
-        :next="nextChapter && { to: `/journeys/${slug}/books/${nextChapter.slug}`, title: nextChapter.title }"
+        :prev="previousChapter && {
+          to: `/journeys/${slug}/books/${previousChapter.slug}`,
+          title: previousChapter.title,
+        }"
+        :next="nextChapter && {
+          to: `/journeys/${slug}/books/${nextChapter.slug}`,
+          title: nextChapter.title,
+        }"
       />
 
       <GiscusComment />
     </template>
     <template v-else>
       <p>
-        Not found. <router-link :to="`/journeys/${slug}/books`">
+        Not found. <RouterLink :to="`/journeys/${slug}/books`">
           Back to books
-        </router-link>
+        </RouterLink>
       </p>
     </template>
   </div>
@@ -162,10 +183,10 @@ import {
 import type {
   Book,
 } from '@/types/book';
-import SCard from '@/components/content/book/SCard.vue';
+import BookCard from '@/components/content/book/BookCard.vue';
 import type {
-  SCardConfig,
-} from '@/components/content/book/SCard.vue';
+  BookCardConfig,
+} from '@/components/content/book/BookCard.vue';
 import ResourcePagination from '@/components/content/ResourcePagination.vue';
 import JourneyBreadcrumb from '@/components/common/JourneyBreadcrumb.vue';
 
@@ -180,7 +201,7 @@ const bookStore = useBookStore();
 
 const book = computed(() => bookStore.getBySlug(bookSlug.value));
 
-const bookConfig = computed((): SCardConfig<Book> => ({
+const bookConfig = computed((): BookCardConfig<Book> => ({
   titleKey: 'title',
   icon: GIconName.Book,
   routeTemplate: '/journeys/{journeySlug}/books/{slug}',
@@ -199,6 +220,7 @@ const bookConfig = computed((): SCardConfig<Book> => ({
 }));
 
 const BASE = 'https://huydo862003.github.io';
+
 useSeo({
   title: computed(() => book.value?.title),
   description: computed(() => book.value?.description || (book.value?.author ? `By ${book.value.author}` : undefined)),
@@ -212,11 +234,14 @@ useSeo({
 
 const rootBook = computed(() => {
   let current = book.value;
+
   while (current?.parent) {
     const parent = bookStore.getBySlug(current.parent);
+
     if (!parent) break;
     current = parent;
   }
+
   return current;
 });
 const {
@@ -225,40 +250,58 @@ const {
   async () => book.value ? loadContent(book.value.slug) : '',
   '',
 );
+
 watch(book, () => reloadContent());
 
 const allJourneyBooks = computed(() => {
   if (!book.value) return [];
   const flat: Book[] = [];
+
   function collect (slugs: string[]) {
     for (const bookSlugEntry of slugs) {
       const bookEntry = bookStore.getBySlug(bookSlugEntry);
+
       if (bookEntry) {
         flat.push(bookEntry);
         if (bookEntry.children.length) collect(bookEntry.children);
       }
     }
   }
+
   const roots = bookStore.getByJourney(slug.value).filter((bookEntry) => !bookEntry.parent);
+
   collect(roots.map((bookEntry) => bookEntry.slug));
+
   return flat;
 });
 
 const currentIndex = computed(() => allJourneyBooks.value.findIndex((entry) => entry.slug === bookSlug.value));
 const previousChapter = computed(() => allJourneyBooks.value[currentIndex.value - 1]);
 const nextChapter = computed(() => allJourneyBooks.value[currentIndex.value + 1]);
-
 </script>
 
-<style>
-.book-cover { border-color: color-mix(in oklch, var(--gui-neutral-border) 50%, transparent); }
-.book-author { color: var(--gui-neutral-solid); }
-.book-date { color: color-mix(in oklch, var(--gui-neutral-solid) 60%, transparent); }
-.book-url { color: var(--gui-info-solid); }
-.book-isbn { color: color-mix(in oklch, var(--gui-neutral-solid) 60%, transparent); }
-.book-description { color: var(--gui-neutral-fg-muted); }
-.book-concept-link { color: var(--gui-neutral-fg-muted); border-color: var(--gui-neutral-border); }
+<style scoped>
+.book-cover {
+  border-color: color-mix(in oklch, var(--gui-neutral-border) 50%, transparent);
+}
+.book-author {
+  color: var(--gui-neutral-solid);
+}
+.book-date {
+  color: color-mix(in oklch, var(--gui-neutral-solid) 60%, transparent);
+}
+.book-ext-link {
+  color: var(--gui-info-solid);
+}
+.book-isbn {
+  color: color-mix(in oklch, var(--gui-neutral-solid) 60%, transparent);
+}
+.book-desc {
+  color: var(--gui-neutral-fg-muted);
+}
+.book-concept-link {
+  color: var(--gui-neutral-fg-muted);
+  border-color: var(--gui-neutral-border);
+}
 .book-concept-link:hover { color: var(--gui-info-solid); }
-.book-section-label { color: var(--gui-neutral-solid); border-color: var(--gui-neutral-border); }
-.book-empty { color: var(--gui-neutral-solid); }
 </style>

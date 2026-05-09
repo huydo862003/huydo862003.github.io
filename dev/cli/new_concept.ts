@@ -42,4 +42,5 @@ const path = manager.createConcept(journey, title, {
   author,
   status,
 });
+
 console.log(`Created: ${path}`);

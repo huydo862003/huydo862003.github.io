@@ -1,13 +1,28 @@
 <template>
   <div class="page">
     <div class="top-bar">
-      <router-link
+      <RouterLink
         :to="`/journeys/${slug}/concepts`"
         class="back"
       >
         &larr; back to concepts
-      </router-link>
-      <JourneyBreadcrumb :crumbs="[{ label: 'Journeys', to: '/journeys' }, { label: slug, to: `/journeys/${slug}` }, { label: 'Concepts', to: `/journeys/${slug}/concepts` }]" />
+      </RouterLink>
+      <JourneyBreadcrumb
+        :crumbs="[
+          {
+            label: 'Journeys',
+            to: '/journeys',
+          },
+          {
+            label: slug,
+            to: `/journeys/${slug}`,
+          },
+          {
+            label: 'Concepts',
+            to: `/journeys/${slug}/concepts`,
+          },
+        ]"
+      />
     </div>
 
     <template v-if="concept">
@@ -18,7 +33,10 @@
         <span
           v-tooltip="concept.status"
           class="status-ring"
-          :style="{ '--progress': statusProgress(concept.status), '--ring-color': ringColor(statusProgress(concept.status)) }"
+          :style="{
+            '--progress': statusProgress(concept.status),
+            '--ring-color': ringColor(statusProgress(concept.status)),
+          }"
         />
         <GPill
           v-for="tag in displayTags"
@@ -39,7 +57,7 @@
       />
 
       <div class="mb-6">
-        <h3 class="concept-detail-label text-xs font-semibold uppercase tracking-wider mb-3 pb-1 border-b">
+        <h3 class="concept-section-heading text-xs font-semibold uppercase tracking-wider mb-3 pb-1 border-b">
           Content
         </h3>
         <div
@@ -49,7 +67,7 @@
         />
         <p
           v-else
-          class="concept-detail-empty text-sm"
+          class="content-empty text-sm"
         >
           No content yet.
         </p>
@@ -65,9 +83,9 @@
     </template>
     <template v-else>
       <p>
-        Not found. <router-link :to="`/journeys/${slug}/concepts`">
+        Not found. <RouterLink :to="`/journeys/${slug}/concepts`">
           Back to concepts
-        </router-link>
+        </RouterLink>
       </p>
     </template>
   </div>
@@ -114,16 +132,21 @@ useSeo({
   title: computed(() => concept.value?.title),
   description: computed(() => {
     const currentConcept = concept.value;
+
     if (!currentConcept) return undefined;
     if (currentConcept.description) return currentConcept.description;
     const parts: string[] = [`A ${currentConcept.status} concept in the ${slug.value} journey.`];
+
     if (currentConcept.tags.length) parts.push(`Topics: ${currentConcept.tags.join(', ')}.`);
     if (currentConcept.dependsOn.length) parts.push(`Builds on: ${currentConcept.dependsOn.join(', ')}.`);
+
     return parts.join(' ');
   }),
   tags: computed(() => {
     const currentConcept = concept.value;
+
     if (!currentConcept) return undefined;
+
     return [
       ...currentConcept.tags,
       currentConcept.journey,
@@ -141,6 +164,7 @@ const journeyConcepts = computed(() => conceptStore.getByJourney(slug.value));
 const currentIndex = computed(() => journeyConcepts.value.findIndex((concept) => concept.slug === conceptSlug.value));
 const previousConcept = computed(() => {
   const previous = journeyConcepts.value[currentIndex.value - 1];
+
   return previous && {
     to: `/journeys/${slug.value}/concepts/${previous.slug}`,
     title: previous.title,
@@ -148,6 +172,7 @@ const previousConcept = computed(() => {
 });
 const nextConcept = computed(() => {
   const next = journeyConcepts.value[currentIndex.value + 1];
+
   return next && {
     to: `/journeys/${slug.value}/concepts/${next.slug}`,
     title: next.title,
@@ -159,6 +184,7 @@ const {
   async () => concept.value ? loadContent(concept.value.slug) : '',
   '',
 );
+
 watch(concept, () => reloadContent());
 
 const displayTags = computed(() =>
@@ -173,7 +199,9 @@ const bookItems = computed(() =>
   })));
 </script>
 
-<style>
-.concept-detail-label { color: var(--gui-neutral-solid); border-color: var(--gui-neutral-border); }
-.concept-detail-empty { color: var(--gui-neutral-solid); }
+<style scoped>
+.concept-section-heading {
+  color: var(--gui-neutral-solid);
+  border-color: var(--gui-neutral-border);
+}
 </style>

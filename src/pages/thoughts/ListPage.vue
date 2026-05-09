@@ -1,32 +1,42 @@
 <template>
   <div class="page">
     <div class="top-bar">
-      <router-link
+      <RouterLink
         to="/"
         class="back"
       >
         &larr; home
-      </router-link>
-      <JourneyBreadcrumb :crumbs="[{ label: 'Thoughts', to: '/thoughts' }]" />
+      </RouterLink>
+      <JourneyBreadcrumb
+        :crumbs="[
+          {
+            label: 'Thoughts',
+            to: '/thoughts',
+          },
+        ]"
+      />
     </div>
-    <h1>Scrambled Thoughts</h1>
-    <ul class="list">
+    <h1 class="text-xl font-bold mb-6">
+      Scrambled Thoughts
+    </h1>
+    <ul class="list-none p-0 m-0">
       <li
         v-for="post in posts"
         :key="post.slug"
+        class="py-1 flex gap-4 items-baseline"
       >
-        <span class="date">{{ post.date }}</span>
-        <router-link
+        <span class="thoughts-date text-xs shrink-0 tabular-nums">{{ post.date }}</span>
+        <RouterLink
           :to="`/thoughts/${post.slug}`"
-          class="link"
+          class="text-sm no-underline hover:underline"
         >
           {{ post.title }}
-        </router-link>
+        </RouterLink>
       </li>
     </ul>
     <p
       v-if="!posts.length"
-      class="empty"
+      class="thoughts-empty text-sm"
     >
       Nothing here yet.
     </p>
@@ -58,25 +68,6 @@ const {
 </script>
 
 <style scoped>
-@reference "@/style.css";
-h1 {
-  @apply text-xl font-bold mb-6;
-}
-.list {
-  @apply list-none p-0 m-0;
-}
-.list li {
-  @apply py-1 flex gap-4 items-baseline;
-}
-.date {
-  @apply text-xs shrink-0 tabular-nums;
-  color: var(--gui-neutral-solid);
-}
-.link {
-  @apply text-sm no-underline hover:underline;
-}
-.empty {
-  @apply text-sm;
-  color: var(--gui-neutral-solid);
-}
+.thoughts-date { color: var(--gui-neutral-solid); }
+.thoughts-empty { color: var(--gui-neutral-solid); }
 </style>

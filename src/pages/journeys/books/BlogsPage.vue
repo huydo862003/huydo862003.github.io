@@ -1,13 +1,28 @@
 <template>
   <div class="page">
     <div class="top-bar">
-      <router-link
+      <RouterLink
         :to="`/journeys/${slug}`"
         class="back"
       >
         &larr; back to journey
-      </router-link>
-      <JourneyBreadcrumb :crumbs="[{ label: 'Journeys', to: '/journeys' }, { label: slug, to: `/journeys/${slug}` }, { label: 'Blogs', to: `/journeys/${slug}/blogs` }]" />
+      </RouterLink>
+      <JourneyBreadcrumb
+        :crumbs="[
+          {
+            label: 'Journeys',
+            to: '/journeys',
+          },
+          {
+            label: slug,
+            to: `/journeys/${slug}`,
+          },
+          {
+            label: 'Blogs',
+            to: `/journeys/${slug}/blogs`,
+          },
+        ]"
+      />
     </div>
     <h1 class="text-xl font-bold mb-6">
       Blogs
@@ -17,7 +32,7 @@
       v-if="sites.length"
       class="mb-6"
     >
-      <h2 class="blogs-section-label text-xs font-semibold uppercase tracking-wider mb-3 pb-1 border-b">
+      <h2 class="section-label text-xs font-semibold uppercase tracking-wider mb-3 pb-1 border-b">
         Sites
       </h2>
       <div
@@ -30,16 +45,16 @@
             v-if="site.url"
             :href="site.url"
             target="_blank"
-            rel="noopener"
-            class="blogs-site-link text-sm font-medium no-underline hover:underline"
+            rel="noopener noreferrer"
+            class="blogs-site-title text-sm font-medium no-underline hover:underline"
           >{{ site.title }}</a>
           <span
             v-else
-            class="blogs-site-link text-sm font-medium"
+            class="blogs-site-title text-sm font-medium"
           >{{ site.title }}</span>
           <span
             v-if="site.author"
-            class="blogs-author text-xs"
+            class="blogs-site-author text-xs"
           > - {{ site.author }}</span>
         </div>
         <ul
@@ -49,13 +64,13 @@
           <li
             v-for="post in sitePosts(site.slug)"
             :key="post.slug"
-            class="blogs-post-item flex items-center justify-between border-l-2 pl-3 py-1.5 text-sm"
+            class="blogs-post-item-site flex items-center justify-between border-l-2 pl-3 py-1.5 text-sm"
           >
             <a
               v-if="post.url"
               :href="post.url"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
               class="blogs-post-link no-underline transition-colors"
             >{{ post.title }}</a>
             <span v-else>{{ post.title }}</span>
@@ -81,7 +96,7 @@
             v-if="post.url"
             :href="post.url"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
             class="blogs-post-link no-underline transition-colors"
           >{{ post.title }}</a>
           <span v-else>{{ post.title }}</span>
@@ -95,7 +110,7 @@
 
     <p
       v-if="!sites.length && !standalonePosts.length"
-      class="blogs-empty text-sm"
+      class="content-empty text-sm"
     >
       No blogs yet.
     </p>
@@ -111,12 +126,12 @@ import {
 } from 'vue-router';
 import JourneyBreadcrumb from '@/components/common/JourneyBreadcrumb.vue';
 import {
-  useBlogs,
+  useBlogStore,
 } from '@/stores/blogs';
 
 const route = useRoute();
 const slug = computed(() => route.params.slug as string);
-const blogStore = useBlogs();
+const blogStore = useBlogStore();
 
 const sites = computed(() => blogStore.getSites(slug.value));
 const standalonePosts = computed(() =>
@@ -127,12 +142,19 @@ function sitePosts (siteSlug: string) {
 }
 </script>
 
-<style>
-.blogs-section-label { color: var(--gui-neutral-solid); border-color: var(--gui-neutral-border); }
-.blogs-site-link { color: var(--gui-info-solid); }
-.blogs-author { color: var(--gui-neutral-solid); }
-.blogs-post-item { color: var(--gui-neutral-fg-muted); border-color: var(--gui-neutral-border); }
-.blogs-post-link { color: var(--gui-neutral-fg-muted); }
+<style scoped>
+.blogs-site-title {
+  color: var(--gui-info-solid);
+}
+.blogs-site-author {
+  color: var(--gui-neutral-solid);
+}
+.blogs-post-item-site {
+  color: var(--gui-neutral-fg-muted);
+  border-color: var(--gui-neutral-border);
+}
+.blogs-post-link {
+  color: var(--gui-neutral-fg-muted);
+}
 .blogs-post-link:hover { color: var(--gui-info-solid); }
-.blogs-empty { color: var(--gui-neutral-solid); }
 </style>

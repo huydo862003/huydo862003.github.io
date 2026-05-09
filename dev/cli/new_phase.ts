@@ -47,4 +47,5 @@ const path = manager.createPhase(journey, title, {
   status,
   order: order ?? 0,
 });
+
 console.log(`Created: ${path}`);

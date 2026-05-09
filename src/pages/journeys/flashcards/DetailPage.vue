@@ -1,20 +1,35 @@
 <template>
   <div class="page">
     <div class="top-bar">
-      <router-link
+      <RouterLink
         :to="`/journeys/${slug}/flashcards?mode=table&deck=${card?.deck ?? ''}`"
         class="back"
       >
-        &larr; back to {{ card ? formatSlug(card.deck) + ' deck' : 'flashcards' }}
-      </router-link>
-      <JourneyBreadcrumb :crumbs="[{ label: 'Journeys', to: '/journeys' }, { label: slug, to: `/journeys/${slug}` }, { label: 'Flashcards', to: `/journeys/${slug}/flashcards` }]" />
+        &larr; back to {{ card ? `${formatSlug(card.deck) } deck` : 'flashcards' }}
+      </RouterLink>
+      <JourneyBreadcrumb
+        :crumbs="[
+          {
+            label: 'Journeys',
+            to: '/journeys',
+          },
+          {
+            label: slug,
+            to: `/journeys/${slug}`,
+          },
+          {
+            label: 'Flashcards',
+            to: `/journeys/${slug}/flashcards`,
+          },
+        ]"
+      />
     </div>
 
     <template v-if="card">
       <h1 class="text-xl font-bold mb-1">
         {{ card.question }}
       </h1>
-      <p class="fc-detail-deck text-xs mb-5">
+      <p class="fc-deck text-xs mb-5">
         {{ formatSlug(card.deck) }}
       </p>
 
@@ -23,7 +38,7 @@
           :prominence="GButtonProminence.Secondary"
           :semantic="GButtonSemantic.Destructive"
           :size="GButtonSize.Sm"
-          @click="flashcardStore.reviewCard(card.slug, false)"
+          @click="reviewWrong"
         >
           Wrong
         </GButton>
@@ -32,14 +47,17 @@
           :semantic="GButtonSemantic.Success"
           :size="GButtonSize.Sm"
           :disabled="reviewedToday"
-          @click="flashcardStore.reviewCard(card.slug, true)"
+          @click="reviewRight"
         >
           {{ reviewedToday ? 'Reviewed' : 'Right' }}
         </GButton>
-        <span class="fc-mastery-info flex items-center gap-1.5 text-xs ml-auto">
+        <span class="fc-mastery flex items-center gap-1.5 text-xs ml-auto">
           <span
             class="status-ring"
-            :style="{ '--progress': masteryProgress, '--ring-color': ringColor(masteryProgress) }"
+            :style="{
+              '--progress': masteryProgress,
+              '--ring-color': ringColor(masteryProgress),
+            }"
           />
           {{ masteryLabel }} &middot; {{ state.interval }}d
         </span>
@@ -51,11 +69,8 @@
         :trigger="GFlipTrigger.Click"
       >
         <template #front>
-          <div
-            class="p-4 sm:p-6 flex flex-col"
-            style="min-height: 10.5rem;"
-          >
-            <div class="fc-card-label text-xs mb-4">
+          <div class="p-4 sm:p-6 flex flex-col fc-card-face">
+            <div class="fc-face-label text-xs mb-4">
               question
             </div>
             <div class="text-base">
@@ -71,7 +86,7 @@
               </template>
               <template #collapsible-content>
                 <div class="flex flex-col gap-1 mt-2 ml-3">
-                  <router-link
+                  <RouterLink
                     v-for="c in card.concepts"
                     :key="c"
                     :to="`/journeys/${slug}/concepts/${c}`"
@@ -82,8 +97,8 @@
                       :size="12"
                     />
                     {{ conceptStore.getBySlug(c)?.title ?? formatSlug(c) }}
-                  </router-link>
-                  <router-link
+                  </RouterLink>
+                  <RouterLink
                     v-for="b in resolvedBooks"
                     :key="b.slug"
                     :to="`/journeys/${slug}/books/${b.slug}`"
@@ -94,18 +109,15 @@
                       :size="12"
                     />
                     {{ b.title }}
-                  </router-link>
+                  </RouterLink>
                 </div>
               </template>
             </GCollapsible>
           </div>
         </template>
         <template #back>
-          <div
-            class="p-4 sm:p-6 flex flex-col"
-            style="min-height: 10.5rem;"
-          >
-            <div class="fc-card-label text-xs mb-4">
+          <div class="p-4 sm:p-6 flex flex-col fc-card-face">
+            <div class="fc-face-label text-xs mb-4">
               answer
             </div>
             <div
@@ -133,9 +145,9 @@
     </template>
     <template v-else>
       <p>
-        Not found. <router-link :to="`/journeys/${slug}/flashcards`">
+        Not found. <RouterLink :to="`/journeys/${slug}/flashcards`">
           Back to flashcards
-        </router-link>
+        </RouterLink>
       </p>
     </template>
   </div>
@@ -194,13 +206,17 @@ useSeo({
   title: computed(() => card.value?.question),
   description: computed(() => {
     const currentCard = card.value;
+
     if (!currentCard) return undefined;
     const answerPreview = currentCard.answer && currentCard.answer !== 'TODO' ? ` Answer: ${currentCard.answer.slice(0, 120)}${120 < currentCard.answer.length ? '...' : ''}` : '';
+
     return `Flashcard from the ${currentCard.deck} deck.${answerPreview}`;
   }),
   tags: computed(() => {
     const currentCard = card.value;
+
     if (!currentCard) return undefined;
+
     return [
       ...(currentCard.tags ?? []),
       currentCard.deck,
@@ -214,17 +230,20 @@ useSeo({
   modifiedTime: computed(() => card.value?.updatedAt || undefined),
 });
 const flipped = ref(false);
+
 watch(cardSlug, () => {
   flipped.value = false;
 });
 
 const journeyCards = computed(() => {
   const slugs = conceptStore.getByJourney(slug.value).map((concept) => concept.slug);
+
   return flashcardStore.getByJourney(slugs);
 });
 const currentIndex = computed(() => journeyCards.value.findIndex((flashcard) => flashcard.slug === cardSlug.value));
 const previousCard = computed(() => {
   const previous = journeyCards.value[currentIndex.value - 1];
+
   return previous && {
     to: `/journeys/${slug.value}/flashcards/${previous.slug}`,
     title: previous.question,
@@ -232,6 +251,7 @@ const previousCard = computed(() => {
 });
 const nextCard = computed(() => {
   const next = journeyCards.value[currentIndex.value + 1];
+
   return next && {
     to: `/journeys/${slug.value}/flashcards/${next.slug}`,
     title: next.question,
@@ -240,6 +260,7 @@ const nextCard = computed(() => {
 const state = computed(() => flashcardStore.getState(cardSlug.value));
 const reviewedToday = computed(() => {
   const lastReviewDate = state.value.lastReviewedAt;
+
   return lastReviewDate === new Date()
     .toISOString()
     .slice(0, 10) && 1 <= state.value.repetitions;
@@ -250,24 +271,31 @@ const {
 } = useAsyncState(async () => {
   if (!card.value) return '';
   const body = await loadContent(card.value.slug);
+
   if (body) return body;
+
   return card.value.answer && card.value.answer !== 'TODO' ? await renderMarkdown(card.value.answer) : '';
 }, '');
+
 watch(card, () => reloadAnswer());
 
 const masteryProgress = computed(() => {
   const cardState = state.value;
+
   if (MASTERED_INTERVAL_DAYS <= cardState.interval) return '100';
   if (3 <= cardState.repetitions) return '60';
   if (1 <= cardState.repetitions) return '30';
+
   return '0';
 });
 
 const masteryLabel = computed(() => {
   const cardState = state.value;
+
   if (MASTERED_INTERVAL_DAYS <= cardState.interval) return 'Mastered';
   if (3 <= cardState.repetitions) return 'Reviewing';
   if (1 <= cardState.repetitions) return 'Learning';
+
   return 'New';
 });
 
@@ -275,14 +303,23 @@ const resolvedBooks = computed(() =>
   (card.value?.books ?? [])
     .map((bookSlug) => bookStore.getBySlug(bookSlug))
     .filter((book): book is NonNullable<typeof book> => !!book));
+
+function reviewRight () {
+  flashcardStore.reviewCard(card.value!.slug, true);
+}
+
+function reviewWrong () {
+  flashcardStore.reviewCard(card.value!.slug, false);
+}
 </script>
 
-<style>
+<style scoped>
+.fc-deck { color: var(--gui-neutral-solid); }
+.fc-mastery { color: var(--gui-neutral-solid); }
 .fc-flippable { border-color: var(--gui-neutral-border); }
-.fc-detail-deck { color: var(--gui-neutral-solid); }
-.fc-mastery-info { color: var(--gui-neutral-solid); }
+.fc-card-face { min-height: 10.5rem; }
+.fc-face-label { color: var(--gui-neutral-solid); }
 .fc-hint-link { color: var(--gui-neutral-solid); }
 .fc-hint-link:hover { color: var(--gui-info-solid); }
-.fc-card-label { color: var(--gui-neutral-solid); }
 .fc-no-answer { color: var(--gui-neutral-solid); }
 </style>

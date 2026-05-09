@@ -7,6 +7,35 @@ import {
 
 export const MASTERED_INTERVAL_DAYS = 21;
 
+export function defaultReviewState (): ReviewState {
+  return {
+    easeFactor: 2.5,
+    interval: 0,
+    repetitions: 0,
+    nextReviewDate: todayISO(),
+    lastReviewedAt: 'Not reviewed yet',
+  };
+}
+
+export function isAnsweredToday (state: ReviewState, today?: string): boolean {
+  return state.lastReviewedAt === (today ?? todayISO()) && !isDue(state, today);
+}
+
+export function isDue (state: ReviewState, today?: string): boolean {
+  return state.nextReviewDate <= (today ?? todayISO());
+}
+
+export function isStale (state: ReviewState, today?: string): boolean {
+  if (!state.lastReviewedAt) return true;
+  const todayDate = today ?? todayISO();
+
+  return state.lastReviewedAt < addDaysISO(-7) && isDue(state, todayDate);
+}
+
+export function qualityFromCorrect (correct: boolean): number {
+  return correct ? 4 : 1;
+}
+
 export function sm2 (state: ReviewState, quality: number): ReviewState {
   let {
     easeFactor, interval, repetitions,
@@ -31,33 +60,5 @@ export function sm2 (state: ReviewState, quality: number): ReviewState {
     repetitions,
     nextReviewDate: addDaysISO(interval),
     lastReviewedAt: todayISO(),
-  };
-}
-
-export function isDue (state: ReviewState, today?: string): boolean {
-  return state.nextReviewDate <= (today ?? todayISO());
-}
-
-export function isAnsweredToday (state: ReviewState, today?: string): boolean {
-  return state.lastReviewedAt === (today ?? todayISO()) && !isDue(state, today);
-}
-
-export function isStale (state: ReviewState, today?: string): boolean {
-  if (!state.lastReviewedAt) return true;
-  const todayDate = today ?? todayISO();
-  return state.lastReviewedAt < addDaysISO(-7) && isDue(state, todayDate);
-}
-
-export function qualityFromCorrect (correct: boolean): number {
-  return correct ? 4 : 1;
-}
-
-export function defaultReviewState (): ReviewState {
-  return {
-    easeFactor: 2.5,
-    interval: 0,
-    repetitions: 0,
-    nextReviewDate: todayISO(),
-    lastReviewedAt: 'Not reviewed yet',
   };
 }

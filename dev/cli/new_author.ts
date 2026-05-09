@@ -34,4 +34,5 @@ const path = manager.createAuthor(name, {
   dateOfBirth: dateOfBirth || undefined,
   origin: origin || undefined,
 });
+
 console.log(`Created: ${path}`);

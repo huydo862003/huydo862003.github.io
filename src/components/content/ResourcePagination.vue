@@ -1,25 +1,26 @@
 <template>
   <nav
-    v-if="prev || next"
-    class="pagination-nav"
+    v-if="previous || next"
+    class="pagination-nav flex justify-between gap-4 mt-10 mb-4 pt-6"
   >
-    <router-link
-      v-if="prev"
-      :to="prev.to"
-      class="pagination-link"
+    <RouterLink
+      v-if="previous"
+      :to="previous.to"
+      class="pagination-link pagination-link-prev flex flex-col no-underline"
     >
-      <span class="pagination-dir">&larr; Previous {{ kind }}</span>
-      <span class="pagination-title">{{ prev.title }}</span>
-    </router-link>
+      <span class="pagination-nav-label text-xs">&larr; Previous {{ kind }}</span>
+      <span class="pagination-title text-sm transition-colors line-clamp-2">{{ previous.title }}</span>
+    </RouterLink>
     <div v-else />
-    <router-link
+    <RouterLink
       v-if="next"
+      key="router-link-2"
       :to="next.to"
-      class="pagination-link pagination-link-next"
+      class="pagination-link pagination-link-next flex flex-col items-end text-right no-underline ml-auto"
     >
-      <span class="pagination-dir">Next {{ kind }} &rarr;</span>
-      <span class="pagination-title">{{ next.title }}</span>
-    </router-link>
+      <span class="pagination-nav-label text-xs">Next {{ kind }} &rarr;</span>
+      <span class="pagination-title text-sm transition-colors line-clamp-2">{{ next.title }}</span>
+    </RouterLink>
   </nav>
 </template>
 
@@ -30,48 +31,33 @@ export interface NavItem {
 }
 
 const {
-  prev, next, kind = '',
+  prev: previous = undefined,
+  next = undefined,
+  kind = '',
 } = defineProps<{
+  /** The previous item to navigate to */
   prev?: NavItem;
+  /** The next item to navigate to */
   next?: NavItem;
+  /** The kind label shown next to arrows */
   kind?: string;
 }>();
 </script>
 
-<style>
+<style scoped>
 .pagination-nav {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  margin-top: 2.5rem;
-  margin-bottom: 1rem;
-  padding-top: 1.5rem;
   border-top: 1px solid var(--gui-neutral-border);
 }
-.pagination-link {
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
+.pagination-link-prev,
+.pagination-link-next {
   max-width: 45%;
 }
-.pagination-link-next {
-  align-items: flex-end;
-  text-align: right;
-  margin-left: auto;
-}
-.pagination-dir {
-  font-size: 0.75rem;
+.pagination-nav-label {
   color: var(--gui-neutral-solid);
   margin-bottom: 0.125rem;
 }
 .pagination-title {
-  font-size: 0.875rem;
   color: var(--gui-neutral-fg-muted);
-  transition: color 0.15s;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
 }
 .pagination-link:hover .pagination-title {
   color: var(--gui-info-solid);

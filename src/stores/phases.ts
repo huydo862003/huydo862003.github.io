@@ -27,12 +27,15 @@ const bySlug = new Map(all.map((phase) => [
 
 export const usePhaseStore = defineStore('phases', () => {
   const phases = all;
+
   function getBySlug (slug: string) {
     return bySlug.get(slug);
   }
+
   function getByJourney (index: string) {
     return all.filter((phase) => phase.journey === index);
   }
+
   return {
     phases,
     getBySlug,

@@ -2,22 +2,25 @@
   <Transition name="split">
     <div
       v-if="open"
-      class="graph-pane"
-      :style="{ width: paneWidth + 'px' }"
+      class="graph-pane sticky top-0 h-dvh self-start flex flex-col shrink-0"
+      :style="{
+        width: `${paneWidth}px`,
+      }"
     >
       <!-- Drag-to-resize handle on the left edge -->
       <div
-        class="resize-handle"
+        class="resize-handle absolute top-0 left-0 h-full z-10 cursor-ew-resize"
         @mousedown.prevent="startResize"
       />
 
-      <div class="pane-header">
-        <span class="pane-title">Knowledge Graph</span>
-        <div class="header-controls">
+      <div class="pane-header flex items-center justify-between px-3 py-2 border-b shrink-0">
+        <span class="pane-title text-xs font-semibold">Knowledge Graph</span>
+        <div class="flex items-center gap-0.5">
           <button
-            class="ctrl-btn"
+            type="button"
+            class="ctrl-btn p-1.5 rounded-sm cursor-pointer transition-colors no-underline"
             title="Zoom in"
-            @click="graphReference?.zoomIn()"
+            @click="zoomIn"
           >
             <GIcon
               :name="GIconName.Plus"
@@ -25,9 +28,10 @@
             />
           </button>
           <button
-            class="ctrl-btn"
+            type="button"
+            class="ctrl-btn p-1.5 rounded-sm cursor-pointer transition-colors no-underline"
             title="Zoom out"
-            @click="graphReference?.zoomOut()"
+            @click="zoomOut"
           >
             <GIcon
               :name="GIconName.Minus"
@@ -35,9 +39,10 @@
             />
           </button>
           <button
-            class="ctrl-btn"
+            type="button"
+            class="ctrl-btn p-1.5 rounded-sm cursor-pointer transition-colors no-underline"
             title="Fit to view"
-            @click="graphReference?.zoomFit()"
+            @click="zoomFitGraph"
           >
             <GIcon
               :name="GIconName.Expand"
@@ -45,30 +50,32 @@
             />
           </button>
           <button
-            class="ctrl-btn"
+            type="button"
+            class="ctrl-btn p-1.5 rounded-sm cursor-pointer transition-colors no-underline"
             title="Recenter"
-            @click="graphReference?.recenter()"
+            @click="recenterGraph"
           >
             <GIcon
               :name="GIconName.Crosshair"
               :size="13"
             />
           </button>
-          <router-link
+          <RouterLink
             to="/graph"
-            class="ctrl-btn"
+            class="ctrl-btn p-1.5 rounded-sm cursor-pointer transition-colors no-underline"
             title="Fullscreen"
-            @click="open = false"
+            @click="closePane"
           >
             <GIcon
               :name="GIconName.FrameCorners"
               :size="13"
             />
-          </router-link>
+          </RouterLink>
           <button
-            class="ctrl-btn close-btn"
+            type="button"
+            class="ctrl-btn p-1.5 rounded-sm cursor-pointer transition-colors no-underline ml-1"
             title="Close graph"
-            @click="open = false"
+            @click="closePane"
           >
             <GIcon
               :name="GIconName.X"
@@ -79,10 +86,10 @@
         </div>
       </div>
 
-      <div class="pane-body">
+      <div class="flex-1 min-h-0 overflow-hidden flex flex-col">
         <KnowledgeGraph
-          ref="graphReferenceerence"
-          :in-panel="true"
+          ref="graphReference"
+          in-panel
         />
       </div>
     </div>
@@ -91,7 +98,7 @@
 
 <script setup lang="ts">
 import {
-  ref, defineAsyncComponent, onUnmounted,
+  ref, defineAsyncComponent, onUnmounted, useTemplateRef,
 } from 'vue';
 import {
   GIcon, GIconName,
@@ -100,7 +107,7 @@ import {
 const KnowledgeGraph = defineAsyncComponent(() => import('@/components/KnowledgeGraph.vue'));
 
 const open = ref(false);
-const graphReference = ref<InstanceType<typeof KnowledgeGraph>>();
+const graphReference = useTemplateRef<InstanceType<typeof KnowledgeGraph>>('graphReference');
 
 const MIN_WIDTH = 280;
 const MAX_WIDTH = 900;
@@ -112,18 +119,18 @@ const paneWidth = ref(
 
 let dragging = false;
 
+function onMouseMove (event: MouseEvent) {
+  if (!dragging) return;
+  paneWidth.value = Math.min(MAX_WIDTH, Math.max(MIN_WIDTH, window.innerWidth - event.clientX));
+  window.dispatchEvent(new Event('resize'));
+}
+
 function startResize (_event: MouseEvent) {
   dragging = true;
   document.body.style.cursor = 'ew-resize';
   document.body.style.userSelect = 'none';
   window.addEventListener('mousemove', onMouseMove);
   window.addEventListener('mouseup', stopResize);
-}
-
-function onMouseMove (event: MouseEvent) {
-  if (!dragging) return;
-  paneWidth.value = Math.min(MAX_WIDTH, Math.max(MIN_WIDTH, window.innerWidth - event.clientX));
-  window.dispatchEvent(new Event('resize'));
 }
 
 function stopResize () {
@@ -137,14 +144,36 @@ function stopResize () {
 
 onUnmounted(stopResize);
 
-function show () {
-  open.value = true;
-}
 function close () {
   open.value = false;
 }
+
+function closePane () {
+  open.value = false;
+}
+
+function recenterGraph () {
+  graphReference.value?.recenter();
+}
+
+function show () {
+  open.value = true;
+}
+
 function toggle () {
   open.value = !open.value;
+}
+
+function zoomFitGraph () {
+  graphReference.value?.zoomFit();
+}
+
+function zoomIn () {
+  graphReference.value?.zoomIn();
+}
+
+function zoomOut () {
+  graphReference.value?.zoomOut();
 }
 
 defineExpose({
@@ -156,59 +185,28 @@ defineExpose({
 </script>
 
 <style scoped>
-@reference "@/style.css";
 .graph-pane {
-  position: sticky;
-  top: 0;
-  height: 100svh;
-  align-self: flex-start;
-
-  display: flex;
-  flex-direction: column;
   border-left: 1px solid var(--gui-neutral-border);
   background: var(--gui-neutral-bg);
   min-width: 280px;
   max-width: 900px;
-  flex-shrink: 0;
 }
 .resize-handle {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
   width: 5px;
-  z-index: 10;
-  cursor: ew-resize;
 }
 .resize-handle:hover {
   background: oklch(0.6 0.15 250 / 0.25);
 }
 .pane-header {
-  @apply flex items-center justify-between px-3 py-2 border-b shrink-0;
   border-color: var(--gui-neutral-border);
 }
 .pane-title {
-  @apply text-xs font-semibold;
   color: var(--gui-neutral-fg-muted);
 }
-.header-controls {
-  @apply flex items-center gap-0.5;
-}
 .ctrl-btn {
-  @apply p-1.5 rounded-sm cursor-pointer transition-colors no-underline;
   color: var(--gui-neutral-solid);
-  &:hover { color: var(--gui-neutral-fg); }
 }
-.close-btn {
-  @apply ml-1;
-}
-.pane-body {
-  flex: 1;
-  min-height: 0;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
+.ctrl-btn:hover { color: var(--gui-neutral-fg); }
 .split-enter-active,
 .split-leave-active {
   transition: width 0.2s ease, opacity 0.15s ease;

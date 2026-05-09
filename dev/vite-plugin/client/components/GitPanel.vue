@@ -96,10 +96,6 @@ const commitMessage = ref('');
 const committing = ref(false);
 const showFiles = ref(false);
 
-async function refresh () {
-  await gitStore.loadStatus();
-}
-
 async function commit () {
   if (!commitMessage.value.trim()) return;
   committing.value = true;
@@ -109,6 +105,10 @@ async function commit () {
   } finally {
     committing.value = false;
   }
+}
+
+async function refresh () {
+  await gitStore.loadStatus();
 }
 
 onMounted(() => gitStore.loadStatus());

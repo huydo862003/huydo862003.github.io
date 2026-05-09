@@ -40,15 +40,13 @@ const allCards: Flashcard[] = allFlashcards.map((card) => ({
 function loadReviewState (): Record<string, ReviewState> {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
+
     if (raw == null) return {};
+
     return JSON.parse(raw);
   } catch {
     return {};
   }
-}
-
-function saveReviewState (state: Record<string, ReviewState>) {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
 }
 
 function mergeStates (
@@ -58,11 +56,13 @@ function mergeStates (
   const merged = {
     ...local,
   };
+
   for (const [
     slug,
     remoteState,
   ] of Object.entries(remote)) {
     const localState = local[slug];
+
     if (!localState) {
       merged[slug] = remoteState;
     } else if (remoteState.lastReviewedAt && localState.lastReviewedAt
@@ -70,7 +70,12 @@ function mergeStates (
       merged[slug] = remoteState;
     }
   }
+
   return merged;
+}
+
+function saveReviewState (state: Record<string, ReviewState>) {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
 }
 
 export const useFlashcardStore = defineStore('flashcards', () => {
@@ -104,16 +109,19 @@ export const useFlashcardStore = defineStore('flashcards', () => {
 
   function getByJourney (conceptSlugs: string[]) {
     const set = new Set(conceptSlugs);
+
     return cards.filter((card) => card.concepts.some((slug) => set.has(slug)));
   }
 
   function getDueCards (pool?: Flashcard[]) {
     const today = todayISO();
+
     return (pool ?? cards).filter((card) => isDue(getState(card.slug), today));
   }
 
   function reviewCard (slug: string, correct: boolean) {
     const quality = qualityFromCorrect(correct);
+
     reviewState.value[slug] = sm2(getState(slug), quality);
     saveReviewState(reviewState.value);
     debouncedPush();
@@ -122,6 +130,7 @@ export const useFlashcardStore = defineStore('flashcards', () => {
   async function syncWithRemote () {
     if (!isLoggedIn.value) return;
     const remote = await pullState() as Record<string, ReviewState> | undefined;
+
     if (remote) {
       reviewState.value = mergeStates(reviewState.value, remote);
       saveReviewState(reviewState.value);
@@ -135,11 +144,14 @@ export const useFlashcardStore = defineStore('flashcards', () => {
     const today = todayISO();
     let dueToday = 0;
     let mastered = 0;
+
     for (const card of pool) {
       const cardState = getState(card.slug);
+
       if (isDue(cardState, today)) dueToday++;
       if (MASTERED_INTERVAL_DAYS <= cardState.interval) mastered++;
     }
+
     return {
       total: pool.length,
       dueToday,

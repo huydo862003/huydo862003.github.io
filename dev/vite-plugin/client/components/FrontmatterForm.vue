@@ -32,7 +32,7 @@
         <div class="fm-value">
           <input
             type="checkbox"
-            :checked="!!frontmatter.published"
+            :checked="Boolean(frontmatter.published)"
             @change="update('published', ($event.target as HTMLInputElement).checked)"
           >
         </div>
@@ -94,7 +94,7 @@
           <input
             v-if="fieldSchema.type === 'boolean'"
             type="checkbox"
-            :checked="!!fieldValue(fieldName, fieldSchema)"
+            :checked="Boolean(fieldValue(fieldName, fieldSchema))"
             @change="update(String(fieldName), ($event.target as HTMLInputElement).checked)"
           >
 
@@ -118,11 +118,13 @@
                   v-for="opt in resolveEnum(fieldSchema)"
                   :key="opt"
                   class="flex items-center gap-2 px-3 py-1.5 text-sm text-left border-none bg-transparent cursor-pointer hover:bg-gray-100"
-                  @click="update(String(fieldName), opt)"
+                  @click="() => update(String(fieldName), opt)"
                 >
                   <span
                     class="w-1.5 h-1.5 rounded-full"
-                    :style="{ background: enumDotColor(opt) }"
+                    :style="{
+                      background: enumDotColor(opt),
+                    }"
                   />
                   {{ opt }}
                 </button>
@@ -153,6 +155,7 @@
           <!-- multi ref or array (tags/relations) -->
           <RelationPicker
             v-else-if="fieldSchema.type === 'array' || (fieldSchema.ref && fieldSchema.multi)"
+            key="relation-picker-1"
             :model-value="toArray(fieldValue(fieldName, fieldSchema))"
             :content-type="fieldSchema.ref"
             :enum-options="resolveEnum(fieldSchema)"
@@ -163,6 +166,7 @@
           <!-- single ref -->
           <RelationPicker
             v-else-if="fieldSchema.ref && !fieldSchema.multi"
+            key="relation-picker-2"
             :model-value="fieldValue(fieldName, fieldSchema) ? [String(fieldValue(fieldName, fieldSchema))] : []"
             :content-type="fieldSchema.ref"
             :single="true"
@@ -214,6 +218,7 @@ const displayNameField = computed(() => props.schema?.displayName ?? 'title');
 
 const displayTitle = computed(() => {
   const field = props.schema?.displayName ?? 'title';
+
   return props.frontmatter[field] as string | undefined;
 });
 
@@ -226,6 +231,7 @@ const COMMON_FIELDS = new Set([
 
 const visibleFields = computed(() => {
   if (!props.schema?.fields) return {};
+
   return Object.fromEntries(
     Object.entries(props.schema.fields).filter(([
       key,
@@ -254,18 +260,22 @@ function fieldValue (name: string | number, schema: FieldSchema) {
 function resolveEnum (field: FieldSchema): string[] {
   if (!field.enum || !props.schema) return [];
   const enumDefinition = props.schema.enums?.[field.enum];
+
   if (!enumDefinition) return [];
   if (Array.isArray(enumDefinition)) return enumDefinition;
   if (field.conditionOn) {
     const key = String(props.frontmatter[field.conditionOn] ?? '');
+
     return enumDefinition[key] ?? [];
   }
+
   return [];
 }
 
 function toArray (value: unknown): string[] {
   if (Array.isArray(value)) return value as string[];
   if (value && typeof value === 'string') return [value];
+
   return [];
 }
 
@@ -331,16 +341,17 @@ const DEFAULT_PILL = {
   dot: '#9ca3af',
 };
 
+function enumDotColor (value: string): string {
+  return (ENUM_COLORS[value] ?? DEFAULT_PILL).dot;
+}
+
 function enumPillColor (value: string): Record<string, string> {
   const pillColor = ENUM_COLORS[value] ?? DEFAULT_PILL;
+
   return {
     background: pillColor.bg,
     color: pillColor.fg,
   };
-}
-
-function enumDotColor (value: string): string {
-  return (ENUM_COLORS[value] ?? DEFAULT_PILL).dot;
 }
 
 function finishTitleEdit () {

@@ -29,6 +29,7 @@ export function editorPlugin (): Plugin {
       const manager = new ContentManager(contentDirectory);
 
       const app = express();
+
       app.use(cors());
       app.use(express.json());
       app.use('/dev', createRouter(manager, process.cwd()));

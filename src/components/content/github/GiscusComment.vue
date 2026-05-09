@@ -1,31 +1,32 @@
 <template>
   <div
     ref="container"
-    class="giscus-wrap"
+    class="giscus-container mt-16 border-t pt-8"
   />
 </template>
 
 <script setup lang="ts">
 import {
-  ref, onMounted, watch, computed,
+  onMounted, watch, computed, useTemplateRef,
 } from 'vue';
 import {
   useRoute,
 } from 'vue-router';
 import {
-  useThemeStore,
-} from '@/stores/theme';
+  useTheme, GTheme,
+} from '@hdnax/genuix';
 
-const container = ref<HTMLElement>();
+const container = useTemplateRef<HTMLElement>('container');
 const route = useRoute();
-const themeStore = useThemeStore();
-const dark = computed(() => themeStore.isDark);
+const themeStore = useTheme();
+const dark = computed(() => themeStore.effectiveTheme === GTheme.Dark);
 
 function load () {
   if (!container.value) return;
   container.value.innerHTML = '';
 
   const script = document.createElement('script');
+
   script.src = 'https://giscus.app/client.js';
   script.setAttribute('data-repo', 'huydo862003/huydo862003.github.io');
   script.setAttribute('data-repo-id', 'R_kgDORy3hLQ');
@@ -46,6 +47,7 @@ function load () {
 
 function updateTheme () {
   const iframe = container.value?.querySelector<HTMLIFrameElement>('iframe.giscus-frame');
+
   if (iframe) {
     iframe.contentWindow?.postMessage(
       {
@@ -66,9 +68,7 @@ watch(dark, updateTheme);
 </script>
 
 <style scoped>
-@reference "@/style.css";
-.giscus-wrap {
-  @apply mt-16 border-t pt-8;
+.giscus-container {
   border-color: var(--gui-neutral-border);
 }
 </style>

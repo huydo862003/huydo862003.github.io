@@ -2,17 +2,17 @@ import {
   allGraphs,
 } from 'content-collections';
 
+export interface GraphEdge {
+  source: string;
+  target: string;
+}
+
 export interface GraphNode {
   id: string;
   title: string;
   type: string;
   journey: string;
   links: number;
-}
-
-export interface GraphEdge {
-  source: string;
-  target: string;
 }
 
 export const TYPE_COLORS: Record<string, string> = {
@@ -50,6 +50,7 @@ for (const n of allGraphs) {
       });
       const source = nodeMap.get(n.slug);
       const tgt = nodeMap.get(target);
+
       if (source) source.links++;
       if (tgt) tgt.links++;
     }
@@ -60,5 +61,6 @@ export function nodeRoute (node: GraphNode): string {
   if (node.type === 'journeys') return `/journeys/${node.id}`;
   if (node.type === 'thoughts') return `/thoughts/${node.id}`;
   if (node.journey) return `/journeys/${node.journey}/${node.type}/${node.id}`;
+
   return '/';
 }

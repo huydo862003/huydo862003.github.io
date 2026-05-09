@@ -9,6 +9,24 @@ import type {
 } from 'express';
 import multer from 'multer';
 
+export function list (assetsDirectory: string) {
+  return (_request: Request, response: Response) => {
+    if (!existsSync(assetsDirectory)) return response.json({
+      files: [],
+    });
+    const files = readdirSync(assetsDirectory)
+      .filter((file) => !file.startsWith('.'))
+      .map((file) => ({
+        name: file,
+        url: `/assets/${file}`,
+      }));
+
+    response.json({
+      files,
+    });
+  };
+}
+
 export function upload (assetsDirectory: string) {
   if (!existsSync(assetsDirectory)) mkdirSync(assetsDirectory, {
     recursive: true,
@@ -33,26 +51,10 @@ export function upload (assetsDirectory: string) {
       });
       // return path relative to public/ so it works as a URL
       const relative = '/assets/' + request.file.filename;
+
       response.json({
         path: relative,
       });
-    });
-  };
-}
-
-export function list (assetsDirectory: string) {
-  return (_request: Request, response: Response) => {
-    if (!existsSync(assetsDirectory)) return response.json({
-      files: [],
-    });
-    const files = readdirSync(assetsDirectory)
-      .filter((file) => !file.startsWith('.'))
-      .map((file) => ({
-        name: file,
-        url: `/assets/${file}`,
-      }));
-    response.json({
-      files,
     });
   };
 }

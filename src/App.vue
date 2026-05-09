@@ -1,12 +1,16 @@
 <template>
-  <div class="layout">
+  <div class="min-h-screen flex flex-col">
     <NavBar
       v-if="!isGraph && !isEditor"
-      @open-palette="palette?.show()"
+      @open-palette="openPalette"
     />
-    <div class="workspace">
-      <main :class="isGraph ? '' : 'content'">
-        <router-view v-slot="{ Component }">
+    <div class="flex flex-row flex-1">
+      <main :class="isGraph ? '' : 'flex-1'">
+        <RouterView
+          v-slot="{
+            Component,
+          }"
+        >
           <Transition
             name="page"
             mode="out-in"
@@ -16,21 +20,21 @@
               :key="$route.path"
             />
           </Transition>
-        </router-view>
+        </RouterView>
       </main>
       <GraphSidePanel ref="graphPanel" />
     </div>
     <FooterBar v-if="!isGraph && !isEditor" />
     <CommandPalette
       ref="palette"
-      @open-graph-side="graphPanel?.toggle()"
+      @open-graph-side="toggleGraphPanel"
     />
   </div>
 </template>
 
 <script setup lang="ts">
 import {
-  ref, computed, defineAsyncComponent,
+  computed, defineAsyncComponent, useTemplateRef,
 } from 'vue';
 import {
   useRouter,
@@ -44,8 +48,8 @@ import GraphSidePanel from '@/components/GraphSidePanel.vue';
 
 const CommandPalette = defineAsyncComponent(() => import('@/components/CommandPalette.vue'));
 
-const palette = ref<InstanceType<typeof CommandPalette>>();
-const graphPanel = ref<InstanceType<typeof GraphSidePanel>>();
+const palette = useTemplateRef<InstanceType<typeof CommandPalette>>('palette');
+const graphPanel = useTemplateRef<InstanceType<typeof GraphSidePanel>>('graphPanel');
 const router = useRouter();
 const {
   register,
@@ -54,6 +58,7 @@ const {
 const isGraph = computed(() => router.currentRoute.value.path === '/graph');
 const isEditor = computed(() => {
   const path = router.currentRoute.value.path;
+
   return path === '/edit' || path.endsWith('/edit');
 });
 
@@ -64,6 +69,14 @@ function go (path: string) {
   } else {
     router.push(path);
   }
+}
+
+function openPalette () {
+  palette.value?.show();
+}
+
+function toggleGraphPanel () {
+  graphPanel.value?.toggle();
 }
 
 register([
@@ -106,18 +119,6 @@ register([
 </script>
 
 <style scoped>
-.layout {
-  @apply min-h-screen flex flex-col;
-}
-.workspace {
-  @apply flex flex-row flex-1;
-}
-.content {
-  @apply flex-1;
-}
-</style>
-
-<style>
 .page-enter-active {
   transition: opacity 0.1s ease, transform 0.1s ease;
 }

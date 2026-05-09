@@ -13,47 +13,6 @@ export type {
   TreeNode,
 } from './types';
 
-type Frontmatter = Record<string, unknown>;
-
-function today () {
-  return new Date().toISOString()
-    .slice(0, 10);
-}
-
-function toMarkdown (fm: Frontmatter, body = ''): string {
-  const lines = ['---'];
-  for (const [
-    key,
-    value,
-  ] of Object.entries(fm)) {
-    if (Array.isArray(value)) {
-      lines.push(value.length === 0 ? `${key}: []` : `${key}:\n${value.map((item) => `  - "${item}"`).join('\n')}`);
-    } else if (typeof value === 'boolean') {
-      lines.push(`${key}: ${value}`);
-    } else if (typeof value === 'number') {
-      lines.push(`${key}: ${value}`);
-    } else {
-      lines.push(`${key}: "${value}"`);
-    }
-  }
-  lines.push('---', '', body);
-  return lines.join('\n');
-}
-
-function baseFrontmatter (author = ''): Frontmatter {
-  return {
-    published: false,
-    author,
-    createdAt: today(),
-    updatedAt: today(),
-  };
-}
-
-function slugify (title: string): string {
-  return title.toLowerCase().replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-|-$/g, '');
-}
-
 // domain-level API for content operations
 // uses two jails: content for .md files, schemas for .schemas/
 // no direct fs imports
@@ -69,10 +28,13 @@ export class ContentManager {
 
   private getCachedFrontmatter (path: string): Record<string, unknown> {
     const cached = this.fmCache.get(path);
+
     if (cached) return cached;
     const raw = this.contentJail.readFileSync(path);
     const fm = this.parseFrontmatter(raw);
+
     this.fmCache.set(path, fm);
+
     return fm;
   }
 
@@ -127,7 +89,9 @@ export class ContentManager {
       status: options.status ?? 'active',
       tags: options.tags ?? [],
     };
+
     this.createFile(path, toMarkdown(fm));
+
     return path;
   }
 
@@ -151,7 +115,9 @@ export class ContentManager {
       dependsOn: options.dependsOn ?? [],
       blocks: options.blocks ?? [],
     };
+
     this.createFile(path, toMarkdown(fm));
+
     return path;
   }
 
@@ -172,7 +138,9 @@ export class ContentManager {
       concepts: options.concepts ?? [],
       books: options.books ?? [],
     };
+
     this.createFile(path, toMarkdown(fm));
+
     return path;
   }
 
@@ -194,7 +162,9 @@ export class ContentManager {
       books: options.books ?? [],
       concepts: options.concepts ?? [],
     };
+
     this.createFile(path, toMarkdown(fm));
+
     return path;
   }
 
@@ -225,7 +195,9 @@ export class ContentManager {
       parent: options.parent ?? '',
       children: options.children ?? [],
     };
+
     this.createFile(path, toMarkdown(fm));
+
     return path;
   }
 
@@ -248,7 +220,9 @@ export class ContentManager {
       posts: [],
       tags: options.tags ?? [],
     };
+
     this.createFile(path, toMarkdown(fm));
+
     return path;
   }
 
@@ -277,7 +251,9 @@ export class ContentManager {
       concepts: options.concepts ?? [],
       status: options.status ?? 'to-read',
     };
+
     this.createFile(path, toMarkdown(fm));
+
     return path;
   }
 
@@ -300,7 +276,9 @@ export class ContentManager {
       concepts: options.concepts ?? [],
       journeys: options.journeys ?? [],
     };
+
     this.createFile(path, toMarkdown(fm));
+
     return path;
   }
 
@@ -326,7 +304,9 @@ export class ContentManager {
       interests: options.interests ?? [],
       tags: options.tags ?? [],
     };
+
     this.createFile(path, toMarkdown(fm));
+
     return path;
   }
 
@@ -335,6 +315,7 @@ export class ContentManager {
   schemas (): Record<string, unknown> {
     const schemas: Record<string, unknown> = {};
     let files: string[];
+
     try {
       files = this.schemaJail.readdirSync('.');
     } catch {
@@ -343,13 +324,16 @@ export class ContentManager {
     for (const filename of files) {
       if (!filename.endsWith('.yaml') && !filename.endsWith('.yml')) continue;
       const name = filename.replace(/\.ya?ml$/, '');
+
       schemas[name] = yaml.load(this.schemaJail.readFileSync(filename));
     }
+
     return schemas;
   }
 
   listContent (contentType: string): ContentItem[] {
     const displayField = this.getDisplayField(contentType);
+
     return this.traverseContent(contentType, (path, slug, fm) => ({
       slug,
       title: fm[displayField] ? String(fm[displayField]) : slug.replace(/-/g, ' '),
@@ -361,6 +345,7 @@ export class ContentManager {
     const allSchemas = this.schemas() as Record<string, {
       displayName?: string;
     }>;
+
     return allSchemas[contentType]?.displayName ?? 'title';
   }
 
@@ -368,6 +353,7 @@ export class ContentManager {
     const results: T[] = [];
     const collect = (directory: string) => {
       let entries: string[];
+
       try {
         entries = this.contentJail.readdirSync(directory);
       } catch {
@@ -375,8 +361,10 @@ export class ContentManager {
       }
       for (const entry of entries) {
         const full = directory === '.' ? entry : `${directory}/${entry}`;
+
         if (!full.startsWith(contentType)) continue;
         let stat;
+
         try {
           stat = this.contentJail.statSync(full);
         } catch {
@@ -388,14 +376,18 @@ export class ContentManager {
         if (!entry.endsWith('.md')) continue;
         const slug = entry.replace(/\.md$/, '');
         let fm: Record<string, unknown> = {};
+
         try {
           fm = this.getCachedFrontmatter(full);
         } catch { /* empty fm */ }
         const item = transform(full, slug, fm);
+
         if (item) results.push(item);
       }
     };
+
     collect(contentType);
+
     return results;
   }
 
@@ -432,10 +424,12 @@ export class ContentManager {
     // dir-grouped types: concepts/{journey}/, flashcards/{journey}/, etc
     for (const type of GROUPED_TYPES) {
       const displayField = allSchemas[type]?.displayName ?? 'title';
+
       for (const journey of journeys) {
         const directory = `${type}/${journey.slug}`;
         const items: ContentItem[] = [];
         let entries: string[];
+
         try {
           entries = this.contentJail.readdirSync(directory);
         } catch {
@@ -446,8 +440,10 @@ export class ContentManager {
           const path = `${directory}/${entry}`;
           const slug = entry.replace(/\.md$/, '');
           let title = slug.replace(/-/g, ' ');
+
           try {
             const fm = this.getCachedFrontmatter(path);
+
             if (fm[displayField]) title = String(fm[displayField]);
           } catch { /* use slug */ }
           items.push({
@@ -463,8 +459,10 @@ export class ContentManager {
     // frontmatter-grouped types: books, papers (have `journey` field)
     for (const type of FM_GROUPED_TYPES) {
       const all = this.listContentWithJourney(type);
+
       for (const item of all) {
         const journey = journeys.find((index) => index.slug === item.journey);
+
         if (!journey) continue;
         if (!journey.resources[type]) journey.resources[type] = [];
         journey.resources[type].push({
@@ -477,8 +475,10 @@ export class ContentManager {
 
     // standalone types
     const standalone: Record<string, ContentItem[]> = {};
+
     for (const type of STANDALONE_TYPES) {
       const items = this.listContent(type);
+
       if (items.length) standalone[type] = items;
     }
 
@@ -492,9 +492,12 @@ export class ContentManager {
     journey: string;
   })[] {
     const displayField = this.getDisplayField(contentType);
+
     return this.traverseContent(contentType, (path, slug, fm) => {
       const journey = fm.journey ? String(fm.journey) : '';
+
       if (!journey) return null;
+
       return {
         slug,
         title: fm[displayField] ? String(fm[displayField]) : slug.replace(/-/g, ' '),
@@ -508,6 +511,7 @@ export class ContentManager {
 
   tree (relativePath = '.'): TreeNode[] {
     let entries: string[];
+
     try {
       entries = this.contentJail.readdirSync(relativePath);
     } catch {
@@ -515,11 +519,13 @@ export class ContentManager {
     }
     entries.sort();
     const nodes: TreeNode[] = [];
+
     for (const entry of entries) {
       if (entry.startsWith('.')) continue;
       if (entry.startsWith('_')) continue;
       const childPath = relativePath === '.' ? entry : `${relativePath}/${entry}`;
       let stat;
+
       try {
         stat = this.contentJail.statSync(childPath);
       } catch {
@@ -540,6 +546,7 @@ export class ContentManager {
         });
       }
     }
+
     return nodes;
   }
 
@@ -547,20 +554,69 @@ export class ContentManager {
 
   private parseFrontmatter (raw: string): Record<string, unknown> {
     const fmBlock = raw.indexOf('---\n');
+
     if (fmBlock !== 0) return {};
     const end = raw.indexOf('\n---', 4);
+
     if (end === -1) return {};
     const fm: Record<string, unknown> = {};
+
     try {
       const parsed = yaml.load(raw.slice(4, end));
+
       if (parsed && typeof parsed === 'object') Object.assign(fm, parsed);
     } catch { /* invalid yaml */ }
+
     return fm;
   }
 
   private createFile (path: string, content: string): void {
     const parent = path.substring(0, path.lastIndexOf('/'));
+
     if (parent && !this.contentJail.existsSync(parent)) this.contentJail.mkdirSync(parent);
     this.contentJail.writeFileSync(path, content);
   }
+}
+
+type Frontmatter = Record<string, unknown>;
+
+function baseFrontmatter (author = ''): Frontmatter {
+  return {
+    published: false,
+    author,
+    createdAt: today(),
+    updatedAt: today(),
+  };
+}
+
+function slugify (title: string): string {
+  return title.toLowerCase().replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '');
+}
+
+function today () {
+  return new Date().toISOString()
+    .slice(0, 10);
+}
+
+function toMarkdown (fm: Frontmatter, body = ''): string {
+  const lines = ['---'];
+
+  for (const [
+    key,
+    value,
+  ] of Object.entries(fm)) {
+    if (Array.isArray(value)) {
+      lines.push(value.length === 0 ? `${key}: []` : `${key}:\n${value.map((item) => `  - "${item}"`).join('\n')}`);
+    } else if (typeof value === 'boolean') {
+      lines.push(`${key}: ${value}`);
+    } else if (typeof value === 'number') {
+      lines.push(`${key}: ${value}`);
+    } else {
+      lines.push(`${key}: "${value}"`);
+    }
+  }
+  lines.push('---', '', body);
+
+  return lines.join('\n');
 }

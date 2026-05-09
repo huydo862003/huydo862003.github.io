@@ -31,6 +31,7 @@ supabase.auth.getSession().then(({
   // Solution: Redirect to the root path so Github Pages would return our page first, then navigate back to the page user was on before OAuth via session storage
   if (typeof sessionStorage !== 'undefined') {
     const returnPath = sessionStorage.getItem('auth-return');
+
     if (returnPath && data.session) {
       sessionStorage.removeItem('auth-return');
       window.history.replaceState(null, '', returnPath);
@@ -55,6 +56,7 @@ export function useAuth () {
 
   function redirectUrl () {
     sessionStorage.setItem('auth-return', route.fullPath);
+
     return window.location.origin;
   }
 
@@ -112,6 +114,7 @@ export function useReviewSync () {
           nextReviewDate: string;
           lastReviewedAt?: string;
         };
+
         return {
           user_id: user.value?.id ?? '',
           slug,
@@ -153,10 +156,12 @@ export function useReviewSync () {
 
       if (error_) {
         error.value = error_.message;
+
         return undefined;
       }
 
       const state: Record<string, unknown> = {};
+
       for (const row of data ?? []) {
         state[row.slug] = {
           easeFactor: row.ease_factor,
@@ -166,9 +171,11 @@ export function useReviewSync () {
           lastReviewedAt: row.last_reviewed_at,
         };
       }
+
       return state;
     } catch (error_) {
       error.value = (error_ as Error).message;
+
       return undefined;
     } finally {
       syncing.value = false;

@@ -25,7 +25,10 @@ import {
   useJourneyStore,
 } from '@/stores/journeys';
 
-const props = defineProps<{
+const {
+  crumbs,
+} = defineProps<{
+  /** The breadcrumb items to render */
   crumbs: {
     label: string;
     to: string;
@@ -35,8 +38,9 @@ const props = defineProps<{
 const journeyStore = useJourneyStore();
 
 const resolvedCrumbs = computed(() =>
-  props.crumbs.map((crumb) => {
+  crumbs.map((crumb) => {
     const journey = journeyStore.getBySlug(crumb.label);
+
     return {
       label: journey ? journey.title : crumb.label,
       to: crumb.to,

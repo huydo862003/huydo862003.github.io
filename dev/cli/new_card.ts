@@ -32,4 +32,5 @@ const path = manager.createFlashcard(journey, question, {
   author,
   deck,
 });
+
 console.log(`Created: ${path}`);

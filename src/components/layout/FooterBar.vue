@@ -1,11 +1,12 @@
 <template>
-  <footer class="foot">
+  <footer class="footer-bar h-12 flex items-center justify-center gap-2 border-t border-b text-xs shrink-0">
     <span>&copy; {{ year }} Scrambled Kitchen</span>
     <span>&middot;</span>
     <a
       href="https://github.com/huydo862003"
       target="_blank"
-      rel="noopener"
+      rel="noopener noreferrer"
+      class="foot-link no-underline"
     >GitHub</a>
   </footer>
 </template>
@@ -15,17 +16,13 @@ const year = new Date().getFullYear();
 </script>
 
 <style scoped>
-@reference "@/style.css";
-
-.foot {
-  @apply h-12 flex items-center justify-center gap-2 border-t border-b text-xs shrink-0;
+.footer-bar {
   border-color: var(--gui-neutral-border);
   color: var(--gui-neutral-fg-muted);
   background: var(--gui-neutral-bg-subtle);
 }
-.foot a {
-  @apply no-underline;
+.foot-link {
   color: var(--gui-neutral-fg-muted);
-  &:hover { color: var(--gui-neutral-fg); }
 }
+.foot-link:hover { color: var(--gui-neutral-fg); }
 </style>

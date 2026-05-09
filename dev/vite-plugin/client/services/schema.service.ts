@@ -13,5 +13,6 @@ export async function fetchSchemas (): Promise<Record<string, ContentSchema>> {
   const {
     data,
   } = await httpClient.get('/schema');
+
   return data;
 }

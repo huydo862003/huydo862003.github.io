@@ -3,7 +3,7 @@ published: true
 author: hdnax
 createdAt: "2026-03-28"
 updatedAt: "2026-03-28"
-question: "Given an equivalence relation r, what does "up to r" mean?"
+question: 'Given an equivalence relation r, what does "up to r" mean?'
 deck: set-theory-relation
 concepts: []
 books:

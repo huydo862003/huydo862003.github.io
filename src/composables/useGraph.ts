@@ -16,12 +16,15 @@ export function useGraph (container: Ref<HTMLElement | undefined>, height: Ref<n
   function zoomIn () {
     graph?.zoom(graph.zoom() * 1.3, 300);
   }
+
   function zoomOut () {
     graph?.zoom(graph.zoom() / 1.3, 300);
   }
+
   function zoomFit () {
     graph?.zoomToFit(400, 40);
   }
+
   function recenter () {
     graph?.centerAt(0, 0, 300);
     graph?.zoom(1, 300);
@@ -30,6 +33,7 @@ export function useGraph (container: Ref<HTMLElement | undefined>, height: Ref<n
   function handleResize () {
     if (!graph || !container.value) return;
     const containerHeight = typeof height === 'number' ? height : height.value;
+
     graph.width(container.value.clientWidth).height(containerHeight);
   }
 

@@ -13,15 +13,15 @@
             class="search-icon"
           />
           <input
-            ref="inputElementement"
+            ref="inputElement"
             v-model="query"
             type="text"
             placeholder="Search pages, concepts, flashcards..."
             class="search-input"
             @keydown.escape="close"
-            @keydown.enter="go(filtered[activeIndex])"
-            @keydown.down.prevent="activeIndex = Math.min(activeIndex + 1, filtered.length - 1)"
-            @keydown.up.prevent="activeIndex = Math.max(activeIndex - 1, 0)"
+            @keydown.enter="goActive"
+            @keydown.down.prevent="moveDown"
+            @keydown.up.prevent="moveUp"
           >
         </div>
 
@@ -34,12 +34,15 @@
               Navigation
             </div>
             <button
-              v-for="(item, i) in navItems"
+              v-for="(item, itemIndex) in navItems"
               :key="item.to"
+              type="button"
               class="result"
-              :class="{ active: i === activeIndex }"
-              @click="go(item)"
-              @mouseenter="activeIndex = i"
+              :class="{
+                active: itemIndex === activeIndex,
+              }"
+              @click="() => go(item)"
+              @mouseenter="() => setActiveIndex(itemIndex)"
             >
               <GIcon
                 v-if="item.icon"
@@ -61,12 +64,15 @@
             class="group"
           >
             <button
-              v-for="(item, i) in filtered"
+              v-for="(item, itemIndex) in filtered"
               :key="item.to"
+              type="button"
               class="result"
-              :class="{ active: i === activeIndex }"
-              @click="go(item)"
-              @mouseenter="activeIndex = i"
+              :class="{
+                active: itemIndex === activeIndex,
+              }"
+              @click="() => go(item)"
+              @mouseenter="() => setActiveIndex(itemIndex)"
             >
               <span class="result-type">{{ item.type }}</span>
               <span class="result-label">{{ item.label }}</span>
@@ -83,7 +89,12 @@
 
         <div class="footer">
           <span class="hint">
-            <GKbdShortcut :keys="[GKbdKeyName.ArrowUp, GKbdKeyName.ArrowDown]" /> navigate
+            <GKbdShortcut
+              :keys="[
+                GKbdKeyName.ArrowUp,
+                GKbdKeyName.ArrowDown,
+              ]"
+            /> navigate
           </span>
           <span class="hint">
             <GKbdShortcut :keys="[GKbdKeyName.Enter]" /> open
@@ -99,7 +110,7 @@
 
 <script setup lang="ts">
 import {
-  ref, computed, watch, nextTick,
+  ref, computed, watch, nextTick, useTemplateRef,
 } from 'vue';
 import {
   useRouter,
@@ -121,7 +132,7 @@ import {
   usePhaseStore,
 } from '@/stores/phases';
 import {
-  useBlogs,
+  useBlogStore,
 } from '@/stores/blogs';
 import {
   useJourneyStore,
@@ -136,21 +147,20 @@ interface PaletteItem {
   shortcutKeys?: GKbdKeyName[];
 }
 
+const emit = defineEmits<{
+  'open-graph-side': [];
+}>();
 const open = ref(false);
 const query = ref('');
 const activeIndex = ref(0);
-const inputElement = ref<HTMLInputElement>();
+const inputElement = useTemplateRef<HTMLInputElement>('inputElement');
 const router = useRouter();
-
-const emit = defineEmits<{
-  (event: 'open-graph-side'): void;
-}>();
 
 const conceptStore = useConceptStore();
 const flashcardStore = useFlashcardStore();
 const bookStore = useBookStore();
 const phaseStore = usePhaseStore();
-const blogStore = useBlogs();
+const blogStore = useBlogStore();
 const journeyStore = useJourneyStore();
 
 const navItems = computed<PaletteItem[]>(() => [
@@ -211,6 +221,7 @@ const searchItems = computed<PaletteItem[]>(() => {
   for (const flashcard of flashcardStore.cards.slice(0, 200)) {
     const concept = flashcard.concepts[0] ? conceptStore.getBySlug(flashcard.concepts[0]) : undefined;
     const journey = concept?.journey || 'plt';
+
     items.push({
       label: flashcard.question,
       to: `/journeys/${journey}/flashcards/${flashcard.slug}`,
@@ -254,6 +265,7 @@ const searchItems = computed<PaletteItem[]>(() => {
 const filtered = computed(() => {
   if (!query.value) return navItems.value;
   const searchQuery = query.value.toLowerCase();
+
   return searchItems.value
     .filter((item) => item.label.toLowerCase().includes(searchQuery))
     .slice(0, 20);
@@ -262,13 +274,6 @@ const filtered = computed(() => {
 watch(query, () => {
   activeIndex.value = 0;
 });
-
-function show () {
-  open.value = true;
-  query.value = '';
-  activeIndex.value = 0;
-  nextTick(() => inputElement.value?.focus());
-}
 
 function close () {
   open.value = false;
@@ -282,6 +287,29 @@ function go (item: PaletteItem | undefined) {
   } else if (item.to) {
     router.push(item.to);
   }
+}
+
+function goActive () {
+  go(filtered.value[activeIndex.value]);
+}
+
+function moveDown () {
+  activeIndex.value = Math.min(activeIndex.value + 1, filtered.value.length - 1);
+}
+
+function moveUp () {
+  activeIndex.value = Math.max(activeIndex.value - 1, 0);
+}
+
+function setActiveIndex (index: number) {
+  activeIndex.value = index;
+}
+
+function show () {
+  open.value = true;
+  query.value = '';
+  activeIndex.value = 0;
+  nextTick(() => inputElement.value?.focus());
 }
 
 defineExpose({

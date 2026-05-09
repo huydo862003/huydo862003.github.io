@@ -4,7 +4,9 @@
       <!-- Sidebar with slide transition -->
       <div
         class="sidebar-panel"
-        :class="{ 'sidebar-collapsed': !showSidebar }"
+        :class="{
+          'sidebar-collapsed': !showSidebar,
+        }"
       >
         <ContentTree
           @select="openFile"
@@ -51,7 +53,7 @@
     <GitPanel>
       <!-- leading: back link, path, sidebar + preview + save toggles -->
       <template #leading>
-        <router-link
+        <RouterLink
           to="/"
           class="flex items-center gap-1 text-sm font-semibold text-blue-500 no-underline"
           title="Back to site"
@@ -60,7 +62,7 @@
             :name="GIconName.ArrowLeft"
             :size="14"
           />
-        </router-link>
+        </RouterLink>
         <button
           class="icon-btn"
           :class="showSidebar ? 'active' : ''"
@@ -149,6 +151,7 @@ watch(() => fileStore.currentPath, (path) => {
 
 watch(() => frontmatter.value, (fm) => {
   const title = fm?.title || fm?.question || fm?.name || 'Untitled';
+
   document.title = `Editor - ${title}`;
 }, {
   immediate: true,
@@ -156,6 +159,7 @@ watch(() => frontmatter.value, (fm) => {
 
 const previewUrl = computed(() => {
   const currentPath = fileStore.currentPath;
+
   if (!currentPath) return '';
   const slug = currentPath.replace(/\.md$/, '').split('/')
     .pop();
@@ -163,6 +167,7 @@ const previewUrl = computed(() => {
   const type = parts[0];
   // journey from frontmatter or from directory structure (e.g., concepts/plt/foo.md -> plt)
   const journey = (frontmatter.value.journey as string | undefined) || (3 <= parts.length ? parts[1] : '');
+
   if (type === 'thoughts') return `/thoughts/${slug}`;
   if (type === 'journeys') return `/journeys/${slug}`;
   if (type === 'authors') return '';
@@ -174,6 +179,7 @@ const previewUrl = computed(() => {
     if (type === 'blogs') return `/journeys/${journey}/blogs/${slug}`;
     if (type === 'papers') return `/journeys/${journey}/papers/${slug}`;
   }
+
   return '';
 });
 
@@ -188,27 +194,16 @@ const bodyContent = computed({
   },
 });
 
-function rebuildContent (fm: Record<string, unknown>, body: string): string {
-  const lines: string[] = ['---'];
-  for (const [
-    key,
-    value,
-  ] of Object.entries(fm)) {
-    lines.push(formatYamlLine(key, value));
-  }
-  lines.push('---');
-  lines.push(body);
-  return lines.join('\n');
-}
-
 function formatYamlLine (key: string, value: unknown): string {
   if (Array.isArray(value)) {
     if (value.length === 0) return `${key}: []`;
+
     return `${key}:\n${value.map((item) => `  - "${item}"`).join('\n')}`;
   }
   if (typeof value === 'boolean') return `${key}: ${value}`;
   if (typeof value === 'number') return `${key}: ${value}`;
   if (typeof value === 'string') return `${key}: "${value}"`;
+
   return `${key}: ${JSON.stringify(value)}`;
 }
 
@@ -217,11 +212,28 @@ function onFrontmatterUpdate (key: string, value: unknown) {
     ...frontmatter.value,
     [key]: value,
   };
+
   fileStore.content = rebuildContent(newFm, parsed.value.rawContent);
+}
+
+function rebuildContent (fm: Record<string, unknown>, body: string): string {
+  const lines: string[] = ['---'];
+
+  for (const [
+    key,
+    value,
+  ] of Object.entries(fm)) {
+    lines.push(formatYamlLine(key, value));
+  }
+  lines.push('---');
+  lines.push(body);
+
+  return lines.join('\n');
 }
 
 // file open
 let navigating = false;
+
 async function openFile (path: string) {
   navigating = true;
   clearTimeout(autosaveTimer);
@@ -230,6 +242,7 @@ async function openFile (path: string) {
 }
 
 let saving = false;
+
 async function save () {
   if (saving || navigating) return;
   saving = true;
@@ -242,6 +255,7 @@ async function save () {
 
 // autosave
 let autosaveTimer: ReturnType<typeof setTimeout> | undefined;
+
 watch(() => fileStore.content, () => {
   if (!fileStore.dirty || navigating || saving) return;
   clearTimeout(autosaveTimer);
@@ -271,6 +285,7 @@ onMounted(async () => {
   await treeStore.loadSchemas();
 
   const pathMatch = route.params.pathMatch;
+
   if (pathMatch) {
     await fileStore.openFromRoute(toRoute(pathMatch));
   } else if (route.hash) {

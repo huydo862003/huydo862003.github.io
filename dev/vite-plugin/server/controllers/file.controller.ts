@@ -23,31 +23,10 @@ const typeQuery = z.object({
   type: z.string().min(1),
 });
 
-export function list (manager: ContentManager) {
-  return (request: Request, response: Response) => {
-    const parsed = typeQuery.safeParse(request.query);
-    if (!parsed.success) return response.status(400).json({
-      error: parsed.error.issues[0].message,
-    });
-    response.json(manager.listContent(parsed.data.type));
-  };
-}
-
-export function journeyTree (manager: ContentManager) {
-  return (_request: Request, response: Response) => {
-    response.json(manager.journeyTree());
-  };
-}
-
-export function tree (manager: ContentManager) {
-  return (_request: Request, response: Response) => {
-    response.json(manager.tree());
-  };
-}
-
 export function get (manager: ContentManager) {
   return (request: Request, response: Response) => {
     const parsed = pathQuery.safeParse(request.query);
+
     if (!parsed.success) return response.status(400).json({
       error: parsed.error.issues[0].message,
     });
@@ -57,6 +36,7 @@ export function get (manager: ContentManager) {
       if (error instanceof JailEscapeError) return response.status(403).json({
         error: 'forbidden',
       });
+
       return response.status(404).json({
         error: 'not found',
       });
@@ -64,31 +44,27 @@ export function get (manager: ContentManager) {
   };
 }
 
-export function update (manager: ContentManager) {
+export function journeyTree (manager: ContentManager) {
+  return (_request: Request, response: Response) => {
+    response.json(manager.journeyTree());
+  };
+}
+
+export function list (manager: ContentManager) {
   return (request: Request, response: Response) => {
-    const parsed = fileBody.safeParse(request.body);
+    const parsed = typeQuery.safeParse(request.query);
+
     if (!parsed.success) return response.status(400).json({
       error: parsed.error.issues[0].message,
     });
-    try {
-      manager.updateContent(parsed.data.path, parsed.data.content);
-      response.json({
-        ok: true,
-      });
-    } catch (error) {
-      if (error instanceof JailEscapeError) return response.status(403).json({
-        error: 'forbidden',
-      });
-      return response.status(404).json({
-        error: 'not found',
-      });
-    }
+    response.json(manager.listContent(parsed.data.type));
   };
 }
 
 export function remove (manager: ContentManager) {
   return (request: Request, response: Response) => {
     const parsed = pathQuery.safeParse(request.query);
+
     if (!parsed.success) return response.status(400).json({
       error: parsed.error.issues[0].message,
     });
@@ -101,6 +77,37 @@ export function remove (manager: ContentManager) {
       if (error instanceof JailEscapeError) return response.status(403).json({
         error: 'forbidden',
       });
+
+      return response.status(404).json({
+        error: 'not found',
+      });
+    }
+  };
+}
+
+export function tree (manager: ContentManager) {
+  return (_request: Request, response: Response) => {
+    response.json(manager.tree());
+  };
+}
+
+export function update (manager: ContentManager) {
+  return (request: Request, response: Response) => {
+    const parsed = fileBody.safeParse(request.body);
+
+    if (!parsed.success) return response.status(400).json({
+      error: parsed.error.issues[0].message,
+    });
+    try {
+      manager.updateContent(parsed.data.path, parsed.data.content);
+      response.json({
+        ok: true,
+      });
+    } catch (error) {
+      if (error instanceof JailEscapeError) return response.status(403).json({
+        error: 'forbidden',
+      });
+
       return response.status(404).json({
         error: 'not found',
       });

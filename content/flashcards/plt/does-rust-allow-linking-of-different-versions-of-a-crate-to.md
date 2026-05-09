@@ -3,8 +3,7 @@ published: true
 author: hdnax
 createdAt: '2026-03-28'
 updatedAt: '2026-03-28'
-question: "Does rust allow linking of different versions of a crate to the same binary,"
-  and how?
+question: 'Does rust allow linking of different versions of a crate to the same binary, and how?'
 deck: general
 concepts:
 - rust

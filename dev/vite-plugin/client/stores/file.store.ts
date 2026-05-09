@@ -22,11 +22,13 @@ export const useFileStore = defineStore('file', () => {
 
   const contentType = computed(() => {
     if (!currentPath.value) return undefined;
+
     return currentPath.value.split('/')[0];
   });
 
   const currentSchema = computed(() => {
     if (!contentType.value) return undefined;
+
     return useTreeStore().schemaFor(contentType.value);
   });
 
@@ -34,6 +36,7 @@ export const useFileStore = defineStore('file', () => {
     loading.value = true;
     try {
       const data = await fetchFile(path);
+
       currentPath.value = path;
       originalContent.value = data.content;
       content.value = data.content;
@@ -45,6 +48,7 @@ export const useFileStore = defineStore('file', () => {
   async function openFromRoute (route: string) {
     try {
       const path = await resolveFilepath(route);
+
       await openFile(path);
     } catch {
       // route couldn't be resolved

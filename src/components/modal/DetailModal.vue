@@ -3,7 +3,7 @@
     <div
       v-if="open"
       class="overlay"
-      @click.self="$emit('close')"
+      @click.self="emitClose"
     >
       <div class="modal detail">
         <div class="detail-header">
@@ -11,18 +11,19 @@
             <h2>{{ title }}</h2>
             <span
               v-if="status"
-              :class="['text-xs px-1.5 py-0.5 rounded-sm modal-status-bg shrink-0', `status-${status}`]"
+              class="detail-status text-xs px-1.5 py-0.5 rounded-sm shrink-0"
+              :class="[`status-${status}`]"
             >{{ status }}</span>
           </div>
           <GButton
             :prominence="GButtonProminence.Ghost"
             :size="GButtonSize.Xs"
-            @click="$emit('close')"
+            @click="emitClose"
           >
             &times;
           </GButton>
         </div>
-        <div class="detail-body">
+        <div class="detail-body flex-1 overflow-y-auto min-h-0">
           <slot />
         </div>
       </div>
@@ -38,24 +39,25 @@ import {
 const {
   open, title, status = '',
 } = defineProps<{
+  /** Whether the modal is open */
   open: boolean;
+  /** The modal title */
   title: string;
+  /** Optional status badge text */
   status?: string;
 }>();
 
-defineEmits<{
+const emit = defineEmits<{
   close: [];
 }>();
+
+function emitClose () {
+  emit('close');
+}
 </script>
 
 <style scoped>
-@reference "@/style.css";
-.modal-status-bg {
+.detail-status {
   background-color: var(--gui-neutral-bg-subtle);
-}
-.detail-body {
-  flex: 1;
-  overflow-y: auto;
-  min-height: 0;
 }
 </style>

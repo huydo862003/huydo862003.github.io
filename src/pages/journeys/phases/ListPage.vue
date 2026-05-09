@@ -1,13 +1,28 @@
 <template>
   <div class="page">
     <div class="top-bar">
-      <router-link
+      <RouterLink
         :to="`/journeys/${slug}`"
         class="back"
       >
         &larr; back to journey
-      </router-link>
-      <JourneyBreadcrumb :crumbs="[{ label: 'Journeys', to: '/journeys' }, { label: slug, to: `/journeys/${slug}` }, { label: 'Phases', to: `/journeys/${slug}/phases` }]" />
+      </RouterLink>
+      <JourneyBreadcrumb
+        :crumbs="[
+          {
+            label: 'Journeys',
+            to: '/journeys',
+          },
+          {
+            label: slug,
+            to: `/journeys/${slug}`,
+          },
+          {
+            label: 'Phases',
+            to: `/journeys/${slug}/phases`,
+          },
+        ]"
+      />
     </div>
     <h1 class="text-xl font-bold mb-6">
       Phases
@@ -24,28 +39,30 @@
         :value="phase.slug"
         :label="phase.title"
       >
-        <router-link
+        <RouterLink
           :to="`/journeys/${slug}/phases/${phase.slug}`"
           class="phase-card block border rounded-sm px-4 py-3 no-underline transition-colors"
         >
           <div class="flex flex-wrap items-center justify-between gap-1">
-            <span class="phase-card-title text-sm font-medium">{{ phase.title }}</span>
+            <span
+              class="phase-title text-sm font-medium"
+            >{{ phase.title }}</span>
             <span :class="`status-${phase.status}`">{{ phase.status }}</span>
           </div>
           <div
             v-if="phase.concepts.length || phase.books.length"
-            class="phase-card-stats flex flex-wrap gap-x-3 gap-y-0.5 mt-2 text-xs"
+            class="phase-stats flex flex-wrap gap-x-3 gap-y-0.5 mt-2 text-xs"
           >
             <span v-if="phase.concepts.length">{{ phase.concepts.length }} concepts</span>
             <span v-if="phase.books.length">{{ phase.books.length }} books</span>
           </div>
-        </router-link>
+        </RouterLink>
       </GFilterableItem>
     </GFilterable>
 
     <p
       v-if="!phases.length"
-      class="phases-empty text-sm"
+      class="content-empty text-sm"
     >
       No phases yet.
     </p>
@@ -83,10 +100,9 @@ useSeo({
 const phases = computed(() => phaseStore.getByJourney(slug.value));
 </script>
 
-<style>
+<style scoped>
 .phase-card { border-color: var(--gui-neutral-border); }
 .phase-card:hover { border-color: var(--gui-neutral-solid); }
-.phase-card-title { color: var(--gui-neutral-fg); }
-.phase-card-stats { color: var(--gui-neutral-solid); }
-.phases-empty { color: var(--gui-neutral-solid); }
+.phase-title { color: var(--gui-neutral-fg); }
+.phase-stats { color: var(--gui-neutral-solid); }
 </style>

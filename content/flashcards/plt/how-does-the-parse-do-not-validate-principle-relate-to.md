@@ -3,7 +3,7 @@ published: true
 author: hdnax
 createdAt: '2026-03-28'
 updatedAt: '2026-03-28'
-question: "How does the "parse, do not validate" principle relate to "boolean blindness"?"
+question: 'How does the "parse, do not validate" principle relate to "boolean blindness"?'
 deck: general
 concepts:
 - boolean-blindness

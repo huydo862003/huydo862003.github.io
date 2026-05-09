@@ -38,4 +38,5 @@ const path = manager.createJourney(title, {
   author,
   status,
 });
+
 console.log(`Created: ${path}`);

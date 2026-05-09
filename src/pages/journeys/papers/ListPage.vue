@@ -1,13 +1,28 @@
 <template>
   <div class="page">
     <div class="top-bar">
-      <router-link
+      <RouterLink
         :to="`/journeys/${slug}`"
         class="back"
       >
         &larr; back to journey
-      </router-link>
-      <JourneyBreadcrumb :crumbs="[{ label: 'Journeys', to: '/journeys' }, { label: slug, to: `/journeys/${slug}` }, { label: 'Papers', to: `/journeys/${slug}/papers` }]" />
+      </RouterLink>
+      <JourneyBreadcrumb
+        :crumbs="[
+          {
+            label: 'Journeys',
+            to: '/journeys',
+          },
+          {
+            label: slug,
+            to: `/journeys/${slug}`,
+          },
+          {
+            label: 'Papers',
+            to: `/journeys/${slug}/papers`,
+          },
+        ]"
+      />
     </div>
     <h1 class="text-xl font-bold mb-4">
       Papers
@@ -22,12 +37,23 @@
         placeholder="Filter papers..."
         class="flex-1 min-w-40"
       />
-      <FilterBar
-        :groups="[statusGroup]"
-        :model-values="[statusFilter]"
+      <GMultiSelect
+        v-model="statusFilter"
         placeholder="Status"
-        @update:model-values="statusFilter = $event[0]"
-      />
+      >
+        <GMultiSelectOption
+          value="to-read"
+          label="To read"
+        />
+        <GMultiSelectOption
+          value="reading"
+          label="Reading"
+        />
+        <GMultiSelectOption
+          value="read"
+          label="Read"
+        />
+      </GMultiSelect>
     </div>
 
     <div
@@ -74,7 +100,7 @@
                 v-if="paper.url"
                 :href="paper.url"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
                 class="paper-title-link text-sm font-medium no-underline transition-colors"
               >{{ paper.title }}</a>
               <span
@@ -83,7 +109,7 @@
               >{{ paper.title }}</span>
               <div
                 v-if="paper.venue || paper.year"
-                class="paper-meta flex gap-2 text-xs mt-0.5"
+                class="paper-venue flex gap-2 text-xs mt-0.5"
               >
                 <span v-if="paper.venue">{{ paper.venue }}</span>
                 <span
@@ -92,7 +118,9 @@
                 >{{ paper.year }}</span>
               </div>
             </GTableCell>
-            <GTableCell class="paper-authors px-3 text-xs whitespace-nowrap">
+            <GTableCell
+              class="paper-authors px-3 text-xs whitespace-nowrap"
+            >
               {{ paper.authors.join(', ') }}
             </GTableCell>
             <GTableCell class="px-3">
@@ -118,7 +146,7 @@
 
     <p
       v-else-if="papers.length && !filtered.length"
-      class="papers-empty text-sm"
+      class="content-empty text-sm"
     >
       No papers match your filter.
     </p>
@@ -141,9 +169,9 @@ import {
 import {
   GPill, GPillColor, GPillSize, GProminence, GTextInput,
   GTable, GTableHeader, GTableBody, GTableRow, GTableCell,
+  GMultiSelect, GMultiSelectOption,
 } from '@hdnax/genuix';
 import JourneyBreadcrumb from '@/components/common/JourneyBreadcrumb.vue';
-import FilterBar from '@/components/common/FilterBar.vue';
 import {
   usePaperStore,
 } from '@/stores/papers';
@@ -165,43 +193,30 @@ const papers = computed(() => paperStore.getByJourney(slug.value));
 const search = ref('');
 const statusFilter = ref<string[]>([]);
 
-const statusGroup = [
-  {
-    label: 'To read',
-    value: 'to-read',
-  },
-  {
-    label: 'Reading',
-    value: 'reading',
-  },
-  {
-    label: 'Read',
-    value: 'read',
-  },
-];
-
 const filtered = computed(() => {
   let result = papers.value;
+
   if (statusFilter.value.length) {
     result = result.filter((paper) => statusFilter.value.includes(paper.status));
   }
   if (search.value) {
     const searchQuery = search.value.toLowerCase();
+
     result = result.filter((paper) =>
       paper.title.toLowerCase().includes(searchQuery)
       || paper.authors.some((author) => author.toLowerCase().includes(searchQuery))
       || paper.venue.toLowerCase().includes(searchQuery));
   }
+
   return result;
 });
 </script>
 
-<style>
-.paper-row:hover { background-color: var(--gui-neutral-bg-subtle); }
+<style scoped>
 .paper-title-link { color: var(--gui-neutral-fg-muted); }
-.paper-title-link:hover { color: var(--gui-info-solid); }
 .paper-title { color: var(--gui-neutral-fg-muted); }
-.paper-meta { color: var(--gui-neutral-solid); }
+.paper-venue { color: var(--gui-neutral-solid); }
 .paper-authors { color: var(--gui-neutral-solid); }
-.papers-empty { color: var(--gui-neutral-solid); }
+:global(.paper-row:hover) { background-color: var(--gui-neutral-bg-subtle); }
+:global(.paper-title-link:hover) { color: var(--gui-info-solid); }
 </style>

@@ -1,20 +1,22 @@
 <template>
-  <div class="graph-page">
-    <div class="toolbar">
+  <div class="kg-page flex flex-col h-screen">
+    <div class="kg-page-toolbar flex items-center gap-4 px-4 h-10 shrink-0">
       <button
-        class="ctrl-btn"
+        type="button"
+        class="ctrl-btn p-1.5 rounded-sm cursor-pointer transition-colors"
         title="Back"
-        @click="$router.back()"
+        @click="goBack"
       >
         <GIcon
           :name="GIconName.ArrowLeft"
           :size="14"
         />
       </button>
-      <span class="info">{{ nodes.length }} nodes, {{ edges.length }} edges</span>
-      <div class="controls">
+      <span class="kg-page-info text-xs">{{ nodes.length }} nodes, {{ edges.length }} edges</span>
+      <div class="flex items-center gap-1 ml-auto">
         <button
-          class="ctrl-btn"
+          type="button"
+          class="ctrl-btn p-1.5 rounded-sm cursor-pointer transition-colors"
           title="Zoom in"
           @click="zoomIn"
         >
@@ -24,7 +26,8 @@
           />
         </button>
         <button
-          class="ctrl-btn"
+          type="button"
+          class="ctrl-btn p-1.5 rounded-sm cursor-pointer transition-colors"
           title="Zoom out"
           @click="zoomOut"
         >
@@ -34,7 +37,8 @@
           />
         </button>
         <button
-          class="ctrl-btn"
+          type="button"
+          class="ctrl-btn p-1.5 rounded-sm cursor-pointer transition-colors"
           title="Fit to view"
           @click="zoomFit"
         >
@@ -44,7 +48,8 @@
           />
         </button>
         <button
-          class="ctrl-btn"
+          type="button"
+          class="ctrl-btn p-1.5 rounded-sm cursor-pointer transition-colors"
           title="Recenter"
           @click="recenter"
         >
@@ -57,18 +62,21 @@
     </div>
     <div
       ref="container"
-      class="canvas"
+      class="flex-1"
     />
   </div>
 </template>
 
 <script setup lang="ts">
 import {
-  ref, computed,
+  ref, computed, useTemplateRef,
 } from 'vue';
 import {
   GIcon, GIconName,
 } from '@hdnax/genuix';
+import {
+  useRouter,
+} from 'vue-router';
 import {
   useGraph,
 } from '@/composables/useGraph';
@@ -86,7 +94,13 @@ useSeo({
   type: 'website',
 });
 
-const container = ref<HTMLElement>();
+const router = useRouter();
+const container = useTemplateRef<HTMLElement>('container');
+
+function goBack () {
+  router.back();
+}
+
 const graphHeight = computed(() => window.innerHeight - 40);
 
 const {
@@ -95,32 +109,21 @@ const {
 </script>
 
 <style scoped>
-@reference "@/style.css";
-.graph-page {
-  @apply flex flex-col h-screen;
+.kg-page {
   background: #141414;
   color: #d4d4d4;
 }
-.toolbar {
-  @apply flex items-center gap-4 px-4 h-10 shrink-0;
+.kg-page-toolbar {
   border-bottom: 1px solid #2a2a2a;
 }
-.info {
-  @apply text-xs;
+.kg-page-info {
   color: #666;
 }
-.controls {
-  @apply flex items-center gap-1 ml-auto;
-}
 .ctrl-btn {
-  @apply p-1.5 rounded-sm cursor-pointer transition-colors;
   color: #666;
 }
 .ctrl-btn:hover {
   color: #d4d4d4;
   background: #1c1c1c;
-}
-.canvas {
-  @apply flex-1;
 }
 </style>

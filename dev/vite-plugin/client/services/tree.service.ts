@@ -9,16 +9,18 @@ export type {
   TreeNode, JourneyTree, JourneyGroup, ContentItem,
 } from '@dev/core/types';
 
-export async function loadTree (): Promise<TreeNode[]> {
-  const {
-    data,
-  } = await httpClient.get('/tree');
-  return data;
-}
-
 export async function fetchJourneyTree (): Promise<JourneyTree> {
   const {
     data,
   } = await httpClient.get('/journey-tree');
+
+  return data;
+}
+
+export async function loadTree (): Promise<TreeNode[]> {
+  const {
+    data,
+  } = await httpClient.get('/tree');
+
   return data;
 }

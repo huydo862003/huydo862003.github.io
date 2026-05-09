@@ -3,7 +3,7 @@ published: true
 author: hdnax
 createdAt: '2026-03-28'
 updatedAt: '2026-03-28'
-question: "Can you describe the "door" dilemma as posed by don norman?"
+question: 'Can you describe the "door" dilemma as posed by don norman?'
 deck: general
 concepts:
 - norman-door

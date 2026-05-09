@@ -1,13 +1,28 @@
 <template>
   <div class="page">
     <div class="top-bar">
-      <router-link
+      <RouterLink
         :to="`/journeys/${slug}/papers`"
         class="back"
       >
         &larr; back to papers
-      </router-link>
-      <JourneyBreadcrumb :crumbs="[{ label: 'Journeys', to: '/journeys' }, { label: slug, to: `/journeys/${slug}` }, { label: 'Papers', to: `/journeys/${slug}/papers` }]" />
+      </RouterLink>
+      <JourneyBreadcrumb
+        :crumbs="[
+          {
+            label: 'Journeys',
+            to: '/journeys',
+          },
+          {
+            label: slug,
+            to: `/journeys/${slug}`,
+          },
+          {
+            label: 'Papers',
+            to: `/journeys/${slug}/papers`,
+          },
+        ]"
+      />
     </div>
 
     <template v-if="paper">
@@ -15,10 +30,10 @@
         {{ paper.title }}
       </h1>
 
-      <div class="paper-detail-meta flex flex-wrap items-center gap-x-2 gap-y-0.5 mb-3 text-xs">
+      <div class="paper-meta flex flex-wrap items-center gap-x-2 gap-y-0.5 mb-3 text-xs">
         <span v-if="paper.authors.length">{{ paper.authors.join(', ') }}</span>
         <template v-if="paper.venue || paper.year">
-          <span class="paper-detail-dot">&middot;</span>
+          <span class="paper-meta-sep">&middot;</span>
           <span v-if="paper.venue">{{ paper.venue }}</span>
           <span
             v-if="paper.year"
@@ -35,8 +50,8 @@
         <a
           :href="paper.url"
           target="_blank"
-          rel="noopener"
-          class="paper-url inline-flex items-center gap-1 text-xs no-underline hover:underline"
+          rel="noopener noreferrer"
+          class="paper-url-link inline-flex items-center gap-1 text-xs no-underline hover:underline"
         >
           <GIcon
             :name="GIconName.ExternalLink"
@@ -61,7 +76,7 @@
       </div>
 
       <div class="mb-6">
-        <h3 class="paper-section-label text-xs font-semibold uppercase tracking-wider mb-3 pb-1 border-b">
+        <h3 class="section-label text-xs font-semibold uppercase tracking-wider mb-3 pb-1 border-b">
           Notes
         </h3>
         <div
@@ -71,7 +86,7 @@
         />
         <p
           v-else
-          class="paper-empty text-sm"
+          class="content-empty text-sm"
         >
           No notes yet.
         </p>
@@ -79,9 +94,9 @@
     </template>
     <template v-else>
       <p>
-        Not found. <router-link :to="`/journeys/${slug}/papers`">
+        Not found. <RouterLink :to="`/journeys/${slug}/papers`">
           Back to papers
-        </router-link>
+        </RouterLink>
       </p>
     </template>
   </div>
@@ -130,13 +145,12 @@ const {
   async () => paper.value ? loadContent(paper.value.slug) : '',
   '',
 );
+
 watch(paper, () => reloadContent());
 </script>
 
-<style>
-.paper-detail-meta { color: var(--gui-neutral-solid); }
-.paper-detail-dot { color: color-mix(in oklch, var(--gui-neutral-solid) 50%, transparent); }
-.paper-url { color: var(--gui-info-solid); }
-.paper-section-label { color: var(--gui-neutral-solid); border-color: var(--gui-neutral-border); }
-.paper-empty { color: var(--gui-neutral-solid); }
+<style scoped>
+.paper-meta { color: var(--gui-neutral-solid); }
+.paper-meta-sep { color: color-mix(in oklch, var(--gui-neutral-solid) 50%, transparent); }
+.paper-url-link { color: var(--gui-info-solid); }
 </style>

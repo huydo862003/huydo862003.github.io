@@ -77,6 +77,7 @@ onMounted(async () => {
   // render <details><summary> as interactive toggle lists
   renderDetailsBlocks();
   let detailsTimer: ReturnType<typeof setTimeout> | undefined;
+
   crepe.on((api) => {
     api.markdownUpdated(() => {
       clearTimeout(detailsTimer);
@@ -88,14 +89,18 @@ onMounted(async () => {
 function renderDetailsBlocks () {
   if (!editorElement.value) return;
   const htmlBlocks = editorElement.value.querySelectorAll('[data-node-type="html"] , .html_block');
+
   for (const block of htmlBlocks) {
     const text = block.textContent ?? '';
+
     if (!text.includes('<details>') && !text.includes('<summary>')) continue;
     // already rendered
     if (block.querySelector('details')) continue;
     const wrapper = document.createElement('div');
+
     wrapper.innerHTML = text;
     const details = wrapper.querySelector('details');
+
     if (!details) continue;
     details.classList.add('cm-toggle');
     block.innerHTML = '';

@@ -13,6 +13,7 @@ export async function fetchGitStatus (): Promise<GitFile[]> {
   const {
     data,
   } = await httpClient.get('/git/status');
+
   return data.files;
 }
 

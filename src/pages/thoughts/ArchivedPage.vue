@@ -1,35 +1,49 @@
 <template>
   <div class="page">
     <div class="top-bar">
-      <router-link
+      <RouterLink
         to="/thoughts"
         class="back"
       >
         &larr; all thoughts
-      </router-link>
-      <JourneyBreadcrumb :crumbs="[{ label: 'Thoughts', to: '/thoughts' }, { label: 'Archived', to: '/archived' }]" />
+      </RouterLink>
+      <JourneyBreadcrumb
+        :crumbs="[
+          {
+            label: 'Thoughts',
+            to: '/thoughts',
+          },
+          {
+            label: 'Archived',
+            to: '/archived',
+          },
+        ]"
+      />
     </div>
-    <h1>Archived</h1>
-    <p class="subtitle">
+    <h1 class="text-xl font-bold mb-1">
+      Archived
+    </h1>
+    <p class="archived-desc text-sm mb-6">
       Unlisted posts. You found the hidden section.
     </p>
-    <ul class="list">
+    <ul class="list-none p-0 m-0">
       <li
         v-for="post in archivedPosts"
         :key="post.slug"
+        class="py-1 flex gap-4 items-baseline"
       >
-        <span class="date">{{ post.date }}</span>
-        <router-link
+        <span class="archived-date text-xs shrink-0 tabular-nums">{{ post.date }}</span>
+        <RouterLink
           :to="`/thoughts/${post.slug}`"
-          class="link"
+          class="text-sm no-underline hover:underline"
         >
           {{ post.title }}
-        </router-link>
+        </RouterLink>
       </li>
     </ul>
     <p
       v-if="!archivedPosts.length"
-      class="empty"
+      class="archived-empty text-sm"
     >
       Nothing archived yet.
     </p>
@@ -48,29 +62,7 @@ const {
 </script>
 
 <style scoped>
-@reference "@/style.css";
-h1 {
-  @apply text-xl font-bold mb-1;
-}
-.subtitle {
-  @apply text-sm mb-6;
-  color: var(--gui-neutral-solid);
-}
-.list {
-  @apply list-none p-0 m-0;
-}
-.list li {
-  @apply py-1 flex gap-4 items-baseline;
-}
-.date {
-  @apply text-xs shrink-0 tabular-nums;
-  color: var(--gui-neutral-solid);
-}
-.link {
-  @apply text-sm no-underline hover:underline;
-}
-.empty {
-  @apply text-sm;
-  color: var(--gui-neutral-solid);
-}
+.archived-desc { color: var(--gui-neutral-solid); }
+.archived-date { color: var(--gui-neutral-solid); }
+.archived-empty { color: var(--gui-neutral-solid); }
 </style>

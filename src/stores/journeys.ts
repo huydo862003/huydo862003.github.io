@@ -31,9 +31,11 @@ const bySlug = new Map(all.map((index) => [
 
 export const useJourneyStore = defineStore('journeys', () => {
   const journeys = all;
+
   function getBySlug (slug: string) {
     return bySlug.get(slug);
   }
+
   return {
     journeys,
     getBySlug,

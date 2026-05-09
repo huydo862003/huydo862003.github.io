@@ -42,13 +42,15 @@
       >
         <div
           class="flex items-center gap-1.5 px-1 py-1 rounded cursor-pointer hover:bg-gray-100 font-medium text-gray-700"
-          @click="toggleJourney(journey.slug)"
+          @click="() => toggleJourney(journey.slug)"
         >
           <GIcon
             :name="GIconName.ChevronRight"
             :size="10"
             class="shrink-0 text-gray-400 transition-transform duration-150"
-            :class="{ 'rotate-90': openJourneys.has(journey.slug) }"
+            :class="{
+              'rotate-90': openJourneys.has(journey.slug),
+            }"
           />
           <GIcon
             :name="GIconName.Compass"
@@ -68,13 +70,15 @@
           >
             <div
               class="flex items-center gap-1.5 px-1 py-0.5 rounded cursor-pointer hover:bg-gray-50 text-gray-500 mt-1"
-              @click="toggleSection(`${journey.slug}/${type}`)"
+              @click="() => toggleSection(`${journey.slug}/${type}`)"
             >
               <GIcon
                 :name="GIconName.ChevronRight"
                 :size="9"
                 class="shrink-0 text-gray-300 transition-transform duration-150"
-                :class="{ 'rotate-90': openSections.has(`${journey.slug}/${type}`) }"
+                :class="{
+                  'rotate-90': openSections.has(`${journey.slug}/${type}`),
+                }"
               />
               <GIcon
                 :name="TYPE_CONFIG[type]?.icon ?? GIconName.File"
@@ -94,8 +98,10 @@
                 v-for="item in items"
                 :key="item.path"
                 class="flex items-center gap-1.5 px-1 py-0.5 rounded cursor-pointer hover:bg-gray-50 text-gray-600"
-                :class="{ 'bg-blue-50 text-blue-700 font-medium': fileStore.currentPath === item.path }"
-                @click="emit('select', item.path)"
+                :class="{
+                  'bg-blue-50 text-blue-700 font-medium': fileStore.currentPath === item.path,
+                }"
+                @click="() => emit('select', item.path)"
               >
                 <GIcon
                   :name="GIconName.File"
@@ -117,13 +123,15 @@
         <div class="mb-3">
           <div
             class="flex items-center gap-1.5 px-1 py-1 rounded cursor-pointer hover:bg-gray-100 font-medium text-gray-700"
-            @click="toggleSection(String(type))"
+            @click="() => toggleSection(String(type))"
           >
             <GIcon
               :name="GIconName.ChevronRight"
               :size="10"
               class="shrink-0 text-gray-400 transition-transform duration-150"
-              :class="{ 'rotate-90': openSections.has(String(type)) }"
+              :class="{
+                'rotate-90': openSections.has(String(type)),
+              }"
             />
             <GIcon
               :name="TYPE_CONFIG[type]?.icon ?? GIconName.File"
@@ -143,8 +151,10 @@
               v-for="item in items"
               :key="item.path"
               class="flex items-center gap-1.5 px-1 py-0.5 rounded cursor-pointer hover:bg-gray-50 text-gray-600"
-              :class="{ 'bg-blue-50 text-blue-700 font-medium': fileStore.currentPath === item.path }"
-              @click="emit('select', item.path)"
+              :class="{
+                'bg-blue-50 text-blue-700 font-medium': fileStore.currentPath === item.path,
+              }"
+              @click="() => emit('select', item.path)"
             >
               <GIcon
                 :name="GIconName.File"
@@ -174,13 +184,12 @@ import {
   useFileStore,
 } from '../stores/file.store';
 
-const store = useTreeStore();
-const fileStore = useFileStore();
 const emit = defineEmits<{
   select: [path: string];
   hide: [];
 }>();
-
+const store = useTreeStore();
+const fileStore = useFileStore();
 const openJourneys = reactive(new Set<string>());
 const openSections = reactive(new Set<string>());
 

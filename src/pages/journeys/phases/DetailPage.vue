@@ -1,13 +1,28 @@
 <template>
   <div class="page">
     <div class="top-bar">
-      <router-link
+      <RouterLink
         :to="`/journeys/${slug}/phases`"
         class="back"
       >
         &larr; back to phases
-      </router-link>
-      <JourneyBreadcrumb :crumbs="[{ label: 'Journeys', to: '/journeys' }, { label: slug, to: `/journeys/${slug}` }, { label: 'Phases', to: `/journeys/${slug}/phases` }]" />
+      </RouterLink>
+      <JourneyBreadcrumb
+        :crumbs="[
+          {
+            label: 'Journeys',
+            to: '/journeys',
+          },
+          {
+            label: slug,
+            to: `/journeys/${slug}`,
+          },
+          {
+            label: 'Phases',
+            to: `/journeys/${slug}/phases`,
+          },
+        ]"
+      />
     </div>
 
     <template v-if="phase">
@@ -25,7 +40,7 @@
       />
       <p
         v-else
-        class="phase-empty text-sm"
+        class="content-empty text-sm"
       >
         No content yet.
       </p>
@@ -34,11 +49,11 @@
         v-if="rootBooks.length"
         class="mb-8"
       >
-        <h2 class="phase-section-label text-xs font-semibold uppercase tracking-wider mb-3 pb-1 border-b">
+        <h2 class="section-label text-xs font-semibold uppercase tracking-wider mb-3 pb-1 border-b">
           Books
         </h2>
         <div class="flex flex-col gap-3">
-          <SCard
+          <BookCard
             v-for="b in rootBooks"
             :key="b.slug"
             :data="b"
@@ -68,12 +83,12 @@
             :value="c"
             :label="formatSlug(c)"
           >
-            <router-link
+            <RouterLink
               :to="`/journeys/${slug}/concepts/${c}`"
               class="phase-concept-link block text-sm no-underline truncate transition-colors py-1 border-b"
             >
               {{ formatSlug(c) }}
-            </router-link>
+            </RouterLink>
           </GFilterableItem>
         </GFilterable>
       </div>
@@ -88,9 +103,9 @@
     </template>
     <template v-else>
       <p>
-        Not found. <router-link :to="`/journeys/${slug}/phases`">
+        Not found. <RouterLink :to="`/journeys/${slug}/phases`">
           Back to phases
-        </router-link>
+        </RouterLink>
       </p>
     </template>
   </div>
@@ -118,10 +133,10 @@ import {
 import {
   useBookStore,
 } from '@/stores/books';
-import SCard from '@/components/content/book/SCard.vue';
+import BookCard from '@/components/content/book/BookCard.vue';
 import type {
-  SCardConfig,
-} from '@/components/content/book/SCard.vue';
+  BookCardConfig,
+} from '@/components/content/book/BookCard.vue';
 import type {
   Book,
 } from '@/types/book';
@@ -155,6 +170,7 @@ const journeyPhases = computed(() => phaseStore.getByJourney(slug.value));
 const currentIndex = computed(() => journeyPhases.value.findIndex((phase) => phase.slug === phaseSlug.value));
 const previousPhase = computed(() => {
   const phase = journeyPhases.value[currentIndex.value - 1];
+
   return phase && {
     to: `/journeys/${slug.value}/phases/${phase.slug}`,
     title: phase.title,
@@ -162,6 +178,7 @@ const previousPhase = computed(() => {
 });
 const nextPhase = computed(() => {
   const phase = journeyPhases.value[currentIndex.value + 1];
+
   return phase && {
     to: `/journeys/${slug.value}/phases/${phase.slug}`,
     title: phase.title,
@@ -173,16 +190,20 @@ const {
   async () => phase.value ? loadContent(phase.value.slug) : '',
   '',
 );
+
 watch(phase, () => reloadContent());
 
 const rootBooks = computed(() => {
   const seen = new Set<string>();
   const roots: NonNullable<ReturnType<typeof bookStore.getBySlug>>[] = [];
+
   for (const bookSlug of phase.value?.books ?? []) {
     let book = bookStore.getBySlug(bookSlug);
+
     if (!book) continue;
     while (book.parent) {
       const parent = bookStore.getBySlug(book.parent);
+
       if (!parent) break;
       book = parent;
     }
@@ -191,10 +212,11 @@ const rootBooks = computed(() => {
       roots.push(book);
     }
   }
+
   return roots;
 });
 
-const bookConfig = computed((): SCardConfig<Book> => ({
+const bookConfig = computed((): BookCardConfig<Book> => ({
   titleKey: 'title',
   icon: GIconName.Book,
   routeTemplate: '/journeys/{journeySlug}/books/{slug}',
@@ -210,12 +232,9 @@ const bookConfig = computed((): SCardConfig<Book> => ({
     .filter((child): child is NonNullable<typeof child> => !!child),
   renderChildren: true,
 }));
-
 </script>
 
-<style>
-.phase-empty { color: var(--gui-neutral-solid); }
-.phase-section-label { color: var(--gui-neutral-solid); border-color: var(--gui-neutral-border); }
+<style scoped>
 .phase-concept-link { color: var(--gui-neutral-fg-muted); border-color: var(--gui-neutral-border); }
 .phase-concept-link:hover { color: var(--gui-info-solid); }
 </style>

@@ -27,12 +27,24 @@ function onKeyDown (event: KeyboardEvent) {
     if (matches(event, binding)) {
       event.preventDefault();
       binding.handler();
+
       return;
     }
   }
 }
 
 let listening = false;
+
+export function formatShortcut (binding: KeyBinding): string[] {
+  const parts: string[] = [];
+
+  if (binding.meta) parts.push(navigator?.platform?.includes('Mac') ? '⌘' : 'Ctrl');
+  if (binding.shift) parts.push('⇧');
+  if (binding.alt) parts.push(navigator?.platform?.includes('Mac') ? '⌥' : 'Alt');
+  parts.push(binding.key.length === 1 ? binding.key.toUpperCase() : binding.key);
+
+  return parts;
+}
 
 export function useKeyboard () {
   if (!listening && typeof window !== 'undefined') {
@@ -51,13 +63,4 @@ export function useKeyboard () {
     register,
     bindings: globalBindings,
   };
-}
-
-export function formatShortcut (binding: KeyBinding): string[] {
-  const parts: string[] = [];
-  if (binding.meta) parts.push(navigator?.platform?.includes('Mac') ? '⌘' : 'Ctrl');
-  if (binding.shift) parts.push('⇧');
-  if (binding.alt) parts.push(navigator?.platform?.includes('Mac') ? '⌥' : 'Alt');
-  parts.push(binding.key.length === 1 ? binding.key.toUpperCase() : binding.key);
-  return parts;
 }

@@ -19,6 +19,7 @@ export function useTableSort (initial = '') {
 
   function sortIcon (key: string): string {
     if (sortKey.value !== key) return '';
+
     return sortAsc.value ? '(asc)' : '(desc)';
   }
 

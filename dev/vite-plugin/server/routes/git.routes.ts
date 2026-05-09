@@ -7,7 +7,9 @@ import {
 
 export function gitRoutes (projectDirectory: string): Router {
   const router = Router();
+
   router.get('/git/status', status(projectDirectory));
   router.post('/git/commit', commit(projectDirectory));
+
   return router;
 }

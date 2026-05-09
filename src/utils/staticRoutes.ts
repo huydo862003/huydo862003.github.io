@@ -6,21 +6,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
-function slugsFromDirectory (directory: string): string[] {
-  if (!fs.existsSync(directory)) return [];
-  return fs.readdirSync(directory, {
-    recursive: true,
-  })
-    .filter((file) => String(file).endsWith('.md'))
-    .map((file) => path.basename(String(file), '.md'));
-}
-
-function frontmatterField (filePath: string, field: string): string {
-  const content = fs.readFileSync(filePath, 'utf-8');
-  const match = content.match(new RegExp(`^${field}:\\s*(.+)`, 'm'));
-  return match ? match[1].trim().replace(/^["']|["']$/g, '') : '';
-}
-
 export function generateRoutes (): string[] {
   const routes: string[] = [
     '/',
@@ -36,6 +21,7 @@ export function generateRoutes (): string[] {
   }
 
   const journeySlugs = slugsFromDirectory('content/journeys');
+
   for (const index of journeySlugs) {
     routes.push(`/journeys/${index}`);
     for (const sub of [
@@ -55,6 +41,7 @@ export function generateRoutes (): string[] {
     'flashcards',
     'phases',
   ] as const;
+
   for (const type of types) {
     for (const index of journeySlugs) {
       for (const slug of slugsFromDirectory(`content/${type}/${index}`)) {
@@ -74,12 +61,14 @@ export function generateRoutes (): string[] {
       } else if (entry.name.endsWith('.md')) {
         const fp = path.join(directory, entry.name);
         const journey = frontmatterField(fp, 'journey');
+
         if (journey) {
           routes.push(`/journeys/${journey}/books/${path.basename(entry.name, '.md')}`);
         }
       }
     }
   };
+
   walkBooks('content/books');
 
   // Papers - journey comes from frontmatter
@@ -88,10 +77,28 @@ export function generateRoutes (): string[] {
   }).filter((entry) => entry.isFile() && entry.name.endsWith('.md'))) {
     const fp = path.join('content/papers', entry.name);
     const journey = frontmatterField(fp, 'journey');
+
     if (journey) {
       routes.push(`/journeys/${journey}/papers/${path.basename(entry.name, '.md')}`);
     }
   }
 
   return routes;
+}
+
+function frontmatterField (filePath: string, field: string): string {
+  const content = fs.readFileSync(filePath, 'utf-8');
+  const match = content.match(new RegExp(`^${field}:\\s*(.+)`, 'm'));
+
+  return match ? match[1].trim().replace(/^["']|["']$/g, '') : '';
+}
+
+function slugsFromDirectory (directory: string): string[] {
+  if (!fs.existsSync(directory)) return [];
+
+  return fs.readdirSync(directory, {
+    recursive: true,
+  })
+    .filter((file) => String(file).endsWith('.md'))
+    .map((file) => path.basename(String(file), '.md'));
 }

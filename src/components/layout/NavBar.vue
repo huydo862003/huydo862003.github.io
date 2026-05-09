@@ -1,27 +1,28 @@
 <template>
-  <nav class="nav">
-    <div class="inner">
-      <router-link
+  <nav class="navbar border-b">
+    <div class="navbar-inner flex items-center">
+      <RouterLink
         to="/"
-        class="logo"
+        class="no-underline flex items-center gap-0.5"
       >
-        <SiteLogo class="logo-icon" />
-        <span class="logo-text">scrambled</span>
-      </router-link>
-      <div class="right">
-        <router-link
+        <SiteLogo class="navbar-logo h-14 w-14" />
+        <span class="text-sm font-bold">scrambled</span>
+      </RouterLink>
+      <div class="hidden sm:flex items-center gap-4 ml-auto">
+        <RouterLink
           v-for="link in navLinks"
           :key="link.to"
           :to="link.to"
-          class="nav-link"
+          class="nav-link text-xs no-underline"
         >
           {{ link.label }}
-        </router-link>
+        </RouterLink>
         <VTooltip placement="bottom">
           <button
-            class="icon-btn"
+            type="button"
+            class="icon-btn p-1 cursor-pointer"
             aria-label="Open search"
-            @click="emit('open-palette')"
+            @click="openPalette"
           >
             <GIcon
               :name="GIconName.Search"
@@ -30,82 +31,56 @@
             />
           </button>
           <template #popper>
-            <span class="tooltip-search">Search <GKbdShortcut :keys="[GKbdKeyName.Alt, GKbdKeyName.P]" /></span>
+            <span class="navbar-tooltip-hint flex items-center gap-2 text-xs">Search <GKbdShortcut
+              :keys="[
+                GKbdKeyName.Alt,
+                GKbdKeyName.P,
+              ]"
+            /></span>
           </template>
         </VTooltip>
-        <button
-          class="icon-btn"
-          :title="isDark ? 'Light mode' : 'Dark mode'"
-          @click="toggle"
-        >
-          <GIcon
-            v-if="!isDark"
-            :name="GIconName.Moon"
-            :size="16"
-            weight="bold"
-          />
-          <GIcon
-            v-else
-            :name="GIconName.Sun"
-            :size="16"
-            weight="bold"
-          />
-        </button>
+        <GThemeToggle :size="16" />
         <UserMenu />
       </div>
-      <div class="mobile-right">
+      <div class="sm:hidden flex items-center gap-1 ml-auto">
         <button
-          class="icon-btn"
+          type="button"
+          class="icon-btn p-1 cursor-pointer"
           :aria-label="open ? 'Close menu' : 'Open menu'"
-          @click="open = !open"
+          @click="toggleMenu"
         >
           <GIcon
             v-if="open"
+            key="g-icon-1"
             :name="GIconName.X"
             :size="18"
             weight="bold"
           />
           <GIcon
             v-else
+            key="g-icon-2"
             :name="GIconName.Menu"
             :size="18"
             weight="bold"
           />
         </button>
-        <button
-          class="icon-btn"
-          :aria-label="isDark ? 'Switch to light mode' : 'Switch to dark mode'"
-          @click="toggle"
-        >
-          <GIcon
-            v-if="!isDark"
-            :name="GIconName.Moon"
-            :size="16"
-            weight="bold"
-          />
-          <GIcon
-            v-else
-            :name="GIconName.Sun"
-            :size="16"
-            weight="bold"
-          />
-        </button>
+        <GThemeToggle :size="16" />
         <UserMenu />
       </div>
     </div>
     <div
       v-if="open"
-      class="mobile-menu"
+      class="navbar-mobile-menu sm:hidden border-t px-4 py-2 flex flex-col gap-1"
     >
-      <router-link
+      <RouterLink
         v-for="link in navLinks"
         :key="link.to"
         :to="link.to"
-        class="mobile-link"
-        @click="open = false"
+        class="mobile-link text-sm no-underline py-1"
+        @click="closeMenu"
       >
         {{ link.label }}
-      </router-link>
+      </RouterLink>
     </div>
   </nav>
 </template>
@@ -115,30 +90,29 @@ import {
   ref,
 } from 'vue';
 import {
-  storeToRefs,
-} from 'pinia';
-import {
   GIcon, GIconName,
   GKbdShortcut, GKbdKeyName,
+  GThemeToggle,
 } from '@hdnax/genuix';
-import {
-  useThemeStore,
-} from '@/stores/theme';
 import SiteLogo from '@/components/layout/SiteLogo.vue';
 import UserMenu from '@/components/layout/UserMenu.vue';
 
 const emit = defineEmits<{
-  (event: 'open-palette'): void;
+  'open-palette': [];
 }>();
-
-const themeStore = useThemeStore();
-const {
-  isDark,
-} = storeToRefs(themeStore);
-const {
-  toggle,
-} = themeStore;
 const open = ref(false);
+
+function closeMenu () {
+  open.value = false;
+}
+
+function openPalette () {
+  emit('open-palette');
+}
+
+function toggleMenu () {
+  open.value = !open.value;
+}
 
 const navLinks = [
   {
@@ -157,57 +131,35 @@ const navLinks = [
 </script>
 
 <style scoped>
-@reference "@/style.css";
-.nav {
-  @apply border-b;
+.navbar {
   border-color: var(--gui-neutral-border);
   background-color: var(--gui-neutral-bg);
 }
-.inner {
+.navbar-inner {
   max-width: 64rem;
   margin: 0 auto;
   padding: 0 1rem;
   height: 3rem;
-  display: flex;
-  align-items: center;
 }
-.logo {
-  @apply no-underline flex items-center gap-0.5;
-}
-.logo-icon {
-  @apply h-14 w-14;
+.navbar-logo {
   color: var(--gui-neutral-fg);
 }
-.logo-text {
-  @apply text-sm font-bold;
-}
-.right {
-  @apply hidden sm:flex items-center gap-4 ml-auto;
-}
 .nav-link {
-  @apply text-xs no-underline;
   color: var(--gui-neutral-fg-muted);
-  &:hover { color: var(--gui-neutral-fg); }
 }
 .icon-btn {
-  @apply p-1 cursor-pointer;
   color: var(--gui-neutral-solid);
-  &:hover { color: var(--gui-neutral-fg); }
 }
-.mobile-right {
-  @apply sm:hidden flex items-center gap-1 ml-auto;
-}
-.mobile-menu {
-  @apply sm:hidden border-t px-4 py-2 flex flex-col gap-1;
-  border-color: var(--gui-neutral-border-subtle);
+.navbar-tooltip-hint {
+  color: var(--gui-neutral-fg-muted);
 }
 .mobile-link {
-  @apply text-sm no-underline py-1;
-  color: var(--gui-neutral-fg-muted);
-  &:hover { color: var(--gui-neutral-fg); }
-}
-.tooltip-search {
-  @apply flex items-center gap-2 text-xs;
   color: var(--gui-neutral-fg-muted);
 }
+.navbar-mobile-menu {
+  border-color: var(--gui-neutral-border-subtle);
+}
+.nav-link:hover { color: var(--gui-neutral-fg); }
+.icon-btn:hover { color: var(--gui-neutral-fg); }
+.mobile-link:hover { color: var(--gui-neutral-fg); }
 </style>

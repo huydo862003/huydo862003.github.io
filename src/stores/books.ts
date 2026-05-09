@@ -33,12 +33,15 @@ const bySlug = new Map(all.map((book) => [
 
 export const useBookStore = defineStore('books', () => {
   const books = all;
+
   function getBySlug (slug: string) {
     return bySlug.get(slug);
   }
+
   function getByJourney (index: string) {
     return all.filter((book) => book.journey === index);
   }
+
   return {
     books,
     getBySlug,

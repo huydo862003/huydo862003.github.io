@@ -9,14 +9,29 @@
       >
         &larr; {{ mode === 'quiz' ? 'back to cards' : 'back to decks' }}
       </a>
-      <router-link
+      <RouterLink
         v-else
         :to="`/journeys/${slug}`"
         class="back"
       >
         &larr; back to journey
-      </router-link>
-      <JourneyBreadcrumb :crumbs="[{ label: 'Journeys', to: '/journeys' }, { label: slug, to: `/journeys/${slug}` }, { label: 'Flashcards', to: `/journeys/${slug}/flashcards` }]" />
+      </RouterLink>
+      <JourneyBreadcrumb
+        :crumbs="[
+          {
+            label: 'Journeys',
+            to: '/journeys',
+          },
+          {
+            label: slug,
+            to: `/journeys/${slug}`,
+          },
+          {
+            label: 'Flashcards',
+            to: `/journeys/${slug}/flashcards`,
+          },
+        ]"
+      />
     </div>
 
     <div class="flex flex-wrap items-center justify-between gap-1 mb-6">
@@ -35,7 +50,7 @@
           :prominence="GButtonProminence.Secondary"
           :semantic="GButtonSemantic.Success"
           :size="GButtonSize.Sm"
-          @click="startQuiz()"
+          @click="startQuiz"
         >
           &#9654; Quiz mode
         </GButton>
@@ -50,8 +65,9 @@
           label="All"
         >
           <button
+            type="button"
             class="deck-btn w-full border rounded-sm px-4 py-3 text-left text-sm transition-colors flex flex-wrap items-center justify-between gap-1 cursor-pointer"
-            @click="openDeck()"
+            @click="openDeck"
           >
             <span class="font-medium">All</span>
             <span class="deck-meta text-xs">{{ journeyStats.total }} cards · {{ journeyStats.dueToday }} due</span>
@@ -64,8 +80,9 @@
           :label="formatSlug(d)"
         >
           <button
+            type="button"
             class="deck-btn w-full border rounded-sm px-4 py-3 text-left text-sm transition-colors flex flex-wrap items-center justify-between gap-1 cursor-pointer"
-            @click="openDeck(d)"
+            @click="() => openDeck(d)"
           >
             <span class="font-medium">{{ formatSlug(d) }}</span>
             <span class="deck-meta text-xs">{{ deckStats.get(d)?.count ?? 0 }} cards · {{ deckStats.get(d)?.due ?? 0 }} due</span>
@@ -74,7 +91,7 @@
       </GFilterable>
       <p
         v-if="!journeyCards.length"
-        class="fc-empty text-center text-sm py-8"
+        class="content-empty text-center text-sm py-8"
       >
         No flashcards for this journey yet.
       </p>
@@ -87,7 +104,7 @@
           :prominence="GButtonProminence.Secondary"
           :semantic="GButtonSemantic.Success"
           :size="GButtonSize.Sm"
-          @click="startQuiz()"
+          @click="startQuiz"
         >
           ▶ Quiz mode
         </GButton>
@@ -103,8 +120,7 @@
             <GTableRow>
               <GTableCell
                 header
-                class="px-3"
-                style="min-width: 14rem"
+                class="col-question px-3"
               >
                 Question <GTableSorter
                   col-key="question"
@@ -113,8 +129,7 @@
               </GTableCell>
               <GTableCell
                 header
-                class="px-3"
-                style="min-width: 4rem"
+                class="col-mastery px-3"
               >
                 Mastery <GTableSorter
                   col-key="mastery"
@@ -123,8 +138,7 @@
               </GTableCell>
               <GTableCell
                 header
-                class="px-3"
-                style="min-width: 3rem"
+                class="col-stale px-3"
               >
                 Stale <GTableSorter
                   col-key="stale"
@@ -133,8 +147,7 @@
               </GTableCell>
               <GTableCell
                 header
-                class="px-3"
-                style="min-width: 6rem"
+                class="col-last-reviewed px-3"
               >
                 Last reviewed <GTableSorter
                   col-key="lastReviewed"
@@ -152,21 +165,24 @@
               v-for="card in activePool"
               :key="card.slug"
               class="fc-table-row cursor-pointer transition-colors"
-              @click="$router.push(`/journeys/${slug}/flashcards/${card.slug}`)"
+              @click="() => navigateToCard(card.slug)"
             >
               <GTableCell class="max-w-md truncate px-3">
-                <router-link
+                <RouterLink
                   :to="`/journeys/${slug}/flashcards/${card.slug}`"
                   class="fc-question-link no-underline hover:underline truncate block"
                 >
                   {{ card.question }}
-                </router-link>
+                </RouterLink>
               </GTableCell>
               <GTableCell class="px-3">
                 <span
                   v-tooltip="masteryLabel(card.slug)"
                   class="status-ring"
-                  :style="{ '--progress': masteryProgress(card.slug), '--ring-color': ringColor(masteryProgress(card.slug)) }"
+                  :style="{
+                    '--progress': masteryProgress(card.slug),
+                    '--ring-color': ringColor(masteryProgress(card.slug)),
+                  }"
                 />
               </GTableCell>
               <GTableCell>
@@ -183,7 +199,7 @@
                   :prominence="GButtonProminence.Ghost"
                   :semantic="GButtonSemantic.Destructive"
                   :size="GButtonSize.Xs"
-                  @click.stop="flashcardStore.reviewCard(card.slug, false)"
+                  @click.stop="() => reviewCardWrong(card.slug)"
                 >
                   <GIcon
                     :name="GIconName.X"
@@ -196,7 +212,7 @@
                   :semantic="GButtonSemantic.Success"
                   :size="GButtonSize.Xs"
                   :disabled="answeredToday(card.slug)"
-                  @click.stop="flashcardStore.reviewCard(card.slug, true)"
+                  @click.stop="() => reviewCardRight(card.slug)"
                 >
                   <GIcon
                     :name="GIconName.Check"
@@ -214,13 +230,14 @@
     <div v-if="mode === 'quiz'">
       <div v-if="currentCard">
         <div class="mb-4">
-          <span class="fc-quiz-counter text-xs mb-2 block">{{ currentIndex + 1 }}/{{ queue.length }}</span>
+          <span class="quiz-counter text-xs mb-2 block">{{ currentIndex + 1 }}/{{ queue.length }}</span>
           <div class="flex items-center gap-2">
             <GButton
               v-if="!flipped"
+              key="g-button-2"
               :prominence="GButtonProminence.Secondary"
               :size="GButtonSize.Sm"
-              @click="flipped = true"
+              @click="showAnswer"
             >
               Show answer
             </GButton>
@@ -229,7 +246,7 @@
                 :prominence="GButtonProminence.Secondary"
                 :semantic="GButtonSemantic.Destructive"
                 :size="GButtonSize.Sm"
-                @click="answer(false)"
+                @click="answerWrong"
               >
                 Wrong
               </GButton>
@@ -237,17 +254,18 @@
                 :prominence="GButtonProminence.Secondary"
                 :semantic="GButtonSemantic.Success"
                 :size="GButtonSize.Sm"
-                @click="answer(true)"
+                @click="answerRight"
               >
                 Right
               </GButton>
             </template>
             <GButton
               v-if="currentIndex > 0"
+              key="g-button-3"
               :prominence="GButtonProminence.Ghost"
               :size="GButtonSize.Sm"
               class="ml-auto"
-              @click="goBackCard()"
+              @click="goBackCard"
             >
               &larr; Prev
             </GButton>
@@ -255,9 +273,8 @@
         </div>
 
         <div
-          class="fc-card-wrap border rounded-sm p-6 cursor-pointer"
-          style="perspective: 800px;"
-          @click="flipped = !flipped"
+          class="quiz-card border rounded-sm p-6 cursor-pointer"
+          @click="toggleFlipped"
         >
           <Transition
             name="flip"
@@ -266,10 +283,9 @@
             <div
               v-if="!flipped"
               key="front"
-              class="flex flex-col"
-              style="min-height: 10.5rem;"
+              class="quiz-face flex flex-col"
             >
-              <div class="fc-card-label text-xs mb-4">
+              <div class="quiz-face-label text-xs mb-4">
                 question
               </div>
               <div
@@ -280,10 +296,9 @@
             <div
               v-else
               key="back"
-              class="flex flex-col"
-              style="min-height: 10.5rem;"
+              class="quiz-face flex flex-col"
             >
-              <div class="fc-card-label text-xs mb-4">
+              <div class="quiz-face-label text-xs mb-4">
                 answer
               </div>
               <div
@@ -297,28 +312,30 @@
 
       <div
         v-else
-        class="fc-card-wrap border rounded-sm p-6 text-center"
+        class="quiz-done border rounded-sm p-6 text-center"
       >
         <h2 class="text-base font-bold mb-1">
           Done.
         </h2>
-        <p class="fc-quiz-score text-sm mb-3">
+        <p class="quiz-done-stats text-sm mb-3">
           {{ sessionRight }} right, {{ sessionWrong }} wrong
         </p>
         <div
           v-if="sessionRight + sessionWrong > 0"
-          class="fc-progress-bg w-48 h-1.5 rounded-sm mx-auto overflow-hidden"
+          class="quiz-bar w-48 h-1.5 rounded-sm mx-auto overflow-hidden"
         >
           <div
-            class="fc-progress-bar h-full rounded-sm transition-[width] duration-300"
-            :style="{ width: `${(sessionRight / (sessionRight + sessionWrong)) * 100}%` }"
+            class="quiz-bar-fill h-full rounded-sm transition-[width] duration-300"
+            :style="{
+              width: `${(sessionRight / (sessionRight + sessionWrong)) * 100}%`,
+            }"
           />
         </div>
         <GButton
           :prominence="GButtonProminence.Secondary"
           :size="GButtonSize.Sm"
           class="mt-4"
-          @click="setQuery({ mode: 'table', deck: activeDeck })"
+          @click="backToTable"
         >
           done
         </GButton>
@@ -398,6 +415,7 @@ const activePool = computed(() => {
   const pool = activeDeck.value
     ? journeyCards.value.filter((card) => card.deck === activeDeck.value)
     : journeyCards.value;
+
   if (!tableSortKey.value) return pool;
   const list = [...pool];
   const direction = tableSortAsc.value ? 1 : -1;
@@ -406,15 +424,19 @@ const activePool = computed(() => {
     card.slug,
     flashcardStore.getState(card.slug),
   ]));
+
   list.sort((first, second) => {
     if (sortKey === 'question') return direction * first.question.localeCompare(second.question);
     const sa = states.get(first.slug) ?? flashcardStore.getState(first.slug);
     const sb = states.get(second.slug) ?? flashcardStore.getState(second.slug);
+
     if (sortKey === 'mastery') return direction * (sa.interval - sb.interval);
     if (sortKey === 'stale') return direction * (Number(isStale(sa)) - Number(isStale(sb)));
     if (sortKey === 'lastReviewed') return direction * (sa.lastReviewedAt || '').localeCompare(sb.lastReviewedAt || '');
+
     return 0;
   });
+
   return list;
 });
 
@@ -423,36 +445,34 @@ const deckStats = computed(() => {
     count: number;
     due: number;
   }>();
+
   for (const card of journeyCards.value) {
     const deckStat = stats.get(card.deck) || {
       count: 0,
       due: 0,
     };
+
     deckStat.count++;
     if (isDue(flashcardStore.getState(card.slug))) deckStat.due++;
     stats.set(card.deck, deckStat);
   }
+
   return stats;
 });
 
-function setQuery (queryInput: Record<string, string | undefined>) {
-  const query: Record<string, string> = {};
-  for (const [
-    key,
-    value,
-  ] of Object.entries(queryInput)) {
-    if (value) query[key] = value;
-  }
-  router.replace({
-    query,
+function answeredToday (cardSlug: string): boolean {
+  return isAnsweredToday(flashcardStore.getState(cardSlug));
+}
+
+function backToTable () {
+  setQuery({
+    mode: 'table',
+    deck: activeDeck.value,
   });
 }
 
-function openDeck (deck?: string) {
-  setQuery({
-    mode: 'table',
-    deck,
-  });
+function cardIsStale (cardSlug: string): boolean {
+  return isStale(flashcardStore.getState(cardSlug));
 }
 
 function goBack () {
@@ -466,33 +486,63 @@ function goBack () {
   }
 }
 
-function masteryProgress (cardSlug: string): string {
+function lastReviewed (cardSlug: string): string {
   const cardState = flashcardStore.getState(cardSlug);
-  if (MASTERED_INTERVAL_DAYS <= cardState.interval) return '100';
-  if (3 <= cardState.repetitions) return '60';
-  if (1 <= cardState.repetitions) return '30';
-  return '0';
+
+  return cardState.lastReviewedAt || '-';
 }
 
 function masteryLabel (cardSlug: string): string {
   const cardState = flashcardStore.getState(cardSlug);
+
   if (MASTERED_INTERVAL_DAYS <= cardState.interval) return 'Mastered';
   if (3 <= cardState.repetitions) return 'Reviewing';
   if (1 <= cardState.repetitions) return 'Learning';
+
   return 'New';
 }
 
-function cardIsStale (cardSlug: string): boolean {
-  return isStale(flashcardStore.getState(cardSlug));
-}
-
-function answeredToday (cardSlug: string): boolean {
-  return isAnsweredToday(flashcardStore.getState(cardSlug));
-}
-
-function lastReviewed (cardSlug: string): string {
+function masteryProgress (cardSlug: string): string {
   const cardState = flashcardStore.getState(cardSlug);
-  return cardState.lastReviewedAt || '-';
+
+  if (MASTERED_INTERVAL_DAYS <= cardState.interval) return '100';
+  if (3 <= cardState.repetitions) return '60';
+  if (1 <= cardState.repetitions) return '30';
+
+  return '0';
+}
+
+function navigateToCard (cardSlug: string) {
+  router.push(`/journeys/${slug.value}/flashcards/${cardSlug}`);
+}
+
+function openDeck (deck?: string) {
+  setQuery({
+    mode: 'table',
+    deck,
+  });
+}
+
+function reviewCardRight (cardSlug: string) {
+  flashcardStore.reviewCard(cardSlug, true);
+}
+
+function reviewCardWrong (cardSlug: string) {
+  flashcardStore.reviewCard(cardSlug, false);
+}
+
+function setQuery (queryInput: Record<string, string | undefined>) {
+  const query: Record<string, string> = {};
+
+  for (const [
+    key,
+    value,
+  ] of Object.entries(queryInput)) {
+    if (value) query[key] = value;
+  }
+  router.replace({
+    query,
+  });
 }
 
 const queue = ref<Flashcard[]>([]);
@@ -507,7 +557,9 @@ const {
   state: quizQuestion, execute: reloadQuestion,
 } = useAsyncState(async () => {
   const card = currentCard.value;
+
   if (!card) return '';
+
   return renderMarkdown(card.question);
 }, '');
 
@@ -515,9 +567,12 @@ const {
   state: quizAnswer, execute: reloadAnswer,
 } = useAsyncState(async () => {
   const card = currentCard.value;
+
   if (!card) return '';
   const body = await loadContent(card.slug);
+
   if (body) return body;
+
   return card.answer && card.answer !== 'TODO' ? await renderMarkdown(card.answer) : '<p style="color: var(--gui-neutral-solid)">No answer yet.</p>';
 }, '');
 
@@ -526,9 +581,40 @@ watch(currentCard, () => {
   reloadAnswer();
 });
 
+function answer (correct: boolean) {
+  const card = currentCard.value;
+
+  if (!card) return;
+  flashcardStore.reviewCard(card.slug, correct);
+  if (correct) sessionRight.value++;
+  else sessionWrong.value++;
+  currentIndex.value++;
+  flipped.value = false;
+}
+
+function answerRight () {
+  answer(true);
+}
+
+function answerWrong () {
+  answer(false);
+}
+
+function goBackCard () {
+  if (0 < currentIndex.value) {
+    currentIndex.value--;
+    flipped.value = false;
+  }
+}
+
+function showAnswer () {
+  flipped.value = true;
+}
+
 function startQuiz () {
   const due = flashcardStore.getDueCards(activePool.value);
   const pool = due.length ? due : activePool.value;
+
   if (!pool.length) return;
   queue.value = [...pool];
   currentIndex.value = 0;
@@ -541,53 +627,45 @@ function startQuiz () {
   });
 }
 
-function goBackCard () {
-  if (0 < currentIndex.value) {
-    currentIndex.value--;
-    flipped.value = false;
-  }
-}
-
-function answer (correct: boolean) {
-  const card = currentCard.value;
-  if (!card) return;
-  flashcardStore.reviewCard(card.slug, correct);
-  if (correct) sessionRight.value++;
-  else sessionWrong.value++;
-  currentIndex.value++;
-  flipped.value = false;
+function toggleFlipped () {
+  flipped.value = !flipped.value;
 }
 </script>
 
-<style>
+<style scoped>
 .deck-btn { border-color: var(--gui-neutral-border); }
-.deck-btn:hover { border-color: var(--gui-neutral-solid); }
 .deck-meta { color: var(--gui-neutral-solid); }
-.fc-empty { color: var(--gui-neutral-solid); }
-.fc-table-row:hover { background-color: var(--gui-neutral-bg-subtle); }
+.col-question { min-width: 14rem; }
+.col-mastery { min-width: 4rem; }
+.col-stale { min-width: 3rem; }
+.col-last-reviewed { min-width: 6rem; }
 .fc-question-link { color: var(--gui-neutral-fg); }
-.fc-question-link:hover { color: var(--gui-info-solid); }
 .fc-stale { color: var(--gui-danger-solid); }
 .fc-last-reviewed { color: var(--gui-neutral-solid); }
-.fc-quiz-counter { color: var(--gui-neutral-solid); }
-.fc-card-label { color: var(--gui-neutral-solid); }
-.fc-card-wrap { border-color: var(--gui-neutral-border); }
-.fc-quiz-score { color: var(--gui-neutral-fg-muted); }
-.fc-progress-bg { background-color: color-mix(in oklch, var(--gui-danger-solid) 20%, transparent); }
-.fc-progress-bar { background-color: var(--gui-success-solid); }
-.flip-enter-active,
-.flip-leave-active {
+.quiz-counter { color: var(--gui-neutral-solid); }
+.quiz-card { perspective: 800px; border-color: var(--gui-neutral-border); }
+.quiz-face { min-height: 10.5rem; }
+.quiz-face-label { color: var(--gui-neutral-solid); }
+.quiz-done { border-color: var(--gui-neutral-border); }
+.quiz-done-stats { color: var(--gui-neutral-fg-muted); }
+.quiz-bar { background-color: color-mix(in oklch, var(--gui-danger-solid) 20%, transparent); }
+.quiz-bar-fill { background-color: var(--gui-success-solid); }
+:global(.deck-btn:hover) { border-color: var(--gui-neutral-solid); }
+:global(.fc-table-row:hover) { background-color: var(--gui-neutral-bg-subtle); }
+:global(.fc-question-link:hover) { color: var(--gui-info-solid); }
+:global(.flip-enter-active),
+:global(.flip-leave-active) {
   transition: transform 0.25s ease, opacity 0.25s ease;
 }
-.flip-enter-from {
+:global(.flip-enter-from) {
   transform: rotateX(-90deg);
   opacity: 0;
 }
-.flip-leave-to {
+:global(.flip-leave-to) {
   transform: rotateX(90deg);
   opacity: 0;
 }
-.card-text .heading-anchor {
+:global(.card-text .heading-anchor) {
   display: none;
 }
 </style>

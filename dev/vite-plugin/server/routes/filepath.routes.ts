@@ -10,6 +10,8 @@ import {
 
 export function filepathRoutes (manager: ContentManager): Router {
   const router = Router();
+
   router.get('/filepath', lookup(manager));
+
   return router;
 }

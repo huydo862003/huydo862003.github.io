@@ -7,13 +7,20 @@ export type {
   Journeys, Papers, Phases, Thoughts,
 } from './__generated__/schemas';
 
-// UI/API types not derived from YAML
-export interface TreeNode {
-  name: string;
+export interface ContentItem {
+  slug: string;
+  title: string;
   path: string;
-  type: 'file' | 'dir';
-  children?: TreeNode[];
 }
+
+export interface ContentSchema {
+  id: string;
+  displayName: string;
+  enums: Record<string, EnumDefinition>;
+  fields: Record<string, FieldSchema>;
+}
+
+export type EnumDefinition = string[] | Record<string, string[]>;
 
 export interface FieldSchema {
   type: 'string' | 'boolean' | 'number' | 'enum' | 'array' | 'date';
@@ -28,18 +35,13 @@ export interface FieldSchema {
   hidden?: boolean;
 }
 
-export type EnumDefinition = string[] | Record<string, string[]>;
-
-export interface ContentSchema {
-  id: string;
-  displayName: string;
-  enums: Record<string, EnumDefinition>;
-  fields: Record<string, FieldSchema>;
+export interface FileData {
+  path: string;
+  content: string;
 }
 
-export interface ContentItem {
-  slug: string;
-  title: string;
+export interface GitFile {
+  status: string;
   path: string;
 }
 
@@ -55,12 +57,10 @@ export interface JourneyTree {
   standalone: Record<string, ContentItem[]>;
 }
 
-export interface FileData {
+// UI/API types not derived from YAML
+export interface TreeNode {
+  name: string;
   path: string;
-  content: string;
-}
-
-export interface GitFile {
-  status: string;
-  path: string;
+  type: 'file' | 'dir';
+  children?: TreeNode[];
 }

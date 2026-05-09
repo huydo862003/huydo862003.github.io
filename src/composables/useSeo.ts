@@ -9,29 +9,18 @@ const SITE = 'Scrambled Kitchen';
 const BASE = 'https://huydo862003.github.io';
 const DEFAULT_IMAGE = `${BASE}/og.png`;
 
-interface SeoOptions {
-  title: Ref<string | undefined>;
-  description?: Ref<string | undefined>;
-  path?: Ref<string>;
-  type?: string;
-  image?: Ref<string | undefined>;
-  publishedTime?: Ref<string | undefined>;
-  modifiedTime?: Ref<string | undefined>;
-  tags?: Ref<string[] | undefined>;
-  author?: Ref<string | undefined>;
-}
-
 export function useSeo ({
   title, description, path, type = 'article', image, publishedTime, modifiedTime, tags, author,
 }: SeoOptions) {
   const fullTitle = computed(() => {
     const pageTitle = title.value;
+
     return pageTitle ? `${pageTitle} | ${SITE}` : SITE;
   });
 
   const desc = computed(() => description?.value || '');
   const url = computed(() => path?.value ? `${BASE}${path.value}` : BASE);
-  const img = computed(() => image?.value || DEFAULT_IMAGE);
+  const image_ = computed(() => image?.value || DEFAULT_IMAGE);
 
   useHead({
     title: fullTitle,
@@ -77,7 +66,7 @@ export function useSeo ({
       });
       metaTags.push({
         property: 'og:image',
-        content: img.value,
+        content: image_.value,
       });
       if (desc.value) {
         metaTags.push({
@@ -119,7 +108,7 @@ export function useSeo ({
       });
       metaTags.push({
         name: 'twitter:image',
-        content: img.value,
+        content: image_.value,
       });
       if (desc.value) {
         metaTags.push({
@@ -137,4 +126,16 @@ export function useSeo ({
       },
     ]),
   });
+}
+
+interface SeoOptions {
+  title: Ref<string | undefined>;
+  description?: Ref<string | undefined>;
+  path?: Ref<string>;
+  type?: string;
+  image?: Ref<string | undefined>;
+  publishedTime?: Ref<string | undefined>;
+  modifiedTime?: Ref<string | undefined>;
+  tags?: Ref<string[] | undefined>;
+  author?: Ref<string | undefined>;
 }

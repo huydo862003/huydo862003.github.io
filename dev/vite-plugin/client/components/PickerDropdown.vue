@@ -28,7 +28,7 @@
           v-for="item in selected"
           :key="item"
           class="flex items-center justify-between w-full px-3 py-2 text-sm text-left border-none bg-gray-50 cursor-pointer hover:bg-gray-100"
-          @click="$emit('remove', item)"
+          @click="() => $emit('remove', item)"
         >
           <span class="flex items-center gap-2 truncate min-w-0">
             <GIcon
@@ -64,7 +64,7 @@
           v-for="opt in unselected"
           :key="opt.value"
           class="flex items-center gap-2 w-full px-3 py-2 text-sm text-left border-none bg-transparent cursor-pointer hover:bg-gray-50"
-          @click="$emit('select', opt.value)"
+          @click="() => $emit('select', opt.value)"
         >
           <GIcon
             :name="GIconName.File"

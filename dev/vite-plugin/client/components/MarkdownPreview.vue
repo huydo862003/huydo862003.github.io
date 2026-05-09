@@ -31,6 +31,7 @@ watch(() => props.content, (raw) => {
     const {
       rawContent,
     } = parseFrontMatter(raw);
+
     renderedHtml.value = await renderMarkdown(rawContent);
   }, 300);
 }, {

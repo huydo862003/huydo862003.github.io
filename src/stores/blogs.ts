@@ -42,22 +42,27 @@ const sitesBySlug = new Map(sites.map((site) => [
   site,
 ]));
 
-export const useBlogs = defineStore('blogs', () => {
+export const useBlogStore = defineStore('blogs', () => {
   function getPostBySlug (slug: string) {
     return postsBySlug.get(slug);
   }
+
   function getSiteBySlug (slug: string) {
     return sitesBySlug.get(slug);
   }
+
   function getByJourney (index: string) {
     return posts.filter((post) => post.journey === index);
   }
+
   function getSites (index: string) {
     return sites.filter((site) => site.journey === index);
   }
+
   function getPosts (index: string) {
     return posts.filter((post) => post.journey === index);
   }
+
   function getPostsBySite (siteSlug: string) {
     return posts.filter((post) => post.site === siteSlug);
   }

@@ -27,4 +27,5 @@ const path = manager.createThought(title, {
   author,
   description: description || undefined,
 });
+
 console.log(`Created: ${path}`);

@@ -9,24 +9,6 @@ export type {
   FileData,
 } from '@dev/core/types';
 
-export async function fetchFile (path: string): Promise<FileData> {
-  const {
-    data,
-  } = await httpClient.get('/file', {
-    params: {
-      path,
-    },
-  });
-  return data;
-}
-
-export async function updateFile (path: string, content: string): Promise<void> {
-  await httpClient.put('/file', {
-    path,
-    content,
-  });
-}
-
 export async function createFile (path: string, content: string): Promise<string> {
   const {
     data,
@@ -34,6 +16,7 @@ export async function createFile (path: string, content: string): Promise<string
     path,
     content,
   });
+
   return data.path;
 }
 
@@ -45,6 +28,18 @@ export async function deleteFile (path: string): Promise<void> {
   });
 }
 
+export async function fetchFile (path: string): Promise<FileData> {
+  const {
+    data,
+  } = await httpClient.get('/file', {
+    params: {
+      path,
+    },
+  });
+
+  return data;
+}
+
 export async function resolveFilepath (route: string): Promise<string> {
   const {
     data,
@@ -53,5 +48,13 @@ export async function resolveFilepath (route: string): Promise<string> {
       route,
     },
   });
+
   return data.path;
+}
+
+export async function updateFile (path: string, content: string): Promise<void> {
+  await httpClient.put('/file', {
+    path,
+    content,
+  });
 }

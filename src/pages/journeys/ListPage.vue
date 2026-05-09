@@ -1,13 +1,20 @@
 <template>
   <div class="page">
     <div class="top-bar">
-      <router-link
+      <RouterLink
         to="/"
         class="back"
       >
         &larr; home
-      </router-link>
-      <JourneyBreadcrumb :crumbs="[{ label: 'Journeys', to: '/journeys' }]" />
+      </RouterLink>
+      <JourneyBreadcrumb
+        :crumbs="[
+          {
+            label: 'Journeys',
+            to: '/journeys',
+          },
+        ]"
+      />
     </div>
     <h1 class="text-xl font-bold mb-6">
       Scrambled Journeys
@@ -17,7 +24,7 @@
       v-if="journeys.length"
       class="flex flex-col gap-2"
     >
-      <router-link
+      <RouterLink
         v-for="j in journeys"
         :key="j.slug"
         :to="`/journeys/${j.slug}`"
@@ -32,12 +39,12 @@
           <span>{{ plural(getFlashcardCount(j.slug), 'flashcard') }}</span>
           <span>{{ plural(getPhaseCount(j.slug), 'phase') }}</span>
         </div>
-      </router-link>
+      </RouterLink>
     </div>
 
     <p
       v-else
-      class="journeys-empty text-sm"
+      class="content-empty text-sm"
     >
       No journeys yet.
     </p>
@@ -88,6 +95,7 @@ function getConceptStats (journeySlug: string) {
 
 function getFlashcardCount (journeySlug: string) {
   const slugs = conceptStore.getByJourney(journeySlug).map((concept) => concept.slug);
+
   return flashcardStore.getByJourney(slugs).length;
 }
 
@@ -96,14 +104,15 @@ function getPhaseCount (journeySlug: string) {
 }
 </script>
 
-<style>
+<style scoped>
 .journey-card {
   border-color: var(--gui-neutral-border);
 }
-.journey-card:hover {
-  border-color: var(--gui-neutral-solid);
+.journey-card-title {
+  color: var(--gui-neutral-fg);
 }
-.journey-card-title { color: var(--gui-neutral-fg); }
-.journey-card-stats { color: var(--gui-neutral-solid); }
-.journeys-empty { color: var(--gui-neutral-solid); }
+.journey-card-stats {
+  color: var(--gui-neutral-solid);
+}
+.journey-card:hover { border-color: var(--gui-neutral-solid); }
 </style>

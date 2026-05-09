@@ -91,7 +91,7 @@
         <button
           class="bg-transparent border-none cursor-pointer text-xs opacity-50 hover:opacity-100 p-0 shrink-0"
           style="color: inherit"
-          @click="remove(item)"
+          @click="() => remove(item)"
         >
           x
         </button>
@@ -161,7 +161,9 @@ const visibleItems = computed(() => items.value.slice(0, maxVisible.value));
 
 const titleMap = computed(() => {
   const labelMap = new Map<string, string>();
+
   for (const option of options.value) labelMap.set(option.value, option.label);
+
   return labelMap;
 });
 
@@ -171,22 +173,13 @@ function resolveTitle (slug: string) {
 
 const filtered = computed(() => {
   const searchQuery = search.value.toLowerCase();
+
   return options.value.filter((option) =>
     option.label.toLowerCase().includes(searchQuery) || option.value.toLowerCase().includes(searchQuery));
 });
 
 const exactMatch = computed(() =>
   options.value.some((option) => option.value === search.value.trim() || option.label.toLowerCase() === search.value.trim().toLowerCase()));
-
-function selectSingle (value: string) {
-  model.value = [value];
-  search.value = '';
-}
-
-function toggle (value: string) {
-  if (items.value.includes(value)) remove(value);
-  else add(value);
-}
 
 function add (value: string) {
   if (!items.value.includes(value)) model.value = [
@@ -198,6 +191,16 @@ function add (value: string) {
 
 function remove (value: string) {
   model.value = items.value.filter((item) => item !== value);
+}
+
+function selectSingle (value: string) {
+  model.value = [value];
+  search.value = '';
+}
+
+function toggle (value: string) {
+  if (items.value.includes(value)) remove(value);
+  else add(value);
 }
 
 const TAG_COLORS = [
@@ -243,14 +246,9 @@ const TAG_COLORS = [
   },
 ];
 
-function hashString (slug: string): number {
-  let hashCode = 0;
-  for (let index = 0; index < slug.length; index++) hashCode = ((hashCode << 5) - hashCode + slug.charCodeAt(index)) | 0;
-  return Math.abs(hashCode);
-}
-
 function chipColor (value: string): Record<string, string> {
   const tagColor = TAG_COLORS[hashString(value) % TAG_COLORS.length];
+
   return {
     background: tagColor.bg,
     color: tagColor.fg,
@@ -259,6 +257,14 @@ function chipColor (value: string): Record<string, string> {
 
 function focusSearch () {
   // handled by PickerDropdown
+}
+
+function hashString (slug: string): number {
+  let hashCode = 0;
+
+  for (let index = 0; index < slug.length; index++) hashCode = ((hashCode << 5) - hashCode + slug.charCodeAt(index)) | 0;
+
+  return Math.abs(hashCode);
 }
 
 async function loadOptions () {
@@ -276,6 +282,7 @@ async function loadOptions () {
           type: props.contentType,
         },
       });
+
       options.value = data.map((definition: {
         slug: string;
         title: string;
