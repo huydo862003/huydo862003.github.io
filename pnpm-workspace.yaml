@@ -1,5 +1,1 @@
 onlyBuiltDependencies: '["landlock"]'
-
-overrides:
-  '@hdnax/genuix': link:../rna/packages/genuix
-  '@hdnax/nuclint': link:../rna/packages/nuclint
