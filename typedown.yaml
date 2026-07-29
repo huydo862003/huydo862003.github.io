@@ -1,0 +1,4 @@
+version: "1.0.0"
+vault:
+  content_dir: vault/content
+  schema_dir: vault/schemas
