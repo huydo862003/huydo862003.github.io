@@ -10,12 +10,15 @@ A pattern that only arises in systems that have distributed databases and want t
 ## Example Scenario
 
 You have:
+
 - A micro-service system that have separate databases for each service.
 - A business transaction that spans multiple services.
 - We want as much as atomicity, consistency, isolation and durability as possible (possibly with different prioritization).
+
 This essentially disables us from using a local ACID transaction.
 
 How do we implement the business transaction?
+
 > Remark
 > I think this is one of the major pain points of scaling to microservices...
 
@@ -26,9 +29,11 @@ How do we implement the business transaction?
 ## Solution
 
 The general idea of SAGA is:
+
 1. Each service carries out its steps in the business transaction within its own local ACID transaction.
 2. Then when completed, each service would notify in some ways so other services can carry on.
 3. If at some point, a service fails to carry on, it will notify the others in some ways so the completed services can issue "compensation transactions" to undo the effects of the completed steps.
+
 ::: warning
 
 There are multiple pitfalls to this:
@@ -45,6 +50,7 @@ This sections explains two patterns usually used in SAGA
 No central coordinator.
 
 Each service listens for events, completes its local transaction, and emits an event that triggers the next service. The SAGA flow is implicit: scattered across services' event handlers.
+
 - Decoupled, no single point of failure.
 - Flow is hard to trace and debug because there is no single place describes it.
 - Gets messy beyond 2-3 steps.
@@ -52,9 +58,11 @@ Each service listens for events, completes its local transaction, and emits an e
 #### Orchestration-based SAGA
 
 A central orchestrator holds the SAGA's state machine. It tells each service what to do, waits for replies, and triggers compensations on failure. The SAGA flow is explicit - lives in one place.
+
 - Easy to reason about, trace, and modify.
 - Participating services stay simple - just handle commands.
 - Orchestrator is a single point of failure, can become a god object if not scoped per-SAGA.
+
 > Remark
 > Choreography should work fine for simple 2-3 step SAGAs. Beyond that, orchestration is usually easier to maintain.
 
