@@ -1,0 +1,15 @@
+---
+_type: Concept
+title: 'Concrete/Surface syntax'
+journey: fref("journeys/programming-language-theory/index.td")
+status: 'mastered'
+books:
+  - fref("journeys/programming-language-theory/books/types-and-programming-languages/chapter-3-untyped-arithmetic-expressions.td")
+  - fref("journeys/programming-language-theory/books/types-and-programming-languages/chapter-5-the-untyped-pure-lambda-calculus.td")
+  - fref("journeys/programming-language-theory/books/practical-foundations-for-programming-languages/chapter-1-abstract-syntax.td")
+tags:
+  - 'language-feature-design'
+  - 'syntax-grammar'
+---
+
+The textual representation programmers actually write, including parentheses, keywords, and punctuation - as opposed to ${fref("journeys/programming-language-theory/concepts/structural-abstract-syntax.td")} which captures only the essential structure.

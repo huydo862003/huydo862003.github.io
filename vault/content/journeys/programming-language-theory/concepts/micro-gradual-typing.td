@@ -1,0 +1,16 @@
+---
+_type: Concept
+title: 'Micro gradual typing'
+journey: fref("journeys/programming-language-theory/index.td")
+status: 'learning'
+books:
+  - fref("journeys/programming-language-theory/books/programming-languages-application-and-interpretation/chapter-5-types.td")
+tags:
+  - 'language-feature-design'
+  - 'semantics'
+  - 'type-theory'
+---
+
+A ${fref("journeys/programming-language-theory/concepts/gradual-typing.td")} approach where type annotations can be added to any subset of variables within the same code, freely mixing typed and untyped expressions.
+
+A Gradual typing approach where type annotations can be added to **any subset of variables** within the same code, freely mixing typed and untyped expressions.

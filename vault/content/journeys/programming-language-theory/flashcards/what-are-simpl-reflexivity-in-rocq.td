@@ -1,0 +1,15 @@
+---
+_type: Flashcard
+question: "What are simpl, reflexivity in rocq?"
+deck: 'rocq-programming-language'
+concepts:
+  - fref("journeys/programming-language-theory/concepts/proof-by-simplification.td")
+books:
+  - fref("journeys/programming-language-theory/books/software-foundations/chapter-1-basics-functional-programming-in-rocq.td")
+---
+
+::: flashcard
+${question}
+=== key
+Two proof tactics that relates to Proof by simplification, that is, they both try to unfold the terms then evaluate the expressions.
+:::

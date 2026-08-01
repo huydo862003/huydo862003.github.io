@@ -1,0 +1,12 @@
+---
+_type: Concept
+title: 'Variadic tree'
+journey: fref("journeys/programming-language-theory/index.td")
+status: 'reviewing'
+books:
+  - fref("journeys/programming-language-theory/books/practical-foundations-for-programming-languages/chapter-1-abstract-syntax.td")
+tags:
+  - 'data-structure-algorithm'
+---
+
+A tree structure where operators can take a variable (not fixed) number of arguments, with that number determined by a ${fref("journeys/programming-language-theory/concepts/symbol.td")} index.

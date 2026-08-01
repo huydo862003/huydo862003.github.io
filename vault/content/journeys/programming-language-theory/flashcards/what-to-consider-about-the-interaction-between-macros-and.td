@@ -1,0 +1,15 @@
+---
+_type: Flashcard
+question: "What to consider about the interaction between macros and side effects?"
+deck: 'programming-language-basic'
+concepts:
+  - fref("journeys/programming-language-theory/concepts/macro.td")
+books:
+  - fref("journeys/programming-language-theory/books/programming-languages-application-and-interpretation/chapter-3-syntactic-sugar.td")
+---
+
+::: flashcard
+${question}
+=== key
+An argument to the macro can be substituted multiple times into the macro's body, causing the argument to be evaluated multiple times. If the argument evaluation has side effects, it can be confusing.
+:::
