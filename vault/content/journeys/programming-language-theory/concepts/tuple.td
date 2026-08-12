@@ -1,0 +1,15 @@
+---
+_type: Concept
+title: 'Tuple'
+journey: fref("journeys/programming-language-theory/index.td")
+status: 'mastered'
+books:
+  - fref("journeys/programming-language-theory/books/software-foundations/chapter-1-basics-functional-programming-in-rocq.td")
+tags:
+  - 'data-structure-algorithm'
+  - 'language-feature-design'
+---
+
+A data structure that groups a fixed number of values of possibly different types (like (1, \"hello\", true)), accessed by position rather than name.
+
+A **data structure** that groups a fixed number of values of possibly different types (like `(1, "hello", true)`), accessed by position rather than name.

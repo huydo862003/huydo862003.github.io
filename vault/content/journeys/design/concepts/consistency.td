@@ -1,0 +1,10 @@
+---
+_type: Concept
+title: 'Consistency'
+journey: fref("journeys/design/index.td")
+status: 'mastered'
+tags:
+  - 'design-system'
+---
+
+The disciplined adherence to established visual and functional patterns across an entire product to reduce cognitive load and increase predictability for the user.
