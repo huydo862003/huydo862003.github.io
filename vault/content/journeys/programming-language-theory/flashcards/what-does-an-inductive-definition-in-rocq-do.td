@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What does an inductive definition in rocq do?"
 deck: 'rocq-programming-language'
 concepts:
   - fref("journeys/programming-language-theory/concepts/rocq.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What does an inductive definition in rocq do?
 === key
 It allows defining Algebraic data types in Rocq, including Recursive types.
 

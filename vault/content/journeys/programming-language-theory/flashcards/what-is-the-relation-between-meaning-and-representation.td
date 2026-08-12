@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: 'What is the relation between "meaning" and "representation"?'
 deck: 'language-theory'
 concepts:
   - fref("journeys/programming-language-theory/concepts/representation.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What is the relation between "meaning" and "representation"?
 === key
 - One representation can have multiple meanings, depending on its usage.
 - One meaning can have multiple representation.

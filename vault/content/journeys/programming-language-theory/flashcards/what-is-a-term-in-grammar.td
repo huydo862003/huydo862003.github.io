@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What is a term in grammar?"
 deck: 'language-theory'
 concepts:
   - fref("journeys/programming-language-theory/concepts/term.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What is a term in grammar?
 === key
 A syntactic phrase in a grammar.
 :::

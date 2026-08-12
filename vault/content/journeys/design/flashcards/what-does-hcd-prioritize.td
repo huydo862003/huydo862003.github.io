@@ -1,10 +1,9 @@
 ---
 _type: Flashcard
-question: "What does HCD prioritize?"
 deck: 'general'
 ---
 
 ::: flashcard
-${question}
+What does HCD prioritize?
 === key
 :::

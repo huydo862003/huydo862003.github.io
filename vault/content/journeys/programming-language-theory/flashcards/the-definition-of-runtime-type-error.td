@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: 'The definition of runtime type error'
 deck: 'type-theory'
 concepts:
   - fref("journeys/programming-language-theory/concepts/runtime-type-error.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+The definition of runtime type error
 === key
 Runtime type error is the class of program behaviors that a specific type system is designed to eliminate.
 :::

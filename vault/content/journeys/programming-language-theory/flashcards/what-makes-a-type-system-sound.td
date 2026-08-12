@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What makes a type system sound?"
 deck: 'type-theory'
 concepts:
   - fref("journeys/programming-language-theory/concepts/safe-sound-type-system.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What makes a type system sound?
 === key
 A type system is sound if the claim they make about the program actually holds at runtime.
 :::

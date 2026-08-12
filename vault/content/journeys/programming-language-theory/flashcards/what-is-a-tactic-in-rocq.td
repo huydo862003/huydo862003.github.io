@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What is a tactic in rocq?"
 deck: 'rocq-programming-language'
 concepts:
   - fref("journeys/programming-language-theory/concepts/tactic.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What is a tactic in rocq?
 === key
 A proof command in Rocq, that transforms a goal's state to form a step of a proof.
 :::

@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What is a partial order?"
 deck: 'set-theory-relation'
 concepts:
   - fref("journeys/programming-language-theory/concepts/partial-order.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What is a partial order?
 === key
 A preorder that is also Antisymmetric.
 :::

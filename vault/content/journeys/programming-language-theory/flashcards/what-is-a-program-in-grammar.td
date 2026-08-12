@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What is a program in grammar?"
 deck: 'language-theory'
 concepts:
   - fref("journeys/programming-language-theory/concepts/program.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What is a program in grammar?
 === key
 The starting symbol in the grammar.
 :::

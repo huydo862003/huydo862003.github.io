@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What is the syntax for imports in rocq?"
 deck: 'rocq-programming-language'
 concepts:
   - fref("journeys/programming-language-theory/concepts/import.td")
@@ -10,7 +9,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What is the syntax for imports in rocq?
 === key
 `From Library Require [Import] Module.`
 :::

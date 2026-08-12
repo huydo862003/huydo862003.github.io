@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "When a rule is not an axiom, what is it called?"
 deck: 'proof-technique'
 concepts:
   - fref("journeys/programming-language-theory/concepts/axiom.td")
@@ -11,7 +10,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+When a rule is not an axiom, what is it called?
 === key
 Proper rule.
 :::

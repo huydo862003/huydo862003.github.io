@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What is a first order variable?"
 deck: 'programming-language-basic'
 concepts:
   - fref("journeys/programming-language-theory/concepts/first-order-variable.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What is a first order variable?
 === key
 A variable that ranges over data values (e.g., integers, booleans, records).
 :::

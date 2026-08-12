@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What is the divergent combinator?"
 deck: 'pure-lambda-calculus'
 concepts:
   - fref("journeys/programming-language-theory/concepts/divergent-big-omega-combinator.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What is the divergent combinator?
 === key
 The Divergent/Big omega combinator:
 

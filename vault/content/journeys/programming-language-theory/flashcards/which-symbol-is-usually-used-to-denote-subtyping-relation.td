@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "Which symbol is usually used to denote subtyping relation?"
 deck: 'type-theory'
 concepts:
   - fref("journeys/programming-language-theory/concepts/subtyping-relation.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+Which symbol is usually used to denote subtyping relation?
 === key
 $<:$
 :::

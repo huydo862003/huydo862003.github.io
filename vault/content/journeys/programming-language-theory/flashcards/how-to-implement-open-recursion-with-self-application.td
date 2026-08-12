@@ -1,13 +1,12 @@
 ---
 _type: Flashcard
-question: "How to implement open recursion with self-application?"
 deck: 'pure-lambda-calculus'
 books:
   - fref("journeys/programming-language-theory/books/programming-languages-application-and-interpretation/chapter-4-objects.td")
 ---
 
 ::: flashcard
-${question}
+How to implement open recursion with self-application?
 === key
 ```scheme
 (define cls (parent-maker args)

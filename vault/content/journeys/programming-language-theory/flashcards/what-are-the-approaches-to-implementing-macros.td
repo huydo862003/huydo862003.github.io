@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What are the approaches to implementing macros?"
 deck: 'language-theory'
 concepts:
   - fref("journeys/programming-language-theory/concepts/macro.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What are the approaches to implementing macros?
 === key
 AST rewriting
 

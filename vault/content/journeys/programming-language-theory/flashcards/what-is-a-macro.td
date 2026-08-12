@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What is a macro?"
 deck: 'language-theory'
 concepts:
   - fref("journeys/programming-language-theory/concepts/macro.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What is a macro?
 === key
 Macro is a syntactic pattern that gets expanded into other code at compile time.
 :::

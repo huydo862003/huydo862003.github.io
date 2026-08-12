@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What is a macro system?"
 deck: 'compiler-implementation'
 concepts:
   - fref("journeys/programming-language-theory/concepts/macro-system.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What is a macro system?
 === key
 A language facility that provides programmable syntax transformations through macros.
 :::

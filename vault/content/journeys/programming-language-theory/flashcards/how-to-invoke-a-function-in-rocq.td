@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "How to invoke a function in rocq?"
 deck: 'rocq-programming-language'
 concepts:
   - fref("journeys/programming-language-theory/concepts/rocq.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+How to invoke a function in rocq?
 === key
 Subexpression: `(fn arg1 arg2 ...)`
 

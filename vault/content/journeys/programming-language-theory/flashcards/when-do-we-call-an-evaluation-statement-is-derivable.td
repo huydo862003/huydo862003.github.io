@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "When do we call an evaluation statement is derivable?"
 deck: 'pure-lambda-calculus'
 concepts:
   - fref("journeys/programming-language-theory/concepts/derivable.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+When do we call an evaluation statement is derivable?
 === key
 There's a derivation tree whose root is the evaluation statement.
 :::

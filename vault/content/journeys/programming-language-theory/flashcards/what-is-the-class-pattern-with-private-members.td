@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What is the class pattern with private members?"
 deck: 'language-theory'
 concepts:
   - fref("journeys/programming-language-theory/concepts/class-pattern.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What is the class pattern with private members?
 === key
 ```racket
 (define (cls args)

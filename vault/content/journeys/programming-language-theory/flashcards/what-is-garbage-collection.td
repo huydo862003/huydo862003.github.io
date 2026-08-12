@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What is garbage collection?"
 deck: 'programming-language-basic'
 concepts:
   - fref("journeys/programming-language-theory/concepts/garbage-collection.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What is garbage collection?
 === key
 Garbage collection is a runtime mechanism that utilizes a heuristic to detect and release no-longer-used memory.
 :::

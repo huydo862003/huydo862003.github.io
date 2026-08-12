@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "Which symbol is used to denote pure lambda calculus?"
 deck: 'pure-lambda-calculus'
 concepts:
   - fref("journeys/programming-language-theory/concepts/pure-untyped-lambda-calculus.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+Which symbol is used to denote pure lambda calculus?
 === key
 $\to$
 :::

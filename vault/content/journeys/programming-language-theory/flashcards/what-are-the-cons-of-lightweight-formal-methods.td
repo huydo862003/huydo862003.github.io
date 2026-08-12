@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: 'What are the cons of lightweight formal methods'
 deck: 'language-theory'
 concepts:
   - fref("journeys/programming-language-theory/concepts/type-system.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What are the cons of lightweight formal methods
 === key
 Not as strong or general as more heavy-weight methods.
 :::

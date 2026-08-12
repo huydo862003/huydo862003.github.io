@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What is a congruence?"
 deck: 'set-theory-relation'
 concepts:
   - fref("journeys/programming-language-theory/concepts/congruence.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What is a congruence?
 === key
 An equivalence relation that is preserved under a specific operation.
 :::

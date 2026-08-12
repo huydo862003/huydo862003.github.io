@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What is usually meant by substitution?"
 deck: 'pure-lambda-calculus'
 concepts:
   - fref("journeys/programming-language-theory/concepts/capture-avoiding-substitution.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What is usually meant by substitution?
 === key
 Capture-avoiding substitution
 :::

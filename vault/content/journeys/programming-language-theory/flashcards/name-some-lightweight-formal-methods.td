@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: 'Name some lightweight formal methods'
 deck: 'language-theory'
 concepts:
   - fref("journeys/programming-language-theory/concepts/type-system.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+Name some lightweight formal methods
 === key
 - Model checker.
 - Type system.

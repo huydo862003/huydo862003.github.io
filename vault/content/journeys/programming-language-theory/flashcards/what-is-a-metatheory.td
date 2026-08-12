@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What is a metatheory?"
 deck: 'other-mathematics'
 concepts:
   - fref("journeys/programming-language-theory/concepts/metatheory.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What is a metatheory?
 === key
 The study about properties of a formal system, using external reasonings.
 :::

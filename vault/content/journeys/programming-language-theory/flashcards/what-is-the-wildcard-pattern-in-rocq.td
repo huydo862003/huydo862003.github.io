@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What is the wildcard pattern in rocq?"
 deck: 'rocq-programming-language'
 concepts:
   - fref("journeys/programming-language-theory/concepts/rocq.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What is the wildcard pattern in rocq?
 === key
 The wildcard pattern `_` allows matching all values without introducing unnecessary variables.
 :::

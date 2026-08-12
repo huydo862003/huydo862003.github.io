@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What is a natural mapping?"
 deck: 'general'
 concepts:
   - fref("journeys/design/concepts/mapping.td")
@@ -8,6 +7,6 @@ concepts:
 ---
 
 ::: flashcard
-${question}
+What is a natural mapping?
 === key
 :::

@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What is an instance of an inference rule?"
 deck: 'logic-tools'
 concepts:
   - fref("journeys/programming-language-theory/concepts/instance-of-an-inference-rule.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What is an instance of an inference rule?
 === key
 An inference rule whose metavariables are replaced with real values.
 :::

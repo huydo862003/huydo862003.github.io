@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What is an equivalence?"
 deck: 'set-theory-relation'
 concepts:
   - fref("journeys/programming-language-theory/concepts/equivalence.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What is an equivalence?
 === key
 A relation that is Reflexive, Symmetric and Transitive.
 :::

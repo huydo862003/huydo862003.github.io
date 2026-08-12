@@ -1,13 +1,12 @@
 ---
 _type: Flashcard
-question: "What is the untyped calculus of booleans and numbers?"
 deck: 'language-theory'
 books:
   - fref("journeys/programming-language-theory/books/types-and-programming-languages/chapter-3-untyped-arithmetic-expressions.td")
 ---
 
 ::: flashcard
-${question}
+What is the untyped calculus of booleans and numbers?
 === key
 A simple language with only natural numbers and booleans as primitives.
 

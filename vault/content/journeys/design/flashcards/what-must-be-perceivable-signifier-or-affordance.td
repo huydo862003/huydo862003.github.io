@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What must be perceivable - signifier or affordance?"
 deck: 'general'
 concepts:
   - fref("journeys/design/concepts/affordance.td")
@@ -8,6 +7,6 @@ concepts:
 ---
 
 ::: flashcard
-${question}
+What must be perceivable - signifier or affordance?
 === key
 :::

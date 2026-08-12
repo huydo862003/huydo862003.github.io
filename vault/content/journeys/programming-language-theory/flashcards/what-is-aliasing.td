@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What is aliasing?"
 deck: 'programming-language-basic'
 concepts:
   - fref("journeys/programming-language-theory/concepts/aliasing.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What is aliasing?
 === key
 Aliasing is a phenomenon where multiple paths (variables, references, member accesses) refer to the same memory location.
 :::

@@ -1,13 +1,12 @@
 ---
 _type: Flashcard
-question: "What is a visual hierarchy?"
 deck: 'design-aspect'
 concepts:
   - fref("journeys/design/concepts/visual-hierarchy.td")
 ---
 
 ::: flashcard
-${question}
+What is a visual hierarchy?
 === key
 The strategic organization of visual elements, using colors, sizes, font weights to guide the user sequentially through the presented elements, usually from the most important to the least important.
 :::

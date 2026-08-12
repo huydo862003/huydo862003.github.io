@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What is an object language?"
 deck: 'language-theory'
 concepts:
   - fref("journeys/programming-language-theory/concepts/object-language.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What is an object language?
 === key
 The formal language being defined by the metalanguage.
 :::

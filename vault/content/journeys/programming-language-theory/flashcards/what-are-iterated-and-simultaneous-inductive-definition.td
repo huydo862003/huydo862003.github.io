@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What are iterated and simultaneous inductive definition?"
 deck: 'set-theory-relation'
 concepts:
   - fref("journeys/programming-language-theory/concepts/simultaneous-inductive-definition.td")
@@ -9,6 +8,6 @@ books:
 ---
 
 ::: flashcard
-${question}
+What are iterated and simultaneous inductive definition?
 === key
 :::

@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What is a fresh variable (concerning a set of variables)?"
 deck: 'language-theory'
 concepts:
   - fref("journeys/programming-language-theory/concepts/fresh-variable.td")
@@ -10,7 +9,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What is a fresh variable (concerning a set of variables)?
 === key
 A variable is fresh in a variable set $\mathcal{X}$ if it's not within $\mathcal{X}$.
 :::

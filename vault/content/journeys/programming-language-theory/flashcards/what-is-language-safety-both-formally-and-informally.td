@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What is language safety, both formally and informally?"
 deck: 'programming-language-basic'
 concepts:
   - fref("journeys/programming-language-theory/concepts/language-safety.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What is language safety, both formally and informally?
 === key
 Informally, a safe language would not allow a programmer to shoot in their foot.
 

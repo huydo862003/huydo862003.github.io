@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What is a block in programming language?"
 deck: 'programming-language-basic'
 concepts:
   - fref("journeys/programming-language-theory/concepts/block.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What is a block in programming language?
 === key
 A block is a syntactic construct that groups statements and introduces a scope for local variables.
 :::

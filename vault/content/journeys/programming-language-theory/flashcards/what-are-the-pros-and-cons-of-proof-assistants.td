@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What are the pros and cons of proof assistants?"
 deck: 'logic-tools'
 concepts:
   - fref("journeys/programming-language-theory/concepts/proof-assistant-prover.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What are the pros and cons of proof assistants?
 === key
 - Automated for routine tasks of building proofs.
 - Require human guidance for more difficult aspects.

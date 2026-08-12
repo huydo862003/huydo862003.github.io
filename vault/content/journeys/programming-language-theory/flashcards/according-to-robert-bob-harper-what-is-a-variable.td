@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "According to robert (bob) harper, what is a variable?"
 deck: 'language-theory'
 concepts:
   - fref("journeys/programming-language-theory/concepts/variable.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+According to robert (bob) harper, what is a variable?
 === key
 An unknown object drawn from a specific domain. In the context of Chapter 1. Abstract syntax, it's the placeholder for an AST of a given sort.
 :::

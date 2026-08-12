@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: 'How is language safety different from static type safety'
 deck: 'type-theory'
 concepts:
   - fref("journeys/programming-language-theory/concepts/language-safety.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+How is language safety different from static type safety
 === key
 Static type safety means that if a compiler suggests that a program is free of any runtime type errors, running that program can never produce such an error.
 

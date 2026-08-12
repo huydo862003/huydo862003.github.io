@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What is the Hindley-Milner type inference algorithm?"
 deck: 'type-theory'
 concepts:
   - fref("journeys/programming-language-theory/concepts/hindley-milner-system.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What is the Hindley-Milner type inference algorithm?
 === key
 This algorithm works by:
 

@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "Is function signature compulsory in rocq?"
 deck: 'rocq-programming-language'
 concepts:
   - fref("journeys/programming-language-theory/concepts/rocq.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+Is function signature compulsory in rocq?
 === key
 No.
 :::

@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What is the object pattern?"
 deck: 'language-theory'
 concepts:
   - fref("journeys/programming-language-theory/concepts/object-pattern.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What is the object pattern?
 === key
 ```racket
 (lambda (m)

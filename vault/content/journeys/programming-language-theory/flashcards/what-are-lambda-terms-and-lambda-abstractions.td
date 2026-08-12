@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What are lambda terms and lambda abstractions?"
 deck: 'pure-lambda-calculus'
 concepts:
   - fref("journeys/programming-language-theory/concepts/lambda-calculus.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What are lambda terms and lambda abstractions?
 === key
 Lambda terms are any syntactic constructs in Lambda calculus.
 

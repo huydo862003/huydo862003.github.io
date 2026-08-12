@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What are the ideas of forward chaining and backward chaining?"
 deck: 'proof-technique'
 concepts:
   - fref("journeys/programming-language-theory/concepts/forward-chaining.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What are the ideas of forward chaining and backward chaining?
 === key
 Forward chaining
 

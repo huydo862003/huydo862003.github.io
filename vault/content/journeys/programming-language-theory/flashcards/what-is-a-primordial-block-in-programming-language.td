@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What is a primordial block in programming language?"
 deck: 'programming-language-basic'
 concepts:
   - fref("journeys/programming-language-theory/concepts/primordial-block.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What is a primordial block in programming language?
 === key
 A block that encompasses the global scope, containing all the builtins.
 :::

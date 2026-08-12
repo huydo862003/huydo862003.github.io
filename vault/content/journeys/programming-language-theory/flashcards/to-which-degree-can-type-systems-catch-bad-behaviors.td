@@ -1,13 +1,12 @@
 ---
 _type: Flashcard
-question: "To which degree can type systems catch bad behaviors?"
 deck: 'type-theory'
 books:
   - fref("journeys/programming-language-theory/books/types-and-programming-languages/chapter-1-introduction.td")
 ---
 
 ::: flashcard
-${question}
+To which degree can type systems catch bad behaviors?
 === key
 Generally, a sound type system can prove the absence of certain bad behaviors, but may not always prove the presence of certain bad behaviors.
 

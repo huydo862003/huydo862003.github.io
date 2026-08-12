@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What is an object?"
 deck: 'language-theory'
 concepts:
   - fref("journeys/programming-language-theory/concepts/object.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What is an object?
 === key
 - A value that maps names to stuff (either other values or "methods").
 - A generalization of Closures.

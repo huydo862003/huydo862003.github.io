@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What are some challenges of retrofitting type systems?"
 deck: 'compiler-implementation'
 concepts:
   - fref("journeys/programming-language-theory/concepts/retrofitted-type-system.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What are some challenges of retrofitting type systems?
 === key
 Languages that are previously untyped:
 

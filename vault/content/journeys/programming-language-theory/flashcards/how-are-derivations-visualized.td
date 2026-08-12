@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "How are derivations visualized?"
 deck: 'proof-technique'
 concepts:
   - fref("journeys/programming-language-theory/concepts/derivation.td")
@@ -10,7 +9,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+How are derivations visualized?
 === key
 Derivation tree:
 

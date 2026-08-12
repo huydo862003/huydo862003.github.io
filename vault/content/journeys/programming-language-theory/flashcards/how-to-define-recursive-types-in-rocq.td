@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "How to define recursive types in rocq?"
 deck: 'rocq-programming-language'
 concepts:
   - fref("journeys/programming-language-theory/concepts/recursive-type.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+How to define recursive types in rocq?
 === key
 Just use the `Inductive` type definition. For example:
 

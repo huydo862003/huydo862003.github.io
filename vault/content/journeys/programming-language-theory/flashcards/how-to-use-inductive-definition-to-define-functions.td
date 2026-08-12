@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "How to use inductive definition to define functions?"
 deck: 'logic-tools'
 concepts:
   - fref("journeys/programming-language-theory/concepts/inductive-definition.td")
@@ -10,7 +9,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+How to use inductive definition to define functions?
 === key
 - Define a relation between inputs and outputs of the function using Inductive definition.
 - Then prove that for each set of inputs, the output is unique.

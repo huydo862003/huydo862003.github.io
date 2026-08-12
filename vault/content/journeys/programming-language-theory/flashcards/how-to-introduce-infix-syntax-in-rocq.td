@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "How to introduce infix syntax in rocq?"
 deck: 'language-theory'
 concepts:
   - fref("journeys/programming-language-theory/concepts/infix.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+How to introduce infix syntax in rocq?
 === key
 Use `Notation "x <op> y" := exp`.
 :::

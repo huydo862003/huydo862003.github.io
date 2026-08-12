@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "Is inheritance = subtyping?"
 deck: 'type-theory'
 concepts:
   - fref("journeys/programming-language-theory/concepts/inheritance.td")
@@ -10,7 +9,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+Is inheritance = subtyping?
 === key
 No.
 

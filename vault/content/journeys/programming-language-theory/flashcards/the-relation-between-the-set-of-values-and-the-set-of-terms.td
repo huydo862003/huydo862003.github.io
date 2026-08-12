@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "The relation between the set of values and the set of terms?"
 deck: 'language-theory'
 concepts:
   - fref("journeys/programming-language-theory/concepts/term.td")
@@ -10,7 +9,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+The relation between the set of values and the set of terms?
 === key
 The set of values is a subset of the set of terms.
 :::

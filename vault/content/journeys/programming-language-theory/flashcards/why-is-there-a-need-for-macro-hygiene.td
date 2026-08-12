@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "Why is there a need for macro hygiene?"
 deck: 'programming-language-basic'
 concepts:
   - fref("journeys/programming-language-theory/concepts/macro.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+Why is there a need for macro hygiene?
 === key
 To avoid Variable capture.
 :::

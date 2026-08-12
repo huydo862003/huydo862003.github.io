@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "How to define a days-of-week data type in rocq?"
 deck: 'rocq-programming-language'
 concepts:
   - fref("journeys/programming-language-theory/concepts/rocq.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+How to define a days-of-week data type in rocq?
 === key
 ```coq
 Inductive day : Type :=
