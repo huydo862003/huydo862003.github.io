@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What are substitution target and subject?"
 deck: 'language-theory'
 concepts:
   - fref("journeys/programming-language-theory/concepts/substitution-subject.td")
@@ -10,7 +9,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What are substitution target and subject?
 === key
 Substitution target: The target term into which variables are substituted.
 

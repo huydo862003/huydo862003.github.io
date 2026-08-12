@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "In which ways the lambda calculus can be viewed?"
 deck: 'pure-lambda-calculus'
 concepts:
   - fref("journeys/programming-language-theory/concepts/lambda-calculus.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+In which ways the lambda calculus can be viewed?
 === key
 - A **simple programming language** in which computations can be described.
 - A **mathematical object** about which rigorous statements can be proved.

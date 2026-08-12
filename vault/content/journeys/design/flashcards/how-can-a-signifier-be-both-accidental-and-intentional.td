@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "How can a signifier be both accidental and intentional?"
 deck: 'general'
 concepts:
   - fref("journeys/design/concepts/signifier.td")
@@ -9,6 +8,6 @@ concepts:
 ---
 
 ::: flashcard
-${question}
+How can a signifier be both accidental and intentional?
 === key
 :::

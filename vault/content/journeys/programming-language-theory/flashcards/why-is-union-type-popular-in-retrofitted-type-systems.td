@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "Why is union type popular in retrofitted type systems?"
 deck: 'compiler-implementation'
 concepts:
   - fref("journeys/programming-language-theory/concepts/retrofitted-type-system.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+Why is union type popular in retrofitted type systems?
 === key
 In previously untyped languages, code can return values of multiple types, for example, valid results & errors.
 

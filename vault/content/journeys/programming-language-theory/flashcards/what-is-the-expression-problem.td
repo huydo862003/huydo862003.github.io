@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What is the expression problem?"
 deck: 'language-theory'
 concepts:
   - fref("journeys/programming-language-theory/concepts/expression-problem.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What is the expression problem?
 === key
 A fundamental tension in language design - how to extend a data abstraction with both **new variants** (data) and **new operations** (functions) without modifying existing code.
 :::

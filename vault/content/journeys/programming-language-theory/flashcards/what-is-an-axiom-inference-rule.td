@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What is an axiom (inference rule)?"
 deck: 'logic-tools'
 concepts:
   - fref("journeys/programming-language-theory/concepts/inference-rule.td")
@@ -10,7 +9,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What is an axiom (inference rule)?
 === key
 An axiom is an inference rule with no premise.
 :::

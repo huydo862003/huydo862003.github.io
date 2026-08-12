@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What is a rule scheme?"
 deck: 'logic-tools'
 concepts:
   - fref("journeys/programming-language-theory/concepts/inference-rule.td")
@@ -10,7 +9,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What is a rule scheme?
 === key
 Synonymous with Rule schema - An Inference rule that is parameterized with Metavariables.
 :::

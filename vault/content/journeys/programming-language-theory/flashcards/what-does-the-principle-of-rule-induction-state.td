@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What does the principle of rule induction state?"
 deck: 'proof-technique'
 concepts:
   - fref("journeys/programming-language-theory/concepts/rule-induction.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What does the principle of rule induction state?
 === key
 Rule induction
 :::

@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "Which notation is often used to denote a preorder relation?"
 deck: 'set-theory-relation'
 concepts:
   - fref("journeys/programming-language-theory/concepts/preorder.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+Which notation is often used to denote a preorder relation?
 === key
 $\le$ or $\lesssim$
 :::

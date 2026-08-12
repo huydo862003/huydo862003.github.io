@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "Are runtime type errors a per-language choice?"
 deck: 'type-theory'
 concepts:
   - fref("journeys/programming-language-theory/concepts/runtime-type-error.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+Are runtime type errors a per-language choice?
 === key
 Yes.
 :::

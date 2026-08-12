@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "How to encode multiple arguments in lambda calculus?"
 deck: 'pure-lambda-calculus'
 concepts:
   - fref("journeys/programming-language-theory/concepts/pure-untyped-lambda-calculus.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+How to encode multiple arguments in lambda calculus?
 === key
 Use currying.
 :::

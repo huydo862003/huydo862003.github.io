@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What does the admitted command do in rocq?"
 deck: 'rocq-programming-language'
 concepts:
   - fref("journeys/programming-language-theory/concepts/rocq.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What does the admitted command do in rocq?
 === key
 It tells Rocq to just treat something as an Axiom.
 :::

@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "How to implement classes with prototypes?"
 deck: 'compiler-implementation'
 concepts:
   - fref("journeys/programming-language-theory/concepts/prototype.td")
@@ -10,7 +9,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+How to implement classes with prototypes?
 === key
 Create a prototype object that contains all the shared methods and default properties.
 

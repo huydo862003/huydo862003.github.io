@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What is structural induction?"
 deck: 'language-theory'
 concepts:
   - fref("journeys/programming-language-theory/concepts/structural-induction.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What is structural induction?
 === key
 A proof technique that proves some property $P$ for a term $t$ by relying on the property $P$ holding for $t$'s subterms.
 :::

@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What is the relation between objects and closures?"
 deck: 'language-theory'
 concepts:
   - fref("journeys/programming-language-theory/concepts/object.td")
@@ -10,7 +9,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What is the relation between objects and closures?
 === key
 An Object is a Closure with multiple entrypoints.
 :::

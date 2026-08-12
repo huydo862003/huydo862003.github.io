@@ -1,13 +1,12 @@
 ---
 _type: Flashcard
-question: "How to desugar letrec in racket?"
 deck: 'general'
 books:
   - fref("journeys/programming-language-theory/books/programming-languages-application-and-interpretation/chapter-4-objects.td")
 ---
 
 ::: flashcard
-${question}
+How to desugar letrec in racket?
 === key
 For context, simple `let` as:
 

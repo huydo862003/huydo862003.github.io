@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "How to use fix to define recursive functions?"
 deck: 'pure-lambda-calculus'
 concepts:
   - fref("journeys/programming-language-theory/concepts/fixed-point-combinator.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+How to use fix to define recursive functions?
 === key
 Sketch a normal recursive function as you will in regular programming languages:
 

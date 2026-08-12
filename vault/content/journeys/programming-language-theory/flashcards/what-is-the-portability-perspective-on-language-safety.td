@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What is the portability perspective on language safety?"
 deck: 'type-theory'
 concepts:
   - fref("journeys/programming-language-theory/concepts/language-safety.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What is the portability perspective on language safety?
 === key
 A safe language can be totally defined by its programmer's manual.
 :::

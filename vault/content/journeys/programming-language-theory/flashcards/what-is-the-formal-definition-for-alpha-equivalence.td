@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What is the formal definition for alpha-equivalence?"
 deck: 'language-theory'
 concepts:
   - fref("journeys/programming-language-theory/concepts/alpha-equivalence.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What is the formal definition for alpha-equivalence?
 === key
 Alpha-equivalence is a relation $=_\alpha$ on the set of terms/ASTs. Given $\mathcal{A}$ as a set of ASTs. Then:
 

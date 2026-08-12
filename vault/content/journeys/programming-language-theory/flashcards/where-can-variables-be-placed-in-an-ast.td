@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "Where can variables be placed in an AST?"
 deck: 'language-theory'
 concepts:
   - fref("journeys/programming-language-theory/concepts/variable.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+Where can variables be placed in an AST?
 === key
 Leaves.
 :::

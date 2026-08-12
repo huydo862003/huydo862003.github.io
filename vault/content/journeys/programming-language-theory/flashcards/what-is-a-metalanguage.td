@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What is a metalanguage?"
 deck: 'language-theory'
 concepts:
   - fref("journeys/programming-language-theory/concepts/metalanguage.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What is a metalanguage?
 === key
 The language used to describe, define, or reason about another language.
 :::

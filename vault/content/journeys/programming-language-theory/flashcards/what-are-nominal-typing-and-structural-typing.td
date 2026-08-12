@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What are nominal typing and structural typing?"
 deck: 'type-theory'
 concepts:
   - fref("journeys/programming-language-theory/concepts/nominal-typing.td")
@@ -10,7 +9,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What are nominal typing and structural typing?
 === key
 Nominal typing is a policy that determines type compatibility based on user-provided declarations.
 

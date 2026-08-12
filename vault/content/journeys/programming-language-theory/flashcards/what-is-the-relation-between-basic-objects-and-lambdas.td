@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What is the relation between basic objects and lambdas?"
 deck: 'language-theory'
 concepts:
   - fref("journeys/programming-language-theory/concepts/object.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What is the relation between basic objects and lambdas?
 === key
 Object is a lambda expression with multiple entrypoints.
 :::

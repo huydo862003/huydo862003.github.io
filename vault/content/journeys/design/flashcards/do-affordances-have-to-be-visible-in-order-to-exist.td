@@ -1,10 +1,9 @@
 ---
 _type: Flashcard
-question: ">-"
 deck: 'general'
 ---
 
 ::: flashcard
-${question}
+Do affordances have to be visible in order to exist?
 === key
 :::

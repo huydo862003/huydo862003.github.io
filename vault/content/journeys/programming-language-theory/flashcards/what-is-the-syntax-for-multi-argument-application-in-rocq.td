@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What is the syntax for multi-argument application in rocq?"
 deck: 'rocq-programming-language'
 concepts:
   - fref("journeys/programming-language-theory/concepts/rocq.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What is the syntax for multi-argument application in rocq?
 === key
 `(fn arg1 arg2 ...)`.
 :::

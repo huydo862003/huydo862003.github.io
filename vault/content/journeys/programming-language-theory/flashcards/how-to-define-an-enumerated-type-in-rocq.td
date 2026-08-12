@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "How to define an enumerated type in rocq?"
 deck: 'rocq-programming-language'
 concepts:
   - fref("journeys/programming-language-theory/concepts/enumerated-type.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+How to define an enumerated type in rocq?
 === key
 Use the `Inductive` keyword:
 

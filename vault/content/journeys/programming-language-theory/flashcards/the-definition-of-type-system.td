@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: 'The definition of type system'
 deck: 'type-theory'
 concepts:
   - fref("journeys/programming-language-theory/concepts/type-system.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+The definition of type system
 === key
 Type system is a **tractable syntactic method** to **prove the absence of a program's behavior** by **classifying phrases according to the types of values they compute**.
 :::

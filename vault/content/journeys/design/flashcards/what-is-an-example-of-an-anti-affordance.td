@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What is an example of an anti-affordance?"
 deck: 'general'
 concepts:
   - fref("journeys/design/concepts/affordance.td")
@@ -8,6 +7,6 @@ concepts:
 ---
 
 ::: flashcard
-${question}
+What is an example of an anti-affordance?
 === key
 :::

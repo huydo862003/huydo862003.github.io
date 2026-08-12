@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What does lambda calculus consist of in its purest form?"
 deck: 'pure-lambda-calculus'
 concepts:
   - fref("journeys/programming-language-theory/concepts/lambda-calculus.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What does lambda calculus consist of in its purest form?
 === key
 - Function definition.
 - Function application.

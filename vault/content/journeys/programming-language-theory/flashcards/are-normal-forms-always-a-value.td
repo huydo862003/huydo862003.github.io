@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "Are normal forms always a value?"
 deck: 'pure-lambda-calculus'
 concepts:
   - fref("journeys/programming-language-theory/concepts/value.td")
@@ -10,7 +9,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+Are normal forms always a value?
 === key
 Normal forms can be stuck terms.
 :::

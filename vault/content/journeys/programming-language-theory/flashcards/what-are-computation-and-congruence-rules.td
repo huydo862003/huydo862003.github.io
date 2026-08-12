@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What are computation and congruence rules?"
 deck: 'logic-tools'
 concepts:
   - fref("journeys/programming-language-theory/concepts/computation-rule.td")
@@ -10,7 +9,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What are computation and congruence rules?
 === key
 A computation rule directly reduces the current term.
 

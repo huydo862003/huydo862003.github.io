@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What are the differences between terms and expressions?"
 deck: 'language-theory'
 concepts:
   - fref("journeys/programming-language-theory/concepts/term.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What are the differences between terms and expressions?
 === key
 Expression is used to denote any syntactic constructs.
 

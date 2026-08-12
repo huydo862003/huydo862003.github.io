@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: 'How is the type "bool -> bool" pronounced in rocq?'
 deck: 'rocq-programming-language'
 concepts:
   - fref("journeys/programming-language-theory/concepts/rocq.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+How is the type "bool -> bool" pronounced in rocq?
 === key
 "bool arrow bool".
 :::

@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What is an abstract binding tree (ABT)?"
 deck: 'language-theory'
 concepts:
   - fref("journeys/programming-language-theory/concepts/abstract-binding-tree-abt.td")
@@ -11,7 +10,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What is an abstract binding tree (ABT)?
 === key
 An AST that is enriched with bindings and scopes.
 

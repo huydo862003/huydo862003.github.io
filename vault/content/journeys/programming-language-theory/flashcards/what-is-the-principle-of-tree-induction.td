@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What is the principle of tree induction?"
 deck: 'proof-technique'
 concepts:
   - fref("journeys/programming-language-theory/concepts/tree-induction.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What is the principle of tree induction?
 === key
 Tree induction
 :::

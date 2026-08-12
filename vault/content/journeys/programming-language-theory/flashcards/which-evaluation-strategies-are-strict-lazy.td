@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "Which evaluation strategies are strict/lazy?"
 deck: 'pure-lambda-calculus'
 concepts:
   - fref("journeys/programming-language-theory/concepts/evaluation-strategy.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+Which evaluation strategies are strict/lazy?
 === key
 - Strict evaluation strategy:
   - Call by value.

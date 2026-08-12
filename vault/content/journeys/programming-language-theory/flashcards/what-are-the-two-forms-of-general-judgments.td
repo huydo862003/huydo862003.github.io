@@ -1,12 +1,11 @@
 ---
 _type: Flashcard
-question: "What are the two forms of general judgments?"
 deck: 'general'
 books:
   - fref("journeys/programming-language-theory/books/software-foundations/chapter-3-hypothetical-and-general-judgments.td")
 ---
 
 ::: flashcard
-${question}
+What are the two forms of general judgments?
 === key
 :::

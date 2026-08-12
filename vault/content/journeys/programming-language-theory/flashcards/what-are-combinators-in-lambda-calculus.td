@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What are combinators in lambda calculus?"
 deck: 'pure-lambda-calculus'
 concepts:
   - fref("journeys/programming-language-theory/concepts/combinator.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What are combinators in lambda calculus?
 === key
 A term with no free variables.
 :::

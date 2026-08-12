@@ -1,13 +1,12 @@
 ---
 _type: Flashcard
-question: "What is the class pattern?"
 deck: 'language-theory'
 books:
   - fref("journeys/programming-language-theory/books/programming-languages-application-and-interpretation/chapter-4-objects.td")
 ---
 
 ::: flashcard
-${question}
+What is the class pattern?
 === key
 Simple class pattern:
 

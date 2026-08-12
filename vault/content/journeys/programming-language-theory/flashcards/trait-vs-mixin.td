@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "Trait vs mixin?"
 deck: 'pure-lambda-calculus'
 concepts:
   - fref("journeys/programming-language-theory/concepts/trait.td")
@@ -10,7 +9,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+Trait vs mixin?
 === key
 Note: Trait in this sense is different from Rust's traits.
 

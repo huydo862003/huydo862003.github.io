@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What are the methods of finding derivations?"
 deck: 'logic-tools'
 concepts:
   - fref("journeys/programming-language-theory/concepts/forward-chaining.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What are the methods of finding derivations?
 === key
 - Forward chaining/Bottom-up construction
 

@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What are the ideas of micro and macro gradual typings?"
 deck: 'type-theory'
 concepts:
   - fref("journeys/programming-language-theory/concepts/gradual-typing.td")
@@ -11,7 +10,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What are the ideas of micro and macro gradual typings?
 === key
 Gradual typing is often the formal term for retrofitted type systems.
 

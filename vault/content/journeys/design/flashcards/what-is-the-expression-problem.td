@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What is the expression problem?"
 deck: 'design'
 concepts:
   - fref("journeys/programming-language-theory/concepts/expression-problem.td")
@@ -9,6 +8,6 @@ books:
 ---
 
 ::: flashcard
-${question}
+What is the expression problem?
 === key
 :::

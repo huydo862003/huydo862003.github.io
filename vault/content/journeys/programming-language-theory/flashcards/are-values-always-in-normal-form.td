@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "Are values always in normal form?"
 deck: 'language-theory'
 concepts:
   - fref("journeys/programming-language-theory/concepts/normal-form.td")
@@ -10,7 +9,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+Are values always in normal form?
 === key
 May not be, but should hold for all meaningful calculus.
 :::

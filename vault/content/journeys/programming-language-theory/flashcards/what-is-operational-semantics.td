@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What is operational semantics?"
 deck: 'language-theory'
 concepts:
   - fref("journeys/programming-language-theory/concepts/operational-semantics.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What is operational semantics?
 === key
 A style of semantics that defines a language by how it runs using syntactic transformation.
 :::

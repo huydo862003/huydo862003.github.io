@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What are some examples of automated theorem provers?"
 deck: 'compiler-implementation'
 concepts:
   - fref("journeys/programming-language-theory/concepts/automated-theorem-prover.td")
@@ -11,7 +10,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What are some examples of automated theorem provers?
 === key
 - SAT solver
 - SMT solver

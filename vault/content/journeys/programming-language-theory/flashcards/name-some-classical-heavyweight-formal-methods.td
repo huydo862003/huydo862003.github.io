@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: 'Name some classical heavyweight formal methods'
 deck: 'language-theory'
 concepts:
   - fref("journeys/programming-language-theory/concepts/hoare-logic.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+Name some classical heavyweight formal methods
 === key
 - Hoare logic.
 - Modal logic.

@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "Which terms are deemed values in untyped lambda calculus?"
 deck: 'pure-lambda-calculus'
 concepts:
   - fref("journeys/programming-language-theory/concepts/pure-untyped-lambda-calculus.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+Which terms are deemed values in untyped lambda calculus?
 === key
 Lambda abstractions/Functions are the only values.
 :::

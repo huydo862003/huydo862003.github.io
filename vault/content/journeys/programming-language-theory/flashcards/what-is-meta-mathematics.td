@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What is meta-mathematics?"
 deck: 'other-mathematics'
 concepts:
   - fref("journeys/programming-language-theory/concepts/meta-mathematics.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What is meta-mathematics?
 === key
 A branch of meta-mathematics that studies about the properties of mathematical systems.
 :::

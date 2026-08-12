@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What is a preorder?"
 deck: 'set-theory-relation'
 concepts:
   - fref("journeys/programming-language-theory/concepts/preorder.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What is a preorder?
 === key
 A relation that is Reflexive and Transitive.
 :::

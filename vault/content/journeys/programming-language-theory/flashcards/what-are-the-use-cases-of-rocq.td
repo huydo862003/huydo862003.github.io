@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What are the use cases of rocq?"
 deck: 'rocq-programming-language'
 concepts:
   - fref("journeys/programming-language-theory/concepts/rocq.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What are the use cases of rocq?
 === key
 - As a platform to model programming languages.
 - As a tool to write formally certified software and hardware.

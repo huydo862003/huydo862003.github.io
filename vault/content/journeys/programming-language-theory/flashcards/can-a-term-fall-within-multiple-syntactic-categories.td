@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "Can a term fall within multiple syntactic categories?"
 deck: 'pure-lambda-calculus'
 concepts:
   - fref("journeys/programming-language-theory/concepts/pure-untyped-lambda-calculus.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+Can a term fall within multiple syntactic categories?
 === key
 Yes.
 :::

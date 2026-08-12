@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What is the meaning of a term?"
 deck: 'language-theory'
 concepts:
   - fref("journeys/programming-language-theory/concepts/term.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What is the meaning of a term?
 === key
 The meaning of a term can be taken to be the final state of the abstract machine running it.
 :::

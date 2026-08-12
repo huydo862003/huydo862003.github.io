@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What is the syntax for conditional expressions in rocq?"
 deck: 'rocq-programming-language'
 concepts:
   - fref("journeys/programming-language-theory/concepts/rocq.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What is the syntax for conditional expressions in rocq?
 === key
 `if ... then ... else ...`
 :::

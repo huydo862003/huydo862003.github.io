@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What is BNF?"
 deck: 'language-theory'
 concepts:
   - fref("journeys/programming-language-theory/concepts/bnf.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What is BNF?
 === key
 A specific meta-language that is widely used to describe context-free languages.
 :::

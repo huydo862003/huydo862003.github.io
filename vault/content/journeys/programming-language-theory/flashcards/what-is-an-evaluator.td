@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What is an evaluator?"
 deck: 'programming-language-basic'
 concepts:
   - fref("journeys/programming-language-theory/concepts/evaluator.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What is an evaluator?
 === key
 An evaluator is a program that reduces a program into a value.
 :::

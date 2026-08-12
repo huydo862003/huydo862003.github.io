@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What is a normal form?"
 deck: 'pure-lambda-calculus'
 concepts:
   - fref("journeys/programming-language-theory/concepts/normal-form.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What is a normal form?
 === key
 A normal form is a lambda term that does not relate to any other terms by the One-step evaluation relation.
 :::

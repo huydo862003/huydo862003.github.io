@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What is the operational semantics of arithmetic expressions?"
 deck: 'language-theory'
 concepts:
   - fref("journeys/programming-language-theory/concepts/operational-semantics.td")
@@ -10,7 +9,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What is the operational semantics of arithmetic expressions?
 === key
 Combining arithmetic and boolean expressions.
 

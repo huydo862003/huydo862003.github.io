@@ -1,6 +1,5 @@
 ---
 _type: Flashcard
-question: "What is the deduction style presentation of logical systems?"
 deck: 'logic-tools'
 concepts:
   - fref("journeys/programming-language-theory/concepts/natural-deduction-style.td")
@@ -9,7 +8,7 @@ books:
 ---
 
 ::: flashcard
-${question}
+What is the deduction style presentation of logical systems?
 === key
 The premises are listed above the horizontal line & the conclusion is listed below the horizontal line.
 :::
