@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Structural induction'
 title: 'Structural induction'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Identity combinator'
 title: 'Identity combinator'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'

@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Version control'
 title: 'Version control'
 journey: fref("design/index.td")
 status: 'mastered'

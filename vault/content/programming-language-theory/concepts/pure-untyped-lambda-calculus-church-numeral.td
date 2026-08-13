@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Pure untyped lambda calculus church numeral'
 title: 'Pure untyped lambda calculus church numeral'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

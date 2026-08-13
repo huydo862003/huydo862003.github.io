@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Discoverable'
 title: 'Discoverable'
 journey: fref("design/index.td")
 status: 'learning'

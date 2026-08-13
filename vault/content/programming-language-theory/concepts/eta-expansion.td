@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Eta-expansion'
 title: 'Eta-expansion'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

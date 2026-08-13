@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Parametric (general) judgment'
 title: 'Parametric (general) judgment'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

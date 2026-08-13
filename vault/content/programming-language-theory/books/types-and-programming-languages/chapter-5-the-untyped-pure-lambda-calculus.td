@@ -1,5 +1,6 @@
 ---
 _type: Book
+_label: 'Chapter 5. the untyped/pure lambda-calculus'
 title: 'Chapter 5. the untyped/pure lambda-calculus'
 journey: fref("programming-language-theory/index.td")
 concepts:

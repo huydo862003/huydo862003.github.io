@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Construct/Special form'
 title: 'Construct/Special form'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'

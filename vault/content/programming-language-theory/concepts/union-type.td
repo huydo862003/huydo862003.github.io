@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Union type'
 title: 'Union type'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'

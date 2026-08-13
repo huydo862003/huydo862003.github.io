@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Infinite type'
 title: 'Infinite type'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'

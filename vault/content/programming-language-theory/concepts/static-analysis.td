@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Static analysis'
 title: 'Static analysis'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'

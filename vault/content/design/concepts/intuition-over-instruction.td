@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Intuition over instruction'
 title: 'Intuition over instruction'
 journey: fref("design/index.td")
 status: 'learning'

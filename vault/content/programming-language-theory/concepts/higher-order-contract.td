@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Higher-order contract'
 title: 'Higher-order contract'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

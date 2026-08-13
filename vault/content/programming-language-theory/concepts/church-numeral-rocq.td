@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Church numeral (rocq)'
 title: 'Church numeral (rocq)'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

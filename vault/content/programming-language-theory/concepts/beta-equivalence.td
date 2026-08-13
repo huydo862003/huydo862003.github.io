@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Beta-equivalence'
 title: 'Beta-equivalence'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'

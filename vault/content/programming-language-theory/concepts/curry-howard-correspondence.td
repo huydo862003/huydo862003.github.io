@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Curry-Howard correspondence'
 title: 'Curry-Howard correspondence'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

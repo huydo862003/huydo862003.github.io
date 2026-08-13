@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Congruence'
 title: 'Congruence'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

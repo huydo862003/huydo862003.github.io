@@ -1,5 +1,6 @@
 ---
 _type: Journey
+_label: 'Distributed Systems'
 title: 'Distributed Systems'
 status: 'active'
 ---

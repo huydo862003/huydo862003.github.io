@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Surface language'
 title: 'Surface language'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'

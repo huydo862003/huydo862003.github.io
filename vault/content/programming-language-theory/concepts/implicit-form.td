@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Implicit form'
 title: 'Implicit form'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

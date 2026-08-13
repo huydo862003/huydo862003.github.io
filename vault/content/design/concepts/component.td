@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Component'
 title: 'Component'
 journey: fref("design/index.td")
 status: 'mastered'

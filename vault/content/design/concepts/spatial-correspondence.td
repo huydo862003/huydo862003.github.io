@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Spatial correspondence'
 title: 'Spatial correspondence'
 journey: fref("design/index.td")
 status: 'learning'

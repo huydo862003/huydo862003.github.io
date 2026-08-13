@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Partial order'
 title: 'Partial order'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

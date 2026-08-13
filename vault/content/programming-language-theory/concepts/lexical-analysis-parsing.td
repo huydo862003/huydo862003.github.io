@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Lexical analysis parsing'
 title: 'Lexical analysis parsing'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

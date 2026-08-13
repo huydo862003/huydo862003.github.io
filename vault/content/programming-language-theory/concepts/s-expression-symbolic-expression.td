@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'S-expression/Symbolic expression'
 title: 'S-expression/Symbolic expression'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'

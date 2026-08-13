@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Lexical analysis'
 title: 'Lexical analysis'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'

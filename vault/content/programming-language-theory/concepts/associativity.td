@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Associativity'
 title: 'Associativity'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'

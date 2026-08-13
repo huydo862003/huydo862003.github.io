@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Procedural/Functional abstraction'
 title: 'Procedural/Functional abstraction'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'

@@ -1,5 +1,6 @@
 ---
 _type: Book
+_label: 'Chapter 4. objects'
 title: 'Chapter 4. objects'
 journey: fref("programming-language-theory/index.td")
 concepts:

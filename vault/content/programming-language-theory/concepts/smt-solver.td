@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'SMT solver'
 title: 'SMT solver'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

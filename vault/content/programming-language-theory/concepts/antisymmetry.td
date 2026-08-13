@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Antisymmetry'
 title: 'Antisymmetry'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

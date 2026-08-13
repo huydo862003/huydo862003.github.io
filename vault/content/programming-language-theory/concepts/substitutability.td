@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Substitutability'
 title: 'Substitutability'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'

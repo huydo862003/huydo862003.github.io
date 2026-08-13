@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Heap'
 title: 'Heap'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'

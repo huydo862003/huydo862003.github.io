@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Uniformity'
 title: 'Uniformity'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

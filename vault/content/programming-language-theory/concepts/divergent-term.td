@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Divergent term'
 title: 'Divergent term'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'

@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Cascading/Sequential let'
 title: 'Cascading/Sequential let'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

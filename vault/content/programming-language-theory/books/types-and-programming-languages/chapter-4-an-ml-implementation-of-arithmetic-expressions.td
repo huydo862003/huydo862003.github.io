@@ -1,5 +1,6 @@
 ---
 _type: Book
+_label: 'Chapter 4. an ML implementation of arithmetic expressions'
 title: 'Chapter 4. an ML implementation of arithmetic expressions'
 journey: fref("programming-language-theory/index.td")
 parent: fref("programming-language-theory/books/types-and-programming-languages/part-i-untyped-systems.td")

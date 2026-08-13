@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Reflexive'
 title: 'Reflexive'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'

@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Reflexivity'
 title: 'Reflexivity'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

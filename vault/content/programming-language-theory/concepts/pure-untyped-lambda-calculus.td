@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Pure/Untyped lambda calculus'
 title: 'Pure/Untyped lambda calculus'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

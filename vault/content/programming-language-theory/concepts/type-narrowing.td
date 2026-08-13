@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Type narrowing'
 title: 'Type narrowing'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'

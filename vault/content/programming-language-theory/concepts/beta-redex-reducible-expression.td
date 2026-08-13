@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Beta-redex/Reducible expression'
 title: 'Beta-redex/Reducible expression'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

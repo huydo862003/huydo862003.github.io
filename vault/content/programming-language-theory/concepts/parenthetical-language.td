@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Parenthetical language'
 title: 'Parenthetical language'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

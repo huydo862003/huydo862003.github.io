@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Derivation'
 title: 'Derivation'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'

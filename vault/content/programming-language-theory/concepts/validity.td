@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Validity'
 title: 'Validity'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

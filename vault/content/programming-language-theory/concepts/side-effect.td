@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Side-effect'
 title: 'Side-effect'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'

@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Macro hygienic macro'
 title: 'Macro hygienic macro'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

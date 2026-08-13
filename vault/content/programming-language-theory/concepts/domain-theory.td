@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Domain theory'
 title: 'Domain theory'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'

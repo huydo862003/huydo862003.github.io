@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Module system'
 title: 'Module system'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'

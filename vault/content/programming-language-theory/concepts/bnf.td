@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'BNF'
 title: 'BNF'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

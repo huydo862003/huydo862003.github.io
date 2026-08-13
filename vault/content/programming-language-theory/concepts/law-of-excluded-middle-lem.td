@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Law of excluded middle (LEM)'
 title: 'Law of excluded middle (LEM)'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'

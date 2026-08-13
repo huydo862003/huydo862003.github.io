@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Sequential evaluation'
 title: 'Sequential evaluation'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'

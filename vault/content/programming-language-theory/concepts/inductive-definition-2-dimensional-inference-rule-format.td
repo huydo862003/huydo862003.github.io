@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Inductive definition 2 dimensional inference rule format'
 title: 'Inductive definition 2 dimensional inference rule format'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Interaction design'
 title: 'Interaction design'
 journey: fref("design/index.td")
 status: 'learning'

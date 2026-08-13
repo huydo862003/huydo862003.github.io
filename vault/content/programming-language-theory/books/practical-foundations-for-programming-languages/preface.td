@@ -1,5 +1,6 @@
 ---
 _type: Book
+_label: 'Preface'
 title: 'Preface'
 journey: fref("programming-language-theory/index.td")
 parent: fref("programming-language-theory/books/practical-foundations-for-programming-languages/index.td")

@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Static dispatch'
 title: 'Static dispatch'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'

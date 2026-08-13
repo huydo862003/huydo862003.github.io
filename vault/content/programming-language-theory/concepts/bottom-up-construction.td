@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Bottom-up construction'
 title: 'Bottom-up construction'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'

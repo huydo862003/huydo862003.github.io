@@ -1,5 +1,6 @@
 ---
 _type: Book
+_label: 'Chapter 2. evaluation'
 title: 'Chapter 2. evaluation'
 journey: fref("programming-language-theory/index.td")
 concepts:

@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Lambda expression'
 title: 'Lambda expression'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'

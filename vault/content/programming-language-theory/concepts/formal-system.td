@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Formal system'
 title: 'Formal system'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Technical debt'
 title: 'Technical debt'
 journey: fref("design/index.td")
 status: 'mastered'

@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'SAT solver'
 title: 'SAT solver'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

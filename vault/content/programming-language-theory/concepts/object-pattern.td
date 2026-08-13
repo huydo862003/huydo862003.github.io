@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Object pattern'
 title: 'Object pattern'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

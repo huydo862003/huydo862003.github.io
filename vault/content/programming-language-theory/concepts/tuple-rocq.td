@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Tuple rocq'
 title: 'Tuple rocq'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Alpha-equivalence'
 title: 'Alpha-equivalence'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

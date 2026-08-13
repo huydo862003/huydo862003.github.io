@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Desugar'
 title: 'Desugar'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'

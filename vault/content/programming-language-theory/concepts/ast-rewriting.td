@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'AST rewriting'
 title: 'AST rewriting'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'

@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Sum of products (SoP)'
 title: 'Sum of products (SoP)'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'

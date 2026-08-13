@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Norman door'
 title: 'Norman door'
 journey: fref("design/index.td")
 status: 'reviewing'

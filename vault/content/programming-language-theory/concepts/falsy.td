@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Falsy'
 title: 'Falsy'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'

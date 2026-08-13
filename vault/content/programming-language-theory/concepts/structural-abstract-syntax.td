@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Structural/Abstract syntax'
 title: 'Structural/Abstract syntax'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'

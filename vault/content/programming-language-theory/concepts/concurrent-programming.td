@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Concurrent programming'
 title: 'Concurrent programming'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'

@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Evaluation strategy strict eager evaluation strategy lazy'
 title: 'Evaluation strategy strict eager evaluation strategy lazy'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

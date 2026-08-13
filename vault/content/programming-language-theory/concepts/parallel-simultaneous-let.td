@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Parallel/Simultaneous let'
 title: 'Parallel/Simultaneous let'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

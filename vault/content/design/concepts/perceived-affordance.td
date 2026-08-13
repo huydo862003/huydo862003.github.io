@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Perceived affordance'
 title: 'Perceived affordance'
 journey: fref("design/index.td")
 status: 'learning'

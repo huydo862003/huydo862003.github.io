@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Runtime type dispatch'
 title: 'Runtime type dispatch'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'

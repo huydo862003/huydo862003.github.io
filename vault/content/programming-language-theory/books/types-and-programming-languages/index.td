@@ -1,5 +1,6 @@
 ---
 _type: Book
+_label: 'Types and programming languages'
 title: 'Types and programming languages'
 date: '2002'
 journey: fref("programming-language-theory/index.td")

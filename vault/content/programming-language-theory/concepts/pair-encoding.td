@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Pair encoding'
 title: 'Pair encoding'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

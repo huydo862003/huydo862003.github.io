@@ -1,5 +1,6 @@
 ---
 _type: Book
+_label: 'Essentials of programming languages'
 title: 'Essentials of programming languages'
 date: '2008'
 journey: fref("programming-language-theory/index.td")

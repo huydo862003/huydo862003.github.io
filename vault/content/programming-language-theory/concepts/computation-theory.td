@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Computation theory'
 title: 'Computation theory'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'

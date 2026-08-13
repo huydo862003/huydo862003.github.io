@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Symbolic parameter'
 title: 'Symbolic parameter'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'

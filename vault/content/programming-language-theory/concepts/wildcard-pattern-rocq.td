@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Wildcard pattern rocq'
 title: 'Wildcard pattern rocq'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

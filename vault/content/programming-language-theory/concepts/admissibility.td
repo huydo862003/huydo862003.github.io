@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Admissibility'
 title: 'Admissibility'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

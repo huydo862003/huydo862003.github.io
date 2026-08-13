@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Psychology'
 title: 'Psychology'
 journey: fref("design/index.td")
 status: 'mastered'

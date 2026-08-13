@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Forward chaining search backward chaining search'
 title: 'Forward chaining search backward chaining search'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

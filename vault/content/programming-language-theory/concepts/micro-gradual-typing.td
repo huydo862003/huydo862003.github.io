@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Micro gradual typing'
 title: 'Micro gradual typing'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

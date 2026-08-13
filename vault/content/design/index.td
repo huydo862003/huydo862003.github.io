@@ -1,5 +1,6 @@
 ---
 _type: Journey
+_label: 'Design'
 title: 'Design'
 status: 'active'
 ---

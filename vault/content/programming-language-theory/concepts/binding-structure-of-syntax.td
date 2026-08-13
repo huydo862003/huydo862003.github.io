@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Binding structure of syntax'
 title: 'Binding structure of syntax'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'

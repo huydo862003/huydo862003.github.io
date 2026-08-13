@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Desired property: determinacy of one-step evaluation relation'
 title: "Desired property: determinacy of one-step evaluation relation"
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'

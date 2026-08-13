@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Axiom rule proper rule'
 title: 'Axiom rule proper rule'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Documentation'
 title: 'Documentation'
 journey: fref("design/index.td")
 status: 'reviewing'

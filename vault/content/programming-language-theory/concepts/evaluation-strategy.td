@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Evaluation strategy'
 title: 'Evaluation strategy'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Rocq kernel'
 title: 'Rocq kernel'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

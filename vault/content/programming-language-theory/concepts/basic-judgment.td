@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Basic judgment'
 title: 'Basic judgment'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

@@ -1,5 +1,6 @@
 ---
 _type: Journey
+_label: 'Programming Language Theory'
 title: 'Programming Language Theory'
 status: 'active'
 ---

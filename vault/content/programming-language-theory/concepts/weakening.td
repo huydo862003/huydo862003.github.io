@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Weakening'
 title: 'Weakening'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

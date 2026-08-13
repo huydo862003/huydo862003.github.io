@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Countable set'
 title: 'Countable set'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

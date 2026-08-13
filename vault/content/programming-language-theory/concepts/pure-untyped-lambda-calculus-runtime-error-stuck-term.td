@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Pure untyped lambda calculus runtime error stuck term'
 title: 'Pure untyped lambda calculus runtime error stuck term'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

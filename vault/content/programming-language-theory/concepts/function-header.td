@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Function header'
 title: 'Function header'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'

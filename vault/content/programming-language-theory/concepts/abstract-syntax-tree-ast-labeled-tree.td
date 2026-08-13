@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Abstract syntax tree ast labeled tree'
 title: 'Abstract syntax tree ast labeled tree'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Rocq inductive definition'
 title: 'Rocq inductive definition'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Variable definition'
 title: 'Variable definition'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'

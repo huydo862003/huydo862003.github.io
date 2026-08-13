@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'One-step evaluation relation'
 title: 'One-step evaluation relation'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

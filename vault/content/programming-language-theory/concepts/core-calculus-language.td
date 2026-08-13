@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Core calculus/language'
 title: 'Core calculus/language'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

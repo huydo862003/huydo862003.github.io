@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Retrofitted type system'
 title: 'Retrofitted type system'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

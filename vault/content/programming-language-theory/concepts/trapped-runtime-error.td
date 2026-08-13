@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Trapped (runtime) error'
 title: 'Trapped (runtime) error'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'

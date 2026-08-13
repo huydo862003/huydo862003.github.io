@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Small-step/Structural operational semantics (SOS)'
 title: 'Small-step/Structural operational semantics (SOS)'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

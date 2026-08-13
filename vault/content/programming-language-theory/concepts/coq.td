@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Coq'
 title: 'Coq'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'

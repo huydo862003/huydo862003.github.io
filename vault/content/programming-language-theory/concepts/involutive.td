@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Involutive'
 title: 'Involutive'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'

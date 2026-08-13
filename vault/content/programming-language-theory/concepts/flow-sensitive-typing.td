@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Flow-sensitive typing'
 title: 'Flow-sensitive typing'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'

@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Formal derivability judgment'
 title: 'Formal derivability judgment'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

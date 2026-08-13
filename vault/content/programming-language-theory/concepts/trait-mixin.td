@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Trait mixin'
 title: 'Trait mixin'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

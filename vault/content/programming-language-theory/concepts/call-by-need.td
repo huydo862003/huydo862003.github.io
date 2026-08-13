@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Call by need'
 title: 'Call by need'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'

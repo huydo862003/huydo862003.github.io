@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Iterated inductive definition simultaneous inductive'
 title: 'Iterated inductive definition simultaneous inductive'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

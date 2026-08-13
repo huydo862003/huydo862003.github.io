@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Proof by simplification'
 title: 'Proof by simplification'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Denotational semantics'
 title: 'Denotational semantics'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

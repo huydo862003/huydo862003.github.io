@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Style dictionary'
 title: 'Style dictionary'
 journey: fref("design/index.td")
 status: 'reviewing'

@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Natural mapping'
 title: 'Natural mapping'
 journey: fref("design/index.td")
 status: 'learning'

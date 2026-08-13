@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Operational semantics'
 title: 'Operational semantics'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

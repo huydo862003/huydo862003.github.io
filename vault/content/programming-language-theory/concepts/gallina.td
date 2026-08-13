@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Gallina'
 title: 'Gallina'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'

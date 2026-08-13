@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Capture-avoiding substitution'
 title: 'Capture-avoiding substitution'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

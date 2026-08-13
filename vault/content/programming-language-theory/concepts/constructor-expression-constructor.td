@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Constructor expression constructor'
 title: 'Constructor expression constructor'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

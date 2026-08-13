@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Conservative'
 title: 'Conservative'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'

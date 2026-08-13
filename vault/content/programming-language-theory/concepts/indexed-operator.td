@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Indexed operator'
 title: 'Indexed operator'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'

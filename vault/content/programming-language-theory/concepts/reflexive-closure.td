@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Reflexive closure'
 title: 'Reflexive closure'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'

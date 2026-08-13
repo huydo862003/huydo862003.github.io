@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'System image'
 title: 'System image'
 journey: fref("design/index.td")
 status: 'learning'

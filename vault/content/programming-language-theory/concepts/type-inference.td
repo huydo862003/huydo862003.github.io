@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Type inference'
 title: 'Type inference'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

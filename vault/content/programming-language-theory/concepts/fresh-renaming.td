@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Fresh renaming'
 title: 'Fresh renaming'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

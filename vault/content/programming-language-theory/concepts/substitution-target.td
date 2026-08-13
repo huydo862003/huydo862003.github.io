@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Substitution target'
 title: 'Substitution target'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'

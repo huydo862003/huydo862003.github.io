@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Generic inductive definition'
 title: 'Generic inductive definition'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

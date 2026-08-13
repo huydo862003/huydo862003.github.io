@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Structural property'
 title: 'Structural property'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

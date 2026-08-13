@@ -1,5 +1,6 @@
 ---
 _type: Book
+_label: 'Chapter 2. mathematical preliminaries'
 title: 'Chapter 2. mathematical preliminaries'
 journey: fref("programming-language-theory/index.td")
 concepts:

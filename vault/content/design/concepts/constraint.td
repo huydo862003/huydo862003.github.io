@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Constraint'
 title: 'Constraint'
 journey: fref("design/index.td")
 status: 'learning'

@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Evaluation reduction relation derivable'
 title: 'Evaluation reduction relation derivable'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

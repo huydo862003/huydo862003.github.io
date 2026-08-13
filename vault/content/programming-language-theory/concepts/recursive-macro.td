@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Recursive macro'
 title: 'Recursive macro'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'

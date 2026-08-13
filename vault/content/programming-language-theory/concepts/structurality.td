@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Structurality'
 title: 'Structurality'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

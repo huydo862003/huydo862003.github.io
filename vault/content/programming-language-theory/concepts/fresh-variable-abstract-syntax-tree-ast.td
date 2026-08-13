@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Fresh variable abstract syntax tree ast'
 title: 'Fresh variable abstract syntax tree ast'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

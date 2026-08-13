@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Actual parameter/argument'
 title: 'Actual parameter/argument'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'

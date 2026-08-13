@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Partiality'
 title: 'Partiality'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'

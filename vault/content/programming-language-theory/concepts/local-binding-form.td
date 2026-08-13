@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Local binding form'
 title: 'Local binding form'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

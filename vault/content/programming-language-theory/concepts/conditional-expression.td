@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Conditional expression'
 title: 'Conditional expression'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

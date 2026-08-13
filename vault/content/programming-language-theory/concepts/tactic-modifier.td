@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Tactic modifier'
 title: 'Tactic modifier'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

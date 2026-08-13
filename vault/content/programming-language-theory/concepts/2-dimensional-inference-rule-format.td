@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: '2-dimensional inference rule format'
 title: '2-dimensional inference rule format'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Type variant'
 title: 'Type variant'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'

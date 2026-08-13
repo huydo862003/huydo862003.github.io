@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Stuck term value normal form'
 title: 'Stuck term value normal form'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

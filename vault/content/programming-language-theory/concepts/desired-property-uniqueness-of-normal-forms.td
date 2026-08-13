@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Desired property: uniqueness of normal forms'
 title: "Desired property: uniqueness of normal forms"
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'

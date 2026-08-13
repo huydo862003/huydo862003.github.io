@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Iterated inductive definition'
 title: 'Iterated inductive definition'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'

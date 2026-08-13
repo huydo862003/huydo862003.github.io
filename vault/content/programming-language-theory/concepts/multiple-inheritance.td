@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Multiple inheritance'
 title: 'Multiple inheritance'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'

@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Dimensional analysis'
 title: 'Dimensional analysis'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

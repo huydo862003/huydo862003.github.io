@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Proliferation'
 title: 'Proliferation'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

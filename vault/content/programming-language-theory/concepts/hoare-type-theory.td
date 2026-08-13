@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Hoare type theory'
 title: 'Hoare type theory'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

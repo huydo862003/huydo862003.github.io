@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Computation rule'
 title: 'Computation rule'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

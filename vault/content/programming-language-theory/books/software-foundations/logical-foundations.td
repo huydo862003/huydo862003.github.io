@@ -1,5 +1,6 @@
 ---
 _type: Book
+_label: 'Logical foundations'
 title: 'Logical foundations'
 date: '2010'
 journey: fref("programming-language-theory/index.td")

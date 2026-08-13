@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'First-order variable'
 title: 'First-order variable'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

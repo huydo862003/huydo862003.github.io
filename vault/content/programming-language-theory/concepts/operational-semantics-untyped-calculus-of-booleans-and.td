@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Operational semantics untyped calculus of booleans and'
 title: 'Operational semantics untyped calculus of booleans and'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

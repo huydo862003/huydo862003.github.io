@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Responsive design'
 title: 'Responsive design'
 journey: fref("design/index.td")
 status: 'mastered'

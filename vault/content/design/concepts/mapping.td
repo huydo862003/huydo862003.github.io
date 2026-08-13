@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Mapping'
 title: 'Mapping'
 journey: fref("design/index.td")
 status: 'learning'

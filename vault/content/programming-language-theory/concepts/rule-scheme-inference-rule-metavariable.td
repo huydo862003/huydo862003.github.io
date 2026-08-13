@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Rule scheme inference rule metavariable'
 title: 'Rule scheme inference rule metavariable'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

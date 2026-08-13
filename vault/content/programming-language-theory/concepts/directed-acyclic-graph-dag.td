@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Directed acyclic graph (DAG)'
 title: 'Directed acyclic graph (DAG)'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'

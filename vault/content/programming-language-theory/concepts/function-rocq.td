@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Function rocq'
 title: 'Function rocq'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

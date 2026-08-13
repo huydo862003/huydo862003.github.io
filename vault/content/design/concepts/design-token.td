@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Design token'
 title: 'Design token'
 journey: fref("design/index.td")
 status: 'reviewing'

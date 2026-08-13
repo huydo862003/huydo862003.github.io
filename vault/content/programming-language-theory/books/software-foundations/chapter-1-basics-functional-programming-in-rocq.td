@@ -1,5 +1,6 @@
 ---
 _type: Book
+_label: 'Chapter 1. basics - functional programming in rocq'
 title: 'Chapter 1. basics - functional programming in rocq'
 journey: fref("programming-language-theory/index.td")
 concepts:

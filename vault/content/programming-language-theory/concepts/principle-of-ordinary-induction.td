@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Principle of ordinary induction'
 title: 'Principle of ordinary induction'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

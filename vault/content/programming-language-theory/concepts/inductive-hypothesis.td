@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Inductive hypothesis'
 title: 'Inductive hypothesis'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'

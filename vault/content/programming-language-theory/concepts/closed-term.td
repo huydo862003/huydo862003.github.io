@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Closed term'
 title: 'Closed term'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'

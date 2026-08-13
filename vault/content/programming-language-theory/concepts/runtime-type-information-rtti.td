@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Runtime type information (RTTI)'
 title: 'Runtime type information (RTTI)'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'

@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Predicate'
 title: 'Predicate'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'

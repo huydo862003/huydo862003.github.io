@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Recursive let'
 title: 'Recursive let'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

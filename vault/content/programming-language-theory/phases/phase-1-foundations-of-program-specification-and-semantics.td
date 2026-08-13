@@ -1,5 +1,6 @@
 ---
 _type: Phase
+_label: 'Phase 1 - foundations of program specification and semantics'
 title: 'Phase 1 - foundations of program specification and semantics'
 journey: fref("programming-language-theory/index.td")
 status: 'active'

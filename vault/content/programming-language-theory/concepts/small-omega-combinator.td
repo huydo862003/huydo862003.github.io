@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Small omega combinator'
 title: 'Small omega combinator'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'

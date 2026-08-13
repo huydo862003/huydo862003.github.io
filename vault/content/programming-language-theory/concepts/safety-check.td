@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Safety check'
 title: 'Safety check'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'

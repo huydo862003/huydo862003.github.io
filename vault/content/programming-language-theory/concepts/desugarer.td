@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Desugarer'
 title: 'Desugarer'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

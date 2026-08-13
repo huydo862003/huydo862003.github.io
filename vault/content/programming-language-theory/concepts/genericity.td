@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Genericity'
 title: 'Genericity'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

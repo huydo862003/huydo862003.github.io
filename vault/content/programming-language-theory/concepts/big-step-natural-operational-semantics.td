@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Big-step/Natural operational semantics'
 title: 'Big-step/Natural operational semantics'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'

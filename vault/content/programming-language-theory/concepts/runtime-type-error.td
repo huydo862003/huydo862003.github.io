@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Runtime type error'
 title: 'Runtime type error'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

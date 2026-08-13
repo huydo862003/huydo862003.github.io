@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Lexicographic order principle of lexicographic induction'
 title: 'Lexicographic order principle of lexicographic induction'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

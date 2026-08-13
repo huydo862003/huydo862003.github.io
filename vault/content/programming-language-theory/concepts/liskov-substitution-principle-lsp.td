@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Liskov substitution principle (LSP)'
 title: 'Liskov substitution principle (LSP)'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

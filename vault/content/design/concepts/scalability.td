@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Scalability'
 title: 'Scalability'
 journey: fref("design/index.td")
 status: 'mastered'

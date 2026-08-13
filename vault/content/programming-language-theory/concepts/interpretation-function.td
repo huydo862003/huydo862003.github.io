@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Interpretation function'
 title: 'Interpretation function'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'

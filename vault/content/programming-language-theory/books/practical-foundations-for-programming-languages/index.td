@@ -1,5 +1,6 @@
 ---
 _type: Book
+_label: 'Practical foundations for programming languages'
 title: 'Practical foundations for programming languages'
 date: '2016'
 journey: fref("programming-language-theory/index.td")

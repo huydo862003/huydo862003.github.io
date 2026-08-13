@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Wildcard pattern'
 title: 'Wildcard pattern'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'

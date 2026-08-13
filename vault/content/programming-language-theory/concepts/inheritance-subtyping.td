@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Inheritance subtyping'
 title: 'Inheritance subtyping'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

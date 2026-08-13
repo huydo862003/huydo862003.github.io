@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Tree induction'
 title: 'Tree induction'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

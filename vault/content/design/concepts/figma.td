@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Figma'
 title: 'Figma'
 journey: fref("design/index.td")
 status: 'reviewing'

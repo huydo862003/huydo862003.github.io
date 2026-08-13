@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Union type retrofitted type system'
 title: 'Union type retrofitted type system'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

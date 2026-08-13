@@ -1,5 +1,6 @@
 ---
 _type: Book
+_label: 'The design of everyday things'
 title: 'The design of everyday things'
 date: '2013'
 journey: fref("design/index.td")

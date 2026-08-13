@@ -1,5 +1,6 @@
 ---
 _type: Concept
+_label: 'Structural induction modulo fresh renaming'
 title: 'Structural induction modulo fresh renaming'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
