@@ -1,6 +1,6 @@
 ---
 _type: Book
-_label: 'Chapter 3. hypothetical and general judgments'
+_label: 'Chapter 3. Hypothetical and general judgments'
 journey: fref("programming-language-theory/index.td")
 parent: fref("programming-language-theory/books/software-foundations/logical-foundations.td")
 ---

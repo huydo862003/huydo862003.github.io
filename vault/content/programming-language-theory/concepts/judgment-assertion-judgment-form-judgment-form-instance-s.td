@@ -1,6 +1,6 @@
 ---
 _type: Concept
-_label: 'Judgment assertion judgment form judgment form instance s'
+_label: 'Judgment assertion judgment form judgment form instances'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 ---

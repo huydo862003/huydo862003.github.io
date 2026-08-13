@@ -1,6 +1,6 @@
 ---
 _type: Book
-_label: 'Chapter 1. basics - functional programming in rocq'
+_label: 'Chapter 1. Basics - functional programming in rocq'
 journey: fref("programming-language-theory/index.td")
 concepts:
   - fref("programming-language-theory/concepts/first-class-functional-programming-pure.td")
@@ -404,11 +404,12 @@ I use `Fixpoint` anyways.
 
       - **Illustration of IDE state at each step**:
 
-            | Step | Tactic | Goal displayed in IDE |
-            | --- | --- | --- |
-            | 1 | `intros n` | `0 + n = n` |
-            | 2 | `simpl` | `n = n` |
-            | 3 | `reflexivity` | proof complete, no goal |
+       | Step | Tactic | Goal displayed in IDE |
+       | --- | --- | --- |
+       | 1 | `intros n` | `0 + n = n` |
+       | 2 | `simpl` | `n = n` |
+       | 3 | `reflexivity` | proof complete, no goal |
+
       - **Without step 2** - you jump from `0 + n = n` directly to proof completion and never observe that `0 + n` simplifies to `n`
   - `reflexivity` actually performs more simplification than `simpl`.
     - **`simpl`** - computes expressions but avoids unfolding definitions; keeps the goal readable for continued work.
@@ -448,10 +449,11 @@ I use `Fixpoint` anyways.
 
         ```
 
-        | Step | Context | Goal |
-        | --- | --- | --- |
-        | Before `intros n` | (empty) | `∀ n : nat, 0 + n = n` |
-        | After `intros n` | `n : nat` | `0 + n = n` |
+     | Step | Context | Goal |
+     | --- | --- | --- |
+     | Before `intros n` | (empty) | `∀ n : nat, 0 + n = n` |
+     | After `intros n` | `n : nat` | `0 + n = n` |
+
     - **In short** - `intros n` says "let n be an arbitrary nat" and makes `n` available for the rest of the proof
 
 - **Tactics** - commands used between `Proof` and `Qed` to guide the proof process; examples include `intros`, `simpl`, and `reflexivity`
@@ -461,12 +463,12 @@ I use `Fixpoint` anyways.
 
   - **Naming convention** - the `_l` suffix is pronounced "on the left," indicating which side of the operator is being discussed (e.g., `plus_1_l` is about adding 1 on the left)
 
-    | Step | Context | Goal |
-    | --- | --- | --- |
-    | Start | (empty) | `∀ n:nat, 1 + n = S n` |
-    | After `intros n` | `n : nat` | `1 + n = S n` |
-    | After `simpl` | `n : nat` | `S n = S n` |
-    | After `reflexivity` | proof complete | - |
+   | Step | Context | Goal |
+   | --- | --- | --- |
+   | Start | (empty) | `∀ n:nat, 1 + n = S n` |
+   | After `intros n` | `n : nat` | `1 + n = S n` |
+   | After `simpl` | `n : nat` | `S n = S n` |
+   | After `reflexivity` | proof complete | - |
 
 ## Proof by rewriting
 
@@ -478,11 +480,11 @@ I use `Fixpoint` anyways.
 - **`intros` can move multiple things into context** - both quantified variables and hypotheses.
 - **New tactic: `rewrite`** - replaces one side of an equality with the other using a hypothesis.
 
-    | Syntax | Meaning |
-    | --- | --- |
-    | `rewrite -> H` | replace left with right (n -> m) |
-    | `rewrite <- H` | replace right with left (m -> n) |
-    | `rewrite H` | defaults to left-to-right |
+ | Syntax | Meaning |
+ | --- | --- |
+ | `rewrite -> H` | replace left with right (n -> m) |
+ | `rewrite <- H` | replace right with left (m -> n) |
+ | `rewrite H` | defaults to left-to-right |
 
 | Step | Context | Goal |
 | --- | --- | --- |
@@ -632,14 +634,14 @@ Proof.
   - **Key guideline** - mark bullet points at the beginning of lines where multiple subgoals are generated; this ensures readability regardless of other layout choices.
   - **Line length advice** - avoid extremes:
 
-        | Style | Problem |
-        | --- | --- |
-        | One tactic per line | Can be overly verbose |
-        | Entire proof on one line | Hard to read |
+   | Style | Problem |
+   | --- | --- |
+   | One tactic per line | Can be overly verbose |
+   | Entire proof on one line | Hard to read |
 
         -> Aim for 80 characters per line (or 120 if you have a wide screen or good eyes).
 
-- The `destruct` tactic can be used  with any inductively defined datatype.
+- The `destruct` tactic can be used with any inductively defined datatype.
 
     [numbers.v L169-L177](https://github.com/huydo862003/type-theory/blob/f6ffc12e6a19328c5a06aa1210ffd97995b693f3/sf/lf/ch01-basics/numbers.v%23L169-L177)
 
@@ -651,11 +653,12 @@ Proof.
 
     Different bullet symbols mark different levels.
 
-    | Symbol | Variants |
-    | --- | --- |
-    | `-` | `--`, `---`, etc. |
-    | `+` | `++`, `+++`, etc. |
-    | `*` | `**`, `***`, etc. |
+   | Symbol | Variants |
+   | --- | --- |
+   | `-` | `--`, `---`, etc. |
+   | `+` | `++`, `+++`, etc. |
+   | `*` | `**`, `***`, etc. |
+
 - **Alternative: curly braces** - can enclose sub-proofs instead of bullets.
   - [numbers.v L193-L204](https://github.com/huydo862003/type-theory/blob/9886198e747ba799937c6e9db7df3b7eca19e13c/sf/lf/ch01-basics/numbers.v%23L193-L204)
 
