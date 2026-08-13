@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Congruence rule'
-title: 'Congruence rule'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

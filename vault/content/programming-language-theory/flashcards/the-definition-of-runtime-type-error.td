@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'The definition of runtime type error'
 deck: 'type-theory'
 concepts:
   - fref("programming-language-theory/concepts/runtime-type-error.td")

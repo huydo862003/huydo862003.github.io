@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Abstract binding tree (ABT)'
-title: 'Abstract binding tree (ABT)'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
 books:

@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'Disadvantages and advantages of union types compared to sum types?'
 deck: 'type-theory'
 books:
   - fref("programming-language-theory/books/programming-languages-application-and-interpretation/chapter-5-types.td")

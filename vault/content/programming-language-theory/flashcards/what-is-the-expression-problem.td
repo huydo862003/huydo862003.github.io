@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is the expression problem?'
 deck: 'language-theory'
 concepts:
   - fref("programming-language-theory/concepts/expression-problem.td")

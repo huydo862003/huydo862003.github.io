@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'In pure lambda calculus, what are the built-in constants and primitive operators?'
 deck: 'pure-lambda-calculus'
 concepts:
   - fref("programming-language-theory/concepts/pure-untyped-lambda-calculus.td")

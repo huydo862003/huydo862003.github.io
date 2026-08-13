@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Static member'
-title: 'Static member'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:

@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What are the cons of lightweight formal methods'
 deck: 'language-theory'
 concepts:
   - fref("programming-language-theory/concepts/type-system.td")

@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Axiomatic semantics'
-title: 'Axiomatic semantics'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

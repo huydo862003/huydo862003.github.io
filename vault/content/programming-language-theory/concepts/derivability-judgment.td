@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Derivability judgment'
-title: 'Derivability judgment'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

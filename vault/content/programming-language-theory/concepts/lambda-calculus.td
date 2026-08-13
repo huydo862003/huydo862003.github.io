@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Lambda calculus'
-title: 'Lambda calculus'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

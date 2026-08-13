@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Intro pattern'
-title: 'Intro pattern'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

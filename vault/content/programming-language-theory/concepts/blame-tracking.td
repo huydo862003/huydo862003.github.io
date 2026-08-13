@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Blame tracking'
-title: 'Blame tracking'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 tags:

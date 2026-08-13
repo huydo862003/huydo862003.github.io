@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What are the pros and cons of proof assistants?'
 deck: 'logic-tools'
 concepts:
   - fref("programming-language-theory/concepts/proof-assistant-prover.td")

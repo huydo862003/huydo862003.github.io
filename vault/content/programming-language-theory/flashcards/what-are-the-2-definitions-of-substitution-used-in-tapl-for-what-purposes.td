@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What are the 2 definitions of substitution used in TAPL? for what purposes?'
 deck: 'pure-lambda-calculus'
 concepts:
   - fref("programming-language-theory/concepts/capture-avoiding-substitution.td")

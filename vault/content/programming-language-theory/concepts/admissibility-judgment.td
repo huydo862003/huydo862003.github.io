@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Admissibility judgment'
-title: 'Admissibility judgment'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

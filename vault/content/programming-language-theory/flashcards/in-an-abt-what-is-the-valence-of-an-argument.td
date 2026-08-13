@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'In an ABT, what is the valence of an argument?'
 deck: 'language-theory'
 concepts:
   - fref("programming-language-theory/concepts/valence.td")

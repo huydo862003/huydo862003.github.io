@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What does the principle of rule induction state?'
 deck: 'proof-technique'
 concepts:
   - fref("programming-language-theory/concepts/rule-induction.td")

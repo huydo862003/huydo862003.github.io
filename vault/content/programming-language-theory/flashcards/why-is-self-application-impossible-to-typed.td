@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'Why is self-application impossible to typed?'
 deck: 'type-theory'
 books:
   - fref("programming-language-theory/books/programming-languages-application-and-interpretation/chapter-5-types.td")

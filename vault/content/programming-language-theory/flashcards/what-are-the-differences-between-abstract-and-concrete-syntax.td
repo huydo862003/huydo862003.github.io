@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What are the differences between abstract and concrete syntax?'
 deck: 'programming-language-basic'
 books:
   - fref("programming-language-theory/books/types-and-programming-languages/chapter-3-untyped-arithmetic-expressions.td")

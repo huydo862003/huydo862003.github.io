@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Safe/Sound type system'
-title: 'Safe/Sound type system'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

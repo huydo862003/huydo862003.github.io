@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What are substitution target and subject?'
 deck: 'language-theory'
 concepts:
   - fref("programming-language-theory/concepts/substitution-subject.td")

@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'Which symbol is usually used to denote subtyping relation?'
 deck: 'type-theory'
 concepts:
   - fref("programming-language-theory/concepts/subtyping-relation.td")

@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is a first order variable?'
 deck: 'programming-language-basic'
 concepts:
   - fref("programming-language-theory/concepts/first-order-variable.td")

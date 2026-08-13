@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'According to computability theory, why do we split type checkers from parsers?'
 deck: 'compiler-implementation'
 books:
   - fref("programming-language-theory/books/programming-languages-application-and-interpretation/chapter-5-types.td")

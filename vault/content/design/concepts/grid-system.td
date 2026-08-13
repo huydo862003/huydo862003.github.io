@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Grid system'
-title: 'Grid system'
 journey: fref("design/index.td")
 status: 'reviewing'
 tags:

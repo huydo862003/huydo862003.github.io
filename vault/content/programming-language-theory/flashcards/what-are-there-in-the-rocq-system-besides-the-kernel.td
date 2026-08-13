@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What are there in the rocq system besides the kernel?'
 deck: 'rocq-programming-language'
 concepts:
   - fref("programming-language-theory/concepts/rocq.td")

@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Untrapped (runtime) error'
-title: 'Untrapped (runtime) error'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
 books:

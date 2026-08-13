@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is a logical system?'
 deck: 'logic-tools'
 concepts:
   - fref("programming-language-theory/concepts/logical-system.td")

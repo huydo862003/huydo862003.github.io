@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'Which notation is often used to denote strict inequality in preorder?'
 deck: 'set-theory-relation'
 concepts:
   - fref("programming-language-theory/concepts/preorder.td")

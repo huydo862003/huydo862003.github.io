@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is a design system?'
 deck: 'design-system'
 concepts:
   - fref("design/concepts/design-system.td")

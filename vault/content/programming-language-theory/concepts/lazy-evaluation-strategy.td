@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Lazy evaluation strategy'
-title: 'Lazy evaluation strategy'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:

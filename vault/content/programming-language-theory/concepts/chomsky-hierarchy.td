@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Chomsky hierarchy'
-title: 'Chomsky hierarchy'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

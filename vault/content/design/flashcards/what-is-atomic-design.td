@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is atomic design?'
 deck: 'design-methodology'
 concepts:
   - fref("design/concepts/atomic-design.td")

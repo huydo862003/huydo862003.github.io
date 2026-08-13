@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Total function'
-title: 'Total function'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:

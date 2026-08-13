@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is a component library?'
 deck: 'design-system'
 concepts:
   - fref("design/concepts/component-library.td")

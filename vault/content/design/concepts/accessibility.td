@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Accessibility'
-title: 'Accessibility'
 journey: fref("design/index.td")
 status: 'mastered'
 tags:

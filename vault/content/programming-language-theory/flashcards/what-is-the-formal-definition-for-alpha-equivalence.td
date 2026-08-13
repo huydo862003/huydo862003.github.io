@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is the formal definition for alpha-equivalence?'
 deck: 'language-theory'
 concepts:
   - fref("programming-language-theory/concepts/alpha-equivalence.td")

@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What''s the difference between the call-by-name fixed-point combinator and the call-by-value fixed-point combinator?'
 deck: 'pure-lambda-calculus'
 books:
   - fref("programming-language-theory/books/types-and-programming-languages/chapter-5-the-untyped-pure-lambda-calculus.td")

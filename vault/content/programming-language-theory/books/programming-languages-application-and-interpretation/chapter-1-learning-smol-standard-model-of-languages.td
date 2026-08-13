@@ -1,7 +1,6 @@
 ---
 _type: Book
 _label: 'Chapter 1. learning SMoL - standard model of languages'
-title: 'Chapter 1. learning SMoL - standard model of languages'
 journey: fref("programming-language-theory/index.td")
 concepts:
   - fref("programming-language-theory/concepts/local-binding-form.td")

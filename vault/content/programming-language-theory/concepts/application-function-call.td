@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Application/Function call'
-title: 'Application/Function call'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

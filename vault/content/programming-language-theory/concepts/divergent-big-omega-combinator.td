@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Divergent/Big omega combinator'
-title: 'Divergent/Big omega combinator'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

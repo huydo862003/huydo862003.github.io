@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is a value in programming language calculus?'
 deck: 'language-theory'
 concepts:
   - fref("programming-language-theory/concepts/value.td")

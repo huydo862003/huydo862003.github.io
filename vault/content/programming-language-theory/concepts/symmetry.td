@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Symmetry'
-title: 'Symmetry'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

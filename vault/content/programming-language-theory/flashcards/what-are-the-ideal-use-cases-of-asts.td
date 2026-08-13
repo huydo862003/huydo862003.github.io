@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What are the ideal use cases of ASTs?'
 deck: 'compiler-implementation'
 books:
   - fref("programming-language-theory/books/types-and-programming-languages/chapter-5-the-untyped-pure-lambda-calculus.td")

@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Double negation elimination'
-title: 'Double negation elimination'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
 tags:

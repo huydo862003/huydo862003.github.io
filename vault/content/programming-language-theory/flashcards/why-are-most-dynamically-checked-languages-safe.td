@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'Why are most dynamically checked languages safe?'
 deck: 'type-theory'
 concepts:
   - fref("programming-language-theory/concepts/language-safety.td")

@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'How does the "flow typing" concept relate to the "parse, do not validate" principle and "boolean blindness"?'
 deck: 'general'
 concepts:
   - fref("programming-language-theory/concepts/flow-typing.td")

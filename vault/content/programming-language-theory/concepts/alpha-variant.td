@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Alpha-variant'
-title: 'Alpha-variant'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
 books:

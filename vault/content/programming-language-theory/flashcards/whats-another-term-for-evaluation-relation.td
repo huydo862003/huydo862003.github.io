@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What''s another term for evaluation relation?'
 deck: 'language-theory'
 concepts:
   - fref("programming-language-theory/concepts/evaluation-reduction-relation.td")

@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is the principle of mathematical induction?'
 deck: 'set-theory-relation'
 concepts:
   - fref("programming-language-theory/concepts/mathematical-induction.td")

@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Decision procedure'
-title: 'Decision procedure'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 tags:

@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Semantic domain'
-title: 'Semantic domain'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
 books:

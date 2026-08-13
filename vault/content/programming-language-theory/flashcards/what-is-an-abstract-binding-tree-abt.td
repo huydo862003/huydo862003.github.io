@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is an abstract binding tree (ABT)?'
 deck: 'language-theory'
 concepts:
   - fref("programming-language-theory/concepts/abstract-binding-tree-abt.td")

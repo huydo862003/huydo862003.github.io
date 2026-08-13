@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is a preorder?'
 deck: 'set-theory-relation'
 concepts:
   - fref("programming-language-theory/concepts/preorder.td")

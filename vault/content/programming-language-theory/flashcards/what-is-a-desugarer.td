@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is a desugarer?'
 deck: 'compiler-implementation'
 concepts:
   - fref("programming-language-theory/concepts/desugarer.td")

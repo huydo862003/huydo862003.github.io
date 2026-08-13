@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Nominal typing'
-title: 'Nominal typing'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:

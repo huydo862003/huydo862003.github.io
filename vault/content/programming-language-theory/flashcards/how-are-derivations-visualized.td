@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'How are derivations visualized?'
 deck: 'proof-technique'
 concepts:
   - fref("programming-language-theory/concepts/derivation.td")

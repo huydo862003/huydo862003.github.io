@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What does it mean to say church numerals represent ordinary numbers?'
 deck: 'pure-lambda-calculus'
 concepts:
   - fref("programming-language-theory/concepts/church-numeral.td")

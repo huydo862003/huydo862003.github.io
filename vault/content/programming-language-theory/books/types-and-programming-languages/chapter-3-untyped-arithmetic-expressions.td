@@ -1,7 +1,6 @@
 ---
 _type: Book
 _label: 'Chapter 3. untyped arithmetic expressions'
-title: 'Chapter 3. untyped arithmetic expressions'
 journey: fref("programming-language-theory/index.td")
 concepts:
   - fref("programming-language-theory/concepts/term.td")

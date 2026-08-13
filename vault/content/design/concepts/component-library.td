@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Component library'
-title: 'Component library'
 journey: fref("design/index.td")
 status: 'mastered'
 dependsOn:

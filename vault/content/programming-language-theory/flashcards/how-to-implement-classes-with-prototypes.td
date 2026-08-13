@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'How to implement classes with prototypes?'
 deck: 'compiler-implementation'
 concepts:
   - fref("programming-language-theory/concepts/prototype.td")

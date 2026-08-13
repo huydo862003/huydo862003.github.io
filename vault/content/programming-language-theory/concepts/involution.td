@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Involution'
-title: 'Involution'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
 books:

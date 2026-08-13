@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'Which special treatments are given to natural numbers in rocq?'
 deck: 'rocq-programming-language'
 concepts:
   - fref("programming-language-theory/concepts/church-numeral.td")

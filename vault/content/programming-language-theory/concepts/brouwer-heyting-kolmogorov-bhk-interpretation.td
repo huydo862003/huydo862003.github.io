@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Brouwer-Heyting-Kolmogorov (BHK) interpretation'
-title: 'Brouwer-Heyting-Kolmogorov (BHK) interpretation'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 tags:

@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'N-place relation'
-title: 'N-place relation'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:

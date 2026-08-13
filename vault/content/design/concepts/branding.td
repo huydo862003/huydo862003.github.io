@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Branding'
-title: 'Branding'
 journey: fref("design/index.td")
 status: 'learning'
 tags:

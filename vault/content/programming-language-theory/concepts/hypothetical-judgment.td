@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Hypothetical judgment'
-title: 'Hypothetical judgment'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

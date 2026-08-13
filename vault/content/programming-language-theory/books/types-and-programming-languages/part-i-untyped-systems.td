@@ -1,7 +1,6 @@
 ---
 _type: Book
 _label: 'Part i. untyped systems'
-title: 'Part i. untyped systems'
 journey: fref("programming-language-theory/index.td")
 parent: fref("programming-language-theory/books/types-and-programming-languages/index.td")
 children:

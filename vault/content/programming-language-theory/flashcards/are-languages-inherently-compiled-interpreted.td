@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'Are languages inherently compiled/interpreted?'
 deck: 'programming-language-basic'
 books:
   - fref("programming-language-theory/books/programming-languages-application-and-interpretation/chapter-2-evaluation.td")

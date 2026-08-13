@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is a grid system?'
 deck: 'design-methodology'
 concepts:
   - fref("design/concepts/grid-system.td")

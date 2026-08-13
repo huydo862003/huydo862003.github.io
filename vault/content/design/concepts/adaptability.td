@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Adaptability'
-title: 'Adaptability'
 journey: fref("design/index.td")
 status: 'reviewing'
 tags:

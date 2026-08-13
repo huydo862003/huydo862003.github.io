@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is an example for the tradeoffs between the type system''s expressiveness & decidability?'
 deck: 'language-theory'
 books:
   - fref("programming-language-theory/books/programming-languages-application-and-interpretation/chapter-5-types.td")

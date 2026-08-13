@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Lexicographic order'
-title: 'Lexicographic order'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

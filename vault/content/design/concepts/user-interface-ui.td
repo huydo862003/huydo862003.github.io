@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'User interface (UI)'
-title: 'User interface (UI)'
 journey: fref("design/index.td")
 status: 'mastered'
 tags:

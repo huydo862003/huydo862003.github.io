@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Saga pattern'
-title: 'Saga pattern'
 journey: fref("distributed-systems/index.td")
 status: 'learning'
 tags:

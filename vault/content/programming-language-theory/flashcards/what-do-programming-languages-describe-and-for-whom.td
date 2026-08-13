@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What do programming languages describe, and for whom?'
 deck: 'programming-language-basic'
 books:
   - fref("programming-language-theory/books/practical-foundations-for-programming-languages/chapter-1-abstract-syntax.td")

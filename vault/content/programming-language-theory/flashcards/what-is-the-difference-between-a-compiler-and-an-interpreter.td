@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is the difference between a compiler and an interpreter?'
 deck: 'programming-language-basic'
 concepts:
   - fref("programming-language-theory/concepts/compiler.td")

@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Eta-reduction'
-title: 'Eta-reduction'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 tags:

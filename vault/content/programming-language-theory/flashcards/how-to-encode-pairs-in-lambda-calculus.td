@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'How to encode pairs in lambda calculus?'
 deck: 'pure-lambda-calculus'
 concepts:
   - fref("programming-language-theory/concepts/pure-untyped-lambda-calculus.td")

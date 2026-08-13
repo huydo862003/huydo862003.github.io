@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Witness'
-title: 'Witness'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
 tags:

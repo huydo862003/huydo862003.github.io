@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Contract'
-title: 'Contract'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

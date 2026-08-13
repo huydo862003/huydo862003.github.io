@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'External signifier'
-title: 'External signifier'
 journey: fref("design/index.td")
 status: 'learning'
 books:

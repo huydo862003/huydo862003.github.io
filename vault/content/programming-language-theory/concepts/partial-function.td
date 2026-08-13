@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Partial function'
-title: 'Partial function'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:

@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What''s the difference between reflexivity and simpl in rocq?'
 deck: 'rocq-programming-language'
 concepts:
   - fref("programming-language-theory/concepts/proof-by-simplification.td")

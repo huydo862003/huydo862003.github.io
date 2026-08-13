@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Class extension'
-title: 'Class extension'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:

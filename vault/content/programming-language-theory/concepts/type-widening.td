@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Type widening'
-title: 'Type widening'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 tags:

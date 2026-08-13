@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is the evaluation relation?'
 deck: 'pure-lambda-calculus'
 concepts:
   - fref("programming-language-theory/concepts/evaluation-reduction-relation.td")

@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Local variable'
-title: 'Local variable'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:

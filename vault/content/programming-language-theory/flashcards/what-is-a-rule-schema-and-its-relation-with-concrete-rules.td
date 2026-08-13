@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is a rule schema and its relation with concrete rules?'
 deck: 'logic-tools'
 concepts:
   - fref("programming-language-theory/concepts/inference-rule.td")

@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Desired property: normal form implies values'
-title: "Desired property: normal form implies values"
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:

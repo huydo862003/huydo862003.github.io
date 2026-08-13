@@ -1,7 +1,6 @@
 ---
 _type: Book
 _label: 'Chapter 3. syntactic sugar'
-title: 'Chapter 3. syntactic sugar'
 journey: fref("programming-language-theory/index.td")
 concepts:
   - fref("programming-language-theory/concepts/macro.td")

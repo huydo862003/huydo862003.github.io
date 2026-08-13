@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'In computability theory terms, what are the differences between parsers and type checkers?'
 deck: 'language-theory'
 books:
   - fref("programming-language-theory/books/programming-languages-application-and-interpretation/chapter-5-types.td")

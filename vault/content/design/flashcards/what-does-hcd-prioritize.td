@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What does HCD prioritize?'
 deck: 'general'
 ---
 

@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is UI/UX?'
 deck: 'design-aspect'
 concepts:
   - fref("design/concepts/user-interface-ui.td")

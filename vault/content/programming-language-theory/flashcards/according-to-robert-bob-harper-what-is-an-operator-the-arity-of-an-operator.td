@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'According to robert (bob) harper, what is an operator, the arity of an operator?'
 deck: 'language-theory'
 books:
   - fref("programming-language-theory/books/practical-foundations-for-programming-languages/chapter-1-abstract-syntax.td")

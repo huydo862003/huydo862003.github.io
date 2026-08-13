@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'Where can variables be placed in an AST?'
 deck: 'language-theory'
 concepts:
   - fref("programming-language-theory/concepts/variable.td")

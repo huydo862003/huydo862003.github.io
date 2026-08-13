@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is beta reduction?'
 deck: 'pure-lambda-calculus'
 concepts:
   - fref("programming-language-theory/concepts/beta-redex-reducible-expression.td")

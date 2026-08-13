@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Set difference'
-title: 'Set difference'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:

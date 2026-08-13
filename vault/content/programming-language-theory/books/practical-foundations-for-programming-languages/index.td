@@ -1,7 +1,6 @@
 ---
 _type: Book
 _label: 'Practical foundations for programming languages'
-title: 'Practical foundations for programming languages'
 date: '2016'
 journey: fref("programming-language-theory/index.td")
 description: 'A mathematically rigorous treatment of programming language theory grounded in proof theory and type theory. Defines language concepts through static and dynamic semantics using only elementary mathematics.'

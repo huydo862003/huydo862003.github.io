@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'When is a rule satisfied by a relation?'
 deck: 'logic-tools'
 concepts:
   - fref("programming-language-theory/concepts/inference-rule.td")

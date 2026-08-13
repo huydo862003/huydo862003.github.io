@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Experience design'
-title: 'Experience design'
 journey: fref("design/index.td")
 status: 'learning'
 books:

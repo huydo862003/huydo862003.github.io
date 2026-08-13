@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What does it mean by "everything is a function" in lambda calculus?'
 deck: 'pure-lambda-calculus'
 concepts:
   - fref("programming-language-theory/concepts/lambda-calculus.td")

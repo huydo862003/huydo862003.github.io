@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'Which types are supported in conditional expressions'' conditions in rocq? why? which values are truthy/falsy?'
 deck: 'rocq-programming-language'
 concepts:
   - fref("programming-language-theory/concepts/conditional-expression.td")

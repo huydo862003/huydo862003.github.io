@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Mutation'
-title: 'Mutation'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:

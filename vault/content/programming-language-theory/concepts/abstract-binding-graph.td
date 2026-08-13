@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Abstract binding graph'
-title: 'Abstract binding graph'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

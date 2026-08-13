@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Backward chaining'
-title: 'Backward chaining'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
 books:

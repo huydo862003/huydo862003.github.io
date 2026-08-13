@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What are some examples of intentional and accidental signifier?'
 deck: 'general'
 concepts:
   - fref("design/concepts/signifier.td")

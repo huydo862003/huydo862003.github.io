@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'Why is subclass = subtype a controversial choice?'
 deck: 'type-theory'
 books:
   - fref("programming-language-theory/books/programming-languages-application-and-interpretation/chapter-5-types.td")

@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Object closure'
-title: 'Object closure'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 ---

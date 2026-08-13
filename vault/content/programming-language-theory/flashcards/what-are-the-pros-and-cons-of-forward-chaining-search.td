@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What are the pros and cons of forward chaining search?'
 deck: 'proof-technique'
 concepts:
   - fref("programming-language-theory/concepts/forward-chaining.td")

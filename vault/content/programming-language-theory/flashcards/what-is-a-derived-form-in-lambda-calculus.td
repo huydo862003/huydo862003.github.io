@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is a derived form in lambda calculus?'
 deck: 'pure-lambda-calculus'
 concepts:
   - fref("programming-language-theory/concepts/derived-form.td")

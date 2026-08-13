@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Programming model'
-title: 'Programming model'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
 tags:

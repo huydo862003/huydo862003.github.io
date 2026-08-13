@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What does "variables in an AST range over some specified sorts" mean?'
 deck: 'language-theory'
 concepts:
   - fref("programming-language-theory/concepts/variable.td")

@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Proof by case analysis'
-title: 'Proof by case analysis'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

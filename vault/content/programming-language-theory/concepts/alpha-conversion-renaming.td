@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Alpha conversion/renaming'
-title: 'Alpha conversion/renaming'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

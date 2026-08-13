@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'How to verify the type of an expression in rocq?'
 deck: 'rocq-programming-language'
 concepts:
   - fref("programming-language-theory/concepts/rocq.td")

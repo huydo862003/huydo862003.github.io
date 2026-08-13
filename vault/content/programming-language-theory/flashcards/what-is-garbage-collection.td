@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is garbage collection?'
 deck: 'programming-language-basic'
 concepts:
   - fref("programming-language-theory/concepts/garbage-collection.td")

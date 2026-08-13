@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Class pattern'
-title: 'Class pattern'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

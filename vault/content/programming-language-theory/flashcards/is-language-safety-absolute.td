@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'Is language safety absolute?'
 deck: 'language-theory'
 concepts:
   - fref("programming-language-theory/concepts/language-safety.td")

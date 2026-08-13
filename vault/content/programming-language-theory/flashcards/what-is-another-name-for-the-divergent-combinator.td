@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is another name for the divergent combinator?'
 deck: 'pure-lambda-calculus'
 concepts:
   - fref("programming-language-theory/concepts/divergent-big-omega-combinator.td")

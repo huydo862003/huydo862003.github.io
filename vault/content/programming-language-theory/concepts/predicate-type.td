@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Predicate type'
-title: 'Predicate type'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
 books:

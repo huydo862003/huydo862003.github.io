@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'According to robert (bob) harper, what is a variable?'
 deck: 'language-theory'
 concepts:
   - fref("programming-language-theory/concepts/variable.td")

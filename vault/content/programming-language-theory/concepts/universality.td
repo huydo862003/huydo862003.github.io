@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Universality'
-title: 'Universality'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

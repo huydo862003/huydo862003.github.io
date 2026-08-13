@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is a closure in programming language?'
 deck: 'programming-language-basic'
 concepts:
   - fref("programming-language-theory/concepts/closure.td")

@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Lexical/Static scope'
-title: 'Lexical/Static scope'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

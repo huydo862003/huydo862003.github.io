@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Inductive definition judgment form'
-title: 'Inductive definition judgment form'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 ---

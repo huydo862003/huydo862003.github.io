@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is sequential let?'
 deck: 'programming-language-basic'
 concepts:
   - fref("programming-language-theory/concepts/cascading-sequential-let.td")

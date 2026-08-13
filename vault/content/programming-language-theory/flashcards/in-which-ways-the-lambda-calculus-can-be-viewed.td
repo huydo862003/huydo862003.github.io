@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'In which ways the lambda calculus can be viewed?'
 deck: 'pure-lambda-calculus'
 concepts:
   - fref("programming-language-theory/concepts/lambda-calculus.td")

@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Macro gradual typing'
-title: 'Macro gradual typing'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

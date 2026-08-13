@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is the idea of JIT compilation?'
 deck: 'compiler-implementation'
 concepts:
   - fref("programming-language-theory/concepts/just-in-time-jit-compilation.td")

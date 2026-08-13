@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Closure'
-title: 'Closure'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

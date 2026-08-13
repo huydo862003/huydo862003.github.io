@@ -1,7 +1,6 @@
 ---
 _type: Book
 _label: 'The design of everyday things'
-title: 'The design of everyday things'
 date: '2013'
 journey: fref("design/index.td")
 description: 'A foundational text on user-centered design. Explores affordances, signifiers, feedback loops, constraints, and mental models to explain why some products are intuitive and others frustrating.'

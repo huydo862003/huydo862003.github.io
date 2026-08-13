@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Field'
-title: 'Field'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:

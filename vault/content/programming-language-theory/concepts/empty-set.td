@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Empty set'
-title: 'Empty set'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:

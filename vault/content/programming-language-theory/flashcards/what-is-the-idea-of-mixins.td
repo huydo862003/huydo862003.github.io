@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is the idea of mixins?'
 deck: 'type-theory'
 concepts:
   - fref("programming-language-theory/concepts/mixin.td")

@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Polymorphic type system'
-title: 'Polymorphic type system'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

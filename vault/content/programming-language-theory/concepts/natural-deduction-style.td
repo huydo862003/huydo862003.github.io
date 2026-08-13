@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Natural deduction style'
-title: 'Natural deduction style'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

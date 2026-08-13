@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Behavioral/Observational/Contextual equivalence'
-title: 'Behavioral/Observational/Contextual equivalence'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
 books:

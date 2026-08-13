@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'Give an example of a dilemma where affordance and anti-affordance cannot be both discoverable?'
 deck: 'general'
 concepts:
   - fref("design/concepts/affordance.td")

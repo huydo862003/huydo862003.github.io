@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is automatic memory management?'
 deck: 'programming-language-basic'
 concepts:
   - fref("programming-language-theory/concepts/automatic-memory-management.td")

@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What are the methods of finding derivations?'
 deck: 'logic-tools'
 concepts:
   - fref("programming-language-theory/concepts/forward-chaining.td")

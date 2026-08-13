@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'Name some lightweight formal methods'
 deck: 'language-theory'
 concepts:
   - fref("programming-language-theory/concepts/type-system.td")

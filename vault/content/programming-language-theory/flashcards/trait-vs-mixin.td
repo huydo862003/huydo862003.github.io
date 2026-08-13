@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'Trait vs mixin?'
 deck: 'pure-lambda-calculus'
 concepts:
   - fref("programming-language-theory/concepts/trait.td")

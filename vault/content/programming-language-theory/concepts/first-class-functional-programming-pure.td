@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'First class functional programming pure'
-title: 'First class functional programming pure'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 ---

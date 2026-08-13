@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is a metalanguage?'
 deck: 'language-theory'
 concepts:
   - fref("programming-language-theory/concepts/metalanguage.td")

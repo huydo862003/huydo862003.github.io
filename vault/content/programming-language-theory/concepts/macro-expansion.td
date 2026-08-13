@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Macro expansion'
-title: 'Macro expansion'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

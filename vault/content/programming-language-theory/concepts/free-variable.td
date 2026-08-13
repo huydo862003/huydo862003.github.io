@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Free variable'
-title: 'Free variable'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:

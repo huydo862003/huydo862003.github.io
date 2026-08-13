@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What are the possible evaluation strategies for lambda calculus?'
 deck: 'pure-lambda-calculus'
 books:
   - fref("programming-language-theory/books/types-and-programming-languages/chapter-5-the-untyped-pure-lambda-calculus.td")

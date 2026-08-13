@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Rocq constructor function computation rule'
-title: 'Rocq constructor function computation rule'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 ---

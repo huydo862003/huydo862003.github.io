@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Prototyping'
-title: 'Prototyping'
 journey: fref("design/index.td")
 status: 'mastered'
 tags:

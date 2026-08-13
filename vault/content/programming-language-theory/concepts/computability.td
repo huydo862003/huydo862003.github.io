@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Computability'
-title: 'Computability'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:

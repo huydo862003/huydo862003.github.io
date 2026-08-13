@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is an evaluator?'
 deck: 'programming-language-basic'
 concepts:
   - fref("programming-language-theory/concepts/evaluator.td")

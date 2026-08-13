@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is the class pattern with both private members and static members?'
 deck: 'general'
 books:
   - fref("programming-language-theory/books/programming-languages-application-and-interpretation/chapter-4-objects.td")

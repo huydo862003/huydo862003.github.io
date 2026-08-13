@@ -1,7 +1,6 @@
 ---
 _type: Book
 _label: 'Software foundations'
-title: 'Software foundations'
 date: '2024'
 journey: fref("programming-language-theory/index.td")
 description: 'A machine-checked introduction to the mathematical underpinnings of reliable software. Uses the Rocq (Coq) proof assistant to teach logic, functional programming, operational semantics, and formal verification.'

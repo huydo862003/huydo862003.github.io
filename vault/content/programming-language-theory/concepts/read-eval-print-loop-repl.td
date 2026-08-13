@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Read-eval-print-loop (REPL)'
-title: 'Read-eval-print-loop (REPL)'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

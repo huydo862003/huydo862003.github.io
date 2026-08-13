@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is the core mechanism of HCD?'
 deck: 'general'
 ---
 

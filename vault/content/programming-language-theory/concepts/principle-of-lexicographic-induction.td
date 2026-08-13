@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Principle of lexicographic induction'
-title: 'Principle of lexicographic induction'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:

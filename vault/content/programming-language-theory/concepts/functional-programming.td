@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Functional programming'
-title: 'Functional programming'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

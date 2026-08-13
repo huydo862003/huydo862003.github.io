@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Derived form'
-title: 'Derived form'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

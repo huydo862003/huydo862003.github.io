@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Proof assistant/prover'
-title: 'Proof assistant/prover'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

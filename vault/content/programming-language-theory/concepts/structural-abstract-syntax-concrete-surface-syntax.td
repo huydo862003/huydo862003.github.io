@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Structural abstract syntax concrete surface syntax'
-title: 'Structural abstract syntax concrete surface syntax'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 ---

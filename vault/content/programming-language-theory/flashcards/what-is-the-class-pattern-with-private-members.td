@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is the class pattern with private members?'
 deck: 'language-theory'
 concepts:
   - fref("programming-language-theory/concepts/class-pattern.td")

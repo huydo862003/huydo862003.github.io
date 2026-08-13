@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What are judgment/assertion, judgment form, judgment instance, judgment form instance''s subject? in what notations are they written in?'
 deck: 'logic-tools'
 books:
   - fref("programming-language-theory/books/software-foundations/chapter-2-inductive-definitions.td")

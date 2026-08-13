@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is the relation between "meaning" and "representation"?'
 deck: 'language-theory'
 concepts:
   - fref("programming-language-theory/concepts/representation.td")

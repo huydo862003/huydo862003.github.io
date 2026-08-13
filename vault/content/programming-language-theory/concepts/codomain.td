@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Codomain'
-title: 'Codomain'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:

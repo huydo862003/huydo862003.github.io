@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Type checker'
-title: 'Type checker'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
 books:

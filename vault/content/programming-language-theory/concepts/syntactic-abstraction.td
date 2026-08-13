@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Syntactic abstraction'
-title: 'Syntactic abstraction'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:

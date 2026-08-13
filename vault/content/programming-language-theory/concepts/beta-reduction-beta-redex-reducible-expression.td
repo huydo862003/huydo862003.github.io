@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Beta reduction beta redex reducible expression'
-title: 'Beta reduction beta redex reducible expression'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 ---

@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Evaluation/Reduction relation'
-title: 'Evaluation/Reduction relation'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

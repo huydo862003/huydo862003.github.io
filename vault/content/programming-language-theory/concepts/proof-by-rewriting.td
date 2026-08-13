@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Proof by rewriting'
-title: 'Proof by rewriting'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

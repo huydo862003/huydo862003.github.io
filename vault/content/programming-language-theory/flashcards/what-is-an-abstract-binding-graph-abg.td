@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is an abstract binding graph (ABG)?'
 deck: 'language-theory'
 concepts:
   - fref("programming-language-theory/concepts/abstract-binding-graph.td")

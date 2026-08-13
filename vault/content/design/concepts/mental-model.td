@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Mental model'
-title: 'Mental model'
 journey: fref("design/index.td")
 status: 'learning'
 books:

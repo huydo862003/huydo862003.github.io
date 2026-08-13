@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Mixfix'
-title: 'Mixfix'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
 books:

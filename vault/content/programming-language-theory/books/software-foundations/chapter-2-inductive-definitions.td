@@ -1,7 +1,6 @@
 ---
 _type: Book
 _label: 'Chapter 2. inductive definitions'
-title: 'Chapter 2. inductive definitions'
 journey: fref("programming-language-theory/index.td")
 concepts:
   - fref("programming-language-theory/concepts/axiom-inference-rule.td")

@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Local hypothesis'
-title: 'Local hypothesis'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

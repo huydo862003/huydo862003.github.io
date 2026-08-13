@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Derivable evaluation statement judgement'
-title: 'Derivable evaluation statement judgement'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 ---

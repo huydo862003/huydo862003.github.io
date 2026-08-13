@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What are the desirable properties of the evaluation relation there can be in a system?'
 deck: 'pure-lambda-calculus'
 books:
   - fref("programming-language-theory/books/types-and-programming-languages/chapter-3-untyped-arithmetic-expressions.td")

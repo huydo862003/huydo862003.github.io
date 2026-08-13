@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'Why is backward chaining goal-directed?'
 deck: 'set-theory-relation'
 concepts:
   - fref("programming-language-theory/concepts/backward-chaining-search.td")

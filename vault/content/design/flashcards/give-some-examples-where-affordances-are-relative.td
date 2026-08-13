@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'Give some examples where affordances are relative?'
 deck: 'general'
 ---
 

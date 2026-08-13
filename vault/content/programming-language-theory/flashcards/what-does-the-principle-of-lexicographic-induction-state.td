@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What does the principle of lexicographic induction state?'
 deck: 'proof-technique'
 concepts:
   - fref("programming-language-theory/concepts/lexicographic-order.td")

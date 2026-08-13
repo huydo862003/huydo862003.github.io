@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'How does the principle of rule induction apply to the case simultaneous inductive definitions?'
 deck: 'proof-technique'
 concepts:
   - fref("programming-language-theory/concepts/simultaneous-inductive-definition.td")

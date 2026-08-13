@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is the untyped calculus of booleans and numbers?'
 deck: 'language-theory'
 books:
   - fref("programming-language-theory/books/types-and-programming-languages/chapter-3-untyped-arithmetic-expressions.td")

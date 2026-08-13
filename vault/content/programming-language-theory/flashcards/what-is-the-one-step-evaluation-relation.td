@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is the one-step evaluation relation?'
 deck: 'pure-lambda-calculus'
 concepts:
   - fref("programming-language-theory/concepts/one-step-evaluation-relation.td")

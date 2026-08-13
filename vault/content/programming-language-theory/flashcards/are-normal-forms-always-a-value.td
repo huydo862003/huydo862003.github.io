@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'Are normal forms always a value?'
 deck: 'pure-lambda-calculus'
 concepts:
   - fref("programming-language-theory/concepts/value.td")

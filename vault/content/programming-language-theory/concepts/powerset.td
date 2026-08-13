@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Powerset'
-title: 'Powerset'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

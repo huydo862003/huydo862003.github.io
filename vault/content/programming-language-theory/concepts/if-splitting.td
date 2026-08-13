@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'If-splitting'
-title: 'If-splitting'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

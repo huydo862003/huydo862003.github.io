@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Name combination algebra'
-title: 'Name combination algebra'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
 books:

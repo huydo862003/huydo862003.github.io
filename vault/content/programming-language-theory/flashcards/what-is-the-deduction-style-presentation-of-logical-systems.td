@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is the deduction style presentation of logical systems?'
 deck: 'logic-tools'
 concepts:
   - fref("programming-language-theory/concepts/natural-deduction-style.td")

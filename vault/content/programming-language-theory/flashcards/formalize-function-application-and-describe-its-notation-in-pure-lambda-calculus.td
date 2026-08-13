@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'Formalize function application and describe its notation in pure lambda calculus?'
 deck: 'pure-lambda-calculus'
 concepts:
   - fref("programming-language-theory/concepts/application-function-call.td")

@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'To which degree can type systems catch bad behaviors?'
 deck: 'type-theory'
 books:
   - fref("programming-language-theory/books/types-and-programming-languages/chapter-1-introduction.td")

@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Derivation tree'
-title: 'Derivation tree'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:

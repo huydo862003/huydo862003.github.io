@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'Why is there a need for macro hygiene?'
 deck: 'programming-language-basic'
 concepts:
   - fref("programming-language-theory/concepts/macro.td")

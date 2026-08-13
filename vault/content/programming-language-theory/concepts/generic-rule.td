@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Generic rule'
-title: 'Generic rule'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

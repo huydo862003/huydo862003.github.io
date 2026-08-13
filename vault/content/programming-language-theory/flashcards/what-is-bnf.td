@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is BNF?'
 deck: 'language-theory'
 concepts:
   - fref("programming-language-theory/concepts/bnf.td")

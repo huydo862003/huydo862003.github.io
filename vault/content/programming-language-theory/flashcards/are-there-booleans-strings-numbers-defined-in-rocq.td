@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'Are there booleans, strings, numbers defined in rocq?'
 deck: 'rocq-programming-language'
 concepts:
   - fref("programming-language-theory/concepts/rocq.td")

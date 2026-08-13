@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What does abstract syntax have to do with AST/labeled tree?'
 deck: 'compiler-implementation'
 books:
   - fref("programming-language-theory/books/types-and-programming-languages/chapter-5-the-untyped-pure-lambda-calculus.td")

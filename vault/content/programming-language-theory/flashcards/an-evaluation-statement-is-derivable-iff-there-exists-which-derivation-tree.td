@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'An evaluation statement is derivable iff there exists which derivation tree?'
 deck: 'language-theory'
 concepts:
   - fref("programming-language-theory/concepts/evaluation-reduction-relation.td")

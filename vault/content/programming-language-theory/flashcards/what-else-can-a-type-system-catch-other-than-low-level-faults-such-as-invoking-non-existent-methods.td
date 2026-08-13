@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What else can a type system catch other than low-level faults such as invoking non-existent methods'
 deck: 'type-theory'
 concepts:
   - fref("programming-language-theory/concepts/type-system.td")

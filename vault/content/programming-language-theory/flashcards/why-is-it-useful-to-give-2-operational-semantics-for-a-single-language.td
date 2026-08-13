@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'Why is it useful to give >= 2 operational semantics for a single language?'
 deck: 'language-theory'
 concepts:
   - fref("programming-language-theory/concepts/operational-semantics.td")

@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Occurrence typing'
-title: 'Occurrence typing'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:

@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is lexical/static scope?'
 deck: 'programming-language-basic'
 concepts:
   - fref("programming-language-theory/concepts/lexical-static-scope.td")

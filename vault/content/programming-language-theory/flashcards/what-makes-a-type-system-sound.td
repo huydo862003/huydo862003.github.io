@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What makes a type system sound?'
 deck: 'type-theory'
 concepts:
   - fref("programming-language-theory/concepts/safe-sound-type-system.td")

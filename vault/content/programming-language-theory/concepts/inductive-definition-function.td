@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Inductive definition function'
-title: 'Inductive definition function'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 ---

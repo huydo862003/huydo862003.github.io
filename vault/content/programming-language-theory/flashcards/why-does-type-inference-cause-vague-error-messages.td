@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'Why does type inference cause vague error messages?'
 deck: 'compiler-implementation'
 concepts:
   - fref("programming-language-theory/concepts/type-inference.td")

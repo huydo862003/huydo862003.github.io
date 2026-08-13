@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Garbage collection'
-title: 'Garbage collection'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

@@ -1,7 +1,6 @@
 ---
 _type: Book
 _label: 'Types and programming languages'
-title: 'Types and programming languages'
 date: '2002'
 journey: fref("programming-language-theory/index.td")
 description: 'A rigorous and comprehensive treatment of type systems for programming languages. Covers the lambda calculus, subtyping, bounded polymorphism, recursive types, and System F, grounded in formal proof theory.'

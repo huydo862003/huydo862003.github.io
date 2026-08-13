@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'First-class'
-title: 'First-class'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:

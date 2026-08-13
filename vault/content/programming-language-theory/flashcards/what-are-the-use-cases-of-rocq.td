@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What are the use cases of rocq?'
 deck: 'rocq-programming-language'
 concepts:
   - fref("programming-language-theory/concepts/rocq.td")

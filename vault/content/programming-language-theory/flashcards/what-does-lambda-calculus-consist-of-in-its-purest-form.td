@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What does lambda calculus consist of in its purest form?'
 deck: 'pure-lambda-calculus'
 concepts:
   - fref("programming-language-theory/concepts/lambda-calculus.td")

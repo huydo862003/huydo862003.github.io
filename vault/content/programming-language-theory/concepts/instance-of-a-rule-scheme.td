@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Instance of a rule scheme'
-title: 'Instance of a rule scheme'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
 books:

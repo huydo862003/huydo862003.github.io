@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is the usual treatment for the substitution problems (variable capture, etc.)'
 deck: 'pure-lambda-calculus'
 concepts:
   - fref("programming-language-theory/concepts/capture-avoiding-substitution.td")

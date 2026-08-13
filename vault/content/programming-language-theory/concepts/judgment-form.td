@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Judgment form'
-title: 'Judgment form'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
 books:

@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is an environment in programming language?'
 deck: 'programming-language-basic'
 concepts:
   - fref("programming-language-theory/concepts/environment.td")

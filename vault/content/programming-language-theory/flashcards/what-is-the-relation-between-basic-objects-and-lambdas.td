@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is the relation between basic objects and lambdas?'
 deck: 'language-theory'
 concepts:
   - fref("programming-language-theory/concepts/object.td")

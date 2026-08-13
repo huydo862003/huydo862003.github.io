@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is the principle of tree induction?'
 deck: 'proof-technique'
 concepts:
   - fref("programming-language-theory/concepts/tree-induction.td")

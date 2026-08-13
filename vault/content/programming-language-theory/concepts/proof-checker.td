@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Proof checker'
-title: 'Proof checker'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

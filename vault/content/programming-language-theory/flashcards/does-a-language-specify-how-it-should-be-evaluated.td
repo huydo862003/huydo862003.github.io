@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'Does a language specify how it should be evaluated?'
 deck: 'language-theory'
 concepts:
   - fref("programming-language-theory/concepts/compiler.td")

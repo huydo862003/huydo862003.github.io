@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What are some challenges of retrofitting type systems?'
 deck: 'compiler-implementation'
 concepts:
   - fref("programming-language-theory/concepts/retrofitted-type-system.td")

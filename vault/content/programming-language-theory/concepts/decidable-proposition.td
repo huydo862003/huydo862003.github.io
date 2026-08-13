@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Decidable proposition'
-title: 'Decidable proposition'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
 tags:

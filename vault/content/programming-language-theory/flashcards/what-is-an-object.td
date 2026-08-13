@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is an object?'
 deck: 'language-theory'
 concepts:
   - fref("programming-language-theory/concepts/object.td")

@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Type variable'
-title: 'Type variable'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
 books:

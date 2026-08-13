@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is an REPL?'
 deck: 'compiler-implementation'
 concepts:
   - fref("programming-language-theory/concepts/read-eval-print-loop-repl.td")

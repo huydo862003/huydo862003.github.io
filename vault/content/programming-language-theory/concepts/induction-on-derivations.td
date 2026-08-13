@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Induction on derivations'
-title: 'Induction on derivations'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

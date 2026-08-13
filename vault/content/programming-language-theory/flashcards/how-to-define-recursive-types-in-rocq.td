@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'How to define recursive types in rocq?'
 deck: 'rocq-programming-language'
 concepts:
   - fref("programming-language-theory/concepts/recursive-type.td")

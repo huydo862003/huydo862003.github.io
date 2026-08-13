@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'How is language safety different from static type safety'
 deck: 'type-theory'
 concepts:
   - fref("programming-language-theory/concepts/language-safety.td")

@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Abstract syntax tree (AST)'
-title: 'Abstract syntax tree (AST)'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:

@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Closed recursion'
-title: 'Closed recursion'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
 books:

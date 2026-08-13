@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is the name of rocq''s native functional programming language?'
 deck: 'rocq-programming-language'
 concepts:
   - fref("programming-language-theory/concepts/rocq.td")

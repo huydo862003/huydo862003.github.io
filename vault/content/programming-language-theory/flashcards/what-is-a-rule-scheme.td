@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is a rule scheme?'
 deck: 'logic-tools'
 concepts:
   - fref("programming-language-theory/concepts/inference-rule.td")

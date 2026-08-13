@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Type error'
-title: 'Type error'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
 books:

@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Currying'
-title: 'Currying'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:

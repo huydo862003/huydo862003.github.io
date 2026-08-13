@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Multi-step evaluation relation'
-title: 'Multi-step evaluation relation'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:

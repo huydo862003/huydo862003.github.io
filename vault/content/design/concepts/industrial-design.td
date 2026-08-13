@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Industrial design'
-title: 'Industrial design'
 journey: fref("design/index.td")
 status: 'learning'
 books:

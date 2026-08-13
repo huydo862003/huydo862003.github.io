@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is a metatheory?'
 deck: 'other-mathematics'
 concepts:
   - fref("programming-language-theory/concepts/metatheory.td")

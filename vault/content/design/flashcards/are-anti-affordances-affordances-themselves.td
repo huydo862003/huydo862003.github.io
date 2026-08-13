@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'Are anti-affordances affordances themselves?'
 deck: 'general'
 ---
 

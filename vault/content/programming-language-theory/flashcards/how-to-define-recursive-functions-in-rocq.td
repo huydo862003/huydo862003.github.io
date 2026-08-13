@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'How to define recursive functions in rocq?'
 deck: 'rocq-programming-language'
 concepts:
   - fref("programming-language-theory/concepts/fixed-point-combinator.td")

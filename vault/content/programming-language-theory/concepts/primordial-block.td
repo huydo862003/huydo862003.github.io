@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Primordial block'
-title: 'Primordial block'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

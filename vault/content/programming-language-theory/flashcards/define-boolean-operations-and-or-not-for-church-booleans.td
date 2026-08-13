@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'Define boolean operations and, or, not for church booleans?'
 deck: 'pure-lambda-calculus'
 concepts:
   - fref("programming-language-theory/concepts/pure-untyped-lambda-calculus.td")

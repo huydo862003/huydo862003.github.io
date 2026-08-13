@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'Is inheritance = subtyping?'
 deck: 'type-theory'
 concepts:
   - fref("programming-language-theory/concepts/inheritance.td")

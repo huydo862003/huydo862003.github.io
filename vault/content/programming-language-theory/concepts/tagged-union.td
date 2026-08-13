@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Tagged union'
-title: 'Tagged union'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 tags:

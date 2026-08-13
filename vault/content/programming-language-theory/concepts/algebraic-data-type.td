@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Algebraic data type'
-title: 'Algebraic data type'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
 books:

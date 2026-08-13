@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Method function'
-title: 'Method function'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 ---

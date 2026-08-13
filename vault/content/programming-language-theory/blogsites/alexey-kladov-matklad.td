@@ -1,7 +1,6 @@
 ---
 _type: Blogsite
 _label: 'Matklad.github.io'
-title: 'Matklad.github.io'
 url: "https://matklad.github.io/"
 journey: fref("programming-language-theory/index.td")
 latestPost: 'November 15, 2023'

@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'Why can there be nonsensical terms in the untyped calculus of booleans and numbers?'
 deck: 'language-theory'
 concepts:
   - fref("programming-language-theory/concepts/untyped-calculus-of-booleans-and-numbers.td")

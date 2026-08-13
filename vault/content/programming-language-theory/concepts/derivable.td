@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Derivable'
-title: 'Derivable'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:

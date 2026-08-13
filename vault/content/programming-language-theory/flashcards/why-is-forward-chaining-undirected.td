@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'Why is forward chaining undirected?'
 deck: 'proof-technique'
 concepts:
   - fref("programming-language-theory/concepts/forward-chaining.td")

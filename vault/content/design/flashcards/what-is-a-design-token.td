@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is a design token?'
 deck: 'design-system'
 concepts:
   - fref("design/concepts/design-token.td")

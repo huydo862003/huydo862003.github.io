@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Desired property: termination of evaluation'
-title: "Desired property: termination of evaluation"
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:

@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is the relation between macros and parenthetical language?'
 deck: 'compiler-implementation'
 concepts:
   - fref("programming-language-theory/concepts/macro.td")

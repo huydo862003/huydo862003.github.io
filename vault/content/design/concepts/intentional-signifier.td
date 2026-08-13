@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Intentional signifier'
-title: 'Intentional signifier'
 journey: fref("design/index.td")
 status: 'learning'
 books:

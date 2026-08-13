@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Extensible/Open recursion'
-title: 'Extensible/Open recursion'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
 books:

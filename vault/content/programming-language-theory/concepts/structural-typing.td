@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Structural typing'
-title: 'Structural typing'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:

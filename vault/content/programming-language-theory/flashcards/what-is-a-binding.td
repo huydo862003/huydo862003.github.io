@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is a binding?'
 deck: 'programming-language-basic'
 concepts:
   - fref("programming-language-theory/concepts/binding.td")

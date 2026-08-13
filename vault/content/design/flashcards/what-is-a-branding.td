@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is a branding?'
 deck: 'design-aspect'
 concepts:
   - fref("design/concepts/branding.td")

@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Formal parameter'
-title: 'Formal parameter'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:

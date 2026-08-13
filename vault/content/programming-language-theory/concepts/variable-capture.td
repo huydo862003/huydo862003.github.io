@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Variable capture'
-title: 'Variable capture'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'The relation between the set of values and the set of terms?'
 deck: 'language-theory'
 concepts:
   - fref("programming-language-theory/concepts/term.td")

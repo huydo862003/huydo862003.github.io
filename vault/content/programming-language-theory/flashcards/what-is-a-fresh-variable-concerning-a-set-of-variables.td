@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is a fresh variable (concerning a set of variables)?'
 deck: 'language-theory'
 concepts:
   - fref("programming-language-theory/concepts/fresh-variable.td")

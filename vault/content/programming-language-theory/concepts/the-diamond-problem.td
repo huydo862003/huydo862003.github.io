@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'The diamond problem'
-title: 'The diamond problem'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:

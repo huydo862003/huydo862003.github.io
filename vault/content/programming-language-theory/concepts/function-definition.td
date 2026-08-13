@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Function definition'
-title: 'Function definition'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:

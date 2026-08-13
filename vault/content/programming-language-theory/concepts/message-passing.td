@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Message passing'
-title: 'Message passing'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:

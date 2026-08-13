@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Normal order'
-title: 'Normal order'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:

@@ -1,7 +1,6 @@
 ---
 _type: Blogsite
 _label: 'Existentialtype.wordpress.com'
-title: 'Existentialtype.wordpress.com'
 url: "https://existentialtype.wordpress.com/"
 journey: fref("programming-language-theory/index.td")
 latestPost: 'October 1, 2017'

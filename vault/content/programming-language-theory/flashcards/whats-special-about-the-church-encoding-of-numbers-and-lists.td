@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What''s special about the church encoding of numbers and lists?'
 deck: 'pure-lambda-calculus'
 concepts:
   - fref("programming-language-theory/concepts/church-numeral.td")

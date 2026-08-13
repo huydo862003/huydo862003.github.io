@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Modularization'
-title: 'Modularization'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 ---

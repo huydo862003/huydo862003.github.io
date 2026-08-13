@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Range'
-title: 'Range'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:

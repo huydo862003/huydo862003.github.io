@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'Between if-splitting and conditionals, which one can introduce unions, which one eliminates?'
 deck: 'type-theory'
 concepts:
   - fref("programming-language-theory/concepts/if-splitting.td")

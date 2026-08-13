@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Visual hierarchy'
-title: 'Visual hierarchy'
 journey: fref("design/index.td")
 status: 'reviewing'
 tags:

@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Context-free'
-title: 'Context-free'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
 books:

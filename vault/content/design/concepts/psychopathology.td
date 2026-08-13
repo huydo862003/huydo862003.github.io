@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Psychopathology'
-title: 'Psychopathology'
 journey: fref("design/index.td")
 status: 'reviewing'
 books:

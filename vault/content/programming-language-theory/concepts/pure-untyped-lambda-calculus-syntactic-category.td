@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Pure untyped lambda calculus syntactic category'
-title: 'Pure untyped lambda calculus syntactic category'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 ---

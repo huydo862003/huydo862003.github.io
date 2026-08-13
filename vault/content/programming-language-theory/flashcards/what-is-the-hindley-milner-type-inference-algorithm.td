@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is the Hindley-Milner type inference algorithm?'
 deck: 'type-theory'
 concepts:
   - fref("programming-language-theory/concepts/hindley-milner-system.td")

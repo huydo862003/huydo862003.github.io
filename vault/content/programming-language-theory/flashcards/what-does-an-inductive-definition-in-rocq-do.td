@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What does an inductive definition in rocq do?'
 deck: 'rocq-programming-language'
 concepts:
   - fref("programming-language-theory/concepts/rocq.td")

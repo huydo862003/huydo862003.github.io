@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Handoff'
-title: 'Handoff'
 journey: fref("design/index.td")
 status: 'reviewing'
 tags:

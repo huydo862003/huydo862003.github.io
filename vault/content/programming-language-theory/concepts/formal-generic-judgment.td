@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Formal generic judgment'
-title: 'Formal generic judgment'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

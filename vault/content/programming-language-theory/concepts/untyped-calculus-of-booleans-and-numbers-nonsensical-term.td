@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Untyped calculus of booleans and numbers nonsensical term'
-title: 'Untyped calculus of booleans and numbers nonsensical term'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 ---

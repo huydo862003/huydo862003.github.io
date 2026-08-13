@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Abstract binding tree abt valence abstractor'
-title: 'Abstract binding tree abt valence abstractor'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 ---

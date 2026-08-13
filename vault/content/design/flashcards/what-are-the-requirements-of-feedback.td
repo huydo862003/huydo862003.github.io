@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What are the requirements of feedback?'
 deck: 'general'
 concepts:
   - fref("design/concepts/feedback.td")

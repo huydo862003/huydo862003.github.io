@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Atomic design'
-title: 'Atomic design'
 journey: fref("design/index.td")
 status: 'reviewing'
 tags:

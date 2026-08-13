@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Self-reference'
-title: 'Self-reference'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:

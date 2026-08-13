@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What are some examples of automated theorem provers?'
 deck: 'compiler-implementation'
 concepts:
   - fref("programming-language-theory/concepts/automated-theorem-prover.td")

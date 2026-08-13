@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'Which terms are deemed values in untyped lambda calculus?'
 deck: 'pure-lambda-calculus'
 concepts:
   - fref("programming-language-theory/concepts/pure-untyped-lambda-calculus.td")

@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'Which symbol is used to denote an evaluation result of a term?'
 deck: 'language-theory'
 concepts:
   - fref("programming-language-theory/concepts/term.td")

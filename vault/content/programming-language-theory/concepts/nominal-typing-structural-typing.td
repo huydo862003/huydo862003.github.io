@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Nominal typing structural typing'
-title: 'Nominal typing structural typing'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 ---

@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'One step evaluation relation partial function'
-title: 'One step evaluation relation partial function'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 ---

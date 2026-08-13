@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Interpretation'
-title: 'Interpretation'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
 books:

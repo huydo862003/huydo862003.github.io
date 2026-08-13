@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What''s the relation between runtime errors and stuckness?'
 deck: 'language-theory'
 concepts:
   - fref("programming-language-theory/concepts/pure-untyped-lambda-calculus.td")

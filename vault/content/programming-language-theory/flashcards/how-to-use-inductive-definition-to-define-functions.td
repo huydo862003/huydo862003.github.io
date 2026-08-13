@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'How to use inductive definition to define functions?'
 deck: 'logic-tools'
 concepts:
   - fref("programming-language-theory/concepts/inductive-definition.td")

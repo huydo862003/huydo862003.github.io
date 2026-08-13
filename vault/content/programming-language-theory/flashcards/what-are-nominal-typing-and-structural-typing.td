@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What are nominal typing and structural typing?'
 deck: 'type-theory'
 concepts:
   - fref("programming-language-theory/concepts/nominal-typing.td")

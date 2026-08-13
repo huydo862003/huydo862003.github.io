@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Set comprehension'
-title: 'Set comprehension'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:

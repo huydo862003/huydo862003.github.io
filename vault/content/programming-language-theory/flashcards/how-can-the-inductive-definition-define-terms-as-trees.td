@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'How can the inductive definition define terms as trees?'
 deck: 'set-theory-relation'
 concepts:
   - fref("programming-language-theory/concepts/term.td")

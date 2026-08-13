@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Modularity'
-title: 'Modularity'
 journey: fref("design/index.td")
 status: 'mastered'
 tags:

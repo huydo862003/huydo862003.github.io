@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is the relation between language safety and partiality?'
 deck: 'type-theory'
 concepts:
   - fref("programming-language-theory/concepts/language-safety.td")

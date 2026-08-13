@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Left-left-lambda'
-title: 'Left-left-lambda'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:

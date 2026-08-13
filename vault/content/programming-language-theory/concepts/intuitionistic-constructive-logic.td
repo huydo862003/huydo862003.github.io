@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Intuitionistic/Constructive logic'
-title: 'Intuitionistic/Constructive logic'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 tags:

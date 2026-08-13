@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Tuple'
-title: 'Tuple'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:

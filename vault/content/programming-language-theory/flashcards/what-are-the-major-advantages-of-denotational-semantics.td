@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What are the major advantages of denotational semantics?'
 deck: 'language-theory'
 concepts:
   - fref("programming-language-theory/concepts/denotational-semantics.td")

@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Immediately invoked function expression (IIFE)'
-title: 'Immediately invoked function expression (IIFE)'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:

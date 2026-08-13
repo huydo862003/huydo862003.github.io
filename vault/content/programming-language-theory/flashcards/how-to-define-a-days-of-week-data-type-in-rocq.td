@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'How to define a days-of-week data type in rocq?'
 deck: 'rocq-programming-language'
 concepts:
   - fref("programming-language-theory/concepts/rocq.td")

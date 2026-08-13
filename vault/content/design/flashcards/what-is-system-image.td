@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is system image?'
 deck: 'general'
 concepts:
   - fref("design/concepts/system-image.td")

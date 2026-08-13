@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Macro definition hazard: duplication'
-title: "Macro definition hazard: duplication"
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
 books:

@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Hindley-Milner system'
-title: 'Hindley-Milner system'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

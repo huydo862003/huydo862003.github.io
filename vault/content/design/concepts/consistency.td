@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Consistency'
-title: 'Consistency'
 journey: fref("design/index.td")
 status: 'mastered'
 tags:

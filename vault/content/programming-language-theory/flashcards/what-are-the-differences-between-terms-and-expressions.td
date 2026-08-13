@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What are the differences between terms and expressions?'
 deck: 'language-theory'
 concepts:
   - fref("programming-language-theory/concepts/term.td")

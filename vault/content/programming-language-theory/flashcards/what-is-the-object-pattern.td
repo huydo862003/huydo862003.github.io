@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is the object pattern?'
 deck: 'language-theory'
 concepts:
   - fref("programming-language-theory/concepts/object-pattern.td")

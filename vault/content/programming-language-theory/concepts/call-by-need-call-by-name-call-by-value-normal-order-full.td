@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Call by need call by name call by value normal order full'
-title: 'Call by need call by name call by value normal order full'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 ---

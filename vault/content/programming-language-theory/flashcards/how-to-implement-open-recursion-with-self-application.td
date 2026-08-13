@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'How to implement open recursion with self-application?'
 deck: 'pure-lambda-calculus'
 books:
   - fref("programming-language-theory/books/programming-languages-application-and-interpretation/chapter-4-objects.td")

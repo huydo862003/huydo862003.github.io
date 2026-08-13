@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is the role of a signifier?'
 deck: 'general'
 concepts:
   - fref("design/concepts/signifier.td")

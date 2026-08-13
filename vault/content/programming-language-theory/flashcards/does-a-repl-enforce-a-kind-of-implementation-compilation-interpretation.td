@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'Does a REPL enforce a kind of implementation (compilation/interpretation)?'
 deck: 'compiler-implementation'
 concepts:
   - fref("programming-language-theory/concepts/read-eval-print-loop-repl.td")

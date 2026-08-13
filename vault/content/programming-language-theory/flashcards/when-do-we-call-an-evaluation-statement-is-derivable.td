@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'When do we call an evaluation statement is derivable?'
 deck: 'pure-lambda-calculus'
 concepts:
   - fref("programming-language-theory/concepts/derivable.td")

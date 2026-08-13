@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Strict/Eager evaluation strategy'
-title: 'Strict/Eager evaluation strategy'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:

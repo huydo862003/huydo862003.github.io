@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'Is a rust crate aware of its name?'
 deck: 'general'
 ---
 

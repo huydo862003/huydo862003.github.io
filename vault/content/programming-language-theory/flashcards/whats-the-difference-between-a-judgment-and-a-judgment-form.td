@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What''s the difference between a judgment and a judgment form?'
 deck: 'logic-tools'
 books:
   - fref("programming-language-theory/books/software-foundations/chapter-2-inductive-definitions.td")

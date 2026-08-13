@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Meta-mathematics'
-title: 'Meta-mathematics'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

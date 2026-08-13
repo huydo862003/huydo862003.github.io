@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is language safety, both formally and informally?'
 deck: 'programming-language-basic'
 concepts:
   - fref("programming-language-theory/concepts/language-safety.td")

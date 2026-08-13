@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is usually meant by substitution?'
 deck: 'pure-lambda-calculus'
 concepts:
   - fref("programming-language-theory/concepts/capture-avoiding-substitution.td")

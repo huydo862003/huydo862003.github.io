@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is macro expansion?'
 deck: 'compiler-implementation'
 concepts:
   - fref("programming-language-theory/concepts/macro-expansion.td")

@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Branch coverage'
-title: 'Branch coverage'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
 books:

@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'Why can type checkers be viewed as extended parsers?'
 deck: 'language-theory'
 books:
   - fref("programming-language-theory/books/programming-languages-application-and-interpretation/chapter-5-types.td")

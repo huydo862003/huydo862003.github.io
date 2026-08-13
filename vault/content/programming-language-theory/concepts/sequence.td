@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Sequence'
-title: 'Sequence'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:

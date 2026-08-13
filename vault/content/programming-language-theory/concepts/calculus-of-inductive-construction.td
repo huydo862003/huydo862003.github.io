@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Calculus of inductive construction'
-title: 'Calculus of inductive construction'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 tags:

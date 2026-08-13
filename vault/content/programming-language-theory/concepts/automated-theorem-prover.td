@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Automated theorem prover'
-title: 'Automated theorem prover'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
 books:

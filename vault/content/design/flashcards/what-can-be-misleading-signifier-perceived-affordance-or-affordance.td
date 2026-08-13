@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What can be misleading: signifier, perceived affordance or affordance?'
 deck: 'general'
 concepts:
   - fref("design/concepts/affordance.td")

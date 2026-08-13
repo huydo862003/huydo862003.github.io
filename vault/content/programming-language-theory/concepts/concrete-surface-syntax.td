@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Concrete/Surface syntax'
-title: 'Concrete/Surface syntax'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:

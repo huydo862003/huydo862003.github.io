@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Affordance'
-title: 'Affordance'
 journey: fref("design/index.td")
 status: 'learning'
 books:

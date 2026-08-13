@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'The definition of type system'
 deck: 'type-theory'
 concepts:
   - fref("programming-language-theory/concepts/type-system.td")

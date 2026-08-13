@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'How to place declarations inside a module in rocq?'
 deck: 'rocq-programming-language'
 concepts:
   - fref("programming-language-theory/concepts/rocq.td")

@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Automatic memory management'
-title: 'Automatic memory management'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

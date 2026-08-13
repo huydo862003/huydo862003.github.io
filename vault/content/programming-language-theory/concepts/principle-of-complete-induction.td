@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Principle of complete induction'
-title: 'Principle of complete induction'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

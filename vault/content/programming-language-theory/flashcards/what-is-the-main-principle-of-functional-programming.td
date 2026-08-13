@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is the main principle of functional programming?'
 deck: 'language-theory'
 concepts:
   - fref("programming-language-theory/concepts/functional-programming.td")

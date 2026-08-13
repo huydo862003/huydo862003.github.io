@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'According to robert (bob) harper, what is the scope of a binding?'
 deck: 'language-theory'
 concepts:
   - fref("programming-language-theory/concepts/binding.td")

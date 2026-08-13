@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'In which evaluation strategy, the one-step evaluation relation is a partial function on terms?'
 deck: 'pure-lambda-calculus'
 concepts:
   - fref("programming-language-theory/concepts/one-step-evaluation-relation.td")

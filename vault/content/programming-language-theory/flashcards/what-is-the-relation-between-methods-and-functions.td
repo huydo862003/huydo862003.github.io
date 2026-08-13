@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is the relation between methods and functions?'
 deck: 'language-theory'
 concepts:
   - fref("programming-language-theory/concepts/method.td")

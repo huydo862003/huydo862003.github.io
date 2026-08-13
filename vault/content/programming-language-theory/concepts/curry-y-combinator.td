@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Curry/Y-Combinator'
-title: 'Curry/Y-Combinator'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
 books:

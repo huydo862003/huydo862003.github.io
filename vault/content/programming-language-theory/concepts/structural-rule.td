@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Structural rule'
-title: 'Structural rule'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What does the principle of ordinary induction state?'
 deck: 'proof-technique'
 concepts:
   - fref("programming-language-theory/concepts/principle-of-ordinary-induction.td")

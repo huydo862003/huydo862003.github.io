@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'How can a set of evaluation rules enforce an evaluation strategy?'
 deck: 'language-theory'
 concepts:
   - fref("programming-language-theory/concepts/evaluation-strategy.td")

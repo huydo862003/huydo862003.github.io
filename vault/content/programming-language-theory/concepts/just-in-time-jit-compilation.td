@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Just-in-time (JIT) compilation'
-title: 'Just-in-time (JIT) compilation'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

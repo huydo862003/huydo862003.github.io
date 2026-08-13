@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Higher-order function'
-title: 'Higher-order function'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:

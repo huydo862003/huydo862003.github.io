@@ -1,7 +1,6 @@
 ---
 _type: Phase
 _label: 'Phase 0 - design as a discipline (recalibration)'
-title: 'Phase 0 - design as a discipline (recalibration)'
 journey: fref("design/index.td")
 status: 'active'
 order: 1

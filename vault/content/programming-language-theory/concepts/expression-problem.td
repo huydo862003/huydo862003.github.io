@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Expression problem'
-title: 'Expression problem'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

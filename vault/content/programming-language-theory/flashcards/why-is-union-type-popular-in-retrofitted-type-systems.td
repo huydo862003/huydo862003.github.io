@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'Why is union type popular in retrofitted type systems?'
 deck: 'compiler-implementation'
 concepts:
   - fref("programming-language-theory/concepts/retrofitted-type-system.td")

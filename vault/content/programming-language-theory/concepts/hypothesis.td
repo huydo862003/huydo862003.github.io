@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Hypothesis'
-title: 'Hypothesis'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
 books:

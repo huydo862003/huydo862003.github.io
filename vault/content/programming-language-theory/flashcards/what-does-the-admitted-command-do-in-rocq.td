@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What does the admitted command do in rocq?'
 deck: 'rocq-programming-language'
 concepts:
   - fref("programming-language-theory/concepts/rocq.td")

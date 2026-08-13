@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is a term in grammar?'
 deck: 'language-theory'
 concepts:
   - fref("programming-language-theory/concepts/term.td")

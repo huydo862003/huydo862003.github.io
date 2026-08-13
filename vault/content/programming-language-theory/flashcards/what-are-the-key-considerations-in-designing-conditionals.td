@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What are the key considerations in designing conditionals?'
 deck: 'compiler-implementation'
 concepts:
   - fref("programming-language-theory/concepts/conditional-expression.td")

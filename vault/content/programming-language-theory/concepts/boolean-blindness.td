@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Boolean blindness'
-title: 'Boolean blindness'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 tags:

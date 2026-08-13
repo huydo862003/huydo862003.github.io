@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Hypothetical rule induction'
-title: 'Hypothetical rule induction'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

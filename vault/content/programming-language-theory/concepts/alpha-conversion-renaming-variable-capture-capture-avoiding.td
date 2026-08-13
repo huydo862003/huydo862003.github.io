@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Alpha conversion renaming variable capture capture avoiding'
-title: 'Alpha conversion renaming variable capture capture avoiding'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 ---

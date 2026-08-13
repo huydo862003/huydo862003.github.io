@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Antecedent'
-title: 'Antecedent'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
 books:

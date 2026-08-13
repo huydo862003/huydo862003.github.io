@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is meta-mathematics?'
 deck: 'other-mathematics'
 concepts:
   - fref("programming-language-theory/concepts/meta-mathematics.td")

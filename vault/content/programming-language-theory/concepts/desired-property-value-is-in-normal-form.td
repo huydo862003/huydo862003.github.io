@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Desired property: value is in normal form'
-title: "Desired property: value is in normal form"
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:

@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Axiom'
-title: 'Axiom'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
 books:

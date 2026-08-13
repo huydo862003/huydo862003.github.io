@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Dynamic dispatch'
-title: 'Dynamic dispatch'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:

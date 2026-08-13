@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Human-centered design (HCD)'
-title: 'Human-centered design (HCD)'
 journey: fref("design/index.td")
 status: 'learning'
 books:

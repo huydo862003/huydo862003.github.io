@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Target language'
-title: 'Target language'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:

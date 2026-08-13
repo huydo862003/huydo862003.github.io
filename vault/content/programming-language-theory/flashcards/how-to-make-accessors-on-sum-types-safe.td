@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'How to make accessors on sum types safe?'
 deck: 'type-theory'
 concepts:
   - fref("programming-language-theory/concepts/pattern-matching.td")

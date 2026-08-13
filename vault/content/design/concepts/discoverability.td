@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Discoverability'
-title: 'Discoverability'
 journey: fref("design/index.td")
 status: 'learning'
 books:

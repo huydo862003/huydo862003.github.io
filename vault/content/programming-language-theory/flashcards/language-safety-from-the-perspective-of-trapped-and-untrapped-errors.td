@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'Language safety from the perspective of trapped and untrapped errors?'
 deck: 'language-theory'
 books:
   - fref("programming-language-theory/books/types-and-programming-languages/chapter-1-introduction.td")

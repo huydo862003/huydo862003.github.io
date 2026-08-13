@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is an evaluation strategy?'
 deck: 'pure-lambda-calculus'
 concepts:
   - fref("programming-language-theory/concepts/evaluation-strategy.td")

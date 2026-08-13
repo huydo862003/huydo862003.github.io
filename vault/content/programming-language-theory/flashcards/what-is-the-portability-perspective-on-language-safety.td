@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is the portability perspective on language safety?'
 deck: 'type-theory'
 concepts:
   - fref("programming-language-theory/concepts/language-safety.td")

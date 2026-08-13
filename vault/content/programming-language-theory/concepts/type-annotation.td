@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Type annotation'
-title: 'Type annotation'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:

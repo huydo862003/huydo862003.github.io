@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'How to use fix to define recursive functions?'
 deck: 'pure-lambda-calculus'
 concepts:
   - fref("programming-language-theory/concepts/fixed-point-combinator.td")

@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is proof by rewriting in rocq?'
 deck: 'rocq-programming-language'
 concepts:
   - fref("programming-language-theory/concepts/proof-by-rewriting.td")

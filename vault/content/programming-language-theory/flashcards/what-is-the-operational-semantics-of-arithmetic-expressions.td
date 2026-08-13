@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is the operational semantics of arithmetic expressions?'
 deck: 'language-theory'
 concepts:
   - fref("programming-language-theory/concepts/operational-semantics.td")

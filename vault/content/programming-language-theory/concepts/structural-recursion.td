@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Structural recursion'
-title: 'Structural recursion'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
 books:

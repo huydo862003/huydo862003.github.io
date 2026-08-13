@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is responsive design?'
 deck: 'design-aspect'
 concepts:
   - fref("design/concepts/responsive-design.td")

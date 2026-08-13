@@ -1,7 +1,6 @@
 ---
 _type: Book
 _label: 'Part i. judgments and rules'
-title: 'Part i. judgments and rules'
 journey: fref("programming-language-theory/index.td")
 parent: fref("programming-language-theory/books/practical-foundations-for-programming-languages/index.td")
 children:

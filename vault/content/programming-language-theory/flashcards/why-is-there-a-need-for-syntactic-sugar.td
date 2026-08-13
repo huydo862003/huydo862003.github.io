@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'Why is there a need for syntactic sugar?'
 deck: 'language-theory'
 concepts:
   - fref("programming-language-theory/concepts/syntactic-sugar.td")

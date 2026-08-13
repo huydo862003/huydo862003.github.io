@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What to consider about the interaction between macros and side effects?'
 deck: 'programming-language-basic'
 concepts:
   - fref("programming-language-theory/concepts/macro.td")

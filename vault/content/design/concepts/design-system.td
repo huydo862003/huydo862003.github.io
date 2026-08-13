@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Design system'
-title: 'Design system'
 journey: fref("design/index.td")
 status: 'reviewing'
 tags:

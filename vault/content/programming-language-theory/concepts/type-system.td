@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Type system'
-title: 'Type system'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

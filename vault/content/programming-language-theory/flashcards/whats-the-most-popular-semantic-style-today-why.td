@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What''s the most popular semantic style today? why?'
 deck: 'language-theory'
 concepts:
   - fref("programming-language-theory/concepts/small-step-structural-operational-semantics-sos.td")

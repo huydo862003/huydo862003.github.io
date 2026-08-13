@@ -1,8 +1,6 @@
 ---
 _type: schema
 properties:
-  title:
-    type: string
   date:
     type: date
     optional: true

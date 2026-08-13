@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What are the pros and cons of backward chaining search?'
 deck: 'set-theory-relation'
 concepts:
   - fref("programming-language-theory/concepts/backward-chaining-search.td")

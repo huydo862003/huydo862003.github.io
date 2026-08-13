@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Language safety'
-title: 'Language safety'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

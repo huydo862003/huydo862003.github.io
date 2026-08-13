@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is a macro system?'
 deck: 'compiler-implementation'
 concepts:
   - fref("programming-language-theory/concepts/macro-system.td")

@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Binary relation'
-title: 'Binary relation'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:

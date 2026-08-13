@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'How to introduce infix syntax in rocq?'
 deck: 'language-theory'
 concepts:
   - fref("programming-language-theory/concepts/infix.td")

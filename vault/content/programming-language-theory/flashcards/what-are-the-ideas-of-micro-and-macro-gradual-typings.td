@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What are the ideas of micro and macro gradual typings?'
 deck: 'type-theory'
 concepts:
   - fref("programming-language-theory/concepts/gradual-typing.td")

@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'Define successor, addition, multiplication, zero test, subtraction, predecessor, equality for church numerals?'
 deck: 'pure-lambda-calculus'
 concepts:
   - fref("programming-language-theory/concepts/pure-untyped-lambda-calculus.td")

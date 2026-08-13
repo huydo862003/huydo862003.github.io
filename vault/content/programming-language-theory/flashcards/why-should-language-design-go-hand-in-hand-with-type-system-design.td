@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'Why should language design go hand in hand with type system design?'
 deck: 'type-theory'
 books:
   - fref("programming-language-theory/books/types-and-programming-languages/chapter-1-introduction.td")

@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is the technique of induction on derivations?'
 deck: 'pure-lambda-calculus'
 concepts:
   - fref("programming-language-theory/concepts/induction-on-derivations.td")

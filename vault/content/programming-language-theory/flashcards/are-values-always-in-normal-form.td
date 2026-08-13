@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'Are values always in normal form?'
 deck: 'language-theory'
 concepts:
   - fref("programming-language-theory/concepts/normal-form.td")

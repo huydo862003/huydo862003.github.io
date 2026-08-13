@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'Are there many built-in features in rocq?'
 deck: 'rocq-programming-language'
 concepts:
   - fref("programming-language-theory/concepts/rocq.td")

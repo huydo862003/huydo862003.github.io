@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'How to implement self-reference with and without mutation?'
 deck: 'general'
 books:
   - fref("programming-language-theory/books/programming-languages-application-and-interpretation/chapter-4-objects.td")

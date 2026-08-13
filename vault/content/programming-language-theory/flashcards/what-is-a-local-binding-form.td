@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What is a local binding form?'
 deck: 'programming-language-basic'
 concepts:
   - fref("programming-language-theory/concepts/local-binding-form.td")

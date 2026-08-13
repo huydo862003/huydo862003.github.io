@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What are computation and congruence rules?'
 deck: 'logic-tools'
 concepts:
   - fref("programming-language-theory/concepts/computation-rule.td")

@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Object language'
-title: 'Object language'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

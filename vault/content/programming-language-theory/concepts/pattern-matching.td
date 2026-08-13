@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Pattern matching'
-title: 'Pattern matching'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

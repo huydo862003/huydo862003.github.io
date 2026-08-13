@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What''s the standard notation for reflexive and transitive closure?'
 deck: 'set-theory-relation'
 books:
   - fref("programming-language-theory/books/types-and-programming-languages/chapter-2-mathematical-preliminaries.td")

@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Evaluation statement/judgement'
-title: 'Evaluation statement/judgement'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

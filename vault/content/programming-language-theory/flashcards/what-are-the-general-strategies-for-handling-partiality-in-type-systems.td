@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What are the general strategies for handling partiality in type systems?'
 deck: 'type-theory'
 books:
   - fref("programming-language-theory/books/programming-languages-application-and-interpretation/chapter-5-types.td")

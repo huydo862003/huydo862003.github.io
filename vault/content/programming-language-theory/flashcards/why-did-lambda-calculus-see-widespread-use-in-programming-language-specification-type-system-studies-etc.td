@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'Why did lambda calculus see widespread use in programming language specification, type system studies, etc?'
 deck: 'pure-lambda-calculus'
 books:
   - fref("programming-language-theory/books/types-and-programming-languages/chapter-5-the-untyped-pure-lambda-calculus.td")

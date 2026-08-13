@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Signifier'
-title: 'Signifier'
 journey: fref("design/index.td")
 status: 'learning'
 books:

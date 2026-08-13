@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Instance of an inference rule'
-title: 'Instance of an inference rule'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

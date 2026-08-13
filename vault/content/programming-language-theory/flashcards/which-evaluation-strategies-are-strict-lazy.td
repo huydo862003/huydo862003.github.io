@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'Which evaluation strategies are strict/lazy?'
 deck: 'pure-lambda-calculus'
 concepts:
   - fref("programming-language-theory/concepts/evaluation-strategy.td")

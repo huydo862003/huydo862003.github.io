@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'List some reasons why the rust crates ecosystem is robust?'
 deck: 'general'
 ---
 

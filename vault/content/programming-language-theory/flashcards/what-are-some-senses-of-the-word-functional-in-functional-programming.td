@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'What are some senses of the word "functional" in "functional programming"?'
 deck: 'language-theory'
 concepts:
   - fref("programming-language-theory/concepts/functional-programming.td")

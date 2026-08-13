@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Subtype'
-title: 'Subtype'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:

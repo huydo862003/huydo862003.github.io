@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Truthy'
-title: 'Truthy'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
 tags:

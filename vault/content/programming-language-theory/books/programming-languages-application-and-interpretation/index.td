@@ -1,7 +1,6 @@
 ---
 _type: Book
 _label: 'Programming languages: application and interpretation'
-title: "Programming languages: application and interpretation"
 date: '2012'
 journey: fref("programming-language-theory/index.td")
 description: 'An accessible introduction to programming language design through implementation. Builds interpreters from scratch, covering closures, objects, mutation, and types using the SMoL (Standard Model of Languages) framework.'

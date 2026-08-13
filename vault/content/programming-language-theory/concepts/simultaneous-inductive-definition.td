@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Simultaneous inductive definition'
-title: 'Simultaneous inductive definition'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

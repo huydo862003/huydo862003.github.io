@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Variadic tree'
-title: 'Variadic tree'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
 books:

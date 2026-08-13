@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Syntactic sugar'
-title: 'Syntactic sugar'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

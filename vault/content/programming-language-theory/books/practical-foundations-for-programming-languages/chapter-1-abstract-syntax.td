@@ -1,7 +1,6 @@
 ---
 _type: Book
 _label: 'Chapter 1. abstract syntax'
-title: 'Chapter 1. abstract syntax'
 journey: fref("programming-language-theory/index.td")
 concepts:
   - fref("programming-language-theory/concepts/operator-arity.td")

@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Finite type'
-title: 'Finite type'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
 books:

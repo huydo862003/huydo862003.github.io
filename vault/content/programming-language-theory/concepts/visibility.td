@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Visibility'
-title: 'Visibility'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 ---

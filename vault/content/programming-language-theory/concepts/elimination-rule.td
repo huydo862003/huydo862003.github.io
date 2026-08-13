@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Elimination rule'
-title: 'Elimination rule'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:

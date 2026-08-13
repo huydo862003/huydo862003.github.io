@@ -1,5 +1,6 @@
 ---
 _type: Flashcard
+_label: 'The relation between an evaluator and an interpreter?'
 deck: 'programming-language-basic'
 concepts:
   - fref("programming-language-theory/concepts/evaluator.td")

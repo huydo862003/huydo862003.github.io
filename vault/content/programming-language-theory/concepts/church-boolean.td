@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Church boolean'
-title: 'Church boolean'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:

@@ -1,7 +1,6 @@
 ---
 _type: Concept
 _label: 'Backward chaining search goal directed'
-title: 'Backward chaining search goal directed'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 ---
