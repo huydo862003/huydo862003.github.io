@@ -241,12 +241,12 @@ $$
   2. Then showing that the relation uniquely determines the outputs for given inputs.
 - Example: The function $\text{sum}(a;b;c)$ with the intended meaning of $c$ being the sum of $a$ and $b$.
 
-    $$
-    \displaystyle\frac{b\ \text{nat}}{\text{sum}(\text{zero};b;b)}
-    $$
-    $$
-    \displaystyle\frac{\text{sum}(a;b;c)}{\text{sum}(\text{succ}(a);b;\text{succ}(c))}
-    $$
+ $$
+ \displaystyle\frac{b\ \text{nat}}{\text{sum}(\text{zero};b;b)}
+ $$
+ $$
+ \displaystyle\frac{\text{sum}(a;b;c)}{\text{sum}(\text{succ}(a);b;\text{succ}(c))}
+ $$
 
 **Theorem.** For every $a\ \text{nat}$ and $b\ \text{nat}$, there exists a unique $c\ \text{nat}$ such that $\text{sum}(a;b;c)$.
 
