@@ -19,40 +19,41 @@ children:
   - fref("programming-language-theory/books/programming-languages-application-and-interpretation/chapter-5-types.td")
 ---
 
-- Why study programming languages?
+## Why study programming languages?
 
-    > Force precise thinking. Prove what code can and can't express. Understand why companies create languages for competitive edge.
+> Force precise thinking. Prove what code can and can't express. Understand why companies create languages for competitive edge.
 
-- Core learning framework
-  - SMoL - Standard Model of Languages
+## Core learning framework
 
-        The shared DNA of Java, Python, JavaScript, Ruby, etc:
+### SMoL - Standard Model of Languages
 
-        | Feature | What it means |
-        | --- | --- |
-        | Automatic memory | No manual allocation |
-        | Eager evaluation | Compute arguments first |
-        | First-class functions | Pass functions like data |
-        | Mutable state | Variables can change |
+The shared DNA of Java, Python, JavaScript, Ruby, etc:
 
-        **Key insight:** Think in *features*, not paradigms (OOP vs functional is outdated).
+| Feature | What it means |
+| --- | --- |
+| Automatic memory | No manual allocation |
+| Eager evaluation | Compute arguments first |
+| First-class functions | Pass functions like data |
+| Mutable state | Variables can change |
 
-  - SImPl - Standard Implementation Plan
+**Key insight:** Think in *features*, not paradigms (OOP vs functional is outdated).
 
-        `Parse -> Syntax tree -> Recursive processing`
+### SImPl - Standard Implementation Plan
 
-        Same pattern powers interpreters, compilers, and type-checkers.
+`Parse -> Syntax tree -> Recursive processing`
 
-  - Mystery languages
+Same pattern powers interpreters, compilers, and type-checkers.
 
-        Same syntax, different behaviors -> learn by contrasting how features vary.
+### Mystery languages
 
-- Tools
+Same syntax, different behaviors -> learn by contrasting how features vary.
 
-    | Tool | Purpose |
-    | --- | --- |
-    | **SMoL tutor** | Automated practice |
-    | **Stacker** | Visualize program execution |
-    | **Racket #lang** | Build custom languages |
+## Tools
+
+| Tool | Purpose |
+| --- | --- |
+| **SMoL tutor** | Automated practice |
+| **Stacker** | Visualize program execution |
+| **Racket #lang** | Build custom languages |
 
 Resources: `cs.brown.edu/courses/csci1730/`
