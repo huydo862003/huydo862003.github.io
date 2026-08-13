@@ -387,8 +387,6 @@ A concept from control and information theory. It is the process of sending back
 
 - **The human example:** Even simple tasks like picking up a glass require a complex feedback loop of vision, touch, and muscle sensors (proprioception). Without it, we would crush the glass or drop it.
 
-[Image of feedback loop control theory diagram](https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcTjhSzy7wCIDAJntpOa8Wc5H7CfgeAKqHiuy9wmTXy1KoR4tk2bfHRyOojejb-jO8hwBEA-BL0finfDPPUq3wzCWff3rlr5OPTgBvggHl_q-QgoS48)
-
 #### The rules of effective feedback
 
 **1. It must be immediate**
