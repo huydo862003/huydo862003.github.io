@@ -20,5 +20,3 @@ properties:
     type: list[Blog]
     optional: true
 ---
-
-

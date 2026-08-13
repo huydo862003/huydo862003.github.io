@@ -63,15 +63,15 @@ Note that the title mentions Psychopathology (the study of mental illness), not 
 - Case Study: The "Trapped" friend
 
     > Scenario: A user enters a post office with double rows of glass swinging doors, gets distracted, shifts position slightly, and suddenly finds themselves unable to exit or proceed.
-  - The root cause: Mechanics vs. Visibility
 
-        The user was not actually locked in; they were simply fighting physics.
+  - The root cause is **mechanics** vs **visibility**: The user was not actually locked in; they were simply fighting physics.
 
     - **The mechanics:** A swinging door has a **hinged side** (supported by a pillar) and an **unsupported side**. You must push the unsupported side to generate torque and open it. Pushing the hinge creates no movement.
+
     - **The error:** After shifting position, the user was unknowingly pushing against the **hinged side** of every door they tried.
   - The design failure: Aesthetics over Utility
 
-        Why couldn't the user see the hinges?
+    > Why couldn't the user see the hinges?
 
     - **Prioritizing beauty:** The designer aimed for a "clean" look-no visible pillars, hardware, or "distracting lines."
     - **The cost of style:** By hiding the structural elements (hinges/pillars), the designer removed the **visual cues (signifiers)** needed to operate the door.
