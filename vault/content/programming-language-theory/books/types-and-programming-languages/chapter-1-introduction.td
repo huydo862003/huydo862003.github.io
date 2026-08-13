@@ -1,6 +1,6 @@
 ---
 _type: Book
-_label: 'Chapter 1. introduction'
+_label: 'Chapter 1. Introduction'
 journey: fref("programming-language-theory/index.td")
 concepts:
   - fref("programming-language-theory/concepts/type-system.td")
@@ -162,10 +162,9 @@ A **type system** is a **tractable syntactic method** for **proving the absence*
     - These are **false negatives** from the programmer's point of view: safe programs that are not accepted as well-typed.
     - Example:
 
-            ```
-            if <complex test> then 5 else <type error>
-            ```
-
+      ```
+      if <complex test> then 5 else <type error>
+      ```
       - Suppose:
         - `<complex test>` is a condition that, in reality, **always evaluates to true**.
         - The `else` branch contains an expression that would cause a **type error**.

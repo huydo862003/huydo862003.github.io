@@ -1,6 +1,6 @@
 ---
 _type: Book
-_label: 'Chapter 2. mathematical preliminaries'
+_label: 'Chapter 2. Mathematical preliminaries'
 journey: fref("programming-language-theory/index.td")
 concepts:
   - fref("programming-language-theory/concepts/powerset.td")
