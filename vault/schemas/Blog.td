@@ -2,17 +2,11 @@
 _type: schema
 properties:
   url:
-    type: string
-    optional: true
+    type: string?
   journey:
-    type: Journey
-    optional: true
+    type: Journey?
   site:
-    type: Blogsite
-    optional: true
+    type: Blogsite?
   tags:
-    type: list[string]
-    optional: true
+    type: list[string]?
 ---
-
-

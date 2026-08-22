@@ -2,21 +2,15 @@
 _type: schema
 properties:
   url:
-    type: string
-    optional: true
+    type: string?
   author:
-    type: string
-    optional: true
+    type: string?
   journey:
-    type: Journey
-    optional: true
+    type: Journey?
   latestPost:
-    type: string
-    optional: true
+    type: string?
   lastChecked:
-    type: string
-    optional: true
+    type: string?
   posts:
-    type: list[Blog]
-    optional: true
+    type: list[Blog]?
 ---

@@ -2,22 +2,15 @@
 _type: schema
 properties:
   journey:
-    type: Journey
-    optional: true
+    type: Journey?
   status:
     type: ['learning', 'reviewing', 'mastered']
   tags:
-    type: list[string]
-    optional: true
+    type: list[string]?
   books:
-    type: list[Book]
-    optional: true
+    type: list[Book]?
   dependsOn:
-    type: list[Concept]
-    optional: true
+    type: list[Concept]?
   blocks:
-    type: list[Concept]
-    optional: true
+    type: list[Concept]?
 ---
-
-

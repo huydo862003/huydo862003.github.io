@@ -2,38 +2,25 @@
 _type: schema
 properties:
   author:
-    type: string
-    optional: true
+    type: string?
   date:
-    type: string
-    optional: true
+    type: string?
   journey:
-    type: Journey
-    optional: true
+    type: Journey?
   description:
-    type: string
-    optional: true
+    type: string?
   isbn:
-    type: string
-    optional: true
+    type: string?
   url:
-    type: string
-    optional: true
+    type: string?
   cover:
-    type: string
-    optional: true
+    type: string?
   tags:
-    type: list[string]
-    optional: true
+    type: list[string]?
   concepts:
-    type: list[Concept]
-    optional: true
+    type: list[Concept]?
   parent:
-    type: Book
-    optional: true
+    type: Book?
   children:
-    type: list[Book]
-    optional: true
+    type: list[Book]?
 ---
-
-

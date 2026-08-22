@@ -2,20 +2,13 @@
 _type: schema
 properties:
   question:
-    type: string
-    optional: true
+    type: string?
   deck:
-    type: string
-    optional: true
+    type: string?
   tags:
-    type: list[string]
-    optional: true
+    type: list[string]?
   concepts:
-    type: list[Concept]
-    optional: true
+    type: list[Concept]?
   books:
-    type: list[Book]
-    optional: true
+    type: list[Book]?
 ---
-
-

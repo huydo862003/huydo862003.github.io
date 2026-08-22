@@ -2,19 +2,13 @@
 _type: schema
 properties:
   journey:
-    type: Journey
-    optional: true
+    type: Journey?
   status:
     type: ['active', 'on-hold', 'completed']
   order:
-    type: number
-    optional: true
+    type: number?
   books:
-    type: list[Book]
-    optional: true
+    type: list[Book]?
   concepts:
-    type: list[Concept]
-    optional: true
+    type: list[Concept]?
 ---
-
-

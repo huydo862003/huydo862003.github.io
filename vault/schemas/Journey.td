@@ -2,13 +2,9 @@
 _type: schema
 properties:
   description:
-    type: string
-    optional: true
+    type: string?
   status:
     type: ['active', 'paused', 'completed']
   tags:
-    type: list[string]
-    optional: true
+    type: list[string]?
 ---
-
-

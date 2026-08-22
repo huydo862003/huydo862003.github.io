@@ -2,23 +2,15 @@
 _type: schema
 properties:
   date:
-    type: date
-    optional: true
+    type: date?
   description:
-    type: string
-    optional: true
+    type: string?
   archived:
-    type: boolean
-    optional: true
+    type: boolean?
   tags:
-    type: list[string]
-    optional: true
+    type: list[string]?
   concepts:
-    type: list[Concept]
-    optional: true
+    type: list[Concept]?
   journeys:
-    type: list[Journey]
-    optional: true
+    type: list[Journey]?
 ---
-
-
