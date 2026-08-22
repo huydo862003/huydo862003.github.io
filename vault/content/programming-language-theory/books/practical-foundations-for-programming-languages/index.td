@@ -6,7 +6,7 @@ journey: fref("programming-language-theory/index.td")
 description: 'A mathematically rigorous treatment of programming language theory grounded in proof theory and type theory. Defines language concepts through static and dynamic semantics using only elementary mathematics.'
 isbn: '978-1107150300'
 url: "https://www.cs.cmu.edu/~rwh/pfpl/"
-cover: 'practical-foundations-for-programming-languages.jpg'
+cover: fref("programming-language-theory/books/practical-foundations-for-programming-languages/assets/practical-foundations-for-programming-languages.jpg")
 tags:
   - 'type theory'
   - 'proof theory'
