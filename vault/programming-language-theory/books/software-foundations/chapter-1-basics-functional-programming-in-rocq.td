@@ -449,10 +449,10 @@ I use `Fixpoint` anyways.
 
         ```
 
-     | Step | Context | Goal |
-     | --- | --- | --- |
-     | Before `intros n` | (empty) | `∀ n : nat, 0 + n = n` |
-     | After `intros n` | `n : nat` | `0 + n = n` |
+| Step | Context | Goal |
+| --- | --- | --- |
+| Before `intros n` | (empty) | `∀ n : nat, 0 + n = n` |
+| After `intros n` | `n : nat` | `0 + n = n` |
 
     - **In short** - `intros n` says "let n be an arbitrary nat" and makes `n` available for the rest of the proof
 
