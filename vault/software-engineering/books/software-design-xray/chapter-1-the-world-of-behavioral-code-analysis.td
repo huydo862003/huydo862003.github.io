@@ -1,0 +1,6 @@
+---
+_type: Book
+_label: 'Chapter 1. The world of behavioral code analysis'
+journey: fref("software-engineering/index.td")
+parent: fref("software-engineering/books/software-design-xray/index.td")
+---
