@@ -23,10 +23,13 @@ Some resources crawled from the web:
 ### GitHub: DGit/Spokes
 
 - https://github.blog/engineering/architecture-optimization/introducing-dgit/: original announcement of distributed Git storage
-- https://github.blog/2017-10-13-stretching-spokes/: cross-datacenter replication
-- https://github.blog/engineering/infrastructure/building-resilience-in-spokes/: replication and fault tolerance
 - https://singhajit.com/how-github-stores-and-serves-git-repositories/: how GitHub stores and serves Git repos
 - https://www.pankajtanwar.in/blog/how-does-github-store-millions-of-repo-and-billions-of-files: good summary post
+
+Out of scope:
+
+- https://github.blog/2017-10-13-stretching-spokes/: cross-datacenter replication -> :cross: Out-of-scope
+- https://github.blog/engineering/infrastructure/building-resilience-in-spokes/: replication and fault tolerance -> :cross: Out-of-scope
 
 ### GitLab: Gitaly
 

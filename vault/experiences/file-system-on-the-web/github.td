@@ -1,6 +1,6 @@
 ## DGit (now Spokes)
 
-https://github.blog/engineering/architecture-optimization/introducing-dgit/
+Link: https://github.blog/engineering/architecture-optimization/introducing-dgit/
 
 For context:
 
