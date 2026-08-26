@@ -51,7 +51,7 @@ That would work fine, as long as the VM has locally attached SSDs (like EC2 with
 
 _Picture from GitHub blog_
 
-![fileservers](assets/fileservers.webp)
+![fileservers](_assets/fileservers.webp)
 
 Previously, repositories were replicated using **disk-layer replication** (RAID and [DRBD](https://linbit.com/downloads/)) with a somewhat old-school HA scheme:
 
@@ -83,7 +83,7 @@ DRBD replicates disk writes over that direct cable in real-time. Every write to 
 
 _Picture from GitHub blog_
 
-![architecture](assets/architecture.webp)
+![architecture](_assets/architecture.webp)
 
 File servers are pooled into a cluster called `github-dfs` ("DGit file server").
 
