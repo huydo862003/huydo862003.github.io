@@ -13,8 +13,8 @@ There are a few constraints our systems have:
 - A workspace can have tens or hundreds of files.
 - Almost likely, we won't use specialized cloud-based storage solutions like S3, etc. We usually don't want the hussle of contacting devops and allocate more unique resources. Adding more servers is OK though, but need some justifications.
 - Shall account for:
- : Concurrent reads/writes
- : Data consistency
+  - Concurrent reads/writes
+  - Data consistency
 
 ## Articles & References
 
@@ -23,7 +23,7 @@ Some resources crawled from the web:
 ### GitHub: DGit/Spokes
 
 - https://github.blog/engineering/architecture-optimization/introducing-dgit/: original announcement of distributed Git storage
-- https://singhajit.com/how-github-stores-and-serves-git-repositories/: how GitHub stores and serves Git repos
+- https://singhajit.com/how-github-stores-and-serves-git-repositories/: how GitHub stores and serves Git repos (IMPORTANT!!!)
 - https://www.pankajtanwar.in/blog/how-does-github-store-millions-of-repo-and-billions-of-files: good summary post
 
 Out of scope:

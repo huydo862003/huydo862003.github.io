@@ -1,5 +1,3 @@
-## DGit (now Spokes)
-
 Link: https://github.blog/engineering/architecture-optimization/introducing-dgit/
 
 For context:
@@ -18,7 +16,7 @@ Pros:
 - I think that restoring from disk images can be slow and hurt availability, so likely this helps improve high availability. Storing replications as redundant repos can help recovery much faster.
 - Recovery is fast according to them, claiming healing throughput to be N^2.
 
-### DGit Uses Plain `git`
+## DGit Uses Plain `git`
 
 DGit stores repos the same way end users do: objects, pack files, and references in a `.git` directory.
 
@@ -49,7 +47,7 @@ Git's internal operations do many small sequential disk reads (thousands of obje
 That would work fine, as long as the VM has locally attached SSDs (like EC2 with NVMe). The point is: Git process and disk on the same machine.
 :::
 
-### GitHub Archictecture Before DGit
+## GitHub Archictecture Before DGit
 
 _Picture from GitHub blog_
 
@@ -81,7 +79,7 @@ other, bypassing any switch or router. So the setup was:
 DRBD replicates disk writes over that direct cable in real-time. Every write to the active server's disk gets mirrored to the spare's disk. If the active dies, the spare has an identical disk image and can take over.
 :::
 
-### GitHub Architecture After DGit
+## GitHub Architecture After DGit
 
 _Picture from GitHub blog_
 
@@ -98,7 +96,7 @@ File servers are pooled into a cluster called `github-dfs` ("DGit file server").
 Yes. The "Stretching Spokes" blog post (2017) covers this. They extended Spokes to replicate across multiple data centers for disaster recovery. Before that, all three replicas lived in the same data center.
 :::
 
-### Benefits of DGit (Compared to Before)
+## Benefits of DGit (Compared to Before)
 
 - No more paired servers. File servers can be a heterogeneous pool in whatever spatial configuration.
 - Server failure is less urgent.
@@ -121,14 +119,14 @@ Yes. The "Stretching Spokes" blog post (2017) covers this. They extended Spokes 
   - With DGit, other repos can be served from their other replicas, which are unlikely to share the same servers.
 - Replicas can be placed in different availability zones or data centers, improving availability and enabling geo-local serving.
 
-### Tradeoffs of DGit
+## Tradeoffs of DGit
 
 The biggest complexity: replication is no longer transparent.
 
 - With DRBD, the hot spare was automatically synced at the disk layer.
 - With DGit, replication is explicit (3 servers per repo), so DGit must implement its own serializability, locking, failure detection, and resynchronization.
 
-### Takeaways for Our System
+## Takeaways for Our System
 
 - If we decide to run `git` on our server to offer version control, should run `git` locally on local disk.
 - One possible approach is to store git repos on our server.
