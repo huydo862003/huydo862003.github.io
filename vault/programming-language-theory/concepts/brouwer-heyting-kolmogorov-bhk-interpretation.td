@@ -43,12 +43,12 @@ Motivation. Classical logic tells you *that* something exists, not *how* to find
 
     **The proof object (BHK)**
 
-    |  Step  | Rule |  BHK construction  |
-    |  ---  | --- |  ---  |
-    | We have | (assumption) | $p$ is a proof of $A$ |
-    | We have | (assumption) | $f$ is a function $A \to B(t)$ |
-    | Apply $f$ to $p$ | $(\to\text{-elim})$ | $f(p)$ is a proof of $B(t)$ |
-    | Package with witness | $(\exists\text{-intro})$ | $\langle t, f(p) \rangle$ is a proof of $\exists x.\; B(x)$ |
+|  Step  | Rule |  BHK construction  |
+|------|-----|---------|
+| We have | (assumption) | $p$ is a proof of $A$ |
+| We have | (assumption) | $f$ is a function $A \to B(t)$ |
+| Apply $f$ to $p$ | $(\to\text{-elim})$ | $f(p)$ is a proof of $B(t)$ |
+| Package with witness | $(\exists\text{-intro})$ | $\langle t, f(p) \rangle$ is a proof of $\exists x.\; B(x)$ |
 
     **Reading it together.** The derivation tree:
 
