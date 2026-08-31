@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'How to implement self-reference with and without mutation?'
 deck: 'general'
 books:

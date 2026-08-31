@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'How to allow methods to reference each other using lexical scoping?'
 deck: 'general'
 books:

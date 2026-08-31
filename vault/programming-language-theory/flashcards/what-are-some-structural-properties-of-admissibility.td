@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What are some structural properties of admissibility?'
 deck: 'general'
 books:

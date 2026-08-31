@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: DesignFlashcard
 _label: 'Explain the conflict between machines and human nature'
 deck: 'general'
 ---

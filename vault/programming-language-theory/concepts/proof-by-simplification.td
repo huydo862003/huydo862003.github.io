@@ -1,5 +1,5 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: 'Proof by simplification'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

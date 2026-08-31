@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is the destruct tactic in rocq?'
 deck: 'general'
 books:

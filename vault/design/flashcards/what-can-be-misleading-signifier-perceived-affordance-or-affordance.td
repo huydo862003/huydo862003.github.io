@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: DesignFlashcard
 _label: 'What can be misleading: signifier, perceived affordance or affordance?'
 deck: 'general'
 concepts:

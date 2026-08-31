@@ -1,5 +1,5 @@
 ---
-_type: Book
+_type: SoftEngBook
 _label: 'Software Design X-Rays: Fix Technical Debt with Behavioral Code Analysis '
 date: '2018'
 journey: fref("software-engineering/index.td")

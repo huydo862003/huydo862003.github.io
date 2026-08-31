@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'To understand how a program may misbehave in an unsafe language, what should the programmer do?'
 deck: 'type theory'
 books:

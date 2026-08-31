@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What are type systems good for?'
 deck: 'type theory'
 books:

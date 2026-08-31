@@ -1,5 +1,5 @@
 ---
-_type: Book
+_type: PltBook
 _label: 'Chapter 1. Learning SMoL - standard model of languages'
 journey: fref("programming-language-theory/index.td")
 concepts:

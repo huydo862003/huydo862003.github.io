@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What''s the relation between runtime errors and stuckness?'
 deck: 'language theory'
 concepts:

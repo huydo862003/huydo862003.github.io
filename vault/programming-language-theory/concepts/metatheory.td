@@ -1,5 +1,5 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: 'Metatheory'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is an example of a generic derivation?'
 deck: 'general'
 books:

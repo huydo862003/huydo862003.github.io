@@ -1,5 +1,5 @@
 ---
-_type: Book
+_type: DesignBook
 _label: 'Chapter 1. The psychopathology of everyday things'
 journey: fref("design/index.td")
 concepts:

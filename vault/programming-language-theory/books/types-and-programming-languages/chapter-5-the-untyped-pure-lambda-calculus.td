@@ -1,5 +1,5 @@
 ---
-_type: Book
+_type: PltBook
 _label: 'Chapter 5. The untyped/pure lambda-calculus'
 journey: fref("programming-language-theory/index.td")
 concepts:

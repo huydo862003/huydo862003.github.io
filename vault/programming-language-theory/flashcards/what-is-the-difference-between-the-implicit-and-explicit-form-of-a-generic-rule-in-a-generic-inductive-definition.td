@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is the difference between the implicit and explicit form of a generic rule in a generic inductive definition?'
 deck: 'general'
 books:

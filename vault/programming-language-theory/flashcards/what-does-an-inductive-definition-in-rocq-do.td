@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What does an inductive definition in rocq do?'
 deck: 'rocq-programming-language'
 concepts:

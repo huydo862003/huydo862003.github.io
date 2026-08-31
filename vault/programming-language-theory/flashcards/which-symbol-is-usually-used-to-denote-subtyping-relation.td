@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Which symbol is usually used to denote subtyping relation?'
 deck: 'type theory'
 concepts:

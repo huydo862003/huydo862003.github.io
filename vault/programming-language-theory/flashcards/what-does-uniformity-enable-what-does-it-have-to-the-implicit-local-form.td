@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What does uniformity enable? what does it have to the implicit/local form?'
 deck: 'general'
 books:

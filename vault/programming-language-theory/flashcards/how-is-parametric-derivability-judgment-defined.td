@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'How is parametric derivability judgment defined?'
 deck: 'general'
 books:

@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: DesignFlashcard
 _label: 'What is a common pattern of many reactive systems?'
 deck: 'design'
 books:

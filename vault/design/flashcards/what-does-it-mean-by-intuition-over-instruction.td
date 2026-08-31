@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: DesignFlashcard
 _label: 'What does it mean by ''intuition over instruction''?'
 deck: 'general'
 concepts:

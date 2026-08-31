@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'According to robert (bob) harper, what are symbol, symbolic parameter and indexed operator?'
 deck: 'general'
 books:

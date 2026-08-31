@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Can the type system totally not require interaction with or guidance from the programmers?'
 deck: 'type theory'
 books:

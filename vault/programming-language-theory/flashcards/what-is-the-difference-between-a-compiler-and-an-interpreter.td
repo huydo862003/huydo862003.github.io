@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is the difference between a compiler and an interpreter?'
 deck: 'programming-language-basic'
 concepts:

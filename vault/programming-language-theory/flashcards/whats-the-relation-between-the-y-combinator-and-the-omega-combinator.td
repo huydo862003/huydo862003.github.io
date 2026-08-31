@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What''s the relation between the y-combinator and the omega combinator?'
 deck: 'pure-lambda-calculus'
 concepts:

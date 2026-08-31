@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What are theorem, lemma, fact, remark in rocq?'
 deck: 'general'
 books:

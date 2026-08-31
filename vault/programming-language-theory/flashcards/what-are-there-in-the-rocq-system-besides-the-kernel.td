@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What are there in the rocq system besides the kernel?'
 deck: 'rocq-programming-language'
 concepts:

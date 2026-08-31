@@ -1,12 +1,12 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: 'Concrete generator style'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:
   - fref("programming-language-theory/books/types-and-programming-languages/chapter-3-untyped-arithmetic-expressions.td")
 tags:
-  - 'set-theory-relation'
+  - 'set theory relation'
   - 'syntax grammar'
 ---
 

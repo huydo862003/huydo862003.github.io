@@ -1,10 +1,10 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: 'Truthy'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
 tags:
-  - 'language-feature-design'
+  - 'language feature design'
   - 'semantics'
 ---
 

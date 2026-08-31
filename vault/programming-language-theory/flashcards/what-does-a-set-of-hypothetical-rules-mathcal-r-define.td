@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What does a set of hypothetical rules $mathcal{r}$ define?'
 deck: 'general'
 books:

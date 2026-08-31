@@ -1,7 +1,7 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is the inductive definition of a judgment form?'
-deck: 'set-theory-relation'
+deck: 'set theory relation'
 concepts:
   - fref("programming-language-theory/concepts/inductive-definition.td")
   - fref("programming-language-theory/concepts/judgment-form.td")

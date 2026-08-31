@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Other than hypotheses, what can be used with rewrite tactics in rocq?'
 deck: 'general'
 books:

@@ -1,10 +1,10 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: 'Programming model'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
 tags:
-  - 'data-structure-algorithm'
+  - 'data structure algorithm'
   - 'programming paradigm'
 ---
 

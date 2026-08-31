@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: DesignFlashcard
 _label: 'How can the conflict of disciplines pose challenges to the design of a product?'
 deck: 'general'
 ---

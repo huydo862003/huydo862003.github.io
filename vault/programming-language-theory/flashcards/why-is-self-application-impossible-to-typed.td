@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Why is self-application impossible to typed?'
 deck: 'type theory'
 books:

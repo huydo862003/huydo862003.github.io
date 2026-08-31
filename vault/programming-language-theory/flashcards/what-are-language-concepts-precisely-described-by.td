@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What are language concepts precisely described by?'
 deck: 'language theory'
 books:

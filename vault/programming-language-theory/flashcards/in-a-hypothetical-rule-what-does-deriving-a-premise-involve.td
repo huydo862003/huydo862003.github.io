@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'In a hypothetical rule, what does deriving a premise involve?'
 deck: 'general'
 books:

@@ -1,7 +1,7 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Functions that diverge vs functions that can fail?'
-deck: 'set-theory-relation'
+deck: 'set theory relation'
 books:
   - fref("programming-language-theory/books/types-and-programming-languages/chapter-2-mathematical-preliminaries.td")
 ---

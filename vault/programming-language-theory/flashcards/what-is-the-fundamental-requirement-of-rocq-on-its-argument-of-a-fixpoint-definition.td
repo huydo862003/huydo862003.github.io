@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is the fundamental requirement of rocq on its argument of a fixpoint definition?'
 deck: 'general'
 books:

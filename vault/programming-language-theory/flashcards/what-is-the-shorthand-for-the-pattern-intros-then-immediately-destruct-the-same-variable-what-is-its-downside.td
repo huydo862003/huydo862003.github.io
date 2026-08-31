@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is the shorthand for the pattern intros then immediately destruct the same variable? what is its downside?'
 deck: 'general'
 books:

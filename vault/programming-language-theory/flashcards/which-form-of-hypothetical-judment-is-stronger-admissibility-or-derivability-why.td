@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Which form of hypothetical judment is stronger, admissibility or derivability? why?'
 deck: 'general'
 books:

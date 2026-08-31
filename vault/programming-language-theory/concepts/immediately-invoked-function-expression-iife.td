@@ -1,12 +1,12 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: 'Immediately invoked function expression (IIFE)'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:
   - fref("programming-language-theory/books/programming-languages-application-and-interpretation/chapter-3-syntactic-sugar.td")
 tags:
-  - 'language-feature-design'
+  - 'language feature design'
   - 'programming paradigm'
   - 'syntax grammar'
 ---

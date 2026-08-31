@@ -1,7 +1,7 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Why is backward chaining goal-directed?'
-deck: 'set-theory-relation'
+deck: 'set theory relation'
 concepts:
   - fref("programming-language-theory/concepts/backward-chaining-search.td")
   - fref("programming-language-theory/concepts/backward-chaining.td")

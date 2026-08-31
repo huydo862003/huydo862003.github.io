@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What are some problems with static types that make avoiding runtime errors impossible?'
 deck: 'type theory'
 books:

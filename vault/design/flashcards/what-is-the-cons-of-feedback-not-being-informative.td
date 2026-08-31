@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: DesignFlashcard
 _label: 'What is the cons of feedback not being informative?'
 deck: 'general'
 concepts:

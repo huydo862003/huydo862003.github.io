@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is the name of rocq''s native functional programming language?'
 deck: 'rocq-programming-language'
 concepts:

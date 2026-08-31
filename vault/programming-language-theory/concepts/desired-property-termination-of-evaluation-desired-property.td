@@ -1,5 +1,5 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: 'Desired property termination of evaluation desired property'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

@@ -1,12 +1,12 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: 'Call by need'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:
   - fref("programming-language-theory/books/types-and-programming-languages/chapter-5-the-untyped-pure-lambda-calculus.td")
 tags:
-  - 'language-feature-design'
+  - 'language feature design'
   - 'semantics'
 ---
 

@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'How to use fix to define recursive functions?'
 deck: 'pure-lambda-calculus'
 concepts:

@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Language safety from the perspective of trapped and untrapped errors?'
 deck: 'language theory'
 books:

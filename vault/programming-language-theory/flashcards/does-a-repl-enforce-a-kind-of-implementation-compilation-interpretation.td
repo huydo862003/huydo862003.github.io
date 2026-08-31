@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Does a REPL enforce a kind of implementation (compilation/interpretation)?'
 deck: 'compiler implementation'
 concepts:

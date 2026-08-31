@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Which symbols can be used to mark nested subgoals in destruct in rocq?'
 deck: 'general'
 books:

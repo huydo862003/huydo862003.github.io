@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'The definition of type system'
 deck: 'type theory'
 concepts:

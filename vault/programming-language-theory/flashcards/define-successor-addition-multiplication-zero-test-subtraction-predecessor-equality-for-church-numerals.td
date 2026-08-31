@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Define successor, addition, multiplication, zero test, subtraction, predecessor, equality for church numerals?'
 deck: 'pure-lambda-calculus'
 concepts:

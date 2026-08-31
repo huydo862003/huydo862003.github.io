@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is the relation between basic objects and lambdas?'
 deck: 'language theory'
 concepts:

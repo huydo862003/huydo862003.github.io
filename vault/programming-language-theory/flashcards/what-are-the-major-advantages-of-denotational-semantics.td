@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What are the major advantages of denotational semantics?'
 deck: 'language theory'
 concepts:

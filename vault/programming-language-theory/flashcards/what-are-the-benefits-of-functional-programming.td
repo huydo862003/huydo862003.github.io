@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What are the benefits of functional programming?'
 deck: 'general'
 books:

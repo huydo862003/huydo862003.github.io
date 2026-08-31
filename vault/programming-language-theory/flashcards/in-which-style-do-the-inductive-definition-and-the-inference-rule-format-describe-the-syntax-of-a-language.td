@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'In which style do the inductive definition and the inference rule format describe the syntax of a language?'
 deck: 'logic tools'
 books:

@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: DesignFlashcard
 _label: 'Why doesn''t a conceptual model have to be correct or precise?'
 deck: 'general'
 concepts:

@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What does the abort command do in rocq?'
 deck: 'general'
 books:

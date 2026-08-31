@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Why is there a need for syntactic sugar?'
 deck: 'language theory'
 concepts:

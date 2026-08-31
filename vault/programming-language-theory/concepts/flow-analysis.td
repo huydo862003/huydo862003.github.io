@@ -1,12 +1,12 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: 'Flow analysis'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:
   - fref("programming-language-theory/books/programming-languages-application-and-interpretation/chapter-5-types.td")
 tags:
-  - 'language-feature-design'
+  - 'language feature design'
   - 'program analysis'
   - 'runtime'
   - 'semantics'

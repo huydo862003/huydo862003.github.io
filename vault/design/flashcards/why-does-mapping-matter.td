@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: DesignFlashcard
 _label: 'Why does mapping matter?'
 deck: 'general'
 concepts:

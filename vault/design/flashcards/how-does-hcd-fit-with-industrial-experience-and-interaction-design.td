@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: DesignFlashcard
 _label: 'How does HCD fit with industrial, experience and interaction design?'
 deck: 'general'
 concepts:

@@ -1,7 +1,7 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is a lexicographic order'
-deck: 'set-theory-relation'
+deck: 'set theory relation'
 concepts:
   - fref("programming-language-theory/concepts/lexicographic-order.td")
 books:

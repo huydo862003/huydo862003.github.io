@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What can functional programming refer to?'
 deck: 'general'
 books:

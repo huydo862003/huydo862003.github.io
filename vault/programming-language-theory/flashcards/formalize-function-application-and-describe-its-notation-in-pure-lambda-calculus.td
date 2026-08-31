@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Formalize function application and describe its notation in pure lambda calculus?'
 deck: 'pure-lambda-calculus'
 concepts:

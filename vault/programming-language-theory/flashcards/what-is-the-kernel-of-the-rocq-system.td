@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is the kernel of the rocq system?'
 deck: 'general'
 books:

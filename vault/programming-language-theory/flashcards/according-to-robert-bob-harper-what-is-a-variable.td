@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'According to robert (bob) harper, what is a variable?'
 deck: 'language theory'
 concepts:

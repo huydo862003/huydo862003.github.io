@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What can an evidence for admissibility be thought of as?'
 deck: 'general'
 books:

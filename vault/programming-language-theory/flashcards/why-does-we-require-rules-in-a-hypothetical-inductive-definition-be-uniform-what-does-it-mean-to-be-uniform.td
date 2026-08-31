@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Why does we require rules in a hypothetical inductive definition be uniform? what does it mean to be uniform?'
 deck: 'general'
 books:

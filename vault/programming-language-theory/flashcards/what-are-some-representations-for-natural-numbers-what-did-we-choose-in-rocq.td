@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What are some representations for natural numbers? what did we choose in rocq?'
 deck: 'rocq-programming-language'
 concepts:

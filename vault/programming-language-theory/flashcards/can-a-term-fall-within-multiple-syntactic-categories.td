@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Can a term fall within multiple syntactic categories?'
 deck: 'pure-lambda-calculus'
 concepts:

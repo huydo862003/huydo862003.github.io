@@ -1,5 +1,5 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: 'Just-in-time (JIT) compilation'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What does "variables in an AST range over some specified sorts" mean?'
 deck: 'language theory'
 concepts:

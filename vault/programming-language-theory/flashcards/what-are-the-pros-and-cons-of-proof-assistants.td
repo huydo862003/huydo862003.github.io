@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What are the pros and cons of proof assistants?'
 deck: 'logic tools'
 concepts:

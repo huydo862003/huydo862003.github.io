@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: DesignFlashcard
 _label: 'How are conceptual models usually constructed?'
 deck: 'general'
 ---

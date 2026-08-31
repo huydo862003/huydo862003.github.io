@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'According to robert (bob) harper, what is an operator, the arity of an operator?'
 deck: 'language theory'
 books:

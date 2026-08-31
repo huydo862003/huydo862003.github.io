@@ -1,5 +1,5 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: 'Decreasing analysis'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'

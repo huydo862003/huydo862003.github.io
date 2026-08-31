@@ -1,13 +1,13 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: 'Runtime type dispatch'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
 books:
   - fref("programming-language-theory/books/programming-languages-application-and-interpretation/chapter-5-types.td")
 tags:
-  - 'language-feature-design'
-  - 'metaprogramming-self-reflection'
+  - 'language feature design'
+  - 'metaprogramming self reflection'
   - 'programming paradigm'
   - 'runtime'
   - 'semantics'

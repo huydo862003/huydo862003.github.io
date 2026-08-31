@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: DesignFlashcard
 _label: 'What is mapping in design?'
 deck: 'general'
 concepts:

@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What does abstract syntax have to do with AST/labeled tree?'
 deck: 'compiler implementation'
 books:

@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'How to implement open recursion with self-application?'
 deck: 'pure-lambda-calculus'
 books:

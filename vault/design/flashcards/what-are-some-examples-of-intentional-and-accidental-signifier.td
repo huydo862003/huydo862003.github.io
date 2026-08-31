@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: DesignFlashcard
 _label: 'What are some examples of intentional and accidental signifier?'
 deck: 'general'
 concepts:

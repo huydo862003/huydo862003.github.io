@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'How is language safety different from static type safety'
 deck: 'type theory'
 concepts:

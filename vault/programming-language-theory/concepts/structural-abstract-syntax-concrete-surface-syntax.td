@@ -1,5 +1,5 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: 'Structural abstract syntax concrete surface syntax'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

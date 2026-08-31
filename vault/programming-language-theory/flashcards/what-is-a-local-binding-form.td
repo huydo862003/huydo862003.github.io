@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is a local binding form?'
 deck: 'programming-language-basic'
 concepts:

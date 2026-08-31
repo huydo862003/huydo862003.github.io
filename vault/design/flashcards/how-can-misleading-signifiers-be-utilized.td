@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: DesignFlashcard
 _label: 'How can misleading signifiers be utilized?'
 deck: 'general'
 ---

@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'How to use the simpl tactic with a hypothesis?'
 deck: 'general'
 books:

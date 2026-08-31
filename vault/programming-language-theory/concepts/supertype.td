@@ -1,5 +1,5 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: 'Supertype'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
@@ -7,7 +7,7 @@ books:
   - fref("programming-language-theory/books/programming-languages-application-and-interpretation/chapter-5-types.td")
 tags:
   - 'semantics'
-  - 'set-theory-relation'
+  - 'set theory relation'
   - 'type theory'
 ---
 

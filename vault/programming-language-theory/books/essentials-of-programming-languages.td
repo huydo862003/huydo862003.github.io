@@ -1,5 +1,5 @@
 ---
-_type: Book
+_type: PltBook
 _label: 'Essentials of programming languages'
 date: '2008'
 journey: fref("programming-language-theory/index.td")

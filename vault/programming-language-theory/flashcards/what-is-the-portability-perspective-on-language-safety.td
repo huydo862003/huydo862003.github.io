@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is the portability perspective on language safety?'
 deck: 'type theory'
 concepts:

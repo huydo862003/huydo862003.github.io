@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Define boolean operations and, or, not for church booleans?'
 deck: 'pure-lambda-calculus'
 concepts:

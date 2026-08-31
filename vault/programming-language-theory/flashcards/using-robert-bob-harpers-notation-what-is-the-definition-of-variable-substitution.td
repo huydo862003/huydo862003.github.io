@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Using robert (bob) harper''s notation, what is the definition of variable substitution?'
 deck: 'language theory'
 concepts:

@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is usually meant by substitution?'
 deck: 'pure-lambda-calculus'
 concepts:

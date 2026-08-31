@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is the rewrite tactic in rocq?'
 deck: 'general'
 books:

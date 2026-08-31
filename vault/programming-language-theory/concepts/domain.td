@@ -1,13 +1,13 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: 'Domain'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:
   - fref("programming-language-theory/books/types-and-programming-languages/chapter-2-mathematical-preliminaries.td")
 tags:
-  - 'order-lattice-theory'
-  - 'set-theory-relation'
+  - 'order lattice theory'
+  - 'set theory relation'
 ---
 
 ::: info

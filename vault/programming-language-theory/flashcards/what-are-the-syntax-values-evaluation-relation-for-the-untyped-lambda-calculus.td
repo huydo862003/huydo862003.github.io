@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What are the syntax/values/evaluation relation for the untyped lambda calculus?'
 deck: 'pure-lambda-calculus'
 concepts:

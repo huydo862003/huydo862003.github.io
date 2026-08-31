@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'In an ABT, what is the valence of an argument?'
 deck: 'language theory'
 concepts:

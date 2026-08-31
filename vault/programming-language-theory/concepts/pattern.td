@@ -1,10 +1,10 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: 'Pattern'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 tags:
-  - 'language-feature-design'
+  - 'language feature design'
   - 'syntax grammar'
 ---
 

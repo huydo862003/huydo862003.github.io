@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: DesignFlashcard
 _label: 'What are some requirements of discoverability?'
 deck: 'general'
 concepts:

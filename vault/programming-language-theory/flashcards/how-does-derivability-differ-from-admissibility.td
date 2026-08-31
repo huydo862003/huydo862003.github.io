@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'How does derivability differ from admissibility?'
 deck: 'general'
 books:

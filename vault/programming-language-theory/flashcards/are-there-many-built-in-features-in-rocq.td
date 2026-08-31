@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Are there many built-in features in rocq?'
 deck: 'rocq-programming-language'
 concepts:

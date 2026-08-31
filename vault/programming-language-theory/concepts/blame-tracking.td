@@ -1,10 +1,10 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: 'Blame tracking'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 tags:
-  - 'language-feature-design'
+  - 'language feature design'
   - 'program analysis'
   - 'runtime'
   - 'semantics'

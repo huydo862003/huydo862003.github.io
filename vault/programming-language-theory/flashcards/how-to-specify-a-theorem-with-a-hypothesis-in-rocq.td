@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'How to specify a theorem with a hypothesis in rocq?'
 deck: 'general'
 books:

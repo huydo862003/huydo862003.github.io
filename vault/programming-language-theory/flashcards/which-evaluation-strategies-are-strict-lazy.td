@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Which evaluation strategies are strict/lazy?'
 deck: 'pure-lambda-calculus'
 concepts:

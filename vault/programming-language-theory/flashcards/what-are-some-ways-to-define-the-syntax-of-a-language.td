@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What are some ways to define the syntax of a language?'
 deck: 'compiler implementation'
 books:

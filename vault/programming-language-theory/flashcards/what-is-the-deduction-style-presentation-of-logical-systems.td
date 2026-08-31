@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is the deduction style presentation of logical systems?'
 deck: 'logic tools'
 concepts:

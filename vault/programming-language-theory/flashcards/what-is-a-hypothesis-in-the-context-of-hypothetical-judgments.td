@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is a hypothesis in the context of hypothetical judgments?'
 deck: 'general'
 books:

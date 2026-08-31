@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What''s the symbol for untyped lambda calculus?'
 deck: 'pure-lambda-calculus'
 concepts:

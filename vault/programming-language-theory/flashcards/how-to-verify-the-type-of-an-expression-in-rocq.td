@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'How to verify the type of an expression in rocq?'
 deck: 'rocq-programming-language'
 concepts:

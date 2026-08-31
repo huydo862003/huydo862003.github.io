@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Which notations are usually used to specify sets?'
 deck: 'general'
 books:

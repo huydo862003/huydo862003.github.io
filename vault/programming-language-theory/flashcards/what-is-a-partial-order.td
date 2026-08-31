@@ -1,7 +1,7 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is a partial order?'
-deck: 'set-theory-relation'
+deck: 'set theory relation'
 concepts:
   - fref("programming-language-theory/concepts/partial-order.td")
 books:

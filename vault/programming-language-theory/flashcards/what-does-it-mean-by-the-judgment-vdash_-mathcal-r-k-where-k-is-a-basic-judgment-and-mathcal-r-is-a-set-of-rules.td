@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What does it mean by the judgment $dash_mathcal{r} k$, where $k$ is a basic judgment and $mathcal{r}$ is a set of rules?'
 deck: 'general'
 books:

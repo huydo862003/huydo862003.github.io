@@ -1,5 +1,5 @@
 ---
-_type: Book
+_type: SoftEngBook
 _label: 'Chapter 1. The world of behavioral code analysis'
 journey: fref("software-engineering/index.td")
 concepts:

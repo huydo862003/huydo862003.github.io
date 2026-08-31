@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is the formal definition for alpha-equivalence?'
 deck: 'language theory'
 concepts:

@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is the relation between objects and closures?'
 deck: 'language theory'
 concepts:

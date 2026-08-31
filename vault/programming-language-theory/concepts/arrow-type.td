@@ -1,5 +1,5 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: 'Arrow type'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
@@ -7,7 +7,7 @@ books:
   - fref("programming-language-theory/books/practical-foundations-for-programming-languages/preface.td")
 tags:
   - 'formal system'
-  - 'language-feature-design'
+  - 'language feature design'
   - 'type theory'
 ---
 

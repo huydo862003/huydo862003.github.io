@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'In pure lambda calculus, what are the built-in constants and primitive operators?'
 deck: 'pure-lambda-calculus'
 concepts:

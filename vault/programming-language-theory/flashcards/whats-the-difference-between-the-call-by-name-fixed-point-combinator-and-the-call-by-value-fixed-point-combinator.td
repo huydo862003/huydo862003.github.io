@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What''s the difference between the call-by-name fixed-point combinator and the call-by-value fixed-point combinator?'
 deck: 'pure-lambda-calculus'
 books:

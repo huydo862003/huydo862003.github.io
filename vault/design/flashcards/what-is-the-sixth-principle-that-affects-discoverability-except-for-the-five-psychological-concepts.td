@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: DesignFlashcard
 _label: 'What is the sixth principle that affects discoverability, except for the five psychological concepts?'
 deck: 'general'
 concepts:

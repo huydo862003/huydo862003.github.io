@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Is bullet point optional in subgoals in a destruct tactic? if yes, why would you use it?'
 deck: 'general'
 books:

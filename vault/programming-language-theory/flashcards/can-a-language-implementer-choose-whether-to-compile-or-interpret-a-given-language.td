@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Can a language implementer choose whether to compile or interpret a given language?'
 deck: 'compiler implementation'
 books:

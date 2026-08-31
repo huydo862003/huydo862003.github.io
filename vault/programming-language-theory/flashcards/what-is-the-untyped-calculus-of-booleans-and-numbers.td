@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is the untyped calculus of booleans and numbers?'
 deck: 'language theory'
 books:

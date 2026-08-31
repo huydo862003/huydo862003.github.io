@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is a redex or reducible expression in church''s terminology?'
 deck: 'pure-lambda-calculus'
 concepts:

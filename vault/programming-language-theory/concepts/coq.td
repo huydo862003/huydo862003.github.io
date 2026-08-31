@@ -1,5 +1,5 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: 'Coq'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
@@ -7,9 +7,9 @@ books:
   - fref("programming-language-theory/books/software-foundations/logical-foundations.td")
 tags:
   - 'formal system'
-  - 'language-feature-design'
+  - 'language feature design'
   - 'programming paradigm'
-  - 'proof-reason-technique'
+  - 'proof reason technique'
 ---
 
 Tools: Rocq (formerly Coq)

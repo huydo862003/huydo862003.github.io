@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is notation scope in rocq? how to explicitly specify them?'
 deck: 'general'
 books:

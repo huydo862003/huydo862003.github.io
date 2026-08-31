@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is the meaning of a term?'
 deck: 'language theory'
 concepts:

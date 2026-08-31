@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is an instance of an inference rule?'
 deck: 'logic tools'
 concepts:

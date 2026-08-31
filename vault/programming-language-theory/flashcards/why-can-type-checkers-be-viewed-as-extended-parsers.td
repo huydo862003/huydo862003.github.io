@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Why can type checkers be viewed as extended parsers?'
 deck: 'language theory'
 books:

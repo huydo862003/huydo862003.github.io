@@ -1,5 +1,5 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: 'Concrete/Surface syntax'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
@@ -8,7 +8,7 @@ books:
   - fref("programming-language-theory/books/types-and-programming-languages/chapter-5-the-untyped-pure-lambda-calculus.td")
   - fref("programming-language-theory/books/practical-foundations-for-programming-languages/chapter-1-abstract-syntax.td")
 tags:
-  - 'language-feature-design'
+  - 'language feature design'
   - 'syntax grammar'
 ---
 

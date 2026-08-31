@@ -1,5 +1,5 @@
 ---
-_type: Book
+_type: PltBook
 _label: 'Practical foundations for programming languages'
 date: '2016'
 journey: fref("programming-language-theory/index.td")

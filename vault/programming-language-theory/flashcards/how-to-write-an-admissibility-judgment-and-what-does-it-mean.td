@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'How to write an admissibility judgment and what does it mean?'
 deck: 'general'
 books:

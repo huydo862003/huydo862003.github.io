@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is the wildcard pattern in rocq?'
 deck: 'rocq-programming-language'
 concepts:

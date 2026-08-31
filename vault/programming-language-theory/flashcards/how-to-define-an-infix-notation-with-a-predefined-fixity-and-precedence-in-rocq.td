@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'How to define an infix notation with a predefined fixity and precedence in rocq?'
 deck: 'general'
 books:

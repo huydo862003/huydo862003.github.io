@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is the meaning of the of the notation $gamma dash^{mathcal{u};mathcal{x}}_mathcal{r}j$?'
 deck: 'general'
 books:

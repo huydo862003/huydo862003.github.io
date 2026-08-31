@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'How do we make sure the formal derivability judgment behaves as an expected derivability judgment'
 deck: 'general'
 books:

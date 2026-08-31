@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Why does matklad think mod.rs-less system is self-inconsistent?'
 deck: 'general'
 concepts:

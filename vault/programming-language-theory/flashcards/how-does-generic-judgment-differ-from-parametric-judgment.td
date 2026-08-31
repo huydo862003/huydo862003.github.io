@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'How does generic judgment differ from parametric judgment?'
 deck: 'general'
 books:

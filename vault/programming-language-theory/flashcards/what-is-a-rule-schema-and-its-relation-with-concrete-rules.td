@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is a rule schema and its relation with concrete rules?'
 deck: 'logic tools'
 concepts:

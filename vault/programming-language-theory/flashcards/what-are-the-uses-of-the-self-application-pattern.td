@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What are the uses of the self-application pattern?'
 deck: 'pure-lambda-calculus'
 concepts:

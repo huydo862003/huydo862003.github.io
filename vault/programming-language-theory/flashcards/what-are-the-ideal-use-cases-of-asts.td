@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What are the ideal use cases of ASTs?'
 deck: 'compiler implementation'
 books:

@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Why are most dynamically checked languages safe?'
 deck: 'type theory'
 concepts:

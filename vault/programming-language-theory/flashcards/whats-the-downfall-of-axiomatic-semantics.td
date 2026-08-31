@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What''s the downfall of axiomatic semantics?'
 deck: 'language theory'
 concepts:

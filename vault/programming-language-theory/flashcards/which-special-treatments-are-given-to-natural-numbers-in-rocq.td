@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Which special treatments are given to natural numbers in rocq?'
 deck: 'rocq-programming-language'
 concepts:

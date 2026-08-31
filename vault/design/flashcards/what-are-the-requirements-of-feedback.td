@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: DesignFlashcard
 _label: 'What are the requirements of feedback?'
 deck: 'general'
 concepts:

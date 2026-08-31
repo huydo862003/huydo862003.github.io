@@ -1,5 +1,5 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: 'Actual parameter/argument'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
@@ -8,7 +8,7 @@ books:
   - fref("programming-language-theory/books/programming-languages-application-and-interpretation/chapter-2-evaluation.td")
   - fref("programming-language-theory/books/practical-foundations-for-programming-languages/chapter-1-abstract-syntax.td")
 tags:
-  - 'language-feature-design'
+  - 'language feature design'
   - 'semantics'
   - 'syntax grammar'
 ---

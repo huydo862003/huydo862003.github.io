@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: DesignFlashcard
 _label: 'Can the quality of being natural for a mapping depend on the agent?'
 deck: 'general'
 concepts:

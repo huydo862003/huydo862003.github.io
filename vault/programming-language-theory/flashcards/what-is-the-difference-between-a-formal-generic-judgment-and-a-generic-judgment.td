@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is the difference between a formal generic judgment and a generic judgment?'
 deck: 'general'
 books:

@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is an evaluation strategy?'
 deck: 'pure-lambda-calculus'
 concepts:

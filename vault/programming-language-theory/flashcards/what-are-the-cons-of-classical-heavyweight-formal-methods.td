@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What are the cons of classical heavyweight formal methods'
 deck: 'language theory'
 books:

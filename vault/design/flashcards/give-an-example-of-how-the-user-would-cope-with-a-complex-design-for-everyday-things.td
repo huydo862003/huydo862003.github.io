@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: DesignFlashcard
 _label: 'Give an example of how the user would cope with a complex design for everyday things?'
 deck: 'general'
 ---

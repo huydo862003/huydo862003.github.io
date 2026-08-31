@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Which desirable properties should hold for most systems, which would not?'
 deck: 'language theory'
 books:

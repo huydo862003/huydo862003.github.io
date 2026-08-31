@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What does the intros tactic do?'
 deck: 'general'
 books:

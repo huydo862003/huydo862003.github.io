@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Why is the property that static types are checked at compile-time is valuable?'
 deck: 'type theory'
 books:

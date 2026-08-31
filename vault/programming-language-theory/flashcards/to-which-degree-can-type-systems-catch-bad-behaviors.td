@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'To which degree can type systems catch bad behaviors?'
 deck: 'type theory'
 books:

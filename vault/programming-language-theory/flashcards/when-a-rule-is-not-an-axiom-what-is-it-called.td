@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'When a rule is not an axiom, what is it called?'
 deck: 'proof technique'
 concepts:

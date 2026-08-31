@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'How to allow private members to access public members using lexical scoping?'
 deck: 'general'
 books:

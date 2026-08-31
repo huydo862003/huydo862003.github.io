@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What does it mean for a collection of inference rules to form the strongest judgment form that is closed under those rules?'
 deck: 'proof technique'
 books:

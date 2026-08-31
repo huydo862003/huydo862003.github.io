@@ -1,5 +1,5 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: 'Desired property: determinacy of one-step evaluation relation'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'

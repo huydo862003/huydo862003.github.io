@@ -1,12 +1,12 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: 'Polymorphic type system'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:
   - fref("programming-language-theory/books/software-foundations/chapter-1-basics-functional-programming-in-rocq.td")
 tags:
-  - 'language-feature-design'
+  - 'language feature design'
   - 'programming paradigm'
   - 'type theory'
 ---

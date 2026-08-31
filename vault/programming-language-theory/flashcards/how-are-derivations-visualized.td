@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'How are derivations visualized?'
 deck: 'proof technique'
 concepts:

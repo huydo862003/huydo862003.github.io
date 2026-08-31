@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is an object language?'
 deck: 'language theory'
 concepts:

@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'How to utilize the property of word-aligned addresses to optimize number''s placements?'
 deck: 'compiler implementation'
 books:

@@ -1,5 +1,5 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: 'Brouwer-Heyting-Kolmogorov (BHK) interpretation'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

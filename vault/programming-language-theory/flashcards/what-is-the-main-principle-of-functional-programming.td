@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is the main principle of functional programming?'
 deck: 'language theory'
 concepts:

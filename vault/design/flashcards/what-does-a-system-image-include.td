@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: DesignFlashcard
 _label: 'What does a system image include?'
 deck: 'general'
 concepts:

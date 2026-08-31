@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: DesignFlashcard
 _label: 'How can a signifier be both accidental and intentional?'
 deck: 'general'
 concepts:

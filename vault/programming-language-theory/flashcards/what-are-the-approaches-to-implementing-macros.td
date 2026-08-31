@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What are the approaches to implementing macros?'
 deck: 'language theory'
 concepts:

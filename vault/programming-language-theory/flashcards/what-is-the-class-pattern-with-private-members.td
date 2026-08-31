@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is the class pattern with private members?'
 deck: 'language theory'
 concepts:

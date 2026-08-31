@@ -1,5 +1,5 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: 'Constructor'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
@@ -7,7 +7,7 @@ books:
   - fref("programming-language-theory/books/programming-languages-application-and-interpretation/chapter-4-objects.td")
   - fref("programming-language-theory/books/software-foundations/chapter-1-basics-functional-programming-in-rocq.td")
 tags:
-  - 'language-feature-design'
+  - 'language feature design'
   - 'programming paradigm'
 ---
 

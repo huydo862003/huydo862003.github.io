@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What''s special about the church encoding of numbers and lists?'
 deck: 'pure-lambda-calculus'
 concepts:

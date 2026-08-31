@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Formalize the notion of being closed under renaming and substitution for variables and closed under renaming for symbolic parameters, in the context of uniformity of a rule?'
 deck: 'general'
 books:

@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What are two notions of entailment?'
 deck: 'general'
 books:

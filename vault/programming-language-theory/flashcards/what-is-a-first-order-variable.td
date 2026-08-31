@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is a first order variable?'
 deck: 'programming-language-basic'
 concepts:

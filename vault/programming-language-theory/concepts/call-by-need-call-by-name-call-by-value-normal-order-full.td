@@ -1,5 +1,5 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: 'Call by need call by name call by value normal order full'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

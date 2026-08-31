@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Why is union type popular in retrofitted type systems?'
 deck: 'compiler implementation'
 concepts:

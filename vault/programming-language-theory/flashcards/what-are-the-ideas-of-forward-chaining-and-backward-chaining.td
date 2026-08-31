@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What are the ideas of forward chaining and backward chaining?'
 deck: 'proof technique'
 concepts:

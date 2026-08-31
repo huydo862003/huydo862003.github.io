@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'The relation between an evaluator and an interpreter?'
 deck: 'programming-language-basic'
 concepts:

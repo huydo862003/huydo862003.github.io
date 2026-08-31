@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What''s the difference between constructors and functions in rocq?'
 deck: 'rocq-programming-language'
 concepts:

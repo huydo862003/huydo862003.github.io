@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Where can operators (in a bob harper''s sense) be placed in an AST?'
 deck: 'language theory'
 books:

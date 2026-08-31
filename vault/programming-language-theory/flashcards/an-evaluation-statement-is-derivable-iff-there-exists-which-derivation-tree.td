@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'An evaluation statement is derivable iff there exists which derivation tree?'
 deck: 'language theory'
 concepts:

@@ -1,5 +1,5 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: 'Complete'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
@@ -8,7 +8,7 @@ books:
 tags:
   - 'formal system'
   - 'logic'
-  - 'set-theory-relation'
+  - 'set theory relation'
 ---
 
 The adjective form of ${fref("programming-language-theory/concepts/completeness.td")}.

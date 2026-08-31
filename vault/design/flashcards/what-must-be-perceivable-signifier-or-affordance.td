@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: DesignFlashcard
 _label: 'What must be perceivable - signifier or affordance?'
 deck: 'general'
 concepts:

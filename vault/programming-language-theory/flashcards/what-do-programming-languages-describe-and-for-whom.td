@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What do programming languages describe, and for whom?'
 deck: 'programming-language-basic'
 books:

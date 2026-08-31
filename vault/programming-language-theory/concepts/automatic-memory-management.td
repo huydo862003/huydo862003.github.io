@@ -1,5 +1,5 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: 'Automatic memory management'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

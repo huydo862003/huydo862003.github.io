@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What some structural properties of derivability?'
 deck: 'general'
 books:

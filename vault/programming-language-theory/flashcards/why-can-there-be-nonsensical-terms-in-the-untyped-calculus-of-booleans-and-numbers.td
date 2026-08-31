@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Why can there be nonsensical terms in the untyped calculus of booleans and numbers?'
 deck: 'language theory'
 concepts:

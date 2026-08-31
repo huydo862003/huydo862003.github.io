@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is the syntax for conditional expressions in rocq?'
 deck: 'rocq-programming-language'
 concepts:

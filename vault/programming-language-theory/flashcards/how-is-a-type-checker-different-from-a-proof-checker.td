@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'How is a type checker different from a proof checker?'
 deck: 'type theory'
 books:

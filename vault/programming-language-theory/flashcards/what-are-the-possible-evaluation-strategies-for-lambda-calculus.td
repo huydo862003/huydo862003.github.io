@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What are the possible evaluation strategies for lambda calculus?'
 deck: 'pure-lambda-calculus'
 books:

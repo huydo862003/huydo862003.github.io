@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Are normal forms always a value?'
 deck: 'pure-lambda-calculus'
 concepts:

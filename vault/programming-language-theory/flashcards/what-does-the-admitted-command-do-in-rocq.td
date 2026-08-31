@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What does the admitted command do in rocq?'
 deck: 'rocq-programming-language'
 concepts:

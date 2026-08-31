@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Why is subclass = subtype a controversial choice?'
 deck: 'type theory'
 books:

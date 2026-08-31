@@ -1,5 +1,5 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: 'Mixin'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is a common pattern of many reactive systems?'
 deck: 'type theory'
 books:

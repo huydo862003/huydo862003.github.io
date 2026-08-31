@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What are the general strategies for handling partiality in type systems?'
 deck: 'type theory'
 books:

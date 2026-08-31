@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is structural induction?'
 deck: 'language theory'
 concepts:

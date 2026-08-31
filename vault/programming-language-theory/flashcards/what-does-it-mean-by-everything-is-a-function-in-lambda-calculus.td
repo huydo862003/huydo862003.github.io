@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What does it mean by "everything is a function" in lambda calculus?'
 deck: 'pure-lambda-calculus'
 concepts:

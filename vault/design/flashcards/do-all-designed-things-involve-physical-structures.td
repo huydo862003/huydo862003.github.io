@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: DesignFlashcard
 _label: 'Do all designed things involve physical structures?'
 deck: 'general'
 ---

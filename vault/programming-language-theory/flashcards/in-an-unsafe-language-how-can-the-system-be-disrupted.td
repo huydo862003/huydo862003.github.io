@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'In an unsafe language, how can the system be disrupted?'
 deck: 'type theory'
 books:

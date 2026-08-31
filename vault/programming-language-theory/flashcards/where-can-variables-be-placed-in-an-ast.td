@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Where can variables be placed in an AST?'
 deck: 'language theory'
 concepts:

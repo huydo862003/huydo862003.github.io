@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Which symbol is used to denote enriched lambda calculus with numbers and booleans?'
 deck: 'pure-lambda-calculus'
 concepts:

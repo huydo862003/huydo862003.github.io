@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What are the two broad categories of software tools for helping constructs proofs of logical propositions?'
 deck: 'general'
 books:

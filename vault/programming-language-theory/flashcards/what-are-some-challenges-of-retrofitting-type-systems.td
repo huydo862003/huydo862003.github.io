@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What are some challenges of retrofitting type systems?'
 deck: 'compiler implementation'
 concepts:

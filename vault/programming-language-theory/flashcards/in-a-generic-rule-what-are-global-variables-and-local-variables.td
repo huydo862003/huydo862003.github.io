@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'In a generic rule, what are global variables and local variables?'
 deck: 'general'
 books:

@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'How must the concept of uniformity of a rule be extended?'
 deck: 'general'
 books:

@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What are lambda terms and lambda abstractions?'
 deck: 'pure-lambda-calculus'
 concepts:

@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What does the evidence for generic derivability consist of?'
 deck: 'general'
 books:

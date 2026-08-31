@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Why are type systems a valuable maintenance tool?'
 deck: 'type theory'
 books:

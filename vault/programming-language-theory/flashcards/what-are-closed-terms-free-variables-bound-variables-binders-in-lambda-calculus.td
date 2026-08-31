@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What are closed terms, free variables, bound variables, binders in lambda calculus?'
 deck: 'pure-lambda-calculus'
 books:

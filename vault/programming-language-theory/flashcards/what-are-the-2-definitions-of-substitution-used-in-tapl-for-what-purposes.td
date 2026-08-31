@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What are the 2 definitions of substitution used in TAPL? for what purposes?'
 deck: 'pure-lambda-calculus'
 concepts:

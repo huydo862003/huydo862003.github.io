@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'In rocq, what does types and values have to do with theorems and proofs?'
 deck: 'general'
 books:

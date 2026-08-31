@@ -1,5 +1,5 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: 'Gradual typing macro gradual typing micro gradual typing'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

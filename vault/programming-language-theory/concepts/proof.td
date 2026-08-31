@@ -1,14 +1,14 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: 'Proof'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
 tags:
   - 'formal system'
-  - 'language-feature-design'
+  - 'language feature design'
   - 'logic'
   - 'programming paradigm'
-  - 'proof-reason-technique'
+  - 'proof reason technique'
 ---
 
 Tools: Rocq (formerly Coq)

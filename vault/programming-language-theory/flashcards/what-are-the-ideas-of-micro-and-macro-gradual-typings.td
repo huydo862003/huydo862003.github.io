@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What are the ideas of micro and macro gradual typings?'
 deck: 'type theory'
 concepts:

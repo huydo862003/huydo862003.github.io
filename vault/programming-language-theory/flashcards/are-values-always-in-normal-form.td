@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Are values always in normal form?'
 deck: 'language theory'
 concepts:

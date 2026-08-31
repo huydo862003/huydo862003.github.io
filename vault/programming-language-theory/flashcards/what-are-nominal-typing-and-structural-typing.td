@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What are nominal typing and structural typing?'
 deck: 'type theory'
 concepts:

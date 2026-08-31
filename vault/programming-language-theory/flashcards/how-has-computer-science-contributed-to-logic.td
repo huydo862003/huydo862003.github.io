@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'How has computer science contributed to logic?'
 deck: 'general'
 books:

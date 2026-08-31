@@ -1,5 +1,5 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: 'Sequential evaluation'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
@@ -7,7 +7,7 @@ books:
   - fref("programming-language-theory/books/programming-languages-application-and-interpretation/chapter-1-learning-smol-standard-model-of-languages.td")
 tags:
   - 'concurrency theory'
-  - 'language-feature-design'
+  - 'language feature design'
   - 'runtime'
   - 'semantics'
 ---

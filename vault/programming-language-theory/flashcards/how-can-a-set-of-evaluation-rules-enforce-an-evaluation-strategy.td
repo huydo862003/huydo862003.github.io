@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'How can a set of evaluation rules enforce an evaluation strategy?'
 deck: 'language theory'
 concepts:

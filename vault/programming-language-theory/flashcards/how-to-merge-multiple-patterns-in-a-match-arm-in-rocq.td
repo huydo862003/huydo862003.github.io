@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'How to merge multiple patterns in a match arm in rocq?'
 deck: 'rocq-programming-language'
 books:

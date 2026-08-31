@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'When is a rule satisfied by a relation?'
 deck: 'logic tools'
 concepts:

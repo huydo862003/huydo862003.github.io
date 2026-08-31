@@ -1,10 +1,10 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: 'Type narrowing'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
 tags:
-  - 'language-feature-design'
+  - 'language feature design'
   - 'semantics'
   - 'type theory'
 ---

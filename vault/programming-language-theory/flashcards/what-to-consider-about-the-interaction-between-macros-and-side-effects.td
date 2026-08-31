@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What to consider about the interaction between macros and side effects?'
 deck: 'programming-language-basic'
 concepts:

@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'According to robert (bob) harper, what is the scope of a binding?'
 deck: 'language theory'
 concepts:

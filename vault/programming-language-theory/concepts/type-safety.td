@@ -1,12 +1,12 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: 'Type safety'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:
   - fref("programming-language-theory/books/practical-foundations-for-programming-languages/preface.td")
 tags:
-  - 'language-feature-design'
+  - 'language feature design'
   - 'semantics'
   - 'type theory'
 ---

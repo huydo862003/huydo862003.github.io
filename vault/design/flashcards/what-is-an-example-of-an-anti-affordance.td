@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: DesignFlashcard
 _label: 'What is an example of an anti-affordance?'
 deck: 'general'
 concepts:

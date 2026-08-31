@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'According to computability theory, why do we split type checkers from parsers?'
 deck: 'compiler implementation'
 books:

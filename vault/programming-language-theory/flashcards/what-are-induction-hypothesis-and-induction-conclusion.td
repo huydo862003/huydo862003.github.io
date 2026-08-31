@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What are induction hypothesis and induction conclusion?'
 deck: 'proof technique'
 books:

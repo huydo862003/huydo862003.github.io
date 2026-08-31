@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What does lambda calculus consist of in its purest form?'
 deck: 'pure-lambda-calculus'
 concepts:

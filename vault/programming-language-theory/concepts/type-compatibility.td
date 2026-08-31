@@ -1,14 +1,14 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: 'Type compatibility'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
 books:
   - fref("programming-language-theory/books/programming-languages-application-and-interpretation/chapter-5-types.td")
 tags:
-  - 'language-feature-design'
+  - 'language feature design'
   - 'semantics'
-  - 'set-theory-relation'
+  - 'set theory relation'
   - 'type theory'
 ---
 

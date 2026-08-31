@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'How to destruct multiple variables at once in rocq?'
 deck: 'rocq-programming-language'
 books:

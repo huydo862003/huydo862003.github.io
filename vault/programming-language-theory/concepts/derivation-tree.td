@@ -1,5 +1,5 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: 'Derivation tree'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
@@ -8,7 +8,7 @@ books:
 tags:
   - 'linguistics'
   - 'logic'
-  - 'set-theory-relation'
+  - 'set theory relation'
   - 'syntax grammar'
 ---
 

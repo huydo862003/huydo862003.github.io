@@ -1,12 +1,12 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: 'Command'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:
   - fref("programming-language-theory/books/software-foundations/chapter-1-basics-functional-programming-in-rocq.td")
 tags:
-  - 'language-feature-design'
+  - 'language feature design'
   - 'syntax grammar'
 ---
 

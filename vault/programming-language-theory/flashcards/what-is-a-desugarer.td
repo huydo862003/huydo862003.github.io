@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is a desugarer?'
 deck: 'compiler implementation'
 concepts:

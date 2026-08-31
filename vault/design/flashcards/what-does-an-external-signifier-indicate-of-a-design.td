@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: DesignFlashcard
 _label: 'What does an external signifier indicate of a design?'
 deck: 'general'
 concepts:

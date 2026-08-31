@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is the difference between a formal derivability judgment and a derivability judgment?'
 deck: 'general'
 books:

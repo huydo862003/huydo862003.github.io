@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is an equivalent way of defining $J_1, \dots, J_n \vdash_{\mathcal{R}} J$?'
 deck: 'general'
 books:

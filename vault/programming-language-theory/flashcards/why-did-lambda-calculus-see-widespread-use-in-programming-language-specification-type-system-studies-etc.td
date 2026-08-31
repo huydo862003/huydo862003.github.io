@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Why did lambda calculus see widespread use in programming language specification, type system studies, etc?'
 deck: 'pure-lambda-calculus'
 books:

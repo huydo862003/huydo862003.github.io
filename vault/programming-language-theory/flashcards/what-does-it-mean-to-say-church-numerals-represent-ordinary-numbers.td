@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What does it mean to say church numerals represent ordinary numbers?'
 deck: 'pure-lambda-calculus'
 concepts:

@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Showing that derivability is strictly stronger than admissibility'
 deck: 'general'
 books:

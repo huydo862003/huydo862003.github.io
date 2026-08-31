@@ -1,5 +1,5 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: 'Rule schema inference rule concrete rule instance of an'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

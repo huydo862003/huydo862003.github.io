@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What are some examples of automated theorem provers?'
 deck: 'compiler implementation'
 concepts:

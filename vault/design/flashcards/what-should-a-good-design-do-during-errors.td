@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: DesignFlashcard
 _label: 'What should a good design do during errors?'
 deck: 'general'
 ---

@@ -1,10 +1,10 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: 'Tagged union'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 tags:
-  - 'language-feature-design'
+  - 'language feature design'
   - 'programming paradigm'
   - 'type theory'
 ---

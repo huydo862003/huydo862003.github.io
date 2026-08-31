@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'In which application is strong normalization desirable?'
 deck: 'language theory'
 books:

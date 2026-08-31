@@ -1,5 +1,5 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: 'Safety check'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
@@ -7,7 +7,7 @@ books:
   - fref("programming-language-theory/books/programming-languages-application-and-interpretation/chapter-5-types.td")
 tags:
   - 'design principle'
-  - 'language-feature-design'
+  - 'language feature design'
   - 'programming paradigm'
   - 'runtime'
 ---

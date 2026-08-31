@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'How to make accessors on sum types safe?'
 deck: 'type theory'
 concepts:

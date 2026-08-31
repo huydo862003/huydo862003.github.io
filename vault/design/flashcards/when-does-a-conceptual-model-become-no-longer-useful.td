@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: DesignFlashcard
 _label: 'When does a conceptual model become no longer useful?'
 deck: 'general'
 concepts:

@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Which values are truthy in rocq?'
 deck: 'rocq-programming-language'
 concepts:

@@ -1,5 +1,5 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: '2-dimensional inference rule format'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
@@ -7,7 +7,7 @@ books:
   - fref("programming-language-theory/books/types-and-programming-languages/chapter-3-untyped-arithmetic-expressions.td")
 tags:
   - 'logic'
-  - 'set-theory-relation'
+  - 'set theory relation'
   - 'syntax grammar'
 ---
 

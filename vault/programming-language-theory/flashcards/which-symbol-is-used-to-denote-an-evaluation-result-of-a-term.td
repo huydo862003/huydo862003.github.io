@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Which symbol is used to denote an evaluation result of a term?'
 deck: 'language theory'
 concepts:

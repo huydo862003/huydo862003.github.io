@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Can recursion be obtained through desugaring alone in symply typed lambda calculus?'
 deck: 'type theory'
 books:

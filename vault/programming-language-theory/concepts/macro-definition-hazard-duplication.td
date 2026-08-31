@@ -1,5 +1,5 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: 'Macro definition hazard: duplication'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
@@ -8,7 +8,7 @@ books:
 tags:
   - 'compiler implementation'
   - 'design principle'
-  - 'metaprogramming-self-reflection'
+  - 'metaprogramming self reflection'
 ---
 
 A ${fref("programming-language-theory/concepts/macro.td")} pitfall where an expression passed as argument is evaluated multiple times in the ${fref("programming-language-theory/concepts/macro-expansion.td")}, causing unintended repeated ${fref("programming-language-theory/concepts/side-effect.td")}s or performance issues.

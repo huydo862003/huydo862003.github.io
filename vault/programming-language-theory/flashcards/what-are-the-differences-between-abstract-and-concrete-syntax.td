@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What are the differences between abstract and concrete syntax?'
 deck: 'programming-language-basic'
 books:

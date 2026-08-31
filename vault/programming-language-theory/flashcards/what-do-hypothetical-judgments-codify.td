@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What do hypothetical judgments codify?'
 deck: 'general'
 books:

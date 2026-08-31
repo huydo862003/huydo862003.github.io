@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'In how many stages does the transformation from concrete syntax to abstract syntax undergo?'
 deck: 'compiler implementation'
 books:

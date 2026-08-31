@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: DesignFlashcard
 _label: 'What is atomic design?'
 deck: 'design methodology'
 concepts:

@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is another name for the divergent combinator?'
 deck: 'pure-lambda-calculus'
 concepts:

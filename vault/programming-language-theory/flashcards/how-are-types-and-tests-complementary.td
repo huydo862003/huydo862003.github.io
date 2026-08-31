@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'How are types and tests complementary?'
 deck: 'programming-language-basic'
 books:

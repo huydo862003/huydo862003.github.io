@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'In computability theory terms, what are the differences between parsers and type checkers?'
 deck: 'language theory'
 books:

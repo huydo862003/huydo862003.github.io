@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What are the desirable properties of the evaluation relation there can be in a system?'
 deck: 'pure-lambda-calculus'
 books:

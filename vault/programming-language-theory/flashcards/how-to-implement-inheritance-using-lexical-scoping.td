@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'How to implement inheritance using lexical scoping?'
 deck: 'general'
 books:

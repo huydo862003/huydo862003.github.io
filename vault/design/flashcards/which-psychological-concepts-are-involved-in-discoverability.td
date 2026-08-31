@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: DesignFlashcard
 _label: 'Which psychological concepts are involved in discoverability?'
 deck: 'general'
 concepts:

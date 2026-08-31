@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Between if-splitting and conditionals, which one can introduce unions, which one eliminates?'
 deck: 'type theory'
 concepts:

@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'How to introduce infix syntax in rocq?'
 deck: 'language theory'
 concepts:

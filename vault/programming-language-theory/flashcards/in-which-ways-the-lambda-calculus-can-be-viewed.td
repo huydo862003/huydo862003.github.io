@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'In which ways the lambda calculus can be viewed?'
 deck: 'pure-lambda-calculus'
 concepts:

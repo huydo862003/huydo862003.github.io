@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'How to encode pairs in lambda calculus?'
 deck: 'pure-lambda-calculus'
 concepts:

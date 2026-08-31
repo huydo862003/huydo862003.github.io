@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Which terms are deemed values in untyped lambda calculus?'
 deck: 'pure-lambda-calculus'
 concepts:

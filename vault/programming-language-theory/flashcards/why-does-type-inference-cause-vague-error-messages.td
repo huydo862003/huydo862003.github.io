@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Why does type inference cause vague error messages?'
 deck: 'compiler implementation'
 concepts:

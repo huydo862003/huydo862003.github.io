@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Does rust allow linking of different versions of a crate to the same binary, and how?'
 deck: 'general'
 ---

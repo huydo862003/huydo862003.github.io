@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Disadvantages and advantages of union types compared to sum types?'
 deck: 'type theory'
 books:

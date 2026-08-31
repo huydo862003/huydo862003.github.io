@@ -1,5 +1,5 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: 'Pure untyped lambda calculus church numeral'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

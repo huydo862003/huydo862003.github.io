@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What are the methods of finding derivations?'
 deck: 'logic tools'
 concepts:

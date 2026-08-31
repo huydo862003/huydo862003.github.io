@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is the usual treatment for the substitution problems (variable capture, etc.)'
 deck: 'pure-lambda-calculus'
 concepts:

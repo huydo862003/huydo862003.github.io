@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is proof by rewriting in rocq?'
 deck: 'rocq-programming-language'
 concepts:

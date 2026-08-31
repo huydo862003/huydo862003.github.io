@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: DesignFlashcard
 _label: 'How was the term "affordance" misused by UI designers?'
 deck: 'general'
 concepts:

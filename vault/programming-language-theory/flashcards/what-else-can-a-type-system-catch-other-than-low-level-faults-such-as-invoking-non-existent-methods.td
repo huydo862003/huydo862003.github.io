@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What else can a type system catch other than low-level faults such as invoking non-existent methods'
 deck: 'type theory'
 concepts:

@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'How to desugar letrec in racket?'
 deck: 'general'
 books:

@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Why is forward chaining undirected?'
 deck: 'proof technique'
 concepts:

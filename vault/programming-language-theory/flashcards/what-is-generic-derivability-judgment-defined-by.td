@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is generic derivability judgment defined by?'
 deck: 'general'
 books:

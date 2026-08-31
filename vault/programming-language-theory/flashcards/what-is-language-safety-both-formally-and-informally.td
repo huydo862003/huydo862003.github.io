@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is language safety, both formally and informally?'
 deck: 'programming-language-basic'
 concepts:

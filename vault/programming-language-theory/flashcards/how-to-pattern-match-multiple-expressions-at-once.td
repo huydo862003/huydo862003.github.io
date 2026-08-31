@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'How to pattern match multiple expressions at once?'
 deck: 'general'
 books:

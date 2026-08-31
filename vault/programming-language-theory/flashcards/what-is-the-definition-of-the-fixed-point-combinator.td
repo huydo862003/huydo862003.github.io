@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is the definition of the fixed-point combinator?'
 deck: 'pure-lambda-calculus'
 concepts:

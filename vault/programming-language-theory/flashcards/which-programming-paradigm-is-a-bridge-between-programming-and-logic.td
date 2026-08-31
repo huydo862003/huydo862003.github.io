@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Which programming paradigm is a bridge between programming and logic?'
 deck: 'general'
 books:

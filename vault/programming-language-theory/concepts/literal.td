@@ -1,12 +1,12 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: 'Literal'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:
   - fref("programming-language-theory/books/programming-languages-application-and-interpretation/chapter-2-evaluation.td")
 tags:
-  - 'language-feature-design'
+  - 'language feature design'
   - 'syntax grammar'
 ---
 

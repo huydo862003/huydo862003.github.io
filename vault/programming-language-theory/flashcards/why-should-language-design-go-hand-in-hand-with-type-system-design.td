@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Why should language design go hand in hand with type system design?'
 deck: 'type theory'
 books:

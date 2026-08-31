@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What are combinators in lambda calculus?'
 deck: 'pure-lambda-calculus'
 concepts:

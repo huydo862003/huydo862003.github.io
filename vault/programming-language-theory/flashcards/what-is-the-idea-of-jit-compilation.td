@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is the idea of JIT compilation?'
 deck: 'compiler implementation'
 concepts:

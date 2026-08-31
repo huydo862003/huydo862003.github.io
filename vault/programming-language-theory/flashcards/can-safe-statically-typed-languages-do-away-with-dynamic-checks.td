@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Can safe statically typed languages do away with dynamic checks?'
 deck: 'type theory'
 ---

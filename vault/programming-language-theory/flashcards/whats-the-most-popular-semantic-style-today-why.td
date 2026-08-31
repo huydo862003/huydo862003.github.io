@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What''s the most popular semantic style today? why?'
 deck: 'language theory'
 concepts:

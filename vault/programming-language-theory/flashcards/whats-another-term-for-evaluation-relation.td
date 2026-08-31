@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What''s another term for evaluation relation?'
 deck: 'language theory'
 concepts:

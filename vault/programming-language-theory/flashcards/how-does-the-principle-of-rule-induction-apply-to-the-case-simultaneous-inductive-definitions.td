@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'How does the principle of rule induction apply to the case simultaneous inductive definitions?'
 deck: 'proof technique'
 concepts:

@@ -1,12 +1,12 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: 'Static dispatch'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:
   - fref("programming-language-theory/books/programming-languages-application-and-interpretation/chapter-4-objects.td")
 tags:
-  - 'language-feature-design'
+  - 'language feature design'
   - 'program analysis'
   - 'programming paradigm'
 ---

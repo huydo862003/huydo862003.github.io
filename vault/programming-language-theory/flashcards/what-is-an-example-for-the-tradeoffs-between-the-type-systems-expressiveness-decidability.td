@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is an example for the tradeoffs between the type system''s expressiveness & decidability?'
 deck: 'language theory'
 books:

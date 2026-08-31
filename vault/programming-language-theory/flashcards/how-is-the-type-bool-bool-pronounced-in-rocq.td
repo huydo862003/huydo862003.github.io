@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'How is the type "bool -> bool" pronounced in rocq?'
 deck: 'rocq-programming-language'
 concepts:

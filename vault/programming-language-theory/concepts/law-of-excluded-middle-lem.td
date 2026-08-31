@@ -1,5 +1,5 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: 'Law of excluded middle (LEM)'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'

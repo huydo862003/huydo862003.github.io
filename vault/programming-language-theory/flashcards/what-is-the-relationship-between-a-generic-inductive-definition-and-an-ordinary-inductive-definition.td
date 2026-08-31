@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is the relationship between a generic inductive definition and an ordinary inductive definition?'
 deck: 'general'
 books:

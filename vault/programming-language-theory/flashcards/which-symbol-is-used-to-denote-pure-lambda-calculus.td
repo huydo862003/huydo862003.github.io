@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Which symbol is used to denote pure lambda calculus?'
 deck: 'pure-lambda-calculus'
 concepts:

@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What''s the difference between reflexivity and simpl in rocq?'
 deck: 'rocq-programming-language'
 concepts:

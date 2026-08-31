@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What makes a type system sound?'
 deck: 'type theory'
 concepts:

@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: DesignFlashcard
 _label: 'Why is affordance not a fixed property?'
 deck: 'general'
 concepts:

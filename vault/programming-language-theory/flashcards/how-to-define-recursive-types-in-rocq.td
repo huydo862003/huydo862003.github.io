@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'How to define recursive types in rocq?'
 deck: 'rocq-programming-language'
 concepts:

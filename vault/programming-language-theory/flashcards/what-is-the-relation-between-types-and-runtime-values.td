@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is the relation between types and runtime values?'
 deck: 'type theory'
 books:

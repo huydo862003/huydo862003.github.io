@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What does the principle of ordinary induction state?'
 deck: 'proof technique'
 concepts:

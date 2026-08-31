@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is the motivation for hypothetical inductive definitions?'
 deck: 'general'
 books:

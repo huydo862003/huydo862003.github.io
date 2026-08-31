@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is a program in grammar?'
 deck: 'language theory'
 concepts:

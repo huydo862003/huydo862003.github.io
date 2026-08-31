@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Does the choice of evaluation strategy significantly affect the type system?'
 deck: 'type theory'
 concepts:

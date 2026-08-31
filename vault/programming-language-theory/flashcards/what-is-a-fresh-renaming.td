@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is a fresh renaming?'
 deck: 'language theory'
 concepts:

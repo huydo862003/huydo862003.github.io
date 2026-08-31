@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What does the transition function do in the structural operational semantics?'
 deck: 'language theory'
 concepts:

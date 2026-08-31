@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is beta reduction?'
 deck: 'pure-lambda-calculus'
 concepts:

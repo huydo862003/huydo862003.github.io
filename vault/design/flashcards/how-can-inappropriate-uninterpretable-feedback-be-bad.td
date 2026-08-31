@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: DesignFlashcard
 _label: 'How can inappropriate, uninterpretable feedback be bad?'
 deck: 'general'
 concepts:

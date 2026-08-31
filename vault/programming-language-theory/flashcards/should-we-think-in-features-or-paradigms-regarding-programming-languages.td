@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Should we think in features or paradigms regarding programming languages?'
 deck: 'programming-language-basic'
 books:

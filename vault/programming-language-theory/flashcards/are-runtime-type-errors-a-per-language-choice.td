@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Are runtime type errors a per-language choice?'
 deck: 'type theory'
 concepts:

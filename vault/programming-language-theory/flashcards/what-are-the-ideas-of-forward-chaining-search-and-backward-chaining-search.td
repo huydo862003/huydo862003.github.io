@@ -1,7 +1,7 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What are the ideas of forward chaining search and backward chaining search?'
-deck: 'set-theory-relation'
+deck: 'set theory relation'
 books:
   - fref("programming-language-theory/books/software-foundations/chapter-2-inductive-definitions.td")
 ---

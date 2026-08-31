@@ -1,5 +1,5 @@
 ---
-_type: Book
+_type: PltBook
 _label: 'Chapter 1. Abstract syntax'
 journey: fref("programming-language-theory/index.td")
 concepts:

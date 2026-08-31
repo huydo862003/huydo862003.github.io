@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What kinds of languages in which parametric judgments are required to specify?'
 deck: 'general'
 books:

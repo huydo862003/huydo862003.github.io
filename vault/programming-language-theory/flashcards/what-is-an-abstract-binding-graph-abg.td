@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is an abstract binding graph (ABG)?'
 deck: 'language theory'
 concepts:

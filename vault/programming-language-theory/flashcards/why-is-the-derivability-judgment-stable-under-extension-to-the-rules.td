@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Why is the derivability judgment stable under extension to the rules?'
 deck: 'general'
 books:

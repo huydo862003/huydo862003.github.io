@@ -1,5 +1,5 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: 'Automated theorem prover sat solver smt solver'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

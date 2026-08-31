@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What''s the difference between a judgment and a judgment form?'
 deck: 'logic tools'
 books:

@@ -1,5 +1,5 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: 'Untyped calculus of booleans and numbers'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

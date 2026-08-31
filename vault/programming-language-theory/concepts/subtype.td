@@ -1,15 +1,15 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: 'Subtype'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:
   - fref("programming-language-theory/books/programming-languages-application-and-interpretation/chapter-5-types.td")
 tags:
-  - 'language-feature-design'
+  - 'language feature design'
   - 'programming paradigm'
   - 'semantics'
-  - 'set-theory-relation'
+  - 'set theory relation'
   - 'type theory'
 ---
 

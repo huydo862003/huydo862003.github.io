@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 deck: 'general'
 ---
 

@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is a value in programming language calculus?'
 deck: 'language theory'
 concepts:

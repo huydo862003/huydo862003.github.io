@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What''s the benefit of adding simpl to proofs already with reflexivity?'
 deck: 'general'
 books:

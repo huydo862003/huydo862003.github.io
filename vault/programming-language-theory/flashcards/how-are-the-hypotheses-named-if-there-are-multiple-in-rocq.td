@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'How are the hypotheses named if there are multiple in rocq?'
 deck: 'general'
 books:

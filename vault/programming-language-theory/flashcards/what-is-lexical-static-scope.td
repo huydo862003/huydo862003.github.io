@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is lexical/static scope?'
 deck: 'programming-language-basic'
 concepts:

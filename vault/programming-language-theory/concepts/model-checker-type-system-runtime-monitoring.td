@@ -1,5 +1,5 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: 'Model checker type system runtime monitoring'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'

@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What can a hypothetical inductive definition be ragarded as an ordinary inductive definition of?'
 deck: 'general'
 books:

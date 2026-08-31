@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What does it mean by the judgment $gamma dash_mathcal{r} k$, where $gamma$ is a finite set of basic judgments, $k$ is a basic judgment and $mathcal{r}$ is a set of rules?'
 deck: 'general'
 books:

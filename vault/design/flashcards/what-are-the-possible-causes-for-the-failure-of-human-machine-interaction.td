@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: DesignFlashcard
 _label: 'What are the possible causes for the failure of human-machine interaction?'
 deck: 'general'
 ---

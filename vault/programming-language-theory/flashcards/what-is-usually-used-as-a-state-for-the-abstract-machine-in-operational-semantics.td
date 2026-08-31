@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is usually used as a state for the abstract machine in operational semantics?'
 deck: 'language theory'
 concepts:

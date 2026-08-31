@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: DesignFlashcard
 _label: 'Why should we maintain a visual hierarchy?'
 deck: 'design methodology'
 concepts:

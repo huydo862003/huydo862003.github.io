@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is the form of a generic rule?'
 deck: 'general'
 books:

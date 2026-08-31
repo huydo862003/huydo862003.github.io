@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What are substitution target and subject?'
 deck: 'language theory'
 concepts:

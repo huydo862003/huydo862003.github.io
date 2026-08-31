@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: DesignFlashcard
 _label: 'What are the effects of a coherent and incoherent system image?'
 deck: 'general'
 concepts:

@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'When do we call an evaluation statement is derivable?'
 deck: 'pure-lambda-calculus'
 concepts:

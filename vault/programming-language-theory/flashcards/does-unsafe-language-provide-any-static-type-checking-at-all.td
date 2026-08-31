@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Does unsafe language provide any static type checking at all?'
 deck: 'type theory'
 books:

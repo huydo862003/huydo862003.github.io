@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Name some classical heavyweight formal methods'
 deck: 'language theory'
 concepts:

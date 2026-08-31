@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'How to place declarations inside a module in rocq?'
 deck: 'rocq-programming-language'
 concepts:

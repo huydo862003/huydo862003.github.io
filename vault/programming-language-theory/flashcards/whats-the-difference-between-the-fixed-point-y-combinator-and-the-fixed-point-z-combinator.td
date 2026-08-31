@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What''s the difference between the fixed-point y-combinator and the fixed-point z-combinator?'
 deck: 'pure-lambda-calculus'
 books:

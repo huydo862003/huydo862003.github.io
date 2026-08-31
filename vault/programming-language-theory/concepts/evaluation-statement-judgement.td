@@ -1,5 +1,5 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: 'Evaluation statement/judgement'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
@@ -8,7 +8,7 @@ books:
 tags:
   - 'logic'
   - 'semantics'
-  - 'set-theory-relation'
+  - 'set theory relation'
 ---
 
 A formal assertion of the form $t \to t'$ or $t \Downarrow v$, stating that a term reduces to another term or evaluates to a value under specific ${fref("programming-language-theory/concepts/inference-rule.td")}s.

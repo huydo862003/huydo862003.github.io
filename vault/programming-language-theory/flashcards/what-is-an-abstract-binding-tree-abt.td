@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is an abstract binding tree (ABT)?'
 deck: 'language theory'
 concepts:

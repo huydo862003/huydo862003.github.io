@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is a closure in programming language?'
 deck: 'programming-language-basic'
 concepts:

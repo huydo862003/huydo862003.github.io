@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'How do we make sure the formal generic judgment behaves as an expected generic judgment'
 deck: 'general'
 books:

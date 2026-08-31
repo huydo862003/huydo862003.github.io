@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'The relation between the set of values and the set of terms?'
 deck: 'language theory'
 concepts:

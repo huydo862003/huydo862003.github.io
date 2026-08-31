@@ -1,11 +1,11 @@
 ---
-_type: Concept
+_type: PltConcept
 _label: 'Decision procedure'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 tags:
   - 'computation theory'
-  - 'data-structure-algorithm'
+  - 'data structure algorithm'
   - 'logic'
 ---
 

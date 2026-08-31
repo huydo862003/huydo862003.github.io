@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Does a language specify how it should be evaluated?'
 deck: 'language theory'
 concepts:

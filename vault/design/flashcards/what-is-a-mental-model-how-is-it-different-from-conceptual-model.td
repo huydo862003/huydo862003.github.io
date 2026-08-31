@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: DesignFlashcard
 _label: 'What is a mental model? how is it different from conceptual model?'
 deck: 'general'
 concepts:

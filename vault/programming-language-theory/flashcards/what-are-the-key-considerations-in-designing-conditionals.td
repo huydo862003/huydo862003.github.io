@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What are the key considerations in designing conditionals?'
 deck: 'compiler implementation'
 concepts:

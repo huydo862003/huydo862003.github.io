@@ -1,11 +1,11 @@
 ---
-_type: Concept
+_type: DesignConcept
 _label: 'Visual hierarchy'
 journey: fref("design/index.td")
 status: 'reviewing'
 tags:
   - 'design pattern'
-  - 'UI-UX'
+  - 'UI UX'
 ---
 
 The strategic arrangement and styling of elements-using size, color, and contrast-to guide the user's eye sequentially through the most important information.

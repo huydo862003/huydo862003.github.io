@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Are languages inherently compiled/interpreted?'
 deck: 'programming-language-basic'
 books:

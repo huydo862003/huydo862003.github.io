@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What are some senses of the word "functional" in "functional programming"?'
 deck: 'language theory'
 concepts:

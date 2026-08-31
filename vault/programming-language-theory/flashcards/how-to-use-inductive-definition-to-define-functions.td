@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'How to use inductive definition to define functions?'
 deck: 'logic tools'
 concepts:

@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'In rocq, which values can block simplification?'
 deck: 'general'
 books:

@@ -1,11 +1,11 @@
 ---
-_type: Concept
+_type: DesignConcept
 _label: 'Responsive design'
 journey: fref("design/index.td")
 status: 'mastered'
 tags:
   - 'design pattern'
-  - 'UI-UX'
+  - 'UI UX'
 ---
 
 A design approach that ensures an interface adapts fluidly to different screen sizes, orientations, and resolutions.

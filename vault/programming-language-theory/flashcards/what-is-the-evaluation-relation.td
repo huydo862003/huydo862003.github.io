@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is the evaluation relation?'
 deck: 'pure-lambda-calculus'
 concepts:

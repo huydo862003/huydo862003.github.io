@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What is the technique of induction on derivations?'
 deck: 'pure-lambda-calculus'
 concepts:

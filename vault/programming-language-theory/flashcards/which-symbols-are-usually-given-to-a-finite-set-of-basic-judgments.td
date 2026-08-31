@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'Which symbols are usually given to a finite set of basic judgments?'
 deck: 'general'
 books:

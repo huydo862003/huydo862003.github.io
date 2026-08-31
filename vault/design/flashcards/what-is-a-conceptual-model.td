@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: DesignFlashcard
 _label: 'What is a conceptual model?'
 deck: 'general'
 concepts:

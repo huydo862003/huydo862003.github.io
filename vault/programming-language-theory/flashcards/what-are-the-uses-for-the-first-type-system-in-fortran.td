@@ -1,5 +1,5 @@
 ---
-_type: Flashcard
+_type: PltFlashcard
 _label: 'What are the uses for the first type system in fortran?'
 deck: 'type theory'
 books:
