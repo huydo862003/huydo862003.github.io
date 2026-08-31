@@ -208,8 +208,8 @@ importers:
   .:
     devDependencies:
       typerighter:
-        specifier: 0.15.1
-        version: 0.15.1(@types/markdown-it@14.1.2)(jiti@2.7.0)
+        specifier: 0.17.1
+        version: 0.17.1(@types/markdown-it@14.1.2)(jiti@2.7.0)
 
 packages:
 
@@ -237,6 +237,20 @@ packages:
   '@clack/prompts@1.7.0':
     resolution: {integrity: sha512-y7/yvZ2TPAnR9+jnc00klvNNLkJiXFFrQA/hlLCcxA9a2A4zQIOimyFQ9XfwYKiGD1fb5GY8vbKIIgO8d5Tb2A==}
     engines: {node: '>= 20.12.0'}
+
+  '@floating-ui/core@1.8.0':
+    resolution: {integrity: sha512-0CIZ5itps/8x7BG8dEIhs53BvCUH2PCoogtakwRTut+Arm58sJooJ0AuZhLw2HJYIR5cMLNPBSS728sPho2khQ==}
+
+  '@floating-ui/dom@1.8.0':
+    resolution: {integrity: sha512-yXSrzeHZBTZadLOlfyhCkJHNeLJnHRnRInwdZ40L7ZiaAtrBwoYlsDrX3v5zB1Utk7CLfzcOVnVVWoXEky7Ceg==}
+
+  '@floating-ui/utils@0.2.12':
+    resolution: {integrity: sha512-HpCo8tmWzLVad5s2d19EhAz5zqrrQ6s69qd6moPMQvkOuSwDT1YgRfWSVuc4ennqrgv3OHppiOGMQ7oC13yIww==}
+
+  '@floating-ui/vue@2.0.1':
+    resolution: {integrity: sha512-043dyEKD9TDSfz080YH2vobubgg+NIo/9Fw4RAl7sEMpD8Am1DNrrSTl/GpMBjyGHoD/FbJY2QLawY+HSQsEIA==}
+    peerDependencies:
+      vue: '>=3.3.0'
 
   '@fontsource-variable/archivo@5.3.0':
     resolution: {integrity: sha512-HogK8FJelrD1o7TlZlkIVtHgc20bO5PZRWE7mUeUTdMN055alznQV6/00J00IBeu8FQAH4s3zW9UJNvKExXf+g==}
@@ -591,11 +605,11 @@ packages:
     peerDependencies:
       vite: ^5.2.0 || ^6 || ^7 || ^8
 
-  '@typerighter/rpc-client@0.15.1':
-    resolution: {integrity: sha512-TOZfhKYYuwqRNbdJkZSjW820fia0bzEH/1dChE4Mpauptj17U5ADDFpUVqz1+PAfNBNLEzFP0UqTeYeViHgxqQ==}
+  '@typerighter/rpc-client@0.17.1':
+    resolution: {integrity: sha512-msFLU1uyr8LrB7Rv383lGlWhc2cSB8XE50Nau+ZEULzGPdYgqkL5e6+XG3Z3pfBbkZp8VEL4+y9J31P/KcTRWQ==}
 
-  '@typerighter/rpc-server@0.15.1':
-    resolution: {integrity: sha512-K+G8/w7gsH/i421IVfDi4oV1qETkx+5xJFYw5nkKE8Ytu2navJU36QbKBqlg5aUROn9xxbI0/kAM80ousRSTvg==}
+  '@typerighter/rpc-server@0.17.1':
+    resolution: {integrity: sha512-/KMeturSxnAK89o/Hradb3jUdaaCxKKl8lYIDfX75pn3Oholgtmv3vngx4of9kYMCbCshPThQgmPTHiP43sIsg==}
 
   '@types/hast@3.0.5':
     resolution: {integrity: sha512-rp/ezSWaD1m44dPKICGhiskI13nVr7qTloFwDa/IYkhhf5nzwP+zIQcIJh3WIFSBOy/H1PzB40jPjMDksN4F+g==}
@@ -1073,8 +1087,8 @@ packages:
   trim-lines@3.0.1:
     resolution: {integrity: sha512-kRj8B+YHZCc9kQYdWfJB2/oUl9rA99qbowYYBtr4ui4mZyAQ2JpvVBd/6U2YloATfqBhBTSMhTpgBHtU0Mf3Rg==}
 
-  typerighter@0.15.1:
-    resolution: {integrity: sha512-juTT3bVjbasqQvwftMEl5o2+A4pI9KnFfXSIVIDEWHcrf+UNbbUlTmqNi4004BddPjIip2/SVqP5A1GyPunbpQ==}
+  typerighter@0.17.1:
+    resolution: {integrity: sha512-OiUzVrc+GyNYaDCaeUaJYZGGrlDxHnLGlbtioA5190sKZ99AkJrWoy1H2g0IfCJ6Rz2hlitcA3ljYt9fPUL/Qg==}
     hasBin: true
 
   uc.micro@2.1.0:
@@ -1181,6 +1195,23 @@ snapshots:
       fast-string-width: 3.0.2
       fast-wrap-ansi: 0.2.2
       sisteransi: 1.0.5
+
+  '@floating-ui/core@1.8.0':
+    dependencies:
+      '@floating-ui/utils': 0.2.12
+
+  '@floating-ui/dom@1.8.0':
+    dependencies:
+      '@floating-ui/core': 1.8.0
+      '@floating-ui/utils': 0.2.12
+
+  '@floating-ui/utils@0.2.12': {}
+
+  '@floating-ui/vue@2.0.1(vue@3.5.40)':
+    dependencies:
+      '@floating-ui/dom': 1.8.0
+      '@floating-ui/utils': 0.2.12
+      vue: 3.5.40
 
   '@fontsource-variable/archivo@5.3.0': {}
 
@@ -1462,9 +1493,9 @@ snapshots:
       tailwindcss: 4.3.3
       vite: 8.2.0(jiti@2.7.0)
 
-  '@typerighter/rpc-client@0.15.1': {}
+  '@typerighter/rpc-client@0.17.1': {}
 
-  '@typerighter/rpc-server@0.15.1':
+  '@typerighter/rpc-server@0.17.1':
     dependencies:
       dotenv: 16.6.1
 
@@ -1923,9 +1954,10 @@ snapshots:
 
   trim-lines@3.0.1: {}
 
-  typerighter@0.15.1(@types/markdown-it@14.1.2)(jiti@2.7.0):
+  typerighter@0.17.1(@types/markdown-it@14.1.2)(jiti@2.7.0):
     dependencies:
       '@clack/prompts': 1.7.0
+      '@floating-ui/vue': 2.0.1(vue@3.5.40)
       '@fontsource-variable/archivo': 5.3.0
       '@fontsource-variable/jetbrains-mono': 5.3.0
       '@lucide/vue': 1.30.0(vue@3.5.40)
@@ -1944,8 +1976,8 @@ snapshots:
       '@shikijs/transformers': 4.4.1
       '@shikijs/types': 4.4.1
       '@tailwindcss/vite': 4.3.3(vite@8.2.0(jiti@2.7.0))
-      '@typerighter/rpc-client': 0.15.1
-      '@typerighter/rpc-server': 0.15.1
+      '@typerighter/rpc-client': 0.17.1
+      '@typerighter/rpc-server': 0.17.1
       '@vitejs/plugin-vue': 6.0.8(vite@8.2.0(jiti@2.7.0))(vue@3.5.40)
       '@vue/shared': 3.5.41
       cac: 7.0.0
