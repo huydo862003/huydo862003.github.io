@@ -1,6 +1,6 @@
 ---
 _type: DistSysConcept
-_label: 'Saga pattern'
+_label: 'SAGA pattern'
 journey: fref("distributed-systems/index.td")
 status: 'learning'
 tags:
