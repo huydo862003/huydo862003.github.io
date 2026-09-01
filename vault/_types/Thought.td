@@ -1,5 +1,7 @@
 ---
 _type: schema
+_label: "Thought"
+_icon: icon.sparkles
 properties:
   date:
     type: date?

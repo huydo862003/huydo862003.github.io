@@ -1,5 +1,7 @@
 ---
 _type: schema
+_label: "Programming Language Theory Flashcard"
+_icon: icon.graduation
 _extends: Flashcard
 properties:
   tags:

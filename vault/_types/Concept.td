@@ -1,5 +1,7 @@
 ---
 _type: schema
+_label: "Concept"
+_icon: icon.lightbulb
 properties:
   journey:
     type: Journey?

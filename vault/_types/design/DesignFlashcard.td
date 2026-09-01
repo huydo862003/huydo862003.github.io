@@ -1,5 +1,7 @@
 ---
 _type: schema
+_label: "Design Flashcard"
+_icon: icon.graduation
 _extends: Flashcard
 properties:
   tags:

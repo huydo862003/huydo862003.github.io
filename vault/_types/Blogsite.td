@@ -1,5 +1,7 @@
 ---
 _type: schema
+_label: "Blog Site"
+_icon: icon.globe
 properties:
   url:
     type: string?

@@ -1,5 +1,7 @@
 ---
 _type: schema
+_label: "Design Journey"
+_icon: icon.compass
 _extends: Journey
 properties:
   tags:

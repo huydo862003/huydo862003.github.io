@@ -1,5 +1,7 @@
 ---
 _type: schema
+_label: "Programming Language Theory Concept"
+_icon: icon.lightbulb
 _extends: Concept
 properties:
   tags:

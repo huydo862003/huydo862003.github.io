@@ -1,5 +1,7 @@
 ---
 _type: schema
+_label: "Design Book"
+_icon: icon.book
 _extends: Book
 properties:
   tags:

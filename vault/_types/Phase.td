@@ -1,5 +1,7 @@
 ---
 _type: schema
+_label: "Phase"
+_icon: icon.layers
 properties:
   journey:
     type: Journey?

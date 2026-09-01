@@ -1,5 +1,7 @@
 ---
 _type: schema
+_label: "Book"
+_icon: icon.book
 properties:
   author:
     type: string?

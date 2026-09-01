@@ -1,5 +1,7 @@
 ---
 _type: schema
+_label: "Programming Language Theory Journey"
+_icon: icon.compass
 _extends: Journey
 properties:
   tags:

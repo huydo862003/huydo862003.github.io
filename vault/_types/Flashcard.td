@@ -1,5 +1,7 @@
 ---
 _type: schema
+_label: "Flashcard"
+_icon: icon.graduation
 properties:
   question:
     type: string?

@@ -1,5 +1,7 @@
 ---
 _type: schema
+_label: "Design Concept"
+_icon: icon.lightbulb
 _extends: Concept
 properties:
   tags:

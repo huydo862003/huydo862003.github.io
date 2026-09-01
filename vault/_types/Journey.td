@@ -1,5 +1,7 @@
 ---
 _type: schema
+_label: "Journey"
+_icon: icon.compass
 properties:
   description:
     type: string?
