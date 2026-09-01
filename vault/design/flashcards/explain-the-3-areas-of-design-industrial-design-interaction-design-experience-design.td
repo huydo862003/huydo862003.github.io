@@ -1,6 +1,6 @@
 ---
 _type: DesignFlashcard
-_label: 'Explain the 3 areas of design: industrial design, interaction design, experience design'
+_label: 'Explain the 3 areas of design: industrial design, interaction design, experience design?'
 deck: 'general'
 ---
 

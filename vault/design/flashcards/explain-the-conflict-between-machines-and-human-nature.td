@@ -1,6 +1,6 @@
 ---
 _type: DesignFlashcard
-_label: 'Explain the conflict between machines and human nature'
+_label: 'Explain the conflict between machines and human nature?'
 deck: 'general'
 ---
 

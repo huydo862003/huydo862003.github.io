@@ -1,10 +1,10 @@
 ---
 _type: DesignFlashcard
-_label: 'Can you describe the "door" dilemma as posed by don norman?'
+_label: 'Can you describe the "door" dilemma as posed by Don Norman?'
 deck: 'general'
 ---
 
 ::: flashcard
-Can you describe the "door" dilemma as posed by don norman?
+Can you describe the "door" dilemma as posed by Don Norman?
 === key
 :::
