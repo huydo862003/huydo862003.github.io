@@ -12,6 +12,6 @@
 
   "type": "module",
   "devDependencies": {
-    "typerighter": "0.20.2"
+    "typerighter": "0.21.0"
   }
 }
