@@ -1,6 +1,6 @@
 version: "1.0.0"
 vault:
-  root_dir: vault
+  root_dir: "vault"
 repo: "https://github.com/huydo862003/huydo862003.github.io"
 site:
   title: "scrambled"
