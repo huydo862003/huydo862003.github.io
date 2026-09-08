@@ -1,3 +1,7 @@
+---
+_label: "DGIT"
+---
+
 Link: https://github.blog/engineering/architecture-optimization/introducing-dgit/
 
 For context:
