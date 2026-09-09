@@ -34,3 +34,34 @@ From the picture, I can see several important details:
   - Storage (Spokes): Bare Git-on-SSG Replication happens here.
   - Metadata: MySQL + Vitess for storing things like permissions, etc.
 
+## Git on Disk
+
+This section walks through the basic of how Git structures a repo on disk.
+
+The entire **Git database** is stored in the `.git` folder (the below snippet is taken from the site):
+
+```
+.git/
+  objects/        the object store (the database)
+  refs/           branches, tags, remote pointers
+  HEAD            which ref is currently checked out
+  config          local config
+  packed-refs     packed reference list
+```
+
+### The `git` Object Store
+
+- The `git` database is also known as the `git` **object store**.
+- The `git` object store is a **content-addressable database**: A content addressable database identifies an object by its content, usually implemented by a **hash** of the content.
+- The `git` object store stores various **objects**, which fall into 4 types:
+  - `blob` objects: Representing file contents (not including metadata like name or mode). Physically, the content bytes of a file is stored in this object.
+  - `tree` objects: Representing a directory listing of:
+    - File names.
+    - File modes.
+    - Child object ids (`blob` ids or sub-`tree`).
+  - `commit` objects: Representing a commit, containing:
+    - Commit message.
+    - Commit parents.
+    - Commit author.
+    - Snapshot pointer to the objects.
+  - `tag` objects: Representing a signed pointer to another object + a message.
