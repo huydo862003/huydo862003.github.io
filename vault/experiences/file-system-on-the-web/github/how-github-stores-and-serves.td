@@ -23,8 +23,6 @@ The article goes bottom-up:
 
 A GitHub architecture overview from the website:
 
-${fref('./_assets/github-repo-serving-architecture.png')}
-
 From the picture, I can see several important details:
 
 - Large objects use specialized storage: LFS Object Storage. -> Not of our concern now.
