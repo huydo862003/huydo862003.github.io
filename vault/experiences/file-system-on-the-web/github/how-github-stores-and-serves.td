@@ -203,7 +203,7 @@ For planned reboots, Spokes uses **quiescing**:
 
 -> This is why GitHub can roll out kernel patches across storage without users noticing.
 
-## The Routing and Metadata Layer
+## The Routing (Proxy) and Metadata Layer
 
 Spokes itself doesn't know where any repo lives - Spokes is the repo data storage.
 
@@ -219,7 +219,30 @@ Historical choice. GitHub started with MySQL/Rails and scaled it with Vitess sha
 
 What the metadata layer stores per repo:
 
-- Canonical repo ID and owner.
+- **Canonical repo ID** and **owner**.
 - The 3 fileserver IDs holding replicas, with a **generation number** per replica.
-- Replica status: in-sync, lagging, unhealthy, decommissioning.
+  ::: details What is a generation number?
+  A monotonically increasing counter that increments on every successful write. It tells Spokes how up-to-date a replica is without comparing the full ref state. E.g. after a push, the 2 confirming replicas get generation 42, the one that missed it stays at 41. Same idea as a log sequence number (LSN) in databases.
+  :::
+- Replica status:
+  - **in-sync**: has latest refs and objects, safe for reads and writes.
+  - **lagging**: behind on recent writes, needs to catch up before serving reads.
+  - **unhealthy**: failed (disk error, crash, disagreed during write). Needs repair.
+  - **decommissioning**: server being retired, repos draining out to other servers.
 - Slug mapping (`octocat/hello-world` -> repo ID).
+
+### Routing During `git push`
+
+_Image from the site_
+
+${fref('./_assets/github-routing.png')}
+
+1. Resolve slug (`octocat/hello-world`) to repo ID via MySQL.
+2. Auth check via Rails app + permissions service.
+3. Look up the 3 fileservers holding replicas of that repo ID.
+4. Open `receive-pack` connections to all 3, run the 3-phase commit.
+5. On success, update metadata with new generation number and any replica health changes.
+
+Important: the fileservers know nothing about PRs, branch protection, webhooks, etc. All of that lives in the Rails app. A push triggers a webhook because the proxy publishes an event onto an internal log (Kafka-like) after the quorum vote succeeds, not because the fileserver knows what a webhook is.
+
+-> Clean separation: fileservers = dumb storage, Rails = all the business logic.
