@@ -53,6 +53,10 @@ The entire **Git database** is stored in the `.git` folder (the below snippet is
 
 - The `git` database is also known as the `git` **object store**.
 - The `git` object store is a **content-addressable database**: A content addressable database identifies an object by its content, usually implemented by a **hash** of the content.
+
+_Image from the website_
+${fref('./_assets/git-objects.png')}
+
 - The `git` object store stores various **objects**, which fall into 4 types:
   - `blob` objects: Representing file contents (not including metadata like name or mode). Physically, the content bytes of a file is stored in this object.
   - `tree` objects: Representing a directory listing of:
@@ -65,3 +69,42 @@ The entire **Git database** is stored in the `.git` folder (the below snippet is
     - Commit author.
     - Snapshot pointer to the objects.
   - `tag` objects: Representing a signed pointer to another object + a message.
+
+### Loose Objects & Pack Files
+
+What happens physically when a new object is created?
+
+#### Loose Objects
+
+On each new commit, Git stores every new object as a **loose object**, a single zlib-compressed file under `.git/objects/ab/cdef...` (the first two hex chars form the directory name).
+
+::: details Why do the first two hex chars form a directory?
+Many filesystems (especially older ones like ext3) slow down when a single directory has too many entries, because lookups become linear scans. Splitting into 256 subdirectories (`00/` through `ff/`) keeps files per directory manageable. Nginx does the same thing with its proxy cache.
+:::
+
+- Pros: Straightforward.
+- Cons: Doesn't scale well. At millions of objects, you end up with millions of tiny files on disk.
+
+-> Git will periodically pack loose objects into **pack files**.
+
+#### Pack Files
+
+So, periodically (or on `git gc`), Git rolls many loose objects into a single `pack-<sha>.pack` file, with a companion `pack-<sha>.idx` index.
+
+- Inside a pack, similar objects are stored as **deltas** against each other.
+- The index is a sorted list of object IDs and offsets, so `git cat-file` can find any object in `O(log n)` (disk operations?) without scanning the file. Much like a B-tree index in a database.
+
+### References Are Just Files
+
+A branch in Git is just a single text file containing one **40-character commit hash**:
+
+```
+$ cat .git/refs/heads/main
+9f9258a8ffe4187f08a93bcba47784e07985d999
+```
+
+`git push origin main` is, at heart, a request to update one such file on the server. Creating a branch is essentially free.
+
+When the number of refs grows into the hundreds of thousands, individual ref files and the `packed-refs` blob both become a bottleneck. The new **reftable** format fixes this.
+
+## Spokes (DGit): The Storage With Git-on-local-SSD
