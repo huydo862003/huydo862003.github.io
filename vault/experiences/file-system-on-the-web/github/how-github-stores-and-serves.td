@@ -255,6 +255,55 @@ ${fref('./_assets/git-push-journey.png')}
 
 ## Optimizations
 
-### Pack Files, Mult-Pack-Index and Reachability Bitmaps
+### Pack Files, Multi-Pack-Index and Reachability Bitmaps
+
+If Spokes solves the distribution problem, these solve the single-server performance problem. Big repos (Linux, Chromium, Windows source tree) have tens of millions of objects and hundreds of thousands of refs.
+
+**Pack files** (recap): delta compression. Two versions of the same file are stored as a small diff, shrinking repos by 5-10x. Each pack has an `.idx` that maps object ID to byte offset.
+
+**Multi-Pack-Index (MIDX)**: once a repo has dozens of pack files, looking up an object means checking each `.idx` in turn (linear scan). MIDX is a single index spanning many packs, turning that into one binary search. Can cut common operations by an order of magnitude on large repos.
+
+**Reachability bitmaps**: many Git operations need to answer "given this commit, what objects are reachable?". Naive: walk the commit graph. Fast: a precomputed bitmap, one compressed bit per object. Set operations on bitmaps are essentially free, so computing the diff between two refs is a single XOR. GitHub extended bitmaps to work with MIDX, so huge repos can keep bitmaps fresh without expensive full repacks.
+
+### Partial Clone and Sparse Checkout
+
+Client-side monorepo optimizations:
+
+- **Partial clone** (`git clone --filter=blob:none`): skip downloading blobs, lazily fetch on demand.
+- **Sparse checkout**: check out only a subset of paths into your worktree.
+
+Together they make a 10 GB monorepo feel like a small project for any given developer.
+
+### Reftable
+
+The classic ref store breaks at hundreds of thousands of refs:
+- Loose refs: millions of tiny files.
+- `packed-refs`: giant text file rewritten on every change.
+
+**Reftable**: binary, prefix-compressed, multi-block file with constant-time lookup and atomic appends. For Android's 866k refs: storage shrinks to ~60% of packed-refs, lookups go from 410ms to 34 microseconds.
 
 ### Git LFS
+
+Git is great at source code but not really at 5 GB video files. Every clone downloads every version of every file, and delta compression doesn't help for already-compressed binaries.
+
+**Git LFS** solves this by not putting big files in Git at all. When you `git lfs track "*.psd"`, a clean filter intercepts large files at `git add` time and replaces them with a tiny pointer:
+
+```
+version https://git-lfs.github.com/spec/v1
+oid sha256:4d7a214614ab2935c943f9e0ff69d22eadbb8f32b1258daaa5e2ca24d17e2393
+size 12345
+```
+
+- The **pointer** is what gets stored in Git and replicated by Spokes.
+- The **actual bytes** are uploaded over HTTPS to a separate LFS object storage (S3-style).
+- On checkout, a smudge filter sees the pointer, fetches real bytes by SHA-256, writes them to worktree.
+
+_Image from the site_
+
+${fref('./_assets/git-lfs.png')}
+
+The split is clean: Spokes only ever sees small text pointers, so 3-replica voting stays cheap. Big bytes live in object storage built for that workload.
+
+::: details Why does this matter for our system?
+Same pattern applies if we ever need to store large files: keep lightweight metadata/pointers in the main DB, store actual bytes separately. But for plain text DBML files at 20k LOC, this isn't relevant yet.
+:::
