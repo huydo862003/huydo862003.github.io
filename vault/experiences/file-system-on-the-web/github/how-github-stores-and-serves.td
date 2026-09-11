@@ -246,3 +246,15 @@ ${fref('./_assets/github-routing.png')}
 Important: the fileservers know nothing about PRs, branch protection, webhooks, etc. All of that lives in the Rails app. A push triggers a webhook because the proxy publishes an event onto an internal log (Kafka-like) after the quorum vote succeeds, not because the fileserver knows what a webhook is.
 
 -> Clean separation: fileservers = dumb storage, Rails = all the business logic.
+
+## Final Picture
+
+_Image from the site_
+
+${fref('./_assets/git-push-journey.png')}
+
+## Optimizations
+
+### Pack Files, Mult-Pack-Index and Reachability Bitmaps
+
+### Git LFS
