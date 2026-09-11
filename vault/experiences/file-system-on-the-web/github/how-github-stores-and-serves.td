@@ -155,6 +155,6 @@ What happens on a `git push`:
 4. Phase 3 - **Finalize**: committed replicas release locks. A Spokes checksum is computed across the new ref state. If the majority's checksums match, push is acknowledged.
 5. Any disagreeing replica gets rolled back and marked unhealthy. A repair job copies missing objects/refs from a healthy replica.
 
-::: details How fast is this across continents?
-A round trip across a continent takes 60-80ms. Spokes uses ~4 round trips per write, so a coast-to-coast push of a single ref takes about a third of a second in pure network time. Everything else (checksums, scanning refs, locking) has to run in parallel with the network waits. The [Stretching Spokes](https://github.blog/2017-10-13-stretching-spokes/) post walks through the optimizations.
+::: details How fast is this?
+Check the [Stretching Spokes](https://github.blog/2017-10-13-stretching-spokes/) post for walkthroughs over the optimizations.
 :::
