@@ -108,3 +108,53 @@ $ cat .git/refs/heads/main
 When the number of refs grows into the hundreds of thousands, individual ref files and the `packed-refs` blob both become a bottleneck. The new **reftable** format fixes this.
 
 ## Spokes (DGit): The Storage With Git-on-local-SSD
+
+_Image from the site_
+
+${fref('./_assets/spoke-tier.png')}
+
+Spokes does three jobs:
+
+- Decide repo storage to 3 fileservers.
+- Sync the 3 replicas on push.
+- Auto-heal when 1 file server fail.
+
+Some notes:
+
+- Spokes is NOT a filesystem or storage engine. It's a coordination layer that sits above plain Git on local SSDs. Each replica is just a normal Git repo.
+- Why not abstract the storage? Because Git does thousands of sequential small reads per operation. Even 1ms extra latency per read (from network storage) compounds into seconds. So, keep the disk local.
+- No two replicas share a rack. A rack = an availability zone (one power/network failure can kill a whole rack).
+- Later, [Stretching Spokes](https://github.blog/2017-10-13-stretching-spokes/) placed replicas across continents. So a clone in Singapore hits a fileserver in Singapore, even if the write originated in Virginia.
+
+::: details Why three replicas?
+Three is the smallest number that supports majority voting:
+
+- 1 replica: no redundancy.
+- 2 replicas: no quorum if both fail.
+- 3 replicas: tolerate 1 failure, still have a majority of 2.
+:::
+
+Spokes requires **at least 2 of 3 to confirm a write** before telling the user **the push succeeded**. This gives:
+
+- **Durability**: the write is on 2 disks before acknowledgment.
+- **Conflict resolution**: two concurrent pushes can't both acquire a majority of locks, so one waits.
+
+If 2 servers fail, repos are still readable from the remaining replica, but writes are blocked until repair finishes. This is the CAP tradeoff Spokes makes: consistency + partition tolerance over write availability during degraded state. Same tradeoff as Paxos and other majority quorum protocols.
+
+### Writes: 3-Phase Commit
+
+_Image from the site_
+
+${fref('./_assets/spoke-push.png')}
+
+What happens on a `git push`:
+
+1. The proxy opens a `git receive-pack` stream and forwards pack data to **all 3 replicas in parallel**.
+2. Phase 1 - **Prepare**: each replica acquires local Git ref locks, verifies old ref values match what the client expects.
+3. Phase 2 - **Commit**: majority confirms it can apply. Each agreeing replica writes new refs atomically via `git update-ref --stdin` (a transactional API that GitHub contributed upstream specifically for this).
+4. Phase 3 - **Finalize**: committed replicas release locks. A Spokes checksum is computed across the new ref state. If the majority's checksums match, push is acknowledged.
+5. Any disagreeing replica gets rolled back and marked unhealthy. A repair job copies missing objects/refs from a healthy replica.
+
+::: details How fast is this across continents?
+A round trip across a continent takes 60-80ms. Spokes uses ~4 round trips per write, so a coast-to-coast push of a single ref takes about a third of a second in pure network time. Everything else (checksums, scanning refs, locking) has to run in parallel with the network waits. The [Stretching Spokes](https://github.blog/2017-10-13-stretching-spokes/) post walks through the optimizations.
+:::
