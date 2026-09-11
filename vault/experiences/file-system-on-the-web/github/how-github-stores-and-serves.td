@@ -141,7 +141,9 @@ Spokes requires **at least 2 of 3 to confirm a write** before telling the user *
 
 If 2 servers fail, repos are still readable from the remaining replica, but writes are blocked until repair finishes. This is the CAP tradeoff Spokes makes: consistency + partition tolerance over write availability during degraded state. Same tradeoff as Paxos and other majority quorum protocols.
 
-### Writes: 3-Phase Commit
+### Read & Write
+
+#### Writes: 3-Phase Commit
 
 _Image from the site_
 
@@ -158,3 +160,66 @@ What happens on a `git push`:
 ::: details How fast is this?
 Check the [Stretching Spokes](https://github.blog/2017-10-13-stretching-spokes/) post for walkthroughs over the optimizations.
 :::
+
+#### Reads: Geo-routed
+
+Reads are much simpler than writes. No quorum needed, just one up-to-date replica.
+
+- The proxy tracks which replicas are in sync per repo.
+- On each read, it ranks replicas by latency and picks the closest healthy one. If that fails, it falls over to the next.
+- Under the hood, it's standard Git `upload-pack` protocol with the usual optimizations (negotiation, pack reuse, reachability bitmaps).
+
+This is also how geo-replicated reads work: the same voting protocol that ensures write durability also tracks which replicas have caught up, so it can confidently route a `git clone` to a nearby replica.
+
+### Resilience
+
+#### Failure Detection: Real Traffic, Not Heartbeats
+
+Mechanism:
+
+- Primary failure detector: Actual application traffic. After 3 failed RPCs in a row, the proxy deprioritizes that fileserver.
+- Secondary failure detector: Heartbeats.
+
+Why not just heartbeats?
+
+- Heartbeats are slow. A 1 Hz heartbeat notices a failure after hundreds of real requests already failed.
+- Heartbeats only test a subset. A TCP ping can succeed while the Git binary is corrupt, the disk is hung, or auth is broken.
+
+Detection is also **M x N**: each app server keeps its own view of which fileservers are healthy.
+
+- Many app servers mark one fileserver bad -> fileserver is bad.
+- One app server marks every fileserver bad -> app server is the broken one.
+
+This diagnostic clarity is impossible with a single global health view.
+
+#### Self-Healing and Quiescing
+
+When a fileserver dies, repos on it drop to 2 replicas. Spokes starts creating fresh replicas on other fileservers, copying from the surviving two. Healing is **N-to-N** across the cluster: more fileservers = faster recovery.
+
+For planned reboots, Spokes uses **quiescing**:
+
+- Server is marked offline for new reads, but still accepts writes (dropping one write replica is fine since writes go to all 3).
+- Existing long reads (e.g. `git clone` of a multi-GB repo over slow network) are allowed to finish before the server reboots.
+
+-> This is why GitHub can roll out kernel patches across storage without users noticing.
+
+## The Routing and Metadata Layer
+
+Spokes itself doesn't know where any repo lives - Spokes is the repo data storage.
+
+For metadata about repos, they are stoed in a **MySQL-based metadata tier**, sharded with a Vitess-style topology.
+
+So the flow is: request comes in -> look up which 3 fileservers hold this repo (MySQL) -> route to them (Spokes).
+
+::: details Why MySQL and not Postgres?
+Historical choice. GitHub started with MySQL/Rails and scaled it with Vitess sharding.
+:::
+
+### Types of Metadata
+
+What the metadata layer stores per repo:
+
+- Canonical repo ID and owner.
+- The 3 fileserver IDs holding replicas, with a **generation number** per replica.
+- Replica status: in-sync, lagging, unhealthy, decommissioning.
+- Slug mapping (`octocat/hello-world` -> repo ID).
