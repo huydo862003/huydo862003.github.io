@@ -30,10 +30,30 @@ Parsers, type systems, distributed systems, design... Things I'm trying to wrap 
 
 Some of the projects that I do/research in my freetime, either I need them personally (like typerighter) or I'm interested in their theory...
 
-- **[typerighter](https://github.com/huydo862003/typerighter)**: A typed content framework and SSG built around Typedown, a format that merges structured frontmatter with Markdown for interlinked notes. This site runs on it. [[npm](https://www.npmjs.com/package/typerighter)]
-- **[sqlingo.js](https://github.com/huydo862003/sqlingo.js)**: Porting sqlglot to TypeScript so it can run in the browser. [[npm](https://www.npmjs.com/package/@hdnax/sqlingo.js)] [[docs](https://huydo862003.github.io/sqlingo.js/)]
-- **[MPiSC](https://github.com/huydo862003/MPiSC)**: Wait-free distributed MPSC queues over MPI-3 RMA. Most shared-memory implementations turned out to be broken; the only correct one (LTQueue) became the base. [[docs](https://huydo862003.github.io/MPiSC/)]
+### Active / Long-running
+
+- **[typerighter](https://github.com/huydo862003/typerighter)**: A typed content framework and SSG built around Typedown, a format that merges structured frontmatter with Markdown for interlinked notes. This site runs on it.
+  - Somewhat stabilized with lots of optimizations!
+  - `npm` package: [npm](https://www.npmjs.com/package/typerighter)
+  - documentation: [docs](https://huydo862003.github.io/typerighter)
+- **[sqlingo.js](https://github.com/huydo862003/sqlingo.js)**: Porting sqlglot to TypeScript so it can run in the browser.
+  - Stabilized & Synced with sqlglot version 30.0.0.
+  - `npm` package: [npm](https://www.npmjs.com/package/@hdnax/sqlingo.js)
+  - documentation: [docs](https://huydo862003.github.io/sqlingo.js/)
+
+### Short-running / PoC
+
+- **[synap2p](https://github.com/huydo862003/synap2p)**: Direct P2P connection without any (self-hosted) server.
+
+### Stalled
+
 - **[type-theory](https://github.com/huydo862003/type-theory)**: Working through Software Foundations, TAPL, and PFPL. Slowly.
+
+### Completed
+
+- **[MPiSC](https://github.com/huydo862003/MPiSC)**: Wait-free distributed MPSC queues over MPI-3 RMA. Most shared-memory implementations turned out to be broken; the only correct one (LTQueue) became the base.
+  - Gave me 2 low-ranking papers.
+  - documentation: [docs](https://huydo862003.github.io/MPiSC/)
 
 ## Publications
 
