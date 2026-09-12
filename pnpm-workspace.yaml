@@ -1,6 +1,6 @@
 allowBuilds:
   '@typerighter/rpc-server': true
 minimumReleaseAgeExclude:
-  - '@typerighter/rpc-client@0.30.4 || 0.30.5'
-  - '@typerighter/rpc-server@0.30.4 || 0.30.5'
-  - typerighter@0.30.4 || 0.30.5
+  - '@typerighter/rpc-client@0.30.4 || 0.30.5 || 0.30.6'
+  - '@typerighter/rpc-server@0.30.4 || 0.30.5 || 0.30.6'
+  - typerighter@0.30.4 || 0.30.5 || 0.30.6
