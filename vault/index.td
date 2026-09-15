@@ -36,10 +36,10 @@ Some of the projects that I do/research in my freetime, either I need them perso
   - Somewhat stabilized with lots of optimizations!
   - `npm` package: [npm](https://www.npmjs.com/package/typerighter)
   - documentation: [docs](https://huydo862003.github.io/typerighter)
-- **[sqlingo.js](https://github.com/huydo862003/sqlingo.js)**: Porting sqlglot to TypeScript so it can run in the browser.
+- **[sqlingo](https://github.com/huydo862003/sqlingo)**: Porting sqlglot to TypeScript so it can run in the browser.
   - Stabilized & Synced with sqlglot version 30.0.0.
-  - `npm` package: [npm](https://www.npmjs.com/package/@hdnax/sqlingo.js)
-  - documentation: [docs](https://huydo862003.github.io/sqlingo.js/)
+  - `npm` package: [npm](https://www.npmjs.com/package/sqlingo)
+  - documentation: [docs](https://huydo862003.github.io/sqlingo/)
 
 ### Short-running / PoC
 
