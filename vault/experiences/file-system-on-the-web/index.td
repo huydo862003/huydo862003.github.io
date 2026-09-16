@@ -19,18 +19,44 @@ There are a few constraints our systems have:
 
 ## Articles & References
 
-Some resources crawled from the web:
+### API Design
 
-### GitHub: DGit/Spokes
+How to shape the REST API for file/folder CRUD:
 
-- https://github.blog/engineering/architecture-optimization/introducing-dgit/: original announcement of distributed Git storage
-- https://singhajit.com/how-github-stores-and-serves-git-repositories/: how GitHub stores and serves Git repos (IMPORTANT!!!)
-- https://www.pankajtanwar.in/blog/how-does-github-store-millions-of-repo-and-billions-of-files: good summary post
+- [GitHub Contents API](https://docs.github.com/en/rest/repos/contents): file CRUD over REST, git-backed. Closest to our use case.
+- [GitLab Repository Files API](https://docs.gitlab.com/ee/api/repository_files.html): similar, URL-encoded paths
+- [OneDrive/MS Graph API](https://learn.microsoft.com/en-us/graph/onedrive-addressing-driveitems): hybrid path+ID addressing (worth studying the tradeoff)
+- [Cloud storage HTTP APIs compared](http://lukasmartinelli.ch/cloud/2014/07/21/cloud-storage-apis-compared.html): Dropbox vs Google Drive vs S3 vs Box
+- [VS Code FileSystemProvider](https://vshaxe.github.io/vscode-extern/vscode/FileSystemProvider.html): cleanest modern FS interface (stat, readFile, writeFile, readDirectory, rename, delete, watch)
 
-Out of scope:
+### System Design
 
-- https://github.blog/2017-10-13-stretching-spokes/: cross-datacenter replication -> :cross: Out-of-scope
-- https://github.blog/engineering/infrastructure/building-resilience-in-spokes/: replication and fault tolerance -> :cross: Out-of-scope
+How real services architect file storage:
+
+- [How GitHub stores and serves Git repos](https://singhajit.com/how-github-stores-and-serves-git-repositories/): IMPORTANT, full architecture walkthrough
+- [GitHub DGit/Spokes](https://github.blog/engineering/architecture-optimization/introducing-dgit/): distributed Git storage
+- [Gitaly](https://docs.gitlab.com/administration/gitaly/): GitLab's gRPC service wrapping all Git storage access
+- [Google Drive/Dropbox system design](https://www.pankajtanwar.in/blog/system-design-how-to-design-google-drive-dropbox-a-cloud-file-storage-service): metadata DB + blob storage split, chunked uploads, sync via message queues
+- [Gitea source](https://github.com/go-gitea/gitea): Go, git-on-disk + DB metadata, easy to read
+
+### Storage Design
+
+DB vs filesystem vs git:
+
+- [PostgreSQL: storing files in DB](https://wiki.postgresql.org/wiki/BinaryFilesInDB): acceptable for files <100KB, simplified backups
+- [Database vs blob storage](https://engineeringatscale.substack.com/p/when-to-use-blob-storage-vs-database): decision guide
+- [Supabase Storage source](https://github.com/supabase/storage): TypeScript, S3+Postgres metadata pattern
+- [Supabase storage schema](https://supabase.com/docs/guides/storage/schema/design): buckets + objects tables
+
+### Concurrency & Versioning
+
+- [Optimistic locking with ETags](https://sookocheff.com/post/api/optimistic-locking-in-a-rest-api/): the right default for web file APIs
+- [Git's database internals](https://github.blog/engineering/architecture-optimization/gits-database-internals-i-packed-object-store/): pack files, object store, content-addressed storage
+
+### Permissions
+
+- [Supabase access control via PostgreSQL RLS](https://supabase.com/docs/guides/storage/security/access-control)
+- [Hierarchical RLS challenges](https://supabase.com/docs/guides/troubleshooting/supabase-storage-inefficient-folder-operations-and-hierarchical-rls-challenges-b05a4d): folder-level permissions are hard with RLS
 
 ## Out-of-Scope
 
@@ -38,9 +64,9 @@ Out of scope:
 
 Out of scope: Dropbox uses immutable blob store
 
-- https://dropbox.tech/infrastructure/improving-storage-efficiency-in-magic-pocket-our-immutable-blob-store: storage efficiency in their immutable blob store
-- https://medium.com/@anant7210/dropbox-magic-pocket-5ec95cc40a42: architecture summary
-- https://qconsf.com/presentation/oct2022/magic-pocket-dropboxs-exabyte-scale-blob-storage-system: QCon presentation
+- [storage efficiency in their immutable blob store](https://dropbox.tech/infrastructure/improving-storage-efficiency-in-magic-pocket-our-immutable-blob-store)
+- [architecture summary](https://medium.com/@anant7210/dropbox-magic-pocket-5ec95cc40a42)
+- [QCon presentation](https://qconsf.com/presentation/oct2022/magic-pocket-dropboxs-exabyte-scale-blob-storage-system)
 
 ### Figma: Multiplayer
 
@@ -50,16 +76,16 @@ Out of scope: I'm focusing more on the multifile storage/retrieval, the collabor
 
 Intro:
 
-- https://www.figma.com/blog/how-figmas-multiplayer-technology-works/: multiplayer technology
+- [multiplayer technology](https://www.figma.com/blog/how-figmas-multiplayer-technology-works/)
 
 Deep dive:
 
-- https://sujeet.pro/articles/figma-multiplayer-infrastructure: multiplayer infrastructure deep dive
-- https://www.figma.com/blog/making-multiplayer-more-reliable/: S3 checkpointing + DynamoDB WAL for file persistence
+- [multiplayer infrastructure deep dive](https://sujeet.pro/articles/figma-multiplayer-infrastructure)
+- [S3 checkpointing + DynamoDB WAL for file persistence](https://www.figma.com/blog/making-multiplayer-more-reliable/)
 
 Scaling:
 
-- https://www.figma.com/blog/how-figma-scaled-to-multiple-databases/: database scaling
+- [database scaling](https://www.figma.com/blog/how-figma-scaled-to-multiple-databases/)
 
 ### Supabase Storage
 
@@ -86,8 +112,8 @@ It has API for querying files/folders. It can be deployed on a dedicated storage
 
 Out of scope: This is too tool-specific, I'm researching storage mechanism. May consider after conducting research.
 
-- https://github.com/supabase/storage: open source, full implementation (TypeScript, S3+Postgres pattern)
-- https://supabase.com/docs/guides/storage: storage docs
-- https://supabase.com/docs/guides/storage/schema/design: schema design
-- https://supabase.com/docs/guides/storage/security/access-control: access control via PostgreSQL RLS
-- https://supabase.com/docs/guides/troubleshooting/supabase-storage-inefficient-folder-operations-and-hierarchical-rls-challenges-b05a4d: hierarchical RLS challenges
+- [open source, full implementation (TypeScript, S3+Postgres pattern)](https://github.com/supabase/storage)
+- [storage docs](https://supabase.com/docs/guides/storage)
+- [schema design](https://supabase.com/docs/guides/storage/schema/design)
+- [access control via PostgreSQL RLS](https://supabase.com/docs/guides/storage/security/access-control)
+- [hierarchical RLS challenges](https://supabase.com/docs/guides/troubleshooting/supabase-storage-inefficient-folder-operations-and-hierarchical-rls-challenges-b05a4d)
