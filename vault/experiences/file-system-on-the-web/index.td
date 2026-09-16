@@ -1,3 +1,4 @@
+
 This folder documents all the research I've conducted to converge on a solution for designing filesystem APIs on dbdocs/dbdiagram. This is to support the multifile DBML feature (which I have shipped in the compiler quite ago) on the cloud.
 
 The compiler intentionally just needs a file system interface to resolve imports, etc. So the task of designing filesystem is quite isolated with the compiler's internals.
@@ -39,11 +40,19 @@ Out of scope: Dropbox uses immutable blob store
 - https://medium.com/@anant7210/dropbox-magic-pocket-5ec95cc40a42: architecture summary
 - https://qconsf.com/presentation/oct2022/magic-pocket-dropboxs-exabyte-scale-blob-storage-system: QCon presentation
 
-### Figma
+### Figma: Multiplayer
+
+Intro:
 
 - https://www.figma.com/blog/how-figmas-multiplayer-technology-works/: multiplayer technology
-- https://www.figma.com/blog/making-multiplayer-more-reliable/: S3 checkpointing + DynamoDB WAL for file persistence
+
+Deep dive:
+
 - https://sujeet.pro/articles/figma-multiplayer-infrastructure: multiplayer infrastructure deep dive
+- https://www.figma.com/blog/making-multiplayer-more-reliable/: S3 checkpointing + DynamoDB WAL for file persistence
+
+Scaling:
+
 - https://www.figma.com/blog/how-figma-scaled-to-multiple-databases/: database scaling
 
 ### Supabase Storage
