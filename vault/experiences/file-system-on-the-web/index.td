@@ -33,6 +33,8 @@ Out of scope:
 
 ### Dropbox: Magic Pocket
 
+Out of scope: Dropbox uses immutable blob store
+
 - https://dropbox.tech/infrastructure/improving-storage-efficiency-in-magic-pocket-our-immutable-blob-store: storage efficiency in their immutable blob store
 - https://medium.com/@anant7210/dropbox-magic-pocket-5ec95cc40a42: architecture summary
 - https://qconsf.com/presentation/oct2022/magic-pocket-dropboxs-exabyte-scale-blob-storage-system: QCon presentation
