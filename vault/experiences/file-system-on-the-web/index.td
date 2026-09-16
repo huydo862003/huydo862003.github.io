@@ -32,9 +32,9 @@ Out of scope:
 - https://github.blog/2017-10-13-stretching-spokes/: cross-datacenter replication -> :cross: Out-of-scope
 - https://github.blog/engineering/infrastructure/building-resilience-in-spokes/: replication and fault tolerance -> :cross: Out-of-scope
 
-### Out-of-Scope
+## Out-of-Scope
 
-#### Dropbox: Magic Pocket
+### Dropbox: Magic Pocket
 
 Out of scope: Dropbox uses immutable blob store
 
@@ -42,7 +42,7 @@ Out of scope: Dropbox uses immutable blob store
 - https://medium.com/@anant7210/dropbox-magic-pocket-5ec95cc40a42: architecture summary
 - https://qconsf.com/presentation/oct2022/magic-pocket-dropboxs-exabyte-scale-blob-storage-system: QCon presentation
 
-#### Figma: Multiplayer
+### Figma: Multiplayer
 
 Multiplayer is the feature of Figma that allows for real-time collaboration.
 
@@ -61,7 +61,7 @@ Scaling:
 
 - https://www.figma.com/blog/how-figma-scaled-to-multiple-databases/: database scaling
 
-#### Supabase Storage
+### Supabase Storage
 
 Supabase storage is an open-source, S3-compatible object storage service to **store and serve** files. It does serve our model well using file buckets.
 
