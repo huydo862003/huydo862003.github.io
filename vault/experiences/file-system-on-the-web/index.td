@@ -32,20 +32,6 @@ Out of scope:
 - https://github.blog/2017-10-13-stretching-spokes/: cross-datacenter replication -> :cross: Out-of-scope
 - https://github.blog/engineering/infrastructure/building-resilience-in-spokes/: replication and fault tolerance -> :cross: Out-of-scope
 
-### SourceHut
-
-- https://man.sr.ht/git.sr.ht/: git.sr.ht docs
-- https://man.sr.ht/ops/scale.md: scalability plans
-- https://sourcehut.org/blog/2020-06-10-how-graphql-will-shape-the-alpha/: GraphQL and architecture evolution
-- https://github.com/snimmagadda/sourcehut-notes/blob/master/sourcehut.org: architecture notes
-
-### Gitea / Forgejo
-
-- https://github.com/go-gitea/gitea: source code (Go, easy to read)
-- https://deepwiki.com/go-gitea/gitea/1.1-architecture-overview: architecture overview
-- https://deepwiki.com/go-gitea/gitea/4-repository-management: repository management system
-- https://docs.gitea.com/usage/packages/storage/: storage docs
-
 ### General
 
 - https://algocademy.com/blog/how-to-design-a-file-storage-system-in-a-system-design-interview/: file storage system design
