@@ -31,12 +31,6 @@ Out of scope:
 - https://github.blog/2017-10-13-stretching-spokes/: cross-datacenter replication -> :cross: Out-of-scope
 - https://github.blog/engineering/infrastructure/building-resilience-in-spokes/: replication and fault tolerance -> :cross: Out-of-scope
 
-### GitLab: Gitaly
-
-- https://docs.gitlab.com/development/architecture/: GitLab architecture overview
-- https://docs.gitlab.com/administration/gitaly/: Gitaly and Gitaly Cluster docs
-- https://www.mulesoft.com/api-university/how-gitlab-puts-grpc-real-world: how GitLab uses gRPC
-
 ### Dropbox: Magic Pocket
 
 - https://dropbox.tech/infrastructure/improving-storage-efficiency-in-magic-pocket-our-immutable-blob-store: storage efficiency in their immutable blob store
