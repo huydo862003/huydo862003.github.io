@@ -32,12 +32,6 @@ Out of scope:
 - https://github.blog/2017-10-13-stretching-spokes/: cross-datacenter replication -> :cross: Out-of-scope
 - https://github.blog/engineering/infrastructure/building-resilience-in-spokes/: replication and fault tolerance -> :cross: Out-of-scope
 
-### General
-
-- https://algocademy.com/blog/how-to-design-a-file-storage-system-in-a-system-design-interview/: file storage system design
-- https://engineeringatscale.substack.com/p/when-to-use-blob-storage-vs-database: database vs blob storage
-- https://wiki.postgresql.org/wiki/BinaryFilesInDB: PostgreSQL wiki on storing files in DB
-
 ### Out-of-Scope
 
 #### Dropbox: Magic Pocket
