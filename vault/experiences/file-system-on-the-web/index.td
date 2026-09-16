@@ -32,41 +32,6 @@ Out of scope:
 - https://github.blog/2017-10-13-stretching-spokes/: cross-datacenter replication -> :cross: Out-of-scope
 - https://github.blog/engineering/infrastructure/building-resilience-in-spokes/: replication and fault tolerance -> :cross: Out-of-scope
 
-### Dropbox: Magic Pocket
-
-Out of scope: Dropbox uses immutable blob store
-
-- https://dropbox.tech/infrastructure/improving-storage-efficiency-in-magic-pocket-our-immutable-blob-store: storage efficiency in their immutable blob store
-- https://medium.com/@anant7210/dropbox-magic-pocket-5ec95cc40a42: architecture summary
-- https://qconsf.com/presentation/oct2022/magic-pocket-dropboxs-exabyte-scale-blob-storage-system: QCon presentation
-
-### Figma: Multiplayer
-
-Multiplayer is the feature of Figma that allows for real-time collaboration.
-
-Out of scope: I'm focusing more on the multifile storage/retrieval, the collaboration feature is already there for a single document.
-
-Intro:
-
-- https://www.figma.com/blog/how-figmas-multiplayer-technology-works/: multiplayer technology
-
-Deep dive:
-
-- https://sujeet.pro/articles/figma-multiplayer-infrastructure: multiplayer infrastructure deep dive
-- https://www.figma.com/blog/making-multiplayer-more-reliable/: S3 checkpointing + DynamoDB WAL for file persistence
-
-Scaling:
-
-- https://www.figma.com/blog/how-figma-scaled-to-multiple-databases/: database scaling
-
-### Supabase Storage
-
-- https://github.com/supabase/storage: open source, full implementation (TypeScript, S3+Postgres pattern)
-- https://supabase.com/docs/guides/storage: storage docs
-- https://supabase.com/docs/guides/storage/schema/design: schema design
-- https://supabase.com/docs/guides/storage/security/access-control: access control via PostgreSQL RLS
-- https://supabase.com/docs/guides/troubleshooting/supabase-storage-inefficient-folder-operations-and-hierarchical-rls-challenges-b05a4d: hierarchical RLS challenges
-
 ### SourceHut
 
 - https://man.sr.ht/git.sr.ht/: git.sr.ht docs
@@ -86,3 +51,44 @@ Scaling:
 - https://algocademy.com/blog/how-to-design-a-file-storage-system-in-a-system-design-interview/: file storage system design
 - https://engineeringatscale.substack.com/p/when-to-use-blob-storage-vs-database: database vs blob storage
 - https://wiki.postgresql.org/wiki/BinaryFilesInDB: PostgreSQL wiki on storing files in DB
+
+### Out-of-Scope
+
+#### Dropbox: Magic Pocket
+
+Out of scope: Dropbox uses immutable blob store
+
+- https://dropbox.tech/infrastructure/improving-storage-efficiency-in-magic-pocket-our-immutable-blob-store: storage efficiency in their immutable blob store
+- https://medium.com/@anant7210/dropbox-magic-pocket-5ec95cc40a42: architecture summary
+- https://qconsf.com/presentation/oct2022/magic-pocket-dropboxs-exabyte-scale-blob-storage-system: QCon presentation
+
+#### Figma: Multiplayer
+
+Multiplayer is the feature of Figma that allows for real-time collaboration.
+
+Out of scope: I'm focusing more on the multifile storage/retrieval, the collaboration feature is already there for a single document.
+
+Intro:
+
+- https://www.figma.com/blog/how-figmas-multiplayer-technology-works/: multiplayer technology
+
+Deep dive:
+
+- https://sujeet.pro/articles/figma-multiplayer-infrastructure: multiplayer infrastructure deep dive
+- https://www.figma.com/blog/making-multiplayer-more-reliable/: S3 checkpointing + DynamoDB WAL for file persistence
+
+Scaling:
+
+- https://www.figma.com/blog/how-figma-scaled-to-multiple-databases/: database scaling
+
+#### Supabase Storage
+
+Supabase storage is a tool to **store and serve** files. It does serve our model well using file buckets.
+
+Out of scope: This is too tool-specific, I'm researching storage mechanism. May consider after conducting research.
+
+- https://github.com/supabase/storage: open source, full implementation (TypeScript, S3+Postgres pattern)
+- https://supabase.com/docs/guides/storage: storage docs
+- https://supabase.com/docs/guides/storage/schema/design: schema design
+- https://supabase.com/docs/guides/storage/security/access-control: access control via PostgreSQL RLS
+- https://supabase.com/docs/guides/troubleshooting/supabase-storage-inefficient-folder-operations-and-hierarchical-rls-challenges-b05a4d: hierarchical RLS challenges
