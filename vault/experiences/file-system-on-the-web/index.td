@@ -42,6 +42,10 @@ Out of scope: Dropbox uses immutable blob store
 
 ### Figma: Multiplayer
 
+Multiplayer is the feature of Figma that allows for real-time collaboration.
+
+Out of scope: I'm focusing more on the multifile storage/retrieval, the collaboration feature is already there for a single document.
+
 Intro:
 
 - https://www.figma.com/blog/how-figmas-multiplayer-technology-works/: multiplayer technology
