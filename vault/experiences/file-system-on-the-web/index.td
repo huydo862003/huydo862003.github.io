@@ -83,7 +83,26 @@ Scaling:
 
 #### Supabase Storage
 
-Supabase storage is a tool to **store and serve** files. It does serve our model well using file buckets.
+Supabase storage is an open-source, S3-compatible object storage service to **store and serve** files. It does serve our model well using file buckets.
+
+- Bucket: Like dbdiagram workspace.
+- Folder
+- File
+
+The API is kind of like this:
+
+```js
+const { data, error } = await supabase
+  .storage
+  .from('documents')
+  .list('folder/subfolder', { // Leave empty '' for the root directory
+    limit: 100,
+    offset: 0,
+    sortBy: { column: 'name', order: 'asc' }
+  })
+```
+
+It has API for querying files/folders. It can be deployed on a dedicated storage server, no need to be cloud-based.
 
 Out of scope: This is too tool-specific, I'm researching storage mechanism. May consider after conducting research.
 
