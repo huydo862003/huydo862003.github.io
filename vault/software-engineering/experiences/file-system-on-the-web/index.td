@@ -26,52 +26,48 @@ The compiler intentionally just needs a file system interface to resolve imports
 
 ## Articles & References
 
-## Storage
+### Storage (File/Metadata/API)
 
-### GitHub
+How real services store files, manage metadata, and expose file CRUD APIs.
 
-- [How GitHub stores and serves Git repos](https://singhajit.com/how-github-stores-and-serves-git-repositories/): full architecture walkthrough `[file]` `[metadata]`
-- [GitHub DGit/Spokes](https://github.blog/engineering/architecture-optimization/introducing-dgit/): distributed Git storage `[file]`
-- [Git's database internals](https://github.blog/engineering/architecture-optimization/gits-database-internals-i-packed-object-store/): pack files, object store, content-addressed storage `[file]`
-- [GitHub Contents API](https://docs.github.com/en/rest/repos/contents): file CRUD over REST, git-backed. Closest to our use case `[api]`
-
-### GitLab
-
-- [Gitaly](https://docs.gitlab.com/administration/gitaly/): gRPC service wrapping all Git storage access `[file]` `[metadata]`
-- [GitLab Repository Files API](https://docs.gitlab.com/ee/api/repository_files.html): similar to GitHub, URL-encoded paths `[api]`
-
-### Gitea
-
-- [Gitea source](https://github.com/go-gitea/gitea): Go, git-on-disk + DB metadata, easy to read `[file]` `[metadata]`
-
-### Supabase
-
-- [Supabase Storage source](https://github.com/supabase/storage): TypeScript, S3+Postgres metadata pattern `[file]` `[metadata]`
-- [Supabase storage schema](https://supabase.com/docs/guides/storage/schema/design): buckets + objects tables `[metadata]`
-- [Supabase access control via PostgreSQL RLS](https://supabase.com/docs/guides/storage/security/access-control) `[metadata]`
-- [Hierarchical RLS challenges](https://supabase.com/docs/guides/troubleshooting/supabase-storage-inefficient-folder-operations-and-hierarchical-rls-challenges-b05a4d): folder-level permissions are hard with RLS `[metadata]`
-
-### Microsoft
-
-- [OneDrive/MS Graph API](https://learn.microsoft.com/en-us/graph/onedrive-addressing-driveitems): hybrid path+ID addressing `[api]`
-- [VS Code FileSystemProvider](https://vshaxe.github.io/vscode-extern/vscode/FileSystemProvider.html): cleanest modern FS interface (stat, readFile, writeFile, readDirectory, rename, delete, watch) `[api]`
-
-### General
-
-- [PostgreSQL: storing files in DB](https://wiki.postgresql.org/wiki/BinaryFilesInDB): acceptable for files <100KB, simplified backups `[file]`
-- [Database vs blob storage](https://engineeringatscale.substack.com/p/when-to-use-blob-storage-vs-database): decision guide `[file]`
-- [Cloud storage HTTP APIs compared](http://lukasmartinelli.ch/cloud/2014/07/21/cloud-storage-apis-compared.html): Dropbox vs Google Drive vs S3 vs Box `[api]`
-- [Optimistic locking with ETags](https://sookocheff.com/post/api/optimistic-locking-in-a-rest-api/): the right default for web file APIs `[api]` `[collaboration]`
-- [Google Drive/Dropbox system design](https://www.pankajtanwar.in/blog/system-design-how-to-design-google-drive-dropbox-a-cloud-file-storage-service): metadata DB + blob storage split, chunked uploads, sync via message queues `[file]` `[metadata]`
+- GitHub
+  - `[file, metadata]`: [How GitHub stores and serves Git repos](https://singhajit.com/how-github-stores-and-serves-git-repositories/): full architecture walkthrough
+  - `[file]`: [GitHub DGit/Spokes](https://github.blog/engineering/architecture-optimization/introducing-dgit/): distributed Git storage
+  - `[file]`: [Git's database internals](https://github.blog/engineering/architecture-optimization/gits-database-internals-i-packed-object-store/): pack files, object store, content-addressed storage
+  - `[api]`: [GitHub Contents API](https://docs.github.com/en/rest/repos/contents): file CRUD over REST, git-backed. Closest to our use case.
+- Microsoft
+  - `[api]`: [OneDrive/MS Graph API](https://learn.microsoft.com/en-us/graph/onedrive-addressing-driveitems): hybrid path + ID addressing
+  - `[api]`: [VS Code FileSystemProvider](https://vshaxe.github.io/vscode-extern/vscode/FileSystemProvider.html): cleanest modern FS interface (stat, readFile, writeFile, readDirectory, rename, delete, watch)
+- General
+  - `[file]`: [PostgreSQL: storing files in DB](https://wiki.postgresql.org/wiki/BinaryFilesInDB): acceptable for files <100KB, simplified backups
+  - `[file]`: [Database vs blob storage](https://engineeringatscale.substack.com/p/when-to-use-blob-storage-vs-database): decision guide
+  - `[api]`: [Cloud storage HTTP APIs compared](http://lukasmartinelli.ch/cloud/2014/07/21/cloud-storage-apis-compared.html): Dropbox vs Google Drive vs S3 vs Box
+  - `[api, collaboration]`: [Optimistic locking with ETags](https://sookocheff.com/post/api/optimistic-locking-in-a-rest-api/): the right default for web file APIs
+  - `[file, metadata]`: [Google Drive/Dropbox system design](https://www.pankajtanwar.in/blog/system-design-how-to-design-google-drive-dropbox-a-cloud-file-storage-service): metadata DB + blob storage split, chunked uploads, sync via message queues
 
 ## Realtime & Collaboration
 
-### Figma
+How to handle concurrent multi-file edits and keep a project-wide view (like the dbdiagram renderer) in sync for all users.
 
-- [multiplayer technology](https://www.figma.com/blog/how-figmas-multiplayer-technology-works/) `[collaboration]`
-- [multiplayer infrastructure deep dive](https://sujeet.pro/articles/figma-multiplayer-infrastructure) `[collaboration]`
-- [S3 checkpointing + DynamoDB WAL for file persistence](https://www.figma.com/blog/making-multiplayer-more-reliable/) `[collaboration]` `[file]`
-- [database scaling](https://www.figma.com/blog/how-figma-scaled-to-multiple-databases/) `[collaboration]`
+- Figma
+  ::: note
+  Closest model to our use case: concurrent edits to a shared project trigger a full re-render of a visual canvas for all viewers. Similar to how editing file B should re-render the dbdiagram that imports B.
+  :::
+  - `[collaboration]`: [multiplayer technology](https://www.figma.com/blog/how-figmas-multiplayer-technology-works/)
+  - `[collaboration]`: [multiplayer infrastructure deep dive](https://sujeet.pro/articles/figma-multiplayer-infrastructure)
+  - `[collaboration, file]`: [S3 checkpointing + DynamoDB WAL for file persistence](https://www.figma.com/blog/making-multiplayer-more-reliable/)
+  - `[collaboration]`: [database scaling](https://www.figma.com/blog/how-figma-scaled-to-multiple-databases/)
+- Zed
+  ::: note
+  Open source editor with built-in collaboration via CRDTs.
+  Runs one LSP instance per project server-side, feeds CRDT-resolved content to LSP.
+  This solves "file A imports file B, both edited concurrently, LSP needs consistent view".
+  :::
+  - `[collaboration]`: [source](https://github.com/zed-industries/zed)
+  - `[collaboration]`: [CRDT implementation](https://zed.dev/blog/crdts)
+- Replit
+  Web-based, OT for real-time collab. Server-side LSP handles cross-file analysis, triggered by file change events from any collaborator.
+  - `[collaboration]`: [multiplayer architecture](https://blog.replit.com/multiplayer)
 
 ## Out-of-Scope
 
