@@ -33,7 +33,6 @@ How real services store files, manage metadata, and expose file CRUD APIs.
 - GitHub
   - `[file, metadata]`: [How GitHub stores and serves Git repos](https://singhajit.com/how-github-stores-and-serves-git-repositories/): full architecture walkthrough
   - `[file]`: [GitHub DGit/Spokes](https://github.blog/engineering/architecture-optimization/introducing-dgit/): distributed Git storage
-  - `[file]`: [Git's database internals](https://github.blog/engineering/architecture-optimization/gits-database-internals-i-packed-object-store/): pack files, object store, content-addressed storage
   - `[api]`: [GitHub Contents API](https://docs.github.com/en/rest/repos/contents): file CRUD over REST, git-backed. Closest to our use case.
 - Microsoft
   - `[api]`: [OneDrive/MS Graph API](https://learn.microsoft.com/en-us/graph/onedrive-addressing-driveitems): hybrid path + ID addressing
