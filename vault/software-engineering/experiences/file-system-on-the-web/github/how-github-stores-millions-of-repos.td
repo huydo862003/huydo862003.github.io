@@ -1,8 +1,13 @@
 ---
+_type: ExperienceResource
 _label: "How GitHub Stores Millions of Repos and Billions of Files"
+experience: fref("software-engineering/experiences/file-system-on-the-web/index.td")
+url: "https://www.pankajtanwar.in/blog/how-does-github-store-millions-of-repo-and-billions-of-files"
+kind: 'article'
+tags:
+  - 'file'
+  - 'metadata'
 ---
-
-Link: https://www.pankajtanwar.in/blog/how-does-github-store-millions-of-repo-and-billions-of-files
 
 ## Request Flow (Read Path)
 
