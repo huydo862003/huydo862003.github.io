@@ -15,7 +15,7 @@ The compiler intentionally just needs a file system interface to resolve imports
 - Each user has multiple workspaces, each of which has a logical file system, in which files are stored.
 - Each file can have permission settings.
 - Almost every files are plain texts, not binary.
-- Files can be very large, up to 20k LOC.
+- Files can be very large, up to 20k LOC (around 1-2 MBs).
 - A workspace can have tens or hundreds of files.
 - Almost likely, we won't use specialized cloud-based storage solutions like S3, etc. We usually don't want the hussle of contacting devops and allocate more unique resources. Adding more servers is OK though, but need some justifications.
 - Shall account for concurrent reads/writes and data consistency.
