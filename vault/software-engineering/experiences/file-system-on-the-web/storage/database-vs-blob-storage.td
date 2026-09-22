@@ -17,9 +17,18 @@ Decision guide for choosing between storing files in a database vs blob storage 
 - Both -> Hybrid. DB for critical tightly-coupled data, blob storage for large scalable assets.
 :::
 
-## Two approaches
+Decision matrix
 
-### In-database
+| Attribute | Database | Blob storage |
+| --- | --- | --- |
+| Consistency | Strong | Eventual |
+| Scalability | Limited | High |
+| Cost | Expensive | Cost-efficient |
+| Simplicity | Simple | Complex |
+| File size | Limited (1 GB/4 GB) | Unlimited |
+| Performance | Slower for large files | Faster (CDN, streaming) |
+
+## Approach 1: In-database
 
 Store binary files directly in the DB (PostgreSQL `bytea`, MySQL `BLOB`, MongoDB GridFS).
 
@@ -36,7 +45,9 @@ Cons:
 - Replication and backups become significantly slower.
 - Databases are 5-20x more expensive than blob storage for large binary objects.
 
-### Separated storage
+## Approach 2: Separated storage
+
+> This one is essentially out of database + pointer to remote storage.
 
 Store metadata + file path in the DB, file content in blob storage (S3, Azure Blob, etc.).
 
@@ -47,6 +58,19 @@ The upload flow with pre-signed URLs:
 3. Client uploads file content directly to blob storage using that URL, bypassing the backend entirely.
 
 This keeps the backend lightweight since file bytes never touch the application server.
+
+**Error handling**: This is a distributed transaction without a coordinator, so failures at each step need different handling:
+
+1. **DB fails storing metadata**: Clean failure. No URL generated, client gets an error. Nothing to clean up.
+2. **Metadata stored, but client upload to blob fails**: Orphaned metadata in DB pointing to a nonexistent file.
+3. **File uploaded, but confirmation back to backend fails**: File exists in blob storage but metadata is stuck incomplete.
+
+Common mitigations:
+
+- Store metadata with `status: 'pending'`. Only flip to `'complete'` after the client confirms successful upload.
+- A background job periodically cleans up stale pending records (e.g. pending for > 15 minutes).
+- Pre-signed URLs have a TTL (a few minutes). If the upload didn't happen, the metadata is clearly orphaned.
+- Blob storage lifecycle rules can auto-delete unconfirmed objects (e.g. S3 lifecycle policies on a staging prefix).
 
 Pros:
 
@@ -60,17 +84,6 @@ Cons:
 - Eventual consistency between metadata and content. A failed upload can leave orphaned metadata or vice versa.
 - Operational complexity: Multi-step uploads, failure handling, retry logic.
 - Dual backup systems (DB + blob store).
-
-## Decision matrix
-
-| Attribute | Database | Blob storage |
-| --- | --- | --- |
-| Consistency | Strong | Eventual |
-| Scalability | Limited | High |
-| Cost | Expensive | Cost-efficient |
-| Simplicity | Simple | Complex |
-| File size | Limited (1 GB/4 GB) | Unlimited |
-| Performance | Slower for large files | Faster (CDN, streaming) |
 
 ## When to use which
 
