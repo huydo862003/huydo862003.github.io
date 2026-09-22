@@ -17,18 +17,24 @@ System design walkthrough for a cloud file storage service (Google Drive/Dropbox
 Four layers, each scaling independently:
 
 - **Client applications** on user devices.
-- **Block/object storage** for file chunks (S3 or custom, like Dropbox's Magic Pocket).
+- **Block/object storage** for file chunks (S3 or custom; Dropbox initially used S3, later migrated to in-house Magic Pocket).
 - **Metadata database** storing file info (names, sizes, paths, versions) separately from content.
 - **Synchronization server** coordinating updates across devices.
 
-> The key split: metadata != blob storage. They scale independently and use different infrastructure.
+::: note
+The key split: Metadata != blob storage. They scale independently and use different infrastructure.
+:::
 
 ## Chunked uploads
 
-Files are broken into chunks identified by SHA-256 hashes. This is the core design decision that enables everything else.
+Problems with uploading full files: Excessive server memory consumption, request handler tied up for the entire duration, high CPU usage, complete re-upload on failure, and inefficient for small edits.
+
+The solution: Break files into smaller chunks identified by SHA-256 hashes. Chunk size depends on I/O ops per second on storage devices, network bandwidth, average file size, and metadata overhead.
+
+Benefits:
 
 - **Bandwidth optimization**: On failure, only the failing chunk is retried, not the whole file.
-- **Partial updates**: Only changed chunks are uploaded. Enables efficient version history.
+- **Partial updates**: Only changed chunks are uploaded. Enables efficient version history at the chunk level.
 - **Concurrent processing**: Multiple chunks upload in parallel via multithreading.
 - **Deduplication**: Identical chunks (even across users) reference the same stored data by hash.
 
@@ -42,18 +48,21 @@ Files are broken into chunks identified by SHA-256 hashes. This is the core desi
 
 ### Message queues
 
-Async messaging (RabbitMQ, Kafka) with:
+Async messaging (RabbitMQ, Kafka) with a specific flow:
 
-- **Request queue**: Global queue for all client modifications.
-- **Response queue**: Pushes sync updates to subscribed devices.
-- Enables horizontal scaling of the sync service.
+1. Client modification enters the global **request queue**.
+2. Metadata database is updated.
+3. Sync service processes the metadata change.
+4. Update message pushed to subscribed devices via **response queues**.
+
+This enables horizontal scaling of the sync service.
 
 ## Database design
 
-- Relational DB (MySQL) for ACID on concurrent edits.
-- NoSQL trades ACID for performance/scalability, not suitable here.
-- A wrapper/abstraction layer sits between the app and DB + cache.
-- Partitioning: hash-based (consistent hashing on file IDs) over range-based (range causes load imbalance).
+- Relational DB (MySQL) for ACID on concurrent edits. NoSQL trades ACID for performance/scalability, which is not acceptable when multiple users access the same files simultaneously.
+- A wrapper/abstraction layer sits between the app and DB + cache, abstracting away sharding complexity.
+- Never store file URLs in the DB. Construct them from stored metadata instead. URLs change when storage backends migrate.
+- Partitioning: Hash-based (consistent hashing on file IDs) over range-based. Range partitioning (e.g. by first letter of filename) causes unbalanced distribution. Consistent hashing solves the remaining imbalance from naive hashing.
 
 ## Supporting infra
 
@@ -64,6 +73,6 @@ Async messaging (RabbitMQ, Kafka) with:
 ## Takeaways for our system
 
 - **Metadata/content split** is the standard pattern at scale. We're small enough that DB-only works, but this is the upgrade path.
-- **Chunked uploads** are overkill for our file sizes (under 100 KB), but the deduplication idea (hash-based identity) could be useful for caching or diffing.
+- **Chunked uploads** are overkill for our file sizes (up to 1-2 MB), but the deduplication idea (hash-based identity) could be useful for caching or diffing.
 - **Long polling for sync** is simpler than WebSockets and sufficient for file change notifications. Worth considering if we don't need sub-second latency.
 - **Message queues for fan-out**: If user A edits a file and users B, C need to know, a response queue per device is a clean pattern.

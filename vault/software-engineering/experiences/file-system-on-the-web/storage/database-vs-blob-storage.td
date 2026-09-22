@@ -8,7 +8,14 @@ tags:
   - 'file'
 ---
 
-Decision guide for choosing between storing files in a database vs blob storage (S3, Azure Blob, etc.). The key argument: decide based on first principles (data size, access patterns, consistency, operational complexity), not convention.
+Decision guide for choosing between storing files in a database vs blob storage (S3, Azure Blob, etc.). The key argument: Decide based on first principles (data size, access patterns, consistency, operational complexity), not convention.
+
+::: tip
+**Quick guide**:
+- Small files + ACID needed -> Database. Simple, strong consistency, single backup.
+- Large files (100 MB+) or high throughput -> Blob storage. Cheap, scalable, CDN-friendly.
+- Both -> Hybrid. DB for critical tightly-coupled data, blob storage for large scalable assets.
+:::
 
 ## Two approaches
 
@@ -16,25 +23,43 @@ Decision guide for choosing between storing files in a database vs blob storage 
 
 Store binary files directly in the DB (PostgreSQL `bytea`, MySQL `BLOB`, MongoDB GridFS).
 
+Pros:
+
 - Simple implementation, minimal dependencies.
 - Strong consistency out of the box.
-- But: large binaries increase memory usage and slow queries.
-- Backend servers experience memory pressure, potentially OOM.
+- Single backup system (files replicate with the DB).
+
+Cons:
+
+- Large binaries increase memory usage and slow queries. Backend servers can OOM when serving file content through the application layer.
 - DB size constraints (PostgreSQL: 1 GB/field, MySQL: 4 GB).
 - Replication and backups become significantly slower.
 - Databases are 5-20x more expensive than blob storage for large binary objects.
 
 ### Separated storage
 
-Store metadata + file path in the DB, file content in blob storage.
+Store metadata + file path in the DB, file content in blob storage (S3, Azure Blob, etc.).
+
+The upload flow with pre-signed URLs:
+
+1. Client requests upload from backend.
+2. Backend stores metadata in DB and generates a pre-signed URL for the blob store.
+3. Client uploads file content directly to blob storage using that URL, bypassing the backend entirely.
+
+This keeps the backend lightweight since file bytes never touch the application server.
+
+Pros:
 
 - DB stays lightweight (metadata is typically under 100 KB per record).
-- File uploads can bypass backend servers entirely (pre-signed URLs).
 - No practical storage limits.
 - Faster backups and replication.
-- But: eventual consistency between metadata and content.
-- Operational complexity: multi-step uploads, failure handling.
-- Dual backup systems.
+- Reads also bypass the backend: Files are served directly from blob storage (+ CDN). Same bypass pattern as uploads.
+
+Cons:
+
+- Eventual consistency between metadata and content. A failed upload can leave orphaned metadata or vice versa.
+- Operational complexity: Multi-step uploads, failure handling, retry logic.
+- Dual backup systems (DB + blob store).
 
 ## Decision matrix
 
@@ -44,25 +69,28 @@ Store metadata + file path in the DB, file content in blob storage.
 | Scalability | Limited | High |
 | Cost | Expensive | Cost-efficient |
 | Simplicity | Simple | Complex |
+| File size | Limited (1 GB/4 GB) | Unlimited |
 | Performance | Slower for large files | Faster (CDN, streaming) |
 
 ## When to use which
 
 **Database**:
-- Files that need ACID with their metadata (invoices, signed forms, inspection photos).
-- Small config files (YAML, XML) accessed infrequently.
+
+- Files that need ACID with their metadata (invoices, signed forms, inspection photos). E.g. a payment receipt must be persisted atomically with the transaction; a multi-step upload where the receipt could fail separately is not acceptable.
+- Small config files (YAML, XML) that are rarely accessed via UI and only read once during startup.
 - Regulated environments needing built-in encryption and audit logging.
 
 **Blob storage**:
-- Large files (100 MB+), media assets.
+
+- Large files (100 MB+), media assets (e.g. WhatsApp, Instagram cannot practically store media in databases).
 - Billions of files, multi-part uploads.
 - Systems needing CDN integration.
 - High-throughput applications.
 
-**Hybrid**: Many systems use both. Database for critical tightly-coupled data, blob storage for large scalable assets.
+**Hybrid**: Many systems use both.
 
 ## Takeaways for our system
 
-- Our files are plain text, mostly under 100 KB. This is squarely in "database is fine" territory.
+- Our files are plain text, up to 20k LOC (around 1-2 MB). This is in "database is fine" territory.
 - If we ever need to scale beyond that, the separated approach (metadata in DB, content in blob storage with pre-signed URLs) is the standard upgrade path.
-- The pre-signed URL pattern is worth noting: clients upload directly to blob storage, bypassing the backend server entirely. Reduces backend memory pressure.
+- The pre-signed URL pattern is worth noting even at our scale: If backend memory becomes a concern, we can offload file serving without changing the metadata layer.
