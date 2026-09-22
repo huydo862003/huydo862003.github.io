@@ -24,7 +24,7 @@ Auth is passed via the `Authorization` header:
 Authorization: Bearer <token>
 ```
 
-## Get repository content
+## Get Repository Content
 
 ```
 GET /repos/{owner}/{repo}/contents/{path}
@@ -70,7 +70,7 @@ GET /repos/{owner}/{repo}/contents/{path}
   - Required permission: "Contents" repository permissions (read).
   - No auth needed for public repos.
 
-## Create or update file contents
+## Create or Update File Contents
 
 ```
 PUT /repos/{owner}/{repo}/contents/{path}
@@ -110,7 +110,7 @@ Creates a new file or replaces an existing one. Each call produces exactly one c
   - Fine-grained tokens: "Contents" repository permissions (write).
   - Classic tokens: `repo` scope.
 
-## Delete a file
+## Delete a File
 
 ```
 DELETE /repos/{owner}/{repo}/contents/{path}
@@ -146,7 +146,7 @@ Removes a file from a repository. Each call produces exactly one commit.
   - Fine-grained tokens: "Contents" repository permissions (write).
   - Classic tokens: `repo` scope.
 
-## Get repository README
+## Get Repository README
 
 ```
 GET /repos/{owner}/{repo}/readme
@@ -176,7 +176,7 @@ Returns the preferred README file from the repo root, or from a specific subdire
   - Fine-grained tokens: "Contents" repository permissions (read).
   - No auth needed for public repos.
 
-## Download repository archive
+## Download Repository Archive
 
 ```
 GET /repos/{owner}/{repo}/tarball/{ref}
@@ -192,7 +192,7 @@ Constraints:
   - For private repos, the redirect link expires after 5 minutes.
   - Your HTTP client must follow redirects.
 
-## Constraints and gotchas
+## Constraints and Gotchas
 
 - **One file per commit**: Each PUT/DELETE = one commit.
   - No atomic multi-file commits.

@@ -24,7 +24,7 @@ Extensions implement it to serve files from arbitrary sources (FTP, remote serve
 
 All methods take a `Uri` and return `void` or `Thenable<void>` (async-capable). Errors are thrown as typed exceptions.
 
-### Related types
+### Related Types
 
 ```ts
 enum FileType { Unknown = 0, File = 1, Directory = 2, SymbolicLink = 64 }
@@ -38,14 +38,14 @@ interface FileStat {
 }
 ```
 
-### Read operations
+### Read Operations
 
 - `stat(uri)` -> `FileStat`: Metadata (type, ctime, mtime, size, permissions).
   - For symlinks: return the target's metadata, but OR the type with `FileType.SymbolicLink`.
 - `readFile(uri)` -> `Uint8Array`: Entire file content as bytes.
 - `readDirectory(uri)` -> `Array<[string, FileType]>`: Entries as name/type tuples.
 
-### Write operations
+### Write Operations
 
 - `writeFile(uri, content, { create, overwrite })`: Write entire file content, replacing everything.
   - New files are created through this method (no separate `createFile`).
@@ -67,7 +67,7 @@ interface FileStat {
 - `onDidChangeFile` (event): Fires on create, change, or delete of watched resources.
   - Metadata must include updated `mtime` and correct `size` for the editor to display properly.
 
-## Error model
+## Error Model
 
 All methods throw typed errors:
 

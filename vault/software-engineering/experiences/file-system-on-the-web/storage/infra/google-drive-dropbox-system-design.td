@@ -49,7 +49,7 @@ These are rough requirements, not measurable/quantifiable.
 Each user accesses ~5 files daily, reading ~200 KB chunks out of 1 MB files. 80% of traffic hits 20% of files: ((50M x 200 KB x 5) x 20) / 100 = 10 TB.
 :::
 
-## High-level design
+## High-Level Design
 
 The system supports two scenarios: uploading/editing/deleting files, and viewing/searching files.
 
@@ -96,7 +96,7 @@ download(authToken, fileInfo, userInfo)
 
 `uploadToken` is generated beforehand when a user requests to upload. This gives an opportunity to authenticate and validate the user before they transmit any file data. If we need to block a user from uploading, the check happens here instead of allowing the whole file to be sent and then discarded.
 
-## Component design
+## Component Design
 
 ```mermaid
 graph TD
@@ -278,7 +278,7 @@ An in-memory key-value store that runs on dedicated servers (its own tier, separ
 
 Sits between the internet and all backend servers (block server, metadata servers, notification server) as shown in the component design diagram. All client traffic enters through the load balancer first. Distributes requests uniformly using round-robin or advanced algorithms.
 
-## Takeaways for our System
+## Takeaways for Our System
 
 - **Metadata/content split** is the standard pattern at scale. We're small enough that DB-only works, but this is the upgrade path.
 - **Chunked uploads** are overkill for our file sizes (up to 1-2 MB), but the deduplication idea (hash-based identity) could be useful for caching or diffing.

@@ -16,9 +16,9 @@ MS Graph supports both ID-based and path-based addressing, relevant to our files
 
 > Remark: We intend to do something similar in our cloud: A file can reference another via cloud id or path.
 
-## Two addressing modes
+## Two Addressing Modes
 
-### ID-based
+### ID-Based
 
 Items get a unique ID at creation time. The ID is stable across renames and moves.
 
@@ -31,7 +31,7 @@ Items get a unique ID at creation time. The ID is stable across renames and move
 - Stable: Renaming or moving the item does not change the ID.
 - Good for internal references and bookmarks.
 
-### Path-based
+### Path-Based
 
 Address items by their path in the folder hierarchy, relative to any item.
 
@@ -55,11 +55,11 @@ Everything between the two `:/` is a filesystem path. Everything outside is norm
   - `/drive/items/{folder-id}:/path:/content` - Relative to any folder by ID (hybrid of both modes).
 - Breaks when the item is renamed or moved (path changes).
 
-## Path encoding
+## Path Encoding
 
 Paths are user-specified content, so they need percent encoding per RFC 3986.
 
-### Reserved characters
+### Reserved Characters
 
 These cannot appear in OneDrive file/folder names:
 
@@ -71,7 +71,7 @@ onedrive-business-reserved = "/" / "\" / "*" / "<" / ">" / "?" / ":" / "|" / "#"
 - Folder names cannot end with `.`.
 - Names cannot begin with `~`.
 
-### URI path characters
+### URI Path Characters
 
 Allowed characters in MS Graph URL path segments (per RFC 3986):
 

@@ -28,7 +28,7 @@ Decision matrix
 | File size | Limited (1 GB/4 GB) | Unlimited |
 | Performance | Slower for large files | Faster (CDN, streaming) |
 
-## Approach 1: In-database
+## Approach 1: In-Database
 
 Store binary files directly in the DB (PostgreSQL `bytea`, MySQL `BLOB`, MongoDB GridFS).
 
@@ -45,7 +45,7 @@ Cons:
 - Replication and backups become significantly slower.
 - Databases are 5-20x more expensive than blob storage for large binary objects.
 
-## Approach 2: Separated storage
+## Approach 2: Separated Storage
 
 > This one is essentially out of database + pointer to remote storage.
 
@@ -85,7 +85,7 @@ Cons:
 - Operational complexity: Multi-step uploads, failure handling, retry logic.
 - Dual backup systems (DB + blob store).
 
-## When to use which
+## When to Use Which
 
 **Database**:
 
@@ -102,7 +102,7 @@ Cons:
 
 **Hybrid**: Many systems use both.
 
-## Takeaways for our system
+## Takeaways for Our System
 
 - Our files are plain text, up to 20k LOC (around 1-2 MB). This is in "database is fine" territory.
 - If we ever need to scale beyond that, the separated approach (metadata in DB, content in blob storage with pre-signed URLs) is the standard upgrade path.

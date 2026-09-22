@@ -24,7 +24,7 @@ Two approaches to handling binary files with PostgreSQL:
 - Store them in the database, or store metadata.
 - Store path in the database and keep files on the filesystem.
 
-## Approach 1: Store files in the database
+## Approach 1: Store Files in the Database
 
 PostgreSQL offers three ways to store file data.
 
@@ -116,7 +116,7 @@ Desired use cases:
 - Files are very large and you need partial reads/seeks (e.g. streaming video, large archives).
 - Overkill for small files.
 
-### General tradeoffs of in-database storage
+### General Tradeoffs of In-Database Storage
 
 Pros:
 
@@ -132,7 +132,7 @@ Cons:
 - Longer backups.
 - External applications cannot access files directly; must go through the DB.
 
-## Approach 2: Store metadata + path in the database
+## Approach 2: Store Metadata + Path in the Database
 
 Keep files on the filesystem, store only metadata and a path/link in the database.
 
@@ -163,7 +163,7 @@ Cons:
 - Description.
 - Date added.
 
-## Takeaways for our system
+## Takeaways for Our System
 
 - Our files are plain text, up to 20k LOC (around 1-2 MB). Still within the range where in-database storage is acceptable.
 - The wiki is framed around binary files, but the TOAST constraints (1 GB per entry, 4 billion entries) apply equally to `text` and `bytea`. At 1-2 MB per file, TOAST handles this transparently (compresses and stores out-of-line for values > 2 KB).
