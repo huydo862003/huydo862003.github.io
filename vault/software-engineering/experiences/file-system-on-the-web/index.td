@@ -36,7 +36,7 @@ How real services store files, manage metadata, and expose file CRUD APIs.
   - `[api]`: [GitHub Contents API](https://docs.github.com/en/rest/repos/contents): file CRUD over REST, git-backed. Closest to our use case.
 - Microsoft
   - `[api]`: [OneDrive/MS Graph API](https://learn.microsoft.com/en-us/graph/onedrive-addressing-driveitems): hybrid path + ID addressing
-  - `[api]`: [VS Code FileSystemProvider](https://vshaxe.github.io/vscode-extern/vscode/FileSystemProvider.html): cleanest modern FS interface (stat, readFile, writeFile, readDirectory, rename, delete, watch)
+  - `[api]`: [VS Code FileSystemProvider](https://code.visualstudio.com/api/references/vscode-api#FileSystemProvider): cleanest modern FS interface (stat, readFile, writeFile, readDirectory, rename, delete, watch)
 - General
   - `[file]`: [PostgreSQL: storing files in DB](https://wiki.postgresql.org/wiki/BinaryFilesInDB): acceptable for files <100KB, simplified backups
   - `[file]`: [Database vs blob storage](https://engineeringatscale.substack.com/p/when-to-use-blob-storage-vs-database): decision guide
