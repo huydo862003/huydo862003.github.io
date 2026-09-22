@@ -1,0 +1,69 @@
+---
+_type: ExperienceResource
+_label: "System Design: Google Drive / Dropbox"
+experience: fref("software-engineering/experiences/file-system-on-the-web/index.td")
+url: "https://www.pankajtanwar.in/blog/system-design-how-to-design-google-drive-dropbox-a-cloud-file-storage-service"
+kind: 'article'
+tags:
+  - 'file'
+  - 'metadata'
+  - 'collaboration'
+---
+
+System design walkthrough for a cloud file storage service (Google Drive/Dropbox scale: 100M users, ~9,000 QPS, 10 exabytes).
+
+## Core architecture
+
+Four layers, each scaling independently:
+
+- **Client applications** on user devices.
+- **Block/object storage** for file chunks (S3 or custom, like Dropbox's Magic Pocket).
+- **Metadata database** storing file info (names, sizes, paths, versions) separately from content.
+- **Synchronization server** coordinating updates across devices.
+
+> The key split: metadata != blob storage. They scale independently and use different infrastructure.
+
+## Chunked uploads
+
+Files are broken into chunks identified by SHA-256 hashes. This is the core design decision that enables everything else.
+
+- **Bandwidth optimization**: On failure, only the failing chunk is retried, not the whole file.
+- **Partial updates**: Only changed chunks are uploaded. Enables efficient version history.
+- **Concurrent processing**: Multiple chunks upload in parallel via multithreading.
+- **Deduplication**: Identical chunks (even across users) reference the same stored data by hash.
+
+## Sync mechanisms
+
+### Polling -> Long polling
+
+- Periodic polling is wasteful (mostly empty responses).
+- HTTP long polling: server holds the request open and responds immediately when changes happen.
+- Mobile clients sync on-demand to save bandwidth.
+
+### Message queues
+
+Async messaging (RabbitMQ, Kafka) with:
+
+- **Request queue**: Global queue for all client modifications.
+- **Response queue**: Pushes sync updates to subscribed devices.
+- Enables horizontal scaling of the sync service.
+
+## Database design
+
+- Relational DB (MySQL) for ACID on concurrent edits.
+- NoSQL trades ACID for performance/scalability, not suitable here.
+- A wrapper/abstraction layer sits between the app and DB + cache.
+- Partitioning: hash-based (consistent hashing on file IDs) over range-based (range causes load imbalance).
+
+## Supporting infra
+
+- **Caching**: Memcached for hot chunks, LRU eviction.
+- **Load balancing**: Round-robin or advanced algorithms.
+- **Auth**: Token generation before upload, so auth happens before transmitting large files.
+
+## Takeaways for our system
+
+- **Metadata/content split** is the standard pattern at scale. We're small enough that DB-only works, but this is the upgrade path.
+- **Chunked uploads** are overkill for our file sizes (under 100 KB), but the deduplication idea (hash-based identity) could be useful for caching or diffing.
+- **Long polling for sync** is simpler than WebSockets and sufficient for file change notifications. Worth considering if we don't need sub-second latency.
+- **Message queues for fan-out**: If user A edits a file and users B, C need to know, a response queue per device is a clean pattern.
