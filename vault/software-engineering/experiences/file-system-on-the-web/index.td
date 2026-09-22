@@ -44,8 +44,11 @@ How real services store files, manage metadata, and expose file CRUD APIs.
   - `[api, collaboration]`: [Optimistic locking with ETags](https://sookocheff.com/post/api/optimistic-locking-in-a-rest-api/): the right default for web file APIs
   - `[file, metadata]`: [Google Drive/Dropbox system design](https://www.pankajtanwar.in/blog/system-design-how-to-design-google-drive-dropbox-a-cloud-file-storage-service): metadata DB + blob storage split, chunked uploads, sync via message queues
 - DB Schema for Filesystems
-  - `[metadata]`: [Supabase Storage schema](https://supabase.com/docs/guides/storage/schema/design): PostgreSQL, flat namespace with `/`-delimited names, `path_tokens` array, JSONB metadata, RLS. [Source code](https://github.com/supabase/storage)
-  - `[metadata]`: [Notion data model](https://www.notion.com/blog/data-model-behind-notion): PostgreSQL, block-based (everything is a block with id, type, properties, content, parent). Sharded across 96 servers
+  - `[metadata]`: [Supabase Storage schema](https://supabase.com/docs/guides/storage/schema/design): Open-source S3-compatible file storage service.
+    - PostgreSQL for metadata (`buckets` + `objects` tables), S3 for content.
+    - Flat namespace with `/`-delimited names, `path_tokens` array, JSONB metadata, RLS.
+    - [Source code](https://github.com/supabase/storage)
+  - `[metadata]`: [Notion data model](https://www.notion.com/blog/data-model-behind-notion): PostgreSQL, block-based (everything is a block with id, type, properties, content, parent).
   - `[file]`: [MongoDB GridFS](https://www.mongodb.com/docs/manual/core/gridfs/): two collections (`fs.files` + `fs.chunks`), chunked storage for files > 16 MB, streaming/seeking
 
 ## Realtime & Collaboration
