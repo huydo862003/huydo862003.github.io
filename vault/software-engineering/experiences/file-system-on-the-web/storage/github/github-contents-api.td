@@ -87,7 +87,9 @@ Creates a new file or replaces an existing one. Each call produces exactly one c
 - `sha` (required for updates): Blob SHA of the file being replaced.
   - Acts as concurrency control.
   - If the file changed since you last read it, the request fails with 409 Conflict.
-  > Essentially a retry CAS pattern at the application level. 409 = CAS failed.
+  ::: note
+  Essentially a retry CAS pattern at the application level. 409 = CAS failed.
+  :::
 - `branch` (optional): Defaults to the repo's default branch.
 - `committer` (optional): `{ name, email, date }`. Defaults to the authenticated user.
   - Omitting `name` or `email` triggers a 422 error.
@@ -166,7 +168,7 @@ Returns the preferred README file from the repo root, or from a specific subdire
 
 **Response**:
   - 200 OK. Returns the same file object as Get repository content (including `download_url`).
-  - 304 Not modified.
+  - 304 Not Modified.
   - 404 if no README found.
   - 422 Validation failed.
 
@@ -190,7 +192,7 @@ Constraints:
   - For private repos, the redirect link expires after 5 minutes.
   - Your HTTP client must follow redirects.
 
-## Constraints and Gotchas
+## Constraints and gotchas
 
 - **One file per commit**: Each PUT/DELETE = one commit.
   - No atomic multi-file commits.

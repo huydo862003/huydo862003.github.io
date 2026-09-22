@@ -63,7 +63,7 @@ interface FileStat {
 - `watch(uri, { recursive, excludes })` -> `Disposable`: Subscribe to file change events.
   - `excludes` can be absolute paths, relative paths, or simple globs (e.g. `**/build`).
   - Case-sensitivity depends on the underlying OS (case-insensitive on Windows/macOS, case-sensitive on Linux).
-  > Remark: It's one way to tackle realtime collaboration :v
+  > Remark: One way to tackle realtime collaboration.
 - `onDidChangeFile` (event): Fires on create, change, or delete of watched resources.
   - Metadata must include updated `mtime` and correct `size` for the editor to display properly.
 
@@ -75,4 +75,6 @@ All methods throw typed errors:
 - `FileExists`: Resource already exists (when overwrite is false).
 - `NoPermissions`: Insufficient permissions.
 
-> No error codes, no status objects, just typed exceptions with clear semantics.
+::: note
+No error codes, no status objects, just typed exceptions with clear semantics.
+:::

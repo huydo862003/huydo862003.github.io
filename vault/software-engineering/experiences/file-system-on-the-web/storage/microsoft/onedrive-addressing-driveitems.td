@@ -14,7 +14,7 @@ This document covers how OneDrive addresses files and folders through MS Graph.
 
 MS Graph supports both ID-based and path-based addressing, relevant to our filesystem API design.
 
-> Remark: We intend to do something similar in our cloud: A file can references another via cloud id or path
+> Remark: We intend to do something similar in our cloud: A file can reference another via cloud id or path.
 
 ## Two addressing modes
 
@@ -83,7 +83,7 @@ sub-delims  = "!" / "$" / "&" / "'" / "(" / ")" / "*" / "+" / "," / ";" / "="
 
 Characters not in `pchar` (e.g. `#`, space) must be percent-encoded (`#` -> `%23`, ` ` -> `%20`).
 
-### Key gotcha: per-segment encoding
+### Key gotcha: Per-segment encoding
 
 Encode each path segment individually, not the entire URL. Encoding rules differ per URL segment, so encoding the whole string makes delimiters and content ambiguous.
 
@@ -95,4 +95,6 @@ string url = url_encode("https://graph.microsoft.com/v1.0/me/drive/root:/" + pat
 string url = "https://graph.microsoft.com/v1.0/me/drive/root:/" + url_path_encode(path) + ":/children"
 ```
 
-> Not all URL encoding libraries handle path encoding correctly. E.g. .NET's `HttpUtility.UrlPathEncode` does not encode all reserved characters. Use `UriBuilder` instead.
+::: warning
+Not all URL encoding libraries handle path encoding correctly. E.g. .NET's `HttpUtility.UrlPathEncode` does not encode all reserved characters. Use `UriBuilder` instead.
+:::
