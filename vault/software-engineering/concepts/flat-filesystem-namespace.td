@@ -1,6 +1,6 @@
 ---
 _type: SoftEngConcept
-_label: 'Flat Namespace'
+_label: 'Flat Filesystem Namespace'
 journey: fref("software-engineering/index.td")
 status: 'learning'
 tags:

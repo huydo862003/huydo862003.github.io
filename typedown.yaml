@@ -3,5 +3,6 @@ vault:
   root_dir: "vault"
 repo: "https://github.com/huydo862003/huydo862003.github.io"
 site:
+  origin: "https://huydo862003.github.io"
   title: "scrambled"
   description: "Personal knowledge base"

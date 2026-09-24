@@ -3,7 +3,6 @@ _type: SoftEngConcept
 _label: 'Conflict-free Replicated Data Type'
 journey: fref("software-engineering/index.td")
 status: 'learning'
-depends_on:
 tags:
   - 'collaboration'
 ---
