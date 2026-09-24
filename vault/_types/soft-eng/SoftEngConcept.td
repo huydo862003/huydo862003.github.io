@@ -5,5 +5,5 @@ _icon: icon.lightbulb
 _extends: Concept
 properties:
   tags:
-    type: list['code analysis' | 'Software design']?
+    type: list['code analysis' | 'Software design' | 'collaboration' | 'database' | 'architecture' | 'networking']?
 ---

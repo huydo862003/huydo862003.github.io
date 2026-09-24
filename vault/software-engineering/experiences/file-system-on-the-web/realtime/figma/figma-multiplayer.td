@@ -52,7 +52,7 @@ Other data (comments, users, teams, projects) is stored in Postgres and synced v
 
 How Figma evaluates the possible multiplayer approaches.
 
-#### Why Not OT
+#### Why Not OT?
 
 Operational Transformation (OT):
  - Defines operations through offsets in text (insert at position N, delete at position M).
@@ -71,6 +71,7 @@ Pros:
 Cons:
 
 - OT is extremely hard to implement correctly. Even formally proving correctness for just two primitives (insert and delete) is error-prone. The state space is too large to reason about by hand.
+- OT is suitable for text-based apps, but Figma is not.
 
 **Why Figma rejected it**: Figma is a design tool, not a text editor. They did not need the power of OTs, and the complexity was not worth it.
 
@@ -78,27 +79,30 @@ Cons:
 Their primary goal: The multiplayer system should be no more complex than necessary.
 :::
 
-#### Why Not Pure CRDTs
+#### Why Not Pure CRDTs?
 
-**What it is**: A collection of data structures that can be replicated across multiple computers. Each replica can be updated independently and concurrently. An algorithm automatically resolves inconsistencies, guaranteeing eventual consistency (if no more updates are made, all replicas converge).
+Conflict-free Replicated Data Types (CRDTs):
 
-**Use case**: Decentralized systems where there is no single central authority to decide final state.
+- Data structures replicated across multiple computers.
+- Each replica can be updated independently and concurrently.
+- An algorithm automatically resolves inconsistencies, guaranteeing eventual consistency (all replicas converge if no more updates are made).
+- Designed for decentralized systems with no central authority.
 
-**Examples**:
+Examples:
 
-- **Grow-only set**: A set where the only operation is "add". Adding twice is a no-op. Apply all updates in any order to get the final set.
-- **Last-writer-wins register**: A container for a single value. Updates include a value, timestamp, and peer ID. The latest update wins (peer ID breaks ties).
+- **Grow-only set**: Only operation is "add". Adding twice is a no-op. Apply all updates in any order.
+- **Last-writer-wins register**: A single value. Updates carry a value, timestamp, and peer ID. Latest wins (peer ID breaks ties).
 
-**Pros**:
+Pros:
 
 - Mathematical guarantees of eventual consistency.
 - Well-studied, solid foundation for distributed systems.
 
-**Cons**:
+Cons:
 
-- Designed for decentralized systems, so they carry unavoidable performance and memory overhead for tracking causality without a central authority.
+- Unavoidable performance and memory overhead for tracking causality without a central authority.
 
-**Why Figma rejected pure CRDTs**: Figma is centralized (the server is the authority). They can remove the decentralization overhead and benefit from a faster, leaner implementation. Figma's data structure is not a single CRDT but is inspired by multiple CRDTs used in combination.
+**Why Figma rejected pure CRDTs**: Figma is centralized (the server is the authority), so they can drop the decentralization overhead. Their data structure is not a single CRDT but is inspired by multiple CRDTs in combination.
 
 ::: tip
 Even in a client-server setup, CRDTs are worth studying. They provide solid foundations and build intuition for creating correct systems. You can then relax requirements based on your application's needs.
