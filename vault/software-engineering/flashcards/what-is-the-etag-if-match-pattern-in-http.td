@@ -2,6 +2,8 @@
 _type: SoftEngFlashcard
 _label: 'What is the ETag + If-Match pattern in HTTP?'
 deck: 'collaboration'
+tags:
+  - 'collaboration'
 concepts:
   - fref("software-engineering/concepts/optimistic-concurrency-control.td")
 ---

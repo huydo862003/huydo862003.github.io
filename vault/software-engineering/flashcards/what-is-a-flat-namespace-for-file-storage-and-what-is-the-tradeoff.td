@@ -2,6 +2,8 @@
 _type: SoftEngFlashcard
 _label: 'What is a flat namespace for file storage and what is the tradeoff?'
 deck: 'architecture'
+tags:
+  - 'architecture'
 concepts:
   - fref("software-engineering/concepts/flat-filesystem-namespace.td")
 ---

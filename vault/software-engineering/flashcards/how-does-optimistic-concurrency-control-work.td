@@ -2,6 +2,8 @@
 _type: SoftEngFlashcard
 _label: 'How does optimistic concurrency control work?'
 deck: 'collaboration'
+tags:
+  - 'collaboration'
 concepts:
   - fref("software-engineering/concepts/optimistic-concurrency-control.td")
 ---

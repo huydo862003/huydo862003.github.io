@@ -1,6 +1,6 @@
 ---
-_type: DistSysJourney
-_label: 'Distributed Systems'
+_type: ParallelDistProgJourney
+_label: 'Parallel And Distributed Programming'
 _icon: icon.globe
 status: 'active'
 ---

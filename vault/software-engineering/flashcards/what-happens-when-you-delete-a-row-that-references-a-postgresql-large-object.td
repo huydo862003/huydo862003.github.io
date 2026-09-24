@@ -2,6 +2,8 @@
 _type: SoftEngFlashcard
 _label: 'What happens when you delete a row that references a PostgreSQL Large Object?'
 deck: 'database'
+tags:
+  - 'database'
 concepts:
   - fref("software-engineering/concepts/postgresql-large-objects.td")
 ---

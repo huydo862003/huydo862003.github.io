@@ -2,6 +2,8 @@
 _type: SoftEngFlashcard
 _label: 'Why did Figma reject OT?'
 deck: 'collaboration'
+tags:
+  - 'collaboration'
 concepts:
   - fref("software-engineering/concepts/operational-transformation.td")
 ---

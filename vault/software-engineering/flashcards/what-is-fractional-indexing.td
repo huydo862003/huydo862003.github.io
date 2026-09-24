@@ -2,6 +2,8 @@
 _type: SoftEngFlashcard
 _label: 'What is fractional indexing?'
 deck: 'collaboration'
+tags:
+  - 'collaboration'
 concepts:
   - fref("software-engineering/concepts/fractional-indexing.td")
 ---

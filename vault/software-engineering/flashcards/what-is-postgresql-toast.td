@@ -2,6 +2,8 @@
 _type: SoftEngFlashcard
 _label: 'What is PostgreSQL TOAST?'
 deck: 'database'
+tags:
+  - 'database'
 concepts:
   - fref("software-engineering/concepts/postgresql-toast.td")
 ---

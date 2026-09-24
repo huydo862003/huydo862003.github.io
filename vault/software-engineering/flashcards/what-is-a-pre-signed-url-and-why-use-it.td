@@ -2,6 +2,8 @@
 _type: SoftEngFlashcard
 _label: 'What is a pre-signed URL and why use it?'
 deck: 'architecture'
+tags:
+  - 'architecture'
 concepts:
   - fref("software-engineering/concepts/pre-signed-urls.td")
 ---

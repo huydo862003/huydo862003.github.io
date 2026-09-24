@@ -2,6 +2,8 @@
 _type: SoftEngFlashcard
 _label: 'When designing a file sync service like Google Drive or Dropbox, how would you design file transfers?'
 deck: 'architecture'
+tags:
+  - 'architecture'
 ---
 
 ::: flashcard

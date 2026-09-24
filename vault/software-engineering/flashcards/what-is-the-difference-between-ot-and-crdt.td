@@ -2,6 +2,8 @@
 _type: SoftEngFlashcard
 _label: 'What is the difference between OT and CRDT?'
 deck: 'collaboration'
+tags:
+  - 'collaboration'
 concepts:
   - fref("software-engineering/concepts/operational-transformation.td")
   - fref("software-engineering/concepts/crdt.td")

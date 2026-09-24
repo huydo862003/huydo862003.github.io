@@ -2,6 +2,8 @@
 _type: SoftEngFlashcard
 _label: 'What is the storage overhead of `bytea` vs `text` for binary data?'
 deck: 'database'
+tags:
+  - 'database'
 concepts:
   - fref("software-engineering/concepts/postgresql-bytea.td")
   - fref("software-engineering/concepts/postgresql-text.td")

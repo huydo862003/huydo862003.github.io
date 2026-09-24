@@ -2,6 +2,8 @@
 _type: SoftEngFlashcard
 _label: 'What is the difference between `bytea` and `text` for storing files in PostgreSQL?'
 deck: 'database'
+tags:
+  - 'database'
 concepts:
   - fref("software-engineering/concepts/postgresql-bytea.td")
   - fref("software-engineering/concepts/postgresql-text.td")

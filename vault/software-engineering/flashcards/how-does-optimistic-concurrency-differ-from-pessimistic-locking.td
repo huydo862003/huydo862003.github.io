@@ -2,6 +2,8 @@
 _type: SoftEngFlashcard
 _label: 'How does optimistic concurrency differ from pessimistic locking?'
 deck: 'collaboration'
+tags:
+  - 'collaboration'
 concepts:
   - fref("software-engineering/concepts/optimistic-concurrency-control.td")
 ---

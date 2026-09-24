@@ -2,6 +2,8 @@
 _type: SoftEngFlashcard
 _label: 'Why did Figma reject pure CRDTs?'
 deck: 'collaboration'
+tags:
+  - 'collaboration'
 concepts:
   - fref("software-engineering/concepts/crdt.td")
 ---

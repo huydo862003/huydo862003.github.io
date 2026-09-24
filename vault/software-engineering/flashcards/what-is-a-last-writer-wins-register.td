@@ -2,6 +2,8 @@
 _type: SoftEngFlashcard
 _label: 'What is a last-writer-wins register?'
 deck: 'collaboration'
+tags:
+  - 'collaboration'
 concepts:
   - fref("software-engineering/concepts/last-writer-wins-register.td")
 ---

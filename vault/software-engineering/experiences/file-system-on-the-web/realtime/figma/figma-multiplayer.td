@@ -81,12 +81,13 @@ Their primary goal: The multiplayer system should be no more complex than necess
 
 #### Why Not Pure CRDTs?
 
-Conflict-free Replicated Data Types (CRDTs):
+Conflict-free Replicated Data Types (CRDTs) refers to a class of data structures in which:
 
-- Data structures replicated across multiple computers.
+- They are replicated across multiple computers in a network.
 - Each replica can be updated independently and concurrently.
-- An algorithm automatically resolves inconsistencies, guaranteeing eventual consistency (all replicas converge if no more updates are made).
-- Designed for decentralized systems with no central authority.
+- An algorithm automatically resolves inconsistencies, guaranteeing **eventual consistency** (all replicas converge if no more updates are made).
+
+CRDTs are designed for **decentralized systems with no central authority**.
 
 Examples:
 

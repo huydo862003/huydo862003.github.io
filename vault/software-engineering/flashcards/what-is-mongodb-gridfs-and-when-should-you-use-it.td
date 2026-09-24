@@ -2,6 +2,8 @@
 _type: SoftEngFlashcard
 _label: 'What is MongoDB GridFS and when should you use it?'
 deck: 'database'
+tags:
+  - 'database'
 concepts:
   - fref("software-engineering/concepts/mongodb-gridfs-concept.td")
 ---

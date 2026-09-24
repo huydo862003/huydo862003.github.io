@@ -2,6 +2,8 @@
 _type: SoftEngFlashcard
 _label: 'Where do flat namespaces appear in practice?'
 deck: 'architecture'
+tags:
+  - 'architecture'
 concepts:
   - fref("software-engineering/concepts/flat-filesystem-namespace.td")
 ---

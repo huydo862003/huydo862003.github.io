@@ -1,12 +1,11 @@
 ---
-_type: DistSysConcept
+_type: ParallelDistProgConcept
 _label: 'SAGA pattern'
-journey: fref("distributed-systems/index.td")
+journey: fref("parallel-and-distributed-programming/index.td")
 status: 'learning'
 tags:
   - 'distributed systems'
   - 'microservices'
-  - 'transactions'
 ---
 
 ## Saga Pattern

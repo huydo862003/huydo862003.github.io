@@ -2,6 +2,8 @@
 _type: SoftEngFlashcard
 _label: 'What is long polling and how does it differ from polling and WebSockets?'
 deck: 'collaboration'
+tags:
+  - 'networking'
 concepts:
   - fref("software-engineering/concepts/long-polling.td")
 ---

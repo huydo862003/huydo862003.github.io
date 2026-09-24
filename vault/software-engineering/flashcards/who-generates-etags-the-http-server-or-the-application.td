@@ -2,6 +2,8 @@
 _type: SoftEngFlashcard
 _label: 'Who generates ETags: The HTTP server or the application?'
 deck: 'collaboration'
+tags:
+  - 'collaboration'
 concepts:
   - fref("software-engineering/concepts/optimistic-concurrency-control.td")
 ---

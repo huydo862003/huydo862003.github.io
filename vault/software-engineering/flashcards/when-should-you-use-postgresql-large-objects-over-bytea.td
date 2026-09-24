@@ -2,6 +2,8 @@
 _type: SoftEngFlashcard
 _label: 'When should you use PostgreSQL Large Objects over `bytea`?'
 deck: 'database'
+tags:
+  - 'database'
 concepts:
   - fref("software-engineering/concepts/postgresql-large-objects.td")
 ---

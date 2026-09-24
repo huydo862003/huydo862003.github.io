@@ -2,6 +2,8 @@
 _type: SoftEngFlashcard
 _label: 'What are the failure modes of the pre-signed URL upload pattern?'
 deck: 'architecture'
+tags:
+  - 'architecture'
 concepts:
   - fref("software-engineering/concepts/pre-signed-urls.td")
 ---
