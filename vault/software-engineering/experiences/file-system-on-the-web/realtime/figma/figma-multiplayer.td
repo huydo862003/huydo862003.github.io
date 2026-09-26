@@ -81,11 +81,11 @@ Their primary goal: The multiplayer system should be no more complex than necess
 
 #### Why Not Pure CRDTs?
 
-Conflict-free Replicated Data Types (CRDTs) refers to a class of data structures in which:
+**Conflict-free Replicated Data Types** (CRDTs) refers to a class of data structures in which:
 
-- They are replicated across multiple computers in a network.
-- Each replica can be updated independently and concurrently.
-- An algorithm automatically resolves inconsistencies, guaranteeing **eventual consistency** (all replicas converge if no more updates are made).
+- They are **replicated** across multiple computers in a network.
+- Each replica can be **updated independently and concurrently**.
+- An **algorithm** **automatically resolves inconsistencies**, guaranteeing **eventual consistency** (all replicas converge if no more updates are made).
 
 CRDTs are designed for **decentralized systems with no central authority**.
 
@@ -101,15 +101,19 @@ Pros:
 
 Cons:
 
-- Unavoidable performance and memory overhead for tracking causality without a central authority.
+- Unavoidable performance and memory overhead for tracking causality without a central authority (due to CRDT being decentralized by design).
 
-**Why Figma rejected pure CRDTs**: Figma is centralized (the server is the authority), so they can drop the decentralization overhead. Their data structure is not a single CRDT but is inspired by multiple CRDTs in combination.
+**Why Figma rejected pure CRDTs**: Figma is centralized (the server is the authority), so they can drop the decentralization overhead.
+
+-> Their data structure is not a single CRDT but is inspired by multiple CRDTs in combination.
 
 ::: tip
 Even in a client-server setup, CRDTs are worth studying. They provide solid foundations and build intuition for creating correct systems. You can then relax requirements based on your application's needs.
 :::
 
-### Document Structure
+### Figma Document Structure
+
+> Figma document is the data structure that needs to be synced here.
 
 A Figma document is a tree of objects, similar to the HTML DOM:
 
