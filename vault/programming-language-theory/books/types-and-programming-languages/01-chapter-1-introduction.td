@@ -257,9 +257,9 @@ A **type system** is a **tractable syntactic method** for **proving the absence*
     - A language may provide arrays, with access and update operations, as an abstraction of the underlying memory.
     - A programmer using this language then expects that an array can be changed only by using the update operation on it explicitly-and not, for example, by writing past the end of some other data structure.
 
-        -> In a safe language, such abstractions can be used **abstractly**.
+      -> In a safe language, such abstractions can be used **abstractly**.
 
-        -> in an unsafe language, they cannot: in order to completely understand **how a program may (mis)behave**, it is necessary to keep in mind **all sorts of low-level details** such as the layout of data structures in memory and the order in which they will be allocated by the compiler.
+      -> In an unsafe language, they cannot: in order to completely understand **how a program may (mis)behave**, it is necessary to keep in mind **all sorts of low-level details** such as the layout of data structures in memory and the order in which they will be allocated by the compiler.
 
   - Programs in unsafe languages may disrupt not only **their own data structures** but even those of the **run-time system**; the results in this case can be completely arbitrary.
 
@@ -283,12 +283,10 @@ A **type system** is a **tractable syntactic method** for **proving the absence*
   - All the safe languages above perform **array-bounds checking** **dynamically**.
   - Statically checked languages sometimes choose to provide operations whose **typechecking rules are unsound** (such as downcasting).
 
-        -> Language safety is achieved by dynamic checking.
+    -> Language safety is achieved by dynamic checking.
 
 - Language safety is not absolute. -> Safe languages often offer programmers "escape hatches," such as foreign function calls to code written in other, possibly unsafe, languages.
-- (Cardelli, 1996) provides a **different perspective** on language safety.
-
--> **Trapped runtime error** vs **untrapped runtime error**.
+- (Cardelli, 1996) provides a **different perspective** on language safety: **Trapped runtime error** vs **untrapped runtime error**.
   - Trapped error: Computation stop immediately.
   - Untrapped error: Allow computation to continue.
   - Safe language: Prevent untrapped errors at run time.
@@ -296,11 +294,11 @@ A **type system** is a **tractable syntactic method** for **proving the absence*
 - **Portability-wise**, a safe language can be described by its programmer's manual.
 
 ::: tip
-     "A safe language is completely defined by its programmer's manual."
+"A safe language is completely defined by its programmer's manual."
 :::
 
-  - Let the definition of a language be the set of things the programmer needs to understand in order to predict the behavior of every program in the language.
-  - Then the manual for a language like C does not constitute a definition, since the behavior of some programs cannot be predicted without knowing the details of how a particular C compiler lays out structures in memory, etc., and the same program may have quite different behaviors when executed by different compilers.
+- Let the definition of a language be the set of things the programmer needs to understand in order to predict the behavior of every program in the language.
+- Then the manual for a language like C does not constitute a definition, since the behavior of some programs cannot be predicted without knowing the details of how a particular C compiler lays out structures in memory, etc., and the same program may have quite different behaviors when executed by different compilers.
 
 ### Efficiency
 
@@ -335,13 +333,11 @@ A **type system** is a **tractable syntactic method** for **proving the absence*
 
 - Database:
   - Web metadata: DTD (XML, 1998) & others such as XML Schema standard (XS, 2000).
-  - **New XML query languages** employ **powerful static type systems** that are derived directly from **XML schema languages**, enhancing reliability in data manipulation.
-
-        (Hosoya and Pierce, 2000; Hosoya, Vouillon, and Pierce, 2001; Hosoya and Pierce, 2001; Relax, 2000; Shields, 2001)
+  - **New XML query languages** employ **powerful static type systems** that are derived directly from **XML schema languages**, enhancing reliability in data manipulation. (Hosoya and Pierce, 2000; Hosoya, Vouillon, and Pierce, 2001; Hosoya and Pierce, 2001; Relax, 2000; Shields, 2001)
 
 - Computational linguistics:
 
-    The logical foundation of **Typed Lambda-Calculi** (TLC) provides a formal framework for analyzing natural language syntax and semantics, most notably connecting directly to **Categorial Grammar** (CG) for linguistic modeling (van Benthem, 1995; Ranta, 1995).
+  - The logical foundation of **Typed Lambda-Calculi** (TLC) provides a formal framework for analyzing natural language syntax and semantics, most notably connecting directly to **Categorial Grammar** (CG) for linguistic modeling (van Benthem, 1995; Ranta, 1995).
 
 ## Type systems and language design
 
