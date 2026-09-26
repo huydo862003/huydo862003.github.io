@@ -17,5 +17,3 @@ children:
   - fref("programming-language-theory/books/types-and-programming-languages/chapter-2-mathematical-preliminaries.td")
   - fref("programming-language-theory/books/types-and-programming-languages/part-i-untyped-systems.td")
 ---
-
----
