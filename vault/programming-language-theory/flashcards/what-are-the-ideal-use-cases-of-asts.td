@@ -3,7 +3,7 @@ _type: PltFlashcard
 _label: 'What are the ideal use cases of ASTs?'
 deck: 'compiler implementation'
 books:
-  - fref("programming-language-theory/books/types-and-programming-languages/chapter-5-the-untyped-pure-lambda-calculus.td")
+  - fref("programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/03-chapter-5-the-untyped-pure-lambda-calculus.td")
 ---
 
 ::: flashcard

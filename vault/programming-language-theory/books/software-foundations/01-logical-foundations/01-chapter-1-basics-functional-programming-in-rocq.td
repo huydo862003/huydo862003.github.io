@@ -27,7 +27,7 @@ concepts:
   - fref("programming-language-theory/concepts/proof-by-simplification.td")
   - fref("programming-language-theory/concepts/tactic.td")
   - fref("programming-language-theory/concepts/proof-by-rewriting.td")
-parent: fref("programming-language-theory/books/software-foundations/logical-foundations.td")
+parent: fref("programming-language-theory/books/software-foundations/01-logical-foundations/index.td")
 ---
 
 ## Introduction

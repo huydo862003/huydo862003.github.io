@@ -4,7 +4,7 @@ _label: 'Supertype'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/chapter-5-types.td")
+  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
 tags:
   - 'semantics'
   - 'set theory relation'

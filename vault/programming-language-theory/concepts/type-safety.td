@@ -4,7 +4,7 @@ _label: 'Type safety'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:
-  - fref("programming-language-theory/books/practical-foundations-for-programming-languages/preface.td")
+  - fref("programming-language-theory/books/practical-foundations-for-programming-languages/00-preface.td")
 tags:
   - 'language feature design'
   - 'semantics'

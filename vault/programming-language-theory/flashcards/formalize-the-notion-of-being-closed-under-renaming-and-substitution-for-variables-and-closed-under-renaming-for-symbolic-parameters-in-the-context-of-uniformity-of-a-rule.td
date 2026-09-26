@@ -3,7 +3,7 @@ _type: PltFlashcard
 _label: 'Formalize the notion of being closed under renaming and substitution for variables and closed under renaming for symbolic parameters, in the context of uniformity of a rule?'
 deck: 'general'
 books:
-  - fref("programming-language-theory/books/software-foundations/chapter-3-hypothetical-and-general-judgments.td")
+  - fref("programming-language-theory/books/software-foundations/01-logical-foundations/03-chapter-3-hypothetical-and-general-judgments.td")
 ---
 
 ::: flashcard

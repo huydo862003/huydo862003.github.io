@@ -4,7 +4,7 @@ _label: 'Proof by rewriting'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:
-  - fref("programming-language-theory/books/software-foundations/chapter-1-basics-functional-programming-in-rocq.td")
+  - fref("programming-language-theory/books/software-foundations/01-logical-foundations/01-chapter-1-basics-functional-programming-in-rocq.td")
 ---
 
 - (Proof/Reason technique, Logic) A ${fref("programming-language-theory/concepts/proof-technique.td")} that transforms expressions by substituting equals for equals, using known equalities to reshape the ${fref("programming-language-theory/concepts/goal.td")}.

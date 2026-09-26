@@ -5,7 +5,7 @@ deck: 'proof technique'
 concepts:
   - fref("programming-language-theory/concepts/principle-of-ordinary-induction.td")
 books:
-  - fref("programming-language-theory/books/types-and-programming-languages/chapter-2-mathematical-preliminaries.td")
+  - fref("programming-language-theory/books/types-and-programming-languages/02-chapter-2-mathematical-preliminaries.td")
 ---
 
 ::: flashcard

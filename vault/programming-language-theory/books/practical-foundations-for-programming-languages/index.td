@@ -13,8 +13,8 @@ tags:
   - 'operational semantics'
   - 'programming languages'
 children:
-  - fref("programming-language-theory/books/practical-foundations-for-programming-languages/preface.td")
-  - fref("programming-language-theory/books/practical-foundations-for-programming-languages/part-i-judgments-and-rules.td")
+  - fref("programming-language-theory/books/practical-foundations-for-programming-languages/00-preface.td")
+  - fref("programming-language-theory/books/practical-foundations-for-programming-languages/01-part-i-judgments-and-rules/index.td")
 ---
 
 - Comprehensive theory of programming languages based on:

@@ -3,7 +3,7 @@ _type: PltFlashcard
 _label: 'What are some ways to define the syntax of a language?'
 deck: 'compiler implementation'
 books:
-  - fref("programming-language-theory/books/types-and-programming-languages/chapter-3-untyped-arithmetic-expressions.td")
+  - fref("programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/01-chapter-3-untyped-arithmetic-expressions.td")
 ---
 
 ::: flashcard

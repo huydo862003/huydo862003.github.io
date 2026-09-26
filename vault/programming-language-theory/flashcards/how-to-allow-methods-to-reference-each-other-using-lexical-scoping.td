@@ -3,7 +3,7 @@ _type: PltFlashcard
 _label: 'How to allow methods to reference each other using lexical scoping?'
 deck: 'general'
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/chapter-4-objects.td")
+  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/04-chapter-4-objects.td")
 ---
 
 ::: flashcard

@@ -3,7 +3,7 @@ _type: PltFlashcard
 _label: 'What is the difference between formal and actual parameters?'
 deck: 'programming-language-basic'
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/chapter-1-learning-smol-standard-model-of-languages.td")
+  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/01-chapter-1-learning-smol-standard-model-of-languages.td")
 ---
 
 ::: flashcard

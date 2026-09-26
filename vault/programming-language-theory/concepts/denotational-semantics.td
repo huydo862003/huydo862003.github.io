@@ -4,7 +4,7 @@ _label: 'Denotational semantics'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:
-  - fref("programming-language-theory/books/types-and-programming-languages/chapter-3-untyped-arithmetic-expressions.td")
+  - fref("programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/01-chapter-3-untyped-arithmetic-expressions.td")
 ---
 
 A style of semantics that gives meanings to terms compositionally by mapping them to mathematical objects that possess interesting behaviors.

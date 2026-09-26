@@ -4,7 +4,7 @@ _label: 'Dimensional analysis'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:
-  - fref("programming-language-theory/books/types-and-programming-languages/chapter-1-introduction.td")
+  - fref("programming-language-theory/books/types-and-programming-languages/01-chapter-1-introduction.td")
 tags:
   - 'other mathematics'
   - 'program analysis'

@@ -4,7 +4,7 @@ _label: 'Desugar'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/chapter-3-syntactic-sugar.td")
+  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/03-chapter-3-syntactic-sugar.td")
 tags:
   - 'compiler implementation'
   - 'language feature design'

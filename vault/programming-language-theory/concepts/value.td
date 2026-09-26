@@ -4,7 +4,7 @@ _label: 'Value'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:
-  - fref("programming-language-theory/books/types-and-programming-languages/chapter-3-untyped-arithmetic-expressions.td")
+  - fref("programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/01-chapter-3-untyped-arithmetic-expressions.td")
 ---
 
 A ${fref("programming-language-theory/concepts/term.td")} in ${fref("programming-language-theory/concepts/normal-form.td")} that is not deemed a bad state.

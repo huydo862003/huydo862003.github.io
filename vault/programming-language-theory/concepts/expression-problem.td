@@ -4,7 +4,7 @@ _label: 'Expression problem'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/chapter-5-types.td")
+  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
 ---
 
 Neither paradigm naturally supports both dimensions of extensibility without modifying existing code or sacrificing ${fref("programming-language-theory/concepts/type-safety.td")}. Solutions exist (type classes, object algebras, tagless final) but invo

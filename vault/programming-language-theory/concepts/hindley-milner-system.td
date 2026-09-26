@@ -4,7 +4,7 @@ _label: 'Hindley-Milner system'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/chapter-5-types.td")
+  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
 ---
 
 A type system with complete type inference via constraint generation and unification - automatically determines the most general (principal) type for all expressions without annotations; basis for ML,

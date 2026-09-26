@@ -6,7 +6,7 @@ concepts:
   - fref("programming-language-theory/concepts/rocq.td")
   - fref("programming-language-theory/concepts/tactic.td")
 books:
-  - fref("programming-language-theory/books/software-foundations/logical-foundations.td")
+  - fref("programming-language-theory/books/software-foundations/01-logical-foundations/index.td")
 ---
 
 ::: flashcard

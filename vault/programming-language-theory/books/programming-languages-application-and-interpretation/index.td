@@ -11,11 +11,11 @@ tags:
   - 'programming languages'
   - 'closures'
 children:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/chapter-1-learning-smol-standard-model-of-languages.td")
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/chapter-2-evaluation.td")
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/chapter-3-syntactic-sugar.td")
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/chapter-4-objects.td")
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/chapter-5-types.td")
+  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/01-chapter-1-learning-smol-standard-model-of-languages.td")
+  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/02-chapter-2-evaluation.td")
+  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/03-chapter-3-syntactic-sugar.td")
+  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/04-chapter-4-objects.td")
+  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
 ---
 
 ## Why study programming languages?

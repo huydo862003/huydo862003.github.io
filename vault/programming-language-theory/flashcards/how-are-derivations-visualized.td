@@ -6,7 +6,7 @@ concepts:
   - fref("programming-language-theory/concepts/derivation.td")
   - fref("programming-language-theory/concepts/derivation-tree.td")
 books:
-  - fref("programming-language-theory/books/software-foundations/chapter-2-inductive-definitions.td")
+  - fref("programming-language-theory/books/software-foundations/01-logical-foundations/02-chapter-2-inductive-definitions.td")
 ---
 
 ::: flashcard

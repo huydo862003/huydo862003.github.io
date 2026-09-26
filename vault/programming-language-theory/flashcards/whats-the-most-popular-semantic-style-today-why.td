@@ -8,7 +8,7 @@ concepts:
   - fref("programming-language-theory/concepts/denotational-semantics.td")
   - fref("programming-language-theory/concepts/axiomatic-semantics.td")
 books:
-  - fref("programming-language-theory/books/types-and-programming-languages/chapter-3-untyped-arithmetic-expressions.td")
+  - fref("programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/01-chapter-3-untyped-arithmetic-expressions.td")
 ---
 
 ::: flashcard

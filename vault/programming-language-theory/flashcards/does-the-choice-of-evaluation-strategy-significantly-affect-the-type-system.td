@@ -5,7 +5,7 @@ deck: 'type theory'
 concepts:
   - fref("programming-language-theory/concepts/evaluation-strategy.td")
 books:
-  - fref("programming-language-theory/books/types-and-programming-languages/chapter-5-the-untyped-pure-lambda-calculus.td")
+  - fref("programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/03-chapter-5-the-untyped-pure-lambda-calculus.td")
 ---
 
 ::: flashcard

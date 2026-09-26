@@ -3,7 +3,7 @@ _type: PltFlashcard
 _label: 'What are judgment/assertion, judgment form, judgment instance, judgment form instance''s subject? in what notations are they written in?'
 deck: 'logic tools'
 books:
-  - fref("programming-language-theory/books/software-foundations/chapter-2-inductive-definitions.td")
+  - fref("programming-language-theory/books/software-foundations/01-logical-foundations/02-chapter-2-inductive-definitions.td")
 ---
 
 ::: flashcard

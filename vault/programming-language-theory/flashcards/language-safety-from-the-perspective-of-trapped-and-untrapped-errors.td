@@ -3,7 +3,7 @@ _type: PltFlashcard
 _label: 'Language safety from the perspective of trapped and untrapped errors?'
 deck: 'language theory'
 books:
-  - fref("programming-language-theory/books/types-and-programming-languages/chapter-1-introduction.td")
+  - fref("programming-language-theory/books/types-and-programming-languages/01-chapter-1-introduction.td")
 ---
 
 ::: flashcard

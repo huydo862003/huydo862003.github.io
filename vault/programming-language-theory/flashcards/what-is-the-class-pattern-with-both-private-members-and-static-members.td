@@ -3,7 +3,7 @@ _type: PltFlashcard
 _label: 'What is the class pattern with both private members and static members?'
 deck: 'general'
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/chapter-4-objects.td")
+  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/04-chapter-4-objects.td")
 ---
 
 ::: flashcard

@@ -3,7 +3,7 @@ _type: DesignFlashcard
 _label: 'What is a common pattern of many reactive systems?'
 deck: 'design'
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/chapter-5-types.td")
+  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
 ---
 
 ::: flashcard

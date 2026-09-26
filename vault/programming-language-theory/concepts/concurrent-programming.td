@@ -4,7 +4,7 @@ _label: 'Concurrent programming'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
 books:
-  - fref("programming-language-theory/books/software-foundations/logical-foundations.td")
+  - fref("programming-language-theory/books/software-foundations/01-logical-foundations/index.td")
 tags:
   - 'concurrency theory'
   - 'language feature design'

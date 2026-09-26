@@ -3,7 +3,7 @@ _type: PltFlashcard
 _label: 'What are the possible evaluation strategies for lambda calculus?'
 deck: 'pure-lambda-calculus'
 books:
-  - fref("programming-language-theory/books/types-and-programming-languages/chapter-5-the-untyped-pure-lambda-calculus.td")
+  - fref("programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/03-chapter-5-the-untyped-pure-lambda-calculus.td")
 ---
 
 ::: flashcard

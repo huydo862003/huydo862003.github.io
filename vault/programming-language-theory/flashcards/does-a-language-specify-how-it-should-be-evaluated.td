@@ -6,7 +6,7 @@ concepts:
   - fref("programming-language-theory/concepts/compiler.td")
   - fref("programming-language-theory/concepts/interpreter.td")
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/chapter-2-evaluation.td")
+  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/02-chapter-2-evaluation.td")
 ---
 
 ::: flashcard

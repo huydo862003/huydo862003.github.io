@@ -18,7 +18,7 @@ concepts:
   - fref("programming-language-theory/concepts/abstract-binding-tree-abt-valence-abstractor.td")
   - fref("programming-language-theory/concepts/abstract-binding-graph.td")
   - fref("programming-language-theory/concepts/fresh-renaming.td")
-parent: fref("programming-language-theory/books/practical-foundations-for-programming-languages/part-i-judgments-and-rules.td")
+parent: fref("programming-language-theory/books/practical-foundations-for-programming-languages/01-part-i-judgments-and-rules/index.td")
 ---
 
 - Programming languages describe **computations** for **humans and machines**.

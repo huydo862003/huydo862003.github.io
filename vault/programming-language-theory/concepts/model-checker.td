@@ -4,8 +4,8 @@ _label: 'Model checker'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:
-  - fref("programming-language-theory/books/types-and-programming-languages/chapter-1-introduction.td")
-  - fref("programming-language-theory/books/software-foundations/logical-foundations.td")
+  - fref("programming-language-theory/books/types-and-programming-languages/01-chapter-1-introduction.td")
+  - fref("programming-language-theory/books/software-foundations/01-logical-foundations/index.td")
 tags:
   - 'formal system'
   - 'logic'

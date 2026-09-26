@@ -23,7 +23,7 @@ concepts:
   - fref("programming-language-theory/concepts/iterated-inductive-definition-simultaneous-inductive.td")
   - fref("programming-language-theory/concepts/simultaneous-inductive-definition.td")
   - fref("programming-language-theory/concepts/inductive-definition-function.td")
-parent: fref("programming-language-theory/books/software-foundations/logical-foundations.td")
+parent: fref("programming-language-theory/books/software-foundations/01-logical-foundations/index.td")
 ---
 
 Inductive definitions cannot be dispensed in the study of programming languages.

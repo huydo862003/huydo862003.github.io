@@ -3,7 +3,7 @@ _type: PltFlashcard
 _label: 'How to implement self-reference with and without mutation?'
 deck: 'general'
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/chapter-4-objects.td")
+  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/04-chapter-4-objects.td")
 ---
 
 ::: flashcard

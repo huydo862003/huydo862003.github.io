@@ -4,9 +4,9 @@ _label: 'Part I. Untyped systems'
 journey: fref("programming-language-theory/index.td")
 parent: fref("programming-language-theory/books/types-and-programming-languages/index.td")
 children:
-  - fref("programming-language-theory/books/types-and-programming-languages/chapter-3-untyped-arithmetic-expressions.td")
-  - fref("programming-language-theory/books/types-and-programming-languages/chapter-4-an-ml-implementation-of-arithmetic-expressions.td")
-  - fref("programming-language-theory/books/types-and-programming-languages/chapter-5-the-untyped-pure-lambda-calculus.td")
+  - fref("programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/01-chapter-3-untyped-arithmetic-expressions.td")
+  - fref("programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/02-chapter-4-an-ml-implementation-of-arithmetic-expressions.td")
+  - fref("programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/03-chapter-5-the-untyped-pure-lambda-calculus.td")
 ---
 
 - To rigorously discuss type systems, it is essential to establish **clear, precise, and mathematically tractable tools** for expressing and reasoning about **program syntax and semantics**.

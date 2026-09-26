@@ -30,7 +30,7 @@ concepts:
   - fref("programming-language-theory/concepts/capture-avoiding-substitution-variable-capture.td")
   - fref("programming-language-theory/concepts/capture-avoiding-substitution.td")
   - fref("programming-language-theory/concepts/alpha-conversion-renaming-variable-capture-capture-avoiding.td")
-parent: fref("programming-language-theory/books/types-and-programming-languages/part-i-untyped-systems.td")
+parent: fref("programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/index.td")
 ---
 
 Review the definition and properties of the **untyped** or **pure lambda calculus**.

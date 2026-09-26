@@ -3,7 +3,7 @@ _type: PltFlashcard
 _label: 'How to destruct multiple variables at once in rocq?'
 deck: 'rocq-programming-language'
 books:
-  - fref("programming-language-theory/books/software-foundations/chapter-1-basics-functional-programming-in-rocq.td")
+  - fref("programming-language-theory/books/software-foundations/01-logical-foundations/01-chapter-1-basics-functional-programming-in-rocq.td")
 ---
 
 ::: flashcard

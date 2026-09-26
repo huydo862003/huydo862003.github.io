@@ -3,7 +3,7 @@ _type: PltFlashcard
 _label: 'What is the class pattern?'
 deck: 'language theory'
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/chapter-4-objects.td")
+  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/04-chapter-4-objects.td")
 ---
 
 ::: flashcard

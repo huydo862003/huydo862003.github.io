@@ -3,7 +3,7 @@ _type: PltFlashcard
 _label: 'What does it mean by the judgment $gamma dash_mathcal{r} k$, where $gamma$ is a finite set of basic judgments, $k$ is a basic judgment and $mathcal{r}$ is a set of rules?'
 deck: 'general'
 books:
-  - fref("programming-language-theory/books/software-foundations/chapter-3-hypothetical-and-general-judgments.td")
+  - fref("programming-language-theory/books/software-foundations/01-logical-foundations/03-chapter-3-hypothetical-and-general-judgments.td")
 ---
 
 ::: flashcard

@@ -3,7 +3,7 @@ _type: PltFlashcard
 _label: 'How does generic judgment differ from parametric judgment?'
 deck: 'general'
 books:
-  - fref("programming-language-theory/books/software-foundations/chapter-3-hypothetical-and-general-judgments.td")
+  - fref("programming-language-theory/books/software-foundations/01-logical-foundations/03-chapter-3-hypothetical-and-general-judgments.td")
 ---
 
 ::: flashcard

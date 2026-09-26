@@ -13,7 +13,7 @@ tags:
   - 'type systems'
   - 'programming languages'
 children:
-  - fref("programming-language-theory/books/types-and-programming-languages/chapter-1-introduction.td")
-  - fref("programming-language-theory/books/types-and-programming-languages/chapter-2-mathematical-preliminaries.td")
-  - fref("programming-language-theory/books/types-and-programming-languages/part-i-untyped-systems.td")
+  - fref("programming-language-theory/books/types-and-programming-languages/01-chapter-1-introduction.td")
+  - fref("programming-language-theory/books/types-and-programming-languages/02-chapter-2-mathematical-preliminaries.td")
+  - fref("programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/index.td")
 ---

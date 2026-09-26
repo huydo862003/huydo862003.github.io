@@ -3,7 +3,7 @@ _type: PltFlashcard
 _label: 'According to robert (bob) harper, what are symbol, symbolic parameter and indexed operator?'
 deck: 'general'
 books:
-  - fref("programming-language-theory/books/practical-foundations-for-programming-languages/chapter-1-abstract-syntax.td")
+  - fref("programming-language-theory/books/practical-foundations-for-programming-languages/01-part-i-judgments-and-rules/01-chapter-1-abstract-syntax.td")
 ---
 
 ::: flashcard

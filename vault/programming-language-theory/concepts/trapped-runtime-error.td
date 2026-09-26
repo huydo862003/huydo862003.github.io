@@ -4,7 +4,7 @@ _label: 'Trapped (runtime) error'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
 books:
-  - fref("programming-language-theory/books/types-and-programming-languages/chapter-1-introduction.td")
+  - fref("programming-language-theory/books/types-and-programming-languages/01-chapter-1-introduction.td")
 tags:
   - 'language feature design'
   - 'runtime'

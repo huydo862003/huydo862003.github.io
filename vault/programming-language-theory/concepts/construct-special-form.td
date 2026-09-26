@@ -4,7 +4,7 @@ _label: 'Construct/Special form'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/chapter-3-syntactic-sugar.td")
+  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/03-chapter-3-syntactic-sugar.td")
 tags:
   - 'language feature design'
   - 'semantics'

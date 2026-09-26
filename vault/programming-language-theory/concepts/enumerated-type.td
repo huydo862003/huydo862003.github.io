@@ -4,7 +4,7 @@ _label: 'Enumerated type'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:
-  - fref("programming-language-theory/books/software-foundations/chapter-1-basics-functional-programming-in-rocq.td")
+  - fref("programming-language-theory/books/software-foundations/01-logical-foundations/01-chapter-1-basics-functional-programming-in-rocq.td")
 ---
 
 A data type that defines a fixed set of named values (like enum Color { Red, Green, Blue }), enabling type-safe representation of discrete choices.

@@ -3,7 +3,7 @@ _type: PltFlashcard
 _label: 'What is the relation between types and runtime values?'
 deck: 'type theory'
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/chapter-5-types.td")
+  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
 ---
 
 ::: flashcard

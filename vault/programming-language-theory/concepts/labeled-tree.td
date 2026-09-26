@@ -4,7 +4,7 @@ _label: 'Labeled tree'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:
-  - fref("programming-language-theory/books/types-and-programming-languages/chapter-5-the-untyped-pure-lambda-calculus.td")
+  - fref("programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/03-chapter-5-the-untyped-pure-lambda-calculus.td")
 tags:
   - 'compiler implementation'
   - 'syntax grammar'

@@ -2,7 +2,7 @@
 _type: PltBook
 _label: 'Chapter 3. Hypothetical and general judgments'
 journey: fref("programming-language-theory/index.td")
-parent: fref("programming-language-theory/books/software-foundations/logical-foundations.td")
+parent: fref("programming-language-theory/books/software-foundations/01-logical-foundations/index.td")
 ---
 
 - A Hypothetical judgment expresses an Entailment between one or more Hypothesises and a Conclusion.

@@ -4,7 +4,7 @@ _label: 'Alpha-equivalence'
 journey: fref("programming-language-theory/index.td")
 status: 'learning'
 books:
-  - fref("programming-language-theory/books/practical-foundations-for-programming-languages/chapter-1-abstract-syntax.td")
+  - fref("programming-language-theory/books/practical-foundations-for-programming-languages/01-part-i-judgments-and-rules/01-chapter-1-abstract-syntax.td")
 ---
 
 Then, $=_\\alpha$ is the strongest Congruence on $\\mathcal{A}$that contains the followings:

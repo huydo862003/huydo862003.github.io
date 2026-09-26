@@ -12,7 +12,7 @@ tags:
   - 'type theory'
   - 'theorem proving'
 children:
-  - fref("programming-language-theory/books/software-foundations/logical-foundations.td")
+  - fref("programming-language-theory/books/software-foundations/01-logical-foundations/index.td")
 ---
 
 - The mathematical underpinnings of reliable software.

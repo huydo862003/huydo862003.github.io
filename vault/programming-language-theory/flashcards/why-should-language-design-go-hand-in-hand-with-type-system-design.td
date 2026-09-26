@@ -3,7 +3,7 @@ _type: PltFlashcard
 _label: 'Why should language design go hand in hand with type system design?'
 deck: 'type theory'
 books:
-  - fref("programming-language-theory/books/types-and-programming-languages/chapter-1-introduction.td")
+  - fref("programming-language-theory/books/types-and-programming-languages/01-chapter-1-introduction.td")
 ---
 
 ::: flashcard

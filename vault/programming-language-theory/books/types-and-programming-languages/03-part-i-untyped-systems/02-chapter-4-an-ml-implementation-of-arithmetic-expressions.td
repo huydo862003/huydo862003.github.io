@@ -2,7 +2,7 @@
 _type: PltBook
 _label: 'Chapter 4. An ML implementation of arithmetic expressions'
 journey: fref("programming-language-theory/index.td")
-parent: fref("programming-language-theory/books/types-and-programming-languages/part-i-untyped-systems.td")
+parent: fref("programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/index.td")
 ---
 
 - This introduces an implementation of our **language of booleans and arithmetic expressions**.

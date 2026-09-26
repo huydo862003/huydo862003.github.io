@@ -4,8 +4,8 @@ _label: 'Pure'
 journey: fref("programming-language-theory/index.td")
 status: 'mastered'
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/chapter-2-evaluation.td")
-  - fref("programming-language-theory/books/software-foundations/logical-foundations.td")
+  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/02-chapter-2-evaluation.td")
+  - fref("programming-language-theory/books/software-foundations/01-logical-foundations/index.td")
 tags:
   - 'design principle'
   - 'program analysis'

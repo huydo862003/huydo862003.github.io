@@ -3,7 +3,7 @@ _type: PltFlashcard
 _label: 'What are the general strategies for handling partiality in type systems?'
 deck: 'type theory'
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/chapter-5-types.td")
+  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
 ---
 
 ::: flashcard

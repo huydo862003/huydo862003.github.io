@@ -46,7 +46,7 @@ concepts:
   - fref("programming-language-theory/concepts/operational-semantics-untyped-calculus-of-booleans-and.td")
   - fref("programming-language-theory/concepts/pure-untyped-lambda-calculus-runtime-error-stuck-term.td")
   - fref("programming-language-theory/concepts/pure-untyped-lambda-calculus-syntactic-category.td")
-parent: fref("programming-language-theory/books/types-and-programming-languages/part-i-untyped-systems.td")
+parent: fref("programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/index.td")
 ---
 
 ## Summary of desirable properties for a system

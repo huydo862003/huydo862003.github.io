@@ -4,7 +4,7 @@ _label: 'Name combination algebra'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/chapter-4-objects.td")
+  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/04-chapter-4-objects.td")
 tags:
   - 'other mathematics'
   - 'semantics'

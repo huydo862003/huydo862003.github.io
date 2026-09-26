@@ -4,8 +4,8 @@ _label: 'Abstract binding tree (ABT)'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
 books:
-  - fref("programming-language-theory/books/practical-foundations-for-programming-languages/chapter-1-abstract-syntax.td")
-  - fref("programming-language-theory/books/software-foundations/chapter-2-inductive-definitions.td")
+  - fref("programming-language-theory/books/practical-foundations-for-programming-languages/01-part-i-judgments-and-rules/01-chapter-1-abstract-syntax.td")
+  - fref("programming-language-theory/books/software-foundations/01-logical-foundations/02-chapter-2-inductive-definitions.td")
 tags:
   - 'compiler implementation'
   - 'semantics'

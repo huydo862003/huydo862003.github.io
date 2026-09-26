@@ -5,7 +5,7 @@ deck: 'compiler implementation'
 concepts:
   - fref("programming-language-theory/concepts/read-eval-print-loop-repl.td")
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/chapter-2-evaluation.td")
+  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/02-chapter-2-evaluation.td")
 ---
 
 ::: flashcard

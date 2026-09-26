@@ -3,7 +3,7 @@ _type: PltFlashcard
 _label: 'What are the cons of classical heavyweight formal methods'
 deck: 'language theory'
 books:
-  - fref("programming-language-theory/books/types-and-programming-languages/chapter-1-introduction.td")
+  - fref("programming-language-theory/books/types-and-programming-languages/01-chapter-1-introduction.td")
 ---
 
 ::: flashcard

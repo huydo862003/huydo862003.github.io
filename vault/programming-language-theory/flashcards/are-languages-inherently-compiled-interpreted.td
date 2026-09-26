@@ -3,7 +3,7 @@ _type: PltFlashcard
 _label: 'Are languages inherently compiled/interpreted?'
 deck: 'programming-language-basic'
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/chapter-2-evaluation.td")
+  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/02-chapter-2-evaluation.td")
 ---
 
 ::: flashcard

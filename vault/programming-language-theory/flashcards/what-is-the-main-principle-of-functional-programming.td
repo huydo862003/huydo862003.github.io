@@ -5,7 +5,7 @@ deck: 'language theory'
 concepts:
   - fref("programming-language-theory/concepts/functional-programming.td")
 books:
-  - fref("programming-language-theory/books/software-foundations/logical-foundations.td")
+  - fref("programming-language-theory/books/software-foundations/01-logical-foundations/index.td")
 ---
 
 ::: flashcard

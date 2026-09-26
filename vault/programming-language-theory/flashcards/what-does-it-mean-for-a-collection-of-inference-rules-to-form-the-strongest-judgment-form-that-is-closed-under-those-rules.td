@@ -3,7 +3,7 @@ _type: PltFlashcard
 _label: 'What does it mean for a collection of inference rules to form the strongest judgment form that is closed under those rules?'
 deck: 'proof technique'
 books:
-  - fref("programming-language-theory/books/software-foundations/chapter-2-inductive-definitions.td")
+  - fref("programming-language-theory/books/software-foundations/01-logical-foundations/02-chapter-2-inductive-definitions.td")
 ---
 
 ::: flashcard

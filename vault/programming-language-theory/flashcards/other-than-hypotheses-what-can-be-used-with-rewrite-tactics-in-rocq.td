@@ -3,7 +3,7 @@ _type: PltFlashcard
 _label: 'Other than hypotheses, what can be used with rewrite tactics in rocq?'
 deck: 'general'
 books:
-  - fref("programming-language-theory/books/software-foundations/chapter-1-basics-functional-programming-in-rocq.td")
+  - fref("programming-language-theory/books/software-foundations/01-logical-foundations/01-chapter-1-basics-functional-programming-in-rocq.td")
 ---
 
 ::: flashcard

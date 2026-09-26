@@ -5,7 +5,7 @@ deck: 'language theory'
 concepts:
   - fref("programming-language-theory/concepts/object.td")
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/chapter-4-objects.td")
+  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/04-chapter-4-objects.td")
 ---
 
 ::: flashcard

@@ -4,9 +4,9 @@ _label: 'Judgment'
 journey: fref("programming-language-theory/index.td")
 status: 'reviewing'
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/chapter-5-types.td")
-  - fref("programming-language-theory/books/software-foundations/chapter-2-inductive-definitions.td")
-  - fref("programming-language-theory/books/software-foundations/chapter-3-hypothetical-and-general-judgments.td")
+  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
+  - fref("programming-language-theory/books/software-foundations/01-logical-foundations/02-chapter-2-inductive-definitions.td")
+  - fref("programming-language-theory/books/software-foundations/01-logical-foundations/03-chapter-3-hypothetical-and-general-judgments.td")
 tags:
   - 'logic'
 ---
