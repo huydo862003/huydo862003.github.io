@@ -113,10 +113,10 @@ Text 3 moved from Page's content into Text 2's content.
 Permissions use upward pointers (parent), not content arrays. Two reasons:
 
 1. A block can be referenced by multiple content arrays.
-   - This makes it ambiguous which parent grants permissions.
-   - Ambiguity is unacceptable in a permissions system.
+  - This makes it ambiguous which parent grants permissions.
+  - Ambiguity is unacceptable in a permissions system.
 2. Permission checks need to walk up to the workspace root.
-   - Searching through all content arrays is inefficient, especially on the client.
+  - Searching through all content arrays is inefficient, especially on the client.
 
 The parent pointer solves both: You can walk straight up from any block to the workspace root.
 
@@ -158,20 +158,20 @@ Every client holds a long-lived WebSocket connection to MessageStore (Notion's r
 1. After `saveTransactions` succeeds, the API notifies MessageStore of new recorded versions.
 2. MessageStore broadcasts to all clients subscribed to those blocks.
 3. Client receives version notification, checks local cache.
-   - If versions differ, sends `syncRecordValues` API request with the list of outdated records.
+  - If versions differ, sends `syncRecordValues` API request with the list of outdated records.
 4. Server responds with new data.
-   - Client updates local cache and re-renders.
+  - Client updates local cache and re-renders.
 
 ### Reading Blocks
 
 1. Client first tries local data (in-memory on web, RecordCache on native apps).
 2. If missing, requests from `loadPageChunk` API.
 3. `loadPageChunk` descends from a page block ID down the content tree.
-   - Returns all blocks + dependent records needed to render.
+  - Returns all blocks + dependent records needed to render.
 4. Multiple caching layers exist.
-   - In the worst case, this requires recursive database traversal.
+  - In the worst case, this requires recursive database traversal.
 5. All loaded data goes into memory (and RecordCache on native apps).
-   - React renders the page.
+  - React renders the page.
 
 ## Storage
 

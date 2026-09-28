@@ -59,15 +59,13 @@ That would work fine, as long as the VM has locally attached SSDs (like EC2 with
 
 _Picture from GitHub blog_
 
-![fileservers](_assets/fileservers.webp)
-
 Previously, repositories were replicated using **disk-layer replication** (RAID and [DRBD](https://linbit.com/downloads/)) with a somewhat old-school HA scheme:
 
 1. File servers are orgarnized in pairs.
 2. Each **active file server** has a cross-over cable that connects directly to a dedicated **online** spare.
 3. Each disk has 4 copies:
-   - 2 on the main file server using RAID.
-   - 2 on the hot spare, using DRBD.
+  - 2 on the main file server using RAID.
+  - 2 on the hot spare, using DRBD.
 
 Failover strategy:
 

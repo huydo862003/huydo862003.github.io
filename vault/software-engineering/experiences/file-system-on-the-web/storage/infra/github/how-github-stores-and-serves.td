@@ -282,6 +282,7 @@ Together they make a 10 GB monorepo feel like a small project for any given deve
 ### Reftable
 
 The classic ref store breaks at hundreds of thousands of refs:
+
 - Loose refs: millions of tiny files.
 - `packed-refs`: giant text file rewritten on every change.
 
