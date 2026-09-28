@@ -153,7 +153,7 @@ GET /repos/{owner}/{repo}/readme
 GET /repos/{owner}/{repo}/readme/{dir}
 ```
 
-[Formal signature](https://docs.github.com/en/rest/repos/contents?apiVersion=2026-03-10#get-a-repository-readme--parameters) | [For directory](https://docs.github.com/en/rest/repos/contents?apiVersion=2026-03-10#get-a-repository-readme-for-a-directory--parameters)
+[Formal signature](https://docs.github.com/en/rest/repos/contents?apiVersion=2026-03-10#get-a-repository-readme--parameters) \| [For directory](https://docs.github.com/en/rest/repos/contents?apiVersion=2026-03-10#get-a-repository-readme-for-a-directory--parameters)
 
 Returns the preferred README file from the repo root, or from a specific subdirectory via the `{dir}` variant.
 
