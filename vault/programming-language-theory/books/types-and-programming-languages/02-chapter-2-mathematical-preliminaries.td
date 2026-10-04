@@ -14,6 +14,9 @@ concepts:
   - fref("programming-language-theory/concepts/principle-of-complete-induction.td")
   - fref("programming-language-theory/concepts/lexicographic-order-principle-of-lexicographic-induction.td")
   - fref("programming-language-theory/concepts/lexicographic-order.td")
+url: "https://www.cis.upenn.edu/~bcpierce/tapl/"
+cover: fref("programming-language-theory/books/types-and-programming-languages/assets/types-and-programming-languages.jpg")
+status: "Finished"
 parent: fref("programming-language-theory/books/types-and-programming-languages/index.td")
 ---
 

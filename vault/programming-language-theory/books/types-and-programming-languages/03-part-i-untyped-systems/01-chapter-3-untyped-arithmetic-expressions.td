@@ -2,6 +2,9 @@
 _type: PltBook
 _label: 'Chapter 3. Untyped arithmetic expressions'
 journey: fref("programming-language-theory/index.td")
+url: "https://www.cis.upenn.edu/~bcpierce/tapl/"
+cover: fref("programming-language-theory/books/types-and-programming-languages/assets/types-and-programming-languages.jpg")
+status: "Reading"
 concepts:
   - fref("programming-language-theory/concepts/term.td")
   - fref("programming-language-theory/concepts/bnf.td")

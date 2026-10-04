@@ -2,6 +2,9 @@
 _type: PltBook
 _label: 'Chapter 5. The untyped/pure lambda-calculus'
 journey: fref("programming-language-theory/index.td")
+url: "https://www.cis.upenn.edu/~bcpierce/tapl/"
+cover: fref("programming-language-theory/books/types-and-programming-languages/assets/types-and-programming-languages.jpg")
+status: "Finished"
 concepts:
   - fref("programming-language-theory/concepts/structural-abstract-syntax-concrete-surface-syntax.td")
   - fref("programming-language-theory/concepts/pure-untyped-lambda-calculus-call-by-value.td")

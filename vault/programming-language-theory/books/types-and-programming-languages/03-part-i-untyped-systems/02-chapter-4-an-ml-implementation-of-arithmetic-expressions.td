@@ -3,6 +3,9 @@ _type: PltBook
 _label: 'Chapter 4. An ML implementation of arithmetic expressions'
 journey: fref("programming-language-theory/index.td")
 parent: fref("programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/index.td")
+url: "https://www.cis.upenn.edu/~bcpierce/tapl/"
+cover: fref("programming-language-theory/books/types-and-programming-languages/assets/types-and-programming-languages.jpg")
+status: "Finished"
 ---
 
 - This introduces an implementation of our **language of booleans and arithmetic expressions**.

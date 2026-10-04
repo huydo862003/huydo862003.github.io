@@ -3,6 +3,9 @@ _type: PltBook
 _label: 'Part I. Untyped systems'
 journey: fref("programming-language-theory/index.td")
 parent: fref("programming-language-theory/books/types-and-programming-languages/index.td")
+url: "https://www.cis.upenn.edu/~bcpierce/tapl/"
+cover: fref("programming-language-theory/books/types-and-programming-languages/assets/types-and-programming-languages.jpg")
+status: "Reading"
 children:
   - fref("programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/01-chapter-3-untyped-arithmetic-expressions.td")
   - fref("programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/02-chapter-4-an-ml-implementation-of-arithmetic-expressions.td")

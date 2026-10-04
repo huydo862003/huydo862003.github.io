@@ -11,6 +11,9 @@ concepts:
   - fref("programming-language-theory/concepts/language-safety.td")
   - fref("programming-language-theory/concepts/type-safety-language-safety.td")
   - fref("programming-language-theory/concepts/trapped-runtime-error-untrapped-runtime-error.td")
+url: "https://www.cis.upenn.edu/~bcpierce/tapl/"
+cover: fref("programming-language-theory/books/types-and-programming-languages/assets/types-and-programming-languages.jpg")
+status: "Finished"
 parent: fref("programming-language-theory/books/types-and-programming-languages/index.td")
 ---
 

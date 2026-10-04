@@ -25,4 +25,7 @@ properties:
     type: Book?
   children:
     type: list[Book]?
+  status:
+    type: ("Not started" | "Reading" | "Reference only" | "Finished")?
 ---
+
