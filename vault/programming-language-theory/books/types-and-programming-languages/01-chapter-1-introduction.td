@@ -14,17 +14,17 @@ concepts:
 parent: fref("programming-language-theory/books/types-and-programming-languages/index.td")
 ---
 
-- Informally, though, safe languages can be defined as ones that make it impossible to shoot yourself in the foot while programming.
-- A safe language is completely defined by its programmer's manual.
-- Indeed, in typed languages the type system itself is often taken as the foundation of the design and the organizing principle in light of which every other aspect of the design is considered.
+Recap:
+
+> - Informally, though, safe languages can be defined as ones that make it impossible to shoot yourself in the foot while programming.
+> - A safe language is completely defined by its programmer's manual.
+> - Indeed, in typed languages the type system itself is often taken as the foundation of the design and the organizing principle in light of which every other aspect of the design is considered.
 
 ## Types in computer science
 
 **Modern software engineering & formal methods**
 
 - Modern software engineering uses a broad range of **formal methods** to ensure that a system behaves correctly with respect to a given **specification**.
-
----
 
 **Heavyweight / classical formal methods**
 
@@ -37,8 +37,6 @@ parent: fref("programming-language-theory/books/types-and-programming-languages/
   - Able to express and prove **very general, strong correctness properties** about programs and systems.
   - Often **cumbersome** to apply in practice.
   - **Sophisticated and mathematically heavy**, making them difficult for everyday programmers to use without specialized training.
-
----
 
 **Lightweight formal methods**
 
@@ -62,8 +60,6 @@ parent: fref("programming-language-theory/books/types-and-programming-languages/
   - Can be **readily used by programmers** without requiring deep knowledge of the underlying formal theories.
   - Fit naturally into existing **development workflows** (editing, compiling, testing), making formal reasoning more routine and scalable.
 
----
-
 **On the term "type system"**
 
 - The term **"type system"** is often **overloaded** in practice.
@@ -76,8 +72,6 @@ parent: fref("programming-language-theory/books/types-and-programming-languages/
     - Classifies program phrases (expressions, functions, modules, etc.) into **types**
     - Enforces rules that guarantee certain **safety or correctness properties** (e.g., "well-typed programs don't go wrong")
   - The surrounding context (paper, language, or framework) usually makes **which notion of "type system"** is intended clear enough for technical communication.
-
----
 
 **Type system definition**
 
