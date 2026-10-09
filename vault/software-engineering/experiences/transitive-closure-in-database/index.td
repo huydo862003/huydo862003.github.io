@@ -53,3 +53,74 @@ This simple approach leaves a lot to be desired:
 
 - API waterfall: The using diagram must be fetched and parsed before the used diagrams, because before that, we have no way to know which diagrams to fetch next. -> This leads to a chain of sequential API calls, as deep as the import graph.
 - A lot of DB queries hit the database, at least for each API request.
+
+We can mitigate these by fetching the diagram along with all of its transitively used diagrams.
+
+So the problem reduces to: How do we know which diagrams a diagram transitively uses?
+
+We limit the scope of the solution space to storing some additional information in the database. (Maybe there are other better and more sophisticated solutions outside of this domain)
+
+## Problem Statement
+
+Here's our specific problem statement:
+
+::: note
+Propose a DB schema design that supports the following operations efficiently:
+
+- `UPDATE-DIRECT [id] [new-id-list]`: Sets the direct-used diagrams of diagram `id` to `new-id-list`.
+- `READ [id]`: Returns all transitively-used diagram ids for `id`, which is the union of all direct-used diagrams, direct-used of direct-used, and so on.
+
+Initially, the data structure returns an empty list for all ids.
+:::
+
+### Some (Insufficient) Approaches
+
+Before deciding to research into this, I have spared some forethoughts into the possible approaches.
+
+- **Approach 1 (Naive)**: The client fetches diagram A, parses it, then fetches newly discovered used diagrams sequentially.
+  - `UPDATE-DIRECT` is zero-cost.
+  - `READ` is expensive: prone to request waterfall and causes many DB queries.
+- **Approach 2 (Store Direct-Use)**: Each diagram stores the diagrams it directly uses. On read, the backend performs a recursive SQL query to resolve transitive uses.
+  - `UPDATE-DIRECT` is cheap: a single field update.
+  - `READ` hits the DB once and makes 1 API call, but the recursive SQL query cost needs more verification (may be expensive).
+- **Approach 3 (Store Transitive-Use)**: Each diagram stores all diagrams it transitively uses. On read, the backend returns the field directly.
+  - `UPDATE-DIRECT` is expensive: must find all diagrams that transitively use the current one and recompute their transitive sets from scratch.
+  - `READ` is cheap: a single field lookup.
+
+### A Generalized Problem Statement
+
+We can generalize our problem as follows:
+
+- The diagram import graph is a directed graph where nodes are diagrams and edges are direct-use relations.
+- Fetching all transitively used diagrams in one query is exactly computing the **transitive closure** of a node.
+
+This is a well-known problem in graph theory and database research.
+
+::: details What is Transitive Closure?
+Given a directed graph $G = (V, E)$, the transitive closure $G^* = (V, E^*)$ is defined as:
+
+$$E^* = \{ (u, v) \mid \exists \text{ a path from } u \text{ to } v \text{ in } G \}$$
+
+Equivalently, $E^*$ is the least solution to:
+
+$$X = E \cup (X \bowtie E)$$
+
+where $R_1 \bowtie R_2 = \{ (u, w) \mid \exists v : (u, v) \in R_1 \land (v, w) \in R_2 \}$ is relational composition. Starting from $X = E$ and repeatedly applying $X := E \cup (X \bowtie E)$ until $X$ no longer grows yields $E^*$.
+
+$TC(v)$ denotes the set of nodes reachable from $v$: $TC(v) = \{ u \mid (v, u) \in E^* \}$.
+:::
+
+::: note
+Given a directed graph $G = (V, E)$, design a persistent data structure (or DB schema) that maintains $G$ under the following operations:
+
+- `ADD` $[v]$: Add node $v$ to the graph with no edges. Formally: $V := V \cup \{v\}$.
+- `UPDATE-DIRECT` $[v]$ $[N]$: Replace the out-neighborhood of $v$. Formally: $E := (E \setminus \{ (v, u) \mid u \in V \}) \cup \{ (v, u) \mid u \in N \}$.
+- `READ` $[v]$: Return $TC(v)$.
+- `DELETE` $[v]$: Remove $v$ and all incident edges. Formally: $V := V \setminus \{v\}$, $E := E \setminus \{ (v, u) \mid u \in V \} \setminus \{ (u, v) \mid u \in V \}$.
+
+All operations must be efficient. Initially, $V = \emptyset$ and $E = \emptyset$.
+:::
+
+> Approach 2 and 3 are two ends of a classic tradeoff: compute on read vs. precompute on write. There is no known general solution that makes both `READ` and `UPDATE-DIRECT` O(1). Real solutions pick a point on this spectrum based on read/write ratio.
+
+However, we allow `READ` to returns somewhat inaccurate results, such as forgetting to return some nodes (which can be fetched separately when discovered) or returning some redundant nodes (which can be ignored).
