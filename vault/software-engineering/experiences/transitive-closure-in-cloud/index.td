@@ -128,8 +128,6 @@ Drawbacks:
 - **Read:** A single indexed join against the closure table. No traversal needed.
 - **Write:** Inserting a node adds one closure row per ancestor. Moving or updating a node requires deleting all affected pairs and reinserting recomputed ones. This logic is almost always delegated to triggers.
 
-See ${fref("software-engineering/concepts/closure-table.td")} for the schema and operations.
-
 Drawbacks:
 
 - For DAGs, the delete-and-reinsert logic is complex: a node can have multiple parents, so you must not remove pairs still reachable via a different path.
