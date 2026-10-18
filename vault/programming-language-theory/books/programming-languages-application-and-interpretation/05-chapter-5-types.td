@@ -21,7 +21,7 @@ parent: fref("programming-language-theory/books/programming-languages-applicatio
 
 ## Introduction to types
 
-::: question
+::: note
 The foundational motivation for studying types.
 :::
 
