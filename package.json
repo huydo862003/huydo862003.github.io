@@ -9,9 +9,9 @@
   },
   "license": "APGL-3-only",
   "packageManager": "pnpm@11.18.0",
-
   "type": "module",
   "devDependencies": {
-    "typerighter": "0.44.2"
+    "typerighter": "0.44.2",
+    "typescript": "^7.0.2"
   }
 }
