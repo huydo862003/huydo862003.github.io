@@ -9,4 +9,4 @@ tags:
   - 'design system'
 ---
 
-A reusable, standardized interface element-not a one-off, unique implementation-that operates by encapsulating code, style, and behavior into a single package to ensure ${fref("/design/concepts/consistency.td", "consistency")} and efficiency across a product.
+A reusable, standardized interface element-not a one-off, unique implementation-that operates by encapsulating code, style, and behavior into a single package to ensure ${fref("/design/concepts/consistency.td")} and efficiency across a product.

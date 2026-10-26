@@ -7,4 +7,4 @@ tags:
   - 'design ops'
 ---
 
-The comprehensive written guidelines and code references-often hosted on platforms like Storybook or Zeroheight-that explain how to use the system's ${fref("/design/concepts/component.td", "components")} correctly.
+The comprehensive written guidelines and code references-often hosted on platforms like Storybook or Zeroheight-that explain how to use the system's ${fref("/design/concepts/component.td")} correctly.

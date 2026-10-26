@@ -8,4 +8,4 @@ tags:
   - 'design tool'
 ---
 
-A build system that automatically transforms platform-agnostic ${fref("/design/concepts/design-token.td", "design tokens")} (JSON) into platform-specific code (CSS, Swift, Android XML) to ensure synchronization.
+A build system that automatically transforms platform-agnostic ${fref("/design/concepts/design-token.td")} (JSON) into platform-specific code (CSS, Swift, Android XML) to ensure synchronization.

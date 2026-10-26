@@ -1,3 +1,161 @@
+---
+lockfileVersion: '9.0'
+
+importers:
+
+  .:
+    configDependencies: {}
+    packageManagerDependencies:
+      pnpm:
+        specifier: 12.9.0
+        version: 12.9.0
+
+packages:
+
+  '@pnpm/exe.android-arm64@12.9.0':
+    resolution: {integrity: sha512-/53fHFwP1mBYQjli6h3LBZsocAMjrEY6hCDiomIwdLIFbtxHrWucPg/s8ozOG3K6Qt8yEA78v7fCcNrgZKTlEQ==}
+    cpu: [arm64]
+    os: [android]
+
+  '@pnpm/exe.android-x64@12.9.0':
+    resolution: {integrity: sha512-QI+Md3q3Df0WbDGpqciRw9ge0r7CGbxSlP3HcyIf34/YdZsbmUTl416oWOe3RrkZpVVVCA20f8B9esYrITpArA==}
+    cpu: [x64]
+    os: [android]
+
+  '@pnpm/exe.darwin-arm64@12.9.0':
+    resolution: {integrity: sha512-mWr7fGPYJ12GuvU/q0SyJfj7X/9Eqa5dA6cc+yUUAKRdYEcqW4lQcsDd1ArfxJNSDYooz9X+UhFeVxKO9e/xDA==}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@pnpm/exe.darwin-x64@12.9.0':
+    resolution: {integrity: sha512-fr4ns4FyMLptdYbWqW3yc/yvbfQP7D1RBCFUJpSPr7tOzd3JxZvl+Tkvg65kEAGU5wXI6vl3eCOofumEj/n3Gw==}
+    cpu: [x64]
+    os: [darwin]
+
+  '@pnpm/exe.freebsd-x64@12.9.0':
+    resolution: {integrity: sha512-4+hZPeJzSSw1oOrfUg+v4QylHv6qKhdgcCnKt9ooryE79p1Z9oyozVJ5em+g6ajbvv6jlH+epnht8/s9Cp5M3Q==}
+    cpu: [x64]
+    os: [freebsd]
+
+  '@pnpm/exe.linux-arm64-musl@12.9.0':
+    resolution: {integrity: sha512-+mHQSbA6M6W71PyV0IxYu2T43lZA8rAhlw4Gy7EMlyiv8H2GWJAXtUXl2huw7tnsar2AhCRlPn/ZvUv+/mIBkA==}
+    cpu: [arm64]
+    os: [linux]
+    libc: [musl]
+
+  '@pnpm/exe.linux-arm64@12.9.0':
+    resolution: {integrity: sha512-U1mBoG27+J/HuWYtVZOQrvbiKnTlDsDVzyroKQqHsJaTHTXi0H5Y+fU1GjUyMcNG5r/EXtbhp9iAwQt64uXTxQ==}
+    cpu: [arm64]
+    os: [linux]
+    libc: [glibc]
+
+  '@pnpm/exe.linux-ppc64@12.9.0':
+    resolution: {integrity: sha512-P5bgei3i6wjlKq6s4PNg/0cvik354upY2wW3YGSfweYTABnAZP2zGzgMc0eO5SHTz934Cbya8Z0YFRdw6MfmCg==}
+    cpu: [ppc64]
+    os: [linux]
+    libc: [glibc]
+
+  '@pnpm/exe.linux-riscv64@12.9.0':
+    resolution: {integrity: sha512-oNx2uOo2gVrRckEvz7V+FKeq9HOF0rKNHcCyxRRHSXEXpmP6ZMMgJ+iU/m/zfSGp6bAcC5mvAE270FhAeIeKhA==}
+    cpu: [riscv64]
+    os: [linux]
+    libc: [glibc]
+
+  '@pnpm/exe.linux-s390x@12.9.0':
+    resolution: {integrity: sha512-OChHS7hOlqdBMtZqjIB1QoZGNfzLPSsvTa2kYanf3qso5Q+KgnROQ+uV4a0wRGC6sdshSA63+Ui8MCylRy6iwA==}
+    cpu: [s390x]
+    os: [linux]
+    libc: [glibc]
+
+  '@pnpm/exe.linux-x64-musl@12.9.0':
+    resolution: {integrity: sha512-ubZPsDMXS+LEnPa7wZD18E+KTpOAZPt+ms/khfIROt+6Cp0A2kayQA8aIsvV7+jGZD0xoknvaGN/P3v9OisZUg==}
+    cpu: [x64]
+    os: [linux]
+    libc: [musl]
+
+  '@pnpm/exe.linux-x64@12.9.0':
+    resolution: {integrity: sha512-ElANYUwQuMfWqMJR4m5L5h9zKjvGKcA8hi2put4J1DMx2smVaNGkGnxkgeIYgMjmF7UFxlZDcL4jItkScgsW4A==}
+    cpu: [x64]
+    os: [linux]
+    libc: [glibc]
+
+  '@pnpm/exe.win32-arm64@12.9.0':
+    resolution: {integrity: sha512-cqnBKZg5e9fFghmYtgJLyZOAsS1EyLeDVJ0qNsjR7hcc+dq1mWRiDo0erqdj2PGoYaVogyF9WejZSJoKvlfXDw==}
+    cpu: [arm64]
+    os: [win32]
+
+  '@pnpm/exe.win32-x64@12.9.0':
+    resolution: {integrity: sha512-khqst6QGgHdKs2lEmz0N75qN/EoOcEywNQlRPfBrBrq1SytHra6ro/xViueJkVvDOz9gEO8oYcXTdZeAjErjMg==}
+    cpu: [x64]
+    os: [win32]
+
+  pnpm@12.9.0:
+    resolution: {integrity: sha512-j2TvoLeSmGypiuVoeRvNdyKAfidMTwwdmFPGIRZJXFhBGduYdioqU0OxaE02G5rib90W1VFmbXY1NG0/roMN3Q==}
+    engines: {node: '>=18.*'}
+    hasBin: true
+
+snapshots:
+
+  '@pnpm/exe.android-arm64@12.9.0':
+    optional: true
+
+  '@pnpm/exe.android-x64@12.9.0':
+    optional: true
+
+  '@pnpm/exe.darwin-arm64@12.9.0':
+    optional: true
+
+  '@pnpm/exe.darwin-x64@12.9.0':
+    optional: true
+
+  '@pnpm/exe.freebsd-x64@12.9.0':
+    optional: true
+
+  '@pnpm/exe.linux-arm64-musl@12.9.0':
+    optional: true
+
+  '@pnpm/exe.linux-arm64@12.9.0':
+    optional: true
+
+  '@pnpm/exe.linux-ppc64@12.9.0':
+    optional: true
+
+  '@pnpm/exe.linux-riscv64@12.9.0':
+    optional: true
+
+  '@pnpm/exe.linux-s390x@12.9.0':
+    optional: true
+
+  '@pnpm/exe.linux-x64-musl@12.9.0':
+    optional: true
+
+  '@pnpm/exe.linux-x64@12.9.0':
+    optional: true
+
+  '@pnpm/exe.win32-arm64@12.9.0':
+    optional: true
+
+  '@pnpm/exe.win32-x64@12.9.0':
+    optional: true
+
+  pnpm@12.9.0:
+    optionalDependencies:
+      '@pnpm/exe.android-arm64': 12.9.0
+      '@pnpm/exe.android-x64': 12.9.0
+      '@pnpm/exe.darwin-arm64': 12.9.0
+      '@pnpm/exe.darwin-x64': 12.9.0
+      '@pnpm/exe.freebsd-x64': 12.9.0
+      '@pnpm/exe.linux-arm64': 12.9.0
+      '@pnpm/exe.linux-arm64-musl': 12.9.0
+      '@pnpm/exe.linux-ppc64': 12.9.0
+      '@pnpm/exe.linux-riscv64': 12.9.0
+      '@pnpm/exe.linux-s390x': 12.9.0
+      '@pnpm/exe.linux-x64': 12.9.0
+      '@pnpm/exe.linux-x64-musl': 12.9.0
+      '@pnpm/exe.win32-arm64': 12.9.0
+      '@pnpm/exe.win32-x64': 12.9.0
+
+---
 lockfileVersion: '9.0'
 
 settings:
@@ -9,8 +167,8 @@ importers:
   .:
     devDependencies:
       typerighter:
-        specifier: 0.44.2
-        version: 0.44.2(jiti@2.7.0)(typescript@7.0.2)
+        specifier: ^0.45.3
+        version: 0.45.3(jiti@2.7.0)(typescript@7.0.2)
       typescript:
         specifier: ^7.0.2
         version: 7.0.2
@@ -326,11 +484,11 @@ packages:
     peerDependencies:
       vite: ^5.2.0 || ^6 || ^7 || ^8
 
-  '@typerighter/rpc-client@0.44.2':
-    resolution: {integrity: sha512-nbFvOQwiA3yN9GMya6fHL3gTOBHKq7vl/EDdXyxu6/CjmYRrDbm+SpCkYTmqzauxjfZgOyk2F9QDxqkY4bIvEw==}
+  '@typerighter/rpc-client@0.45.3':
+    resolution: {integrity: sha512-2hBv5XGUqjjfKKLujbOM2I+g5W3vvmIOVzwuoYeCeoSOFLc+Q8ED3dMUAGtJlkDUr3nDQIGJNXKr6TNPueFbpA==}
 
-  '@typerighter/rpc-server@0.44.2':
-    resolution: {integrity: sha512-e3MqjRjWuvSlVuf0m3bxoj/gWy2pcjwAM7e/vJ8keZaOyn82vZuHOymv7ekcdvj6fHxOTvaTd3gtzjSJAvsQlg==}
+  '@typerighter/rpc-server@0.45.3':
+    resolution: {integrity: sha512-OyyY+k2kCuQGA91aswY7r2sYpzKkstmY8JoyXNSY2hEadhJcWiIpf1jKGBTW6vU6PECeqPtvTxR/8YCnsuNazA==}
 
   '@types/hast@3.0.5':
     resolution: {integrity: sha512-rp/ezSWaD1m44dPKICGhiskI13nVr7qTloFwDa/IYkhhf5nzwP+zIQcIJh3WIFSBOy/H1PzB40jPjMDksN4F+g==}
@@ -479,6 +637,11 @@ packages:
 
   '@volar/typescript@2.4.28':
     resolution: {integrity: sha512-Ja6yvWrbis2QtN4ClAKreeUZPVYMARDYZl9LMEv1iQ1QdepB6wn0jTRxA9MftYmYa4DQ4k/DaSZpFPUfxl8giw==}
+    peerDependencies:
+      typescript: '*'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
 
   '@vue/compiler-core@3.5.43':
     resolution: {integrity: sha512-zdiLhnbe1QQqgDT8xZMpNmyqZ3qlI+/Q/FHQco57Kwl/b05HhCzN6eVGN9QU9rbga4CrS0H5SYY8VGHZCt/1Hg==}
@@ -850,9 +1013,11 @@ packages:
   trim-lines@3.0.1:
     resolution: {integrity: sha512-kRj8B+YHZCc9kQYdWfJB2/oUl9rA99qbowYYBtr4ui4mZyAQ2JpvVBd/6U2YloATfqBhBTSMhTpgBHtU0Mf3Rg==}
 
-  typerighter@0.44.2:
-    resolution: {integrity: sha512-Be5SKg/VEK6XHdaCa83ews4zDoMvpPOjQ7fB9Z66obGEnkvu9lh/NoUEYKbdemrYnbG+UANpVRkpAwIYK0jv+g==}
+  typerighter@0.45.3:
+    resolution: {integrity: sha512-yiGJr4ErgM9+YJ0LIvL0XBw/kY7AC2hQDsCzoigPqKGICwpTAGgMcdNKVN8KxFduKGR4VYfViHPzDKHYNHxEuA==}
     hasBin: true
+    peerDependencies:
+      typescript: ^6.0.3
 
   typescript@7.0.2:
     resolution: {integrity: sha512-8FYau96o3NKOhbjKi/qNvG/W5jhzxkbdm5sj9AbZ/5T5sWqn3hJgLfGx27sRKZWTvyzCP8dLRBTf5tBTSRVUNA==}
@@ -1197,9 +1362,9 @@ snapshots:
       tailwindcss: 4.3.3
       vite: 8.3.4(jiti@2.7.0)
 
-  '@typerighter/rpc-client@0.44.2': {}
+  '@typerighter/rpc-client@0.45.3': {}
 
-  '@typerighter/rpc-server@0.44.2':
+  '@typerighter/rpc-server@0.45.3':
     dependencies:
       dotenv: 18.0.7
 
@@ -1287,11 +1452,13 @@ snapshots:
 
   '@volar/source-map@2.4.28': {}
 
-  '@volar/typescript@2.4.28':
+  '@volar/typescript@2.4.28(typescript@7.0.2)':
     dependencies:
       '@volar/language-core': 2.4.28
       path-browserify: 1.0.1
       vscode-uri: 3.2.0
+    optionalDependencies:
+      typescript: 7.0.2
 
   '@vue/compiler-core@3.5.43':
     dependencies:
@@ -1656,7 +1823,7 @@ snapshots:
 
   trim-lines@3.0.1: {}
 
-  typerighter@0.44.2(jiti@2.7.0)(typescript@7.0.2):
+  typerighter@0.45.3(jiti@2.7.0)(typescript@7.0.2):
     dependencies:
       '@clack/prompts': 1.8.1
       '@floating-ui/vue': 2.0.1(vue@3.5.43(typescript@7.0.2))
@@ -1665,8 +1832,8 @@ snapshots:
       '@lucide/vue': 1.47.0(vue@3.5.43(typescript@7.0.2))
       '@shikijs/transformers': 4.4.3
       '@tailwindcss/vite': 4.3.3(vite@8.3.4(jiti@2.7.0))
-      '@typerighter/rpc-client': 0.44.2
-      '@typerighter/rpc-server': 0.44.2
+      '@typerighter/rpc-client': 0.45.3
+      '@typerighter/rpc-server': 0.45.3
       '@vitejs/plugin-vue': 6.0.10(vite@8.3.4(jiti@2.7.0))(vue@3.5.43(typescript@7.0.2))
       cac: 7.0.0
       picocolors: 1.1.1
@@ -1674,6 +1841,7 @@ snapshots:
       striptags: 3.2.0
       tailwindcss: 4.3.3
       temml: 0.13.5
+      typescript: 7.0.2
       vite: 8.3.4(jiti@2.7.0)
       vue: 3.5.43(typescript@7.0.2)
       vue-component-meta: 3.3.13(typescript@7.0.2)
@@ -1689,7 +1857,6 @@ snapshots:
       - sugarss
       - terser
       - tsx
-      - typescript
       - yaml
 
   typescript@7.0.2:
@@ -1763,7 +1930,7 @@ snapshots:
 
   vue-component-meta@3.3.13(typescript@7.0.2):
     dependencies:
-      '@volar/typescript': 2.4.28
+      '@volar/typescript': 2.4.28(typescript@7.0.2)
       '@vue/language-core': 3.3.13
       path-browserify: 1.0.1
     optionalDependencies:

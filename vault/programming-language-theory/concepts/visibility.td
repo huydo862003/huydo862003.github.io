@@ -43,9 +43,9 @@ Basically, this means rules limiting the calling of methods depending on what `s
 
 You can tell which object it is by following the small set of rules:
 
-${fref("/concepts/plt/assets/ruby-self-rules.png")}
+${fref("/programming-language-theory/concepts/assets/ruby-self-rules.png")}
 
-${fref("/concepts/plt/assets/ruby-self-context.png")}
+${fref("/programming-language-theory/concepts/assets/ruby-self-context.png")}
 
 ### The top-level `self` object
 
@@ -82,7 +82,7 @@ If you want to grab main for any reason, you need to assign it to a variable at 
 m = self
 ```
 
-${fref("/concepts/plt/assets/ruby-self-assignment.png")}
+${fref("/programming-language-theory/concepts/assets/ruby-self-assignment.png")}
 
 ### `self` as the default receiver of messages
 
@@ -92,9 +92,9 @@ If the receiver of the message is `self`, you can **omit the receiver and the do
 
 Ruby will use `self` as the **default receiver**, meaning the message you send will be sent to `self`.
 
-${fref("/concepts/plt/assets/ruby-default-receiver.png")}
+${fref("/programming-language-theory/concepts/assets/ruby-default-receiver.png")}
 
-${fref("/concepts/plt/assets/ruby-method-dispatch.png")}
+${fref("/programming-language-theory/concepts/assets/ruby-method-dispatch.png")}
 
 🧗‍♂️ There’s one situation where you ***can’t*** **omit the object-plus-dot** part of a method call: when the **method name** ***ends*** with **an equal sign** - a **setter** method.
 
@@ -154,7 +154,7 @@ You can tell by looking at a Ruby program where the local scopes begin and end, 
 
 👀 Exceptions and additions to these rules exist.
 
-${fref("/concepts/plt/assets/ruby-access-rules.png")}
+${fref("/programming-language-theory/concepts/assets/ruby-access-rules.png")}
 
 ### The interaction between local scope and `self`
 
@@ -211,7 +211,7 @@ end
 
 Rather, they’re **class-hierarchy scoped**, ***except…sometimes***.
 
-${fref("/concepts/plt/assets/ruby-protected-scope.png")}
+${fref("/programming-language-theory/concepts/assets/ruby-protected-scope.png")}
 
 😲 What gets printed is `200`.
 
@@ -272,7 +272,7 @@ NoMethodError: private method 'dog_years=' called for
 
 😉 A protected method is thus like a private method, but with an exemption for cases where the class of `self` (`c1`) and the class of the object having the method called on it (`c2`) are the same or related by inheritance.
 
-${fref("/concepts/plt/assets/ruby-protected-inheritance.png")}
+${fref("/programming-language-theory/concepts/assets/ruby-protected-inheritance.png")}
 
 ## Writing and using top-level methods
 
