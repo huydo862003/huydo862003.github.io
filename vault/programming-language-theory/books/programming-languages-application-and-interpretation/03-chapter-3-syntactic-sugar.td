@@ -1,17 +1,17 @@
 ---
 _type: PltBook
 _label: 'Chapter 3. Syntactic sugar'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 concepts:
-  - fref("programming-language-theory/concepts/macro.td")
-  - fref("programming-language-theory/concepts/macro-system.td")
-  - fref("programming-language-theory/concepts/syntactic-sugar.td")
-  - fref("programming-language-theory/concepts/desugarer.td")
-  - fref("programming-language-theory/concepts/macro-expansion.td")
-  - fref("programming-language-theory/concepts/macro-parenthetical-language.td")
-  - fref("programming-language-theory/concepts/macro-hygienic-macro.td")
-  - fref("programming-language-theory/concepts/macro-side-effect.td")
-parent: fref("programming-language-theory/books/programming-languages-application-and-interpretation/index.td")
+  - fref("/programming-language-theory/concepts/macro.td")
+  - fref("/programming-language-theory/concepts/macro-system.td")
+  - fref("/programming-language-theory/concepts/syntactic-sugar.td")
+  - fref("/programming-language-theory/concepts/desugarer.td")
+  - fref("/programming-language-theory/concepts/macro-expansion.td")
+  - fref("/programming-language-theory/concepts/macro-parenthetical-language.td")
+  - fref("/programming-language-theory/concepts/macro-hygienic-macro.td")
+  - fref("/programming-language-theory/concepts/macro-side-effect.td")
+parent: fref("/programming-language-theory/books/programming-languages-application-and-interpretation/index.td")
 ---
 
 ## Syntactic sugar

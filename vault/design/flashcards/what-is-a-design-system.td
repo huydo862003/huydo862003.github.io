@@ -3,7 +3,7 @@ _type: DesignFlashcard
 _label: 'What is a design system?'
 deck: 'design system'
 concepts:
-  - fref("design/concepts/design-system.td")
+  - fref("/design/concepts/design-system.td")
 ---
 
 ::: flashcard

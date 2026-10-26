@@ -1,24 +1,24 @@
 ---
 _type: PltBook
 _label: 'Chapter 1. Abstract syntax'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 concepts:
-  - fref("programming-language-theory/concepts/operator-arity.td")
-  - fref("programming-language-theory/concepts/sort.td")
-  - fref("programming-language-theory/concepts/variable.td")
-  - fref("programming-language-theory/concepts/variable-abstract-syntax-tree-ast.td")
-  - fref("programming-language-theory/concepts/operator-abstract-syntax-tree-ast.td")
-  - fref("programming-language-theory/concepts/fresh-variable-abstract-syntax-tree-ast.td")
-  - fref("programming-language-theory/concepts/substitution-subject-substitution-target.td")
-  - fref("programming-language-theory/concepts/capture-avoiding-substitution.td")
-  - fref("programming-language-theory/concepts/scope-binding.td")
-  - fref("programming-language-theory/concepts/valence-actual-parameter-argument.td")
-  - fref("programming-language-theory/concepts/congruence.td")
-  - fref("programming-language-theory/concepts/alpha-equivalence.td")
-  - fref("programming-language-theory/concepts/abstract-binding-tree-abt-valence-abstractor.td")
-  - fref("programming-language-theory/concepts/abstract-binding-graph.td")
-  - fref("programming-language-theory/concepts/fresh-renaming.td")
-parent: fref("programming-language-theory/books/practical-foundations-for-programming-languages/01-part-i-judgments-and-rules/index.td")
+  - fref("/programming-language-theory/concepts/operator-arity.td")
+  - fref("/programming-language-theory/concepts/sort.td")
+  - fref("/programming-language-theory/concepts/variable.td")
+  - fref("/programming-language-theory/concepts/variable-abstract-syntax-tree-ast.td")
+  - fref("/programming-language-theory/concepts/operator-abstract-syntax-tree-ast.td")
+  - fref("/programming-language-theory/concepts/fresh-variable-abstract-syntax-tree-ast.td")
+  - fref("/programming-language-theory/concepts/substitution-subject-substitution-target.td")
+  - fref("/programming-language-theory/concepts/capture-avoiding-substitution.td")
+  - fref("/programming-language-theory/concepts/scope-binding.td")
+  - fref("/programming-language-theory/concepts/valence-actual-parameter-argument.td")
+  - fref("/programming-language-theory/concepts/congruence.td")
+  - fref("/programming-language-theory/concepts/alpha-equivalence.td")
+  - fref("/programming-language-theory/concepts/abstract-binding-tree-abt-valence-abstractor.td")
+  - fref("/programming-language-theory/concepts/abstract-binding-graph.td")
+  - fref("/programming-language-theory/concepts/fresh-renaming.td")
+parent: fref("/programming-language-theory/books/practical-foundations-for-programming-languages/01-part-i-judgments-and-rules/index.td")
 ---
 
 - Programming languages describe **computations** for **humans and machines**.

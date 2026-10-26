@@ -1,15 +1,15 @@
 ---
 _type: PltConcept
 _label: 'Lazy evaluation strategy'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'mastered'
 books:
-  - fref("programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/03-chapter-5-the-untyped-pure-lambda-calculus.td")
+  - fref("/programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/03-chapter-5-the-untyped-pure-lambda-calculus.td")
 tags:
   - 'language feature design'
   - 'semantics'
 ---
 
 ::: info
-(Language feature/design) An ${fref("programming-language-theory/concepts/evaluation-strategy.td")} in which the argument is not evaluated before substituted into the function call.
+(Language feature/design) An ${fref("/programming-language-theory/concepts/evaluation-strategy.td")} in which the argument is not evaluated before substituted into the function call.
 :::

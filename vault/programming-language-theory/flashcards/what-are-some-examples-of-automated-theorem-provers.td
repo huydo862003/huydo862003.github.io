@@ -3,11 +3,11 @@ _type: PltFlashcard
 _label: 'What are some examples of automated theorem provers?'
 deck: 'compiler implementation'
 concepts:
-  - fref("programming-language-theory/concepts/automated-theorem-prover.td")
-  - fref("programming-language-theory/concepts/sat-solver.td")
-  - fref("programming-language-theory/concepts/smt-solver.td")
+  - fref("/programming-language-theory/concepts/automated-theorem-prover.td")
+  - fref("/programming-language-theory/concepts/sat-solver.td")
+  - fref("/programming-language-theory/concepts/smt-solver.td")
 books:
-  - fref("programming-language-theory/books/software-foundations/01-logical-foundations/index.td")
+  - fref("/programming-language-theory/books/software-foundations/01-logical-foundations/index.td")
 ---
 
 ::: flashcard

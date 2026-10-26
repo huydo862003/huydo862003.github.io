@@ -1,23 +1,23 @@
 ---
 _type: PltBook
 _label: 'Chapter 1. Learning SMoL - standard model of languages'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 concepts:
-  - fref("programming-language-theory/concepts/local-binding-form.td")
-  - fref("programming-language-theory/concepts/parallel-simultaneous-let.td")
-  - fref("programming-language-theory/concepts/recursive-let.td")
-  - fref("programming-language-theory/concepts/cascading-sequential-let.td")
-  - fref("programming-language-theory/concepts/lexical-static-scope.td")
-  - fref("programming-language-theory/concepts/first-order-variable.td")
-  - fref("programming-language-theory/concepts/closure.td")
-  - fref("programming-language-theory/concepts/aliasing.td")
-  - fref("programming-language-theory/concepts/block.td")
-  - fref("programming-language-theory/concepts/primordial-block.td")
-  - fref("programming-language-theory/concepts/binding.td")
-  - fref("programming-language-theory/concepts/environment.td")
-  - fref("programming-language-theory/concepts/garbage-collection.td")
-  - fref("programming-language-theory/concepts/automatic-memory-management.td")
-parent: fref("programming-language-theory/books/programming-languages-application-and-interpretation/index.td")
+  - fref("/programming-language-theory/concepts/local-binding-form.td")
+  - fref("/programming-language-theory/concepts/parallel-simultaneous-let.td")
+  - fref("/programming-language-theory/concepts/recursive-let.td")
+  - fref("/programming-language-theory/concepts/cascading-sequential-let.td")
+  - fref("/programming-language-theory/concepts/lexical-static-scope.td")
+  - fref("/programming-language-theory/concepts/first-order-variable.td")
+  - fref("/programming-language-theory/concepts/closure.td")
+  - fref("/programming-language-theory/concepts/aliasing.td")
+  - fref("/programming-language-theory/concepts/block.td")
+  - fref("/programming-language-theory/concepts/primordial-block.td")
+  - fref("/programming-language-theory/concepts/binding.td")
+  - fref("/programming-language-theory/concepts/environment.td")
+  - fref("/programming-language-theory/concepts/garbage-collection.td")
+  - fref("/programming-language-theory/concepts/automatic-memory-management.td")
+parent: fref("/programming-language-theory/books/programming-languages-application-and-interpretation/index.td")
 ---
 
 Link: <https://smol-tutor.xyz/tutor/>.

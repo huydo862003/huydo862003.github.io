@@ -3,8 +3,8 @@ _type: DesignFlashcard
 _label: 'What is UI/UX?'
 deck: 'design aspect'
 concepts:
-  - fref("design/concepts/user-interface-ui.td")
-  - fref("design/concepts/user-experience-ux.td")
+  - fref("/design/concepts/user-interface-ui.td")
+  - fref("/design/concepts/user-experience-ux.td")
 ---
 
 ::: flashcard

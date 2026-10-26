@@ -3,9 +3,9 @@ _type: PltFlashcard
 _label: 'Formalize function application and describe its notation in pure lambda calculus?'
 deck: 'pure-lambda-calculus'
 concepts:
-  - fref("programming-language-theory/concepts/application-function-call.td")
+  - fref("/programming-language-theory/concepts/application-function-call.td")
 books:
-  - fref("programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/03-chapter-5-the-untyped-pure-lambda-calculus.td")
+  - fref("/programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/03-chapter-5-the-untyped-pure-lambda-calculus.td")
 ---
 
 ::: flashcard

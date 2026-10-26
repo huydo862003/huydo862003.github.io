@@ -1,7 +1,7 @@
 ---
 _type: SoftEngConcept
 _label: 'Eventual Consistency'
-journey: fref("software-engineering/index.td")
+journey: fref("/software-engineering/index.td")
 status: 'learning'
 tags:
   - 'architecture'

@@ -1,10 +1,10 @@
 ---
 _type: PltConcept
 _label: 'Curry/Y-Combinator'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'reviewing'
 books:
-  - fref("programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/03-chapter-5-the-untyped-pure-lambda-calculus.td")
+  - fref("/programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/03-chapter-5-the-untyped-pure-lambda-calculus.td")
 tags:
   - 'lambda calculus'
   - 'semantics'
@@ -27,5 +27,5 @@ $$
 \end{aligned}
 $$
 
-  - In a ${fref("programming-language-theory/concepts/call-by-value.td")} evaluation strategy, this diverges because it continues to evaluate $\text{fix}\ g$.
-  - In a ${fref("programming-language-theory/concepts/call-by-name.td")} evaluation strategy, $\text{fix}\ g$ does not diverge because $g$ gets applied to $\text{fix}\ g$.
+  - In a ${fref("/programming-language-theory/concepts/call-by-value.td")} evaluation strategy, this diverges because it continues to evaluate $\text{fix}\ g$.
+  - In a ${fref("/programming-language-theory/concepts/call-by-name.td")} evaluation strategy, $\text{fix}\ g$ does not diverge because $g$ gets applied to $\text{fix}\ g$.

@@ -1,7 +1,7 @@
 ---
 _type: PltConcept
 _label: 'Blame tracking'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'learning'
 tags:
   - 'language feature design'
@@ -11,6 +11,6 @@ tags:
   - 'type theory'
 ---
 
-A mechanism that identifies which party (module, component, contract boundary) is responsible when a ${fref("programming-language-theory/concepts/contract.td")} violation occurs.
+A mechanism that identifies which party (module, component, contract boundary) is responsible when a ${fref("/programming-language-theory/concepts/contract.td")} violation occurs.
 
 A mechanism that identifies **which party** (module, component, contract boundary) is responsible when a Contract violation occurs.

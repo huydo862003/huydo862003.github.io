@@ -2,19 +2,19 @@
 _type: PltBook
 _label: 'Practical foundations for programming languages'
 date: '2016'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 description: 'A mathematically rigorous treatment of programming language theory grounded in proof theory and type theory. Defines language concepts through static and dynamic semantics using only elementary mathematics.'
 isbn: '978-1107150300'
 url: "https://www.cs.cmu.edu/~rwh/pfpl/"
-cover: fref("programming-language-theory/books/practical-foundations-for-programming-languages/assets/practical-foundations-for-programming-languages.jpg")
+cover: fref("/programming-language-theory/books/practical-foundations-for-programming-languages/assets/practical-foundations-for-programming-languages.jpg")
 tags:
   - 'type theory'
   - 'proof theory'
   - 'operational semantics'
   - 'programming languages'
 children:
-  - fref("programming-language-theory/books/practical-foundations-for-programming-languages/00-preface.td")
-  - fref("programming-language-theory/books/practical-foundations-for-programming-languages/01-part-i-judgments-and-rules/index.td")
+  - fref("/programming-language-theory/books/practical-foundations-for-programming-languages/00-preface.td")
+  - fref("/programming-language-theory/books/practical-foundations-for-programming-languages/01-part-i-judgments-and-rules/index.td")
 ---
 
 - Comprehensive theory of programming languages based on:

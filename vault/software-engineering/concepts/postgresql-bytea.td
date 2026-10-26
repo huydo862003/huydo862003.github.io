@@ -1,10 +1,10 @@
 ---
 _type: SoftEngConcept
 _label: 'PostgreSQL bytea'
-journey: fref("software-engineering/index.td")
+journey: fref("/software-engineering/index.td")
 status: 'learning'
 depends_on:
-  - fref("software-engineering/concepts/postgresql-toast.td")
+  - fref("/software-engineering/concepts/postgresql-toast.td")
 tags:
   - 'database'
 ---

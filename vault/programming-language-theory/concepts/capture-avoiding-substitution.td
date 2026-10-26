@@ -1,14 +1,14 @@
 ---
 _type: PltConcept
 _label: 'Capture-avoiding substitution'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'learning'
 books:
-  - fref("programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/03-chapter-5-the-untyped-pure-lambda-calculus.td")
-  - fref("programming-language-theory/books/practical-foundations-for-programming-languages/01-part-i-judgments-and-rules/01-chapter-1-abstract-syntax.td")
+  - fref("/programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/03-chapter-5-the-untyped-pure-lambda-calculus.td")
+  - fref("/programming-language-theory/books/practical-foundations-for-programming-languages/01-part-i-judgments-and-rules/01-chapter-1-abstract-syntax.td")
 ---
 
-Rules in ${fref("programming-language-theory/concepts/pure-untyped-lambda-calculus.td")}:
+Rules in ${fref("/programming-language-theory/concepts/pure-untyped-lambda-calculus.td")}:
 
 - $[x\to s]x = s$
 - $[x\to s ]y = y\ \text{if}\ x \neq y$
@@ -20,7 +20,7 @@ $$
 - $[x \to s](t_1\ t_2) = [x \to s]t_1\ [x \to s]t_2$
 - Practical foundations for programming languages 's notation
 
-    A substitution $[b / x]$ is a ${fref("programming-language-theory/concepts/partial-function.td")} on the set of ${fref("programming-language-theory/concepts/abstract-syntax-tree-ast.td")}s $\mathcal{A}$. Given the set of variables $\mathcal{X}$ and an AST $a \in \mathcal{A}$:
+    A substitution $[b / x]$ is a ${fref("/programming-language-theory/concepts/partial-function.td")} on the set of ${fref("/programming-language-theory/concepts/abstract-syntax-tree-ast.td")}s $\mathcal{A}$. Given the set of variables $\mathcal{X}$ and an AST $a \in \mathcal{A}$:
 
   - If $a = x \in \mathcal{X}$ then $[b/x]a = b$.
   - If $a = y \in \mathcal{X}$ and $y \neq x$ then $[b/x]y = y$.

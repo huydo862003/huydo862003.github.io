@@ -3,10 +3,10 @@ _type: PltFlashcard
 _label: 'What is the relation between objects and closures?'
 deck: 'language theory'
 concepts:
-  - fref("programming-language-theory/concepts/object.td")
-  - fref("programming-language-theory/concepts/closure.td")
+  - fref("/programming-language-theory/concepts/object.td")
+  - fref("/programming-language-theory/concepts/closure.td")
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/04-chapter-4-objects.td")
+  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/04-chapter-4-objects.td")
 ---
 
 ::: flashcard

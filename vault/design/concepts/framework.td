@@ -1,7 +1,7 @@
 ---
 _type: DesignConcept
 _label: 'Framework'
-journey: fref("design/index.td")
+journey: fref("/design/index.td")
 status: 'reviewing'
 tags:
   - 'design tool'

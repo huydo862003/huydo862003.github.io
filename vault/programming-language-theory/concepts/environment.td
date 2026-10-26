@@ -1,14 +1,14 @@
 ---
 _type: PltConcept
 _label: 'Environment'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'learning'
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/01-chapter-1-learning-smol-standard-model-of-languages.td")
+  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/01-chapter-1-learning-smol-standard-model-of-languages.td")
 ---
 
 ::: info
-(${fref("programming-language-theory/concepts/lambda-calculus.td")}, Semantics) A finite map from variables to values, used to track substitutions during evaluation.
+(${fref("/programming-language-theory/concepts/lambda-calculus.td")}, Semantics) A finite map from variables to values, used to track substitutions during evaluation.
 :::
 
 - Written as: `\{x ↦ 5, y ↦ 3\}` or `[x := 5, y := 3]`.

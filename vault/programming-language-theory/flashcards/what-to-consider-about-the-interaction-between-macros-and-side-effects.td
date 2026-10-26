@@ -3,9 +3,9 @@ _type: PltFlashcard
 _label: 'What to consider about the interaction between macros and side effects?'
 deck: 'programming-language-basic'
 concepts:
-  - fref("programming-language-theory/concepts/macro.td")
+  - fref("/programming-language-theory/concepts/macro.td")
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/03-chapter-3-syntactic-sugar.td")
+  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/03-chapter-3-syntactic-sugar.td")
 ---
 
 ::: flashcard

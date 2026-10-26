@@ -1,11 +1,11 @@
 ---
 _type: PltConcept
 _label: 'Judgment assertion judgment form judgment form instances'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'learning'
 ---
 
-- A ${fref("programming-language-theory/concepts/judgment-form.td")} is a relation, interpreted as a ${fref("programming-language-theory/concepts/predicate.td")}.
+- A ${fref("/programming-language-theory/concepts/judgment-form.td")} is a relation, interpreted as a ${fref("/programming-language-theory/concepts/predicate.td")}.
 
     Typically written as $- \ J$ (for unary relation).
 

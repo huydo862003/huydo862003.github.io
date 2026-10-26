@@ -1,7 +1,7 @@
 ---
 _type: ExperienceResource
 _label: "How GitHub Stores and Serves Git Repositories"
-experience: fref("software-engineering/experiences/file-system-on-the-web/index.td")
+experience: fref("/software-engineering/experiences/file-system-on-the-web/index.td")
 url: "https://singhajit.com/how-github-stores-and-serves-git-repositories/"
 kind: 'article'
 tags:

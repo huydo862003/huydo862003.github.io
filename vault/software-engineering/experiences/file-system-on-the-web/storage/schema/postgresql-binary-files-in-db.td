@@ -1,7 +1,7 @@
 ---
 _type: ExperienceResource
 _label: "PostgreSQL: Storing Files in the Database"
-experience: fref("software-engineering/experiences/file-system-on-the-web/index.td")
+experience: fref("/software-engineering/experiences/file-system-on-the-web/index.td")
 url: "https://wiki.postgresql.org/wiki/BinaryFilesInDB"
 kind: 'article'
 tags:

@@ -3,11 +3,11 @@ _type: PltFlashcard
 _label: 'What is an abstract binding tree (ABT)?'
 deck: 'language theory'
 concepts:
-  - fref("programming-language-theory/concepts/abstract-binding-tree-abt.td")
-  - fref("programming-language-theory/concepts/valence.td")
-  - fref("programming-language-theory/concepts/abstractor.td")
+  - fref("/programming-language-theory/concepts/abstract-binding-tree-abt.td")
+  - fref("/programming-language-theory/concepts/valence.td")
+  - fref("/programming-language-theory/concepts/abstractor.td")
 books:
-  - fref("programming-language-theory/books/practical-foundations-for-programming-languages/01-part-i-judgments-and-rules/01-chapter-1-abstract-syntax.td")
+  - fref("/programming-language-theory/books/practical-foundations-for-programming-languages/01-part-i-judgments-and-rules/01-chapter-1-abstract-syntax.td")
 ---
 
 ::: flashcard

@@ -3,9 +3,9 @@ _type: PltFlashcard
 _label: 'Which symbol is used to denote enriched lambda calculus with numbers and booleans?'
 deck: 'pure-lambda-calculus'
 concepts:
-  - fref("programming-language-theory/concepts/pure-untyped-lambda-calculus.td")
+  - fref("/programming-language-theory/concepts/pure-untyped-lambda-calculus.td")
 books:
-  - fref("programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/03-chapter-5-the-untyped-pure-lambda-calculus.td")
+  - fref("/programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/03-chapter-5-the-untyped-pure-lambda-calculus.td")
 ---
 
 ::: flashcard

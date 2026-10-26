@@ -1,11 +1,11 @@
 ---
 _type: PltConcept
 _label: 'First-class'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'mastered'
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/01-chapter-1-learning-smol-standard-model-of-languages.td")
-  - fref("programming-language-theory/books/software-foundations/01-logical-foundations/01-chapter-1-basics-functional-programming-in-rocq.td")
+  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/01-chapter-1-learning-smol-standard-model-of-languages.td")
+  - fref("/programming-language-theory/books/software-foundations/01-logical-foundations/01-chapter-1-basics-functional-programming-in-rocq.td")
 tags:
   - 'language feature design'
   - 'semantics'

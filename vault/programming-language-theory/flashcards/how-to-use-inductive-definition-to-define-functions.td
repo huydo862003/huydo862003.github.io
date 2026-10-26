@@ -3,10 +3,10 @@ _type: PltFlashcard
 _label: 'How to use inductive definition to define functions?'
 deck: 'logic tools'
 concepts:
-  - fref("programming-language-theory/concepts/inductive-definition.td")
-  - fref("programming-language-theory/concepts/function.td")
+  - fref("/programming-language-theory/concepts/inductive-definition.td")
+  - fref("/programming-language-theory/concepts/function.td")
 books:
-  - fref("programming-language-theory/books/software-foundations/01-logical-foundations/02-chapter-2-inductive-definitions.td")
+  - fref("/programming-language-theory/books/software-foundations/01-logical-foundations/02-chapter-2-inductive-definitions.td")
 ---
 
 ::: flashcard

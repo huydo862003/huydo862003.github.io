@@ -1,19 +1,19 @@
 ---
 _type: PltBook
 _label: 'Chapter 4. Objects'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 concepts:
-  - fref("programming-language-theory/concepts/object.td")
-  - fref("programming-language-theory/concepts/object-closure.td")
-  - fref("programming-language-theory/concepts/method-function.td")
-  - fref("programming-language-theory/concepts/object-lambda-expression.td")
-  - fref("programming-language-theory/concepts/object-pattern.td")
-  - fref("programming-language-theory/concepts/class-pattern.td")
-  - fref("programming-language-theory/concepts/prototype-class.td")
-  - fref("programming-language-theory/concepts/mixin.td")
-  - fref("programming-language-theory/concepts/trait.td")
-  - fref("programming-language-theory/concepts/trait-mixin.td")
-parent: fref("programming-language-theory/books/programming-languages-application-and-interpretation/index.td")
+  - fref("/programming-language-theory/concepts/object.td")
+  - fref("/programming-language-theory/concepts/object-closure.td")
+  - fref("/programming-language-theory/concepts/method-function.td")
+  - fref("/programming-language-theory/concepts/object-lambda-expression.td")
+  - fref("/programming-language-theory/concepts/object-pattern.td")
+  - fref("/programming-language-theory/concepts/class-pattern.td")
+  - fref("/programming-language-theory/concepts/prototype-class.td")
+  - fref("/programming-language-theory/concepts/mixin.td")
+  - fref("/programming-language-theory/concepts/trait.td")
+  - fref("/programming-language-theory/concepts/trait-mixin.td")
+parent: fref("/programming-language-theory/books/programming-languages-application-and-interpretation/index.td")
 ---
 
 ## What is an object?

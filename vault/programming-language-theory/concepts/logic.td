@@ -1,15 +1,15 @@
 ---
 _type: PltConcept
 _label: 'Logic'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'reviewing'
 books:
-  - fref("programming-language-theory/books/software-foundations/01-logical-foundations/index.td")
+  - fref("/programming-language-theory/books/software-foundations/01-logical-foundations/index.td")
 tags:
   - 'formal system'
   - 'logic'
 ---
 
-A ${fref("programming-language-theory/concepts/formal-system.td")} for reasoning about truth, validity, and inference, defining syntax for propositions and rules for deriving conclusions.
+A ${fref("/programming-language-theory/concepts/formal-system.td")} for reasoning about truth, validity, and inference, defining syntax for propositions and rules for deriving conclusions.
 
 A **formal system** for reasoning about truth, validity, and inference, defining syntax for propositions and rules for deriving conclusions.

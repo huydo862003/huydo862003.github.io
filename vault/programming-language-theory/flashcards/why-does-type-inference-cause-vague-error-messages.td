@@ -3,9 +3,9 @@ _type: PltFlashcard
 _label: 'Why does type inference cause vague error messages?'
 deck: 'compiler implementation'
 concepts:
-  - fref("programming-language-theory/concepts/type-inference.td")
+  - fref("/programming-language-theory/concepts/type-inference.td")
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
+  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
 ---
 
 ::: flashcard

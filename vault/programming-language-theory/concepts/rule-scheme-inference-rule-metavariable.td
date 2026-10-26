@@ -1,8 +1,8 @@
 ---
 _type: PltConcept
 _label: 'Rule scheme inference rule metavariable'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'learning'
 ---
 
-Synonymous with ${fref("programming-language-theory/concepts/rule-schema.td")}.
+Synonymous with ${fref("/programming-language-theory/concepts/rule-schema.td")}.

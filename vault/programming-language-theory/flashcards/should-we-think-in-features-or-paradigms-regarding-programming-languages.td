@@ -3,7 +3,7 @@ _type: PltFlashcard
 _label: 'Should we think in features or paradigms regarding programming languages?'
 deck: 'programming-language-basic'
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/index.td")
+  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/index.td")
 ---
 
 ::: flashcard

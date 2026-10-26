@@ -1,12 +1,12 @@
 ---
 _type: PltConcept
 _label: 'Hindley-Milner system'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'learning'
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
+  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
 ---
 
 A type system with complete type inference via constraint generation and unification - automatically determines the most general (principal) type for all expressions without annotations; basis for ML,
 
-A ${fref("programming-language-theory/concepts/type-system.td")} with **complete type inference** via **constraint generation** and **unification** - automatically determines the **most general (principal) type** for all expressions without annotations; basis for ML, OCaml, Haskell.
+A ${fref("/programming-language-theory/concepts/type-system.td")} with **complete type inference** via **constraint generation** and **unification** - automatically determines the **most general (principal) type** for all expressions without annotations; basis for ML, OCaml, Haskell.

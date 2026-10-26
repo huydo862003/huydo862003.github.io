@@ -1,7 +1,7 @@
 ---
 _type: ExperienceResource
 _label: "System Design: Google Drive / Dropbox"
-experience: fref("software-engineering/experiences/file-system-on-the-web/index.td")
+experience: fref("/software-engineering/experiences/file-system-on-the-web/index.td")
 url: "https://www.pankajtanwar.in/blog/system-design-how-to-design-google-drive-dropbox-a-cloud-file-storage-service"
 kind: 'article'
 tags:

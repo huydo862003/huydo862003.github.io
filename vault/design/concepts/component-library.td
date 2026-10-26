@@ -1,10 +1,10 @@
 ---
 _type: DesignConcept
 _label: 'Component library'
-journey: fref("design/index.td")
+journey: fref("/design/index.td")
 status: 'mastered'
 depends_on:
-  - fref("design/concepts/component.td")
+  - fref("/design/concepts/component.td")
 tags:
   - 'design system'
 ---

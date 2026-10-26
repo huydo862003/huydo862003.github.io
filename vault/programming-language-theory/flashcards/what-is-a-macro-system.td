@@ -3,9 +3,9 @@ _type: PltFlashcard
 _label: 'What is a macro system?'
 deck: 'compiler implementation'
 concepts:
-  - fref("programming-language-theory/concepts/macro-system.td")
+  - fref("/programming-language-theory/concepts/macro-system.td")
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/03-chapter-3-syntactic-sugar.td")
+  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/03-chapter-3-syntactic-sugar.td")
 ---
 
 ::: flashcard

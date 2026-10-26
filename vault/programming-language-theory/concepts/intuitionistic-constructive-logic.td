@@ -1,7 +1,7 @@
 ---
 _type: PltConcept
 _label: 'Intuitionistic/Constructive logic'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'learning'
 tags:
   - 'formal system'
@@ -72,4 +72,4 @@ $$
         \frac{\bot}{A} \quad (\bot\text{-elim})
         $$
 
-**Pitfall.** The rules define which derivations are valid. They say nothing about meaning-that is the role of an interpretation such as ${fref("programming-language-theory/concepts/brouwer-heyting-kolmogorov-bhk-interpretation.td")}.
+**Pitfall.** The rules define which derivations are valid. They say nothing about meaning-that is the role of an interpretation such as ${fref("/programming-language-theory/concepts/brouwer-heyting-kolmogorov-bhk-interpretation.td")}.

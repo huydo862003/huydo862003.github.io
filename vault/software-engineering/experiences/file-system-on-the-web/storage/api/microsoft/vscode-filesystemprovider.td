@@ -1,7 +1,7 @@
 ---
 _type: ExperienceResource
 _label: "VS Code FileSystemProvider"
-experience: fref("software-engineering/experiences/file-system-on-the-web/index.td")
+experience: fref("/software-engineering/experiences/file-system-on-the-web/index.td")
 url: "https://code.visualstudio.com/api/references/vscode-api#FileSystemProvider"
 kind: 'article'
 tags:

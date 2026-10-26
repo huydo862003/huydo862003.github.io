@@ -5,7 +5,7 @@ deck: 'collaboration'
 tags:
   - 'collaboration'
 concepts:
-  - fref("software-engineering/concepts/operational-transformation.td")
+  - fref("/software-engineering/concepts/operational-transformation.td")
 ---
 
 ::: flashcard

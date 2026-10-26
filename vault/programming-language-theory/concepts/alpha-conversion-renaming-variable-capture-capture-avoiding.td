@@ -1,7 +1,7 @@
 ---
 _type: PltConcept
 _label: 'Alpha conversion renaming variable capture capture avoiding'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'learning'
 ---
 

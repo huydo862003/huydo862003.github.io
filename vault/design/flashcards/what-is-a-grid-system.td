@@ -3,7 +3,7 @@ _type: DesignFlashcard
 _label: 'What is a grid system?'
 deck: 'design methodology'
 concepts:
-  - fref("design/concepts/grid-system.td")
+  - fref("/design/concepts/grid-system.td")
 ---
 
 ::: flashcard

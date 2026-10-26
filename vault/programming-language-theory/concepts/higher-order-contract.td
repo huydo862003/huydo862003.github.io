@@ -1,7 +1,7 @@
 ---
 _type: PltConcept
 _label: 'Higher-order contract'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'learning'
 tags:
   - 'language feature design'

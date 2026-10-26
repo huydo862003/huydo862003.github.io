@@ -3,9 +3,9 @@ _type: PltFlashcard
 _label: 'What is the idea of mixins?'
 deck: 'type theory'
 concepts:
-  - fref("programming-language-theory/concepts/mixin.td")
+  - fref("/programming-language-theory/concepts/mixin.td")
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/04-chapter-4-objects.td")
+  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/04-chapter-4-objects.td")
 ---
 
 ::: flashcard

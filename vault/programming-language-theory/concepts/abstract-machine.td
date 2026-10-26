@@ -1,10 +1,10 @@
 ---
 _type: PltConcept
 _label: 'Abstract machine'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'mastered'
 books:
-  - fref("programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/01-chapter-3-untyped-arithmetic-expressions.td")
+  - fref("/programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/01-chapter-3-untyped-arithmetic-expressions.td")
 tags:
   - 'compiler implementation'
   - 'computation theory'
@@ -12,4 +12,4 @@ tags:
   - 'runtime'
 ---
 
-A formal model of computation defined by a set of states, an initial state, final states, and a ${fref("programming-language-theory/concepts/transition-function.td")} specifying how states evolve step-by-step until halting.
+A formal model of computation defined by a set of states, an initial state, final states, and a ${fref("/programming-language-theory/concepts/transition-function.td")} specifying how states evolve step-by-step until halting.

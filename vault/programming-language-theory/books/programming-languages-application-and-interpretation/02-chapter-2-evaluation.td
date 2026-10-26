@@ -1,16 +1,16 @@
 ---
 _type: PltBook
 _label: 'Chapter 2. Evaluation'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 concepts:
-  - fref("programming-language-theory/concepts/evaluator.td")
-  - fref("programming-language-theory/concepts/compiler-interpreter.td")
-  - fref("programming-language-theory/concepts/evaluator-interpreter.td")
-  - fref("programming-language-theory/concepts/just-in-time-jit-compilation.td")
-  - fref("programming-language-theory/concepts/read-eval-print-loop-repl.td")
-  - fref("programming-language-theory/concepts/read-eval-print-loop-repl-compiler-interpreter.td")
-  - fref("programming-language-theory/concepts/conditional-expression.td")
-parent: fref("programming-language-theory/books/programming-languages-application-and-interpretation/index.td")
+  - fref("/programming-language-theory/concepts/evaluator.td")
+  - fref("/programming-language-theory/concepts/compiler-interpreter.td")
+  - fref("/programming-language-theory/concepts/evaluator-interpreter.td")
+  - fref("/programming-language-theory/concepts/just-in-time-jit-compilation.td")
+  - fref("/programming-language-theory/concepts/read-eval-print-loop-repl.td")
+  - fref("/programming-language-theory/concepts/read-eval-print-loop-repl-compiler-interpreter.td")
+  - fref("/programming-language-theory/concepts/conditional-expression.td")
+parent: fref("/programming-language-theory/books/programming-languages-application-and-interpretation/index.td")
 ---
 
 ## Overview

@@ -1,10 +1,10 @@
 ---
 _type: PltConcept
 _label: 'Evaluator'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'learning'
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/02-chapter-2-evaluation.td")
+  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/02-chapter-2-evaluation.td")
 ---
 
 A program that turns programs into answers

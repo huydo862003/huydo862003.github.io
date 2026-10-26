@@ -1,10 +1,10 @@
 ---
 _type: PltConcept
 _label: 'Structural induction modulo fresh renaming'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'reviewing'
 books:
-  - fref("programming-language-theory/books/practical-foundations-for-programming-languages/01-part-i-judgments-and-rules/01-chapter-1-abstract-syntax.td")
+  - fref("/programming-language-theory/books/practical-foundations-for-programming-languages/01-part-i-judgments-and-rules/01-chapter-1-abstract-syntax.td")
 tags:
   - 'proof reason technique'
   - 'syntax grammar'
@@ -19,7 +19,7 @@ To show that $\\mathcal{P}[\\mathcal{X}](a)$ holds for every $a \\in \\mathcal{B
   - A set of sorts $\mathcal{S}$.
   - A set of variables $\mathcal{X}$.
   - A predicate $\mathcal{P}$ that is parameterized by $\mathcal{X}$ and $s$.
-  - A set of ${fref("programming-language-theory/concepts/abstract-binding-tree-abt.td")} $\mathcal{B}$ with ${fref("programming-language-theory/concepts/free-variable.td")}s in $\mathcal{X}$.
+  - A set of ${fref("/programming-language-theory/concepts/abstract-binding-tree-abt.td")} $\mathcal{B}$ with ${fref("/programming-language-theory/concepts/free-variable.td")}s in $\mathcal{X}$.
 
     To show that $\mathcal{P}[\mathcal{X}](a)$ holds for every $a \in \mathcal{B}[\mathcal{X}]$, it is enough to show the following:
 

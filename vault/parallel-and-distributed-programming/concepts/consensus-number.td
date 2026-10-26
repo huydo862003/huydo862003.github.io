@@ -1,12 +1,12 @@
 ---
 _type: ParallelDistProgConcept
 _label: 'Consensus Number'
-journey: fref("parallel-and-distributed-programming/index.td")
+journey: fref("/parallel-and-distributed-programming/index.td")
 status: 'learning'
 tags:
   - 'parallel programming'
 depends_on:
-  - fref("parallel-and-distributed-programming/concepts/consensus-problem.td")
+  - fref("/parallel-and-distributed-programming/concepts/consensus-problem.td")
 ---
 
 The maximum number of processes for which a given synchronization primitive can solve the consensus problem in a wait-free manner. Defined by Herlihy's hierarchy.

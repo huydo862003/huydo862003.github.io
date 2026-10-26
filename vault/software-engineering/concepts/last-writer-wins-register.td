@@ -1,10 +1,10 @@
 ---
 _type: SoftEngConcept
 _label: 'Last-Writer-Wins Register'
-journey: fref("software-engineering/index.td")
+journey: fref("/software-engineering/index.td")
 status: 'learning'
 depends_on:
-  - fref("software-engineering/concepts/crdt.td")
+  - fref("/software-engineering/concepts/crdt.td")
 tags:
   - 'collaboration'
 ---

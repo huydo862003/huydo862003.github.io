@@ -1,12 +1,12 @@
 ---
 _type: ParallelDistProgConcept
 _label: "Herlihy's Hierarchy"
-journey: fref("parallel-and-distributed-programming/index.td")
+journey: fref("/parallel-and-distributed-programming/index.td")
 status: 'learning'
 tags:
   - 'parallel programming'
 depends_on:
-  - fref("parallel-and-distributed-programming/concepts/consensus-number.td")
+  - fref("/parallel-and-distributed-programming/concepts/consensus-number.td")
 ---
 
 A classification of synchronization primitives by their consensus number, establishing a strict power hierarchy. A primitive with consensus number n can implement any concurrent object wait-free for up to n processes, but cannot implement consensus for n + 1 or more.

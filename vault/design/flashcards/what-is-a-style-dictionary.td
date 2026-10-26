@@ -3,7 +3,7 @@ _type: DesignFlashcard
 _label: 'What is a style dictionary?'
 deck: 'design system'
 concepts:
-  - fref("design/concepts/style-dictionary.td")
+  - fref("/design/concepts/style-dictionary.td")
 ---
 
 ::: flashcard

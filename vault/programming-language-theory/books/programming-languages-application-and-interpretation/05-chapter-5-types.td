@@ -1,22 +1,22 @@
 ---
 _type: PltBook
 _label: 'Chapter 5. Types'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 concepts:
-  - fref("programming-language-theory/concepts/language-safety-partiality.td")
-  - fref("programming-language-theory/concepts/hindley-milner-system.td")
-  - fref("programming-language-theory/concepts/type-inference.td")
-  - fref("programming-language-theory/concepts/pattern-matching.td")
-  - fref("programming-language-theory/concepts/union-type-retrofitted-type-system.td")
-  - fref("programming-language-theory/concepts/if-splitting.td")
-  - fref("programming-language-theory/concepts/sum-type-union-type.td")
-  - fref("programming-language-theory/concepts/retrofitted-type-system.td")
-  - fref("programming-language-theory/concepts/expression-problem.td")
-  - fref("programming-language-theory/concepts/nominal-typing-structural-typing.td")
-  - fref("programming-language-theory/concepts/subtyping-relation.td")
-  - fref("programming-language-theory/concepts/inheritance-subtyping.td")
-  - fref("programming-language-theory/concepts/gradual-typing-macro-gradual-typing-micro-gradual-typing.td")
-parent: fref("programming-language-theory/books/programming-languages-application-and-interpretation/index.td")
+  - fref("/programming-language-theory/concepts/language-safety-partiality.td")
+  - fref("/programming-language-theory/concepts/hindley-milner-system.td")
+  - fref("/programming-language-theory/concepts/type-inference.td")
+  - fref("/programming-language-theory/concepts/pattern-matching.td")
+  - fref("/programming-language-theory/concepts/union-type-retrofitted-type-system.td")
+  - fref("/programming-language-theory/concepts/if-splitting.td")
+  - fref("/programming-language-theory/concepts/sum-type-union-type.td")
+  - fref("/programming-language-theory/concepts/retrofitted-type-system.td")
+  - fref("/programming-language-theory/concepts/expression-problem.td")
+  - fref("/programming-language-theory/concepts/nominal-typing-structural-typing.td")
+  - fref("/programming-language-theory/concepts/subtyping-relation.td")
+  - fref("/programming-language-theory/concepts/inheritance-subtyping.td")
+  - fref("/programming-language-theory/concepts/gradual-typing-macro-gradual-typing-micro-gradual-typing.td")
+parent: fref("/programming-language-theory/books/programming-languages-application-and-interpretation/index.td")
 ---
 
 ## Introduction to types

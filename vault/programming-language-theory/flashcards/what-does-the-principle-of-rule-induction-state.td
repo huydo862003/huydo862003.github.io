@@ -3,9 +3,9 @@ _type: PltFlashcard
 _label: 'What does the principle of rule induction state?'
 deck: 'proof technique'
 concepts:
-  - fref("programming-language-theory/concepts/rule-induction.td")
+  - fref("/programming-language-theory/concepts/rule-induction.td")
 books:
-  - fref("programming-language-theory/books/software-foundations/01-logical-foundations/02-chapter-2-inductive-definitions.td")
+  - fref("/programming-language-theory/books/software-foundations/01-logical-foundations/02-chapter-2-inductive-definitions.td")
 ---
 
 ::: flashcard

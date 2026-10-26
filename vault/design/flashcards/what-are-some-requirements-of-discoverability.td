@@ -3,7 +3,7 @@ _type: DesignFlashcard
 _label: 'What are some requirements of discoverability?'
 deck: 'general'
 concepts:
-  - fref("design/concepts/discoverability.td")
+  - fref("/design/concepts/discoverability.td")
 ---
 
 ::: flashcard

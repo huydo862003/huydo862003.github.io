@@ -3,10 +3,10 @@ _type: PltFlashcard
 _label: 'The relation between the set of values and the set of terms?'
 deck: 'language theory'
 concepts:
-  - fref("programming-language-theory/concepts/term.td")
-  - fref("programming-language-theory/concepts/value.td")
+  - fref("/programming-language-theory/concepts/term.td")
+  - fref("/programming-language-theory/concepts/value.td")
 books:
-  - fref("programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/01-chapter-3-untyped-arithmetic-expressions.td")
+  - fref("/programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/01-chapter-3-untyped-arithmetic-expressions.td")
 ---
 
 ::: flashcard

@@ -1,14 +1,14 @@
 ---
 _type: PltConcept
 _label: 'Immediately invoked function expression (IIFE)'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'mastered'
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/03-chapter-3-syntactic-sugar.td")
+  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/03-chapter-3-syntactic-sugar.td")
 tags:
   - 'language feature design'
   - 'programming paradigm'
   - 'syntax grammar'
 ---
 
-Example: ${fref("programming-language-theory/concepts/parallel-simultaneous-let.td")} in Scheme is actually a ${fref("programming-language-theory/concepts/syntactic-sugar.td")} for IIFE.
+Example: ${fref("/programming-language-theory/concepts/parallel-simultaneous-let.td")} in Scheme is actually a ${fref("/programming-language-theory/concepts/syntactic-sugar.td")} for IIFE.

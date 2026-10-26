@@ -1,12 +1,12 @@
 ---
 _type: PltConcept
 _label: 'Semantic domain'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'reviewing'
 books:
-  - fref("programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/01-chapter-3-untyped-arithmetic-expressions.td")
+  - fref("/programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/01-chapter-3-untyped-arithmetic-expressions.td")
 tags:
   - 'semantics'
 ---
 
-The mathematical structure (e.g., sets, functions, lattices) in which terms are given meaning by a ${fref("programming-language-theory/concepts/denotational-semantics.td")}.
+The mathematical structure (e.g., sets, functions, lattices) in which terms are given meaning by a ${fref("/programming-language-theory/concepts/denotational-semantics.td")}.

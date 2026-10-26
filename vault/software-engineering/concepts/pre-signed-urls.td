@@ -1,7 +1,7 @@
 ---
 _type: SoftEngConcept
 _label: 'Pre-signed URLs'
-journey: fref("software-engineering/index.td")
+journey: fref("/software-engineering/index.td")
 status: 'learning'
 tags:
   - 'architecture'

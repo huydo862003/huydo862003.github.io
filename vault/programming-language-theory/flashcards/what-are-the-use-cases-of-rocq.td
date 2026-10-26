@@ -3,9 +3,9 @@ _type: PltFlashcard
 _label: 'What are the use cases of rocq?'
 deck: 'rocq-programming-language'
 concepts:
-  - fref("programming-language-theory/concepts/rocq.td")
+  - fref("/programming-language-theory/concepts/rocq.td")
 books:
-  - fref("programming-language-theory/books/software-foundations/01-logical-foundations/index.td")
+  - fref("/programming-language-theory/books/software-foundations/01-logical-foundations/index.td")
 ---
 
 ::: flashcard

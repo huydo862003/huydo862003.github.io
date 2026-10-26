@@ -1,7 +1,7 @@
 ---
 _type: PltConcept
 _label: 'Prototype class'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'learning'
 ---
 
@@ -11,6 +11,6 @@ When you need an instance, create a new empty object and link it to that prototy
 
 Add a factory function or constructor that creates these linked objects and initializes their individual properties.
 
-For ${fref("programming-language-theory/concepts/inheritance.td")}, create a child prototype that itself delegates to the parent prototype, forming a chain.
+For ${fref("/programming-language-theory/concepts/inheritance.td")}, create a child prototype that itself delegates to the parent prototype, forming a chain.
 
 Instances of the child delegate to the child prototype, which in turn delegates to the parent prototype, giving access to methods from both.

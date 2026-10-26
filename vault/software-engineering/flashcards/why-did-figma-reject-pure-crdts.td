@@ -5,7 +5,7 @@ deck: 'collaboration'
 tags:
   - 'collaboration'
 concepts:
-  - fref("software-engineering/concepts/crdt.td")
+  - fref("/software-engineering/concepts/crdt.td")
 ---
 
 ::: flashcard

@@ -1,7 +1,7 @@
 ---
 _type: SoftEngConcept
 _label: 'Fractional Indexing'
-journey: fref("software-engineering/index.td")
+journey: fref("/software-engineering/index.td")
 status: 'learning'
 tags:
   - 'collaboration'

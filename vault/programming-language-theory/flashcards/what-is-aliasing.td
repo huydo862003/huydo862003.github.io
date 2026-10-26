@@ -3,9 +3,9 @@ _type: PltFlashcard
 _label: 'What is aliasing?'
 deck: 'programming-language-basic'
 concepts:
-  - fref("programming-language-theory/concepts/aliasing.td")
+  - fref("/programming-language-theory/concepts/aliasing.td")
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/01-chapter-1-learning-smol-standard-model-of-languages.td")
+  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/01-chapter-1-learning-smol-standard-model-of-languages.td")
 ---
 
 ::: flashcard

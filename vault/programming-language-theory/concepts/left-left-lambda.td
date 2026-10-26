@@ -1,10 +1,10 @@
 ---
 _type: PltConcept
 _label: 'Left-left-lambda'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'mastered'
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/03-chapter-3-syntactic-sugar.td")
+  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/03-chapter-3-syntactic-sugar.td")
 tags:
   - 'language feature design'
   - 'programming paradigm'

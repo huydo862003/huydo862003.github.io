@@ -5,7 +5,7 @@ deck: 'database'
 tags:
   - 'database'
 concepts:
-  - fref("software-engineering/concepts/mongodb-gridfs-concept.td")
+  - fref("/software-engineering/concepts/mongodb-gridfs-concept.td")
 ---
 
 ::: flashcard

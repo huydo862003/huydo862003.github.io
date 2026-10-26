@@ -1,13 +1,13 @@
 ---
 _type: PltConcept
 _label: 'Desired property: uniqueness of normal forms'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'mastered'
 books:
-  - fref("programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/01-chapter-3-untyped-arithmetic-expressions.td")
+  - fref("/programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/01-chapter-3-untyped-arithmetic-expressions.td")
 tags:
   - 'lambda calculus'
   - 'semantics'
 ---
 
-A desirable property of a ${fref("programming-language-theory/concepts/lambda-calculus.td")} where every term always evaluates to the same ${fref("programming-language-theory/concepts/normal-form.td")}. This property should hold in all deterministic systems.
+A desirable property of a ${fref("/programming-language-theory/concepts/lambda-calculus.td")} where every term always evaluates to the same ${fref("/programming-language-theory/concepts/normal-form.td")}. This property should hold in all deterministic systems.

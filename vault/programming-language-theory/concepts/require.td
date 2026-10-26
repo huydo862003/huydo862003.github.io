@@ -1,7 +1,7 @@
 ---
 _type: PltConcept
 _label: 'Require'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'learning'
 tags:
   - 'language feature design'

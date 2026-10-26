@@ -1,10 +1,10 @@
 ---
 _type: PltConcept
 _label: 'Equivalence'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'learning'
 books:
-  - fref("programming-language-theory/books/types-and-programming-languages/02-chapter-2-mathematical-preliminaries.td")
+  - fref("/programming-language-theory/books/types-and-programming-languages/02-chapter-2-mathematical-preliminaries.td")
 ---
 
-A ${fref("programming-language-theory/concepts/reflexive.td")}, ${fref("programming-language-theory/concepts/transitive.td")} and ${fref("programming-language-theory/concepts/symmetric.td")} relation.
+A ${fref("/programming-language-theory/concepts/reflexive.td")}, ${fref("/programming-language-theory/concepts/transitive.td")} and ${fref("/programming-language-theory/concepts/symmetric.td")} relation.

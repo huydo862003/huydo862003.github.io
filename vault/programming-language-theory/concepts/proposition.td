@@ -1,17 +1,17 @@
 ---
 _type: PltConcept
 _label: 'Proposition'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'mastered'
 books:
-  - fref("programming-language-theory/books/software-foundations/01-logical-foundations/01-chapter-1-basics-functional-programming-in-rocq.td")
+  - fref("/programming-language-theory/books/software-foundations/01-logical-foundations/01-chapter-1-basics-functional-programming-in-rocq.td")
 tags:
   - 'logic'
 ---
 
 -> true/false do not merely \"corresponds to reality.\"
 
-- In ${fref("programming-language-theory/concepts/intuitionistic-constructive-logic.td")}
+- In ${fref("/programming-language-theory/concepts/intuitionistic-constructive-logic.td")}
   - `true` means "has a proof".
   - `false` means "has a refutation"
 
@@ -27,7 +27,7 @@ tags:
     In the context of Intuitionistic/Constructive logic.
 
   - A proposition is not a boolean.
-  - Conflating them is called ${fref("programming-language-theory/concepts/boolean-blindness.td")}.
+  - Conflating them is called ${fref("/programming-language-theory/concepts/boolean-blindness.td")}.
 
     |    | Proposition |  Boolean  |
     |  ---  | --- |  ---  |

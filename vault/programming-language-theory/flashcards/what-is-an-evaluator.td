@@ -3,9 +3,9 @@ _type: PltFlashcard
 _label: 'What is an evaluator?'
 deck: 'programming-language-basic'
 concepts:
-  - fref("programming-language-theory/concepts/evaluator.td")
+  - fref("/programming-language-theory/concepts/evaluator.td")
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/02-chapter-2-evaluation.td")
+  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/02-chapter-2-evaluation.td")
 ---
 
 ::: flashcard

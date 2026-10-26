@@ -3,9 +3,9 @@ _type: PltFlashcard
 _label: 'What is a block in programming language?'
 deck: 'programming-language-basic'
 concepts:
-  - fref("programming-language-theory/concepts/block.td")
+  - fref("/programming-language-theory/concepts/block.td")
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/01-chapter-1-learning-smol-standard-model-of-languages.td")
+  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/01-chapter-1-learning-smol-standard-model-of-languages.td")
 ---
 
 ::: flashcard

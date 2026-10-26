@@ -1,16 +1,16 @@
 ---
 _type: PltConcept
 _label: 'Self-reference'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'mastered'
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/04-chapter-4-objects.td")
+  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/04-chapter-4-objects.td")
 tags:
   - 'programming paradigm'
 ---
 
 ::: info
-(Programming paradigm) A technique in the ${fref("programming-language-theory/concepts/class-pattern.td")} that allows members of a class to reference their owner objects.
+(Programming paradigm) A technique in the ${fref("/programming-language-theory/concepts/class-pattern.td")} that allows members of a class to reference their owner objects.
 :::
 
 - Self-reference with mutation
@@ -67,4 +67,4 @@ tags:
     				[(second) (lambda (x) x)]))))
     ```
 
-    This one actually allows ${fref("programming-language-theory/concepts/extensible-open-recursion.td")} using the ${fref("programming-language-theory/concepts/divergent-big-omega-combinator.td")}.
+    This one actually allows ${fref("/programming-language-theory/concepts/extensible-open-recursion.td")} using the ${fref("/programming-language-theory/concepts/divergent-big-omega-combinator.td")}.

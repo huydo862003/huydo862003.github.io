@@ -1,13 +1,13 @@
 ---
 _type: ParallelDistProgConcept
 _label: 'Load-Link / Store-Conditional'
-journey: fref("parallel-and-distributed-programming/index.td")
+journey: fref("/parallel-and-distributed-programming/index.td")
 status: 'learning'
 tags:
   - 'parallel programming'
 depends_on:
-  - fref("parallel-and-distributed-programming/concepts/atomic-instruction.td")
-  - fref("parallel-and-distributed-programming/concepts/consensus-number.td")
+  - fref("/parallel-and-distributed-programming/concepts/atomic-instruction.td")
+  - fref("/parallel-and-distributed-programming/concepts/consensus-number.td")
 ---
 
 A pair of atomic instructions. Load-Link (LL) reads a value from a memory location and reserves it. Store-Conditional (SC) writes a new value only if no other process has written to that location since the LL; otherwise it fails.

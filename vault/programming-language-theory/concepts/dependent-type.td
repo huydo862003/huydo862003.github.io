@@ -1,7 +1,7 @@
 ---
 _type: PltConcept
 _label: 'Dependent type'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'learning'
 tags:
   - 'logic'
@@ -12,7 +12,7 @@ Consider the $\\text{head}$ function which returns the first item of a list.
 
 - Elaboration
   - Simple types can say "this is a list" but not "this is a list of length 5".
-  - Dependent types extend ${fref("programming-language-theory/concepts/curry-howard-correspondence.td")} to predicate logic:
+  - Dependent types extend ${fref("/programming-language-theory/concepts/curry-howard-correspondence.td")} to predicate logic:
     - $\forall$ becomes $\Pi$ (dependent function).
     - $\exists$ becomes $\Sigma$ (dependent pair).
   - Types can mention values, so preconditions become part of the signature, enforced by the compiler.

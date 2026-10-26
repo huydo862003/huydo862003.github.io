@@ -1,7 +1,7 @@
 ---
 _type: ExperienceResource
 _label: "Optimistic Locking with ETags in REST APIs"
-experience: fref("software-engineering/experiences/file-system-on-the-web/index.td")
+experience: fref("/software-engineering/experiences/file-system-on-the-web/index.td")
 url: "https://sookocheff.com/post/api/optimistic-locking-in-a-rest-api/"
 kind: 'article'
 tags:

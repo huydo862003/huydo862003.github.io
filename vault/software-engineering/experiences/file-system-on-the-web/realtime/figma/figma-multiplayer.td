@@ -1,7 +1,7 @@
 ---
 _type: ExperienceResource
 _label: "Figma: Multiplayer Technology"
-experience: fref("software-engineering/experiences/file-system-on-the-web/index.td")
+experience: fref("/software-engineering/experiences/file-system-on-the-web/index.td")
 url: "https://www.figma.com/blog/how-figmas-multiplayer-technology-works/"
 kind: 'blog-post'
 tags:

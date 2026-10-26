@@ -3,9 +3,9 @@ _type: PltFlashcard
 _label: 'What are the major advantages of denotational semantics?'
 deck: 'language theory'
 concepts:
-  - fref("programming-language-theory/concepts/denotational-semantics.td")
+  - fref("/programming-language-theory/concepts/denotational-semantics.td")
 books:
-  - fref("programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/01-chapter-3-untyped-arithmetic-expressions.td")
+  - fref("/programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/01-chapter-3-untyped-arithmetic-expressions.td")
 ---
 
 ::: flashcard

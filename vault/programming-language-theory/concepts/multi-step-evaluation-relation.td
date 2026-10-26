@@ -1,14 +1,14 @@
 ---
 _type: PltConcept
 _label: 'Multi-step evaluation relation'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'mastered'
 books:
-  - fref("programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/01-chapter-3-untyped-arithmetic-expressions.td")
+  - fref("/programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/01-chapter-3-untyped-arithmetic-expressions.td")
 tags:
   - 'lambda calculus'
   - 'semantics'
   - 'set theory relation'
 ---
 
-The ${fref("programming-language-theory/concepts/reflexive-closure.td")} and ${fref("programming-language-theory/concepts/transitive-closure.td")} of the ${fref("programming-language-theory/concepts/one-step-evaluation-relation.td")}. The relation is often denoted as $\to^*$.
+The ${fref("/programming-language-theory/concepts/reflexive-closure.td")} and ${fref("/programming-language-theory/concepts/transitive-closure.td")} of the ${fref("/programming-language-theory/concepts/one-step-evaluation-relation.td")}. The relation is often denoted as $\to^*$.

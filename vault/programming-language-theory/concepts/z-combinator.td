@@ -1,10 +1,10 @@
 ---
 _type: PltConcept
 _label: 'Z-combinator'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'learning'
 books:
-  - fref("programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/03-chapter-5-the-untyped-pure-lambda-calculus.td")
+  - fref("/programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/03-chapter-5-the-untyped-pure-lambda-calculus.td")
 tags:
   - 'lambda calculus'
   - 'semantics'
@@ -25,4 +25,4 @@ Formula: $\lambda f.\ (\lambda x.\ f\ (\lambda v.\ x\ x\ v))\ (\lambda x.\ f\ (\
 \end{aligned}
 $$
 
-    In ${fref("programming-language-theory/concepts/call-by-value.td")}, $\text{fix}\ g$ doesn't diverge as there a thunk wrapping around the nested $\text{fix}\ g$.
+    In ${fref("/programming-language-theory/concepts/call-by-value.td")}, $\text{fix}\ g$ doesn't diverge as there a thunk wrapping around the nested $\text{fix}\ g$.

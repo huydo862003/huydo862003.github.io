@@ -1,10 +1,10 @@
 ---
 _type: PltConcept
 _label: 'Local binding form'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'learning'
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/01-chapter-1-learning-smol-standard-model-of-languages.td")
+  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/01-chapter-1-learning-smol-standard-model-of-languages.td")
 ---
 
 ; Local binding - x only exists inside the let

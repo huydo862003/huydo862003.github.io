@@ -3,9 +3,9 @@ _type: PltFlashcard
 _label: 'How can the inductive definition define terms as trees?'
 deck: 'set theory relation'
 concepts:
-  - fref("programming-language-theory/concepts/term.td")
+  - fref("/programming-language-theory/concepts/term.td")
 books:
-  - fref("programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/01-chapter-3-untyped-arithmetic-expressions.td")
+  - fref("/programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/01-chapter-3-untyped-arithmetic-expressions.td")
 ---
 
 ::: flashcard

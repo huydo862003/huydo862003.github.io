@@ -5,7 +5,7 @@ deck: 'architecture'
 tags:
   - 'architecture'
 concepts:
-  - fref("software-engineering/concepts/flat-filesystem-namespace.td")
+  - fref("/software-engineering/concepts/flat-filesystem-namespace.td")
 ---
 
 ::: flashcard

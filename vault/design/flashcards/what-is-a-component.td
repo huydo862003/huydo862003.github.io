@@ -3,7 +3,7 @@ _type: DesignFlashcard
 _label: 'What is a component?'
 deck: 'design system'
 concepts:
-  - fref("design/concepts/component.td")
+  - fref("/design/concepts/component.td")
 ---
 
 ::: flashcard

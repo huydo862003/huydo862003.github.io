@@ -1,13 +1,13 @@
 ---
 _type: PltConcept
 _label: 'Mixfix'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'reviewing'
 books:
-  - fref("programming-language-theory/books/types-and-programming-languages/02-chapter-2-mathematical-preliminaries.td")
+  - fref("/programming-language-theory/books/types-and-programming-languages/02-chapter-2-mathematical-preliminaries.td")
 tags:
   - 'set theory relation'
   - 'syntax grammar'
 ---
 
-A notation to write down an instance of an ${fref("programming-language-theory/concepts/n-place-relation.td")}. For example, for a ternary relation $R$, one can write $\Gamma \vdash t : T$ to denote $(\Gamma, t, T) \in R$.
+A notation to write down an instance of an ${fref("/programming-language-theory/concepts/n-place-relation.td")}. For example, for a ternary relation $R$, one can write $\Gamma \vdash t : T$ to denote $(\Gamma, t, T) \in R$.

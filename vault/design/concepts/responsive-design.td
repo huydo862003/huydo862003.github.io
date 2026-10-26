@@ -1,7 +1,7 @@
 ---
 _type: DesignConcept
 _label: 'Responsive design'
-journey: fref("design/index.td")
+journey: fref("/design/index.td")
 status: 'mastered'
 tags:
   - 'design pattern'

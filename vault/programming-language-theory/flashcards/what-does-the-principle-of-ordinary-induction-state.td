@@ -3,9 +3,9 @@ _type: PltFlashcard
 _label: 'What does the principle of ordinary induction state?'
 deck: 'proof technique'
 concepts:
-  - fref("programming-language-theory/concepts/principle-of-ordinary-induction.td")
+  - fref("/programming-language-theory/concepts/principle-of-ordinary-induction.td")
 books:
-  - fref("programming-language-theory/books/types-and-programming-languages/02-chapter-2-mathematical-preliminaries.td")
+  - fref("/programming-language-theory/books/types-and-programming-languages/02-chapter-2-mathematical-preliminaries.td")
 ---
 
 ::: flashcard

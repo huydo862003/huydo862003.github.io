@@ -1,7 +1,7 @@
 ---
 _type: PltConcept
 _label: 'Type widening'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'learning'
 tags:
   - 'language feature design'
@@ -9,4 +9,4 @@ tags:
   - 'type theory'
 ---
 
-Analogy: Think of types as sets, then type widening means to widen a set (${fref("programming-language-theory/concepts/subtype.td")} -> ${fref("programming-language-theory/concepts/supertype.td")}).
+Analogy: Think of types as sets, then type widening means to widen a set (${fref("/programming-language-theory/concepts/subtype.td")} -> ${fref("/programming-language-theory/concepts/supertype.td")}).

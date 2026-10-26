@@ -3,9 +3,9 @@ _type: PltFlashcard
 _label: 'What''s the relation between the y-combinator and the omega combinator?'
 deck: 'pure-lambda-calculus'
 concepts:
-  - fref("programming-language-theory/concepts/divergent-big-omega-combinator.td")
+  - fref("/programming-language-theory/concepts/divergent-big-omega-combinator.td")
 books:
-  - fref("programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/03-chapter-5-the-untyped-pure-lambda-calculus.td")
+  - fref("/programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/03-chapter-5-the-untyped-pure-lambda-calculus.td")
 ---
 
 ::: flashcard

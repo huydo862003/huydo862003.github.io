@@ -1,8 +1,8 @@
 ---
 _type: PltBook
 _label: 'Preface'
-journey: fref("programming-language-theory/index.td")
-parent: fref("programming-language-theory/books/practical-foundations-for-programming-languages/index.td")
+journey: fref("/programming-language-theory/index.td")
+parent: fref("/programming-language-theory/books/practical-foundations-for-programming-languages/index.td")
 ---
 
 **About**: Type systems + Programming languages (from type-theoretic view).

@@ -1,7 +1,7 @@
 ---
 _type: ExperienceResource
 _label: "OneDrive/MS Graph: Addressing DriveItems"
-experience: fref("software-engineering/experiences/file-system-on-the-web/index.td")
+experience: fref("/software-engineering/experiences/file-system-on-the-web/index.td")
 url: "https://learn.microsoft.com/en-us/graph/onedrive-addressing-driveitems"
 kind: 'article'
 tags:

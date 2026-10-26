@@ -1,17 +1,17 @@
 ---
 _type: PltConcept
 _label: 'Call by value'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'mastered'
 books:
-  - fref("programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/03-chapter-5-the-untyped-pure-lambda-calculus.td")
+  - fref("/programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/03-chapter-5-the-untyped-pure-lambda-calculus.td")
 tags:
   - 'language feature design'
   - 'semantics'
 ---
 
 ::: info
-(Lambda calculus, Semantics) A ${fref("programming-language-theory/concepts/strict-eager-evaluation-strategy.td")} in which ${fref("programming-language-theory/concepts/beta-redex-reducible-expression.td")}s inside lambda abstractions must not be reduced.
+(Lambda calculus, Semantics) A ${fref("/programming-language-theory/concepts/strict-eager-evaluation-strategy.td")} in which ${fref("/programming-language-theory/concepts/beta-redex-reducible-expression.td")}s inside lambda abstractions must not be reduced.
 :::
 
 In pure lambda calculus, this strategy is defined by the following rules:

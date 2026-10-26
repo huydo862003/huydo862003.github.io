@@ -2,7 +2,7 @@
 _type: PltBook
 _label: 'Software foundations'
 date: '2024'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 description: 'A machine-checked introduction to the mathematical underpinnings of reliable software. Uses the Rocq (Coq) proof assistant to teach logic, functional programming, operational semantics, and formal verification.'
 url: "https://softwarefoundations.cis.upenn.edu/"
 tags:
@@ -12,7 +12,7 @@ tags:
   - 'type theory'
   - 'theorem proving'
 children:
-  - fref("programming-language-theory/books/software-foundations/01-logical-foundations/index.td")
+  - fref("/programming-language-theory/books/software-foundations/01-logical-foundations/index.td")
 ---
 
 - The mathematical underpinnings of reliable software.

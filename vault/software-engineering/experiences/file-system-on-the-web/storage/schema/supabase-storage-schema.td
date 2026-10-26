@@ -1,7 +1,7 @@
 ---
 _type: ExperienceResource
 _label: "Supabase Storage: Database Schema"
-experience: fref("software-engineering/experiences/file-system-on-the-web/index.td")
+experience: fref("/software-engineering/experiences/file-system-on-the-web/index.td")
 url: "https://supabase.com/docs/guides/storage/schema/design"
 kind: 'article'
 tags:

@@ -3,7 +3,7 @@ _type: DesignFlashcard
 _label: 'What is a branding?'
 deck: 'design aspect'
 concepts:
-  - fref("design/concepts/branding.td")
+  - fref("/design/concepts/branding.td")
 ---
 
 ::: flashcard

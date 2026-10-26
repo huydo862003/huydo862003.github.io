@@ -3,9 +3,9 @@ _type: PltFlashcard
 _label: 'What are the key considerations in designing conditionals?'
 deck: 'compiler implementation'
 concepts:
-  - fref("programming-language-theory/concepts/conditional-expression.td")
+  - fref("/programming-language-theory/concepts/conditional-expression.td")
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/02-chapter-2-evaluation.td")
+  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/02-chapter-2-evaluation.td")
 ---
 
 ::: flashcard

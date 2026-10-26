@@ -3,10 +3,10 @@ _type: PltFlashcard
 _label: 'What are constructor expressions in rocq?'
 deck: 'rocq-programming-language'
 concepts:
-  - fref("programming-language-theory/concepts/constructor-expression.td")
-  - fref("programming-language-theory/concepts/constructor.td")
+  - fref("/programming-language-theory/concepts/constructor-expression.td")
+  - fref("/programming-language-theory/concepts/constructor.td")
 books:
-  - fref("programming-language-theory/books/software-foundations/01-logical-foundations/01-chapter-1-basics-functional-programming-in-rocq.td")
+  - fref("/programming-language-theory/books/software-foundations/01-logical-foundations/01-chapter-1-basics-functional-programming-in-rocq.td")
 ---
 
 ::: flashcard

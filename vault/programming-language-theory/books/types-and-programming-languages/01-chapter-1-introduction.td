@@ -1,20 +1,20 @@
 ---
 _type: PltBook
 _label: 'Chapter 1. Introduction'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 concepts:
-  - fref("programming-language-theory/concepts/type-system.td")
-  - fref("programming-language-theory/concepts/hoare-logic.td")
-  - fref("programming-language-theory/concepts/model-checker-type-system-runtime-monitoring.td")
-  - fref("programming-language-theory/concepts/runtime-type-error.td")
-  - fref("programming-language-theory/concepts/safe-sound-type-system.td")
-  - fref("programming-language-theory/concepts/language-safety.td")
-  - fref("programming-language-theory/concepts/type-safety-language-safety.td")
-  - fref("programming-language-theory/concepts/trapped-runtime-error-untrapped-runtime-error.td")
+  - fref("/programming-language-theory/concepts/type-system.td")
+  - fref("/programming-language-theory/concepts/hoare-logic.td")
+  - fref("/programming-language-theory/concepts/model-checker-type-system-runtime-monitoring.td")
+  - fref("/programming-language-theory/concepts/runtime-type-error.td")
+  - fref("/programming-language-theory/concepts/safe-sound-type-system.td")
+  - fref("/programming-language-theory/concepts/language-safety.td")
+  - fref("/programming-language-theory/concepts/type-safety-language-safety.td")
+  - fref("/programming-language-theory/concepts/trapped-runtime-error-untrapped-runtime-error.td")
 url: "https://www.cis.upenn.edu/~bcpierce/tapl/"
-cover: fref("programming-language-theory/books/types-and-programming-languages/assets/types-and-programming-languages.jpg")
+cover: fref("/programming-language-theory/books/types-and-programming-languages/assets/types-and-programming-languages.jpg")
 status: "Finished"
-parent: fref("programming-language-theory/books/types-and-programming-languages/index.td")
+parent: fref("/programming-language-theory/books/types-and-programming-languages/index.td")
 ---
 
 Recap:

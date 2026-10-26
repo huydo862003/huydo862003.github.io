@@ -3,7 +3,7 @@ _type: PltFlashcard
 _label: 'Why does matklad think mod.rs-less system is self-inconsistent?'
 deck: 'general'
 concepts:
-  - fref("programming-language-theory/concepts/system.td")
+  - fref("/programming-language-theory/concepts/system.td")
 ---
 
 ::: flashcard

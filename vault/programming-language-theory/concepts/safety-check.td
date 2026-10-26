@@ -1,10 +1,10 @@
 ---
 _type: PltConcept
 _label: 'Safety check'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'reviewing'
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
+  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
 tags:
   - 'design principle'
   - 'language feature design'
@@ -12,4 +12,4 @@ tags:
   - 'runtime'
 ---
 
-A mechanism, either carried out by the runtime to enforce ${fref("programming-language-theory/concepts/language-safety.td")} / avoid ${fref("programming-language-theory/concepts/runtime-type-error.td")} or by programmers to avoid ${fref("programming-language-theory/concepts/runtime-error.td")}.
+A mechanism, either carried out by the runtime to enforce ${fref("/programming-language-theory/concepts/language-safety.td")} / avoid ${fref("/programming-language-theory/concepts/runtime-type-error.td")} or by programmers to avoid ${fref("/programming-language-theory/concepts/runtime-error.td")}.

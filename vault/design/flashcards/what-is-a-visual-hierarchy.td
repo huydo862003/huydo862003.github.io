@@ -3,7 +3,7 @@ _type: DesignFlashcard
 _label: 'What is a visual hierarchy?'
 deck: 'design aspect'
 concepts:
-  - fref("design/concepts/visual-hierarchy.td")
+  - fref("/design/concepts/visual-hierarchy.td")
 ---
 
 ::: flashcard

@@ -5,7 +5,7 @@ deck: 'collaboration'
 tags:
   - 'collaboration'
 concepts:
-  - fref("software-engineering/concepts/fractional-indexing.td")
+  - fref("/software-engineering/concepts/fractional-indexing.td")
 ---
 
 ::: flashcard

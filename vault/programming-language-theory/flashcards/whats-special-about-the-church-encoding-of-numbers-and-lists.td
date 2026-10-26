@@ -3,9 +3,9 @@ _type: PltFlashcard
 _label: 'What''s special about the church encoding of numbers and lists?'
 deck: 'pure-lambda-calculus'
 concepts:
-  - fref("programming-language-theory/concepts/church-numeral.td")
+  - fref("/programming-language-theory/concepts/church-numeral.td")
 books:
-  - fref("programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/03-chapter-5-the-untyped-pure-lambda-calculus.td")
+  - fref("/programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/03-chapter-5-the-untyped-pure-lambda-calculus.td")
 ---
 
 ::: flashcard

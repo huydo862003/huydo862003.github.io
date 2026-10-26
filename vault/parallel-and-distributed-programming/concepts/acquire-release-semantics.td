@@ -1,13 +1,13 @@
 ---
 _type: ParallelDistProgConcept
 _label: 'Acquire-Release Semantics'
-journey: fref("parallel-and-distributed-programming/index.td")
+journey: fref("/parallel-and-distributed-programming/index.td")
 status: 'learning'
 tags:
   - 'computation model'
 depends_on:
-  - fref("parallel-and-distributed-programming/concepts/memory-model.td")
-  - fref("parallel-and-distributed-programming/concepts/synchronizes-with-relationship.td")
+  - fref("/parallel-and-distributed-programming/concepts/memory-model.td")
+  - fref("/parallel-and-distributed-programming/concepts/synchronizes-with-relationship.td")
 ---
 
 A pair of memory ordering constraints used to establish synchronization between threads.

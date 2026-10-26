@@ -1,23 +1,23 @@
 ---
 _type: PltBook
 _label: 'Chapter 2. Mathematical preliminaries'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 concepts:
-  - fref("programming-language-theory/concepts/powerset.td")
-  - fref("programming-language-theory/concepts/countable-set.td")
-  - fref("programming-language-theory/concepts/transitive-closure.td")
-  - fref("programming-language-theory/concepts/reflexive-transitive.td")
-  - fref("programming-language-theory/concepts/preorder.td")
-  - fref("programming-language-theory/concepts/partial-order.td")
-  - fref("programming-language-theory/concepts/equivalence.td")
-  - fref("programming-language-theory/concepts/principle-of-ordinary-induction.td")
-  - fref("programming-language-theory/concepts/principle-of-complete-induction.td")
-  - fref("programming-language-theory/concepts/lexicographic-order-principle-of-lexicographic-induction.td")
-  - fref("programming-language-theory/concepts/lexicographic-order.td")
+  - fref("/programming-language-theory/concepts/powerset.td")
+  - fref("/programming-language-theory/concepts/countable-set.td")
+  - fref("/programming-language-theory/concepts/transitive-closure.td")
+  - fref("/programming-language-theory/concepts/reflexive-transitive.td")
+  - fref("/programming-language-theory/concepts/preorder.td")
+  - fref("/programming-language-theory/concepts/partial-order.td")
+  - fref("/programming-language-theory/concepts/equivalence.td")
+  - fref("/programming-language-theory/concepts/principle-of-ordinary-induction.td")
+  - fref("/programming-language-theory/concepts/principle-of-complete-induction.td")
+  - fref("/programming-language-theory/concepts/lexicographic-order-principle-of-lexicographic-induction.td")
+  - fref("/programming-language-theory/concepts/lexicographic-order.td")
 url: "https://www.cis.upenn.edu/~bcpierce/tapl/"
-cover: fref("programming-language-theory/books/types-and-programming-languages/assets/types-and-programming-languages.jpg")
+cover: fref("/programming-language-theory/books/types-and-programming-languages/assets/types-and-programming-languages.jpg")
 status: "Finished"
-parent: fref("programming-language-theory/books/types-and-programming-languages/index.td")
+parent: fref("/programming-language-theory/books/types-and-programming-languages/index.td")
 ---
 
 ## Sets, Relations, and Functions

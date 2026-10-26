@@ -3,7 +3,7 @@ _type: DesignFlashcard
 _label: 'Why does mapping matter?'
 deck: 'general'
 concepts:
-  - fref("design/concepts/mapping.td")
+  - fref("/design/concepts/mapping.td")
 ---
 
 ::: flashcard

@@ -1,8 +1,8 @@
 ---
 _type: PltConcept
 _label: 'Axiom rule proper rule'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'learning'
 ---
 
-An ${fref("programming-language-theory/concepts/axiom.td")} is an ${fref("programming-language-theory/concepts/inference-rule.td")} with no premise.
+An ${fref("/programming-language-theory/concepts/axiom.td")} is an ${fref("/programming-language-theory/concepts/inference-rule.td")} with no premise.

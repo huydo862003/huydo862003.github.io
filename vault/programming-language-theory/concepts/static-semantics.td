@@ -1,10 +1,10 @@
 ---
 _type: PltConcept
 _label: 'Static semantics'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'learning'
 books:
-  - fref("programming-language-theory/books/practical-foundations-for-programming-languages/index.td")
+  - fref("/programming-language-theory/books/practical-foundations-for-programming-languages/index.td")
 tags:
   - 'semantics'
 ---

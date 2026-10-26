@@ -3,7 +3,7 @@ _type: DesignFlashcard
 _label: 'What is a component library?'
 deck: 'design system'
 concepts:
-  - fref("design/concepts/component-library.td")
+  - fref("/design/concepts/component-library.td")
 ---
 
 ::: flashcard

@@ -5,7 +5,7 @@ deck: 'database'
 tags:
   - 'database'
 concepts:
-  - fref("software-engineering/concepts/postgresql-toast.td")
+  - fref("/software-engineering/concepts/postgresql-toast.td")
 ---
 
 ::: flashcard

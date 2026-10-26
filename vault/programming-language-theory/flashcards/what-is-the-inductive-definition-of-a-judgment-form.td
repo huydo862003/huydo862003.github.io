@@ -3,10 +3,10 @@ _type: PltFlashcard
 _label: 'What is the inductive definition of a judgment form?'
 deck: 'set theory relation'
 concepts:
-  - fref("programming-language-theory/concepts/inductive-definition.td")
-  - fref("programming-language-theory/concepts/judgment-form.td")
+  - fref("/programming-language-theory/concepts/inductive-definition.td")
+  - fref("/programming-language-theory/concepts/judgment-form.td")
 books:
-  - fref("programming-language-theory/books/software-foundations/01-logical-foundations/02-chapter-2-inductive-definitions.td")
+  - fref("/programming-language-theory/books/software-foundations/01-logical-foundations/02-chapter-2-inductive-definitions.td")
 ---
 
 ::: flashcard

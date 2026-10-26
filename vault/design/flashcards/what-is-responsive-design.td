@@ -3,7 +3,7 @@ _type: DesignFlashcard
 _label: 'What is responsive design?'
 deck: 'design aspect'
 concepts:
-  - fref("design/concepts/responsive-design.td")
+  - fref("/design/concepts/responsive-design.td")
 ---
 
 ::: flashcard

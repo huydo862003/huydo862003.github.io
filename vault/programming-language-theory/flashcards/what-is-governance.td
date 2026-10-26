@@ -3,7 +3,7 @@ _type: PltFlashcard
 _label: 'What is governance?'
 deck: 'general'
 concepts:
-  - fref("design/concepts/governance.td")
+  - fref("/design/concepts/governance.td")
 ---
 
 ::: flashcard

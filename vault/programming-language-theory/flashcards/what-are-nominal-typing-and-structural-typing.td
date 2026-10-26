@@ -3,10 +3,10 @@ _type: PltFlashcard
 _label: 'What are nominal typing and structural typing?'
 deck: 'type theory'
 concepts:
-  - fref("programming-language-theory/concepts/nominal-typing.td")
-  - fref("programming-language-theory/concepts/structural-typing.td")
+  - fref("/programming-language-theory/concepts/nominal-typing.td")
+  - fref("/programming-language-theory/concepts/structural-typing.td")
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
+  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
 ---
 
 ::: flashcard

@@ -3,10 +3,10 @@ _type: PltFlashcard
 _label: 'Is inheritance = subtyping?'
 deck: 'type theory'
 concepts:
-  - fref("programming-language-theory/concepts/inheritance.td")
-  - fref("programming-language-theory/concepts/subtyping.td")
+  - fref("/programming-language-theory/concepts/inheritance.td")
+  - fref("/programming-language-theory/concepts/subtyping.td")
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
+  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
 ---
 
 ::: flashcard

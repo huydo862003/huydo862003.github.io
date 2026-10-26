@@ -1,12 +1,12 @@
 ---
 _type: PltConcept
 _label: 'Interpretation function'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'reviewing'
 books:
-  - fref("programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/01-chapter-3-untyped-arithmetic-expressions.td")
+  - fref("/programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/01-chapter-3-untyped-arithmetic-expressions.td")
 tags:
   - 'semantics'
 ---
 
-A function mapping syntactic terms to mathematical objects (denotations) in a ${fref("programming-language-theory/concepts/semantic-domain.td")}, assigning meaning compositionally based on the structure of terms.
+A function mapping syntactic terms to mathematical objects (denotations) in a ${fref("/programming-language-theory/concepts/semantic-domain.td")}, assigning meaning compositionally based on the structure of terms.

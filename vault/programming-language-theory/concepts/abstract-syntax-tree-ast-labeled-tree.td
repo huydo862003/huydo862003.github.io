@@ -1,7 +1,7 @@
 ---
 _type: PltConcept
 _label: 'Abstract syntax tree ast labeled tree'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'learning'
 ---
 
@@ -13,4 +13,4 @@ Structure-wise, an ordered tree whose:
 
 - Leaves are Variables/Operators.
 - Internal nodes are Operators.
-- Operators have ${fref("programming-language-theory/concepts/actual-parameter-argument.td")}s as children.
+- Operators have ${fref("/programming-language-theory/concepts/actual-parameter-argument.td")}s as children.

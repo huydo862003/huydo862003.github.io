@@ -1,14 +1,14 @@
 ---
 _type: PltConcept
 _label: 'Static discipline'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'reviewing'
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
+  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
 tags:
   - 'program analysis'
   - 'syntax grammar'
   - 'type theory'
 ---
 
-An approach where ${fref("programming-language-theory/concepts/static-analysis.td")} and other analyses are performed before program execution, catching errors at compile time rather than runtime. Contrasts with dynamic discipline.
+An approach where ${fref("/programming-language-theory/concepts/static-analysis.td")} and other analyses are performed before program execution, catching errors at compile time rather than runtime. Contrasts with dynamic discipline.

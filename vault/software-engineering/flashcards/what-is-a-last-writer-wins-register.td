@@ -5,7 +5,7 @@ deck: 'collaboration'
 tags:
   - 'collaboration'
 concepts:
-  - fref("software-engineering/concepts/last-writer-wins-register.td")
+  - fref("/software-engineering/concepts/last-writer-wins-register.td")
 ---
 
 ::: flashcard

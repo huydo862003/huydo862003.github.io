@@ -1,13 +1,13 @@
 ---
 _type: ParallelDistProgConcept
 _label: 'Relaxed Consistency'
-journey: fref("parallel-and-distributed-programming/index.td")
+journey: fref("/parallel-and-distributed-programming/index.td")
 status: 'learning'
 tags:
   - 'computation model'
   - 'correctness condition'
 depends_on:
-  - fref("parallel-and-distributed-programming/concepts/memory-model.td")
+  - fref("/parallel-and-distributed-programming/concepts/memory-model.td")
 ---
 
 A family of memory consistency models weaker than sequential consistency. They permit the hardware or compiler to reorder memory operations (reads and writes) across threads as long as the program order within each thread is preserved for dependent operations.

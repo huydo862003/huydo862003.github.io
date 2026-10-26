@@ -3,10 +3,10 @@ _type: PltFlashcard
 _label: 'How to implement classes with prototypes?'
 deck: 'compiler implementation'
 concepts:
-  - fref("programming-language-theory/concepts/prototype.td")
-  - fref("programming-language-theory/concepts/class.td")
+  - fref("/programming-language-theory/concepts/prototype.td")
+  - fref("/programming-language-theory/concepts/class.td")
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/04-chapter-4-objects.td")
+  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/04-chapter-4-objects.td")
 ---
 
 ::: flashcard

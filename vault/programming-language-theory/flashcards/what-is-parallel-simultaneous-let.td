@@ -3,9 +3,9 @@ _type: PltFlashcard
 _label: 'What is parallel/simultaneous let?'
 deck: 'programming-language-basic'
 concepts:
-  - fref("programming-language-theory/concepts/parallel-simultaneous-let.td")
+  - fref("/programming-language-theory/concepts/parallel-simultaneous-let.td")
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/01-chapter-1-learning-smol-standard-model-of-languages.td")
+  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/01-chapter-1-learning-smol-standard-model-of-languages.td")
 ---
 
 ::: flashcard

@@ -1,16 +1,16 @@
 ---
 _type: PltConcept
 _label: 'Brouwer-Heyting-Kolmogorov (BHK) interpretation'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'learning'
 tags:
   - 'logic'
   - 'semantics'
 ---
 
-Motivation. Classical logic tells you *that* something exists, not *how* to find it. BHK says to prove something exists, you must exhibit a ${fref("programming-language-theory/concepts/witness.td")}.
+Motivation. Classical logic tells you *that* something exists, not *how* to find it. BHK says to prove something exists, you must exhibit a ${fref("/programming-language-theory/concepts/witness.td")}.
 
-- ${fref("programming-language-theory/concepts/intuitionistic-constructive-logic.td")} is syntax-the formal rules.
+- ${fref("/programming-language-theory/concepts/intuitionistic-constructive-logic.td")} is syntax-the formal rules.
 - BHK is semantics-what those rules *mean*.
 - For intuitionistic logic, there can be other interpretations (multiple semantics for the same language).
 

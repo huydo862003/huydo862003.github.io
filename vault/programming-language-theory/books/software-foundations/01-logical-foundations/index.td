@@ -2,18 +2,18 @@
 _type: PltBook
 _label: 'Logical foundations'
 date: '2010'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 concepts:
-  - fref("programming-language-theory/concepts/proof-assistant-prover.td")
-  - fref("programming-language-theory/concepts/automated-theorem-prover-sat-solver-smt-solver.td")
-  - fref("programming-language-theory/concepts/rocq-tactic.td")
-  - fref("programming-language-theory/concepts/rocq-dependent-type.td")
-  - fref("programming-language-theory/concepts/functional-programming.td")
-parent: fref("programming-language-theory/books/software-foundations/index.td")
+  - fref("/programming-language-theory/concepts/proof-assistant-prover.td")
+  - fref("/programming-language-theory/concepts/automated-theorem-prover-sat-solver-smt-solver.td")
+  - fref("/programming-language-theory/concepts/rocq-tactic.td")
+  - fref("/programming-language-theory/concepts/rocq-dependent-type.td")
+  - fref("/programming-language-theory/concepts/functional-programming.td")
+parent: fref("/programming-language-theory/books/software-foundations/index.td")
 children:
-  - fref("programming-language-theory/books/software-foundations/01-logical-foundations/01-chapter-1-basics-functional-programming-in-rocq.td")
-  - fref("programming-language-theory/books/software-foundations/01-logical-foundations/02-chapter-2-inductive-definitions.td")
-  - fref("programming-language-theory/books/software-foundations/01-logical-foundations/03-chapter-3-hypothetical-and-general-judgments.td")
+  - fref("/programming-language-theory/books/software-foundations/01-logical-foundations/01-chapter-1-basics-functional-programming-in-rocq.td")
+  - fref("/programming-language-theory/books/software-foundations/01-logical-foundations/02-chapter-2-inductive-definitions.td")
+  - fref("/programming-language-theory/books/software-foundations/01-logical-foundations/03-chapter-3-hypothetical-and-general-judgments.td")
 ---
 
 This book lays groundwork for the others in the Software Foundations series.

@@ -1,10 +1,10 @@
 ---
 _type: PltConcept
 _label: 'Goal'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'reviewing'
 books:
-  - fref("programming-language-theory/books/software-foundations/01-logical-foundations/01-chapter-1-basics-functional-programming-in-rocq.td")
+  - fref("/programming-language-theory/books/software-foundations/01-logical-foundations/01-chapter-1-basics-functional-programming-in-rocq.td")
 tags:
   - 'formal system'
   - 'language feature design'
@@ -15,5 +15,5 @@ tags:
 
 Tools: Rocq (formerly Coq)
 
-- (Formal system, Proof/Reason technique, Language feature/design, Programming paradigm) In ${fref("programming-language-theory/concepts/rocq.td")}, the ${fref("programming-language-theory/concepts/proposition.td")} **to be proven** at any point during a proof, which ${fref("programming-language-theory/concepts/tactic.td")}s transform until it becomes trivially true.
-- (Formal system, Proof/Reason technique, Logic) A ${fref("programming-language-theory/concepts/proposition.td")} to be proven.
+- (Formal system, Proof/Reason technique, Language feature/design, Programming paradigm) In ${fref("/programming-language-theory/concepts/rocq.td")}, the ${fref("/programming-language-theory/concepts/proposition.td")} **to be proven** at any point during a proof, which ${fref("/programming-language-theory/concepts/tactic.td")}s transform until it becomes trivially true.
+- (Formal system, Proof/Reason technique, Logic) A ${fref("/programming-language-theory/concepts/proposition.td")} to be proven.

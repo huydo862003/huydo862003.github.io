@@ -3,10 +3,10 @@ _type: PltFlashcard
 _label: 'What are substitution target and subject?'
 deck: 'language theory'
 concepts:
-  - fref("programming-language-theory/concepts/substitution-subject.td")
-  - fref("programming-language-theory/concepts/substitution-target.td")
+  - fref("/programming-language-theory/concepts/substitution-subject.td")
+  - fref("/programming-language-theory/concepts/substitution-target.td")
 books:
-  - fref("programming-language-theory/books/practical-foundations-for-programming-languages/01-part-i-judgments-and-rules/01-chapter-1-abstract-syntax.td")
+  - fref("/programming-language-theory/books/practical-foundations-for-programming-languages/01-part-i-judgments-and-rules/01-chapter-1-abstract-syntax.td")
 ---
 
 ::: flashcard

@@ -4,7 +4,7 @@ _label: "Storing & Querying Transitively Imported Files in the Cloud"
 status: "active"
 ---
 
-As stated in ${fref("software-engineering/experiences/file-system-on-the-web/index.td")}, we're building multifile support into dbdiagram (a cloud-based app). That experience mainly revolves around the large problem as a whole.
+As stated in ${fref("/software-engineering/experiences/file-system-on-the-web/index.td")}, we're building multifile support into dbdiagram (a cloud-based app). That experience mainly revolves around the large problem as a whole.
 
 This experience, though, will focus on a much more narrow problem: storing, querying and updating transitive closure in a database, and why we ended up not doing that.
 

@@ -3,9 +3,9 @@ _type: PltFlashcard
 _label: 'What are some senses of the word "functional" in "functional programming"?'
 deck: 'language theory'
 concepts:
-  - fref("programming-language-theory/concepts/functional-programming.td")
+  - fref("/programming-language-theory/concepts/functional-programming.td")
 books:
-  - fref("programming-language-theory/books/software-foundations/01-logical-foundations/01-chapter-1-basics-functional-programming-in-rocq.td")
+  - fref("/programming-language-theory/books/software-foundations/01-logical-foundations/01-chapter-1-basics-functional-programming-in-rocq.td")
 ---
 
 ::: flashcard

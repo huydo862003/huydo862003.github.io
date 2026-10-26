@@ -3,7 +3,7 @@ _type: DesignFlashcard
 _label: 'What does the term "signifier" mean?'
 deck: 'general'
 concepts:
-  - fref("design/concepts/signifier.td")
+  - fref("/design/concepts/signifier.td")
 ---
 
 ::: flashcard

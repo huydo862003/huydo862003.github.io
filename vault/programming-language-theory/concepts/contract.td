@@ -1,10 +1,10 @@
 ---
 _type: PltConcept
 _label: 'Contract'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'learning'
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
+  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
 tags:
   - 'language feature design'
   - 'runtime'
@@ -45,7 +45,7 @@ Problem: When typed code is called from untyped code, the type checker can't gua
     | --- | --- |
     | **When checked** | At **language boundary** (typed <-> untyped) |
     | **What's checked** | Arguments match parameter types, return matches return type |
-    | **${fref("programming-language-theory/concepts/blame-tracking.td")}** | Error identifies **which module** violated the contract |
+    | **${fref("/programming-language-theory/concepts/blame-tracking.td")}** | Error identifies **which module** violated the contract |
     | **Higher-order** | For $(A \rightarrow B)$, checks happen when function is **called**, not passed |
 
     **Benefit:** Programmers who add type annotations get enforcement even when called from untyped code - errors are **early** and **informative** rather than deep internal failures.

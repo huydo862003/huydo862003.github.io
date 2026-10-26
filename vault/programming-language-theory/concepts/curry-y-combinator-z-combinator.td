@@ -1,7 +1,7 @@
 ---
 _type: PltConcept
 _label: 'Curry y combinator z combinator'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'learning'
 ---
 
@@ -22,5 +22,5 @@ $$
 \end{aligned}
 $$
 
-  - In a ${fref("programming-language-theory/concepts/call-by-value.td")} evaluation strategy, this diverges because it continues to evaluate $\text{fix}\ g$.
-  - In a ${fref("programming-language-theory/concepts/call-by-name.td")} evaluation strategy, $\text{fix}\ g$ does not diverge because $g$ gets applied to $\text{fix}\ g$.
+  - In a ${fref("/programming-language-theory/concepts/call-by-value.td")} evaluation strategy, this diverges because it continues to evaluate $\text{fix}\ g$.
+  - In a ${fref("/programming-language-theory/concepts/call-by-name.td")} evaluation strategy, $\text{fix}\ g$ does not diverge because $g$ gets applied to $\text{fix}\ g$.

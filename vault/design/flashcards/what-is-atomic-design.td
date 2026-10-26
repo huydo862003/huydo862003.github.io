@@ -3,7 +3,7 @@ _type: DesignFlashcard
 _label: 'What is atomic design?'
 deck: 'design methodology'
 concepts:
-  - fref("design/concepts/atomic-design.td")
+  - fref("/design/concepts/atomic-design.td")
 ---
 
 ::: flashcard

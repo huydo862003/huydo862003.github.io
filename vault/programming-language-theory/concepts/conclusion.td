@@ -1,12 +1,12 @@
 ---
 _type: PltConcept
 _label: 'Conclusion'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'learning'
 books:
-  - fref("programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/01-chapter-3-untyped-arithmetic-expressions.td")
+  - fref("/programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/01-chapter-3-untyped-arithmetic-expressions.td")
 tags:
   - 'logic'
 ---
 
-The consequent ${fref("programming-language-theory/concepts/judgment.td")} of an ${fref("programming-language-theory/concepts/inference-rule.td")} that is derived when all its ${fref("programming-language-theory/concepts/premise.td")}s are satisfied.
+The consequent ${fref("/programming-language-theory/concepts/judgment.td")} of an ${fref("/programming-language-theory/concepts/inference-rule.td")} that is derived when all its ${fref("/programming-language-theory/concepts/premise.td")}s are satisfied.

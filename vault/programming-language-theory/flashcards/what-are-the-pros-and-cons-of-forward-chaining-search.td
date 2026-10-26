@@ -3,9 +3,9 @@ _type: PltFlashcard
 _label: 'What are the pros and cons of forward chaining search?'
 deck: 'proof technique'
 concepts:
-  - fref("programming-language-theory/concepts/forward-chaining.td")
+  - fref("/programming-language-theory/concepts/forward-chaining.td")
 books:
-  - fref("programming-language-theory/books/software-foundations/01-logical-foundations/02-chapter-2-inductive-definitions.td")
+  - fref("/programming-language-theory/books/software-foundations/01-logical-foundations/02-chapter-2-inductive-definitions.td")
 ---
 
 ::: flashcard

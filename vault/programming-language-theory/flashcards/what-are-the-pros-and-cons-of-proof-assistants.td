@@ -3,9 +3,9 @@ _type: PltFlashcard
 _label: 'What are the pros and cons of proof assistants?'
 deck: 'logic tools'
 concepts:
-  - fref("programming-language-theory/concepts/proof-assistant-prover.td")
+  - fref("/programming-language-theory/concepts/proof-assistant-prover.td")
 books:
-  - fref("programming-language-theory/books/software-foundations/01-logical-foundations/index.td")
+  - fref("/programming-language-theory/books/software-foundations/01-logical-foundations/index.td")
 ---
 
 ::: flashcard

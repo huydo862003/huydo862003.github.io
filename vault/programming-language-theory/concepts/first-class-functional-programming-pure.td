@@ -1,7 +1,7 @@
 ---
 _type: PltConcept
 _label: 'First class functional programming pure'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'learning'
 ---
 

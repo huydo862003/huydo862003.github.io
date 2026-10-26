@@ -3,9 +3,9 @@ _type: PltFlashcard
 _label: 'What makes a type system sound?'
 deck: 'type theory'
 concepts:
-  - fref("programming-language-theory/concepts/safe-sound-type-system.td")
+  - fref("/programming-language-theory/concepts/safe-sound-type-system.td")
 books:
-  - fref("programming-language-theory/books/types-and-programming-languages/01-chapter-1-introduction.td")
+  - fref("/programming-language-theory/books/types-and-programming-languages/01-chapter-1-introduction.td")
 ---
 
 ::: flashcard

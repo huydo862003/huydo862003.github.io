@@ -1,7 +1,7 @@
 ---
 _type: PltConcept
 _label: 'Untyped calculus of booleans and numbers nonsensical term'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'learning'
 ---
 

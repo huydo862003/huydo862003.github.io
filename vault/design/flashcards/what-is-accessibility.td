@@ -3,7 +3,7 @@ _type: DesignFlashcard
 _label: 'What is accessibility?'
 deck: 'design aspect'
 concepts:
-  - fref("design/concepts/accessibility.td")
+  - fref("/design/concepts/accessibility.td")
 ---
 
 ::: flashcard

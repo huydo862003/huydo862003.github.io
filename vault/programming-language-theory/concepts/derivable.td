@@ -1,10 +1,10 @@
 ---
 _type: PltConcept
 _label: 'Derivable'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'mastered'
 books:
-  - fref("programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/01-chapter-3-untyped-arithmetic-expressions.td")
+  - fref("/programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/01-chapter-3-untyped-arithmetic-expressions.td")
 tags:
   - 'linguistics'
   - 'logic'
@@ -12,4 +12,4 @@ tags:
   - 'syntax grammar'
 ---
 
-A property of an ${fref("programming-language-theory/concepts/evaluation-statement-judgement.td")} that it can be derived using the evaluation rules in the calculus.
+A property of an ${fref("/programming-language-theory/concepts/evaluation-statement-judgement.td")} that it can be derived using the evaluation rules in the calculus.

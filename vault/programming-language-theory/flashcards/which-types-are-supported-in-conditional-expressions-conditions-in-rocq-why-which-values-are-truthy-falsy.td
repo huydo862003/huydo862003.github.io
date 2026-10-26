@@ -3,9 +3,9 @@ _type: PltFlashcard
 _label: 'Which types are supported in conditional expressions'' conditions in rocq? why? which values are truthy/falsy?'
 deck: 'rocq-programming-language'
 concepts:
-  - fref("programming-language-theory/concepts/conditional-expression.td")
+  - fref("/programming-language-theory/concepts/conditional-expression.td")
 books:
-  - fref("programming-language-theory/books/software-foundations/01-logical-foundations/01-chapter-1-basics-functional-programming-in-rocq.td")
+  - fref("/programming-language-theory/books/software-foundations/01-logical-foundations/01-chapter-1-basics-functional-programming-in-rocq.td")
 ---
 
 ::: flashcard

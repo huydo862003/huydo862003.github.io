@@ -1,10 +1,10 @@
 ---
 _type: DesignConcept
 _label: 'Mapping'
-journey: fref("design/index.td")
+journey: fref("/design/index.td")
 status: 'learning'
 books:
-  - fref("design/books/the-design-of-everyday-things/chapter-1-the-psychopathology-of-everyday-things.td")
+  - fref("/design/books/the-design-of-everyday-things/chapter-1-the-psychopathology-of-everyday-things.td")
 ---
 
 

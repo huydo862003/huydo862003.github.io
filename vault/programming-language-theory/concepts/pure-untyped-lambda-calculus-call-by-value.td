@@ -1,7 +1,7 @@
 ---
 _type: PltConcept
 _label: 'Pure untyped lambda calculus call by value'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'learning'
 ---
 

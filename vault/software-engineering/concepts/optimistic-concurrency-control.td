@@ -1,7 +1,7 @@
 ---
 _type: SoftEngConcept
 _label: 'Optimistic Concurrency Control'
-journey: fref("software-engineering/index.td")
+journey: fref("/software-engineering/index.td")
 status: 'learning'
 tags:
   - 'collaboration'

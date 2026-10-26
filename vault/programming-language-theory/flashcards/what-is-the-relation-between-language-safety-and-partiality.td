@@ -3,9 +3,9 @@ _type: PltFlashcard
 _label: 'What is the relation between language safety and partiality?'
 deck: 'type theory'
 concepts:
-  - fref("programming-language-theory/concepts/language-safety.td")
+  - fref("/programming-language-theory/concepts/language-safety.td")
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
+  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
 ---
 
 ::: flashcard

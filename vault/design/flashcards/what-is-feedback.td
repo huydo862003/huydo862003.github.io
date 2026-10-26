@@ -3,7 +3,7 @@ _type: DesignFlashcard
 _label: 'What is feedback?'
 deck: 'general'
 concepts:
-  - fref("design/concepts/feedback.td")
+  - fref("/design/concepts/feedback.td")
 ---
 
 ::: flashcard

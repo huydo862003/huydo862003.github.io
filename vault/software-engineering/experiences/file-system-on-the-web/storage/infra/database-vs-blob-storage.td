@@ -1,7 +1,7 @@
 ---
 _type: ExperienceResource
 _label: "Database vs Blob Storage for Files"
-experience: fref("software-engineering/experiences/file-system-on-the-web/index.td")
+experience: fref("/software-engineering/experiences/file-system-on-the-web/index.td")
 url: "https://engineeringatscale.substack.com/p/when-to-use-blob-storage-vs-database"
 kind: 'article'
 tags:

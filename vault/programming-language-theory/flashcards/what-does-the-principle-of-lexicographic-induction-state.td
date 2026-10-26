@@ -3,9 +3,9 @@ _type: PltFlashcard
 _label: 'What does the principle of lexicographic induction state?'
 deck: 'proof technique'
 concepts:
-  - fref("programming-language-theory/concepts/lexicographic-order.td")
+  - fref("/programming-language-theory/concepts/lexicographic-order.td")
 books:
-  - fref("programming-language-theory/books/types-and-programming-languages/02-chapter-2-mathematical-preliminaries.td")
+  - fref("/programming-language-theory/books/types-and-programming-languages/02-chapter-2-mathematical-preliminaries.td")
 ---
 
 ::: flashcard

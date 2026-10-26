@@ -1,10 +1,10 @@
 ---
 _type: PltConcept
 _label: 'Flow analysis'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'learning'
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
+  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
 tags:
   - 'language feature design'
   - 'program analysis'
@@ -15,4 +15,4 @@ tags:
 
 A static analysis technique that tracks how information propagates through a program's control flow - determining what facts hold at each program point based on paths taken.
 
-A ${fref("programming-language-theory/concepts/static-analysis.td")} technique that tracks how **information propagates** through a program's control flow - determining what facts hold at each program point based on paths taken.
+A ${fref("/programming-language-theory/concepts/static-analysis.td")} technique that tracks how **information propagates** through a program's control flow - determining what facts hold at each program point based on paths taken.

@@ -1,10 +1,10 @@
 ---
 _type: SoftEngConcept
 _label: 'Behavioral code analysis'
-journey: fref("software-engineering/index.td")
+journey: fref("/software-engineering/index.td")
 status: 'learning'
 books:
-  - fref("software-engineering/books/software-design-xray/index.td")
+  - fref("/software-engineering/books/software-design-xray/index.td")
 tags:
   - 'code analysis'
 ---

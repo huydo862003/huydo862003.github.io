@@ -1,10 +1,10 @@
 ---
 _type: PltConcept
 _label: 'Rocq kernel'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'learning'
 books:
-  - fref("programming-language-theory/books/software-foundations/01-logical-foundations/index.td")
+  - fref("/programming-language-theory/books/software-foundations/01-logical-foundations/index.td")
 tags:
   - 'compiler implementation'
 ---

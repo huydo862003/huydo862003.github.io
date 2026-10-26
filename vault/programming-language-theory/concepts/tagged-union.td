@@ -1,7 +1,7 @@
 ---
 _type: PltConcept
 _label: 'Tagged union'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'mastered'
 tags:
   - 'language feature design'
@@ -9,6 +9,6 @@ tags:
   - 'type theory'
 ---
 
-Synonym for ${fref("programming-language-theory/concepts/sum-type.td")} - "union" because it combines variants, "tagged" because each variant has an explicit ${fref("programming-language-theory/concepts/constructor-tag.td")} distinguishing it (unlike untagged ${fref("programming-language-theory/concepts/union-type.td")} types).
+Synonym for ${fref("/programming-language-theory/concepts/sum-type.td")} - "union" because it combines variants, "tagged" because each variant has an explicit ${fref("/programming-language-theory/concepts/constructor-tag.td")} distinguishing it (unlike untagged ${fref("/programming-language-theory/concepts/union-type.td")} types).
 
 Synonym for Sum type - "union" because it combines variants, "tagged" because each variant has an explicit Constructor tag distinguishing it (unlike **untagged** Union type types).

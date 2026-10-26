@@ -3,10 +3,10 @@ _type: PltFlashcard
 _label: 'What is the operational semantics of arithmetic expressions?'
 deck: 'language theory'
 concepts:
-  - fref("programming-language-theory/concepts/operational-semantics.td")
-  - fref("programming-language-theory/concepts/untyped-calculus-of-booleans-and-numbers.td")
+  - fref("/programming-language-theory/concepts/operational-semantics.td")
+  - fref("/programming-language-theory/concepts/untyped-calculus-of-booleans-and-numbers.td")
 books:
-  - fref("programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/01-chapter-3-untyped-arithmetic-expressions.td")
+  - fref("/programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/01-chapter-3-untyped-arithmetic-expressions.td")
 ---
 
 ::: flashcard

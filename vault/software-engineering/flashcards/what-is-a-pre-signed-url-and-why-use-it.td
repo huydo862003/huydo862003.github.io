@@ -5,7 +5,7 @@ deck: 'architecture'
 tags:
   - 'architecture'
 concepts:
-  - fref("software-engineering/concepts/pre-signed-urls.td")
+  - fref("/software-engineering/concepts/pre-signed-urls.td")
 ---
 
 ::: flashcard

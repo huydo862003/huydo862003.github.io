@@ -3,9 +3,9 @@ _type: PltFlashcard
 _label: 'What are some challenges of retrofitting type systems?'
 deck: 'compiler implementation'
 concepts:
-  - fref("programming-language-theory/concepts/retrofitted-type-system.td")
+  - fref("/programming-language-theory/concepts/retrofitted-type-system.td")
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
+  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
 ---
 
 ::: flashcard

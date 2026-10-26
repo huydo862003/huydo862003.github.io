@@ -1,7 +1,7 @@
 ---
 _type: SoftEngConcept
 _label: 'PostgreSQL Large Objects'
-journey: fref("software-engineering/index.td")
+journey: fref("/software-engineering/index.td")
 status: 'learning'
 tags:
   - 'database'

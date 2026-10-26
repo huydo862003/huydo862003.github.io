@@ -3,9 +3,9 @@ _type: PltFlashcard
 _label: 'Why can there be nonsensical terms in the untyped calculus of booleans and numbers?'
 deck: 'language theory'
 concepts:
-  - fref("programming-language-theory/concepts/untyped-calculus-of-booleans-and-numbers.td")
+  - fref("/programming-language-theory/concepts/untyped-calculus-of-booleans-and-numbers.td")
 books:
-  - fref("programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/01-chapter-3-untyped-arithmetic-expressions.td")
+  - fref("/programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/01-chapter-3-untyped-arithmetic-expressions.td")
 ---
 
 ::: flashcard

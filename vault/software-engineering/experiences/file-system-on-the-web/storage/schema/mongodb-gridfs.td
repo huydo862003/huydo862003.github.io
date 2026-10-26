@@ -1,7 +1,7 @@
 ---
 _type: ExperienceResource
 _label: "MongoDB GridFS"
-experience: fref("software-engineering/experiences/file-system-on-the-web/index.td")
+experience: fref("/software-engineering/experiences/file-system-on-the-web/index.td")
 url: "https://www.mongodb.com/docs/manual/core/gridfs/"
 kind: 'article'
 tags:

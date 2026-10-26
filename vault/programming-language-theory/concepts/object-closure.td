@@ -1,8 +1,8 @@
 ---
 _type: PltConcept
 _label: 'Object closure'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'learning'
 ---
 
-An ${fref("programming-language-theory/concepts/object.td")} is a ${fref("programming-language-theory/concepts/closure.td")} with multiple entrypoints.
+An ${fref("/programming-language-theory/concepts/object.td")} is a ${fref("/programming-language-theory/concepts/closure.td")} with multiple entrypoints.

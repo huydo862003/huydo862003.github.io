@@ -1,10 +1,10 @@
 ---
 _type: PltConcept
 _label: 'Subtyping'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'mastered'
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
+  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
 tags:
   - 'language feature design'
   - 'programming paradigm'
@@ -12,6 +12,6 @@ tags:
   - 'type theory'
 ---
 
-The ${fref("programming-language-theory/concepts/type-system.td")} mechanism that defines and enforces when substitution is allowed between types.
+The ${fref("/programming-language-theory/concepts/type-system.td")} mechanism that defines and enforces when substitution is allowed between types.
 
-The ${fref("programming-language-theory/concepts/type-system.td")} mechanism that defines and enforces **when substitution is allowed** between types.
+The ${fref("/programming-language-theory/concepts/type-system.td")} mechanism that defines and enforces **when substitution is allowed** between types.

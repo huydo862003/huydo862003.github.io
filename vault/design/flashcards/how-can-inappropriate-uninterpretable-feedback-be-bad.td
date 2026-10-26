@@ -3,7 +3,7 @@ _type: DesignFlashcard
 _label: 'How can inappropriate, uninterpretable feedback be bad?'
 deck: 'general'
 concepts:
-  - fref("design/concepts/feedback.td")
+  - fref("/design/concepts/feedback.td")
 ---
 
 ::: flashcard

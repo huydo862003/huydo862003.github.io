@@ -3,9 +3,9 @@ _type: PltFlashcard
 _label: 'What is a first order variable?'
 deck: 'programming-language-basic'
 concepts:
-  - fref("programming-language-theory/concepts/first-order-variable.td")
+  - fref("/programming-language-theory/concepts/first-order-variable.td")
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/01-chapter-1-learning-smol-standard-model-of-languages.td")
+  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/01-chapter-1-learning-smol-standard-model-of-languages.td")
 ---
 
 ::: flashcard

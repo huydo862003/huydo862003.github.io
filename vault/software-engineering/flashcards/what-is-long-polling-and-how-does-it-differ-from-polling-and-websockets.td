@@ -5,7 +5,7 @@ deck: 'collaboration'
 tags:
   - 'networking'
 concepts:
-  - fref("software-engineering/concepts/long-polling.td")
+  - fref("/software-engineering/concepts/long-polling.td")
 ---
 
 ::: flashcard

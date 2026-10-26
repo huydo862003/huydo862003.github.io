@@ -1,14 +1,14 @@
 ---
 _type: PltConcept
 _label: 'Complete'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'reviewing'
 books:
-  - fref("programming-language-theory/books/software-foundations/01-logical-foundations/02-chapter-2-inductive-definitions.td")
+  - fref("/programming-language-theory/books/software-foundations/01-logical-foundations/02-chapter-2-inductive-definitions.td")
 tags:
   - 'formal system'
   - 'logic'
   - 'set theory relation'
 ---
 
-The adjective form of ${fref("programming-language-theory/concepts/completeness.td")}.
+The adjective form of ${fref("/programming-language-theory/concepts/completeness.td")}.

@@ -1,7 +1,7 @@
 ---
 _type: ExperienceResource
 _label: "DGIT"
-experience: fref("software-engineering/experiences/file-system-on-the-web/index.td")
+experience: fref("/software-engineering/experiences/file-system-on-the-web/index.td")
 url: "https://github.blog/engineering/architecture-optimization/introducing-dgit/"
 kind: 'blog-post'
 tags:

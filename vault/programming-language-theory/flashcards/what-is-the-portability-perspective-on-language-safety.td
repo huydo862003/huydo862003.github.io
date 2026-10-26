@@ -3,9 +3,9 @@ _type: PltFlashcard
 _label: 'What is the portability perspective on language safety?'
 deck: 'type theory'
 concepts:
-  - fref("programming-language-theory/concepts/language-safety.td")
+  - fref("/programming-language-theory/concepts/language-safety.td")
 books:
-  - fref("programming-language-theory/books/types-and-programming-languages/01-chapter-1-introduction.td")
+  - fref("/programming-language-theory/books/types-and-programming-languages/01-chapter-1-introduction.td")
 ---
 
 ::: flashcard

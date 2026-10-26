@@ -5,7 +5,7 @@ deck: 'collaboration'
 tags:
   - 'collaboration'
 concepts:
-  - fref("software-engineering/concepts/optimistic-concurrency-control.td")
+  - fref("/software-engineering/concepts/optimistic-concurrency-control.td")
 ---
 
 ::: flashcard

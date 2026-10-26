@@ -3,9 +3,9 @@ _type: PltFlashcard
 _label: 'What are the 2 definitions of substitution used in TAPL? for what purposes?'
 deck: 'pure-lambda-calculus'
 concepts:
-  - fref("programming-language-theory/concepts/capture-avoiding-substitution.td")
+  - fref("/programming-language-theory/concepts/capture-avoiding-substitution.td")
 books:
-  - fref("programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/03-chapter-5-the-untyped-pure-lambda-calculus.td")
+  - fref("/programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/03-chapter-5-the-untyped-pure-lambda-calculus.td")
 ---
 
 ::: flashcard

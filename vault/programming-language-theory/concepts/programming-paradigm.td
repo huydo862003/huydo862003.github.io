@@ -1,7 +1,7 @@
 ---
 _type: PltConcept
 _label: 'Programming paradigm'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'reviewing'
 tags:
   - 'programming paradigm'

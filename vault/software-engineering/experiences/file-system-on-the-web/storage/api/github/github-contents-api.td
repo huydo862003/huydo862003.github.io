@@ -1,7 +1,7 @@
 ---
 _type: ExperienceResource
 _label: "GitHub Contents API"
-experience: fref("software-engineering/experiences/file-system-on-the-web/index.td")
+experience: fref("/software-engineering/experiences/file-system-on-the-web/index.td")
 url: "https://docs.github.com/en/rest/repos/contents"
 kind: 'article'
 tags:

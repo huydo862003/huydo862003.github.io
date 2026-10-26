@@ -1,10 +1,10 @@
 ---
 _type: PltConcept
 _label: 'First-order variable'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'learning'
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/01-chapter-1-learning-smol-standard-model-of-languages.td")
+  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/01-chapter-1-learning-smol-standard-model-of-languages.td")
 ---
 
-A variable that ranges over data values (e.g., integers, booleans, records) - as opposed to ${fref("programming-language-theory/concepts/higher-order-function.td")} variables which can hold functions or other computational entities.
+A variable that ranges over data values (e.g., integers, booleans, records) - as opposed to ${fref("/programming-language-theory/concepts/higher-order-function.td")} variables which can hold functions or other computational entities.

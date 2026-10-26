@@ -1,13 +1,13 @@
 ---
 _type: PltConcept
 _label: 'Derivation'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'reviewing'
 books:
-  - fref("programming-language-theory/books/software-foundations/01-logical-foundations/02-chapter-2-inductive-definitions.td")
+  - fref("/programming-language-theory/books/software-foundations/01-logical-foundations/02-chapter-2-inductive-definitions.td")
 tags:
   - 'logic'
   - 'set theory relation'
 ---
 
-A finite composition of rules, starting with ${fref("programming-language-theory/concepts/axiom.td")}s and ending with a desired ${fref("programming-language-theory/concepts/judgment.td")}.
+A finite composition of rules, starting with ${fref("/programming-language-theory/concepts/axiom.td")}s and ending with a desired ${fref("/programming-language-theory/concepts/judgment.td")}.

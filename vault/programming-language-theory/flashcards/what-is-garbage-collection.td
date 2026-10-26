@@ -3,9 +3,9 @@ _type: PltFlashcard
 _label: 'What is garbage collection?'
 deck: 'programming-language-basic'
 concepts:
-  - fref("programming-language-theory/concepts/garbage-collection.td")
+  - fref("/programming-language-theory/concepts/garbage-collection.td")
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/01-chapter-1-learning-smol-standard-model-of-languages.td")
+  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/01-chapter-1-learning-smol-standard-model-of-languages.td")
 ---
 
 ::: flashcard

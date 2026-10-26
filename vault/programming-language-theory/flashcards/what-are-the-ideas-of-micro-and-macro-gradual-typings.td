@@ -3,11 +3,11 @@ _type: PltFlashcard
 _label: 'What are the ideas of micro and macro gradual typings?'
 deck: 'type theory'
 concepts:
-  - fref("programming-language-theory/concepts/gradual-typing.td")
-  - fref("programming-language-theory/concepts/macro-gradual-typing.td")
-  - fref("programming-language-theory/concepts/micro-gradual-typing.td")
+  - fref("/programming-language-theory/concepts/gradual-typing.td")
+  - fref("/programming-language-theory/concepts/macro-gradual-typing.td")
+  - fref("/programming-language-theory/concepts/micro-gradual-typing.td")
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
+  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
 ---
 
 ::: flashcard

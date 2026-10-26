@@ -5,8 +5,8 @@ deck: 'database'
 tags:
   - 'database'
 concepts:
-  - fref("software-engineering/concepts/postgresql-bytea.td")
-  - fref("software-engineering/concepts/postgresql-text.td")
+  - fref("/software-engineering/concepts/postgresql-bytea.td")
+  - fref("/software-engineering/concepts/postgresql-text.td")
 ---
 
 ::: flashcard

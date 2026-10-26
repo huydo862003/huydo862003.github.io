@@ -1,10 +1,10 @@
 ---
 _type: PltConcept
 _label: 'Constant'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'mastered'
 books:
-  - fref("programming-language-theory/books/programming-languages-application-and-interpretation/02-chapter-2-evaluation.td")
+  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/02-chapter-2-evaluation.td")
 tags:
   - 'compiler implementation'
   - 'language feature design'
@@ -17,7 +17,7 @@ The token itself *is* the value-the parser can extract it directly without consu
 
 - Requires no evaluation or name lookup.
 - Examples: `42`, `"hello"`, `true`, `3.14`.
-- Also called: ${fref("programming-language-theory/concepts/literal.td")}, *self-evaluating expression.*
+- Also called: ${fref("/programming-language-theory/concepts/literal.td")}, *self-evaluating expression.*
 
 ::: info
 (Semantics, Semantics, Language feature/design, Program analysis) (a.k.a **semantic constant**) A declaration that restricts mutability of a binding and/or its value.

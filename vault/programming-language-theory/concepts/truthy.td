@@ -1,7 +1,7 @@
 ---
 _type: PltConcept
 _label: 'Truthy'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'reviewing'
 tags:
   - 'language feature design'

@@ -1,7 +1,7 @@
 ---
 _type: ParallelDistProgConcept
 _label: 'Progress Guarantee'
-journey: fref("parallel-and-distributed-programming/index.td")
+journey: fref("/parallel-and-distributed-programming/index.td")
 status: 'learning'
 tags:
   - 'progress guarantee'

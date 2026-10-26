@@ -3,9 +3,9 @@ _type: PltFlashcard
 _label: 'Are runtime type errors a per-language choice?'
 deck: 'type theory'
 concepts:
-  - fref("programming-language-theory/concepts/runtime-type-error.td")
+  - fref("/programming-language-theory/concepts/runtime-type-error.td")
 books:
-  - fref("programming-language-theory/books/types-and-programming-languages/01-chapter-1-introduction.td")
+  - fref("/programming-language-theory/books/types-and-programming-languages/01-chapter-1-introduction.td")
 ---
 
 ::: flashcard

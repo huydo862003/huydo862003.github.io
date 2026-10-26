@@ -1,7 +1,7 @@
 ---
 _type: PltConcept
 _label: 'Abstract binding tree abt valence abstractor'
-journey: fref("programming-language-theory/index.td")
+journey: fref("/programming-language-theory/index.td")
 status: 'learning'
 ---
 

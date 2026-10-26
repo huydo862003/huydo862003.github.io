@@ -3,8 +3,8 @@ _type: DesignFlashcard
 _label: 'What is psychopathology vs psychology?'
 deck: 'general'
 concepts:
-  - fref("design/concepts/psychology.td")
-  - fref("design/concepts/psychopathology.td")
+  - fref("/design/concepts/psychology.td")
+  - fref("/design/concepts/psychopathology.td")
 ---
 
 ::: flashcard

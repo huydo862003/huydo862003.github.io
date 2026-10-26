@@ -5,7 +5,7 @@ deck: 'database'
 tags:
   - 'database'
 concepts:
-  - fref("software-engineering/concepts/postgresql-large-objects.td")
+  - fref("/software-engineering/concepts/postgresql-large-objects.td")
 ---
 
 ::: flashcard

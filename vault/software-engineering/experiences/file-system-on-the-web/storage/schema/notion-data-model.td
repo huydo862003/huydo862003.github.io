@@ -1,7 +1,7 @@
 ---
 _type: ExperienceResource
 _label: "Notion: Block-Based Data Model"
-experience: fref("software-engineering/experiences/file-system-on-the-web/index.td")
+experience: fref("/software-engineering/experiences/file-system-on-the-web/index.td")
 url: "https://www.notion.com/blog/data-model-behind-notion"
 kind: 'blog-post'
 tags:

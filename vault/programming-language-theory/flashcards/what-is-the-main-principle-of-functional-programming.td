@@ -3,9 +3,9 @@ _type: PltFlashcard
 _label: 'What is the main principle of functional programming?'
 deck: 'language theory'
 concepts:
-  - fref("programming-language-theory/concepts/functional-programming.td")
+  - fref("/programming-language-theory/concepts/functional-programming.td")
 books:
-  - fref("programming-language-theory/books/software-foundations/01-logical-foundations/index.td")
+  - fref("/programming-language-theory/books/software-foundations/01-logical-foundations/index.td")
 ---
 
 ::: flashcard
