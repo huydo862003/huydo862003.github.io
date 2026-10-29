@@ -6,7 +6,7 @@ properties:
   description:
     type: string?
   status:
-    type: ['active', 'completed', 'paused']
+    type: ['active', 'mitigated', 'completed', 'paused']
   tags:
     type: list[string]?
 ---

@@ -1,7 +1,7 @@
 ---
 _type: Experience
 _label: "Storing & Querying Transitively Imported Files in the Cloud"
-status: "active"
+status: "mitigated"
 ---
 
 As stated in ${fref("/software-engineering/experiences/file-system-on-the-web/index.td")}, we're building multifile support into dbdiagram (a cloud-based app). That experience mainly revolves around the large problem as a whole.

@@ -1,7 +1,7 @@
 ---
 _type: Experience
 _label: "File System on the Web"
-status: "active"
+status: "mitigated"
 ---
 
 This folder documents all the research I've conducted to converge on a solution for designing filesystem APIs on dbdocs/dbdiagram. This is to support the multifile DBML feature (which I have shipped in the compiler quite ago) on the cloud.
