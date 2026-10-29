@@ -22,6 +22,7 @@ use * from './diagram-c'
 
 use * from './diagram-b1'
 use * from './diagram-b2'
+use * from './diagram-a'   // circular import
 
 // diagram-c.dbml
 
@@ -30,6 +31,8 @@ use * from './diagram-c2'
 ```
 
 As a side note, DBML use is not transitive by default: `./diagram-a.dbml` will not see `./diagram-b1.dbml` declarations via `diagram-b.dbml`. Nevertheless, when rendering `diagram-a`, we still need `diagram-b1` available so we can have all global information to process the diagram.
+
+Note that cycles are possible (B uses A, and A uses B). The system must handle them gracefully.
 
 ## Our Problem
 
@@ -71,93 +74,134 @@ In terms of operations, we need:
 
 > `READ` is called far less often than `UPDATE-DIRECT`, so we prefer `READ` to be fast even if `UPDATE-DIRECT` costs more.
 
-## DB Approaches and Their Limits
+## The Core Tension
 
-We initially framed this as a database problem. Research confirms there is no known solution that makes both `READ` and `UPDATE-DIRECT` O(1); every approach trades one against the other. Here is how that plays out across the standard approaches, along with the practical complexity each brings.
+There is no known scheme that makes both `READ` (fetch all transitive imports) and `UPDATE` (change direct imports) simultaneously cheap. Every approach picks a point on the **precompute-on-write vs compute-on-read** spectrum.
 
-### Adjacency List With Recursive Queries
+### Adjacency List + Recursive Query
 
-- **Schema:** Each node stores only its direct dependencies (a `parent_id` or `used_ids` array). Minimal storage; one row per node.
-- **Read:** A recursive CTE traverses the graph hop by hop until no new nodes are discovered.
-- **Write:** A single field update. Cheap.
+Each node stores only its direct dependencies. On read, a ${fref("/software-engineering/concepts/recursive-query.td")} (recursive CTE in SQL, `$graphLookup` in MongoDB) traverses the graph hop by hop.
 
-```sql
-WITH RECURSIVE tc AS (
-  SELECT used_id FROM uses WHERE diagram_id = :id
-  UNION ALL
-  SELECT u.used_id FROM uses u JOIN tc ON tc.used_id = u.diagram_id
-)
-SELECT used_id FROM tc;
+```
+nodes table
++----+----------+
+| id | uses     |
++----+----------+
+| A  | [B, C]   |
+| B  | [B1, B2] |
+| C  | [C1, C2] |
++----+----------+
 ```
 
-Drawbacks:
-
-- Recursive CTEs are non-trivial to reason about and debug.
-- Many databases have a default recursion limit (PostgreSQL defaults to 100 levels).
-- Query time grows with graph depth, which is unpredictable at runtime.
-- No index can accelerate the traversal itself; each hop is a join.
+- `UPDATE-DIRECT` is O(1): a single field update.
+- `READ` is O(depth): each hop is a join, and query time grows with graph depth.
+- Cycles must be tracked with a visited set; PostgreSQL has a default recursion limit of 100.
 
 ### Path Enumeration
 
-- **Schema:** Each node stores a materialized path string encoding its full ancestry, such as `/root/a/b/c`.
-- **Read:** A prefix scan (`WHERE path LIKE '/root/a/%'`) returns all descendants instantly.
-- **Write:** Insert appends to the parent path. Move or rename must rewrite the path of every descendant via a string replace across the subtree.
+Each node stores a materialized path encoding its full ancestry, e.g. `/root/a/b/c`.
 
-Drawbacks:
+```
+nodes table
++----+-------------+
+| id | path        |
++----+-------------+
+| A  | /A          |
+| B  | /A/B        |
+| B1 | /A/B/B1     |
+| B2 | /A/B/B2     |
+| C  | /A/C        |
+| C1 | /A/C/C1     |
++----+-------------+
+  READ B's subtree: WHERE path LIKE '/A/B/%'
+```
 
-- Assumes a tree, not a DAG: a node with multiple parents cannot be represented.
-- Moves cascade path updates across the entire affected subtree.
-- Path strings grow without bound for deep hierarchies.
-- Does not handle cycles.
+- `UPDATE-DIRECT` is O(subtree): moving a node rewrites every descendant's path.
+- `READ` is O(1): a prefix scan returns all descendants.
+- Assumes a tree, not a DAG: a node with multiple parents cannot be represented. Cycles are not supported.
 
 ### Nested Sets
 
-- **Schema:** Each node has a `lft` and `rgt` integer. A node is a descendant of another if and only if its range falls inside the ancestor's range.
-- **Read:** A single `BETWEEN` range query returns the entire subtree. No recursion required.
-- **Write:** Inserting a node shifts the `lft`/`rgt` of every node to its right by ±2. Moving a subtree is a multi-step operation requiring careful arithmetic, typically wrapped in a stored procedure.
+Each node has a `lft` and `rgt` integer. A node is a descendant of another iff its range falls inside the ancestor's range.
 
-Drawbacks:
+```
+nodes table                        the tree
++----+-----+-----+
+| id | lft | rgt |            A [1,12]
++----+-----+-----+          /        \
+| A  |  1  | 12  |     B [2,7]     C [8,11]
+| B  |  2  |  7  |     /    \       /    \
+| B1 |  3  |  4  |  B1[3,4] B2[5,6] C1[9,10]
+| B2 |  5  |  6  |
+| C  |  8  | 11  |  READ B's subtree:
+| C1 |  9  | 10  |    WHERE lft > 2 AND rgt < 7
++----+-----+-----+
+```
 
-- Every insert or move updates a large portion of the table, causing lock contention on large datasets.
-- Only well-suited to trees, not arbitrary DAGs.
-- `lft`/`rgt` values are opaque and nearly impossible to manage without stored procedures.
+- `UPDATE-DIRECT` is O(n): inserting a node shifts ranges for every node to its right.
+- `READ` is O(1): a single `BETWEEN` range query.
+- Trees only. Cycles are not supported.
 
 ### Closure Table
 
-- **Schema:** A separate `closure` table holds one row for every reachable pair `(ancestor, descendant, depth)`, including self-pairs. The main table stays simple.
-- **Read:** A single indexed join against the closure table. No traversal needed.
-- **Write:** Inserting a node adds one closure row per ancestor. Moving or updating a node requires deleting all affected pairs and reinserting recomputed ones. This logic is almost always delegated to triggers.
+A separate table stores one row for every reachable `(ancestor, descendant, depth)` pair. The main table stays simple.
 
-Drawbacks:
+```
+nodes table          closure table
++----+------+        +----------+------------+-------+
+| id | name |        | ancestor | descendant | depth |
++----+------+        +----------+------------+-------+
+| A  | ...  |        | A        | A          |  0    |
+| B  | ...  |        | A        | B          |  1    |
+| B1 | ...  |        | A        | B1         |  2    |
++----+------+        | A        | B2         |  2    |
+                      | B        | B          |  0    |
+                      | B        | B1         |  1    |
+                      | B        | B2         |  1    |
+                      | ...      | ...        | ...   |
+                      +----------+------------+-------+
+  READ A's subtree: SELECT descendant FROM closure
+                    WHERE ancestor = 'A'
+```
 
-- For DAGs, the delete-and-reinsert logic is complex: a node can have multiple parents, so you must not remove pairs still reachable via a different path.
-- Triggers keep the closure table in sync but add hidden complexity and are difficult to test.
-- Storage grows as $O(|V|^2)$ in the worst case.
+- `UPDATE-DIRECT` is O(ancestors) on insert. Updating or moving a node requires deleting all affected pairs and reinserting recomputed ones.
+- `READ` is O(1): a single indexed join.
+- For DAGs, a node reachable via multiple paths makes the delete-and-reinsert logic considerably harder, since you must not remove pairs still reachable via another path.
+- This logic is almost always delegated to triggers, which add hidden complexity and are difficult to test.
+- Storage can grow up to $O(|V|^2)$ in the worst case.
 
-> No approach makes both `READ` and `UPDATE-DIRECT` cheap. Every DB-side solution picks a point on the precompute-on-write vs. compute-on-read spectrum, and none of them are simple.
+For a thorough treatment, see Dong et al., *[Maintaining Transitive Closure of Digraphs in Polynomial Time](https://doi.org/10.1007/BF01187077)* (Algorithmica, 1999).
 
-## Stepping Back: Client-Side Resolution
+| Approach | `READ` | `UPDATE-DIRECT` | DAGs/Cycles? | Engineering cost |
+|---|---|---|---|---|
+| Adjacency list + recursive query | O(depth) | O(1) | Yes, with care | Moderate: recursive queries are non-trivial to debug |
+| Path enumeration | O(1) | O(subtree) | No (trees only) | Low, but trees only |
+| Nested sets | O(1) | O(n) | No (trees only) | High: range arithmetic is error-prone, trees only |
+| Closure table | O(1) | O(ancestors), complex for DAGs | Partially | High: requires DB triggers to maintain, logic is DB-bound and hard to test |
 
-::: warning
-This only works in our cases because the diagram listing is usually small enough, so we can fetch them upfront... I'm still very much interested in a better approach.
-:::
+Since no centralized, DB-only approach gives us both cheap reads and cheap writes without significant complexity, we looked for a way to sidestep the problem entirely.
 
-The real problem is not which DB schema to pick. It is that each level of the import graph costs a client-server round trip, because the client learns what to fetch next only by downloading and parsing content. The waterfall comes from the fact that the client does not know the shape of the graph before it has the contents.
+## Our Approach: Spread the Cost to the Client
 
-The fix: give the client the graph's shape upfront. The diagram listing is already fetched at startup. We can include each diagram's direct-use paths there.
+Since no DB-only scheme makes both operations cheap without significant complexity, we stop asking the database to compute the transitive closure at all. Instead, we:
 
-**How It Works**
+- **Store only direct imports** in the DB. On save, the backend derives them from the diagram content. No transitive recomputation, no triggers, no cascading updates.
+- **Resolve the closure in application code**, scoped to the workspace. The workspace's import graph is small enough to load into memory and walk with a simple BFS/DFS (with a visited set for cycles).
+- **Batch-fetch** all resolved diagram contents in one request.
 
-When a diagram is saved, record its raw use paths (for example `['./diagram-b', './diagram-c']`) as a small metadata field. The client already parses on save, so it can send them along; alternatively, the backend can extract them. Return that field in the diagram listing.
+The flow becomes:
 
-Startup becomes:
+1. User opens a diagram.
+2. Load the workspace's direct-import graph (a small metadata query).
+3. Walk the graph in memory to compute the closure.
+4. Batch-fetch all diagram contents in one request.
 
-1. Fetch diagram A and the listing in parallel, as today.
-2. On the client, resolve A's use paths against the listing entries, then walk the full import graph in memory to compute the closure.
-3. Batch-fetch everything in the closure in one request (`GET /diagrams?ids=...`).
+That is two DB queries regardless of graph depth, with no recursive SQL, no closure maintenance, and no cycle-handling complexity in the database layer.
 
-That is two round trips regardless of graph depth, with no recursive queries and no closure maintenance on the server. Writes stay as cheap as they are today.
+### The Tradeoff
 
-A useful side effect: storing raw paths and resolving them at read time against the current listing means renames and moves just work. There are no stored ids to go stale. The only cost is a slightly larger listing payload, amounting to a handful of short strings per diagram.
+We are trading **some consistency** for simplicity and performance. Because we only store direct imports and compute the closure at read time, there is a brief window where a stale listing could produce an incomplete closure (e.g. if another user just changed their imports). In practice, this is acceptable: the listing refreshes on workspace visit, and a page reload resolves any staleness. The consistency window is short and the failure mode is benign (missing an import, not corrupting data).
 
-One step further: since A's own use paths are in the listing too, you can compute the full closure from the listing alone and batch-fetch A together with everything it uses. Startup collapses to one listing request followed by one content request.
+### A Nice Side Effect
+
+Storing raw import paths and resolving them against the current listing at read time means **renames and moves just work**. There are no stored IDs to go stale. The only cost is a slightly larger listing payload, amounting to a handful of short strings per diagram.
