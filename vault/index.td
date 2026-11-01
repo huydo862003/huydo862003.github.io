@@ -5,8 +5,6 @@ I'm hdnax, amateur software engineer at [Holistics](https://www.holistics.io/).
 
 This is a personal note taking page, not a blog... Everything is scrambled! Think of it like a MySpace type of thing that I just dump my thoughts.
 
-Currently researching P2P connections (for beatlix). Planning to get back to type theory after that.
-
 I worked in CS and here is the list of areas I'm interested in (I'm not a researcher by the way):
 
 - Type & language theory
@@ -25,10 +23,6 @@ If any of this resonates, I'd love to hear from you:
 
 [![Email](https://img.shields.io/badge/Email-huydo862003@gmail.com-blue?style=flat&logo=gmail)](mailto:huydo862003@gmail.com)
 
-## Currently listening to
-
-Lana Del Rey (Ultraviolence is the album), Bjork, Have a Nice Life, Blonde Redhead. Casually: Laufey, Clairo, and whatever else finds me.
-
 ## Scrambled Notes
 
 Parsers, type systems, distributed systems, design... Notes I take as I learn, mostly incomplete, sometimes wrong.
@@ -45,15 +39,15 @@ Things I work on or research in my freetime, either because I need them personal
 
   - Somewhat stabilized with lots of optimizations!
   - `npm` package: [npm](https://www.npmjs.com/package/typerighter)
-  - documentation: [docs](https://huydo862003.github.io/typerighter)
+  - Documentation: [docs](https://huydo862003.github.io/typerighter)
 
 - **[sqlingo](https://github.com/huydo862003/sqlingo)**: Porting sqlglot to TypeScript so it can run in the browser.
 
   - Stabilized & Synced with sqlglot version 30.0.0.
   - `npm` package: [npm](https://www.npmjs.com/package/sqlingo)
-  - documentation: [docs](https://huydo862003.github.io/sqlingo/)
+  - Documentation: [docs](https://huydo862003.github.io/sqlingo/)
 
-### Researching
+### Active / Researching
 
 - **[beatlix](https://github.com/huydo862003/beatlix)**: A shared space for group activities: chat, screen share, listen to music, or just hang out together. P2P via WebRTC.
 
@@ -66,7 +60,7 @@ Things I work on or research in my freetime, either because I need them personal
 - **[MPiSC](https://github.com/huydo862003/MPiSC)**: Wait-free distributed MPSC queues over MPI-3 RMA. Most shared-memory implementations turned out to be broken; the only correct one (LTQueue) became the base.
 
   - Gave me 2 low-ranking papers.
-  - documentation: [docs](https://huydo862003.github.io/MPiSC/)
+  - Documentation: [docs](https://huydo862003.github.io/MPiSC/)
 
 ## Publications
 
@@ -74,3 +68,22 @@ Papers that came out of the MPiSC work.
 
 - [dLTQueue (FDSE 2025)](https://www.researchgate.net/publication/395381301)
 - [Slotqueue (NPC 2025)](https://www.researchgate.net/publication/395448251)
+
+## Other Hobbies
+
+I love music. They have accompanied me throughout every phase of my life, most prominently in university, when I couldn't make any close friends.
+
+My favorite artists/bands:
+
+- Lana Del Rey: I see her as authentic & casually poetic. She is probably the most low-key mainstream artist and it is in her the type of artistry I'd love to possess.
+- Bjork: She's a pioneer and also stays true to herself. To me, being authentic is already enough to allow me to resonate... Her sound is different, but melodic at the same time! Recently, I've been addicted to the Medúlla album!
+- Have a Nice Life: This band carried me through the senior years of university. I burned out, ran into lots of problems, betrayed by friends and professors. It came to me when I saw a thesis about Deathconsciousness & nihilism (which, to me is my world view anyways). It taught me to just not care anymore.
+- Blonde Redhead: I just love the dream pop sound of this band (the earlier sound).
+
+I also listen casually to Laufey, Clairo, and whatever else finds me.
+
+![Ultraviolence](https://open.spotify.com/album/1ORxRsK3MrSLvh7VQTF01F?si=DO3dHT0DRFipCmEPnoY_zQ)
+
+![Medúlla](https://open.spotify.com/album/1OBctVHKbHrQ2t5oCeHNtN?si=bq_JkEbuSe2uvE05o_-zKQ)
+
+![Deathconsciousness](https://open.spotify.com/album/6MH3CAXp8AN8ELrbex18dM?si=yCTXGmXaRq-KJFwB6_bz-Q)
