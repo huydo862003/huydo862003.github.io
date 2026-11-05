@@ -108,7 +108,25 @@
             "null"
           ]
         },
-        "description": "Disable active heading tracking on scroll"
+        "description": "Disable active heading tracking"
+      },
+      "inline": {
+        "schema": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "description": "Render as inline hierarchical list instead of sidebar list"
+      },
+      "scrollable": {
+        "schema": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "description": "Enable scroll-to-active behavior within a constrained container"
       }
     }
   },
@@ -123,6 +141,9 @@
             },
             {
               "const": "dense"
+            },
+            {
+              "const": null
             }
           ]
         },
