@@ -27,14 +27,14 @@ Link: <https://smol-tutor.xyz/tutor/>.
 - **SMoL - Standard Model of Languages**
   - Captures the **shared computational core** across widely-used languages (C#, Java, JavaScript, Python, Scala, Racket, and more).
   - **8 core features:**
-  - Lexical scope.
-  - Nested scope.
-  - Eager evaluation.
-  - Sequential evaluation (per thread).
-  - Mutable first-order variables.
-  - Mutable first-class structures (objects, vectors, etc.).
-  - Higher-order functions with closures.
-  - Automated memory management (garbage collection).
+    - Lexical scope.
+    - Nested scope.
+    - Eager evaluation.
+    - Sequential evaluation (per thread).
+    - Mutable first-order variables.
+    - Mutable first-class structures (objects, vectors, etc.).
+    - Higher-order functions with closures.
+    - Automated memory management (garbage collection).
   - **Inclusion criteria:** Feature must be present across many diverse languages.
   - Excluded: static types (not universal), objects (too much variation).
   - **Descriptive, not prescriptive** - models what languages *are*, not what they *should be.*
