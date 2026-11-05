@@ -9,6 +9,7 @@ books:
 ::: flashcard
 What does it mean for a collection of inference rules to form the strongest judgment form that is closed under those rules?
 === key
+
 A collection of inference rules is taken to specify a judgment form - assuming it's $-\ J$ - that is:
 
 - The strongest judgment form:
