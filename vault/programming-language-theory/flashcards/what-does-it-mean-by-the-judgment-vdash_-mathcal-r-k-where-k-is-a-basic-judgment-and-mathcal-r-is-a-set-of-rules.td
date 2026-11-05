@@ -1,6 +1,6 @@
 ---
 _type: PltFlashcard
-_label: 'What does it mean by the judgment $dash_mathcal{r} k$, where $k$ is a basic judgment and $mathcal{r}$ is a set of rules?'
+_label: 'What does it mean by the judgment $\vdash_{\mathcal{R}} k$, where $k$ is a basic judgment and $\mathcal{R}$ is a set of rules?'
 deck: 'general'
 books:
   - fref("/programming-language-theory/books/software-foundations/01-logical-foundations/03-chapter-3-hypothetical-and-general-judgments.td")
