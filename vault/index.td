@@ -1,7 +1,7 @@
 
 Scrambled thoughts. Scrambled journeys. Scrambled DNA. And scrambled eggs.
 
-I'm hdnax, amateur software engineer at [Holistics](https://www.holistics.io/).
+I'm an amateur software engineer at [Holistics](https://www.holistics.io/).
 
 This is a personal note taking page, not a blog... Everything is scrambled! Think of it like a MySpace type of thing that I just dump my thoughts.
 
@@ -17,9 +17,7 @@ I worked in CS and here is the list of areas I'm interested in (I'm not a resear
 - Performance
 - Engineering in general
 
-None of this really matters in the end, but it's interesting while we're here.
-
-If any of this resonates, I'd love to hear from you:
+I'd love to learn and discuss this with someone else (I admit that I can be a bit slow, but I'm kind of perseverant):
 
 [![Email](https://img.shields.io/badge/Email-huydo862003@gmail.com-blue?style=flat&logo=gmail)](mailto:huydo862003@gmail.com)
 
@@ -75,15 +73,21 @@ I love music. They have accompanied me throughout every phase of my life, most p
 
 My favorite artists/bands:
 
+::: grid {columns=2}
+:::grid-cell
 - Lana Del Rey: I see her as authentic & casually poetic. She is probably the most low-key mainstream artist and it is in her the type of artistry I'd love to possess.
 - Bjork: She's a pioneer and also stays true to herself. To me, being authentic is already enough to allow me to resonate... Her sound is different, but melodic at the same time! Recently, I've been addicted to the Medúlla album!
 - Have a Nice Life: This band carried me through the senior years of university. I burned out, ran into lots of problems, betrayed by friends and professors. It came to me when I saw a thesis about Deathconsciousness & nihilism (which, to me is my world view anyways). It taught me to just not care anymore.
 - Blonde Redhead: I just love the dream pop sound of this band (the earlier sound).
 
 I also listen casually to Laufey, Clairo, and whatever else finds me.
+:::
+::: grid-cell
 
 ![Ultraviolence](https://open.spotify.com/album/1ORxRsK3MrSLvh7VQTF01F?si=DO3dHT0DRFipCmEPnoY_zQ)
 
 ![Medúlla](https://open.spotify.com/album/1OBctVHKbHrQ2t5oCeHNtN?si=bq_JkEbuSe2uvE05o_-zKQ)
 
 ![Deathconsciousness](https://open.spotify.com/album/6MH3CAXp8AN8ELrbex18dM?si=yCTXGmXaRq-KJFwB6_bz-Q)
+:::
+:::
