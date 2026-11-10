@@ -5,4 +5,17 @@ repo: "https://github.com/huydo862003/huydo862003.github.io"
 site:
   origin: "https://huydo862003.github.io"
   title: "scrambled"
-  description: "Personal knowledge base"
+  description: "Scrambled thoughts on type theory, concurrency, design, and software engineering"
+  author: "Huy Do"
+  nav:
+    - title: "PLT"
+      link: "/programming-language-theory/index"
+      icon: icon.code
+    - title: "Design"
+      link: "/design/index"
+      icon: icon.brush
+    - title: "Software Eng"
+      link: "/software-engineering/index"
+      icon: icon.wrench
+    - title: "GitHub"
+      link: "https://github.com/huydo862003"
