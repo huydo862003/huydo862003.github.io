@@ -192,8 +192,8 @@ importers:
   .:
     devDependencies:
       typerighter:
-        specifier: ^0.58.1
-        version: 0.58.1(jiti@2.7.0)(typescript@7.0.2)
+        specifier: ^0.59.0
+        version: 0.59.0(jiti@2.7.0)(typescript@7.0.2)
       typescript:
         specifier: ^7.0.2
         version: 7.0.2
@@ -496,11 +496,11 @@ packages:
     peerDependencies:
       vite: ^5.2.0 || ^6 || ^7 || ^8
 
-  '@typerighter/rpc-client@0.58.1':
-    resolution: {integrity: sha512-/xDfL+OtLlxsH3zX43mWvDhzvRg7DQiBhCignFcmDMQzaflIAzCwfGLsHcQz6viX5bbbrTU29GCibiKDPaIXkQ==}
+  '@typerighter/rpc-client@0.59.0':
+    resolution: {integrity: sha512-l6EC9muJECtmiSlyWr5R1u7Uq2b5AS2r8WQTkHNUyQVs+7LglkhP+WlI/i8pb7mUj8nTMYymKM5Q9sACnsuEzQ==}
 
-  '@typerighter/rpc-server@0.58.1':
-    resolution: {integrity: sha512-cWUncP0a1hGrJQnAIuDCiB0fW6i4pqIdAb1v/ES4skfUtv2wdqwIO751u69dHXlxi678isadY2fw7LXiSym6ng==}
+  '@typerighter/rpc-server@0.59.0':
+    resolution: {integrity: sha512-7Y42Rk4skArhYV2HnU/XQHAv3YKyQR5E+fQUgUf2+8DzWWpZxk4ThmKyjyApF8j7dAq1VRrURP9tTB1s+ppYMA==}
 
   '@types/hast@3.0.5':
     resolution: {integrity: sha512-rp/ezSWaD1m44dPKICGhiskI13nVr7qTloFwDa/IYkhhf5nzwP+zIQcIJh3WIFSBOy/H1PzB40jPjMDksN4F+g==}
@@ -937,9 +937,6 @@ packages:
   striptags@3.2.0:
     resolution: {integrity: sha512-g45ZOGzHDMe2bdYMdIvdAfCQkCTDMGBazSw1ypMowwGIee7ZQ5dU0rBJ8Jqgl+jAKIv4dbeE1jscZq9wid1Tkw==}
 
-  tailwindcss@4.3.3:
-    resolution: {integrity: sha512-gOhV3P7ufE62QDGg1zVaTgCR+EtPv92k2nIhVcVKcLmxT1sUBsQGhnZj175j+MqRt4zLF7ic+sCYjfhxMxj7YQ==}
-
   tailwindcss@4.3.5:
     resolution: {integrity: sha512-FcQk9BuffmEHJP2G0XmB2SplU1aLTI7j07Kunk+U74Ny+XiWOtzXz9aujFZ/avntw1e2cOv/3PkgzflQ7gX2vQ==}
 
@@ -958,8 +955,8 @@ packages:
   trim-lines@3.0.1:
     resolution: {integrity: sha512-kRj8B+YHZCc9kQYdWfJB2/oUl9rA99qbowYYBtr4ui4mZyAQ2JpvVBd/6U2YloATfqBhBTSMhTpgBHtU0Mf3Rg==}
 
-  typerighter@0.58.1:
-    resolution: {integrity: sha512-j3EtR4mecC7X8Hz9blIa8l3REIupPNVz6cSLhrCcw1Y5DkMOOHwxGe+dp97XkKo7Gu9fq7Dm3kNKzbbESn5u+g==}
+  typerighter@0.59.0:
+    resolution: {integrity: sha512-C7wQNv9JoTwfCTvLPwopaHpkShmq9M9NzVIqQ5BtXu+4TPiBSKg69Nd0Sm/sgTWkejZ9fVb2t57KdIhmXjUPVQ==}
     hasBin: true
     peerDependencies:
       typescript: ^6.0.3
@@ -1289,9 +1286,9 @@ snapshots:
       tailwindcss: 4.3.5
       vite: 8.3.5(jiti@2.7.0)
 
-  '@typerighter/rpc-client@0.58.1': {}
+  '@typerighter/rpc-client@0.59.0': {}
 
-  '@typerighter/rpc-server@0.58.1':
+  '@typerighter/rpc-server@0.59.0':
     dependencies:
       dotenv: 18.0.7
 
@@ -1692,8 +1689,6 @@ snapshots:
 
   striptags@3.2.0: {}
 
-  tailwindcss@4.3.3: {}
-
   tailwindcss@4.3.5: {}
 
   tapable@2.3.3: {}
@@ -1707,7 +1702,7 @@ snapshots:
 
   trim-lines@3.0.1: {}
 
-  typerighter@0.58.1(jiti@2.7.0)(typescript@7.0.2):
+  typerighter@0.59.0(jiti@2.7.0)(typescript@7.0.2):
     dependencies:
       '@clack/prompts': 1.9.0
       '@floating-ui/vue': 2.0.1(vue@3.5.44(typescript@7.0.2))
@@ -1716,14 +1711,14 @@ snapshots:
       '@lucide/vue': 1.47.0(vue@3.5.44(typescript@7.0.2))
       '@shikijs/transformers': 4.6.0
       '@tailwindcss/vite': 4.3.5(vite@8.3.5(jiti@2.7.0))
-      '@typerighter/rpc-client': 0.58.1
-      '@typerighter/rpc-server': 0.58.1
+      '@typerighter/rpc-client': 0.59.0
+      '@typerighter/rpc-server': 0.59.0
       '@vitejs/plugin-vue': 6.0.10(vite@8.3.5(jiti@2.7.0))(vue@3.5.44(typescript@7.0.2))
       cac: 7.1.0
       picocolors: 1.1.1
       shiki: 4.6.0
       striptags: 3.2.0
-      tailwindcss: 4.3.3
+      tailwindcss: 4.3.5
       temml: 0.13.5
       typescript: 7.0.2
       vite: 8.3.5(jiti@2.7.0)
