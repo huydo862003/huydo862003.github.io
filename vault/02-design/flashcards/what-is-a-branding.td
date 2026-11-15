@@ -1,0 +1,13 @@
+---
+_type: DesignFlashcard
+_label: 'What is a branding?'
+deck: 'design aspect'
+concepts:
+  - fref("/02-design/concepts/branding.td")
+---
+
+::: flashcard
+What is a branding?
+=== key
+The strategic application of distinct visual and tonal identity elements-like logos, colors, and voice-to create a unique, recognizable, and emotional connection with the user.
+:::

@@ -1,0 +1,15 @@
+---
+_type: PltConcept
+_label: 'Judgment assertion judgment form judgment form instances'
+journey: fref("/01-programming-language-theory/index.td")
+status: 'learning'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
+---
+
+- A ${fref("/01-programming-language-theory/02-concepts/judgment-form.td")} is a relation, interpreted as a ${fref("/01-programming-language-theory/02-concepts/predicate.td")}.
+
+    Typically written as $- \ J$ (for unary relation).
+
+- Take the judgment form above, the notation $a\ J$, for some value $a$, is an instance of the judgment form.
+- Take the judgment form instance above, $a$ is the judgment form instance’s subject.
+- A judgment/assertion is a stance on whether an instance of the judgment holds or not.

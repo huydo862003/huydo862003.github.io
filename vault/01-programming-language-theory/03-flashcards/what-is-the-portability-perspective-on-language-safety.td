@@ -1,0 +1,17 @@
+---
+_type: PltFlashcard
+_label: 'What is the portability perspective on language safety?'
+deck: 'type theory'
+concepts:
+  - fref("/01-programming-language-theory/02-concepts/language-safety.td")
+books:
+  - fref("/01-programming-language-theory/01-books/01-types-and-programming-languages/01-chapter-1-introduction.td")
+tags:
+  - 'type theory'
+---
+
+::: flashcard
+What is the portability perspective on language safety?
+=== key
+A safe language can be totally defined by its programmer's manual.
+:::

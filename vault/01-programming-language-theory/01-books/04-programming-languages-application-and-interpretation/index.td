@@ -1,0 +1,57 @@
+---
+_type: PltBook
+_label: 'Programming languages: application and interpretation'
+date: '2012'
+phase: fref("/01-programming-language-theory/phases/phase-01-foundations-of-program-specification-and-semantics.td")
+journey: fref("/01-programming-language-theory/index.td")
+description: 'An accessible introduction to programming language design through implementation. Builds interpreters from scratch, covering closures, objects, mutation, and types using the SMoL (Standard Model of Languages) framework.'
+url: "https://www.plai.org/"
+tags:
+  - 'fundamentals of programming language'
+  - 'lambda calculus'
+children:
+  - fref("/01-programming-language-theory/01-books/04-programming-languages-application-and-interpretation/01-chapter-1-learning-smol-standard-model-of-languages.td")
+  - fref("/01-programming-language-theory/01-books/04-programming-languages-application-and-interpretation/02-chapter-2-evaluation.td")
+  - fref("/01-programming-language-theory/01-books/04-programming-languages-application-and-interpretation/03-chapter-3-syntactic-sugar.td")
+  - fref("/01-programming-language-theory/01-books/04-programming-languages-application-and-interpretation/04-chapter-4-objects.td")
+  - fref("/01-programming-language-theory/01-books/04-programming-languages-application-and-interpretation/05-chapter-5-types.td")
+---
+
+## Why study programming languages?
+
+> Force precise thinking. Prove what code can and can't express. Understand why companies create languages for competitive edge.
+
+## Core learning framework
+
+### SMoL - Standard Model of Languages
+
+The shared DNA of Java, Python, JavaScript, Ruby, etc:
+
+| Feature | What it means |
+| --- | --- |
+| Automatic memory | No manual allocation |
+| Eager evaluation | Compute arguments first |
+| First-class functions | Pass functions like data |
+| Mutable state | Variables can change |
+
+**Key insight:** Think in *features*, not paradigms (OOP vs functional is outdated).
+
+### SImPl - Standard Implementation Plan
+
+`Parse -> Syntax tree -> Recursive processing`
+
+Same pattern powers interpreters, compilers, and type-checkers.
+
+### Mystery languages
+
+Same syntax, different behaviors -> learn by contrasting how features vary.
+
+## Tools
+
+| Tool | Purpose |
+| --- | --- |
+| **SMoL tutor** | Automated practice |
+| **Stacker** | Visualize program execution |
+| **Racket #lang** | Build custom languages |
+
+Resources: `cs.brown.edu/courses/csci1730/`

@@ -1,0 +1,18 @@
+---
+_type: PltFlashcard
+_label: 'What are the pros of lightweight formal methods'
+deck: 'language theory'
+concepts:
+  - fref("/01-programming-language-theory/02-concepts/type-system.td")
+books:
+  - fref("/01-programming-language-theory/01-books/01-types-and-programming-languages/01-chapter-1-introduction.td")
+tags:
+  - 'language theory'
+---
+
+::: flashcard
+What are the pros of lightweight formal methods
+=== key
+- Do not require high sophistication from the side of the programmer, more accessible.
+- Practical.
+:::

@@ -1,0 +1,15 @@
+---
+_type: PltConcept
+_label: 'First class functional programming pure'
+journey: fref("/01-programming-language-theory/index.td")
+status: 'learning'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
+---
+
+The status of an entity being a first-class citizen in a language  -  typically:
+
+- Can be stored in variables.
+- Passed as arguments.
+- Returned from functions.
+- Created at runtime.
+- Embedded in data structures without restriction.

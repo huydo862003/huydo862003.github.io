@@ -1,0 +1,48 @@
+---
+_type: PltConcept
+_label: 'Untyped calculus of booleans and numbers'
+phase: fref("/01-programming-language-theory/phases/phase-01-foundations-of-program-specification-and-semantics.td")
+journey: fref("/01-programming-language-theory/index.td")
+status: 'learning'
+books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
+tags:
+  - 'formal system'
+  - 'lambda calculus'
+  - 'semantics'
+  - 'syntax & grammar'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
+---
+
+$$
+\begin{array}{l r c l}
+\textbf{term} \\
+t & ::= & & \text{tru}           \\
+&    & & \text{fls}\\
+&    & & 0\\
+&    & & \text{if}\ t\ \text{then}\ t\ \text{else}\ t\\
+&    & & \text{succ}\ t\\
+&    & & \text{pred}\ t\\
+&    & & \text{iszero}\ t\\
+\\ \\
+\textbf{syntactic category} \\
+nv & ::= & & \text{0} \\
+&     & & \text{succ}\ nv\\ \\
+\textbf{value}\\
+v & ::= & & \text{tru} \\
+&     & & \text{fls} \\
+&     & & nv \\ \\
+\textbf{evaluation} \\
+\text{if}\ \text{tru}\ \text{then}\ t_1\ \text{else}\ t_2\ \to \ t_1 \\ \\
+\text{if}\ \text{fls}\ \text{then}\ t_1\ \text{else}\ t_2\ \to \ t_2 \\ \\
+$$
+\dfrac{t_0 \to t_0'}{\text{if}\ t_0 \ \text{then}\ t_1\ \text{else}\ t_2 \to \text{if}\ t_0' \ \text{then}\ t_1\ \text{else}\ t_2 } \\ \\
+\dfrac{t \to t'}{\text{succ}\ t \to \text{succ}\ t'} \\ \\
+\dfrac{t \to t'}{\text{pred}\ t \to \text{pred}\ t'} \\ \\
+\text{pred}\ (\text{succ}\ nv) \to nv \\ \\
+\text{pred}\ 0 \to 0 \\ \\
+\text{iszero}\ 0 \to \text{tru} \\ \\
+\text{iszero}\ (\text{succ}\ nv) \to \text{fls} \\ \\
+\dfrac{t \to t'}{\text{iszero}\ t \to \text{iszero}\ t'}
+\end{array}
+$$
+$$

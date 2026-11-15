@@ -1,0 +1,23 @@
+---
+_type: PltFlashcard
+_label: 'How to define recursive types in rocq?'
+deck: 'rocq programming language'
+concepts:
+  - fref("/01-programming-language-theory/02-concepts/recursive-type.td")
+books:
+  - fref("/01-programming-language-theory/01-books/03-software-foundations/01-logical-foundations/01-chapter-1-basics-functional-programming-in-rocq.td")
+tags:
+  - 'rocq programming language'
+---
+
+::: flashcard
+How to define recursive types in rocq?
+=== key
+Just use the `Inductive` type definition. For example:
+
+```coq
+Inductive nat : Type :=
+	| O
+	| S (n : nat).
+```
+:::

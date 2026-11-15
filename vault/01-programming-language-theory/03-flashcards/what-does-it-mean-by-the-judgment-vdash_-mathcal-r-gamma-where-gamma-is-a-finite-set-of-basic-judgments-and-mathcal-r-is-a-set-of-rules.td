@@ -1,0 +1,12 @@
+---
+_type: PltFlashcard
+_label: 'What does it mean by the judgment $\vdash_{\mathcal{R}} \Gamma$, where $\Gamma$ is a finite set of basic judgments and $\mathcal{R}$ is a set of rules?'
+deck: 'general'
+books:
+  - fref("/01-programming-language-theory/01-books/03-software-foundations/01-logical-foundations/03-chapter-3-hypothetical-and-general-judgments.td")
+---
+
+::: flashcard
+What does it mean by the judgment $\vdash_\mathcal{r} \gamma$, where $\gamma$ is a finite set of basic judgments and $\mathcal{r}$ is a set of rules?
+=== key
+:::

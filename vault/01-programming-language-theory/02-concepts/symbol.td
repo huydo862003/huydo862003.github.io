@@ -1,0 +1,12 @@
+---
+_type: PltConcept
+_label: 'Symbol'
+journey: fref("/01-programming-language-theory/index.td")
+status: 'mastered'
+books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
+tags:
+  - 'syntax & grammar'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
+---
+
+As per Practical foundations for programming languages's terminology, an index to the families of operators. Given an ${fref("/01-programming-language-theory/02-concepts/indexed-operator.td")} $o$ and a symbol $u$, $o[u]$ is an operator.

@@ -1,0 +1,10 @@
+---
+_type: DesignConcept
+_label: 'Modularity'
+journey: fref("/02-design/index.td")
+status: 'mastered'
+tags:
+  - 'design system'
+---
+
+The architectural principle of building interfaces from distinct, independent units that can be combined, swapped, or reused without breaking the larger system.

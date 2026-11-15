@@ -1,0 +1,14 @@
+---
+_type: PltConcept
+_label: 'Denotational semantics'
+phase: fref("/01-programming-language-theory/phases/phase-01-foundations-of-program-specification-and-semantics.td")
+journey: fref("/01-programming-language-theory/index.td")
+status: 'mastered'
+books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
+tags:
+  - 'formal system'
+  - 'semantics'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
+---
+
+A style of semantics that gives meanings to terms compositionally by mapping them to mathematical objects that possess interesting behaviors.

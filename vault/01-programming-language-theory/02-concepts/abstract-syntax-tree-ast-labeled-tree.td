@@ -1,0 +1,17 @@
+---
+_type: PltConcept
+_label: 'Abstract syntax tree ast labeled tree'
+journey: fref("/01-programming-language-theory/index.td")
+status: 'learning'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
+---
+
+::: info
+(Syntax & Grammar) According to Practical foundations for programming languages , a tree representation of a term's essential structure (not necessarily a program), omitting superficial syntactic details like parentheses, delimiters, and keywords. Can be of some specified Sorts.
+:::
+
+Structure-wise, an ordered tree whose:
+
+- Leaves are Variables/Operators.
+- Internal nodes are Operators.
+- Operators have ${fref("/01-programming-language-theory/02-concepts/actual-parameter-argument.td")}s as children.

@@ -1,0 +1,15 @@
+---
+_type: PltFlashcard
+_label: 'What is usually used as a state for the abstract machine in operational semantics?'
+deck: 'language theory'
+concepts:
+  - fref("/01-programming-language-theory/02-concepts/operational-semantics.td")
+tags:
+  - 'language theory'
+---
+
+::: flashcard
+What is usually used as a state for the abstract machine in operational semantics?
+=== key
+The term itself.
+:::

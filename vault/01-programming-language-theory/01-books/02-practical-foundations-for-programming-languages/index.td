@@ -1,0 +1,67 @@
+---
+_type: PltBook
+_label: 'Practical foundations for programming languages'
+date: '2016'
+phase: fref("/01-programming-language-theory/phases/phase-01-foundations-of-program-specification-and-semantics.td")
+journey: fref("/01-programming-language-theory/index.td")
+description: 'A mathematically rigorous treatment of programming language theory grounded in proof theory and type theory. Defines language concepts through static and dynamic semantics using only elementary mathematics.'
+isbn: '978-1107150300'
+url: "https://www.cs.cmu.edu/~rwh/pfpl/"
+cover: fref("/01-programming-language-theory/01-books/02-practical-foundations-for-programming-languages/assets/practical-foundations-for-programming-languages.jpg")
+tags:
+  - 'fundamentals of programming language'
+  - 'lambda calculus'
+  - 'semantics'
+  - 'syntax & grammar'
+children:
+  - fref("/01-programming-language-theory/01-books/02-practical-foundations-for-programming-languages/00-preface.td")
+  - fref("/01-programming-language-theory/01-books/02-practical-foundations-for-programming-languages/01-part-i-judgments-and-rules/index.td")
+---
+
+- Comprehensive theory of programming languages based on:
+
+  - Type system.
+
+  - [Small-step/Structural operational semantics (SOS)](/plt/concepts/small-step-structural-operational-semantics-sos).
+
+- Language concepts are precisely defined by:
+
+  - Static semantics.
+
+  - Dynamic semantics.
+
+  -> Essential intuitive and rigorous tools.
+
+  -> Rely on only elementary mathematics.
+
+- Usages of Static semantics and Dynamic semantics:
+
+  - Analyze and prove properties of languages.
+
+  - Provide the framework for combining and comparing language features.
+
+- Concepts:
+
+  - Fundamental data types: Sums and products.
+
+  - Polymorphic and abstract types.
+
+  - Dynamic typing.
+
+  - Dynamic dispatch.
+
+  - Subtyping and refinement types.
+
+  - Symbols and dynamic classification.
+
+  - Parallelism and cost semantics.
+
+  - Concurrency and distribution.
+
+- Applications:
+
+  - Language implementation.
+
+  - Development of logics for reasoning about programs.
+
+  - Formal verification language properties such as type safety.

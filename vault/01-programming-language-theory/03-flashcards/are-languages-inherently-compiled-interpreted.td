@@ -1,0 +1,20 @@
+---
+_type: PltFlashcard
+_label: 'Are languages inherently compiled/interpreted?'
+deck: 'programming language basic'
+books:
+  - fref("/01-programming-language-theory/01-books/04-programming-languages-application-and-interpretation/02-chapter-2-evaluation.td")
+tags:
+  - 'programming language basic'
+---
+
+::: flashcard
+Are languages inherently compiled/interpreted?
+=== key
+- **No**: Languages are not inherently compiled or interpreted.
+- Language specifications only specify syntax and semantics, but usually do not require a specific implementation.
+- Examples:
+  - C++ can be interpreted.
+  - Python can be compiled.
+  - Javascript runtimes like browser opt for a hybrid approach.
+:::

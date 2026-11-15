@@ -1,0 +1,14 @@
+---
+_type: PltConcept
+_label: 'Multi-step evaluation relation'
+journey: fref("/01-programming-language-theory/index.td")
+status: 'mastered'
+books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
+tags:
+  - 'lambda calculus'
+  - 'semantics'
+  - 'set theory & relation'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
+---
+
+The ${fref("/01-programming-language-theory/02-concepts/reflexive-closure.td")} and ${fref("/01-programming-language-theory/02-concepts/transitive-closure.td")} of the ${fref("/01-programming-language-theory/02-concepts/one-step-evaluation-relation.td")}. The relation is often denoted as $\to^*$.

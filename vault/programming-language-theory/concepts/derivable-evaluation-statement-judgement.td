@@ -1,9 +1,0 @@
----
-_type: PltConcept
-_label: 'Derivable evaluation statement judgement'
-journey: fref("/programming-language-theory/index.td")
-status: 'learning'
-flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
----
-
-An ${fref("/programming-language-theory/concepts/evaluation-statement-judgement.td")} is derivable if there is a ${fref("/programming-language-theory/concepts/derivation-tree.td")} conforming to the evaluation relation whose root is that evaluation statement.

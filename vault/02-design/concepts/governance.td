@@ -1,0 +1,10 @@
+---
+_type: DesignConcept
+_label: 'Governance'
+journey: fref("/02-design/index.td")
+status: 'reviewing'
+tags:
+  - 'design ops'
+---
+
+The set of established protocols, roles, and review processes that control how a ${fref("/02-design/concepts/design-system.td")} is maintained, updated, and evolved to prevent chaos.
