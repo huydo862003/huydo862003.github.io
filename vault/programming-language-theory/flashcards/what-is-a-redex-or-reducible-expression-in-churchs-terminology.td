@@ -1,6 +1,6 @@
 ---
 _type: PltFlashcard
-_label: 'What is a redex or reducible expression in church''s terminology?'
+_label: "What is a redex or reducible expression in Church's terminology?"
 deck: 'pure lambda calculus'
 concepts:
   - fref("/programming-language-theory/concepts/beta-redex-reducible-expression.td")

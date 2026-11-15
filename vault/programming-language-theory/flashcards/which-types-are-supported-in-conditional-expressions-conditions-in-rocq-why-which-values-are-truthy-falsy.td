@@ -1,6 +1,6 @@
 ---
 _type: PltFlashcard
-_label: 'Which types are supported in conditional expressions'' conditions in rocq? why? which values are truthy/falsy?'
+_label: "Which types are supported in conditional expressions' conditions in Rocq? Why? W"
 deck: 'rocq programming language'
 concepts:
   - fref("/programming-language-theory/concepts/conditional-expression.td")

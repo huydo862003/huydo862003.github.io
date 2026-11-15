@@ -1,6 +1,6 @@
 ---
 _type: PltFlashcard
-_label: 'What is an example for the tradeoffs between the type system''s expressiveness & decidability?'
+_label: "What is an example for the tradeoffs between the type system's expressiveness & "
 deck: 'language theory'
 books:
   - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")

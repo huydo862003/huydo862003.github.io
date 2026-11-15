@@ -1,6 +1,6 @@
 ---
 _type: PltFlashcard
-_label: 'How to utilize the property of word-aligned addresses to optimize number''s placements?'
+_label: "How to utilize the property of word-aligned addresses to optimize number's place"
 deck: 'compiler implementation'
 books:
   - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")

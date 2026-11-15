@@ -1,6 +1,6 @@
 ---
 _type: PltFlashcard
-_label: 'Whats the relation between runtime errors and stuckness?'
+_label: "What's the relation between the Y-combinator and the omega combinator?"
 deck: 'language theory'
 concepts:
   - fref("/programming-language-theory/concepts/pure-untyped-lambda-calculus.td")

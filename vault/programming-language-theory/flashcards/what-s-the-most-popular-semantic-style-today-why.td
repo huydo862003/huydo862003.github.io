@@ -1,6 +1,6 @@
 ---
 _type: PltFlashcard
-_label: 'Whats the most popular semantic style today? Why?'
+_label: "What's the most popular semantic style today? Why?"
 deck: 'language theory'
 concepts:
   - fref("/programming-language-theory/concepts/big-step-natural-operational-semantics.td")
