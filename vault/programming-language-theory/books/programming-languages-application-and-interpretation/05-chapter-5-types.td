@@ -1448,7 +1448,7 @@ m(new mt());     // OK
 m(new empty());  // OK - same structure!
 ```
 
-**Also called:** "**Duck typing**" (informally) - "if it quacks like a duck\ldots" The name comes from the idea that if an object has all the methods you need, you can use it regardless of its declared type.
+**Also called:** "**Duck typing**" (informally) - "if it quacks like a duck..." The name comes from the idea that if an object has all the methods you need, you can use it regardless of its declared type.
 
 ## Subtyping
 

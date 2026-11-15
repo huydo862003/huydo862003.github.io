@@ -199,7 +199,7 @@ The syntax of lambda calculus
   - $\text{id} = \lambda x.\ x$.
   - Consider this term: $t = \text{id}\ (\text{id}\ (\lambda z.\ \text{id}\ z))$.
 
-        There are 3 redexes: The outer $\text{id}\ (...)$, the inner $\text{id}\  (\lambdaz.\ \text{id}\ z)$, and the $\text{id}\ z$ inside.
+        There are 3 redexes: The outer $\text{id}\ (...)$, the inner $\text{id}\  (\lambda z.\ \text{id}\ z)$, and the $\text{id}\ z$ inside.
 
 - There can be many reductions for the full beta-reduction strategy.
 - **Full beta-reduction**
@@ -246,7 +246,7 @@ The syntax of lambda calculus
 
         $\not \to$
 
-  - Here, $\lambdaz.\, \text{id}\,  z$ is treated as a **normal form** (no further reduction inside the body).
+  - Here, $\lambda z.\, \text{id}\,  z$ is treated as a **normal form** (no further reduction inside the body).
   - Variants of **call by name** appear in languages like **Algol 60** and in optimized form (**call by need**), **Haskell**.
 
 - **Call by need**
@@ -656,7 +656,7 @@ $\text{sum} = \text{fix}\ \lambda g.\ \lambda l.\ \text{if } \text{isnil}\ l \te
   - Their behavior is fixed by evaluation rules (e.g. $\text{succ}\ 2 = 3$, $\text{iszero}\ 0 = \text{true}$).
 - **Church encoding idea:** represent all of these as **lambda-terms**.
   - **Zero:** $c_0 = \lambda s.\ \lambda z.\ z$
-    - Other **behaviorally equivalent** (non-canonical) terms (e.g. $\lambdas.\ \lambdaz.\ (\lambdax.\ x)\ z$) also count as representations of 0.
+    - Other **behaviorally equivalent** (non-canonical) terms (e.g. $\lambda s.\ \lambda z.\ (\lambda x.\ x)\ z$) also count as representations of 0.
   - **Successor/predecessor:**
     - $\text{scc}$ represents **$\text{succ}$**: if $t$ represents $n$, then $\text{scc}\ t$ evaluates to a representation of $n + 1$.
     - $\text{prd}$ represents **$\text{pred}$**: if $t$ represents $n$, then $\text{prd}\ t$ evaluates to a representation of $\max(n-1, 0)$.
@@ -677,7 +677,7 @@ $\text{sum} = \text{fix}\ \lambda g.\ \lambda l.\ \text{if } \text{isnil}\ l \te
 
 ### Syntax
 
-- The usual \lambda-calculus grammar (e.g. $t ::= x\ \vert  \ \lambdax.t\  \vert \ t\ t$) is shorthand for an **inductively defined set of abstract syntax trees**.
+- The usual \lambda-calculus grammar (e.g. $t ::= x\ \vert  \ \lambda x.t\  \vert \ t\ t$) is shorthand for an **inductively defined set of abstract syntax trees**.
 - Terms:
   - Fix a countable set of **variable names** $V$.
   - The set of terms **$T$** is the **smallest** set such that:
@@ -718,7 +718,7 @@ TODO
     Example: $[x \mapsto y](\lambda x.\ x) = \lambda x.\ y$
 
     -> This conflicts with the basic intuition about functional abstractions that **the
-    names of bound variables do not matter**: The **identity function** is exactly the same whether we write it $\lambdax.\ x$ or $\lambday.\ y$ or $\lambda\text{franz}.\ \text{franz}$. If these do not behave exactly the same under substitution, then they will not behave the same under reduction either, which seems wrong.
+    names of bound variables do not matter**: The **identity function** is exactly the same whether we write it $\lambda x.\ x$ or $\lambda y.\ y$ or $\lambda\text{franz}.\ \text{franz}$. If these do not behave exactly the same under substitution, then they will not behave the same under reduction either, which seems wrong.
 
 - Mistake: No distinction between **free occurrences of a variable** (which should get replaced during substitution) and **bound ones**, which should not.
 
@@ -758,20 +758,20 @@ TODO
 
 #### **Alpha-conversion**
 
-- **\alpha-conversion:** Consistent renaming of a bound variable - $\lambday.\ x\ y \equiv \lambdaw.\ x\ w$.
-- **Convention:** Terms that differ only by renaming bound variables are **interchangeable** - We work **"up to \alpha-conversion"**.
+- fref("/programming-language-theory/concepts/alpha-conversion-renaming-variable-capture-capture-avoiding.td"): Consistent renaming of a bound variable - $\lambda y.\ x\ y \equiv \lambda w.\ x\ w$.
+- **Convention:** Terms that differ only by renaming bound variables are **interchangeable** - We work "up to fref("/programming-language-theory/concepts/alpha-conversion-renaming-variable-capture-capture-avoiding.td")".
 - If substitution would be undefined because $y \in \text{FV}(s)$, we **rename** the bound variable first.
 
     Example:
 
     $[x \mapsto y\ z](\lambda y.\ x\ y)$
 
-  - First rename: $\lambday.\ x\ y$ \to $\lambdaw.\ x\ w$
+  - First rename: $\lambda y.\ x\ y$ \to $\lambda w.\ x\ w$
   - Then: $[x \mapsto y\ z](\lambda w.\ x\ w) = \lambda w.\ (y\ z\ w)$
 
 #### **Final capture-avoiding substitution definition**
 
-- Using the \alpha-conversion convention, we assume the binder $y$ is always chosen **fresh** (\neq $x$ and not free in $s$), so we can drop the special case:
+- Using the fref("/programming-language-theory/concepts/alpha-conversion-renaming-variable-capture-capture-avoiding.td") convention, we assume the binder $y$ is always chosen **fresh** (\neq $x$ and not free in $s$), so we can drop the special case:
   - $[x \mapsto s] x = s$
   - $[x \mapsto s] y = y \quad \text{if } y \ne x$
   - $[x \mapsto s] (\lambda y.\ t_1) = \lambda y.\ [x \mapsto s]\ t_1 \quad \text{if } y \ne x \text{ and } y \notin \text{FV}(s)$
@@ -798,7 +798,7 @@ The untyped lambda calculus \lambda
     2. Reduce $t_2$ to a value (`E-App2`).
     3. Apply \beta (`E-AppAbs`).
 - Special property of the pure \lambda-calculus
-  - Since **only \lambda-abstractions are values**, once $t_1$ has been reduced to a value (by `E-App1`), it **must** be a $\lambdax.\ t$.
+  - Since **only \lambda-abstractions are values**, once $t_1$ has been reduced to a value (by `E-App1`), it **must** be a $\lambda x.\ t$.
   - This breaks once we enrich the language (e.g. add primitive booleans, numbers), where **values** include more forms than just \lambda-abstractions.
 
 **Exercise 5.3.6** Adapt these rules to describe the other three strategies for evaluation-full beta-reduction, normal-order, and lazy evaluation.
