@@ -2,7 +2,7 @@
 _type: PltConcept
 _label: 'Law of excluded middle (LEM)'
 journey: fref("/programming-language-theory/index.td")
-status: 'reviewing'
+status: 'mastered'
 tags:
   - 'logic'
   - 'syntax & grammar'

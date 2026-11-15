@@ -2,7 +2,7 @@
 _type: PltConcept
 _label: 'Double negation elimination'
 journey: fref("/programming-language-theory/index.td")
-status: 'reviewing'
+status: 'mastered'
 tags:
   - 'logic'
   - 'syntax & grammar'

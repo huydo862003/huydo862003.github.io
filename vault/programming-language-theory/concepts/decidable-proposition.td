@@ -2,7 +2,7 @@
 _type: PltConcept
 _label: 'Decidable proposition'
 journey: fref("/programming-language-theory/index.td")
-status: 'reviewing'
+status: 'mastered'
 tags:
   - 'logic'
 tags:

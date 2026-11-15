@@ -2,7 +2,7 @@
 _type: PltConcept
 _label: 'Programming paradigm'
 journey: fref("/programming-language-theory/index.td")
-status: 'reviewing'
+status: 'mastered'
 tags:
   - 'programming paradigm'
 tags:

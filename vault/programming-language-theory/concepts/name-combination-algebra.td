@@ -2,7 +2,7 @@
 _type: PltConcept
 _label: 'Name combination algebra'
 journey: fref("/programming-language-theory/index.td")
-status: 'reviewing'
+status: 'mastered'
 books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
 tags:
   - 'other mathematics'

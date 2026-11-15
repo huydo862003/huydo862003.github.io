@@ -3,7 +3,7 @@ _type: PltConcept
 _label: 'Application/Function call'
 phase: fref("/programming-language-theory/phases/phase-01-foundations-of-program-specification-and-semantics.td")
 journey: fref("/programming-language-theory/index.td")
-status: 'learning'
+status: 'mastered'
 books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
 tags:
   - 'language feature/design'

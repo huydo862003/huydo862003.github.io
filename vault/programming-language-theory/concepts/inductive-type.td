@@ -2,7 +2,7 @@
 _type: PltConcept
 _label: 'Inductive type'
 journey: fref("/programming-language-theory/index.td")
-status: 'reviewing'
+status: 'mastered'
 tags:
   - 'language feature/design'
   - 'type theory'

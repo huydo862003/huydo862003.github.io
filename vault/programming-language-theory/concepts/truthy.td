@@ -2,7 +2,7 @@
 _type: PltConcept
 _label: 'Truthy'
 journey: fref("/programming-language-theory/index.td")
-status: 'reviewing'
+status: 'mastered'
 tags:
   - 'language feature/design'
   - 'semantics'

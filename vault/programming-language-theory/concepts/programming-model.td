@@ -2,7 +2,7 @@
 _type: PltConcept
 _label: 'Programming model'
 journey: fref("/programming-language-theory/index.td")
-status: 'reviewing'
+status: 'mastered'
 tags:
   - 'data structure & algorithm'
   - 'programming paradigm'

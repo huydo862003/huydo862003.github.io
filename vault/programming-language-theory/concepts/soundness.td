@@ -2,7 +2,7 @@
 _type: PltConcept
 _label: 'Soundness'
 journey: fref("/programming-language-theory/index.td")
-status: 'reviewing'
+status: 'mastered'
 tags:
   - 'formal system'
   - 'logic'
