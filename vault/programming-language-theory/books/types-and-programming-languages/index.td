@@ -2,6 +2,7 @@
 _type: PltBook
 _label: 'Types and programming languages'
 date: '2002'
+phase: fref("/programming-language-theory/phases/phase-01-foundations-of-program-specification-and-semantics.td")
 journey: fref("/programming-language-theory/index.td")
 description: 'A rigorous and comprehensive treatment of type systems for programming languages. Covers the lambda calculus, subtyping, bounded polymorphism, recursive types, and System F, grounded in formal proof theory.'
 isbn: '978-0262162098'
@@ -9,10 +10,8 @@ url: "https://www.cis.upenn.edu/~bcpierce/tapl/"
 status: "Reading"
 cover: fref("/programming-language-theory/books/types-and-programming-languages/assets/types-and-programming-languages.jpg")
 tags:
-  - 'type theory'
   - 'lambda calculus'
-  - 'type systems'
-  - 'programming languages'
+  - 'type theory'
 children:
   - fref("/programming-language-theory/books/types-and-programming-languages/01-chapter-1-introduction.td")
   - fref("/programming-language-theory/books/types-and-programming-languages/02-chapter-2-mathematical-preliminaries.td")

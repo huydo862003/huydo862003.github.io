@@ -3,12 +3,12 @@ _type: PltConcept
 _label: 'Core calculus/language'
 journey: fref("/programming-language-theory/index.td")
 status: 'learning'
-books:
-  - fref("/programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/03-chapter-5-the-untyped-pure-lambda-calculus.td")
+books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
 tags:
   - 'formal system'
   - 'linguistics'
-  - 'syntax grammar'
+  - 'syntax & grammar'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 A minimal formal language capturing the essential features of a paradigm or language, used to study semantics and prove properties without the complexity of full-scale syntax.

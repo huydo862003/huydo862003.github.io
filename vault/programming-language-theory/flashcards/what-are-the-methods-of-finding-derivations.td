@@ -1,11 +1,15 @@
 ---
 _type: PltFlashcard
 _label: 'What are the methods of finding derivations?'
-deck: 'logic tools'
+deck: 'logic & tools'
 concepts:
   - fref("/programming-language-theory/concepts/forward-chaining.td")
 books:
   - fref("/programming-language-theory/books/software-foundations/01-logical-foundations/02-chapter-2-inductive-definitions.td")
+tags:
+  - 'logic & tools'
+  - 'set theory & relation'
+  - 'proof technique'
 ---
 
 ::: flashcard

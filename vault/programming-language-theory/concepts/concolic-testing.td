@@ -3,10 +3,12 @@ _type: PltConcept
 _label: 'Concolic testing'
 journey: fref("/programming-language-theory/index.td")
 status: 'learning'
-books:
-  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
+books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
 tags:
   - 'design principle'
+tags:
+  - 'design principle'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 A testing technique combining concrete execution with symbolic reasoning - runs program with real values while simultaneously tracking symbolic constraints, then solves constraints to generate inputs

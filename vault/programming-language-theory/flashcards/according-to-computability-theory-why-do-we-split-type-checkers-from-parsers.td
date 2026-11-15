@@ -4,6 +4,8 @@ _label: 'According to computability theory, why do we split type checkers from p
 deck: 'compiler implementation'
 books:
   - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
+tags:
+  - 'compiler implementation'
 ---
 
 ::: flashcard

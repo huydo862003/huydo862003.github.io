@@ -5,7 +5,8 @@ journey: fref("/programming-language-theory/index.td")
 status: 'reviewing'
 tags:
   - 'logic'
-  - 'syntax grammar'
+  - 'syntax & grammar'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 holds. It asserts that every statement is either true or false, with no middle ground.

@@ -8,10 +8,8 @@ isbn: '978-0124104099'
 url: "https://www.cs.rochester.edu/~scott/pragmatics/"
 cover: fref("/programming-language-theory/books/assets/programming-language-pragmatics.jpg")
 tags:
-  - 'programming languages'
+  - 'fundamentals of programming language'
   - 'semantics'
-  - 'compilers'
-  - 'language design'
 ---
 
 

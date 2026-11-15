@@ -8,10 +8,9 @@ isbn: '978-0262062794'
 url: "https://eopl3.com/"
 cover: fref("/programming-language-theory/books/assets/essentials-of-programming-languages.jpg")
 tags:
-  - 'interpreters'
-  - 'continuation-passing style'
-  - 'programming languages'
-  - 'Scheme'
+  - 'fundamentals of programming language'
+  - 'lambda calculus'
+  - 'semantics'
 ---
 
 

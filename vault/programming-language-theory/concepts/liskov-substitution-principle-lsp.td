@@ -3,12 +3,16 @@ _type: PltConcept
 _label: 'Liskov substitution principle (LSP)'
 journey: fref("/programming-language-theory/index.td")
 status: 'learning'
-books:
-  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
+books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
 tags:
   - 'design principle'
   - 'programming paradigm'
   - 'semantics'
+tags:
+  - 'design principle'
+  - 'programming paradigm'
+  - 'semantics'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 A design principle for OO inheritance stating that subtypes must preserve behavioral contracts of supertypes, ensuring code using parent class works correctly with any child class - preventing bugs fr

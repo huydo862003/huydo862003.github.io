@@ -1,12 +1,14 @@
 ---
 _type: PltFlashcard
 _label: 'Trait vs mixin?'
-deck: 'pure-lambda-calculus'
+deck: 'pure lambda calculus'
 concepts:
   - fref("/programming-language-theory/concepts/trait.td")
   - fref("/programming-language-theory/concepts/mixin.td")
 books:
   - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/04-chapter-4-objects.td")
+tags:
+  - 'pure lambda calculus'
 ---
 
 ::: flashcard

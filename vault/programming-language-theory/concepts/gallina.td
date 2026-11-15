@@ -3,12 +3,12 @@ _type: PltConcept
 _label: 'Gallina'
 journey: fref("/programming-language-theory/index.td")
 status: 'reviewing'
-books:
-  - fref("/programming-language-theory/books/software-foundations/01-logical-foundations/01-chapter-1-basics-functional-programming-in-rocq.td")
+books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
 tags:
   - 'formal system'
-  - 'language feature design'
-  - 'proof reason technique'
+  - 'language feature/design'
+  - 'proof/reason technique'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 A ${fref("/programming-language-theory/concepts/functional-programming.td")} language (${fref("/programming-language-theory/concepts/rocq.td")}'s specification language) that allows writing purely functional programs and formal proofs, using ${fref("/programming-language-theory/concepts/dependent-type.td")} to express precise logical properties.

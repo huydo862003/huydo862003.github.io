@@ -2,15 +2,17 @@
 _type: PltBook
 _label: 'Software foundations'
 date: '2024'
+phase: fref("/programming-language-theory/phases/phase-01-foundations-of-program-specification-and-semantics.td")
 journey: fref("/programming-language-theory/index.td")
 description: 'A machine-checked introduction to the mathematical underpinnings of reliable software. Uses the Rocq (Coq) proof assistant to teach logic, functional programming, operational semantics, and formal verification.'
 url: "https://softwarefoundations.cis.upenn.edu/"
 tags:
-  - 'formal verification'
-  - 'Rocq'
-  - 'Coq'
+  - 'fundamentals of programming language'
+  - 'lambda calculus'
+  - 'logic'
+  - 'semantics'
+  - 'syntax & grammar'
   - 'type theory'
-  - 'theorem proving'
 children:
   - fref("/programming-language-theory/books/software-foundations/01-logical-foundations/index.td")
 ---

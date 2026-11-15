@@ -1,11 +1,13 @@
 ---
 _type: PltFlashcard
 _label: 'What is the expression problem?'
-deck: 'language theory'
+deck: 'design philosophy'
 concepts:
   - fref("/programming-language-theory/concepts/expression-problem.td")
 books:
   - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
+tags:
+  - 'design philosophy'
 ---
 
 ::: flashcard

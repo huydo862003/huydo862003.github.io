@@ -4,6 +4,8 @@ _label: 'Can a language implementer choose whether to compile or interpret a giv
 deck: 'compiler implementation'
 books:
   - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/02-chapter-2-evaluation.td")
+tags:
+  - 'compiler implementation'
 ---
 
 ::: flashcard

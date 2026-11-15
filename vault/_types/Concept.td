@@ -11,6 +11,8 @@ properties:
     type: list[string]?
   books:
     type: list[Book]?
+  flashcards:
+    type: list[Flashcard]?
   depends_on:
     type: list[Concept]?
   blocks:

@@ -1,9 +1,11 @@
 ---
 _type: PltFlashcard
 _label: 'How are types and tests complementary?'
-deck: 'programming-language-basic'
+deck: 'programming language basic'
 books:
   - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
+tags:
+  - 'programming language basic'
 ---
 
 ::: flashcard

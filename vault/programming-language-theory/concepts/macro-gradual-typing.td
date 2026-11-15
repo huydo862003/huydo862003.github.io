@@ -3,12 +3,12 @@ _type: PltConcept
 _label: 'Macro gradual typing'
 journey: fref("/programming-language-theory/index.td")
 status: 'learning'
-books:
-  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
+books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
 tags:
-  - 'language feature design'
+  - 'language feature/design'
   - 'runtime'
   - 'type theory'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 A ${fref("/programming-language-theory/concepts/gradual-typing.td")} approach where typed and untyped code exist as two separate sibling languages that interact only at module boundaries, typically requiring ${fref("/programming-language-theory/concepts/blame-tracking.td")}.

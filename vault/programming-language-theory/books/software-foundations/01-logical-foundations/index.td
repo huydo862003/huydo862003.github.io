@@ -2,7 +2,11 @@
 _type: PltBook
 _label: 'Logical foundations'
 date: '2010'
+phase: fref("/programming-language-theory/phases/phase-01-foundations-of-program-specification-and-semantics.td")
 journey: fref("/programming-language-theory/index.td")
+tags:
+  - 'fundamentals of programming language'
+  - 'logic'
 concepts:
   - fref("/programming-language-theory/concepts/proof-assistant-prover.td")
   - fref("/programming-language-theory/concepts/automated-theorem-prover-sat-solver-smt-solver.td")

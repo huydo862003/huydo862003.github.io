@@ -5,6 +5,9 @@ journey: fref("/programming-language-theory/index.td")
 status: 'learning'
 tags:
   - 'formal system'
+tags:
+  - 'formal system'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 A mathematical framework consisting of a syntax for forming statements, axioms taken as given, and inference rules for deriving new statements from existing ones.

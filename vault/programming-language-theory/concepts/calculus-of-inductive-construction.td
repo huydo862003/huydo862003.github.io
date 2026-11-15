@@ -7,6 +7,11 @@ tags:
   - 'computation theory'
   - 'formal system'
   - 'logic'
+tags:
+  - 'computation theory'
+  - 'formal system'
+  - 'logic'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 Tools: Rocq (formerly Coq)

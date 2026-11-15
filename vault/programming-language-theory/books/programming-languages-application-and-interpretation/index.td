@@ -2,14 +2,13 @@
 _type: PltBook
 _label: 'Programming languages: application and interpretation'
 date: '2012'
+phase: fref("/programming-language-theory/phases/phase-01-foundations-of-program-specification-and-semantics.td")
 journey: fref("/programming-language-theory/index.td")
 description: 'An accessible introduction to programming language design through implementation. Builds interpreters from scratch, covering closures, objects, mutation, and types using the SMoL (Standard Model of Languages) framework.'
 url: "https://www.plai.org/"
 tags:
-  - 'interpreters'
-  - 'language design'
-  - 'programming languages'
-  - 'closures'
+  - 'fundamentals of programming language'
+  - 'lambda calculus'
 children:
   - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/01-chapter-1-learning-smol-standard-model-of-languages.td")
   - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/02-chapter-2-evaluation.td")

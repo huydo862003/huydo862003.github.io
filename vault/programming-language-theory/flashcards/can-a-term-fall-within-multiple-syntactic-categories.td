@@ -1,11 +1,13 @@
 ---
 _type: PltFlashcard
 _label: 'Can a term fall within multiple syntactic categories?'
-deck: 'pure-lambda-calculus'
+deck: 'pure lambda calculus'
 concepts:
   - fref("/programming-language-theory/concepts/pure-untyped-lambda-calculus.td")
 books:
   - fref("/programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/01-chapter-3-untyped-arithmetic-expressions.td")
+tags:
+  - 'pure lambda calculus'
 ---
 
 ::: flashcard

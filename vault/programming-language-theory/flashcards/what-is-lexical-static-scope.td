@@ -1,11 +1,13 @@
 ---
 _type: PltFlashcard
 _label: 'What is lexical/static scope?'
-deck: 'programming-language-basic'
+deck: 'programming language basic'
 concepts:
   - fref("/programming-language-theory/concepts/lexical-static-scope.td")
 books:
   - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/01-chapter-1-learning-smol-standard-model-of-languages.td")
+tags:
+  - 'programming language basic'
 ---
 
 ::: flashcard

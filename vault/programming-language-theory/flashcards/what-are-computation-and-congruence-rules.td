@@ -1,12 +1,16 @@
 ---
 _type: PltFlashcard
 _label: 'What are computation and congruence rules?'
-deck: 'logic tools'
+deck: 'logic & tools'
 concepts:
   - fref("/programming-language-theory/concepts/computation-rule.td")
   - fref("/programming-language-theory/concepts/congruence-rule.td")
 books:
   - fref("/programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/01-chapter-3-untyped-arithmetic-expressions.td")
+tags:
+  - 'logic & tools'
+  - 'language theory'
+  - 'proof technique'
 ---
 
 ::: flashcard

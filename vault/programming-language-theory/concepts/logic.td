@@ -3,11 +3,14 @@ _type: PltConcept
 _label: 'Logic'
 journey: fref("/programming-language-theory/index.td")
 status: 'reviewing'
-books:
-  - fref("/programming-language-theory/books/software-foundations/01-logical-foundations/index.td")
+books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
 tags:
   - 'formal system'
   - 'logic'
+tags:
+  - 'formal system'
+  - 'logic'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 A ${fref("/programming-language-theory/concepts/formal-system.td")} for reasoning about truth, validity, and inference, defining syntax for propositions and rules for deriving conclusions.

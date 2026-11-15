@@ -4,6 +4,8 @@ _label: 'In computability theory terms, what are the differences between parsers
 deck: 'language theory'
 books:
   - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
+tags:
+  - 'language theory'
 ---
 
 ::: flashcard

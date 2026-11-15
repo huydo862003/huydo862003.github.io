@@ -3,12 +3,16 @@ _type: PltConcept
 _label: 'Rice''s theorem'
 journey: fref("/programming-language-theory/index.td")
 status: 'learning'
-books:
-  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
+books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
 tags:
   - 'computation theory'
   - 'logic'
   - 'program analysis'
+tags:
+  - 'computation theory'
+  - 'logic'
+  - 'program analysis'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 A theorem stating that any non-trivial semantic property of programs is ${fref("/programming-language-theory/concepts/decidability.td")} - we cannot automatically determine arbitrary properties about what programs compute (e.g., "does this function always return a positive number?"), which is why type systems must be conservative approximations.

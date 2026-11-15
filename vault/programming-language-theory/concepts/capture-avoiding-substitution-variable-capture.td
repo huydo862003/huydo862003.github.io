@@ -3,6 +3,7 @@ _type: PltConcept
 _label: 'Capture avoiding substitution variable capture'
 journey: fref("/programming-language-theory/index.td")
 status: 'learning'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 Rules in ${fref("/programming-language-theory/concepts/pure-untyped-lambda-calculus.td")}:

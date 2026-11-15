@@ -3,14 +3,13 @@ _type: PltConcept
 _label: 'Arity'
 journey: fref("/programming-language-theory/index.td")
 status: 'mastered'
-books:
-  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
-  - fref("/programming-language-theory/books/practical-foundations-for-programming-languages/01-part-i-judgments-and-rules/01-chapter-1-abstract-syntax.td")
+books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
 tags:
-  - 'language feature design'
+  - 'language feature/design'
   - 'semantics'
-  - 'set theory relation'
-  - 'syntax grammar'
+  - 'set theory & relation'
+  - 'syntax & grammar'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 ::: info

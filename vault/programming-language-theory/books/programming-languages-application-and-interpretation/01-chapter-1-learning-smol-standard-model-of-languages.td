@@ -1,6 +1,7 @@
 ---
 _type: PltBook
 _label: 'Chapter 1. Learning SMoL - standard model of languages'
+phase: fref("/programming-language-theory/phases/phase-01-foundations-of-program-specification-and-semantics.td")
 journey: fref("/programming-language-theory/index.td")
 concepts:
   - fref("/programming-language-theory/concepts/local-binding-form.td")

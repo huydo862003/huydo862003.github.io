@@ -3,12 +3,12 @@ _type: PltConcept
 _label: 'Evaluation statement/judgement'
 journey: fref("/programming-language-theory/index.td")
 status: 'learning'
-books:
-  - fref("/programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/01-chapter-3-untyped-arithmetic-expressions.td")
+books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
 tags:
   - 'logic'
   - 'semantics'
-  - 'set theory relation'
+  - 'set theory & relation'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 A formal assertion of the form $t \to t'$ or $t \Downarrow v$, stating that a term reduces to another term or evaluates to a value under specific ${fref("/programming-language-theory/concepts/inference-rule.td")}s.

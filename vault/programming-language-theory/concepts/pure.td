@@ -3,14 +3,18 @@ _type: PltConcept
 _label: 'Pure'
 journey: fref("/programming-language-theory/index.td")
 status: 'mastered'
-books:
-  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/02-chapter-2-evaluation.td")
-  - fref("/programming-language-theory/books/software-foundations/01-logical-foundations/index.td")
+books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
 tags:
   - 'design principle'
   - 'program analysis'
   - 'programming paradigm'
   - 'semantics'
+tags:
+  - 'design principle'
+  - 'program analysis'
+  - 'programming paradigm'
+  - 'semantics'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 The property of a function or computation that has no side effects and always returns the same output for the same input, making it referentially transparent.

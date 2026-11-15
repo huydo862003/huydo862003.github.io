@@ -6,6 +6,8 @@ concepts:
   - fref("/programming-language-theory/concepts/if-splitting.td")
 books:
   - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
+tags:
+  - 'type theory'
 ---
 
 ::: flashcard

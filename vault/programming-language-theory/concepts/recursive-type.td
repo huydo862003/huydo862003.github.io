@@ -1,10 +1,14 @@
 ---
 _type: PltConcept
 _label: 'Recursive type'
+phase: fref("/programming-language-theory/phases/phase-01-foundations-of-program-specification-and-semantics.td")
 journey: fref("/programming-language-theory/index.td")
 status: 'learning'
-books:
-  - fref("/programming-language-theory/books/software-foundations/01-logical-foundations/01-chapter-1-basics-functional-programming-in-rocq.td")
+books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
+tags:
+  - 'language feature/design'
+  - 'type theory'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 A type whose definition reference itself.

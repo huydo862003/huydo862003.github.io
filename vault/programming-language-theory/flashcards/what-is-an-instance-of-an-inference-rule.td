@@ -1,11 +1,13 @@
 ---
 _type: PltFlashcard
 _label: 'What is an instance of an inference rule?'
-deck: 'logic tools'
+deck: 'logic & tools'
 concepts:
   - fref("/programming-language-theory/concepts/instance-of-an-inference-rule.td")
 books:
   - fref("/programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/01-chapter-3-untyped-arithmetic-expressions.td")
+tags:
+  - 'logic & tools'
 ---
 
 ::: flashcard

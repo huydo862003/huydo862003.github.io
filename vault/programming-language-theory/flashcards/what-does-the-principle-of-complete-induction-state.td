@@ -6,6 +6,8 @@ concepts:
   - fref("/programming-language-theory/concepts/principle-of-complete-induction.td")
 books:
   - fref("/programming-language-theory/books/types-and-programming-languages/02-chapter-2-mathematical-preliminaries.td")
+tags:
+  - 'proof technique'
 ---
 
 ::: flashcard

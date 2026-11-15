@@ -4,6 +4,8 @@ _label: 'What is the class pattern?'
 deck: 'language theory'
 books:
   - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/04-chapter-4-objects.td")
+tags:
+  - 'language theory'
 ---
 
 ::: flashcard

@@ -4,6 +4,8 @@ _label: 'What are the approaches to typing conditionals and their tradeoffs?'
 deck: 'type theory'
 books:
   - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
+tags:
+  - 'type theory'
 ---
 
 ::: flashcard

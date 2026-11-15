@@ -3,13 +3,13 @@ _type: PltConcept
 _label: 'Module system'
 journey: fref("/programming-language-theory/index.td")
 status: 'reviewing'
-books:
-  - fref("/programming-language-theory/books/software-foundations/01-logical-foundations/01-chapter-1-basics-functional-programming-in-rocq.td")
+books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
 tags:
-  - 'language feature design'
+  - 'language feature/design'
   - 'programming paradigm'
   - 'semantics'
-  - 'syntax grammar'
+  - 'syntax & grammar'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 A language feature that organizes code into namespaced units with controlled visibility, enabling encapsulation, separate compilation, and abstraction through signatures/interfaces.

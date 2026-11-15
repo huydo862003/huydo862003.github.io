@@ -1,12 +1,14 @@
 ---
 _type: PltFlashcard
 _label: 'What are there in the rocq system besides the kernel?'
-deck: 'rocq-programming-language'
+deck: 'rocq programming language'
 concepts:
   - fref("/programming-language-theory/concepts/rocq.td")
   - fref("/programming-language-theory/concepts/tactic.td")
 books:
   - fref("/programming-language-theory/books/software-foundations/01-logical-foundations/index.td")
+tags:
+  - 'rocq programming language'
 ---
 
 ::: flashcard

@@ -1,10 +1,15 @@
 ---
 _type: PltConcept
 _label: 'Proof assistant/prover'
+phase: fref("/programming-language-theory/phases/phase-01-foundations-of-program-specification-and-semantics.td")
 journey: fref("/programming-language-theory/index.td")
 status: 'learning'
-books:
-  - fref("/programming-language-theory/books/software-foundations/01-logical-foundations/index.td")
+books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
+tags:
+  - 'formal system'
+  - 'logic'
+  - 'proof/reason technique'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 Tools: Rocq (formerly Coq)

@@ -3,12 +3,12 @@ _type: PltConcept
 _label: 'Unfold'
 journey: fref("/programming-language-theory/index.td")
 status: 'reviewing'
-books:
-  - fref("/programming-language-theory/books/software-foundations/01-logical-foundations/01-chapter-1-basics-functional-programming-in-rocq.td")
+books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
 tags:
-  - 'language feature design'
+  - 'language feature/design'
   - 'semantics'
-  - 'syntax grammar'
+  - 'syntax & grammar'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 A reduction step that replaces a defined name with its definition body, expanding abbreviations to expose underlying structure.

@@ -6,6 +6,8 @@ concepts:
   - fref("/programming-language-theory/concepts/trait.td")
 books:
   - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/04-chapter-4-objects.td")
+tags:
+  - 'type theory'
 ---
 
 ::: flashcard

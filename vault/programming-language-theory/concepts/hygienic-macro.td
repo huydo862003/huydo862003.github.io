@@ -3,13 +3,13 @@ _type: PltConcept
 _label: 'Hygienic macro'
 journey: fref("/programming-language-theory/index.td")
 status: 'learning'
-books:
-  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/03-chapter-3-syntactic-sugar.td")
+books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
 tags:
   - 'compiler implementation'
-  - 'language feature design'
-  - 'metaprogramming self reflection'
+  - 'language feature/design'
+  - 'metaprogramming/self-reflection'
   - 'programming paradigm'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 Hygienic macros are analogous to ${fref("/programming-language-theory/concepts/lexical-static-scope.td")} for ${fref("/programming-language-theory/concepts/macro.td")}s: Macro variables are not just names, but rather binding information records.

@@ -3,10 +3,12 @@ _type: PltConcept
 _label: 'Full beta-reduction'
 journey: fref("/programming-language-theory/index.td")
 status: 'mastered'
-books:
-  - fref("/programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/03-chapter-5-the-untyped-pure-lambda-calculus.td")
+books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
 tags:
   - 'semantics'
+tags:
+  - 'semantics'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 In ${fref("/programming-language-theory/concepts/pure-untyped-lambda-calculus.td")}, this strategy is defined by the following rules:

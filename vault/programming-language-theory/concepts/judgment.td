@@ -3,12 +3,12 @@ _type: PltConcept
 _label: 'Judgment'
 journey: fref("/programming-language-theory/index.td")
 status: 'reviewing'
-books:
-  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
-  - fref("/programming-language-theory/books/software-foundations/01-logical-foundations/02-chapter-2-inductive-definitions.td")
-  - fref("/programming-language-theory/books/software-foundations/01-logical-foundations/03-chapter-3-hypothetical-and-general-judgments.td")
+books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
 tags:
   - 'logic'
+tags:
+  - 'logic'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 ::: info

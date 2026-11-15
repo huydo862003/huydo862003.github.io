@@ -3,12 +3,12 @@ _type: PltConcept
 _label: 'Left-left-lambda'
 journey: fref("/programming-language-theory/index.td")
 status: 'mastered'
-books:
-  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/03-chapter-3-syntactic-sugar.td")
+books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
 tags:
-  - 'language feature design'
+  - 'language feature/design'
   - 'programming paradigm'
-  - 'syntax grammar'
+  - 'syntax & grammar'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 ```scheme

@@ -4,6 +4,9 @@ _label: 'Why is the property that static types are checked at compile-time is va
 deck: 'type theory'
 books:
   - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
+tags:
+  - 'type theory'
+  - 'language philosophy'
 ---
 
 ::: flashcard

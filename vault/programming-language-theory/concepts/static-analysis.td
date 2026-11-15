@@ -3,12 +3,12 @@ _type: PltConcept
 _label: 'Static analysis'
 journey: fref("/programming-language-theory/index.td")
 status: 'mastered'
-books:
-  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
+books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
 tags:
-  - 'language feature design'
+  - 'language feature/design'
   - 'program analysis'
   - 'semantics'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 Program analysis performed without executing the code, including type checking, dataflow analysis, and abstract interpretation. Can detect certain errors and properties before runtime.

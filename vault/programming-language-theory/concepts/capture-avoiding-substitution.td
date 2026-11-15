@@ -1,11 +1,14 @@
 ---
 _type: PltConcept
 _label: 'Capture-avoiding substitution'
+phase: fref("/programming-language-theory/phases/phase-01-foundations-of-program-specification-and-semantics.td")
 journey: fref("/programming-language-theory/index.td")
 status: 'learning'
-books:
-  - fref("/programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/03-chapter-5-the-untyped-pure-lambda-calculus.td")
-  - fref("/programming-language-theory/books/practical-foundations-for-programming-languages/01-part-i-judgments-and-rules/01-chapter-1-abstract-syntax.td")
+books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
+tags:
+  - 'lambda calculus'
+  - 'semantics'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 Rules in ${fref("/programming-language-theory/concepts/pure-untyped-lambda-calculus.td")}:

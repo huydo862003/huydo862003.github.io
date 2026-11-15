@@ -4,9 +4,10 @@ _label: 'Autoboxing'
 journey: fref("/programming-language-theory/index.td")
 status: 'learning'
 tags:
-  - 'language feature design'
+  - 'language feature/design'
   - 'runtime'
   - 'semantics'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 Example:

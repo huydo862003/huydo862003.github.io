@@ -3,12 +3,12 @@ _type: PltConcept
 _label: 'Structural typing'
 journey: fref("/programming-language-theory/index.td")
 status: 'mastered'
-books:
-  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
+books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
 tags:
-  - 'language feature design'
+  - 'language feature/design'
   - 'semantics'
   - 'type theory'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 A type system where ${fref("/programming-language-theory/concepts/type-compatibility.td")} is determined by structure, not name - any value with matching shape satisfies the type, regardless of declared class or origin.

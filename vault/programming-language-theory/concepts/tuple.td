@@ -3,11 +3,11 @@ _type: PltConcept
 _label: 'Tuple'
 journey: fref("/programming-language-theory/index.td")
 status: 'mastered'
-books:
-  - fref("/programming-language-theory/books/software-foundations/01-logical-foundations/01-chapter-1-basics-functional-programming-in-rocq.td")
+books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
 tags:
-  - 'data structure algorithm'
-  - 'language feature design'
+  - 'data structure & algorithm'
+  - 'language feature/design'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 A data structure that groups a fixed number of values of possibly different types (like (1, \"hello\", true)), accessed by position rather than name.

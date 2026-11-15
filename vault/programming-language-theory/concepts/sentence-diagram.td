@@ -3,11 +3,11 @@ _type: PltConcept
 _label: 'Sentence diagram'
 journey: fref("/programming-language-theory/index.td")
 status: 'reviewing'
-books:
-  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/02-chapter-2-evaluation.td")
+books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
 tags:
   - 'formal system'
-  - 'proof reason technique'
+  - 'proof/reason technique'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 A syntactic structure of a given sentence.

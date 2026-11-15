@@ -3,12 +3,12 @@ _type: PltConcept
 _label: 'Substitutability'
 journey: fref("/programming-language-theory/index.td")
 status: 'mastered'
-books:
-  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
+books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
 tags:
-  - 'language feature design'
+  - 'language feature/design'
   - 'semantics'
   - 'type theory'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 The semantic/behavioral property that one value can safely replace another without breaking program correctness, of which ${fref("/programming-language-theory/concepts/type-compatibility.td")} is a static approximation of.

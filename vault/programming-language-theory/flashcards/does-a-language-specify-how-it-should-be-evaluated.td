@@ -7,6 +7,10 @@ concepts:
   - fref("/programming-language-theory/concepts/interpreter.td")
 books:
   - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/02-chapter-2-evaluation.td")
+tags:
+  - 'language theory'
+  - 'compiler implementation'
+  - 'programming language basic'
 ---
 
 ::: flashcard

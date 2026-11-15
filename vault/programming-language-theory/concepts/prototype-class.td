@@ -3,6 +3,7 @@ _type: PltConcept
 _label: 'Prototype class'
 journey: fref("/programming-language-theory/index.td")
 status: 'learning'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 Create a prototype object that contains all the shared methods and default properties.

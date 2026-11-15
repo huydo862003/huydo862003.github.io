@@ -1,9 +1,11 @@
 ---
 _type: PltFlashcard
 _label: 'How to implement open recursion with self-application?'
-deck: 'pure-lambda-calculus'
+deck: 'pure lambda calculus'
 books:
   - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/04-chapter-4-objects.td")
+tags:
+  - 'pure lambda calculus'
 ---
 
 ::: flashcard

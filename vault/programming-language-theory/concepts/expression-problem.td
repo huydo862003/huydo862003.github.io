@@ -1,10 +1,14 @@
 ---
 _type: PltConcept
 _label: 'Expression problem'
+phase: fref("/programming-language-theory/phases/phase-01-foundations-of-program-specification-and-semantics.td")
 journey: fref("/programming-language-theory/index.td")
 status: 'learning'
-books:
-  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
+books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
+tags:
+  - 'design principle'
+  - 'programming paradigm'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 Neither paradigm naturally supports both dimensions of extensibility without modifying existing code or sacrificing ${fref("/programming-language-theory/concepts/type-safety.td")}. Solutions exist (type classes, object algebras, tagless final) but invo

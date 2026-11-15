@@ -6,6 +6,9 @@ concepts:
   - fref("/programming-language-theory/concepts/macro-system.td")
 books:
   - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/03-chapter-3-syntactic-sugar.td")
+tags:
+  - 'compiler implementation'
+  - 'language theory'
 ---
 
 ::: flashcard

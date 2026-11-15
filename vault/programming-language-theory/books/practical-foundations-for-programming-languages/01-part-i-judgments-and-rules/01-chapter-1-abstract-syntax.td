@@ -1,6 +1,7 @@
 ---
 _type: PltBook
 _label: 'Chapter 1. Abstract syntax'
+phase: fref("/programming-language-theory/phases/phase-01-foundations-of-program-specification-and-semantics.td")
 journey: fref("/programming-language-theory/index.td")
 concepts:
   - fref("/programming-language-theory/concepts/operator-arity.td")

@@ -1,10 +1,14 @@
 ---
 _type: PltConcept
 _label: 'Recursive let'
+phase: fref("/programming-language-theory/phases/phase-01-foundations-of-program-specification-and-semantics.td")
 journey: fref("/programming-language-theory/index.td")
 status: 'learning'
-books:
-  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/01-chapter-1-learning-smol-standard-model-of-languages.td")
+books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
+tags:
+  - 'language feature/design'
+  - 'syntax & grammar'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 ```scheme

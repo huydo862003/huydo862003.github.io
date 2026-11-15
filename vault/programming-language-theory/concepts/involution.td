@@ -3,10 +3,10 @@ _type: PltConcept
 _label: 'Involution'
 journey: fref("/programming-language-theory/index.td")
 status: 'reviewing'
-books:
-  - fref("/programming-language-theory/books/software-foundations/01-logical-foundations/01-chapter-1-basics-functional-programming-in-rocq.td")
+books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
 tags:
-  - 'set theory relation'
+  - 'set theory & relation'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 A function that is its own inverse, satisfying f(f(x)) = x (like negation on booleans or reversing a list twice).

@@ -1,11 +1,13 @@
 ---
 _type: PltFlashcard
 _label: 'What is language safety, both formally and informally?'
-deck: 'programming-language-basic'
+deck: 'programming language basic'
 concepts:
   - fref("/programming-language-theory/concepts/language-safety.td")
 books:
   - fref("/programming-language-theory/books/types-and-programming-languages/01-chapter-1-introduction.td")
+tags:
+  - 'programming language basic'
 ---
 
 ::: flashcard

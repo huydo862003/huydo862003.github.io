@@ -1,11 +1,13 @@
 ---
 _type: PltFlashcard
 _label: 'What is proof by rewriting in rocq?'
-deck: 'rocq-programming-language'
+deck: 'rocq programming language'
 concepts:
   - fref("/programming-language-theory/concepts/proof-by-rewriting.td")
 books:
   - fref("/programming-language-theory/books/software-foundations/01-logical-foundations/01-chapter-1-basics-functional-programming-in-rocq.td")
+tags:
+  - 'rocq programming language'
 ---
 
 ::: flashcard

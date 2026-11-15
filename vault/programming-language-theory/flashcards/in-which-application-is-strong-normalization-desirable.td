@@ -4,6 +4,8 @@ _label: 'In which application is strong normalization desirable?'
 deck: 'language theory'
 books:
   - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
+tags:
+  - 'language theory'
 ---
 
 ::: flashcard

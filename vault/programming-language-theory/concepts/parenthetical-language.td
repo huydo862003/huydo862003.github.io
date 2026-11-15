@@ -3,12 +3,12 @@ _type: PltConcept
 _label: 'Parenthetical language'
 journey: fref("/programming-language-theory/index.td")
 status: 'learning'
-books:
-  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/03-chapter-3-syntactic-sugar.td")
+books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
 tags:
-  - 'language feature design'
-  - 'metaprogramming self reflection'
-  - 'syntax grammar'
+  - 'language feature/design'
+  - 'metaprogramming/self-reflection'
+  - 'syntax & grammar'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 (define-syntax-rule (or a b) (if a a b))

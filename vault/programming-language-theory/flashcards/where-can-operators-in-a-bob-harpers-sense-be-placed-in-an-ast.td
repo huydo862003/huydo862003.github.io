@@ -4,6 +4,8 @@ _label: 'Where can operators (in a bob harper''s sense) be placed in an AST?'
 deck: 'language theory'
 books:
   - fref("/programming-language-theory/books/practical-foundations-for-programming-languages/01-part-i-judgments-and-rules/01-chapter-1-abstract-syntax.td")
+tags:
+  - 'language theory'
 ---
 
 ::: flashcard

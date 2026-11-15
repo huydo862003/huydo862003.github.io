@@ -3,10 +3,12 @@ _type: PltConcept
 _label: 'Antecedent'
 journey: fref("/programming-language-theory/index.td")
 status: 'reviewing'
-books:
-  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
+books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
 tags:
   - 'logic'
+tags:
+  - 'logic'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 The part above the line in a typing rule - the ${fref("/programming-language-theory/concepts/premise.td")}s that must hold before the ${fref("/programming-language-theory/concepts/conclusion.td")} can be drawn (\"if\" part).

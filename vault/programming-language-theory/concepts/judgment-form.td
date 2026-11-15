@@ -3,11 +3,11 @@ _type: PltConcept
 _label: 'Judgment form'
 journey: fref("/programming-language-theory/index.td")
 status: 'reviewing'
-books:
-  - fref("/programming-language-theory/books/software-foundations/01-logical-foundations/02-chapter-2-inductive-definitions.td")
+books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
 tags:
   - 'logic'
-  - 'set theory relation'
+  - 'set theory & relation'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 Synonymous with an n-place relation. For a unary relation/predicate, a judgment form is usually written as $J\\ -$ or $-\\ J$, with $-$ being a placeholder for some value drawn from the domain of the pr

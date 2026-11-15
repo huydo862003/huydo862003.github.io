@@ -6,6 +6,10 @@ concepts:
   - fref("/programming-language-theory/concepts/forward-chaining.td")
 books:
   - fref("/programming-language-theory/books/software-foundations/01-logical-foundations/02-chapter-2-inductive-definitions.td")
+tags:
+  - 'proof technique'
+  - 'logic & tools'
+  - 'set theory & relation'
 ---
 
 ::: flashcard

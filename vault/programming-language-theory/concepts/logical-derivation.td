@@ -3,10 +3,12 @@ _type: PltConcept
 _label: 'Logical derivation'
 journey: fref("/programming-language-theory/index.td")
 status: 'reviewing'
-books:
-  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
+books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
 tags:
   - 'logic'
+tags:
+  - 'logic'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 A step-by-step proof showing how a conclusion follows from premises using ${fref("/programming-language-theory/concepts/inference-rule.td")}s - each step applies a rule to previous steps; in type systems, a ${fref("/programming-language-theory/concepts/derivation-tree.td")} is a derivation proving that an

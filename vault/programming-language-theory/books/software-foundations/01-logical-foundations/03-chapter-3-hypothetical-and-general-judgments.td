@@ -1,6 +1,7 @@
 ---
 _type: PltBook
 _label: 'Chapter 3. Hypothetical and general judgments'
+phase: fref("/programming-language-theory/phases/phase-01-foundations-of-program-specification-and-semantics.td")
 journey: fref("/programming-language-theory/index.td")
 parent: fref("/programming-language-theory/books/software-foundations/01-logical-foundations/index.td")
 ---

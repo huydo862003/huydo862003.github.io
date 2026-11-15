@@ -1,12 +1,15 @@
 ---
 _type: PltFlashcard
 _label: 'What is a rule scheme?'
-deck: 'logic tools'
+deck: 'logic & tools'
 concepts:
   - fref("/programming-language-theory/concepts/inference-rule.td")
   - fref("/programming-language-theory/concepts/metavariable.td")
 books:
   - fref("/programming-language-theory/books/software-foundations/01-logical-foundations/02-chapter-2-inductive-definitions.td")
+tags:
+  - 'logic & tools'
+  - 'proof technique'
 ---
 
 ::: flashcard

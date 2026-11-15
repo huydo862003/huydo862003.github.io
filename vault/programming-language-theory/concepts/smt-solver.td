@@ -3,12 +3,16 @@ _type: PltConcept
 _label: 'SMT solver'
 journey: fref("/programming-language-theory/index.td")
 status: 'learning'
-books:
-  - fref("/programming-language-theory/books/software-foundations/01-logical-foundations/index.td")
+books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
 tags:
   - 'formal system'
   - 'logic'
   - 'program analysis'
+tags:
+  - 'formal system'
+  - 'logic'
+  - 'program analysis'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 A ${fref("/programming-language-theory/concepts/decision-procedure.td")} that determines satisfiability of formulas in first-order logic with theories (like arithmetic, arrays, bit-vectors), extending ${fref("/programming-language-theory/concepts/sat-solver.td")} to richer domains.

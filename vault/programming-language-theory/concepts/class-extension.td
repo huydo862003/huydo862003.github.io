@@ -3,12 +3,12 @@ _type: PltConcept
 _label: 'Class extension'
 journey: fref("/programming-language-theory/index.td")
 status: 'mastered'
-books:
-  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/04-chapter-4-objects.td")
+books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
 tags:
-  - 'language feature design'
+  - 'language feature/design'
   - 'programming paradigm'
-  - 'syntax grammar'
+  - 'syntax & grammar'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 (Java) The { ... } part in class Sub extends Sup { ... }, can be conceptually viewed as a ${fref("/programming-language-theory/concepts/mixin.td")} specifically applied to Sup.

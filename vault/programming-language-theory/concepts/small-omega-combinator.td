@@ -3,11 +3,11 @@ _type: PltConcept
 _label: 'Small omega combinator'
 journey: fref("/programming-language-theory/index.td")
 status: 'reviewing'
-books:
-  - fref("/programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/03-chapter-5-the-untyped-pure-lambda-calculus.td")
+books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
 tags:
   - 'lambda calculus'
-  - 'syntax grammar'
+  - 'syntax & grammar'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 A ${fref("/programming-language-theory/concepts/combinator.td")} defined as $\omega = \lambda x.\ x\ x$, useful in many patterns, such as ${fref("/programming-language-theory/concepts/extensible-open-recursion.td")}.

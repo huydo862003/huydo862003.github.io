@@ -1,10 +1,13 @@
 ---
 _type: PltConcept
 _label: 'Fresh renaming'
+phase: fref("/programming-language-theory/phases/phase-01-foundations-of-program-specification-and-semantics.td")
 journey: fref("/programming-language-theory/index.td")
 status: 'learning'
-books:
-  - fref("/programming-language-theory/books/practical-foundations-for-programming-languages/01-part-i-judgments-and-rules/01-chapter-1-abstract-syntax.td")
+books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
+tags:
+  - 'syntax & grammar'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 Given a set of variables $\\mathcal{X}$ and a finite sequence of variables $\\vec{x}$, a bijection $\\rho : \\vec{x} \\leftrightarrow \\vec{x}'$ between $\\vec{x}$ and $\\vec{x}'$, where $\\vec{x}'$ is fresh f

@@ -3,11 +3,11 @@ _type: PltConcept
 _label: 'Variable definition'
 journey: fref("/programming-language-theory/index.td")
 status: 'mastered'
-books:
-  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/01-chapter-1-learning-smol-standard-model-of-languages.td")
+books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
 tags:
-  - 'language feature design'
-  - 'syntax grammar'
+  - 'language feature/design'
+  - 'syntax & grammar'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 A syntactic construct that introduces a new variable name and establishes a binding - optionally with an initial value (e.g., let x = 5).

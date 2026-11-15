@@ -4,6 +4,8 @@ _label: "Programming Language Theory Book"
 _icon: icon.book
 _extends: Book
 properties:
+  phase:
+    type: Phase?
   tags:
-    type: list['closures' | 'compiler implementation' | 'compilers' | 'computation theory' | 'concurrency theory' | 'continuation-passing style' | 'Coq' | 'data structure algorithm' | 'design principle' | 'domain theory' | 'formal system' | 'formal verification' | 'interpreters' | 'lambda calculus' | 'language design' | 'language feature design' | 'linguistics' | 'logic' | 'metaprogramming self reflection' | 'operational semantics' | 'order lattice theory' | 'other mathematics' | 'program analysis' | 'programming languages' | 'programming paradigm' | 'proof reason technique' | 'proof theory' | 'Rocq' | 'runtime' | 'Scheme' | 'semantics' | 'set theory relation' | 'syntax grammar' | 'theorem proving' | 'type systems' | 'type theory']?
+    type: list['fundamentals of programming language' | 'lambda calculus' | 'logic' | 'semantics' | 'syntax & grammar' | 'type theory']?
 ---

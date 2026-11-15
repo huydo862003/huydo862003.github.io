@@ -6,6 +6,10 @@ concepts:
   - fref("/programming-language-theory/concepts/conditional-expression.td")
 books:
   - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/02-chapter-2-evaluation.td")
+tags:
+  - 'compiler implementation'
+  - 'language theory'
+  - 'programming language basic'
 ---
 
 ::: flashcard

@@ -3,6 +3,7 @@ _type: PltConcept
 _label: 'Function rocq'
 journey: fref("/programming-language-theory/index.td")
 status: 'learning'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 Use the `Fixpoint` definition. For example:

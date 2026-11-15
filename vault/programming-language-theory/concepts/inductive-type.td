@@ -4,8 +4,9 @@ _label: 'Inductive type'
 journey: fref("/programming-language-theory/index.td")
 status: 'reviewing'
 tags:
-  - 'language feature design'
+  - 'language feature/design'
   - 'type theory'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 Tools: Rocq (formerly Coq)

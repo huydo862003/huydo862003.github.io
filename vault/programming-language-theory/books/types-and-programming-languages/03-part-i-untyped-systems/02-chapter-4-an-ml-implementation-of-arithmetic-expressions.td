@@ -1,6 +1,7 @@
 ---
 _type: PltBook
 _label: 'Chapter 4. An ML implementation of arithmetic expressions'
+phase: fref("/programming-language-theory/phases/phase-01-foundations-of-program-specification-and-semantics.td")
 journey: fref("/programming-language-theory/index.td")
 parent: fref("/programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/index.td")
 url: "https://www.cis.upenn.edu/~bcpierce/tapl/"

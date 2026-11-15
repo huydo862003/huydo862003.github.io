@@ -6,6 +6,9 @@ concepts:
   - fref("/programming-language-theory/concepts/just-in-time-jit-compilation.td")
 books:
   - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/02-chapter-2-evaluation.td")
+tags:
+  - 'compiler implementation'
+  - 'programming language basic'
 ---
 
 ::: flashcard

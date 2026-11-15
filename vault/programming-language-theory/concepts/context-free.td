@@ -3,12 +3,12 @@ _type: PltConcept
 _label: 'Context-free'
 journey: fref("/programming-language-theory/index.td")
 status: 'reviewing'
-books:
-  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
+books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
 tags:
   - 'computation theory'
   - 'linguistics'
-  - 'syntax grammar'
+  - 'syntax & grammar'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 A grammar where production rules depend only on a single non-terminal, not its surroundings - parsers handle this level; e.g., balanced parentheses, syntax structure.

@@ -1,9 +1,11 @@
 ---
 _type: PltFlashcard
 _label: 'Are languages inherently compiled/interpreted?'
-deck: 'programming-language-basic'
+deck: 'programming language basic'
 books:
   - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/02-chapter-2-evaluation.td")
+tags:
+  - 'programming language basic'
 ---
 
 ::: flashcard

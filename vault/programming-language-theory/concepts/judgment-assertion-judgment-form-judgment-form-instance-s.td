@@ -3,6 +3,7 @@ _type: PltConcept
 _label: 'Judgment assertion judgment form judgment form instances'
 journey: fref("/programming-language-theory/index.td")
 status: 'learning'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 - A ${fref("/programming-language-theory/concepts/judgment-form.td")} is a relation, interpreted as a ${fref("/programming-language-theory/concepts/predicate.td")}.

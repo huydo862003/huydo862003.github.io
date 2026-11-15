@@ -6,6 +6,8 @@ concepts:
   - fref("/programming-language-theory/concepts/functional-programming.td")
 books:
   - fref("/programming-language-theory/books/software-foundations/01-logical-foundations/index.td")
+tags:
+  - 'language theory'
 ---
 
 ::: flashcard

@@ -6,7 +6,8 @@ status: 'learning'
 tags:
   - 'formal system'
   - 'logic'
-  - 'syntax grammar'
+  - 'syntax & grammar'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 \\frac{A \\quad B}{A \\land B} & & (\\land\\text{-intro}) \\\\ \\\\

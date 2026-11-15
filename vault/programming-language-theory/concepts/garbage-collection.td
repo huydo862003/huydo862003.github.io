@@ -1,10 +1,14 @@
 ---
 _type: PltConcept
 _label: 'Garbage collection'
+phase: fref("/programming-language-theory/phases/phase-01-foundations-of-program-specification-and-semantics.td")
 journey: fref("/programming-language-theory/index.td")
 status: 'learning'
-books:
-  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/01-chapter-1-learning-smol-standard-model-of-languages.td")
+books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
+tags:
+  - 'language feature/design'
+  - 'runtime'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 An ${fref("/programming-language-theory/concepts/automatic-memory-management.td")} technique that identifies and reclaims ${fref("/programming-language-theory/concepts/heap.td")}-allocated memory no longer reachable by the program, freeing the programmer from explicit deallocation and preventing memory leaks and dangling references.

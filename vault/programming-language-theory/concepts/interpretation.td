@@ -3,10 +3,12 @@ _type: PltConcept
 _label: 'Interpretation'
 journey: fref("/programming-language-theory/index.td")
 status: 'reviewing'
-books:
-  - fref("/programming-language-theory/books/software-foundations/01-logical-foundations/01-chapter-1-basics-functional-programming-in-rocq.td")
+books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
 tags:
   - 'semantics'
+tags:
+  - 'semantics'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 A semantic mapping that assigns meaning to a Representation (e.g., 0b101 can interpret as 5 in binary or a bit pattern).

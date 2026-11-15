@@ -4,6 +4,9 @@ _label: 'What is an example for the tradeoffs between the type system''s express
 deck: 'language theory'
 books:
   - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
+tags:
+  - 'language theory'
+  - 'type theory'
 ---
 
 ::: flashcard

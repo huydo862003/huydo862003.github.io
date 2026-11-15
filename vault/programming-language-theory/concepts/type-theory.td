@@ -6,6 +6,10 @@ status: 'reviewing'
 tags:
   - 'formal system'
   - 'type theory'
+tags:
+  - 'formal system'
+  - 'type theory'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 A ${fref("/programming-language-theory/concepts/formal-system.td")} where every term has a type, providing a foundation for mathematics and programming through the ${fref("/programming-language-theory/concepts/curry-howard-correspondence.td")} between proofs and programs.

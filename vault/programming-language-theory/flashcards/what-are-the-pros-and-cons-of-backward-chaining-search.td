@@ -1,12 +1,16 @@
 ---
 _type: PltFlashcard
 _label: 'What are the pros and cons of backward chaining search?'
-deck: 'set theory relation'
+deck: 'set theory & relation'
 concepts:
   - fref("/programming-language-theory/concepts/backward-chaining-search.td")
   - fref("/programming-language-theory/concepts/goal-directed.td")
 books:
   - fref("/programming-language-theory/books/software-foundations/01-logical-foundations/02-chapter-2-inductive-definitions.td")
+tags:
+  - 'set theory & relation'
+  - 'logic & tools'
+  - 'proof technique'
 ---
 
 ::: flashcard

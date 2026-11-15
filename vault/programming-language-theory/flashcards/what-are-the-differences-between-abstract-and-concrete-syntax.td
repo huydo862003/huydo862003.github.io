@@ -1,10 +1,14 @@
 ---
 _type: PltFlashcard
 _label: 'What are the differences between abstract and concrete syntax?'
-deck: 'programming-language-basic'
+deck: 'programming language basic'
 books:
   - fref("/programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/01-chapter-3-untyped-arithmetic-expressions.td")
   - fref("/programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/03-chapter-5-the-untyped-pure-lambda-calculus.td")
+tags:
+  - 'programming language basic'
+  - 'compiler implementation'
+  - 'language theory'
 ---
 
 ::: flashcard

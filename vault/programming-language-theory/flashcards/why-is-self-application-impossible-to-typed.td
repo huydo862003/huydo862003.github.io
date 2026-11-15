@@ -4,6 +4,8 @@ _label: 'Why is self-application impossible to typed?'
 deck: 'type theory'
 books:
   - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
+tags:
+  - 'type theory'
 ---
 
 ::: flashcard

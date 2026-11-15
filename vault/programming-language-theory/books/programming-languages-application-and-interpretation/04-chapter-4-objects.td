@@ -1,6 +1,7 @@
 ---
 _type: PltBook
 _label: 'Chapter 4. Objects'
+phase: fref("/programming-language-theory/phases/phase-01-foundations-of-program-specification-and-semantics.td")
 journey: fref("/programming-language-theory/index.td")
 concepts:
   - fref("/programming-language-theory/concepts/object.td")

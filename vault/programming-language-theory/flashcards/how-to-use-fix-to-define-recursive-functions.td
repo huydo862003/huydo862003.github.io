@@ -1,11 +1,13 @@
 ---
 _type: PltFlashcard
 _label: 'How to use fix to define recursive functions?'
-deck: 'pure-lambda-calculus'
+deck: 'pure lambda calculus'
 concepts:
   - fref("/programming-language-theory/concepts/fixed-point-combinator.td")
 books:
   - fref("/programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/03-chapter-5-the-untyped-pure-lambda-calculus.td")
+tags:
+  - 'pure lambda calculus'
 ---
 
 ::: flashcard

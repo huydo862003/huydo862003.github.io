@@ -5,5 +5,5 @@ _icon: icon.graduation
 _extends: Flashcard
 properties:
   tags:
-    type: list['closures' | 'compiler implementation' | 'compilers' | 'computation theory' | 'concurrency theory' | 'continuation-passing style' | 'Coq' | 'data structure algorithm' | 'design principle' | 'domain theory' | 'formal system' | 'formal verification' | 'interpreters' | 'lambda calculus' | 'language design' | 'language feature design' | 'linguistics' | 'logic' | 'metaprogramming self reflection' | 'operational semantics' | 'order lattice theory' | 'other mathematics' | 'program analysis' | 'programming languages' | 'programming paradigm' | 'proof reason technique' | 'proof theory' | 'Rocq' | 'runtime' | 'Scheme' | 'semantics' | 'set theory relation' | 'syntax grammar' | 'theorem proving' | 'type systems' | 'type theory']?
+    type: list['compiler implementation' | 'design philosophy' | 'language philosophy' | 'language theory' | 'logic & tools' | 'other mathematics' | 'programming language basic' | 'proof technique' | 'pure lambda calculus' | 'rocq programming language' | 'semantics' | 'set theory & relation' | 'simply-typed lambda calculus' | 'type theory']?
 ---

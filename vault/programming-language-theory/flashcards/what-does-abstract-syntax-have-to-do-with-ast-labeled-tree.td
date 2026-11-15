@@ -4,6 +4,9 @@ _label: 'What does abstract syntax have to do with AST/labeled tree?'
 deck: 'compiler implementation'
 books:
   - fref("/programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/03-chapter-5-the-untyped-pure-lambda-calculus.td")
+tags:
+  - 'compiler implementation'
+  - 'language theory'
 ---
 
 ::: flashcard

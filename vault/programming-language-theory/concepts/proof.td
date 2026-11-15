@@ -5,10 +5,11 @@ journey: fref("/programming-language-theory/index.td")
 status: 'reviewing'
 tags:
   - 'formal system'
-  - 'language feature design'
+  - 'language feature/design'
   - 'logic'
   - 'programming paradigm'
-  - 'proof reason technique'
+  - 'proof/reason technique'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 Tools: Rocq (formerly Coq)

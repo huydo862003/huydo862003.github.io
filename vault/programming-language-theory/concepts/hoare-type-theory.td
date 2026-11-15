@@ -3,14 +3,14 @@ _type: PltConcept
 _label: 'Hoare type theory'
 journey: fref("/programming-language-theory/index.td")
 status: 'learning'
-books:
-  - fref("/programming-language-theory/books/software-foundations/01-logical-foundations/index.td")
+books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
 tags:
   - 'formal system'
   - 'logic'
   - 'program analysis'
-  - 'proof reason technique'
+  - 'proof/reason technique'
   - 'semantics'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 A type theory that integrates Hoare-style specifications into types, allowing pre/postconditions and invariants to be expressed and checked within a dependently typed language.

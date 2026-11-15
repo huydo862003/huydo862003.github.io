@@ -4,6 +4,8 @@ _label: 'In how many stages does the transformation from concrete syntax to abst
 deck: 'compiler implementation'
 books:
   - fref("/programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/03-chapter-5-the-untyped-pure-lambda-calculus.td")
+tags:
+  - 'compiler implementation'
 ---
 
 ::: flashcard

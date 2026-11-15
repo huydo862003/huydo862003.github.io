@@ -3,6 +3,7 @@ _type: PltConcept
 _label: 'Inductive definition function'
 journey: fref("/programming-language-theory/index.td")
 status: 'learning'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 A **definition technique** that specifies a set or type by its base cases and rules for building new elements from existing ones.

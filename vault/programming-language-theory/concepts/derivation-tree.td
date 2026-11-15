@@ -3,13 +3,13 @@ _type: PltConcept
 _label: 'Derivation tree'
 journey: fref("/programming-language-theory/index.td")
 status: 'mastered'
-books:
-  - fref("/programming-language-theory/books/types-and-programming-languages/03-part-i-untyped-systems/01-chapter-3-untyped-arithmetic-expressions.td")
+books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
 tags:
   - 'linguistics'
   - 'logic'
-  - 'set theory relation'
-  - 'syntax grammar'
+  - 'set theory & relation'
+  - 'syntax & grammar'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 A specific visualization of a specific proof that $t \to t'$.

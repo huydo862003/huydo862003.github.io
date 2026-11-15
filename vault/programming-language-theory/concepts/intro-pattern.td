@@ -3,14 +3,14 @@ _type: PltConcept
 _label: 'Intro pattern'
 journey: fref("/programming-language-theory/index.td")
 status: 'learning'
-books:
-  - fref("/programming-language-theory/books/software-foundations/01-logical-foundations/01-chapter-1-basics-functional-programming-in-rocq.td")
+books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
 tags:
   - 'formal system'
-  - 'language feature design'
-  - 'proof reason technique'
+  - 'language feature/design'
+  - 'proof/reason technique'
   - 'semantics'
-  - 'syntax grammar'
+  - 'syntax & grammar'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 [Rocq] A [tactic modifier](/programming-language-theory/concepts/tactic-modifier) in Rocq:(/programming-language-theory/concepts/rocq) that destructures [hypothesis](/programming-language-theory/concepts/hypothesis)es as they're introduced (like `intros [x y]` to unpack a pair or `intros [H|H]` for a disjunction).

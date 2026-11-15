@@ -4,7 +4,8 @@ _label: 'Tactic modifier'
 journey: fref("/programming-language-theory/index.td")
 status: 'learning'
 tags:
-  - 'syntax grammar'
+  - 'syntax & grammar'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 Tools: Rocq (formerly Coq)

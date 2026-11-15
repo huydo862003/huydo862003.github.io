@@ -1,9 +1,13 @@
 ---
 _type: PltFlashcard
 _label: 'What is a common pattern of many reactive systems?'
-deck: 'type theory'
+deck: 'design philosophy'
 books:
   - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
+tags:
+  - 'design philosophy'
+  - 'type theory'
+  - 'simply-typed lambda calculus'
 ---
 
 ::: flashcard

@@ -4,6 +4,10 @@ _label: 'What does it mean for a collection of inference rules to form the stron
 deck: 'proof technique'
 books:
   - fref("/programming-language-theory/books/software-foundations/01-logical-foundations/02-chapter-2-inductive-definitions.td")
+tags:
+  - 'proof technique'
+  - 'logic & tools'
+  - 'set theory & relation'
 ---
 
 ::: flashcard

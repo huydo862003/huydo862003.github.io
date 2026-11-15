@@ -1,9 +1,12 @@
 ---
 _type: PltFlashcard
 _label: 'Can recursion be obtained through desugaring alone in symply typed lambda calculus?'
-deck: 'type theory'
+deck: 'simply-typed lambda calculus'
 books:
   - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
+tags:
+  - 'simply-typed lambda calculus'
+  - 'type theory'
 ---
 
 ::: flashcard

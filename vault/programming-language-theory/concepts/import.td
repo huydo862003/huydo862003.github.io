@@ -4,10 +4,11 @@ _label: 'Import'
 journey: fref("/programming-language-theory/index.td")
 status: 'learning'
 tags:
-  - 'language feature design'
+  - 'language feature/design'
   - 'programming paradigm'
   - 'semantics'
-  - 'syntax grammar'
+  - 'syntax & grammar'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 [Rocq] A **command** in Rocq:(/programming-language-theory/concepts/rocq) that brings names from a loaded [module](/programming-language-theory/concepts/module) into the current namespace, allowing unqualified access (often combined as `Require Import`).

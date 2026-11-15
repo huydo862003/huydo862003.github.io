@@ -3,12 +3,12 @@ _type: PltConcept
 _label: 'Partiality'
 journey: fref("/programming-language-theory/index.td")
 status: 'reviewing'
-books:
-  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
+books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
 tags:
   - 'computation theory'
   - 'semantics'
-  - 'set theory relation'
+  - 'set theory & relation'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 The property of a computation that may not terminate or produce a result for all inputs. ${fref("/programming-language-theory/concepts/partial-function.td")}s are undefined for some inputs, unlike ${fref("/programming-language-theory/concepts/total-function.td")}s which always return a value.

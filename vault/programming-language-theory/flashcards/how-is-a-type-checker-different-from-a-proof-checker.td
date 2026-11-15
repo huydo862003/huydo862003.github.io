@@ -4,6 +4,8 @@ _label: 'How is a type checker different from a proof checker?'
 deck: 'type theory'
 books:
   - fref("/programming-language-theory/books/types-and-programming-languages/01-chapter-1-introduction.td")
+tags:
+  - 'type theory'
 ---
 
 ::: flashcard

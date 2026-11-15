@@ -3,10 +3,10 @@ _type: PltConcept
 _label: 'Directed acyclic graph (DAG)'
 journey: fref("/programming-language-theory/index.td")
 status: 'mastered'
-books:
-  - fref("/programming-language-theory/books/practical-foundations-for-programming-languages/01-part-i-judgments-and-rules/01-chapter-1-abstract-syntax.td")
+books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
 tags:
-  - 'data structure algorithm'
+  - 'data structure & algorithm'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 - Edges have a direction (from one node to another).

@@ -3,12 +3,12 @@ _type: PltConcept
 _label: 'Backward chaining search'
 journey: fref("/programming-language-theory/index.td")
 status: 'reviewing'
-books:
-  - fref("/programming-language-theory/books/software-foundations/01-logical-foundations/02-chapter-2-inductive-definitions.td")
+books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
 tags:
   - 'logic'
-  - 'proof reason technique'
-  - 'set theory relation'
+  - 'proof/reason technique'
+  - 'set theory & relation'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 A search strategy for a ${fref("/programming-language-theory/concepts/derivation.td")} of some ${fref("/programming-language-theory/concepts/judgment.td")} that starts from the desired Judgment as the initial goal, picks a rule at each step with the conclusion as the current goal, adds its premises as subgoals into a queue & continues until all subgoals are ${fref("/programming-language-theory/concepts/axiom.td")}s.

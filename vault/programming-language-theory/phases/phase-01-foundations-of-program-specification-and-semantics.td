@@ -1,0 +1,20 @@
+---
+_type: Phase
+_label: 'Phase 1 - foundations of program specification and semantics'
+journey: fref("/programming-language-theory/index.td")
+status: 'active'
+books: vault.from_nodes(PltBook).filter((b) -> b.phase == self).to_list()
+concepts: vault.from_nodes(PltConcept).filter((c) -> c.phase == self).to_list()
+---
+
+Ground-level understanding of how programs are specified and what they mean. Covers untyped systems, the lambda calculus, and the mathematical tools needed to reason about language behavior formally.
+
+## Papers
+
+- On the Criteria To Be Used in Decomposing Systems into Modules
+- Extended Static Checking
+- Inferring Type Rules for Syntactic Sugar
+
+## Projects
+
+- typerighter

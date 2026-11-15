@@ -7,6 +7,10 @@ concepts:
   - fref("/programming-language-theory/concepts/class.td")
 books:
   - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/04-chapter-4-objects.td")
+tags:
+  - 'compiler implementation'
+  - 'programming language basic'
+  - 'language theory'
 ---
 
 ::: flashcard

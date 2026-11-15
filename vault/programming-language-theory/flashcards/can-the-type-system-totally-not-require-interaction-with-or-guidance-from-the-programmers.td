@@ -4,6 +4,8 @@ _label: 'Can the type system totally not require interaction with or guidance fr
 deck: 'type theory'
 books:
   - fref("/programming-language-theory/books/types-and-programming-languages/01-chapter-1-introduction.td")
+tags:
+  - 'type theory'
 ---
 
 ::: flashcard

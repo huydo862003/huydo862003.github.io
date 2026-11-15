@@ -3,6 +3,7 @@ _type: PltConcept
 _label: 'First class functional programming pure'
 journey: fref("/programming-language-theory/index.td")
 status: 'learning'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 The status of an entity being a first-class citizen in a language  -  typically:

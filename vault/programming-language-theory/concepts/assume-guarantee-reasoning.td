@@ -3,10 +3,10 @@ _type: PltConcept
 _label: 'Assume-guarantee reasoning'
 journey: fref("/programming-language-theory/index.td")
 status: 'mastered'
-books:
-  - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/05-chapter-5-types.td")
+books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
 tags:
-  - 'proof reason technique'
+  - 'proof/reason technique'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 A pattern where interacting components have mutual obligations - one component assumes what another guarantees, and vice versa (e.g., lambda assumes parameter has type $T$, application guarantees it;

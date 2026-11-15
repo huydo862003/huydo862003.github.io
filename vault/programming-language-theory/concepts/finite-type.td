@@ -3,12 +3,12 @@ _type: PltConcept
 _label: 'Finite type'
 journey: fref("/programming-language-theory/index.td")
 status: 'reviewing'
-books:
-  - fref("/programming-language-theory/books/software-foundations/01-logical-foundations/01-chapter-1-basics-functional-programming-in-rocq.td")
+books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
 tags:
-  - 'language feature design'
+  - 'language feature/design'
   - 'programming paradigm'
   - 'type theory'
+flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 A type with a bounded number of inhabitants (like bool with 2 or enum with fixed variants), often enabling exhaustive enumeration or decidable equality.

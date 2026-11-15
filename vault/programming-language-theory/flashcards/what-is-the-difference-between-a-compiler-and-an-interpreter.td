@@ -1,12 +1,14 @@
 ---
 _type: PltFlashcard
 _label: 'What is the difference between a compiler and an interpreter?'
-deck: 'programming-language-basic'
+deck: 'programming language basic'
 concepts:
   - fref("/programming-language-theory/concepts/compiler.td")
   - fref("/programming-language-theory/concepts/interpreter.td")
 books:
   - fref("/programming-language-theory/books/programming-languages-application-and-interpretation/02-chapter-2-evaluation.td")
+tags:
+  - 'programming language basic'
 ---
 
 ::: flashcard
