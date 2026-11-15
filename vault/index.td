@@ -1,3 +1,6 @@
+---
+_label: 'Scrambled - my personal space, with thoughts, hobbies and notes scrambled together'
+---
 
 Scrambled thoughts. Scrambled journeys. Scrambled DNA. And scrambled eggs.
 
