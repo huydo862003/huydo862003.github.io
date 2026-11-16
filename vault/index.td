@@ -74,23 +74,25 @@ Papers that came out of the MPiSC work.
 
 I love music. They have accompanied me throughout every phase of my life, most prominently in university, when I couldn't make any close friends.
 
+:::grid{columns=3}
+::: grid-cell
+![Ultraviolence](https://open.spotify.com/album/1ORxRsK3MrSLvh7VQTF01F?si=DO3dHT0DRFipCmEPnoY_zQ)
+:::
+
+::: grid-cell
+![Medúlla](https://open.spotify.com/album/1OBctVHKbHrQ2t5oCeHNtN?si=bq_JkEbuSe2uvE05o_-zKQ)
+:::
+
+::: grid-cell
+![Deathconsciousness](https://open.spotify.com/album/6MH3CAXp8AN8ELrbex18dM?si=yCTXGmXaRq-KJFwB6_bz-Q)
+:::
+:::
+
 My favorite artists/bands:
 
-::: grid {columns=2}
-:::grid-cell
 - Lana Del Rey: I see her as authentic & casually poetic. She is probably the most low-key mainstream artist and it is in her the type of artistry I'd love to possess.
 - Bjork: She's a pioneer and also stays true to herself. To me, being authentic is already enough to allow me to resonate... Her sound is different, but melodic at the same time! Recently, I've been addicted to the Medúlla album!
 - Have a Nice Life: This band carried me through the senior years of university. I burned out, ran into lots of problems, betrayed by friends and professors. It came to me when I saw a thesis about Deathconsciousness & nihilism (which, to me is my world view anyways). It taught me to just not care anymore.
 - Blonde Redhead: I just love the dream pop sound of this band (the earlier sound).
 
 I also listen casually to Laufey, Clairo, and whatever else finds me.
-:::
-::: grid-cell
-
-![Ultraviolence](https://open.spotify.com/album/1ORxRsK3MrSLvh7VQTF01F?si=DO3dHT0DRFipCmEPnoY_zQ)
-
-![Medúlla](https://open.spotify.com/album/1OBctVHKbHrQ2t5oCeHNtN?si=bq_JkEbuSe2uvE05o_-zKQ)
-
-![Deathconsciousness](https://open.spotify.com/album/6MH3CAXp8AN8ELrbex18dM?si=yCTXGmXaRq-KJFwB6_bz-Q)
-:::
-:::

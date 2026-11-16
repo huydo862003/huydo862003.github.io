@@ -80,14 +80,14 @@ parent: fref("/01-programming-language-theory/01-books/01-types-and-programming-
 The convention used is similar to the standard BNF [cf. Aho, Sethi, and Ullman, 1986].
 
 ```
-t  ::=          terms:
-       true         constant true
-       false        constant false
+t  ::=                      terms:
+       true                 constant true
+       false                constant false
        if t then t else t   conditional
-       0            constant zero
-       succ t       successor
-       pred t       predecessor
-       iszero t     zero test
+       0                    constant zero
+       succ t               successor
+       pred t               predecessor
+       iszero t             zero test
 ```
 
 A simple untyped expression language - **Untyped calculus of booleans and numbers**
