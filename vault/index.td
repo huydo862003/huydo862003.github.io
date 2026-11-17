@@ -34,7 +34,7 @@ Parsers, type systems, distributed systems, design... Notes I take as I learn, m
 
 Things I work on or research in my freetime, either because I need them personally or I'm drawn to their theory.
 
-### Active / Long-running
+### Active / Completed / Stable
 
 - **[typerighter](https://github.com/huydo862003/typerighter)**: A typed content framework and SSG built around Typedown, a format that merges structured frontmatter with Markdown for interlinked notes. This site runs on it.
 
@@ -51,6 +51,7 @@ Things I work on or research in my freetime, either because I need them personal
 ### Active / Researching
 
 - **[beatlix](https://github.com/huydo862003/beatlix)**: A shared space for group activities: chat, screen share, listen to music, or just hang out together. P2P via WebRTC.
+- **[oriondb](https://github.com/dqhung15/oriondb)**: First time implementing a DBMS, specifically a vector DB. I've learnt about database management systems, but haven't tried implementing one myself. My notes are hosted here: [oriondb homepage](https://dqhung15.github.io/oriondb/).
 
 ### Stalled
 
