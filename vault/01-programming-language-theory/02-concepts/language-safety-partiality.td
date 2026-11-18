@@ -3,7 +3,6 @@ _type: PltConcept
 _label: 'Language safety partiality'
 journey: fref("/01-programming-language-theory/index.td")
 status: 'learning'
-flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 According to Types and programming languages, a language that protects its own abstraction, that is, it is mostly impossible to corrupt the run-time’s data structure and program’s data structure (although there can be escape hatches to perform unsafe operations).

@@ -3,12 +3,10 @@ _type: PltConcept
 _label: 'Parenthetical language'
 journey: fref("/01-programming-language-theory/index.td")
 status: 'learning'
-books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
 tags:
   - 'language feature/design'
   - 'metaprogramming/self-reflection'
   - 'syntax & grammar'
-flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 (define-syntax-rule (or a b) (if a a b))

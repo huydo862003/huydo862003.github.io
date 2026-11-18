@@ -3,7 +3,6 @@ _type: PltConcept
 _label: 'Pure untyped lambda calculus church numeral'
 journey: fref("/01-programming-language-theory/index.td")
 status: 'learning'
-flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 $$

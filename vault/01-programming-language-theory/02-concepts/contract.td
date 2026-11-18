@@ -3,13 +3,11 @@ _type: PltConcept
 _label: 'Contract'
 journey: fref("/01-programming-language-theory/index.td")
 status: 'learning'
-books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
 tags:
   - 'language feature/design'
   - 'runtime'
   - 'semantics'
   - 'type theory'
-flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 Problem: When typed code is called from untyped code, the type checker can't guarantee arguments will have correct types - untyped code has no static checking.

@@ -3,7 +3,6 @@ _type: PltConcept
 _label: 'Trait mixin'
 journey: fref("/01-programming-language-theory/index.td")
 status: 'learning'
-flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 Note: Trait in this sense is different from Rust’s traits.

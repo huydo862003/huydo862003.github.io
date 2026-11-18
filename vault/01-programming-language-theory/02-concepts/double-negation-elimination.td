@@ -6,7 +6,6 @@ status: 'mastered'
 tags:
   - 'logic'
   - 'syntax & grammar'
-flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 holds. It asserts that if it is false that $A$ is false, then $A$ is true.

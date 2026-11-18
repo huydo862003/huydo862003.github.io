@@ -5,7 +5,6 @@ journey: fref("/01-programming-language-theory/index.td")
 status: 'learning'
 tags:
   - 'syntax & grammar'
-flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 Tools: Rocq (formerly Coq)

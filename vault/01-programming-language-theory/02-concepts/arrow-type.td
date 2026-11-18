@@ -3,12 +3,10 @@ _type: PltConcept
 _label: 'Arrow type'
 journey: fref("/01-programming-language-theory/index.td")
 status: 'learning'
-books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
 tags:
   - 'formal system'
   - 'language feature/design'
   - 'type theory'
-flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 This generalization unifies simple function types, universal types ($\\forall\\alpha.T$), and dependent function types under a single constructor.

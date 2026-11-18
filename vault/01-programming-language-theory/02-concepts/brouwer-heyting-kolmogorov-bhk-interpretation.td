@@ -9,7 +9,6 @@ tags:
 tags:
   - 'logic'
   - 'semantics'
-flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 Motivation. Classical logic tells you *that* something exists, not *how* to find it. BHK says to prove something exists, you must exhibit a ${fref("/01-programming-language-theory/02-concepts/witness.td")}.

@@ -3,14 +3,12 @@ _type: PltConcept
 _label: 'Constant'
 journey: fref("/01-programming-language-theory/index.td")
 status: 'mastered'
-books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
 tags:
   - 'compiler implementation'
   - 'language feature/design'
   - 'program analysis'
   - 'semantics'
   - 'syntax & grammar'
-flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 The token itself *is* the value-the parser can extract it directly without consulting any environment or performing computation

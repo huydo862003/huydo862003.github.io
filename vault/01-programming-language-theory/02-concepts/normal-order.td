@@ -3,12 +3,10 @@ _type: PltConcept
 _label: 'Normal order'
 journey: fref("/01-programming-language-theory/index.td")
 status: 'mastered'
-books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
 tags:
   - 'semantics'
 tags:
   - 'semantics'
-flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 In pure lambda calculus, this strategy is defined by the following rules:

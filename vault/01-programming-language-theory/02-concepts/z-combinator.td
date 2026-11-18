@@ -3,14 +3,12 @@ _type: PltConcept
 _label: 'Z-combinator'
 journey: fref("/01-programming-language-theory/index.td")
 status: 'learning'
-books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
 tags:
   - 'lambda calculus'
   - 'semantics'
 tags:
   - 'lambda calculus'
   - 'semantics'
-flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 Formula: $\lambda f.\ (\lambda x.\ f\ (\lambda v.\ x\ x\ v))\ (\lambda x.\ f\ (\lambda v.\ x\ x\ v))$

@@ -11,7 +11,6 @@ tags:
   - 'logic'
   - 'semantics'
   - 'type theory'
-flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 **Remark. [Brouwer-Heyting-Kolmogorov (BHK) interpretation](/programming-language-theory/02-concepts/brouwer-heyting-kolmogorov-bhk-interpretation)** makes this correspondence explicit:

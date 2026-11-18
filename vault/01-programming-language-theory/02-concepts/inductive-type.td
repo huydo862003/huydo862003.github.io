@@ -6,7 +6,6 @@ status: 'mastered'
 tags:
   - 'language feature/design'
   - 'type theory'
-flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 Tools: Rocq (formerly Coq)

@@ -9,7 +9,6 @@ tags:
 tags:
   - 'design principle'
   - 'type theory'
-flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 -> The boolean discards it; you must later \"remember\" what it meant.

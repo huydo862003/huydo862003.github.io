@@ -1,5 +1,5 @@
 ---
-_type: Phase
+_type: PltPhase
 _label: 'Phase 2 - formal language theory & parsing'
 journey: fref("/01-programming-language-theory/index.td")
 status: 'on hold'

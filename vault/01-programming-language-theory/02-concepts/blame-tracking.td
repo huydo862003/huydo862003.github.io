@@ -9,7 +9,6 @@ tags:
   - 'runtime'
   - 'semantics'
   - 'type theory'
-flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 A mechanism that identifies which party (module, component, contract boundary) is responsible when a ${fref("/01-programming-language-theory/02-concepts/contract.td")} violation occurs.

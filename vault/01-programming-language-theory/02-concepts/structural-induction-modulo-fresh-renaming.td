@@ -3,11 +3,9 @@ _type: PltConcept
 _label: 'Structural induction modulo fresh renaming'
 journey: fref("/01-programming-language-theory/index.td")
 status: 'mastered'
-books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
 tags:
   - 'proof/reason technique'
   - 'syntax & grammar'
-flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 To show that $\\mathcal{P}[\\mathcal{X}](a)$ holds for every $a \\in \\mathcal{B}[\\mathcal{X}]$, it is enough to show the following:

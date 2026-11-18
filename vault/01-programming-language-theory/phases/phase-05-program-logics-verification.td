@@ -1,5 +1,5 @@
 ---
-_type: Phase
+_type: PltPhase
 _label: 'Phase 5 - program logics & verification'
 journey: fref("/01-programming-language-theory/index.td")
 status: 'on hold'

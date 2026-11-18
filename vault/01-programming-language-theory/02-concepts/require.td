@@ -8,7 +8,6 @@ tags:
   - 'programming paradigm'
   - 'semantics'
   - 'syntax & grammar'
-flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 [Rocq] A **command** in Rocq that loads a compiled module into memory, making its contents available but not directly accessible without qualification.

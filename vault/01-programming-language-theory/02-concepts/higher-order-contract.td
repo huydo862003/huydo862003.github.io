@@ -9,7 +9,6 @@ tags:
   - 'runtime'
   - 'semantics'
   - 'type theory'
-flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 Contracts on values that are themselves functions (or contain functions), presenting unique challenges because the contract cannot be fully checked immediately.

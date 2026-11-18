@@ -9,7 +9,6 @@ tags:
   - 'logic'
   - 'programming paradigm'
   - 'proof/reason technique'
-flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 Tools: Rocq (formerly Coq)

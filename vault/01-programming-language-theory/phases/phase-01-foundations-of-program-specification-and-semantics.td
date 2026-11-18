@@ -1,10 +1,8 @@
 ---
-_type: Phase
+_type: PltPhase
 _label: 'Phase 1 - foundations of program specification and semantics'
 journey: fref("/01-programming-language-theory/index.td")
 status: 'active'
-books: vault.from_nodes(PltBook).filter((b) -> b.phase == self).to_list()
-concepts: vault.from_nodes(PltConcept).filter((c) -> c.phase == self).to_list()
 _ssg:
   show_in_sidebar: false
 ---

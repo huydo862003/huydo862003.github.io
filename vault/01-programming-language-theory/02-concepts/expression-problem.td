@@ -4,11 +4,9 @@ _label: 'Expression problem'
 phase: fref("/01-programming-language-theory/phases/phase-01-foundations-of-program-specification-and-semantics.td")
 journey: fref("/01-programming-language-theory/index.td")
 status: 'learning'
-books: vault.from_node(self).follow_back(PltBook, "concepts").to_list()
 tags:
   - 'design principle'
   - 'programming paradigm'
-flashcards: vault.from_node(self).follow_back(PltFlashcard, "concepts").to_list()
 ---
 
 Neither paradigm naturally supports both dimensions of extensibility without modifying existing code or sacrificing ${fref("/01-programming-language-theory/02-concepts/type-safety.td")}. Solutions exist (type classes, object algebras, tagless final) but invo
