@@ -6,4 +6,7 @@ _extends: Book
 properties:
   tags:
     type: list['code analysis' | 'Software design']?
+  flashcards:
+    type: list[Flashcard]?
+    computed: (r) -> vault.from_node(r).follow_back(SoftEngFlashcard, "books").to_list()
 ---
