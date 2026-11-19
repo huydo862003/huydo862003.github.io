@@ -20,6 +20,8 @@ Using Capture-avoiding substitution:
 - $[x \to s](t_1\ t_2) = [x \to s]t_1\ [x \to s]t_2$
 -
 $$
+\begin{gathered}
 [x \to s]\lambda y.\ t = \begin{cases} \lambda y.\ t & \text{if}\ x = y \\ \lambda y.\ [x \to s]t & \text{if}\ x \neq y \land y \notin FV(s) \end{cases}
+\end{gathered}
 $$
 :::

@@ -42,6 +42,7 @@ $$
 Evaluation relation:
 
 $$
+\begin{gathered}
 \displaystyle\frac{t_1 \to t'_1}{\text{if}\ t_1\ \text{then}\ t_2\ \text{else}\ t_3 \to \text{if}\ t_1'\ \text{then}\ t_2\ \text{else}\ t_3}\\
 \text{if}\ \text{tru}\ \text{then}\ t_1\ \text{else}\ t_2 \to t_1\\
 \text{if}\ \text{fls}\ \text{then}\ t_1\ \text{else}\ t_2 \to t_2
@@ -53,5 +54,6 @@ $$
 \displaystyle\frac{t \to t'}{\text{iszero}\ t \to \text{iszero}\ t'}\\
 \text{iszero}\ 0 \to \text{tru}\\
 \text{iszero}\ (\text{succ}\ nv) \to \text{fls}
+\end{gathered}
 $$
 :::

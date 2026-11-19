@@ -15,7 +15,9 @@ Rules in ${fref("/01-programming-language-theory/02-concepts/pure-untyped-lambda
 - $[x\to s ]y = y\ \text{if}\ x \neq y$
 -
 $$
+\begin{gathered}
 [x\to s]\lambda y.\ t = \begin{cases} \lambda y.\ [x\to s]t & \text{if}\ y \neq x \land y \notin FV(s) \\ \lambda y.\ t & \text{if}\ y = x \end{cases}
+\end{gathered}
 $$
 
 - $[x \to s](t_1\ t_2) = [x \to s]t_1\ [x \to s]t_2$

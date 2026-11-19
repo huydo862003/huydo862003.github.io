@@ -598,10 +598,12 @@ Therefore:
 - Example: $\text{factorial}$ with Church numerals
 
     $$
-    g = \lambda \text{fct}.\ \lambda n.\ \text{if } \text{realeq}\ n\ c_0\ \text{ then } c_1\ \text{ else } \text{times}\ n\ (\text{fct}\ (\text{prd}\ n))
+\begin{gathered}
+g = \lambda \text{fct}.\ \lambda n.\ \text{if } \text{realeq}\ n\ c_0\ \text{ then } c_1\ \text{ else } \text{times}\ n\ (\text{fct}\ (\text{prd}\ n))
     \\
     \text{factorial} = \text{fix}\ g
-    $$
+\end{gathered}
+$$
 
   - The $\text{fix}$ machinery ensures that each time $\text{fct}$ is applied.
 
@@ -728,8 +730,10 @@ TODO
   - $[x \mapsto s] x = s$
   - $[x \mapsto s] y = y \quad \text{if } y \ne x$
   - $$
+\begin{gathered}
 [x \mapsto s] (\lambda y.\ t_1) = \begin{cases} \lambda y.\ t_1 & \text{if } y = x \\ \lambda y.\ [x \mapsto s]\ t_1 & \text{if } y \ne x \end{cases}
-      $$
+\end{gathered}
+$$
 
   - $[x \mapsto s] (t_1\ t_2) = ([x \mapsto s]\ t_1)\ ([x \mapsto s]\ t_2)$
 
@@ -747,8 +751,10 @@ TODO
   - $[x \mapsto s] x = s$
   - $[x \mapsto s] y = y \quad \text{if } y \ne x$
   - $$
+\begin{gathered}
 [x \mapsto s] (\lambda y.\ t_1) = \begin{cases} \lambda y.\ t_1 & \text{if } y = x \\ \lambda y.\ [x \mapsto s]\ t_1 & \text{if } y \ne x \text{ and } y \notin FV(s) \end{cases}
-      $$
+\end{gathered}
+$$
 
   - $[x \mapsto s] (t_1\ t_2) = ([x \mapsto s]\ t_1)\ ([x \mapsto s]\ t_2)$
 

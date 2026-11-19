@@ -656,9 +656,11 @@ This section introduces a fundamental pattern in type system design. **Assume-gu
 This subsection shows the pattern concretely using function rules we've already seen.
 
 $$
+\begin{gathered}
 \dfrac{\Gamma[x \leftarrow T] \vdash t : U}{\Gamma \vdash (\lambda \; x : T \; t) : (T \to U)} \; \small{\text{(Lambda)}}
 \\
 \dfrac{\Gamma \vdash t_1 : (T \to U) \quad \Gamma \vdash t_2 : T}{\Gamma \vdash (t_1 \; t_2) : U} \; \small{\text{(Application)}}
+\end{gathered}
 $$
 
 **The dance between rules:**
@@ -1126,9 +1128,9 @@ This subsection shows the proper way to deconstruct algebraic datatypes safely.
 **The generated typing rule:**
 
 $$
-
+\begin{gathered}
 \dfrac{\begin{array}{c} \Gamma \vdash e : \text{BT} \quad \Gamma \vdash e_1 : T \\ \Gamma[v \leftarrow \text{Num}, l \leftarrow \text{BT}, r \leftarrow \text{BT}] \vdash e_2 : T \end{array}}{\Gamma \vdash (\text{type-case} \; \text{BT} \; e \; [(\text{mt}) \; e_1] \; [(\text{node} \; v \; l \; r) \; e_2]) : T} \; \small{\text{(T-Case-BT)}}
-
+\end{gathered}
 $$
 
 Pattern matching enables the type checker to **refine** the type in each branch.
