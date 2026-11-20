@@ -8,5 +8,4 @@ _ssg:
 
 Junks I put here not wanting random casual people to just scroll through :P
 
-- [Diary](./diary/index)
-- [Note](./notes/index)
+[[directory-index]]
