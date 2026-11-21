@@ -7,7 +7,30 @@ _ssg:
   show_in_sidebar: false
 ---
 
-Ground-level understanding of how programs are specified and what they mean. Covers untyped systems, the lambda calculus, and the mathematical tools needed to reason about language behavior formally.
+The mathematical bedrock of everything else.
+
+## Concepts
+
+- Lambda calculus (untyped, simply typed, System F, Fomega, calculus of constructions)
+- Operational semantics (small-step, big-step, reduction semantics, structural vs natural)
+- Denotational semantics (domain theory, game semantics, categorical models)
+- Axiomatic semantics & program logics (Hoare logic, separation logic, Iris)
+- Logical relations & parametricity
+- Metatheory: progress, preservation, normalization, logical consistency
+
+## Dependency
+
+Lambda calculus + OpSem + basic Meta -> (DenoSem + Axiomatic + Logical relations)
+
+## Resources
+
+- **TAPL** - untyped -> STLC -> System F, System Fomega (type theory progression)
+- **PFPL** - foundational theory; excellent for lambda calculus, semantics, and type systems
+- **PLAI** - practical lambda-calculus in interpreters
+- **SF (PLF)** - STLC in Coq; Coq mechanization of progress/preservation
+- Gunter *Semantics of Programming Languages* - deeper denotational semantics
+- Nielson & Nielson *Semantics with Applications* - axiomatic semantics intro
+- Harper blog posts + HN comments - lambda-calculus mindset
 
 ## Papers
 

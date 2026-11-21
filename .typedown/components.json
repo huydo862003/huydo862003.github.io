@@ -170,5 +170,38 @@
         "description": "Whether to show tags"
       }
     }
+  },
+  "TdChecklist": {
+    "source": "./components/TdChecklist.vue",
+    "props": {
+      "storageKey": {
+        "schema": {
+          "type": "string"
+        },
+        "description": "localStorage namespace key"
+      },
+      "reset": {
+        "schema": {
+          "oneOf": [
+            {
+              "const": "weekly"
+            },
+            {
+              "const": "monthly"
+            }
+          ]
+        },
+        "description": "Auto-reset period"
+      },
+      "label": {
+        "schema": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "description": "Optional heading label"
+      }
+    }
   }
 }

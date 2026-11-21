@@ -7,6 +7,9 @@ site:
   title: "scrambled"
   description: "Scrambled thoughts on type theory, concurrency, design, and software engineering"
   author: "Huy Do"
+theme:
+  components:
+    - "./components"
   nav:
     - title: "PLT"
       link: "/programming-language-theory/index"
