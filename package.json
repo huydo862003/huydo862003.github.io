@@ -11,7 +11,7 @@
   "packageManager": "pnpm@12.9.0",
   "type": "module",
   "devDependencies": {
-    "typerighter": "^0.67.2",
+    "typerighter": "^0.68.0",
     "typescript": "^6.0.3"
   }
 }
