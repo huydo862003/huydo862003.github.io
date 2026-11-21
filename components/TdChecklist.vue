@@ -134,7 +134,7 @@ onMounted(() => {
 
 .td-checklist__label {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 0.6rem;
   cursor: pointer;
   user-select: none;
@@ -145,6 +145,7 @@ onMounted(() => {
   height: 1rem;
   flex-shrink: 0;
   cursor: pointer;
+  margin-top: 0.15rem;
 }
 
 .td-checklist__text {
