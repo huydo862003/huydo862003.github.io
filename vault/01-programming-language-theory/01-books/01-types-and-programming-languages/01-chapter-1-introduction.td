@@ -92,6 +92,27 @@ A **type system** is a **tractable syntactic method** for **proving the absence*
     - In this broader sense, type theory:
       - Provides an alternative foundation to **set theory** for mathematics.
       - Influences the design of **logical systems**, **proof assistants**, and **foundational theories** used in modern formal verification and PL research.
+
+      ::: details What does it mean for type theory to be an alternative foundation to set theory in mathematics?
+
+      A foundation is the set of primitive concepts you accept as given, from which you derive all of mathematics. Different foundations choose different primitives:
+
+      - **Set theory (ZFC):** primitives are sets and membership ($\in$). Everything (numbers, functions, pairs, proofs) is encoded as sets. For example, the number 2 is $\{\emptyset, \{\emptyset\}\}$, and a function is a set of ordered pairs. These encodings work but are arbitrary.
+
+      - **Type theory:** primitives are types, terms, and the typing judgment $a : A$. Objects are inherently typed by construction. You can't even form the expression $0 \in \text{true}$ because they live in different types.
+
+      "Alternative" means you can pick either starting point and build all of mathematics from it. Neither is more correct.
+      :::
+
+      ::: details How does type theory differ from set theory as a foundation?
+
+      - **Construction vs membership.** Set theory builds objects then asks "is this in that set?" Type theory constructs objects that are inherently typed. You build a natural number, and it *is* a natural number.
+
+      - **Propositions as types (Curry-Howard).** A proposition is a type, and a proof is a term inhabiting that type. Proving $A \land B$ means constructing a pair $(a, b)$ where $a : A$ and $b : B$. This unifies logic and computation.
+
+      - **No paradoxes by design.** Russell's paradox ($\{x \mid x \notin x\}$) can't be formed because you can't have a type that contains itself. The universe hierarchy ($\text{Type}_0 : \text{Type}_1 : \text{Type}_2 : \ldots$) prevents self-reference structurally.
+
+      :::
     - During the 20th century:
       - Types became standard tools in logic (proof theory).
       - Permeated the language of philosophy and science.
@@ -138,9 +159,7 @@ A **type system** is a **tractable syntactic method** for **proving the absence*
 
 - Type systems are **conservative**.
 
-::: note
-
-    Mnemonic
+::: note Mnemonic
 
     Would you want a program that proves:
 
