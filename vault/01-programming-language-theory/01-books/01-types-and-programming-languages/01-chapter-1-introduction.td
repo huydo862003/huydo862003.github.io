@@ -176,7 +176,7 @@ A **type system** is a **tractable syntactic method** for **proving the absence*
   - But they **cannot, in general, prove the presence** of such bad behaviors.
   - Consequences
     - A type system may **reject some programs that would actually run just fine** at runtime.
-    - These are **false negatives** from the programmer's point of view: safe programs that are not accepted as well-typed.
+    - These are **false positives** from the programmer's point of view: the checker flags something that is actually fine.
     - Example:
 
       ```
@@ -206,10 +206,10 @@ A **type system** is a **tractable syntactic method** for **proving the absence*
 
     -> The safety (or soundness) of each type system must be judged with respect to its own set of run-time errors.
 
-    -> A type system that aims to prevent no bad behavior at all is safe.
+    -> A type system that aims to prevent no bad behavior at all is trivially safe (vacuous truth: there are no bad behaviors to violate, so soundness holds by default). This is not a useful property.
 
 - Type analysis can detect more than low-level faults, for example:
-  - Enforce higher-level modularity poperties.
+  - Enforce higher-level modularity properties.
   - Protect the integrity of user-defined abstractions.
 - Typecheckers must embody **automatic, computationally tractable analyses**, requiring no interaction/interference with the programmer.
   - Programmers can still provide guidance via **type annotations** (usually kept fairly light).
@@ -260,7 +260,7 @@ A **type system** is a **tractable syntactic method** for **proving the absence*
 ### Language safety
 
 - "**Safe language**" is even more ambiguous than type systems.
-  - Generally based on guts feelings.
+  - Generally based on gut feelings.
   - Depend on the language community.
 
 ::: tip
@@ -331,7 +331,7 @@ A **type system** is a **tractable syntactic method** for **proving the absence*
 
 - Computer and network security
   - Java & JINI PnP architecture (Arnold, 1999)
-  - Proof-Carrying Code (Necula & Lee, 1996, 1998; Necular, 1997)
+  - Proof-Carrying Code (Necula & Lee, 1996, 1998; Necula, 1997)
   - Rephrase other fundamental ideas in security as type analyses (Abadi, Banerjee, Heintze, Riecke, 1999; Abadi, 1999; Leroy and Rouaix, 1998)
   - Applying PLT to security domain problems (Abadi, 1999; Sumii & Pierce, 2001)
 - Typechecking & inference algorithms can be used in other program analysis tools other than compilers.
@@ -371,18 +371,18 @@ A **type system** is a **tractable syntactic method** for **proving the absence*
 
     -> Designing a **clean and comprehensible syntax** is easiest when the language and type system issues are addressed **together** (reinforcing the idea that they should go hand-in-hand).
 
-- The necessity of types being an **integral part** of the language != the question of **where the programmer must physically write annotations** versus where the types can be **inferred by the compiler**.
+- The necessity of types being an **integral part** of the language != the question of **where the programmer must physically write annotations** versus where the types can be **inferred by the compiler**. The annotation burden is a **language design choice**, not an inherent property of static typing.
 - A **well-designed statically typed language** should **not require huge amounts of type information** to be tediously maintained by the programmer.
-  - **Minimal annotation (e.g., ML family):** These languages prioritize **type inference methods** to keep explicit annotations to a bare minimum.
-  - **Verbose style (e.g., C family, Java):** These languages have opted for a **somewhat more verbose** annotation style, requiring more explicit typing from the programmer.
+  - **Minimal annotation (e.g., ML family):** These languages prioritize **type inference methods** to keep explicit annotations to a bare minimum. In ML, most programs require no type annotations at all; the compiler reconstructs them.
+  - **Verbose style (e.g., C family, Java):** These languages have opted for a **somewhat more verbose** annotation style, requiring more explicit typing from the programmer. This is a design decision, not a limitation of static typing itself.
 
 ## Capsule history
 
-- Earliest type systems: used to make very simple distinctions between integer and floating point representations of numbers (e.g., in Fortran).
-- In the late 1950s and early 1960s, this classification extended to structured data & higher-order functions.
-- In the 1970s, richer concepts arose: parametric polymorphism, abstract data type, module systems, subtyping.
-
-    -> Type system becomes a field in its own rights.
+- **1950s (Fortran):** Earliest type systems made simple distinctions between integer and floating point representations of numbers, motivated by **efficiency** (choosing the right machine arithmetic instructions), not safety.
+- **Late 1950s - early 1960s:** Classification extended to structured data (records, arrays) and higher-order functions. Algol 68 contributed significantly to structured types.
+- **1970s:** Richer concepts arose: parametric polymorphism, abstract data types, module systems, subtyping. Type systems became a field in its own right.
+- **1960s-1970s (logic side):** Curry and Howard independently identified the correspondence between typed lambda-calculi and formal logics (types as propositions, programs as proofs), bridging programming languages and mathematical logic.
+- **1980s-1990s:** Explosion of type system research. ML's Hindley-Milner inference, Haskell's type classes, advances in subtyping, bounded polymorphism, and recursive types. The interplay between type systems in programming languages and those studied in mathematical logic deepened.
 
     -> Computer scientists began to be aware of the connections between **the type systems found in programming languages** and **those studied in mathematical logic**, leading to a rich interplay that continues to the present.
 
