@@ -1,6 +1,6 @@
 ---
 _type: PltFlashcard
-_label: 'What''s the most popular semantic style today? why?'
+_label: "What's the most popular semantic style today? why?"
 deck: 'language theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/small-step-structural-operational-semantics-sos.td")

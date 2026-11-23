@@ -97,7 +97,7 @@ A simple untyped expression language - **Untyped calculus of booleans and number
   - **Conditional expressions** (`if` expression).
   - The **numeric constant** `0`.
   - The **arithmetic operators** `succ` (successor) and `pred` (predecessor).
-  - A **testing operation** `iszero` that returns true when it is applied to 0, and false when it is applied to some other number.
+  - A **testing operation** `iszero` that returns true when it is applied to `0`, and `false` when it is applied to some other number.
 - Abstract syntax notation
   - **Term definition ($\text{t} ::= \ldots$):** The notation $\text{t} ::=$ declares **the set of terms**, with the letter $\text{t}$ (and variants like $\text{s}, \text{u}, \text{t}_1$) used as a **metavariable** to range over terms.
   - **Metavariable:** $\text{t}$ is a **placeholder** for a particular term of the **object language**, but belongs to the **metalanguage** (the language used for description).
@@ -105,7 +105,7 @@ A simple untyped expression language - **Untyped calculus of booleans and number
     - The prefix **meta-** comes from **meta-mathematics**, the subfield of logic whose subject matter is the mathematical properties of systems for mathematical and logical reasoning.
     - **Metatheory**: The collection of true statements that we can make about some particular logical system (or programming language)-and, by extension, the study of such statements.
 
-            -> Phrases like "**metatheory of subtyping**" can be understood as "**the formal study of the properties of systems with subtyping**".
+      -> Phrases like "**metatheory of subtyping**" can be understood as "**the formal study of the properties of systems with subtyping**".
 
   - A **program** is simply a **term** built from the forms defined in the grammar.
   - The symbol $\to$ is used to display the result of evaluating an example term.

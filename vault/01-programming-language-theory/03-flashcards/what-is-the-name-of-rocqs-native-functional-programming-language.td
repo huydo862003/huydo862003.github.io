@@ -1,6 +1,6 @@
 ---
 _type: PltFlashcard
-_label: 'What is the name of rocq''s native functional programming language?'
+_label: "What is the name of rocq's native functional programming language?"
 deck: 'rocq-programming-language'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/rocq.td")

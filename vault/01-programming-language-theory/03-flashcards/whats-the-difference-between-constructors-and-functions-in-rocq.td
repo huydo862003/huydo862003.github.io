@@ -1,6 +1,6 @@
 ---
 _type: PltFlashcard
-_label: 'What''s the difference between constructors and functions in rocq?'
+_label: "What's the difference between constructors and functions in rocq?"
 deck: 'rocq-programming-language'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/rocq.td")

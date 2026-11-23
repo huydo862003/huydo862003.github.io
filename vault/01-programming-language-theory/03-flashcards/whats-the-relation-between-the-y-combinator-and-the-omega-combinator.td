@@ -1,6 +1,6 @@
 ---
 _type: PltFlashcard
-_label: 'What''s the relation between the y-combinator and the omega combinator?'
+_label: "What's the relation between the y-combinator and the omega combinator?"
 deck: 'pure-lambda-calculus'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/divergent-big-omega-combinator.td")

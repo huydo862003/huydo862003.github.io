@@ -1,6 +1,6 @@
 ---
 _type: PltFlashcard
-_label: 'What''s special about 0 and fls in church encoding?'
+_label: "What's special about 0 and fls in church encoding?"
 deck: 'pure-lambda-calculus'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/church-numeral.td")

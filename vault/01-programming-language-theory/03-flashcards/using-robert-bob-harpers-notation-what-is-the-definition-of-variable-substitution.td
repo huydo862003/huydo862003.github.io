@@ -1,6 +1,6 @@
 ---
 _type: PltFlashcard
-_label: 'Using robert (bob) harper''s notation, what is the definition of variable substitution?'
+_label: "Using robert (bob) harper's notation, what is the definition of variable substitution?"
 deck: 'language theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/capture-avoiding-substitution.td")

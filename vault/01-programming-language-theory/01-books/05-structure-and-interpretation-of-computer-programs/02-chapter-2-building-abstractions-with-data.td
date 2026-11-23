@@ -324,3 +324,49 @@ A *tower* of types (e.g. integer -> rational -> real -> complex) allows automati
 Inadequacies: Not all hierarchies are towers. Dealing with large numbers of interrelated types while preserving modularity is very difficult.
 
 > "A variety of inadequate ontological theories have been embodied in a plethora of correspondingly inadequate programming languages. For example, much of the complexity of object-oriented programming languages—and the subtle and confusing differences among contemporary object-oriented languages—centers on the treatment of generic operations on interrelated types."
+
+## Quick revision questions
+
+:::details What is data abstraction?
+The general technique of isolating the parts of a program that deal with *how data objects are represented* from the parts that deal with *how data objects are used*. The interface between the two is a set of constructors and selectors.
+:::
+
+:::details What is the closure property?
+The property of a data combination operation where the result can itself be combined using that same operation. This permits building hierarchical structures - structures made of parts, which are made up of parts, and so on.
+:::
+
+:::details What is meant by "data" in SICP's definition?
+A collection of constructors and selectors, plus a collection of conditions (contracts) they must satisfy. Pairs can even be implemented using only procedures, blurring the line between data and procedures.
+:::
+
+:::details What are abstraction barriers and why are they useful?
+Layers separating programs that use data from programs that implement data representations. Each layer only uses the operations of the layer below. This makes programs easier to maintain and modify - changing a representation only requires changing the barrier layer.
+:::
+
+:::details What is the conventional interfaces design principle?
+Structure computations as a pipeline: enumerate -> filter -> map -> accumulate. The "signals" flowing between stages are sequences (lists). This makes the structure of the computation explicit and modular.
+:::
+
+:::details What are the three strategies for handling generic operations on multiple types, and their tradeoffs?
+| Strategy | Adding new types | Adding new operations |
+| --- | --- | --- |
+| Dispatching on type | Modify all existing operations | Easy |
+| Message passing | Easy | Modify all existing types |
+| Data-directed programming | Easy | Easy |
+:::
+
+:::details What is the principle of least commitment?
+Defer the choice of a concrete data representation to the last possible moment. Using type tags, we can maintain ambiguity of representation even after designing selectors and constructors.
+:::
+
+:::details What is stratified design?
+A complex system should be structured as a sequence of levels, each described using a sequence of languages. Each level's constructs serve as primitives for the next level. This makes programs robust: small specification changes require correspondingly small program changes.
+:::
+
+:::details What are Church numerals and what do they demonstrate?
+A representation of natural numbers using only lambda-calculus: `n` is encoded as the function that applies `f` exactly `n` times to `x`. They demonstrate that data and procedures are deeply interchangeable - numbers themselves can be encoded as higher-order functions.
+:::
+
+:::details What is coercion and what are its limitations?
+Converting an object of one type into an equivalent object of another type. It works well for towers of types (integer -> rational -> real -> complex) but not all type hierarchies are towers. Dealing with large numbers of interrelated types while preserving modularity is very difficult.
+:::

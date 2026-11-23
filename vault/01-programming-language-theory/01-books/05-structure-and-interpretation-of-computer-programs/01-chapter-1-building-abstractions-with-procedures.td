@@ -322,3 +322,45 @@ Programming languages impose restrictions on the ways in which computational ele
 - They may be passed as arguments to procedures.
 - They may be returned as the results of procedures.
 - They may be included in data structures.
+
+## Quick revision questions
+
+:::details What are the three mechanisms every powerful language has?
+Primitive expressions, means of combination, and means of abstraction.
+:::
+
+:::details What is the difference between a linear recursive process and a linear iterative process?
+A linear recursive process builds up a chain of deferred operations (hidden state grows linearly). A linear iterative process has a fixed number of state variables and constant space. A recursive *procedure* can still generate an iterative *process* (tail recursion).
+:::
+
+:::details Why must `if` be a special form rather than a regular procedure?
+Under applicative-order evaluation, all arguments to a procedure are evaluated before the procedure is applied. If `if` were a regular procedure, both branches would be evaluated -causing infinite recursion in recursive procedures where the base case never stops the recursive branch from being evaluated.
+:::
+
+:::details What is the substitution model?
+A mental model for procedure application: evaluate the procedure body with each formal parameter replaced by the corresponding argument. It is *not* how the interpreter actually works.
+:::
+
+:::details What is the difference between applicative-order and normal-order evaluation?
+Applicative-order: evaluate arguments first, then apply (call-by-value). Normal-order: fully expand (substitute) first, then reduce. For procedures that can be modeled by substitution and yield legitimate values, both produce the same result.
+:::
+
+:::details What is the significance of tail recursion in Scheme?
+Scheme executes iterative processes in constant space even when described by recursive procedures. This means special iteration constructs (loops) are merely syntactic sugar.
+:::
+
+:::details What two thought frameworks are used for designing logarithmic-step algorithms (from exercises 1.16-1.18)?
+Recursive version: come up with an induction formula and directly translate it. Iterative version: think of an invariant quantity that remains unchanged from state to state.
+:::
+
+:::details What are the four "rights and privileges" of first-class elements?
+They may be named by variables, passed as arguments to procedures, returned as results of procedures, and included in data structures.
+:::
+
+:::details What is average damping and why is it needed?
+Average damping transforms `y -> f(y)` into `y -> (y + f(y)) / 2`. It is needed because some fixed-point searches (like `y -> x/y` for square roots) do not converge without it.
+:::
+
+:::details What is the Fermat test, and what is its weakness?
+A probabilistic primality test: pick random `a < n`, check if `a^n ≡ a (mod n)`. If not, `n` is definitely not prime. If yes, `n` is probably prime. Its weakness: Carmichael numbers are non-prime but satisfy the relation for all `a < n`.
+:::
