@@ -1,6 +1,6 @@
 ---
 _type: PltConcept
-_label: 'Rice''s theorem'
+_label: "Rice's theorem"
 journey: fref("/01-programming-language-theory/index.td")
 status: 'learning'
 tags:
