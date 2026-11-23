@@ -142,7 +142,6 @@ That is, $R^{\prime}$ contains all the pairs in $R$ plus all pairs of the form $
 **Task:** Show that $R^{\prime}$ is the reflexive closure of $R$.
 
 ::: details Solution
-:::
 
 Take $R''$ to be the reflexive closure of $R$.
 
@@ -166,6 +165,7 @@ Take an element $x \in R'$.
 Therefore, $R' \subseteq R''$.
 
 In conclusion, $R' \equiv R''$ or $R'$ is the reflexive closure of $R$.
+:::
 
 ### **Exercise 2.2.7**
 
@@ -178,7 +178,7 @@ That is, we construct each $R_{i+1}$ by adding to $R_{i}$ all the pairs that can
 
 **Task:** Show that this $R^{+}$ is really the transitive closure of $R$-i.e., that it satisfies the conditions given in Definition 2.2.5.
 
-- Problem
+::: details Solution
 
     Take $R'$ to be the transitive closure of $R$.
 
@@ -197,8 +197,8 @@ That is, we construct each $R_{i+1}$ by adding to $R_{i}$ all the pairs that can
 
         Therefore, we have $(s, r)\in R_{\min{i_0, i_1}}$ and $(r, t)\in R_{\min{i_0, i_1}}$. Then, $(s,t) \in R_{\min{i_0, i_1} + 1} \subseteq R^+$. This is a contradiction.
 
-  - It's obvious that $R \subseteq R^+$.
-  - Therefore, $R' \subseteq R^+$.
+    - It's obvious that $R \subseteq R^+$.
+    - Therefore, $R' \subseteq R^+$.
   - Prove that $R^+ \subseteq R'$
 
         It's obvious that $R_0 \equiv R \subseteq R'$.
@@ -212,6 +212,7 @@ That is, we construct each $R_{i+1}$ by adding to $R_{i}$ all the pairs that can
         Therefore, $R^+ \subseteq R'$.
 
   - In conclusion, $R^+ \equiv R'$.
+:::
 
 ### **Exercise 2.2.8**
 
@@ -219,7 +220,7 @@ That is, we construct each $R_{i+1}$ by adding to $R_{i}$ all the pairs that can
 
 **Task:** Show that $P$ is also preserved by $R^{*}$ (the reflexive and transitive closure of $R$).
 
-- Problem
+::: details Solution
 
     Because $P$ is a predicate on $S$ that is preserved by $R$: For any $r, t \in S$ such that $r\, R\, t$, we have $P(r) \implies P(t)$.
 
@@ -233,7 +234,7 @@ That is, we construct each $R_{i+1}$ by adding to $R_{i}$ all the pairs that can
   - If $r\not R\, t$ but $r\, R^{ref}\, t$, then $r=t$. Therefore, $P$ is also preserved.
   - If $r\not R^{ref}\, t$ but $r\, R^{*}\, t$, that means $r\, R_i\, t$ for some $i \ge 0$, with $R_i$ as defined in the previous exercise.
 
-        Assume $i$ is smallest such number.
+    Assume $i$ is smallest such number.
 
     - $i$ must not be $0$, else we would have $r\, R^{ref}\, t$, a contradiction.
     - Assume that if $r_i\, R_i\,t_i$ then $P(r_i) \implies P(t_i)$.
@@ -251,3 +252,4 @@ That is, we construct each $R_{i+1}$ by adding to $R_{i}$ all the pairs that can
             By induction, if $r\, R_i\, t$ for any $i$, we have $P(r) \implies P(t)$.
 
     This concludes our proof.
+:::
