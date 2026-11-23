@@ -942,3 +942,45 @@ $$
     See [Astesiano, 1991] and [Hennessy, 1990] for more detailed developments.
 
 - Structural induction was introduced to computer science by [Burstall, 1969].
+
+## Quick revision questions
+
+:::details What are the five desirable properties for a system's evaluation relation?
+Determinacy of one-step evaluation (should hold for all systems), uniqueness of normal forms (should hold), values are normal forms (should hold), normal forms are values (may not hold), termination of evaluation (may not hold).
+:::
+
+:::details What is the difference between a computation rule and a congruence rule?
+Computation rules perform the actual reduction (e.g., `E-IfTrue` reduces to the then-branch). Congruence rules propagate evaluation into subterms to determine where to evaluate next (e.g., `E-If` evaluates the guard first). Together they enforce a specific evaluation order/strategy.
+:::
+
+:::details What are the three approaches to defining language semantics?
+Operational semantics: defines an abstract machine with states and transition functions. Denotational semantics: maps terms to mathematical objects (numbers, functions) in semantic domains. Axiomatic semantics: defines meaning via proof rules/laws - the meaning of a program is whatever properties you can prove about it.
+:::
+
+:::details What is a "stuck" term and what does it represent?
+A closed term that is in normal form but not a value. Stuckness represents a runtime error - the operational semantics does not know what to do because the program reached a meaningless state. In concrete implementations, these correspond to segfaults, illegal instructions, etc.
+:::
+
+:::details What are the three principles of induction on terms?
+Induction on depth: given $P(r)$ for all $r$ with $depth(r) < depth(s)$, show $P(s)$. Induction on size: given $P(r)$ for all $r$ with $size(r) < size(s)$, show $P(s)$. Structural induction: given $P(r)$ for all immediate subterms $r$ of $s$, show $P(s)$.
+:::
+
+:::details What is induction on derivations and when is it used?
+Perform induction on the size (height) of derivation trees. At each step, assume the property holds for all smaller derivations, then do case analysis on the last rule used at the root. Used to prove properties of the evaluation relation, such as determinacy of one-step evaluation.
+:::
+
+:::details What is the relationship between the one-step evaluation relation and the multi-step evaluation relation?
+The multi-step relation $\to^*$ is the reflexive, transitive closure of the one-step relation $\to$. Uniqueness of normal forms under $\to^*$ follows directly from determinacy of $\to$.
+:::
+
+:::details What does "the evaluation relation is the smallest binary relation satisfying all inference rules" mean?
+A statement $t \to t'$ is derivable iff it is justified by the rules: either it is an instance of an axiom, or it is the conclusion of a rule whose premises are all derivable. "Smallest" ensures nothing is in the relation unless the rules require it.
+:::
+
+:::details What are rule schemas vs concrete rule instances?
+Rule schemas contain metavariables (like $t_1$, $t_2$). Each schema represents an infinite set of concrete rules obtained by consistently replacing metavariables with actual terms. What we informally call "inference rules" are technically rule schemas.
+:::
+
+:::details Why does the syntax allow "nonsensical" terms like `succ true`?
+The syntax permits semantically dubious terms on purpose. These terms are what make the language interesting - the goal of a type system is precisely to exclude such ill-formed programs. Without them there would be nothing for the type system to do.
+:::

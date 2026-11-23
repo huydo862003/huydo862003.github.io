@@ -134,6 +134,40 @@ Given a relation $R$ on set $S$:
 
 - **Usage**: Generalized to triples, 4-tuples, etc. Useful for nested inductions.
 
+## Quick revision questions
+
+:::details What is the difference between a partial function and a total function?
+A partial function is a relation where each input maps to at most one output - some inputs may be undefined. A total function is a partial function where every element of the domain has a defined output. $f(x)\downarrow$ means defined; $f(x)\uparrow$ means undefined.
+:::
+
+:::details What are the four key properties of binary relations?
+Reflexive ($s\,R\,s$ for all $s$), symmetric ($s\,R\,t$ implies $t\,R\,s$), transitive ($s\,R\,t$ and $t\,R\,u$ implies $s\,R\,u$), and antisymmetric ($s\,R\,t$ and $t\,R\,s$ implies $s = t$).
+:::
+
+:::details What combinations of properties define preorder, partial order, total order, and equivalence?
+Preorder: reflexive + transitive. Partial order: preorder + antisymmetric. Total order: partial order where every pair is comparable. Equivalence: reflexive + transitive + symmetric.
+:::
+
+:::details What is the difference between reflexive closure, transitive closure, and reflexive-transitive closure?
+Reflexive closure: smallest reflexive relation containing $R$. Transitive closure ($R^+$): smallest transitive relation containing $R$. Reflexive-transitive closure ($R^*$): smallest relation containing $R$ that is both reflexive and transitive.
+:::
+
+:::details What does it mean for a preorder to be well-founded?
+A preorder is well-founded if it contains no infinite decreasing chains. Example: the standard order on natural numbers is well-founded; the standard order on integers is not.
+:::
+
+:::details What is the difference between ordinary induction and complete (strong) induction?
+Ordinary induction: prove $P(0)$, then prove $P(i) \implies P(i+1)$. Complete induction: prove $P(n)$ assuming $P(i)$ for all $i < n$. Complete induction subsumes ordinary induction and is more flexible.
+:::
+
+:::details What is lexicographic induction?
+Induction on pairs (or tuples) using the lexicographic order: $(m,n) < (m',n')$ iff $m < m'$, or $m = m'$ and $n < n'$. Useful for nested inductions where you need to decrease one component while possibly resetting another.
+:::
+
+:::details What does it mean for a predicate to be "preserved" by a relation?
+A predicate $P$ is preserved by a relation $R$ if whenever $s\,R\,s'$ and $P(s)$, then $P(s')$. Exercise 2.2.8 shows that if $P$ is preserved by $R$, it is also preserved by $R^*$.
+:::
+
 ---
 
 ## Exercises

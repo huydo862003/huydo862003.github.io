@@ -433,3 +433,61 @@ This section lists foundational texts and articles for studying type systems, ca
 - **History and Philosophy:**
   - Articles by (Constable, 1998), (Wadler, 2000), (Huet, 1990), and (Pfenning, 1999).
   - Books/Dissertations by (Laan, 1997), (Grattan-Guinness, 2001), and (Sommaruga, 2000).
+
+## Quick revision questions
+
+:::details What is TAPL's definition of a type system?
+A tractable syntactic method for proving the absence of certain program behaviors by classifying phrases according to the kinds of values they compute.
+:::
+
+:::details Why are type systems called "conservative"?
+They can prove the absence of bad behaviors but cannot prove their presence. This means they may reject programs that would actually run fine at runtime (false positives). The fundamental design tension is between safety (conservativity) and expressiveness.
+:::
+
+:::details What is the difference between heavyweight and lightweight formal methods?
+Heavyweight: Hoare logic, algebraic specifications, modal logics, denotational semantics - able to prove very general correctness properties but cumbersome in practice. Lightweight: model checking, runtime monitoring, type systems - practical enough for everyday development workflows.
+:::
+
+:::details What does it mean for a language to be "safe"?
+A safe language protects its own abstractions. Every high-level language provides abstractions of machine services; safety means the language guarantees the integrity of these abstractions. In an unsafe language, understanding program behavior requires knowing low-level details like memory layout.
+:::
+
+:::details Why is "dynamically typed" arguably a misnomer?
+It should probably be called "dynamically checked". The type systems TAPL studies are static compile-time analyses. Dynamically typed languages like Scheme use runtime type tags to distinguish structures in the heap, which is a different mechanism entirely.
+:::
+
+:::details What is the relationship between language safety and static typing?
+Language safety != static type safety. Safety can be achieved by static checking combined with runtime checks (e.g., array bounds checking). All safe statically-typed languages also perform some dynamic checks. The safety table: ML/Haskell/Java are statically checked + safe; Lisp/Scheme are dynamically checked + safe; C/C++ are statically checked + unsafe.
+:::
+
+:::details Why is the bottom-right cell (dynamically checked + unsafe) empty in the safety table?
+Once facilities are in place for enforcing safety of most operations at runtime, there is little additional cost to checking all operations.
+:::
+
+:::details What are the six practical benefits of type systems listed in chapter 1?
+Error detection (early + accurate), abstraction (enforcing disciplined programming and module interfaces), documentation (live, compiler-checked), language safety, efficiency (eliminating dynamic checks, guiding optimization), and further applications (security, theorem proving, databases).
+:::
+
+:::details Why should type system design go hand-in-hand with language design?
+Retrofitting a type system onto a language not designed with typechecking in mind is tricky. Languages without built-in type systems tend to offer features and encourage idioms that make robust static typechecking difficult. The type system should be the foundational element around which the entire language design revolves.
+:::
+
+:::details What are the two broad directions of type system research in computer science?
+Practical branch: designing type systems for real-world programming languages (safety, productivity, expressiveness). Abstract branch: studying pure typed lambda-calculi as mathematical objects, exploring connections to formal logics via the Curry-Howard correspondence.
+:::
+
+:::details What are the major landmarks in the history of type theory?
+Ramified theory of types (Whitehead & Russell, 1910), simple theory of types (Ramsey, 1925), simply typed lambda-calculus (Church, 1940), constructive type theory (Martin-Lof, 1973/1984), pure type systems (Berardi 1988, Terlouw 1989, Barendregt 1992).
+:::
+
+:::details How did type systems evolve in programming languages from the 1950s to 1990s?
+1950s (Fortran): simple integer vs floating-point distinctions for efficiency. Late 1950s-60s: structured data (records, arrays), higher-order functions (Algol 68). 1970s: parametric polymorphism, abstract data types, module systems, subtyping - type systems became a field. 1960s-70s: Curry-Howard correspondence discovered. 1980s-90s: ML's Hindley-Milner inference, Haskell's type classes, advances in subtyping, bounded polymorphism, recursive types.
+:::
+
+:::details What is the key tradeoff between theoretical typed lambda-calculi and practical programming languages regarding termination?
+Many well-studied typed lambda-calculi (like the simply typed lambda-calculus) guarantee that every well-typed program terminates (strongly normalizing). Practical languages sacrifice this guarantee because they allow general recursion, loops, side effects, and mutable state - trading guaranteed termination for expressiveness.
+:::
+
+:::details What is the Curry-Howard correspondence?
+The identification between typed lambda-calculi and formal logics: types correspond to propositions, programs correspond to proofs. Proving $A \land B$ means constructing a pair $(a, b)$ where $a : A$ and $b : B$. Discovered independently by Curry and Howard in the 1960s-70s, bridging programming languages and mathematical logic.
+:::
