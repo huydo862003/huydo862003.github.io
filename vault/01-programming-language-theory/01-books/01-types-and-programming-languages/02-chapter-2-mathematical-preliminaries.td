@@ -26,6 +26,7 @@ parent: fref("/01-programming-language-theory/01-books/01-types-and-programming-
 #### **Sets and Numbers**
 
 - **Standard notation**:
+
   - Use $\{...\}$ for **explicit lists** or **comprehension** (e.g., $\{x \in S \mid ...\}$).
   - $\emptyset$ denotes the **empty set**.
   - $S \setminus T$ denotes **set difference** (elements in $S$ but not in $T$).
@@ -39,14 +40,15 @@ parent: fref("/01-programming-language-theory/01-books/01-types-and-programming-
 - **n-place relation**: An n-ary relation.
 - **Predicate**: A one-place (unary) relation on a set $S$.
 
-    Written $P(s)$ or $s \in P$ regarding $P$ as a function mapping to truth values.
+  Written $P(s)$ or $s \in P$ regarding $P$ as a function mapping to truth values.
 
 - **Binary relation**: A two-place relation on sets $S$ and $T$.
 
-    Often written $s\,R\,t$ instead of $(s, t) \in R$.
+  Often written $s\,R\,t$ instead of $(s, t) \in R$.
 
 - **Mixfix syntax**: For readability, relations with 3+ places often use symbols separating elements to form the name (e.g., $\Gamma \vdash s : T$).
 - **Domain & Codomain**:
+
   - **Domain ($dom(R)$)**: The set of elements $s \in S$ such that $(s,t) \in R$ for some $t$.
   - **Codomain/Range ($range(R)$)**: The set of elements $t \in T$ such that $(s,t) \in R$ for some $s$.
 - **Preservation**: A predicate $P$ is **preserved** by a relation $R$ if $s\, R\, s'$ and $P(s)$ implies $P(s')$.
@@ -54,12 +56,13 @@ parent: fref("/01-programming-language-theory/01-books/01-types-and-programming-
 #### **Functions**
 
 - **Partial function**: A relation $R$ where $(s, t_1) \in R$ and $(s, t_2) \in R$ implies $t_1 = t_2$.
+
   - **Defined**: Written $f(x)\downarrow$ means $x \in dom(f)$.
   - **Undefined**: Written $f(x)\uparrow$ or $f(x) =\ \perp$ means $x \notin dom(f)$.
 - **Total function**: A partial function where $dom(R) = S$.
 - **Failure**: Distinct from divergence.
 
-    Formally, a function that may fail maps $S \to T \cup \{fail\}$.
+  Formally, a function that may fail maps $S \to T \cup \{fail\}$.
 
 ## Ordered sets
 
@@ -75,6 +78,7 @@ Given a relation $R$ on set $S$:
 #### **Types of orders**
 
 - **Preorder**: A relation that is **reflexive** and **transitive**.
+
   - Notation: Often written $\le$ or $\lesssim$.
   - Strict inequality ($s < t$): Means $s \le t \land s \neq t$.
 - **Partial order**: A preorder that is also **antisymmetric**.
@@ -86,6 +90,7 @@ Given a relation $R$ on set $S$:
 - **Join (Least upper bound $\lor$)**: An element $j$ is the join of $s$ and $t$ if $s \le j$, $t \le j$, and $j$ is less than or equal to any other upper bound $k$.
 - **Meet (Greatest lower bound $\land$)**: An element $m$ is the meet of $s$ and $t$ if $m \le s$, $m \le t$, and $m$ is greater than or equal to any other lower bound $n$.
 - **Closures**:
+
   - **Reflexive closure**: The smallest reflexive relation containing $R$.
   - **Transitive closure ($R^+$)**: The smallest transitive relation containing $R$.
   - **Reflexive and transitive closure ($R^*$)**: The smallest relation containing $R$ that is both reflexive and transitive.
@@ -94,12 +99,14 @@ Given a relation $R$ on set $S$:
 
 - **Decreasing chain**: A sequence $s_1, s_2, ...$ where $s_{i+1} < s_i$.
 - **Well-founded**: A **preorder** is well-founded if it contains **no infinite decreasing chains**.
+
   - *Example*: Standard order on $\mathbb{N}$ is well-founded; standard order on integers is not.
 
 ## Sequences
 
 - **Notation**: Elements are separated by commas (e.g., $3, 2, 1$).
 - **Cons and Append**: The comma serves as both "cons" (adding an element) and "append" (joining sequences).
+
   - *Example*: If $a = 3,2,1$, then $0,a$ is $0,3,2,1$.
 - **Range**: $1..n$ abbreviates the sequence from $1$ to $n$.
 - **Length**: $| a |$ denotes the length of sequence $a$.
@@ -112,18 +119,18 @@ Given a relation $R$ on set $S$:
 
 - Axiom: **Principle of ordinary induction**
 
-    If $P(0)$ holds, and $P(i) \implies P(i+1)$ for all $i$, then $P(n)$ holds for all $n$.
+  If $P(0)$ holds, and $P(i) \implies P(i+1)$ for all $i$, then $P(n)$ holds for all $n$.
 
 - Axiom: **Principle of complete induction**
 
-    If showing $P(n)$ is possible assuming $P(i)$ for all $i < n$, then $P(n)$ holds for all $n$.
+  If showing $P(n)$ is possible assuming $P(i)$ for all $i < n$, then $P(n)$ holds for all $n$.
 
 #### **Lexicographic induction**
 
 - **Lexicographic order**: On pairs of numbers, $(m,n) \le (m', n')$ iff $m < m'$ OR ($m = m'$ and $n \le n'$).
 - Axiom: **Principle of lexicographic induction**
 
-    If showing $P(m, n)$ is possible assuming $P(m', n')$ for all $(m', n') < (m, n)$, then $P(m, n)$ holds for all pairs.
+  If showing $P(m, n)$ is possible assuming $P(m', n')$ for all $(m', n') < (m, n)$, then $P(m, n)$ holds for all pairs.
 
 - **Usage**: Generalized to triples, 4-tuples, etc. Useful for nested inductions.
 
@@ -142,7 +149,6 @@ That is, $R^{\prime}$ contains all the pairs in $R$ plus all pairs of the form $
 **Task:** Show that $R^{\prime}$ is the reflexive closure of $R$.
 
 ::: details Solution
-
 Take $R''$ to be the reflexive closure of $R$.
 
 By definition:
@@ -179,7 +185,6 @@ That is, we construct each $R_{i+1}$ by adding to $R_{i}$ all the pairs that can
 **Task:** Show that this $R^{+}$ is really the transitive closure of $R$-i.e., that it satisfies the conditions given in Definition 2.2.5.
 
 ::: details Solution
-
   Take $R'$ to be the transitive closure of $R$.
 
   By definition:
@@ -199,9 +204,6 @@ That is, we construct each $R_{i+1}$ by adding to $R_{i}$ all the pairs that can
         Similarly, there exists $i_1$ such that $(r, t) \in R_{i_1}$.
 
         Therefore, we have $(s, r)\in R_{\min{i_0, i_1}}$ and $(r, t)\in R_{\min{i_0, i_1}}$. Then, $(s,t) \in R_{\min{i_0, i_1} + 1} \subseteq R^+$. This is a contradiction.
-
-    - It's obvious that $R \subseteq R^+$.
-    - Therefore, $R' \subseteq R^+$.
 
   - Prove that $R^+ \subseteq R'$
 
@@ -225,7 +227,6 @@ That is, we construct each $R_{i+1}$ by adding to $R_{i}$ all the pairs that can
 **Task:** Show that $P$ is also preserved by $R^{*}$ (the reflexive and transitive closure of $R$).
 
 ::: details Solution
-
     Because $P$ is a predicate on $S$ that is preserved by $R$: For any $r, t \in S$ such that $r\, R\, t$, we have $P(r) \implies P(t)$.
 
     Take $R^{ref}$ to be the reflexive closure of $R$.
