@@ -57,23 +57,23 @@ parent: fref("/01-programming-language-theory/01-books/01-types-and-programming-
 
 - Determinacy of the single-step evaluation relation.
 
-    Should hold for all systems.
+  Should hold for all systems.
 
 - Uniqueness of normal-forms.
 
-    Should hold for all systems.
+  Should hold for all systems.
 
 - Values are normal forms.
 
-    Should hold for all systems.
+  Should hold for all systems.
 
 - Normal forms are values.
 
-    May not hold for all systems.
+  May not hold for all systems.
 
 - Termination of evaluation.
 
-    May not hold for all systems.
+  May not hold for all systems.
 
 ## Introduction
 
@@ -93,14 +93,17 @@ t  ::=                      terms:
 A simple untyped expression language - **Untyped calculus of booleans and numbers**
 
 - Syntactically, this language comprises of:
+
   - The **boolean constants** `true` and `false`.
   - **Conditional expressions** (`if` expression).
   - The **numeric constant** `0`.
   - The **arithmetic operators** `succ` (successor) and `pred` (predecessor).
   - A **testing operation** `iszero` that returns true when it is applied to `0`, and `false` when it is applied to some other number.
 - Abstract syntax notation
+
   - **Term definition ($\text{t} ::= \ldots$):** The notation $\text{t} ::=$ declares **the set of terms**, with the letter $\text{t}$ (and variants like $\text{s}, \text{u}, \text{t}_1$) used as a **metavariable** to range over terms.
   - **Metavariable:** $\text{t}$ is a **placeholder** for a particular term of the **object language**, but belongs to the **metalanguage** (the language used for description).
+
     - This concept is borrowed from **meta-mathematics**, giving rise to the term **metatheory** (the formal study of a logical system's properties).
     - The prefix **meta-** comes from **meta-mathematics**, the subfield of logic whose subject matter is the mathematical properties of systems for mathematical and logical reasoning.
     - **Metatheory**: The collection of true statements that we can make about some particular logical system (or programming language)-and, by extension, the study of such statements.
@@ -109,39 +112,47 @@ A simple untyped expression language - **Untyped calculus of booleans and number
 
   - A **program** is simply a **term** built from the forms defined in the grammar.
   - The symbol $\to$ is used to display the result of evaluating an example term.
+
     - *Example:* `if false then 0 else 1` $\to$ `1`.
   - **Terms** vs **expressions:**
+
     - Currently, **term** and **expression** are interchangeable.
     - Starting in Chapter 8:
-      - **Expression** will be used for all syntactic phrases (terms, types, kinds). For calculi with additional **syntactic categories** such as **types**, **expression** is used for all sorts of syntactic phrases (including term expressions, type expressions, kind expressions,
-            etc.)
+
+      - **Expression** will be used for all syntactic phrases (terms, types, kinds). For calculi with additional **syntactic categories** such as **types**, **expression** is used for all sorts of syntactic phrases (including term expressions, type expressions, kind expressions, etc.)
       - **Term** will be reserved for phrases representing **computations** (i.e., phrases that can substitute for $\text{t}$).
   - **Values:**
+
     - The results of evaluation are terms of a simple form: **boolean constants** or **numbers** (nested `succ` applications to `0`).
     - Values play a special role in formalizing evaluation order.
   - **Abstract** vs **concrete syntax:** Parentheses (e.g., in `iszero(pred(succ 0))`) are used for readability but are **not part of the grammar's abstract syntax**, which is currently unambiguous.
   - **"Nonsensical" terms:**
+
     - The syntax permits terms that are semantically dubious (e.g., `succ true` or `if 0 then 0 else 0`).
     - These terms are what make the simple language interesting, as the goal of the type system is precisely to **exclude** such ill-formed programs.
 
 ## Syntax
 
 - There are more than one way to describe a syntax of a language.
+
   - The BNF notation above.
   - Inductive definition (more verbose).
 
-        The set of terms ($\mathcal{T}$) is the smallest set such that:
+    The set of terms ($\mathcal{T}$) is the smallest set such that:
 
     1. $\{\text{true}, \text{false}, 0\} \subseteq \mathcal{T}$.
     2. If $\text{t}_1 \in \mathcal{T}$, then $\{\text{succ } \text{t}_1, \text{pred } \text{t}_1, \text{iszero } \text{t}_1\} \subseteq \mathcal{T}$ .
     3. If $\text{t}_1 \in \mathcal{T}, \text{ t}_2 \in \mathcal{T}, \text{ and } \text{t}_3 \in \mathcal{T}$, then $\text{if } \text{t}_1 \text{ then } \text{t}_2 \text{ else } \text{t}_3 \in \mathcal{T}$.
+
     - Structure of the definition
+
       - Clause 1 specifies **base elements** (`true`, `false`, `0`).
       - Clause 2 specifies **rules** for building **compound expressions** (`succ t1`, `if t1 then t2 else t3`, etc.) from existing terms.
       - **"Smallest set":** This crucial phrase ensures that T contains **no elements** other than those absolutely required by the construction rules in the preceding clauses.
     - Formally, the definition defines T as a set of **trees**, not a set of linear strings.
     - The use of **parentheses** in written examples (the linear form) serves merely to clarify the underlying **tree structure** (the abstract syntax) of compound subterms.
   - 2-dimensional inference rule format.
+
     - A different shorthand for the same inductive definition of terms.
     - Commonly used in "natural deduction style" presentations of logical systems.
 
@@ -150,8 +161,10 @@ A simple untyped expression language - **Untyped calculus of booleans and number
     - **Inference rule (generic term):** The term **inference rule** is used generically throughout the book to refer to **any rule in the system**, including both **axioms** and **rules with one or more premises**.
     - **Axioms:** Rules with **no premises** (like the first three base cases for true, false, and 0). They are often written **without the horizontal bar**.
     - **Rule schemas (formal terminology):** What are called "inference rules" are technically **rule schemas** because their premises and conclusions contain **metavariables** (`t1`, `t2`, etc.).
+
       - Each schema formally represents an **infinite set of concrete rules** that are obtained by consistently replacing the metavariables with all possible phrases from the appropriate syntactic category (e.g., replacing t with every possible term).
   - Concrete generator notation.
+
     - More "concrete" style that gives an explicit procedure for generating the elements of $T$.
 
 ### Exercise 3.2.4
@@ -159,7 +172,6 @@ A simple untyped expression language - **Untyped calculus of booleans and number
 **Task**: How many elements does $S_3$ have?
 
 ::: details Solution
-
 Take $l_i = | S_i |$ for any $i \ge 0$.
 
 Then, $l_{i+1} = 3 + 3l_i + l_i^3$.
@@ -175,7 +187,6 @@ Then, $l_{i+1} = 3 + 3l_i + l_i^3$.
 **Task**. Show that the sets $S_i$ are **cumulative**-that is, that for each $i$ we have $S_i \subseteq S_{i+1}$.
 
 ::: details Solution
-
 - It's obvious that $S_0 \subseteq S_1$.
 - Suppose that $S_{i-1} \subseteq S_i$  for some $i > 0$.
 
@@ -237,9 +248,11 @@ The goal is to show that $\mathcal{T}$ is a subset of $S$ (i.e., $\mathcal{T} \s
 - **Base case:** For $i=0$, $S_0 = \emptyset$. Since $\emptyset \subseteq \mathcal{T}$ trivially, the base case holds.
 - **Inductive case:** Suppose $S_j \subseteq \mathcal{T}$ for all $j < i$ (or $j=i$ if we let the induction proceed on $i=j+1$). We must show that $S_{i+1} \subseteq \mathcal{T}$.
 - Any element $t$ of $S_{i+1}$ must come from one of the following three sets of possibilities (corresponding to the definition of $S_{i+1}$):
+
 1. If $t$ is a constant ($\text{true}$, $\text{false}$, or $0$), then $t \in \mathcal{T}$ by condition 1.
 2. If $t$ has the form $\text{succ } t_1$, $\text{pred } t_1$, or $\text{iszero } t_1$, then $t_1 \in S_i$. By the induction hypothesis, $t_1 \in \mathcal{T}$. Since $\mathcal{T}$ satisfies condition 2 (closure under constructors), $t \in \mathcal{T}$.
 3. If $t$ has the form $\text{if } t_1 \text{ then } t_2 \text{ else } t_3$, then $t_1, t_2, t_3 \in S_i$. By the induction hypothesis, $t_1, t_2, t_3 \in \mathcal{T}$. Since $\mathcal{T}$ satisfies condition 3 (closure under the `if` constructor), $t \in \mathcal{T}$.
+
 - Thus, we have shown that each $S_i \subseteq \mathcal{T}$. By the definition of $S$ as $\bigcup_i S_i$, this completes the argument that $S \subseteq \mathcal{T}$.
 - Insight
 - It is worth noting that the proof uses **complete induction on the natural numbers** $i$, which is *not* the more familiar "base case/induction case" form.
@@ -252,13 +265,13 @@ The goal is to show that $\mathcal{T}$ is a subset of $S$ (i.e., $\mathcal{T} \s
 
 - The **explicit characterization of the set of terms $S$** in Proposition 3.2.6 justifies an important principle for **reasoning about its elements** based on **its structure**.
 
-    If $t \in T$, then one of three things must be true about $t$:
+  If $t \in T$, then one of three things must be true about $t$:
 
   1. $t$ is a constant.
   2. $t$ has the form $\text{succ } t_1$, $\text{pred } t_1$, or $\text{isZero } t_1$ for some **smaller** term $t_1$.
   3. $t$ has the form $\text{if } t_1 \text{ then } t_2 \text{ else } t_3$ for some **smaller** terms $t_1, t_2$, and $t_3$.
 
-    -> This observation can be applied in 2 ways:
+  -> This observation can be applied in 2 ways:
 
   - **Inductive definitions** of functions can be given **over the set of terms**.
   - **Inductive proofs** of properties of terms can be given.
@@ -316,7 +329,6 @@ Equivalently, $\text{depth}(t)$ is the smallest $i$ such that $t \in S_i$, accor
 **Statement**. The number of distinct constants in a term $t$ is no greater than the size of $t$ (i.e., $| \text{Consts}(t) | \le \text{size}(t)$).
 
 ::: details Proof
-
 By induction on the depth of $t$.
 
 Assuming the desired property for all terms smaller than $t$, we must prove it for $t$ itself.
@@ -350,171 +362,198 @@ $$
 
 - **Theorem [Principles of induction on terms]:** Suppose $P$ is a predicate on terms.
 
-    ***Induction on depth:***
+  ***Induction on depth:***
 
-    If, for each term $s$, given $P(r)$ for all $r$ such that $depth(r) < depth(s)$, we can show  $P(s)$, then $P(s)$ holds for all $s$.
+  If, for each term $s$, given $P(r)$ for all $r$ such that $depth(r) < depth(s)$, we can show  $P(s)$, then $P(s)$ holds for all $s$.
 
-    ***Induction on size:***
+  ***Induction on size:***
 
-    If, for each term $s$, given $P(r)$ for all $r$ such that $size(r) < size(s)$, we can show  $P(s)$, then $P(s)$ holds for all $s$.
+  If, for each term $s$, given $P(r)$ for all $r$ such that $size(r) < size(s)$, we can show  $P(s)$, then $P(s)$ holds for all $s$.
 
-    ***Structural induction:***
+  ***Structural induction:***
 
-    If, for each term $s$, given $P(r)$ for all immediate subterms $r$ of $s$ we can show $P(s)$, then $P(s)$ holds for all $s$.
+  If, for each term $s$, given $P(r)$ for all immediate subterms $r$ of $s$ we can show $P(s)$, then $P(s)$ holds for all $s$.
 
 ::: details Proof
-
 TODO
-
 :::
 
 ## Semantic styles
 
 - How to formulate the **semantics of a language** precisely?
 - Three basic approaches to semantics formalization:
+
   - **Operational semantics**
+
     - Idea: Define a simple **abstract machine** for the language.
     - Abstract: The machine directly ses the terms of the language as its machine code.
     - **State** of the machine: For simple languages, it's just a term.
     - **Transition function**: Describe the machine's behavior - for each state, either:
+
       - Gives the next state by performing a step of **simplification** on the term.
       - Declares that the machine has **halted**.
     - The **meaning** of a term $t$ can be taken to be the final state that the machine reaches when started with $t$ as its initial state.
     - It is sometimes useful to give **two or more different operational semantics** for a single language:
+
       - Some more abstract, with machine states that look similar to the terms that the programmer writes.
       - Others closer to the structures manipulated by an actual interpreter or compiler for the language.
 
         -> Proving that **the behaviors of these different machines correspond in some suitable sense** when **executing the same program** amounts to **proving the correctness of an implementation of the language**.
 
   - **Denotational semantics**
+
     - More abstract.
     - The **meaning** of a term: Some mathematical object (number/function) rather than a sequence of machine states.
     - Giving denotational semantics for a language:
+
       1. Find a collection of **semantic domains**.
       2. Define an **interpretation function** mappings terms into elements of these domains.
 
-            -> **Domain theory**: Facilitate the search for appropriate semantic domains for modeling various language features.
+         -> **Domain theory**: Facilitate the search for appropriate semantic domains for modeling various language features.
 
     - Major advantages of denotational semantics:
+
       - Abstracts from the **gritty details of evaluation**.
       - Highlights the **essential concepts of the language**.
       - The **properties** of the chosen **collection of semantic domains** can be used to derive **powerful laws** for **reasoning about program behaviors**.
+
         - Laws for proving that two programs have exactly the same behavior.
         - Laws for that a program's behavior satisfies some specification.
       - From the properties of the chosen collection of semantic domains, it is often immediately evident that various (desirable or undesirable) things are **impossible in a language**.
   - **Axiomatic semantics**
+
     - **Idea**: Define a language by its **proof rules/laws**, rather than by first defining how programs run (operational) or what they denote mathematically (denotational) and then deriving laws.
     - So the "meaning" of a program/term is **whatever properties you can prove about it** using the axioms and inference rules.
     - Strength: Centers the whole story on **reasoning about programs**, which led to key techniques like **invariants**.
   - A bit of history & comparison
+
     - **1960s-1970s:** Operational semantics was often seen as *inferior* to denotational and axiomatic semantics-okay for "quick and dirty" feature definitions, but viewed as less elegant and less mathematically strong.
     - **1980s shift:** Denotational/axiomatic approaches ran into tougher technical issues (denotational: nondeterminism & concurrency; axiomatic: procedures), making operational semantics' **simplicity + flexibility** more appealing.
     - **Key developments that boosted operational semantics:**
+
       - **Structural operational semantics (SOS)** [Plotkin, 1981]
       - **Natural semantics** [Kahn, 1987]
       - **CCS** [Milner, 1980; 1989; 1999]
 
-            These introduced cleaner formalisms and helped transfer techniques from denotational semantics into operational settings.
+        These introduced cleaner formalisms and helped transfer techniques from denotational semantics into operational settings.
 
     - **Today:** Operational semantics is a major research area and often the **default** method for defining languages and proving properties.
 
 ## Evaluation
 
-Operational semantics of boolean expressions
+The operational semantics of boolean expressions:
+
+${fref("./_assets/01-chapter-3-untyped-arithmetic-expressions-1795447491.png")}
 
 - Three sections in the definition above.
+
   - The **set of terms**.
   - The **set of values**, a subset of terms (possible final results of evaluation).
 
-        -> Just constants `true`  and `false`.
+    -> Just constants `true`  and `false`.
 
-        -> The meta variable `v` is often used.
+    -> The meta variable `v` is often used.
 
   - The **inference rules** for the **evaluation relation**.
+
     - Written $t \to t'$.
     - Pronounced "$t$ evaluates to $t'$ in one step".
     - Intuition: If $t$ is the state of the abstract machine at a given moment, then the machine can make a step of computation and change its state to $t'$.
     - This relation is defined by **three inference rules** (or, if you prefer, two **axioms** and a **rule**, since the first two have no premises).
 
 - What the **evaluation rules** *do not* say is just **as important as** what they *do say*.
+
   - The constants `true` and `false` do not evaluate to anything, since they do not appear as the left-hand sides of any of the rules.
   - There is no rule allowing the evaluation of a `then`- or `else`-subexpression of an `if` before evaluating the `if` itself.
   - The *set of evaluation rules*, taken together forces a specific **evaluation order** (strategy).
+
     - **Congruence rule** = "where to evaluate next" (it propagates evaluation into a subterm; it sets the strategy/order).
     - **Computation rule** = "the actual reduction" (they perform the meaningful work once the guard is a value).
 
 ### Intuition formalization
 
-- **Instance of an inference rule**: ****An **instance** of **an inference rule** is obtained by **consistently replacing each metavariable** by **the same term** in the rule's **conclusion** and all its **premises** (if any).
+- **Instance of an inference rule**: An **instance** of **an inference rule** is obtained by **consistently replacing each metavariable** by **the same term** in the rule's **conclusion** and all its **premises** (if any).
 - **Rule satisfied by a relation**: A **rule** is **satisfied** by a **relation** if, for **each instance** of the rule, either **the conclusion is in the relation** or **one of the premises is not**.
-  - What does this mean? (ChatGPT)
-    - **Setup**
-      - A **rule** has **premises** and a **conclusion**.
-      - An **instance of a rule** = a concrete version after substituting its metavariables.
-      - A **relation** `R` = a **set of judgments** you consider "true" (e.g., `e \to e'`, or `\Gamma \vdash e : \tau`).
-    - **Definition**
 
-            A rule instance
+  ::: details What does this mean? (ChatGPT)
+  ::: details Setup
+  - A **rule** has **premises** and a **conclusion**.
+  - An **instance of a rule** = a concrete version after substituting its metavariables.
+  - A **relation** $R$ = a **set of judgments** you consider "true" (e.g., $e \to e'$, or $\Gamma \vdash e : \tau$).
+  :::
 
-      - Premises: `P1, P2, ..., Pn`
-      - Conclusion: `C`
+  ::: details Definition
+  A rule instance
 
-            is **satisfied by** a relation `R` iff:
+  - Premises: $P_1$, $P_2$, ..., $P_n$
+  - Conclusion: $C$ is **satisfied by** a relation $R$ iff:
+  - **either** $C \in R$
+  - **or** at least one premise is missing from $R$ (i.e., $Pi \notin R$ for some $i$)
 
-      - **either** `C \in R`
-      - **or** at least one premise is missing from `R` (i.e., `Pi \notin R` for some `i`)
+  **In words:**
 
-            **In words:**
+  > You can't have all the premises in R while the conclusion is not in R.
+  :::
 
-            > You can't have all the premises in R while the conclusion is not in R.
-    - **Equivalent logical form**
+  ::: details Equivalent logical form
+  **Closure form**
 
-            **Closure form**
+  - If all premises are in `R`, then the conclusion must be in `R`.
 
-      - If all premises are in `R`, then the conclusion must be in `R`.
+  $$
+  (P1 \in R \wedge ... \wedge Pn \in R) \Rightarrow (C \in R)
+  $$
 
-            `(P1 \in R \wedge ... \wedge Pn \in R) \Rightarrow (C \in R)`
+  **"No counterexample" form**
 
-            **"No counterexample" form**
+  - There is no rule instance where all premises are in $R$ but the conclusion is not.
 
-      - There is no rule instance where all premises are in `R` but the conclusion is not.
+  $$
+  \neg((P1 \in R \wedge ... \wedge Pn \in R) \wedge (C \notin R))
+  $$
+  :::
 
-            \neg((P1 \in R \wedge ... \wedge Pn \in R) \wedge (C \notin R))
+  ::: details Operational semantics intuition (small-step)
+  If the rule is:
 
-    - **Operational semantics intuition (small-step)**
+  - Premise: $e1 \to e1'$.
+  - Conclusion: $e1 e2 \to e1' e2$.
 
-            If the rule is:
+  Then "$R$ satisfies the rule" means: Whenever $e1 \to e1'$ is in $R$, $e1\ e2 \to e1'\ e2$ must also be in $R$.
+  :::
 
-      - Premise: `e1 \to e1'`.
-      - Conclusion: `e1 e2 \to e1' e2`.
+  **Satisfying a rule = being closed under that rule.**
+  :::
+- **One-step evaluation relation** $\to$: The $\to$ is the **smallest** **binary relation** on terms **satisfying all the inference rules**. When the pair $(t, t')$ is in **the evaluation relation**, we say that "the **evaluation statement** (or **judgment**) $t \to t'$ is **derivable**."
 
-            Then "`R` satisfies the rule" means: Whenever `e1 \to e1'` is in `R`, `e1 e2 \to e1' e2` must also be in `R`.
+  ::: details Why "smallest"?
+  Statement $t \to t'$ is **derivable** *iff* it is **justified by the rules**:
 
-        **Satisfying a rule = being closed under that rule.**
-
-- **One-step evaluation relation** `\to`: The `\to` is the **smallest** **binary relation** on terms **satisfying all the inference rules**. When the pair $(t, t')$ is in **the evaluation relation**, we say that "the **evaluation statement** (or **judgment**) $t \to t'$ is **derivable**."
-  - Why "smallest"?
-
-        Statement $t \to t'$ is **derivable** *iff* it is **justified by the rules**:
-
-    - Either it is an instance of one of the axioms.
-    - Else it is the conclusion of an instance of rule whose premise is derivable.
-
+  - Either it is an instance of one of the axioms.
+  - Else it is the conclusion of an instance of rule whose premise is derivable.
+  :::
 - The **derivability** of a given statement can be justified by exhibiting a **derivation tree**.
-  - Example
 
-        The derivability of:
+  ::: details Example
+  ${fref("./_assets/01-chapter-3-untyped-arithmetic-expressions-1795447133.png")}
 
-        is witnessed by the following derivation tree:
+  The derivability of:
 
-    - The bottom is the root.
-    - The top are the leaves.
+  ${fref("./_assets/01-chapter-3-untyped-arithmetic-expressions-1795447166.png")}
+
+  is witnessed by the following derivation tree:
+
+  ${fref("./_assets/01-chapter-3-untyped-arithmetic-expressions-1795447213.png")}
+
+  - The bottom is the root.
+  - The top are the leaves.
+  :::
 
 - An **evaluation statement $t \to t'$** is **derivable** *iff* there is a **derivation tree** with $t \to t'$ as **the label** at its **root**.
 
-    -> Often useful when **reasoning about properties** of **the evaluation relation**.
+  -> Often useful when **reasoning about properties** of **the evaluation relation**.
 
-    -> A proof technique: **induction on derivations**.
+  -> A proof technique: **induction on derivations**.
 
 ### Induction on derivations
 
@@ -534,27 +573,27 @@ At each step of the induction:
 **Problem**. If $t \to t'$ and $t \to t''$, then $t' = t''$.
 
 ::: details Proof
-
 - Induction on a **derivation of $t \to t'$**.
 - At *each step of the induction*, **assume the desired result for all smaller derivations**.
 - Proceed by a case analysis of the evaluation rule used at the root of the derivation.
 - Consider the **last rule** used in **the derivation of $t \to t'$**.
-1. `E-IfTrue`
 
--> $t$ has the form $\text{if } t_1\text{ then }t_2\text{ else }t_3$, where $t_1 =\text{true}$.
+  1. `E-IfTrue`
 
--> The last rule in the derivation of $t \to t''$ cannot be `E-IfFalse` since we cannot have both $t_1 = \text{true}$ and $t_1 = \text{false}$.
+  -> $t$ has the form $\text{if } t_1\text{ then }t_2\text{ else }t_3$, where $t_1 =\text{true}$.
 
--> The last rule in the second derivation cannot be `E-If` either, since the premise of this rule demands that $t_1 \to t'_1$ for some $t'_1$, but $\text{true}$ does not evaluate to anything.
+  -> The last rule in the derivation of $t \to t''$ cannot be `E-IfFalse` since we cannot have both $t_1 = \text{true}$ and $t_1 = \text{false}$.
 
--> The last rule in the second derivation can only be `E-IfTrue`, and it immediately follows that $t' = t''$.
+  -> The last rule in the second derivation cannot be `E-If` either, since the premise of this rule demands that $t_1 \to t'_1$ for some $t'_1$, but $\text{true}$ does not evaluate to anything.
 
-2. `E-IfFalse`
-3. `E-If`
+  -> The last rule in the second derivation can only be `E-IfTrue`, and it immediately follows that $t' = t''$.
 
--> $t$ has the form $\text{if }t_1\text{ then }t_2\text{ else }t_3$, where $t_1 \to t'_1$ for some $t'$.
+  1. `E-IfFalse`
+  2. `E-If`
 
-Symmetrically, the last rule in the derivation of $t \to t''$ can only be `E-If`, which tells us that $t$ has the form $\text{if }t_1\text{ then }t_2\text{ else }t_3$ (which we already know) and that $t_1 \to t''_1$ for some $t''_1$.
+  -> $t$ has the form $\text{if }t_1\text{ then }t_2\text{ else }t_3$, where $t_1 \to t'_1$ for some $t'$.
+
+  Symmetrically, the last rule in the derivation of $t \to t''$ can only be `E-If`, which tells us that $t$ has the form $\text{if }t_1\text{ then }t_2\text{ else }t_3$ (which we already know) and that $t_1 \to t''_1$ for some $t''_1$.
 
 -> Now the induction hypothesis applies.
 :::
@@ -568,7 +607,6 @@ This **should** hold for most systems.
 **Problem**. Spell out the induction principle used in the preceding proof, in the style of Theorem 3.3.4.
 
 ::: details Solution
-
 For a derivation $D$, take $| D |$ to be the largest length from the root to a leaf in the derivation.
 :::
 
@@ -581,7 +619,7 @@ If, for each derivation $D$, given $P(D')$ for all $D'$ such that $| D' | < | D 
 - The final value of computation is particularly interested - **states in which the machine cannot take a step**.
 - A term $t$ is in **normal form** if **no evaluation rule applies to it**- i.e., if there is no $t'$ such that $t \to t'$.
 
-    (We sometimes say "$t$ is a normal form" as shorthand for "$t$ is a term in normal form.")
+  (We sometimes say "$t$ is a normal form" as shorthand for "$t$ is a term in normal form.")
 
 #### Theorem: Value is in normal form
 
@@ -600,7 +638,6 @@ This **should** hold for most systems.
 **Statement**. If $t$ is in normal form, then $t$ is a value.
 
 ::: details Proof
-
 Suppose $t$ is not a value.
 
 We show by structural induction that $t$ is not in normal form.
@@ -626,7 +663,6 @@ This **does not** hold for most systems.
 **Problem**. Rephrase Definition 3.5.9 as a set of inference rules.
 
 ::: details Solution
-
 This one uses the inductive definition style instead of inference rules format because they are similar and inductive definition can be written more easily in Notion.
 
 $\to^*$ is the smallest set such that:
@@ -641,7 +677,6 @@ $\to^*$ is the smallest set such that:
 **Statement**. If $t \to^* u$ and $t \to^* u'$, where $u$ and $u'$ are both normal forms, then $u = u'$.
 
 ::: details Proof
-
 Follow directly from determinacy of single-step evaluation relation.
 :::
 
@@ -654,7 +689,6 @@ This **should** hold for most systems.
 **Statement**. For every term $t$ there is some normal form $t'$ such that $t \to^* t'$.
 
 ::: details Proof
-
 - Each **evaluation step** *reduces* **the size of the term**.
 - The size is a **termination measure** because **the usual order on the natural numbers** is **well founded**.
 :::
@@ -667,20 +701,21 @@ This **does not** hold for most systems.
 
 **Statement 1**. Suppose we add a new rule:
 
+${fref("./_assets/01-chapter-3-untyped-arithmetic-expressions-1795447270.png")}
+
 to the ones in Figure 3-1. Which of the above theorems (3.5.4, 3.5.7, 3.5.8, 3.5.11, and 3.5.12) remain valid?
 
 ::: details Solution
-
  - Theorem - Determinacy of one-step evaluation
 
-     [x] No longer valid.
+   [x] No longer valid.
 
-     Counterexample:
+   Counterexample:
 
-     $t = \text{ if }\text{true }\text{then }\text{true }\text{else }\text{false}$
+   $t = \text{ if }\text{true }\text{then }\text{true }\text{else }\text{false}$
 
-     - Applying `E-Funny1`, $t \to \text{ false}$.
-     - Applying `E-IfTrue`, $t \to \text{ true}$.
+   - Applying `E-Funny1`, $t \to \text{ false}$.
+   - Applying `E-IfTrue`, $t \to \text{ true}$.
 
  - Theorem - Value is in normal form
 
@@ -703,10 +738,11 @@ to the ones in Figure 3-1. Which of the above theorems (3.5.4, 3.5.7, 3.5.8, 3.5
 
 **Statement 2**. Suppose instead that we add this rule:
 
+${fref("./_assets/01-chapter-3-untyped-arithmetic-expressions-1795447300.png")}
+
 Now which of the above theorems remain valid? Do any of the proofs need to change?
 
 ::: details Solution
-
  - Theorem - Determinacy of one-step evaluation
 
      Still valid.
@@ -736,31 +772,31 @@ Now which of the above theorems remain valid? Do any of the proofs need to chang
      Still valid.
 
      This proof should change (a bit).
-
 :::
 
 ## Evaluation - Arithmetic expressions
 
-Operational semantics of arithmetic expressions - An extension of boolean expressions above
+Operational semantics of arithmetic expressions - An extension of boolean expressions above:
+
+${fref("./_assets/01-chapter-3-untyped-arithmetic-expressions-1795447698.png")}
 
 - A *new* **syntactic category** of **numeric values**.
 
-    The **final result** of **evaluating an arithmetic expression** can be a number, where a number is either $0$ or the successor of a number. (but not the successor of an arbitrary value: we will want to say that $\text{succ}(\text{true})$ is an error, not a value).
+  The **final result** of **evaluating an arithmetic expression** can be a number, where a number is either $0$ or the successor of a number. (but not the successor of an arbitrary value: we will want to say that $\text{succ}(\text{true})$ is an error, not a value).
 
 - Note that in `E-PredSucc`, only numeric values are allowed.
 
-    -> $\text{pred }(\text{succ } (\text{pred } 0)) \not\to \text{pred } 0$.
+  -> $\text{pred }(\text{succ } (\text{pred } 0)) \not\to \text{pred } 0$.
 
-    -> This is prohibited to preserve the determinacy of one-step evaluation.
+  -> This is prohibited to preserve the determinacy of one-step evaluation.
 
-    The unique next step.
+  The unique next step.
 
 #### Exercise 3.5.14 - Determinacy of one-step evaluation
 
 **Statement**. Show that Theorem 3.5.4 is also valid for the evaluation relation on **arithmetic expressions**: if $t \to t'$ and $t \to t''$, then $t' = t''$.
 
 ::: details Proof
-
 This only considers the subset of arithmetic expressions.
 
 Perform induction on a specific derivation $t \to t'$.
@@ -801,13 +837,13 @@ So, the potential rules that can generate $t \to t''$ are `E-PredZero`, `E-PredS
 
 - A **closed term** is **stuck** if it is in **normal form** but **not a value**.
 
-    -> "Stuckness" represents a simple notion of **run-time error** for our simple machine.
+  -> "Stuckness" represents a simple notion of **run-time error** for our simple machine.
 
-    -> Stuckness characterizes the situations where **the operational semantics does not know what to do** because **the program has reached a "meaning-less state."**
+  -> Stuckness characterizes the situations where **the operational semantics does not know what to do** because **the program has reached a "meaning-less state."**
 
-    -> In a more concrete implementation of the language, these states might correspond to **machine failures** of various kinds: segmentation faults, execution of illegal instructions, etc.
+  -> In a more concrete implementation of the language, these states might correspond to **machine failures** of various kinds: segmentation faults, execution of illegal instructions, etc.
 
-    -> All these kinds of bad behavior are collapsed into the single concept of **"stuck state."**
+  -> All these kinds of bad behavior are collapsed into the single concept of **"stuck state."**
 
 #### Exercise 3.5.16 - Explicit failure state in operational semantics
 
@@ -820,7 +856,11 @@ A **different way** of **formalizing meaningless states** of **the abstract mach
 
 To do this in detail, we introduce **2 new syntactic categories**:
 
+${fref("./_assets/01-chapter-3-untyped-arithmetic-expressions-1795447387.png")}
+
 and we **augment the evaluation relation** with **the following rules**:
+
+${fref("./_assets/01-chapter-3-untyped-arithmetic-expressions-1795447402.png")}
 
 Show that these **2 treatments** of **run-time errors** agree by:
 
@@ -836,7 +876,6 @@ As is often the case when proving things about programming languages, the tricky
 - So, a term can fall within **multiple syntactic categories**.
 
 ::: details Solution
-
 1. Call the original operational semantics $\mathcal{O_1}$.
 
 Call the original operational semantics $\mathcal{O}_2$.
@@ -853,7 +892,8 @@ Then, $\mathcal{O}_1$ is equivalent to $\mathcal{O}_2$ iff:
 - $\mathcal{O_1}\uparrow \iff \mathcal{O_2}\uparrow$.
 - For each term $t$ that is syntactically valid in $\mathcal{O}_1$, if $n$ is a value, then $\mathcal{O_1}(t) = n \iff \mathcal{O}_2(t) = n$.
 - For each term $t$ that is valid in $\mathcal{O}_1$, $\mathcal{O}_1(t)$ stucks $\iff \mathcal{O}_2(t) = \text{wrong}$.
-2. It's pretty trivial that evaluations in $\mathcal{O}_1$ and $\mathcal{O}_2$ always terminate.
+
+1. It's pretty trivial that evaluations in $\mathcal{O}_1$ and $\mathcal{O}_2$ always terminate.
 
 Because $\mathcal{O}_2$ is a superset of $\mathcal{O}_1$ and both are deterministic, if $\mathcal{O}_1(t)$ yields a value, $\mathcal{O}_2$ must also yield a value.
 
@@ -892,18 +932,18 @@ Similar to the above case.
 
 - The one used in this book is called **the small-step style**, because **the definition of the evaluation relation** shows how **individual steps of computation** are used to **rewrite a term, bit by bit, until it eventually becomes a value**.
 
-    On top of this, we define a **multi-step evaluation relation** that allows us to talk about terms evaluating (in many steps) to values.
+  On top of this, we define a **multi-step evaluation relation** that allows us to talk about terms evaluating (in many steps) to values.
 
 - An alternative style, called **big-step semantics** (or sometimes **natural semantics**), directly formulates the notion of **"this term evaluates to that final value**," written $t \Downarrow v$. The **big-step evaluation rules** for our language of boolean and arithmetic expressions look like this:
+
+ ${fref("./_assets/01-chapter-3-untyped-arithmetic-expressions-1795447431.png")}
 
 Show that the small-step and big-step semantics for this language coincide, i.e. $t \to^* v$ iff $t \Downarrow v$.
 
  Observation: The right-hand-side for the $\Downarrow$ is always a normal form.
 
 ::: details Proof
-
 TODO
-
 :::
 
 #### Exercise 3.5.18
@@ -911,7 +951,6 @@ TODO
 **Statement**. Suppose we want to change **the evaluation strategy** of our language so that **the $\text{then}$ and $\text{else}$ branches of an $\text{if}$ expression are evaluated** (in that order) **before the guard is evaluated**. Show how the evaluation rules need to change to achieve this effect.
 
 ::: details Solution
-
 - Remove `E-If`.
 - Add rule `E-IfThen`:
 
@@ -939,7 +978,7 @@ $$
 - The style of operational semantics that we are using here: A technical report by [Plotkin, 1981].
 - The big-step style (Exercise 3.5.17): [Kahn, 1987].
 
-    See [Astesiano, 1991] and [Hennessy, 1990] for more detailed developments.
+  See [Astesiano, 1991] and [Hennessy, 1990] for more detailed developments.
 
 - Structural induction was introduced to computer science by [Burstall, 1969].
 
