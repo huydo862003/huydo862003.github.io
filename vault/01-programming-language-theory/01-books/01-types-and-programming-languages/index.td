@@ -12,10 +12,6 @@ cover: fref("/01-programming-language-theory/01-books/01-types-and-programming-l
 tags:
   - 'lambda calculus'
   - 'type theory'
-children:
-  - fref("/01-programming-language-theory/01-books/01-types-and-programming-languages/01-chapter-1-introduction.td")
-  - fref("/01-programming-language-theory/01-books/01-types-and-programming-languages/02-chapter-2-mathematical-preliminaries.td")
-  - fref("/01-programming-language-theory/01-books/01-types-and-programming-languages/03-part-i-untyped-systems/index.td")
 ---
 
 **About**: Type systems + Programming languages (from type-theoretic view).

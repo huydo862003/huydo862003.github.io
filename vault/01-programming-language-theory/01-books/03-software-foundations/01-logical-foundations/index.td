@@ -14,10 +14,6 @@ concepts:
   - fref("/01-programming-language-theory/02-concepts/rocq-dependent-type.td")
   - fref("/01-programming-language-theory/02-concepts/functional-programming.td")
 parent: fref("/01-programming-language-theory/01-books/03-software-foundations/index.td")
-children:
-  - fref("/01-programming-language-theory/01-books/03-software-foundations/01-logical-foundations/01-chapter-1-basics-functional-programming-in-rocq.td")
-  - fref("/01-programming-language-theory/01-books/03-software-foundations/01-logical-foundations/02-chapter-2-inductive-definitions.td")
-  - fref("/01-programming-language-theory/01-books/03-software-foundations/01-logical-foundations/03-chapter-3-hypothetical-and-general-judgments.td")
 ---
 
 This book lays groundwork for the others in the Software Foundations series.

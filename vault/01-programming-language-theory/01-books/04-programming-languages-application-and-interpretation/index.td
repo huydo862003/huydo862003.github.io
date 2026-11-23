@@ -9,12 +9,6 @@ url: "https://www.plai.org/"
 tags:
   - 'fundamentals of programming language'
   - 'lambda calculus'
-children:
-  - fref("/01-programming-language-theory/01-books/04-programming-languages-application-and-interpretation/01-chapter-1-learning-smol-standard-model-of-languages.td")
-  - fref("/01-programming-language-theory/01-books/04-programming-languages-application-and-interpretation/02-chapter-2-evaluation.td")
-  - fref("/01-programming-language-theory/01-books/04-programming-languages-application-and-interpretation/03-chapter-3-syntactic-sugar.td")
-  - fref("/01-programming-language-theory/01-books/04-programming-languages-application-and-interpretation/04-chapter-4-objects.td")
-  - fref("/01-programming-language-theory/01-books/04-programming-languages-application-and-interpretation/05-chapter-5-types.td")
 ---
 
 ## Why study programming languages?

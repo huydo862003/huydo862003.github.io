@@ -13,9 +13,6 @@ tags:
   - 'lambda calculus'
   - 'semantics'
   - 'syntax & grammar'
-children:
-  - fref("/01-programming-language-theory/01-books/02-practical-foundations-for-programming-languages/00-preface.td")
-  - fref("/01-programming-language-theory/01-books/02-practical-foundations-for-programming-languages/01-part-i-judgments-and-rules/index.td")
 ---
 
 - Comprehensive theory of programming languages based on:
