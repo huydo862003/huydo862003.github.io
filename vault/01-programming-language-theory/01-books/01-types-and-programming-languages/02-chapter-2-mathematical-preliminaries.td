@@ -180,13 +180,16 @@ That is, we construct each $R_{i+1}$ by adding to $R_{i}$ all the pairs that can
 
 ::: details Solution
 
-    Take $R'$ to be the transitive closure of $R$.
+  Take $R'$ to be the transitive closure of $R$.
 
-    By definition:
+  By definition:
 
-  - $R'$ is transitive.
-  - $R \subseteq R'$.
-  - For any transitive relation $S$ such that $R \subseteq S$, we have $R' \subseteq S$.
+    - $R'$ is transitive.
+    - $R \subseteq R'$.
+    - For any transitive relation $S$ such that $R \subseteq S$, we have $R' \subseteq S$.
+
+  Two parts:
+
   - Prove that $R^+$ is transitive
 
         Suppose there exist $s, r, t$ such that $(s, r) \in R^+$ and $(r, t) \in R^+$ but $(s, t) \notin R^+$.
@@ -199,6 +202,7 @@ That is, we construct each $R_{i+1}$ by adding to $R_{i}$ all the pairs that can
 
     - It's obvious that $R \subseteq R^+$.
     - Therefore, $R' \subseteq R^+$.
+
   - Prove that $R^+ \subseteq R'$
 
         It's obvious that $R_0 \equiv R \subseteq R'$.
@@ -211,7 +215,7 @@ That is, we construct each $R_{i+1}$ by adding to $R_{i}$ all the pairs that can
 
         Therefore, $R^+ \subseteq R'$.
 
-  - In conclusion, $R^+ \equiv R'$.
+  In conclusion, $R^+ \equiv R'$.
 :::
 
 ### **Exercise 2.2.8**
