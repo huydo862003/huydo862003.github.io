@@ -4,3 +4,5 @@ _label: 'Software engineering'
 _icon: icon.wrench
 status: 'active'
 ---
+
+[[directory-index]]
