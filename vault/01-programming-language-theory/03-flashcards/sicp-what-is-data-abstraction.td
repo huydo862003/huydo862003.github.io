@@ -5,7 +5,7 @@ deck: 'language theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/abstract-data-type.td")
 books:
-  - fref("/01-programming-language-theory/01-books/05-structure-and-interpretation-of-computer-programs/02-chapter-2-building-abstractions-with-data.td")
+  - fref("/01-programming-language-theory/01-books/05-structure-and-interpretation-of-computer-programs/02-chapter-2-building-abstractions-with-data/index.td")
 tags:
   - 'programming language basic'
 ---

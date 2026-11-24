@@ -3,7 +3,7 @@ _type: PltFlashcard
 _label: 'SICP: Linear recursive vs linear iterative process'
 deck: 'language theory'
 books:
-  - fref("/01-programming-language-theory/01-books/05-structure-and-interpretation-of-computer-programs/01-chapter-1-building-abstractions-with-procedures.td")
+  - fref("/01-programming-language-theory/01-books/05-structure-and-interpretation-of-computer-programs/01-chapter-1-building-abstractions-with-procedures/index.td")
 tags:
   - 'programming language basic'
 ---
