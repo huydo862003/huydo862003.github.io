@@ -577,21 +577,17 @@ At each step of the induction:
 - At *each step of the induction*, **assume the desired result for all smaller derivations**.
 - Proceed by a case analysis of the evaluation rule used at the root of the derivation.
 - Consider the **last rule** used in **the derivation of $t \to t'$**.
-
   1. `E-IfTrue`
+     -> $t$ has the form $\text{if } t_1\text{ then }t_2\text{ else }t_3$, where $t_1 =\text{true}$.
 
-  -> $t$ has the form $\text{if } t_1\text{ then }t_2\text{ else }t_3$, where $t_1 =\text{true}$.
+     -> The last rule in the derivation of $t \to t''$ cannot be `E-IfFalse` since we cannot have both $t_1 = \text{true}$ and $t_1 = \text{false}$.
 
-  -> The last rule in the derivation of $t \to t''$ cannot be `E-IfFalse` since we cannot have both $t_1 = \text{true}$ and $t_1 = \text{false}$.
+     -> The last rule in the second derivation cannot be `E-If` either, since the premise of this rule demands that $t_1 \to t'_1$ for some $t'_1$, but $\text{true}$ does not evaluate to anything.
 
-  -> The last rule in the second derivation cannot be `E-If` either, since the premise of this rule demands that $t_1 \to t'_1$ for some $t'_1$, but $\text{true}$ does not evaluate to anything.
-
-  -> The last rule in the second derivation can only be `E-IfTrue`, and it immediately follows that $t' = t''$.
-
-  1. `E-IfFalse`
-  2. `E-If`
-
-  -> $t$ has the form $\text{if }t_1\text{ then }t_2\text{ else }t_3$, where $t_1 \to t'_1$ for some $t'$.
+     -> The last rule in the second derivation can only be `E-IfTrue`, and it immediately follows that $t' = t''$.
+  2. `E-IfFalse`
+  3. `E-If`
+     -> $t$ has the form $\text{if }t_1\text{ then }t_2\text{ else }t_3$, where $t_1 \to t'_1$ for some $t'$.
 
   Symmetrically, the last rule in the derivation of $t \to t''$ can only be `E-If`, which tells us that $t$ has the form $\text{if }t_1\text{ then }t_2\text{ else }t_3$ (which we already know) and that $t_1 \to t''_1$ for some $t''_1$.
 
