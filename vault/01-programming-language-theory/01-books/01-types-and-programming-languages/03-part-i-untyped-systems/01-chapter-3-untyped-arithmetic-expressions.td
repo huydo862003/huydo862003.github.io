@@ -517,7 +517,7 @@ ${fref("./_assets/01-chapter-3-untyped-arithmetic-expressions-1795447491.png")}
   If the rule is:
 
   - Premise: $e1 \to e1'$.
-  - Conclusion: $e1 e2 \to e1' e2$.
+  - Conclusion: $e1\ e2 \to e1'\ e2$.
 
   Then "$R$ satisfies the rule" means: Whenever $e1 \to e1'$ is in $R$, $e1\ e2 \to e1'\ e2$ must also be in $R$.
   :::
