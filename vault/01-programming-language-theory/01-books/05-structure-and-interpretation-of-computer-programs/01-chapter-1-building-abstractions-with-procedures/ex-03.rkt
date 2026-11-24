@@ -1,0 +1,5 @@
+(define (sum-of-square-max-pair x y z)
+  (define (square x) (* x x))
+  (cond ((and (< x y) (< x z)) (+ (square y) (square z)))
+        ((and (< y x) (< y z)) (+ (square x) (square z)))
+        (else (+ (square x) (square y)))))

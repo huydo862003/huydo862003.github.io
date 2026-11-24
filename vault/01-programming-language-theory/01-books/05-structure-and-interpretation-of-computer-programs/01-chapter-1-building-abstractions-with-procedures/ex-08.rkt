@@ -1,0 +1,12 @@
+(define (cuber x)
+  (define (cuber-iter guess)
+    (if (good-enough? guess)
+      guess
+      (cuber-iter (improve guess))))
+  (define (good-enough? guess)
+    (< (abs (- (* guess guess guess) x)) 0.0001))
+  (define (improve guess)
+    (/ (+ (/ x (* guess guess))
+          (* 2.0 guess))
+        3.0))
+  (cuber-iter 1.0))

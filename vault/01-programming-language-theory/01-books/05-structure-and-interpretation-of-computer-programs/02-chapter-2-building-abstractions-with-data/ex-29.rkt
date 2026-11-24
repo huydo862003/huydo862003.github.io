@@ -1,0 +1,11 @@
+(define (fringe t)
+  (define (fringe-iter t right-part)
+    (if (null? t)
+      right-part
+      (let ((new-right-part (fringe-iter (cdr t) right-part))
+            (cur-e (car t)))
+        (if (pair? cur-e)
+          (fringe-iter cur-e new-right-part)
+          (cons cur-e new-right-part))
+    )))
+  (fringe-iter t null))
