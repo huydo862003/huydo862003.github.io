@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'How does the principle of rule induction apply to the case simultaneous inductive definitions?'
-deck: 'proof technique'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/simultaneous-inductive-definition.td")
 books:
@@ -12,7 +11,7 @@ tags:
   - 'set theory & relation'
 ---
 
-::: flashcard
+::: flashcard{deck="proof technique"}
 How does the principle of rule induction apply to the case simultaneous inductive definitions?
 === key
 Same as for Iterated inductive definition, just that we simultaneously handle more than one properties for more than one judgment forms.

@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is the meaning of a term?'
-deck: 'language theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/term.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard
+::: flashcard{deck="language theory"}
 What is the meaning of a term?
 === key
 The meaning of a term can be taken to be the final state of the abstract machine running it.

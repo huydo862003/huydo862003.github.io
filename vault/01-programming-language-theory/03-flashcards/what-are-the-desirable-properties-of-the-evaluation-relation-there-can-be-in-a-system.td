@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What are the desirable properties of the evaluation relation there can be in a system?'
-deck: 'pure lambda calculus'
 books:
   - fref("/01-programming-language-theory/01-books/01-types-and-programming-languages/03-part-i-untyped-systems/01-chapter-3-untyped-arithmetic-expressions.td")
 tags:
@@ -9,7 +8,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard
+::: flashcard{deck="pure lambda calculus"}
 What are the desirable properties of the evaluation relation there can be in a system?
 === key
 Desired property: Termination of evaluation

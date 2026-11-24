@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is a first order variable?'
-deck: 'programming language basic'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/first-order-variable.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'programming language basic'
 ---
 
-::: flashcard
+::: flashcard{deck="programming language basic"}
 What is a first order variable?
 === key
 A variable that ranges over data values (e.g., integers, booleans, records).

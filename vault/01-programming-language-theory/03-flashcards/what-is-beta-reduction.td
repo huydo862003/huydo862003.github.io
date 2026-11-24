@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is beta reduction?'
-deck: 'pure lambda calculus'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/beta-redex-reducible-expression.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard
+::: flashcard{deck="pure lambda calculus"}
 What is beta reduction?
 === key
 The act of reducing a Beta-redex/Reducible expression by substituting the redex's argument into its function body.

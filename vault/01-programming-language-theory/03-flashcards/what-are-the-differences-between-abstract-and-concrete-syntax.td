@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What are the differences between abstract and concrete syntax?'
-deck: 'programming language basic'
 books:
   - fref("/01-programming-language-theory/01-books/01-types-and-programming-languages/03-part-i-untyped-systems/01-chapter-3-untyped-arithmetic-expressions.td")
   - fref("/01-programming-language-theory/01-books/01-types-and-programming-languages/03-part-i-untyped-systems/03-chapter-5-the-untyped-pure-lambda-calculus.td")
@@ -11,7 +10,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard
+::: flashcard{deck="programming language basic"}
 What are the differences between abstract and concrete syntax?
 === key
 - Concrete/Surface syntax: The language that the programmers actually programs in - usually a sequence of characters.

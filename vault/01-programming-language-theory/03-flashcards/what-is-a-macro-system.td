@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is a macro system?'
-deck: 'compiler implementation'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/macro-system.td")
 books:
@@ -11,7 +10,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard
+::: flashcard{deck="compiler implementation"}
 What is a macro system?
 === key
 A language facility that provides programmable syntax transformations through macros.

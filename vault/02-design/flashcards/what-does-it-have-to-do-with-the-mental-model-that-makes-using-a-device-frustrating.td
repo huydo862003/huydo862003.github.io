@@ -1,7 +1,6 @@
 ---
 _type: DesignFlashcard
 _label: 'What does it have to do with the mental model that makes using a device frustrating?'
-deck: 'general'
 concepts:
   - fref("/02-design/concepts/mental-model.td")
 ---

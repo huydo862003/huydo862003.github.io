@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is a rule scheme?'
-deck: 'logic & tools'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/inference-rule.td")
   - fref("/01-programming-language-theory/02-concepts/metavariable.td")
@@ -12,7 +11,7 @@ tags:
   - 'proof technique'
 ---
 
-::: flashcard
+::: flashcard{deck="logic & tools"}
 What is a rule scheme?
 === key
 Synonymous with Rule schema - An Inference rule that is parameterized with Metavariables.

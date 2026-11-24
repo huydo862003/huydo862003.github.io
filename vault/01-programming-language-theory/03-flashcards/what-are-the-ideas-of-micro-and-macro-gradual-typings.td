@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What are the ideas of micro and macro gradual typings?'
-deck: 'type theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/gradual-typing.td")
   - fref("/01-programming-language-theory/02-concepts/macro-gradual-typing.td")
@@ -12,7 +11,7 @@ tags:
   - 'type theory'
 ---
 
-::: flashcard
+::: flashcard{deck="type theory"}
 What are the ideas of micro and macro gradual typings?
 === key
 Gradual typing is often the formal term for retrofitted type systems.

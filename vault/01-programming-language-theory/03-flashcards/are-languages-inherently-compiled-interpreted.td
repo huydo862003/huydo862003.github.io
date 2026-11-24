@@ -1,14 +1,13 @@
 ---
 _type: PltFlashcard
 _label: 'Are languages inherently compiled/interpreted?'
-deck: 'programming language basic'
 books:
   - fref("/01-programming-language-theory/01-books/04-programming-languages-application-and-interpretation/02-chapter-2-evaluation.td")
 tags:
   - 'programming language basic'
 ---
 
-::: flashcard
+::: flashcard{deck="programming language basic"}
 Are languages inherently compiled/interpreted?
 === key
 - **No**: Languages are not inherently compiled or interpreted.

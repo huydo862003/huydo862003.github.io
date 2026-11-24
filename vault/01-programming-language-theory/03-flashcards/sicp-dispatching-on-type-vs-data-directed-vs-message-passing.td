@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'SICP: Dispatching on type vs data-directed programming vs message passing'
-deck: 'language theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/message-passing.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard
+::: flashcard{deck="language theory"}
 Compare dispatching on type, data-directed programming, and message passing for handling generic operations.
 === key
 All three are strategies for implementing generic operations over multiple types (decompositions of the operation-and-type table):

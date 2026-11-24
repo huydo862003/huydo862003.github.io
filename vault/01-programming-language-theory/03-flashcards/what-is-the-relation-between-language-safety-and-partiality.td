@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is the relation between language safety and partiality?'
-deck: 'type theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/language-safety.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'type theory'
 ---
 
-::: flashcard
+::: flashcard{deck="type theory"}
 What is the relation between language safety and partiality?
 === key
 A safe language should have partial operations: `+` cannot work on strings for example.

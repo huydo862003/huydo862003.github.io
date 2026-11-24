@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is a value in programming language calculus?'
-deck: 'language theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/value.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard
+::: flashcard{deck="language theory"}
 What is a value in programming language calculus?
 === key
 A syntactic term that is not related by another term in the operational semantics.

@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'SICP: Benefits of introducing assignment and local state'
-deck: 'language theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/state.td")
   - fref("/01-programming-language-theory/02-concepts/mutation.td")
@@ -11,7 +10,7 @@ tags:
   - 'semantics'
 ---
 
-::: flashcard
+::: flashcard{deck="language theory"}
 What is the benefit of introducing assignment and local state variables? What is the cost?
 === key
 **Benefit**: By introducing assignment (`set!`) and hiding state in local variables, we are able to structure systems in a *more modular* fashion.

@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What does "variables in an AST range over some specified sorts" mean?'
-deck: 'language theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/variable.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard
+::: flashcard{deck="language theory"}
 What does "variables in an AST range over some specified sorts" mean?
 === key
 Variables are placeholders for ASTs of some specified sorts.

@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What does lambda calculus consist of in its purest form?'
-deck: 'pure lambda calculus'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/lambda-calculus.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard
+::: flashcard{deck="pure lambda calculus"}
 What does lambda calculus consist of in its purest form?
 === key
 - Function definition.

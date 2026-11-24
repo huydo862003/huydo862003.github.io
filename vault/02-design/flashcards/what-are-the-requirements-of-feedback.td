@@ -1,7 +1,6 @@
 ---
 _type: DesignFlashcard
 _label: 'What are the requirements of feedback?'
-deck: 'general'
 concepts:
   - fref("/02-design/concepts/feedback.td")
 ---

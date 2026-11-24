@@ -1,14 +1,13 @@
 ---
 _type: PltFlashcard
 _label: 'SICP: What are the three mechanisms every powerful language has?'
-deck: 'language theory'
 books:
   - fref("/01-programming-language-theory/01-books/05-structure-and-interpretation-of-computer-programs/01-chapter-1-building-abstractions-with-procedures/index.td")
 tags:
   - 'language theory'
 ---
 
-::: flashcard
+::: flashcard{deck="language theory"}
 What are the three mechanisms every powerful language has for combining simple ideas into more complex ideas?
 === key
 1. *Primitive expressions* - the simplest entities the language is concerned with.

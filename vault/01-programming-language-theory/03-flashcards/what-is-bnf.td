@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is BNF?'
-deck: 'language theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/bnf.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard
+::: flashcard{deck="language theory"}
 What is BNF?
 === key
 A specific meta-language that is widely used to describe context-free languages.

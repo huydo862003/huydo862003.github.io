@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is a macro?'
-deck: 'language theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/macro.td")
 books:
@@ -11,7 +10,7 @@ tags:
   - 'compiler implementation'
 ---
 
-::: flashcard
+::: flashcard{deck="language theory"}
 What is a macro?
 === key
 Macro is a syntactic pattern that gets expanded into other code at compile time.

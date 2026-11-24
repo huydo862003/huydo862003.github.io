@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is an object language?'
-deck: 'language theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/object-language.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard
+::: flashcard{deck="language theory"}
 What is an object language?
 === key
 The formal language being defined by the metalanguage.

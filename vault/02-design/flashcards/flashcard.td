@@ -1,6 +1,5 @@
 ---
 _type: DesignFlashcard
-deck: 'general'
 ---
 
 ::: flashcard

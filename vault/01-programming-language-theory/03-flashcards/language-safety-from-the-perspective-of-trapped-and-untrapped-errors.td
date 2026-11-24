@@ -1,14 +1,13 @@
 ---
 _type: PltFlashcard
 _label: 'Language safety from the perspective of trapped and untrapped errors?'
-deck: 'language theory'
 books:
   - fref("/01-programming-language-theory/01-books/01-types-and-programming-languages/01-chapter-1-introduction.td")
 tags:
   - 'language theory'
 ---
 
-::: flashcard
+::: flashcard{deck="language theory"}
 Language safety from the perspective of trapped and untrapped errors?
 === key
 Trapped error: An error that causes immediate termination of the process.

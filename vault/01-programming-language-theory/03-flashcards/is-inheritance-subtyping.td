@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'Is inheritance = subtyping?'
-deck: 'type theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/inheritance.td")
   - fref("/01-programming-language-theory/02-concepts/subtyping.td")
@@ -11,7 +10,7 @@ tags:
   - 'type theory'
 ---
 
-::: flashcard
+::: flashcard{deck="type theory"}
 Is inheritance = subtyping?
 === key
 No.

@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'In an ABT, what is the valence of an argument?'
-deck: 'language theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/valence.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard
+::: flashcard{deck="language theory"}
 In an ABT, what is the valence of an argument?
 === key
 The specification of an argument of an operator, specifying the number and the sorts of its bound variables and the sort of itself.

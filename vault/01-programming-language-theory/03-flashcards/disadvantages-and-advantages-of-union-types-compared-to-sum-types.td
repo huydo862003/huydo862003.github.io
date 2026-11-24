@@ -1,14 +1,13 @@
 ---
 _type: PltFlashcard
 _label: 'Disadvantages and advantages of union types compared to sum types?'
-deck: 'type theory'
 books:
   - fref("/01-programming-language-theory/01-books/04-programming-languages-application-and-interpretation/05-chapter-5-types.td")
 tags:
   - 'type theory'
 ---
 
-::: flashcard
+::: flashcard{deck="type theory"}
 Disadvantages and advantages of union types compared to sum types?
 === key
 Depending on the exact language, tooling and runtime:

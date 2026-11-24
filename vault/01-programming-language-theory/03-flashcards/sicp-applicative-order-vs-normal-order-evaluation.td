@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'SICP: Applicative order vs normal order evaluation'
-deck: 'language theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/call-by-value.td")
   - fref("/01-programming-language-theory/02-concepts/call-by-name.td")
@@ -12,7 +11,7 @@ tags:
   - 'semantics'
 ---
 
-::: flashcard
+::: flashcard{deck="language theory"}
 What is the difference between applicative-order and normal-order evaluation? Which does Scheme use and why?
 === key
 - *Normal-order*: "Fully expand and then reduce" - arguments are substituted unevaluated into the procedure body first, then reduced.

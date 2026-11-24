@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: "What are judgment/assertion, judgment form, judgment instance, judgment form instance's subject? in what notations are they written in?"
-deck: 'logic & tools'
 books:
   - fref("/01-programming-language-theory/01-books/03-software-foundations/01-logical-foundations/02-chapter-2-inductive-definitions.td")
 tags:
@@ -10,7 +9,7 @@ tags:
   - 'proof technique'
 ---
 
-::: flashcard
+::: flashcard{deck="logic & tools"}
 What are judgment/assertion, judgment form, judgment instance, judgment form instance's subject? in what notations are they written in?
 === key
 - A judgment form is a relation, interpreted as a Predicate.

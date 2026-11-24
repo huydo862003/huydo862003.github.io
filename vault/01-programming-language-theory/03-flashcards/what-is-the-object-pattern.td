@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is the object pattern?'
-deck: 'language theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/object-pattern.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard
+::: flashcard{deck="language theory"}
 What is the object pattern?
 === key
 ```racket

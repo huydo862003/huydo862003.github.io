@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What else can a type system catch other than low-level faults such as invoking non-existent methods'
-deck: 'type theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/type-system.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'type theory'
 ---
 
-::: flashcard
+::: flashcard{deck="type theory"}
 What else can a type system catch other than low-level faults such as invoking non-existent methods
 === key
 - Access control.

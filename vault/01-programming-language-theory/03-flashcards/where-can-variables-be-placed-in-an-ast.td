@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'Where can variables be placed in an AST?'
-deck: 'language theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/variable.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard
+::: flashcard{deck="language theory"}
 Where can variables be placed in an AST?
 === key
 Leaves.

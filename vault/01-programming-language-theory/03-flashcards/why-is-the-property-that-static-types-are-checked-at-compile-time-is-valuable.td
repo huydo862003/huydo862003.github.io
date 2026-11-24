@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'Why is the property that static types are checked at compile-time is valuable?'
-deck: 'type theory'
 books:
   - fref("/01-programming-language-theory/01-books/04-programming-languages-application-and-interpretation/05-chapter-5-types.td")
 tags:
@@ -9,7 +8,7 @@ tags:
   - 'language philosophy'
 ---
 
-::: flashcard
+::: flashcard{deck="type theory"}
 Why is the property that static types are checked at compile-time is valuable?
 === key
 - Programs may be expensive/unsafe/destructive to run.

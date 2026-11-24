@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is the wildcard pattern in rocq?'
-deck: 'rocq programming language'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/rocq.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'rocq programming language'
 ---
 
-::: flashcard
+::: flashcard{deck="rocq programming language"}
 What is the wildcard pattern in rocq?
 === key
 The wildcard pattern `_` allows matching all values without introducing unnecessary variables.

@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What are the methods of finding derivations?'
-deck: 'logic & tools'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/forward-chaining.td")
 books:
@@ -12,7 +11,7 @@ tags:
   - 'proof technique'
 ---
 
-::: flashcard
+::: flashcard{deck="logic & tools"}
 What are the methods of finding derivations?
 === key
 - Forward chaining/Bottom-up construction

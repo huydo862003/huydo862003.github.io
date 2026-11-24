@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What does the transition function do in the structural operational semantics?'
-deck: 'language theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/small-step-structural-operational-semantics-sos.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard
+::: flashcard{deck="language theory"}
 What does the transition function do in the structural operational semantics?
 === key
 Describe the machine's behavior - for each state, either:

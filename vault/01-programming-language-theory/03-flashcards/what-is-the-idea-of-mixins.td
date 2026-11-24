@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is the idea of mixins?'
-deck: 'type theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/mixin.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'type theory'
 ---
 
-::: flashcard
+::: flashcard{deck="type theory"}
 What is the idea of mixins?
 === key
 Mixin intends to provide the same code reuse capability as inheritance, but with only the class extension, not bound to a specific superclass. This allows for good abstraction & reusability.

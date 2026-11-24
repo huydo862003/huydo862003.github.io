@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is a countable set?'
-deck: 'set theory & relation'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/countable-set.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'set theory & relation'
 ---
 
-::: flashcard
+::: flashcard{deck="set theory & relation"}
 What is a countable set?
 === key
 A set that is finite, or is infinite and a bijection from it into $\mathbb{N}$ exists.

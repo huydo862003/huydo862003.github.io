@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is the relationship between a generic inductive definition and an ordinary inductive definition?'
-deck: 'general'
 books:
   - fref("/01-programming-language-theory/01-books/03-software-foundations/01-logical-foundations/03-chapter-3-hypothetical-and-general-judgments.td")
 ---

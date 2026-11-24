@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: "Which types are supported in conditional expressions' conditions in Rocq? Why? W"
-deck: 'rocq programming language'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/conditional-expression.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'rocq programming language'
 ---
 
-::: flashcard
+::: flashcard{deck="rocq programming language"}
 Which types are supported in conditional expressions' conditions in rocq? why? which values are truthy/falsy?
 === key
 - Inductive types with two constructors.

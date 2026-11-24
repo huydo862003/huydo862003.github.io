@@ -1,14 +1,13 @@
 ---
 _type: PltFlashcard
 _label: 'How to merge multiple patterns in a match arm in rocq?'
-deck: 'rocq programming language'
 books:
   - fref("/01-programming-language-theory/01-books/03-software-foundations/01-logical-foundations/01-chapter-1-basics-functional-programming-in-rocq/index.td")
 tags:
   - 'rocq programming language'
 ---
 
-::: flashcard
+::: flashcard{deck="rocq programming language"}
 How to merge multiple patterns in a match arm in rocq?
 === key
 [course_late_policies.v (L12-L30)](https://github.com/huydo862003/type-theory/blob/543dabaefb5f1d7bad8cecbe8d8cc26aeda21a03/sf/lf/ch01-basics/exercises/course_late_policies.v#L12-L30)

@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is the principle of tree induction?'
-deck: 'proof technique'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/tree-induction.td")
 books:
@@ -12,7 +11,7 @@ tags:
   - 'set theory & relation'
 ---
 
-::: flashcard
+::: flashcard{deck="proof technique"}
 What is the principle of tree induction?
 === key
 Tree induction

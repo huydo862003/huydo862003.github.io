@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is a logical system?'
-deck: 'logic & tools'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/logical-system.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'logic & tools'
 ---
 
-::: flashcard
+::: flashcard{deck="logic & tools"}
 What is a logical system?
 === key
 A formal framework comprising a syntax (well-formed formulas), axioms, and inference rules that together determine which statements are derivable.

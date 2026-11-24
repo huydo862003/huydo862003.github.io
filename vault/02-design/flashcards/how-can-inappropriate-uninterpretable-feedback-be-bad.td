@@ -1,7 +1,6 @@
 ---
 _type: DesignFlashcard
 _label: 'How can inappropriate, uninterpretable feedback be bad?'
-deck: 'general'
 concepts:
   - fref("/02-design/concepts/feedback.td")
 ---

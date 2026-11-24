@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'Define successor, addition, multiplication, zero test, subtraction, predecessor, equality for church numerals?'
-deck: 'pure lambda calculus'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/pure-untyped-lambda-calculus.td")
   - fref("/01-programming-language-theory/02-concepts/church-numeral.td")
@@ -11,7 +10,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard
+::: flashcard{deck="pure lambda calculus"}
 Define successor, addition, multiplication, zero test, subtraction, predecessor, equality for church numerals?
 === key
 Church numerals:

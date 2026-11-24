@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What are the key considerations in designing conditionals?'
-deck: 'compiler implementation'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/conditional-expression.td")
 books:
@@ -12,7 +11,7 @@ tags:
   - 'programming language basic'
 ---
 
-::: flashcard
+::: flashcard{deck="compiler implementation"}
 What are the key considerations in designing conditionals?
 === key
 - Which data types are allowed in conditionals?

@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What does it mean by "everything is a function" in lambda calculus?'
-deck: 'pure lambda calculus'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/lambda-calculus.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard
+::: flashcard{deck="pure lambda calculus"}
 What does it mean by "everything is a function" in lambda calculus?
 === key
 Every closed terms in Lambda calculus are functions.

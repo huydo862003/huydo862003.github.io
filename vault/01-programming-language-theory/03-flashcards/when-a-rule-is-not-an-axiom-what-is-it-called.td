@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'When a rule is not an axiom, what is it called?'
-deck: 'proof technique'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/axiom.td")
   - fref("/01-programming-language-theory/02-concepts/rule.td")
@@ -13,7 +12,7 @@ tags:
   - 'logic & tools'
 ---
 
-::: flashcard
+::: flashcard{deck="proof technique"}
 When a rule is not an axiom, what is it called?
 === key
 Proper rule.

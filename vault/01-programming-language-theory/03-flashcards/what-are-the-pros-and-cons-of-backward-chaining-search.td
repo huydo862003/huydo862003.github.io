@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What are the pros and cons of backward chaining search?'
-deck: 'set theory & relation'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/backward-chaining-search.td")
   - fref("/01-programming-language-theory/02-concepts/goal-directed.td")
@@ -13,7 +12,7 @@ tags:
   - 'proof technique'
 ---
 
-::: flashcard
+::: flashcard{deck="set theory & relation"}
 What are the pros and cons of backward chaining search?
 === key
 Backward chaining search can eventually find a derivation for a derivable judgment, goal-directed.

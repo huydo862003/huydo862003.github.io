@@ -1,12 +1,11 @@
 ---
 _type: PltFlashcard
 _label: "What's the difference between a judgment and a judgment form?"
-deck: 'logic tools'
 books:
   - fref("/01-programming-language-theory/01-books/03-software-foundations/01-logical-foundations/02-chapter-2-inductive-definitions.td")
 ---
 
-::: flashcard
+::: flashcard{deck="logic & tools"}
 What's the difference between a judgment and a judgment form?
 === key
 A Judgment is announcement that there is a proof for something.

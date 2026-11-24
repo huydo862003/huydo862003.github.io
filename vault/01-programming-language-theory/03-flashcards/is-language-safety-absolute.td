@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'Is language safety absolute?'
-deck: 'language theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/language-safety.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard
+::: flashcard{deck="language theory"}
 Is language safety absolute?
 === key
 Safe language can provide escape hatches that are unsafe.

@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is the operational semantics of arithmetic expressions?'
-deck: 'language theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/operational-semantics.td")
   - fref("/01-programming-language-theory/02-concepts/untyped-calculus-of-booleans-and-numbers.td")
@@ -12,7 +11,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard
+::: flashcard{deck="language theory"}
 What is the operational semantics of arithmetic expressions?
 === key
 Combining arithmetic and boolean expressions.

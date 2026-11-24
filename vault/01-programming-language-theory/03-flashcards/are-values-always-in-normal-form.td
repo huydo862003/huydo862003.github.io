@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'Are values always in normal form?'
-deck: 'language theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/normal-form.td")
   - fref("/01-programming-language-theory/02-concepts/value.td")
@@ -12,7 +11,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard
+::: flashcard{deck="language theory"}
 Are values always in normal form?
 === key
 May not be, but should hold for all meaningful calculus.

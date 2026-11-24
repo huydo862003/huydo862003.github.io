@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is a congruence?'
-deck: 'set theory & relation'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/congruence.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'set theory & relation'
 ---
 
-::: flashcard
+::: flashcard{deck="set theory & relation"}
 What is a congruence?
 === key
 An equivalence relation that is preserved under a specific operation.

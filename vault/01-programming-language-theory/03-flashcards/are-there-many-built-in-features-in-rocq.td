@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'Are there many built-in features in rocq?'
-deck: 'rocq programming language'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/rocq.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'rocq programming language'
 ---
 
-::: flashcard
+::: flashcard{deck="rocq programming language"}
 Are there many built-in features in rocq?
 === key
 The Rocq's Gallina is a small but expressive functional language.

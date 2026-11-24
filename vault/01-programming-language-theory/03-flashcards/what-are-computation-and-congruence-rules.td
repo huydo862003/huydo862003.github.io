@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What are computation and congruence rules?'
-deck: 'logic & tools'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/computation-rule.td")
   - fref("/01-programming-language-theory/02-concepts/congruence-rule.td")
@@ -13,7 +12,7 @@ tags:
   - 'proof technique'
 ---
 
-::: flashcard
+::: flashcard{deck="logic & tools"}
 What are computation and congruence rules?
 === key
 A computation rule directly reduces the current term.

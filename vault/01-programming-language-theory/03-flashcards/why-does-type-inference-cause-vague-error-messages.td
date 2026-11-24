@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'Why does type inference cause vague error messages?'
-deck: 'compiler implementation'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/type-inference.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'compiler implementation'
 ---
 
-::: flashcard
+::: flashcard{deck="compiler implementation"}
 Why does type inference cause vague error messages?
 === key
 Sometimes, multiple types are inferred for a variable at different locations. The question: Which type and which location to report?

@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is another name for the divergent combinator?'
-deck: 'pure lambda calculus'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/divergent-big-omega-combinator.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard
+::: flashcard{deck="pure lambda calculus"}
 What is another name for the divergent combinator?
 === key
 The big omega combinator.

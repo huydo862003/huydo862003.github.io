@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: "What's another term for evaluation relation?"
-deck: 'language theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/evaluation-reduction-relation.td")
 tags:
@@ -9,7 +8,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard
+::: flashcard{deck="language theory"}
 What's another term for evaluation relation?
 === key
 

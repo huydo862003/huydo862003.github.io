@@ -1,14 +1,13 @@
 ---
 _type: PltFlashcard
 _label: 'What are the general strategies for handling partiality in type systems?'
-deck: 'type theory'
 books:
   - fref("/01-programming-language-theory/01-books/04-programming-languages-application-and-interpretation/05-chapter-5-types.td")
 tags:
   - 'type theory'
 ---
 
-::: flashcard
+::: flashcard{deck="type theory"}
 What are the general strategies for handling partiality in type systems?
 === key
 1. Exception

@@ -2,59 +2,6 @@
   "directory-index": {
     "source": "typerighter/src/client/theme-default/components/custom/TdDirectoryIndex.vue"
   },
-  "flashcard": {
-    "source": "typerighter/src/client/theme-default/components/custom/TdFlashcard.vue",
-    "props": {
-      "id": {
-        "schema": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "description": "HTML id attribute"
-      },
-      "revealed": {
-        "schema": {
-          "type": [
-            "boolean",
-            "null"
-          ]
-        },
-        "description": "Start with the key side showing"
-      },
-      "disabled": {
-        "schema": {
-          "type": [
-            "boolean",
-            "null"
-          ]
-        },
-        "description": "Disable flipping interaction"
-      },
-      "questionLabel": {
-        "schema": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "description": "Caption shown above the question"
-      },
-      "keyLabel": {
-        "schema": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "description": "Caption shown above the key"
-      }
-    },
-    "slots": [
-      "key"
-    ]
-  },
   "grid": {
     "source": "typerighter/src/client/theme-default/components/custom/TdGrid.vue",
     "props": {
@@ -127,6 +74,115 @@
           ]
         },
         "description": "Enable scroll-to-active behavior within a constrained container"
+      }
+    }
+  },
+  "deck": {
+    "source": "typerighter/src/client/theme-default/components/custom/deck-set/TdDeck.vue",
+    "props": {
+      "name": {
+        "schema": {
+          "type": "string"
+        },
+        "description": "Deck display name"
+      }
+    }
+  },
+  "deck-set": {
+    "source": "typerighter/src/client/theme-default/components/custom/deck-set/TdDeckSet.vue",
+    "props": {
+      "name": {
+        "schema": {
+          "type": "string"
+        },
+        "description": "Display name shown above the deck set"
+      },
+      "folder": {
+        "schema": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "description": "Folder to scan for flashcards. Same format as fref() paths: \"/abs\", \"./rel\", \"../rel\". Defaults to current directory"
+      }
+    }
+  },
+  "flashcard": {
+    "source": "typerighter/src/client/theme-default/components/custom/flashcard/TdFlashcard.vue",
+    "props": {
+      "id": {
+        "schema": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "description": "HTML id attribute"
+      },
+      "revealed": {
+        "schema": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "description": "Start with the key side showing"
+      },
+      "disabled": {
+        "schema": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "description": "Disable flipping interaction"
+      },
+      "questionLabel": {
+        "schema": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "description": "Caption shown above the question"
+      },
+      "keyLabel": {
+        "schema": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "description": "Caption shown above the key"
+      },
+      "deck": {
+        "schema": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "description": "Deck name for grouping in a deck-set"
+      }
+    },
+    "slots": [
+      "key"
+    ],
+    "resource": {
+      "fields": {
+        "question": {
+          "from": "slot",
+          "name": "default"
+        },
+        "answer": {
+          "from": "slot",
+          "name": "key"
+        },
+        "deck": {
+          "from": "prop",
+          "name": "deck"
+        }
       }
     }
   },

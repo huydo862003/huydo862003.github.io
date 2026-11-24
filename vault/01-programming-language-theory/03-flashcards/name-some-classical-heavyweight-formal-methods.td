@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'Name some classical heavyweight formal methods'
-deck: 'language theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/hoare-logic.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard
+::: flashcard{deck="language theory"}
 Name some classical heavyweight formal methods
 === key
 - Hoare logic.

@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'Which symbol is usually used to denote subtyping relation?'
-deck: 'type theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/subtyping-relation.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'type theory'
 ---
 
-::: flashcard
+::: flashcard{deck="type theory"}
 Which symbol is usually used to denote subtyping relation?
 === key
 $<:$

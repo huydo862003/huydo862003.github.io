@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'Which notation is often used to denote a preorder relation?'
-deck: 'set theory & relation'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/preorder.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'set theory & relation'
 ---
 
-::: flashcard
+::: flashcard{deck="set theory & relation"}
 Which notation is often used to denote a preorder relation?
 === key
 $\le$ or $\lesssim$

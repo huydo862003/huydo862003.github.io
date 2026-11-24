@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'How to implement classes with prototypes?'
-deck: 'compiler implementation'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/prototype.td")
   - fref("/01-programming-language-theory/02-concepts/class.td")
@@ -13,7 +12,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard
+::: flashcard{deck="compiler implementation"}
 How to implement classes with prototypes?
 === key
 Create a prototype object that contains all the shared methods and default properties.

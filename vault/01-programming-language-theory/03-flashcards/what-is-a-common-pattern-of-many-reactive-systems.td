@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is a common pattern of many reactive systems?'
-deck: 'design philosophy'
 books:
   - fref("/01-programming-language-theory/01-books/04-programming-languages-application-and-interpretation/05-chapter-5-types.td")
 tags:
@@ -10,7 +9,7 @@ tags:
   - 'simply-typed lambda calculus'
 ---
 
-::: flashcard
+::: flashcard{deck="design philosophy"}
 What is a common pattern of many reactive systems?
 === key
 - Loop spine.

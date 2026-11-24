@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'Why can there be nonsensical terms in the untyped calculus of booleans and numbers?'
-deck: 'language theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/untyped-calculus-of-booleans-and-numbers.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard
+::: flashcard{deck="language theory"}
 Why can there be nonsensical terms in the untyped calculus of booleans and numbers?
 === key
 There's no type system.

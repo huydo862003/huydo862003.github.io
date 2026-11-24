@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is a rule schema and its relation with concrete rules?'
-deck: 'logic & tools'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/inference-rule.td")
   - fref("/01-programming-language-theory/02-concepts/instance-of-an-inference-rule.td")
@@ -11,7 +10,7 @@ tags:
   - 'logic & tools'
 ---
 
-::: flashcard
+::: flashcard{deck="logic & tools"}
 What is a rule schema and its relation with concrete rules?
 === key
 A rule schema is synonymous with inference rule, representing a generic rule with metavariables.

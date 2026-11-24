@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'How to define recursive functions in rocq?'
-deck: 'rocq programming language'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/fixed-point-combinator.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'rocq programming language'
 ---
 
-::: flashcard
+::: flashcard{deck="rocq programming language"}
 How to define recursive functions in rocq?
 === key
 Use the `Fixpoint` definition. For example:

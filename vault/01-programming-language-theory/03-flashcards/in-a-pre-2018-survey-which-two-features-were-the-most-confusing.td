@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'In a pre-2018 survey, which two features were the most confusing?'
-deck: 'general'
 ---
 
 ::: flashcard

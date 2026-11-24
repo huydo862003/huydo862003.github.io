@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is the deduction style presentation of logical systems?'
-deck: 'logic & tools'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/natural-deduction-style.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'logic & tools'
 ---
 
-::: flashcard
+::: flashcard{deck="logic & tools"}
 What is the deduction style presentation of logical systems?
 === key
 The premises are listed above the horizontal line & the conclusion is listed below the horizontal line.

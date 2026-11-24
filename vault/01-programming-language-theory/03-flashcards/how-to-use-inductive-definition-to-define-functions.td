@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'How to use inductive definition to define functions?'
-deck: 'logic & tools'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/inductive-definition.td")
   - fref("/01-programming-language-theory/02-concepts/function.td")
@@ -13,7 +12,7 @@ tags:
   - 'proof technique'
 ---
 
-::: flashcard
+::: flashcard{deck="logic & tools"}
 How to use inductive definition to define functions?
 === key
 - Define a relation between inputs and outputs of the function using Inductive definition.

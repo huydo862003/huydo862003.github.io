@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is meta-mathematics?'
-deck: 'other mathematics'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/meta-mathematics.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'other mathematics'
 ---
 
-::: flashcard
+::: flashcard{deck="other mathematics"}
 What is meta-mathematics?
 === key
 A branch of meta-mathematics that studies about the properties of mathematical systems.

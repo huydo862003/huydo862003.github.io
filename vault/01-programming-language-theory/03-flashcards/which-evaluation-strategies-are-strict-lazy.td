@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'Which evaluation strategies are strict/lazy?'
-deck: 'pure lambda calculus'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/evaluation-strategy.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard
+::: flashcard{deck="pure lambda calculus"}
 Which evaluation strategies are strict/lazy?
 === key
 - Strict evaluation strategy:

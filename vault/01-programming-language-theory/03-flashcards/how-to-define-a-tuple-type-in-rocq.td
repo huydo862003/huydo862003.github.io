@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'How to define a tuple type in rocq?'
-deck: 'rocq programming language'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/rocq.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'rocq programming language'
 ---
 
-::: flashcard
+::: flashcard{deck="rocq programming language"}
 How to define a tuple type in rocq?
 === key
 Multiple fields inside a constructor.

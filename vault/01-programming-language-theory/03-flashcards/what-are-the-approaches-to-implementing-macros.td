@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What are the approaches to implementing macros?'
-deck: 'language theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/macro.td")
 books:
@@ -12,7 +11,7 @@ tags:
   - 'compiler implementation'
 ---
 
-::: flashcard
+::: flashcard{deck="language theory"}
 What are the approaches to implementing macros?
 === key
 AST rewriting

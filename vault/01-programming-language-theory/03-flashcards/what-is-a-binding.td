@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is a binding?'
-deck: 'programming language basic'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/binding.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'programming language basic'
 ---
 
-::: flashcard
+::: flashcard{deck="programming language basic"}
 What is a binding?
 === key
 A binding is a mapping from a variable to a value.

@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: "What is a redex or reducible expression in Church's terminology?"
-deck: 'pure lambda calculus'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/beta-redex-reducible-expression.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard
+::: flashcard{deck="pure lambda calculus"}
 What is a redex or reducible expression in church's terminology?
 === key
 A redex is a term of the form $t_1\ t_2$ such that $t_1$ is a lambda abstraction.

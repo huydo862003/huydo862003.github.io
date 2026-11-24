@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is an abstract binding graph (ABG)?'
-deck: 'language theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/abstract-binding-graph.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard
+::: flashcard{deck="language theory"}
 What is an abstract binding graph (ABG)?
 === key
 :::

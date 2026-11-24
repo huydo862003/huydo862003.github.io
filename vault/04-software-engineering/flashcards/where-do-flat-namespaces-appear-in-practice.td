@@ -1,14 +1,13 @@
 ---
 _type: SoftEngFlashcard
 _label: 'Where do flat namespaces appear in practice?'
-deck: 'architecture'
 tags:
   - 'architecture'
 concepts:
   - fref("/04-software-engineering/concepts/flat-filesystem-namespace.td")
 ---
 
-::: flashcard
+::: flashcard{deck="architecture"}
 Where do flat namespaces appear in practice?
 === key
 Supabase Storage (objects.name is the full path, path_tokens caches the split). MongoDB GridFS (filenames can contain / but no directory concept). Amazon S3 (flat key-value store, "folders" are just common prefixes).

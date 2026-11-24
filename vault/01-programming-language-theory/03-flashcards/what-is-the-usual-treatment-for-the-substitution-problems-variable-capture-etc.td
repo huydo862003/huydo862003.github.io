@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is the usual treatment for the substitution problems (variable capture, etc.)'
-deck: 'pure lambda calculus'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/capture-avoiding-substitution.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard
+::: flashcard{deck="pure lambda calculus"}
 What is the usual treatment for the substitution problems (variable capture, etc.)
 === key
 Using Capture-avoiding substitution:

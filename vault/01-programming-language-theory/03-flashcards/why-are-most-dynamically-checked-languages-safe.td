@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'Why are most dynamically checked languages safe?'
-deck: 'type theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/language-safety.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'type theory'
 ---
 
-::: flashcard
+::: flashcard{deck="type theory"}
 Why are most dynamically checked languages safe?
 === key
 If a runtime provides any checking at all, it's trivial to provide the utmost safety.

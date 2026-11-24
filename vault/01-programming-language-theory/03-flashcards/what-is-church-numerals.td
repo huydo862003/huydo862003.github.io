@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is church numerals?'
-deck: 'pure lambda calculus'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/pure-untyped-lambda-calculus.td")
   - fref("/01-programming-language-theory/02-concepts/church-numeral.td")
@@ -11,7 +10,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard
+::: flashcard{deck="pure lambda calculus"}
 What is church numerals?
 === key
 Church numerals is an encoding of natural numbers in Pure/Untyped lambda calculus.

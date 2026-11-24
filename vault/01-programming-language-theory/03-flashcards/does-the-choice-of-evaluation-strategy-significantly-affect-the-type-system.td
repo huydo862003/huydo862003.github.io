@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'Does the choice of evaluation strategy significantly affect the type system?'
-deck: 'type theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/evaluation-strategy.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'type theory'
 ---
 
-::: flashcard
+::: flashcard{deck="type theory"}
 Does the choice of evaluation strategy significantly affect the type system?
 === key
 No.

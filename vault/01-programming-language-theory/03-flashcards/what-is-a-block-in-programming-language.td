@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is a block in programming language?'
-deck: 'programming language basic'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/block.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'programming language basic'
 ---
 
-::: flashcard
+::: flashcard{deck="programming language basic"}
 What is a block in programming language?
 === key
 A block is a syntactic construct that groups statements and introduces a scope for local variables.

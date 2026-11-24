@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What does the principle of rule induction state?'
-deck: 'proof technique'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/rule-induction.td")
 books:
@@ -12,7 +11,7 @@ tags:
   - 'set theory & relation'
 ---
 
-::: flashcard
+::: flashcard{deck="proof technique"}
 What does the principle of rule induction state?
 === key
 Rule induction

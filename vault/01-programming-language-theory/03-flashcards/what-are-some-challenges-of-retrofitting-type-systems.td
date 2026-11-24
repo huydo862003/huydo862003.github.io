@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What are some challenges of retrofitting type systems?'
-deck: 'compiler implementation'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/retrofitted-type-system.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'compiler implementation'
 ---
 
-::: flashcard
+::: flashcard{deck="compiler implementation"}
 What are some challenges of retrofitting type systems?
 === key
 Languages that are previously untyped:

@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'In which ways the lambda calculus can be viewed?'
-deck: 'pure lambda calculus'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/lambda-calculus.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard
+::: flashcard{deck="pure lambda calculus"}
 In which ways the lambda calculus can be viewed?
 === key
 - A **simple programming language** in which computations can be described.

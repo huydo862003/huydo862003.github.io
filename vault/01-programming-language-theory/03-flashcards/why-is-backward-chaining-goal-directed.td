@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'Why is backward chaining goal-directed?'
-deck: 'set theory & relation'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/backward-chaining-search.td")
   - fref("/01-programming-language-theory/02-concepts/backward-chaining.td")
@@ -13,7 +12,7 @@ tags:
   - 'proof technique'
 ---
 
-::: flashcard
+::: flashcard{deck="set theory & relation"}
 Why is backward chaining goal-directed?
 === key
 Because Backward chaining starts from the goal and works backwards towards the axioms.

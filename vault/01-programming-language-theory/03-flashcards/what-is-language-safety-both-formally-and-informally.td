@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is language safety, both formally and informally?'
-deck: 'programming language basic'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/language-safety.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'programming language basic'
 ---
 
-::: flashcard
+::: flashcard{deck="programming language basic"}
 What is language safety, both formally and informally?
 === key
 Informally, a safe language would not allow a programmer to shoot in their foot.

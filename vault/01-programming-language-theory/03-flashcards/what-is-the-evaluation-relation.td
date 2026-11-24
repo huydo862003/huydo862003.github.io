@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is the evaluation relation?'
-deck: 'pure lambda calculus'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/evaluation-reduction-relation.td")
 books:
@@ -11,7 +10,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard
+::: flashcard{deck="pure lambda calculus"}
 What is the evaluation relation?
 === key
 In operational semantics, a relation that relates terms to another reduced term, either representing one step of evaluation or directly carrying to a normal form.

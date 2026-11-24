@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is the principle of mathematical induction?'
-deck: 'set theory & relation'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/mathematical-induction.td")
 books:
@@ -12,7 +11,7 @@ tags:
   - 'proof technique'
 ---
 
-::: flashcard
+::: flashcard{deck="set theory & relation"}
 What is the principle of mathematical induction?
 === key
 Mathematical induction

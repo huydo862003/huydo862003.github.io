@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'Between if-splitting and conditionals, which one can introduce unions, which one eliminates?'
-deck: 'type theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/if-splitting.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'type theory'
 ---
 
-::: flashcard
+::: flashcard{deck="type theory"}
 Between if-splitting and conditionals, which one can introduce unions, which one eliminates?
 === key
 - If-splittings eliminate union types.

@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'Why is there a need for macro hygiene?'
-deck: 'programming language basic'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/macro.td")
 books:
@@ -12,7 +11,7 @@ tags:
   - 'language philosophy'
 ---
 
-::: flashcard
+::: flashcard{deck="programming language basic"}
 Why is there a need for macro hygiene?
 === key
 To avoid Variable capture.

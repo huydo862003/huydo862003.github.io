@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'SICP: What is the closure property of data?'
-deck: 'language theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/closure.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'programming language basic'
 ---
 
-::: flashcard
+::: flashcard{deck="language theory"}
 What is the closure property of a data combination operation? Why is it important?
 === key
 *Closure property*: A data combination operation satisfies the closure property if the result of combining elements can itself be combined using the same operation.

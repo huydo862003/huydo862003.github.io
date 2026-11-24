@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is the definition of the fixed-point combinator?'
-deck: 'pure lambda calculus'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/fixed-point-combinator.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard
+::: flashcard{deck="pure lambda calculus"}
 What is the definition of the fixed-point combinator?
 === key
 A fixed-point combinator is a function that finds the fixed-point of any given function regarding the Evaluation/Reduction relation.

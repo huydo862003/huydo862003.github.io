@@ -5,8 +5,6 @@ _icon: icon.graduation
 properties:
   question:
     type: string?
-  deck:
-    type: string?
   tags:
     type: list[string]?
   concepts:

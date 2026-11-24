@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is an instance of an inference rule?'
-deck: 'logic & tools'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/instance-of-an-inference-rule.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'logic & tools'
 ---
 
-::: flashcard
+::: flashcard{deck="logic & tools"}
 What is an instance of an inference rule?
 === key
 An inference rule whose metavariables are replaced with real values.

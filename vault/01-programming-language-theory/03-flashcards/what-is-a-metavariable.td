@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is a metavariable?'
-deck: 'language theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/metavariable.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard
+::: flashcard{deck="language theory"}
 What is a metavariable?
 === key
 A variable of the metalanguage that ranges over terms of a syntactic category.

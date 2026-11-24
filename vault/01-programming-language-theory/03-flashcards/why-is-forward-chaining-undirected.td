@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'Why is forward chaining undirected?'
-deck: 'proof technique'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/forward-chaining.td")
 books:
@@ -12,7 +11,7 @@ tags:
   - 'set theory & relation'
 ---
 
-::: flashcard
+::: flashcard{deck="proof technique"}
 Why is forward chaining undirected?
 === key
 Forward chaining just keeps track of a set of currently derived judgments and then expands its each step - oblivious of the goal.

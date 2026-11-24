@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'How to introduce infix syntax in rocq?'
-deck: 'language theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/infix.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard
+::: flashcard{deck="language theory"}
 How to introduce infix syntax in rocq?
 === key
 Use `Notation "x <op> y" := exp`.

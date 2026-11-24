@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What are the pros and cons of proof assistants?'
-deck: 'logic & tools'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/proof-assistant-prover.td")
 books:
@@ -11,7 +10,7 @@ tags:
   - 'compiler implementation'
 ---
 
-::: flashcard
+::: flashcard{deck="logic & tools"}
 What are the pros and cons of proof assistants?
 === key
 - Automated for routine tasks of building proofs.

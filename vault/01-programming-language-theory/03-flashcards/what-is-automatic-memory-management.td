@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is automatic memory management?'
-deck: 'programming language basic'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/automatic-memory-management.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'programming language basic'
 ---
 
-::: flashcard
+::: flashcard{deck="programming language basic"}
 What is automatic memory management?
 === key
 Automatic memory management is a set of compile-time or dynamic techniques that allows the dynamic allocation and deallocation of memory without explicit instructions from the programmer.

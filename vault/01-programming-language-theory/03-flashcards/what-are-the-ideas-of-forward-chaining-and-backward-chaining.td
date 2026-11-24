@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What are the ideas of forward chaining and backward chaining?'
-deck: 'proof technique'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/forward-chaining.td")
 books:
@@ -12,7 +11,7 @@ tags:
   - 'set theory & relation'
 ---
 
-::: flashcard
+::: flashcard{deck="proof technique"}
 What are the ideas of forward chaining and backward chaining?
 === key
 Forward chaining

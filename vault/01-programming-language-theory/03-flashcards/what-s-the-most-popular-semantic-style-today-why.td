@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: "What's the most popular semantic style today? Why?"
-deck: 'language theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/big-step-natural-operational-semantics.td")
   - fref("/01-programming-language-theory/02-concepts/small-step-structural-operational-semantics-sos.td")
@@ -13,7 +12,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard
+::: flashcard{deck="language theory"}
 What's the most popular semantic style today? Why?
 === key
 

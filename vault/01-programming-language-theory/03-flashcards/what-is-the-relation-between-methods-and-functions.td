@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is the relation between methods and functions?'
-deck: 'language theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/method.td")
   - fref("/01-programming-language-theory/02-concepts/function.td")
@@ -11,7 +10,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard
+::: flashcard{deck="language theory"}
 What is the relation between methods and functions?
 === key
 A Method is a function that gets bound to an Object.

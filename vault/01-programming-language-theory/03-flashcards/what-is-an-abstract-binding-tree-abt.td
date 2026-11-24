@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is an abstract binding tree (ABT)?'
-deck: 'language theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/abstract-binding-tree-abt.td")
   - fref("/01-programming-language-theory/02-concepts/valence.td")
@@ -12,7 +11,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard
+::: flashcard{deck="language theory"}
 What is an abstract binding tree (ABT)?
 === key
 An AST that is enriched with bindings and scopes.

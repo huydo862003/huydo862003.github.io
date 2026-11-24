@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'Which symbol is used to denote enriched lambda calculus with numbers and booleans?'
-deck: 'pure lambda calculus'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/pure-untyped-lambda-calculus.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard
+::: flashcard{deck="pure lambda calculus"}
 Which symbol is used to denote enriched lambda calculus with numbers and booleans?
 === key
 $\lambda\textbf{NB}$.

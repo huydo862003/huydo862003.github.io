@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is a metalanguage?'
-deck: 'language theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/metalanguage.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard
+::: flashcard{deck="language theory"}
 What is a metalanguage?
 === key
 The language used to describe, define, or reason about another language.

@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'According to robert (bob) harper, what is a sort, syntactically?'
-deck: 'language theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/sort.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard
+::: flashcard{deck="language theory"}
 According to robert (bob) harper, what is a sort, syntactically?
 === key
 Basically a syntactic category of an AST.

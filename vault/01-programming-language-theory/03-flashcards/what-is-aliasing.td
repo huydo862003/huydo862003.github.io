@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is aliasing?'
-deck: 'programming language basic'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/aliasing.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'programming language basic'
 ---
 
-::: flashcard
+::: flashcard{deck="programming language basic"}
 What is aliasing?
 === key
 Aliasing is a phenomenon where multiple paths (variables, references, member accesses) refer to the same memory location.

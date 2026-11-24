@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'Are normal forms always a value?'
-deck: 'pure lambda calculus'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/value.td")
   - fref("/01-programming-language-theory/02-concepts/normal-form.td")
@@ -12,7 +11,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard
+::: flashcard{deck="pure lambda calculus"}
 Are normal forms always a value?
 === key
 Normal forms can be stuck terms.

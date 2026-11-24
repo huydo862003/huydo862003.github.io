@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'In which evaluation strategy, the one-step evaluation relation is a partial function on terms?'
-deck: 'pure lambda calculus'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/one-step-evaluation-relation.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard
+::: flashcard{deck="pure lambda calculus"}
 In which evaluation strategy, the one-step evaluation relation is a partial function on terms?
 === key
 - Normal order.

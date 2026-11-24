@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'Does a language specify how it should be evaluated?'
-deck: 'language theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/compiler.td")
   - fref("/01-programming-language-theory/02-concepts/interpreter.td")
@@ -13,7 +12,7 @@ tags:
   - 'programming language basic'
 ---
 
-::: flashcard
+::: flashcard{deck="language theory"}
 Does a language specify how it should be evaluated?
 === key
 No.

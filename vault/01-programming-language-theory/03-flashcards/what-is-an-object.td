@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is an object?'
-deck: 'language theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/object.td")
 books:
@@ -11,7 +10,7 @@ tags:
   - 'language philosophy'
 ---
 
-::: flashcard
+::: flashcard{deck="language theory"}
 What is an object?
 === key
 - A value that maps names to stuff (either other values or "methods").

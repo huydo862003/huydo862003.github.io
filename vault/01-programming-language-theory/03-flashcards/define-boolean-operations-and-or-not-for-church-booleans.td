@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'Define boolean operations and, or, not for church booleans?'
-deck: 'pure lambda calculus'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/pure-untyped-lambda-calculus.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard
+::: flashcard{deck="pure lambda calculus"}
 Define boolean operations and, or, not for church booleans?
 === key
 Church booleans:

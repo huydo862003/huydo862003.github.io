@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'SICP: What is data abstraction?'
-deck: 'language theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/abstract-data-type.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'programming language basic'
 ---
 
-::: flashcard
+::: flashcard{deck="language theory"}
 What is data abstraction? What are selectors and constructors?
 === key
 *Data abstraction*: The technique of isolating the parts of a program that deal with *how data objects are represented* from the parts that deal with *how data objects are used*.

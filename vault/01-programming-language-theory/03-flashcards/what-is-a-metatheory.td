@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is a metatheory?'
-deck: 'other mathematics'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/metatheory.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'other mathematics'
 ---
 
-::: flashcard
+::: flashcard{deck="other mathematics"}
 What is a metatheory?
 === key
 The study about properties of a formal system, using external reasonings.

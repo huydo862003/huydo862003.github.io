@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What are iterated and simultaneous inductive definition?'
-deck: 'set theory & relation'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/simultaneous-inductive-definition.td")
 books:
@@ -12,7 +11,7 @@ tags:
   - 'proof technique'
 ---
 
-::: flashcard
+::: flashcard{deck="set theory & relation"}
 What are iterated and simultaneous inductive definition?
 === key
 :::

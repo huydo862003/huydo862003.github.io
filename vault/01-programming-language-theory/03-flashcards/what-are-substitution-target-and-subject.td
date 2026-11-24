@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What are substitution target and subject?'
-deck: 'language theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/substitution-subject.td")
   - fref("/01-programming-language-theory/02-concepts/substitution-target.td")
@@ -12,7 +11,7 @@ tags:
   - 'semantics'
 ---
 
-::: flashcard
+::: flashcard{deck="language theory"}
 What are substitution target and subject?
 === key
 Substitution target: The target term into which variables are substituted.

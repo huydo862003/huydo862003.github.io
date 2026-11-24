@@ -1,14 +1,13 @@
 ---
 _type: PltFlashcard
 _label: "What's the downfall of axiomatic semantics?"
-deck: 'language theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/axiomatic-semantics.td")
 tags:
   - 'language theory'
 ---
 
-::: flashcard
+::: flashcard{deck="language theory"}
 What's the downfall of axiomatic semantics?
 === key
 

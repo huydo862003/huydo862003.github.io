@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is a closure in programming language?'
-deck: 'programming language basic'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/closure.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'programming language basic'
 ---
 
-::: flashcard
+::: flashcard{deck="programming language basic"}
 What is a closure in programming language?
 === key
 A closure is a function that memorizes its surrounding environment, so i can access variables from the outside.

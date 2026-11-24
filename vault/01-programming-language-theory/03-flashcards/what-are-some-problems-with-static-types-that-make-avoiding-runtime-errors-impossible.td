@@ -1,14 +1,13 @@
 ---
 _type: PltFlashcard
 _label: 'What are some problems with static types that make avoiding runtime errors impossible?'
-deck: 'type theory'
 books:
   - fref("/01-programming-language-theory/01-books/04-programming-languages-application-and-interpretation/05-chapter-5-types.td")
 tags:
   - 'type theory'
 ---
 
-::: flashcard
+::: flashcard{deck="type theory"}
 What are some problems with static types that make avoiding runtime errors impossible?
 === key
 Types **abstract away** runtime details to provide guarantees statically.

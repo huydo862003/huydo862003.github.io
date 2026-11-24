@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is the Hindley-Milner type inference algorithm?'
-deck: 'type theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/hindley-milner-system.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'type theory'
 ---
 
-::: flashcard
+::: flashcard{deck="type theory"}
 What is the Hindley-Milner type inference algorithm?
 === key
 This algorithm works by:

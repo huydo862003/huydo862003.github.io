@@ -1,14 +1,13 @@
 ---
 _type: PltFlashcard
 _label: "Using robert (bob) harper's notation, what is the definition of variable substitution?"
-deck: 'language theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/capture-avoiding-substitution.td")
 books:
   - fref("/01-programming-language-theory/01-books/02-practical-foundations-for-programming-languages/01-part-i-judgments-and-rules/01-chapter-1-abstract-syntax.td")
 ---
 
-::: flashcard
+::: flashcard{deck="language theory"}
 Using robert (bob) harper's notation, what is the definition of variable substitution?
 === key
 Given:

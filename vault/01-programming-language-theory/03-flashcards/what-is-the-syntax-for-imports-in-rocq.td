@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is the syntax for imports in rocq?'
-deck: 'rocq programming language'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/import.td")
   - fref("/01-programming-language-theory/02-concepts/require.td")
@@ -11,7 +10,7 @@ tags:
   - 'rocq programming language'
 ---
 
-::: flashcard
+::: flashcard{deck="rocq programming language"}
 What is the syntax for imports in rocq?
 === key
 `From Library Require [Import] Module.`

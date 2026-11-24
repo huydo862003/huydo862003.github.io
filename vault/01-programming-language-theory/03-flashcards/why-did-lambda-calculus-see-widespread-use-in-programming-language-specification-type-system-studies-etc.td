@@ -1,14 +1,13 @@
 ---
 _type: PltFlashcard
 _label: 'Why did lambda calculus see widespread use in programming language specification, type system studies, etc?'
-deck: 'pure lambda calculus'
 books:
   - fref("/01-programming-language-theory/01-books/01-types-and-programming-languages/03-part-i-untyped-systems/03-chapter-5-the-untyped-pure-lambda-calculus.td")
 tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard
+::: flashcard{deck="pure lambda calculus"}
 Why did lambda calculus see widespread use in programming language specification, type system studies, etc?
 === key
 - Mid 1960, Peter Landin observed that a **complex programming language** can be understood by:

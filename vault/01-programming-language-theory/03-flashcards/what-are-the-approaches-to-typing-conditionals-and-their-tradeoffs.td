@@ -1,14 +1,13 @@
 ---
 _type: PltFlashcard
 _label: 'What are the approaches to typing conditionals and their tradeoffs?'
-deck: 'type theory'
 books:
   - fref("/01-programming-language-theory/01-books/04-programming-languages-application-and-interpretation/05-chapter-5-types.td")
 tags:
   - 'type theory'
 ---
 
-::: flashcard
+::: flashcard{deck="type theory"}
 What are the approaches to typing conditionals and their tradeoffs?
 === key
 - 1st approach: True and False branches must be of the same types.

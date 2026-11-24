@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What are some examples of automated theorem provers?'
-deck: 'compiler implementation'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/automated-theorem-prover.td")
   - fref("/01-programming-language-theory/02-concepts/sat-solver.td")
@@ -12,7 +11,7 @@ tags:
   - 'compiler implementation'
 ---
 
-::: flashcard
+::: flashcard{deck="compiler implementation"}
 What are some examples of automated theorem provers?
 === key
 - SAT solver

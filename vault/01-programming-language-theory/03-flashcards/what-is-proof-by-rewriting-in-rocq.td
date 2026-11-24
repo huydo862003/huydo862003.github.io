@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is proof by rewriting in rocq?'
-deck: 'rocq programming language'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/proof-by-rewriting.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'rocq programming language'
 ---
 
-::: flashcard
+::: flashcard{deck="rocq programming language"}
 What is proof by rewriting in rocq?
 === key
 A proof by rewriting is a tactic that involves rewriting terms to terms that have been proven to be equal.

@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'How to use fix to define recursive functions?'
-deck: 'pure lambda calculus'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/fixed-point-combinator.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard
+::: flashcard{deck="pure lambda calculus"}
 How to use fix to define recursive functions?
 === key
 Sketch a normal recursive function as you will in regular programming languages:

@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is the class pattern with both private members and static members?'
-deck: 'general'
 books:
   - fref("/01-programming-language-theory/01-books/04-programming-languages-application-and-interpretation/04-chapter-4-objects.td")
 ---

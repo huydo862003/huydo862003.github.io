@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'When is a rule satisfied by a relation?'
-deck: 'logic & tools'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/inference-rule.td")
 books:
@@ -11,7 +10,7 @@ tags:
   - 'proof technique'
 ---
 
-::: flashcard
+::: flashcard{deck="logic & tools"}
 When is a rule satisfied by a relation?
 === key
 A rule is satisfied by a relation if for every instance of that rule, if the fact that all premises of that instance is in that relation implies that the conclusion of that instance is in that relation.

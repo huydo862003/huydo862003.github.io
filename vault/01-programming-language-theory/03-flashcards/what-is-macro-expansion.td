@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is macro expansion?'
-deck: 'compiler implementation'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/macro-expansion.td")
 books:
@@ -12,7 +11,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard
+::: flashcard{deck="compiler implementation"}
 What is macro expansion?
 === key
 A compile-time code transformation where macro invocations are replaced by their expanded definitions, enabling Syntactic abstraction and code generation before regular compilation.

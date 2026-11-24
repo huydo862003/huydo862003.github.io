@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is an evaluator?'
-deck: 'programming language basic'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/evaluator.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'programming language basic'
 ---
 
-::: flashcard
+::: flashcard{deck="programming language basic"}
 What is an evaluator?
 === key
 An evaluator is a program that reduces a program into a value.

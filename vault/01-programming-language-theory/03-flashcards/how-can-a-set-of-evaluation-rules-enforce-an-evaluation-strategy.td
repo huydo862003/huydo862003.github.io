@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'How can a set of evaluation rules enforce an evaluation strategy?'
-deck: 'language theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/evaluation-strategy.td")
 books:
@@ -11,7 +10,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard
+::: flashcard{deck="language theory"}
 How can a set of evaluation rules enforce an evaluation strategy?
 === key
 A set of evaluation rules can determine, for example, if arguments are evaluated before the enclosing redex, essentially determining if the evaluation strategy is lazy or eager.

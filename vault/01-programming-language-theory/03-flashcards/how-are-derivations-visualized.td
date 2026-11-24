@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'How are derivations visualized?'
-deck: 'proof technique'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/derivation.td")
   - fref("/01-programming-language-theory/02-concepts/derivation-tree.td")
@@ -13,7 +12,7 @@ tags:
   - 'logic & tools'
 ---
 
-::: flashcard
+::: flashcard{deck="proof technique"}
 How are derivations visualized?
 === key
 Derivation tree:

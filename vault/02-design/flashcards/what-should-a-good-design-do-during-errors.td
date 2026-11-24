@@ -1,7 +1,6 @@
 ---
 _type: DesignFlashcard
 _label: 'What should a good design do during errors?'
-deck: 'general'
 ---
 
 ::: flashcard

@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'How does the "parse, do not validate" principle relate to "boolean blindness"?'
-deck: 'general'
 ---
 
 ::: flashcard

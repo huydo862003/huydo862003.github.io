@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'Why is it useful to give >= 2 operational semantics for a single language?'
-deck: 'language theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/operational-semantics.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard
+::: flashcard{deck="language theory"}
 Why is it useful to give >= 2 operational semantics for a single language?
 === key
 It's useful to give 2 operational semantics:

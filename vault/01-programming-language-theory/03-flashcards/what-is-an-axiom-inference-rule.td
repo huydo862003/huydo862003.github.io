@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is an axiom (inference rule)?'
-deck: 'logic & tools'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/inference-rule.td")
 books:
@@ -11,7 +10,7 @@ tags:
   - 'logic & tools'
 ---
 
-::: flashcard
+::: flashcard{deck="logic & tools"}
 What is an axiom (inference rule)?
 === key
 An axiom is an inference rule with no premise.

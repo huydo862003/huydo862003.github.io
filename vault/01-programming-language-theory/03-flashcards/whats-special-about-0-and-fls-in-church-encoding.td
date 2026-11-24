@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: "What's special about 0 and fls in church encoding?"
-deck: 'pure-lambda-calculus'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/church-numeral.td")
   - fref("/01-programming-language-theory/02-concepts/pure-untyped-lambda-calculus.td")
@@ -9,7 +8,7 @@ books:
   - fref("/01-programming-language-theory/01-books/01-types-and-programming-languages/03-part-i-untyped-systems/03-chapter-5-the-untyped-pure-lambda-calculus.td")
 ---
 
-::: flashcard
+::: flashcard{deck="pure lambda calculus"}
 What's special about 0 and fls in church encoding?
 === key
 - 0 in Church numerals: $\lambda a.\ \lambda z.\ z$.

@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is the operational semantics of boolean expressions?'
-deck: 'pure lambda calculus'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/untyped-calculus-of-booleans-and-numbers.td")
 books:
@@ -11,7 +10,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard
+::: flashcard{deck="pure lambda calculus"}
 What is the operational semantics of boolean expressions?
 === key
 What is the operational semantics of arithmetic expressions?

@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'Trait vs mixin?'
-deck: 'pure lambda calculus'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/trait.td")
   - fref("/01-programming-language-theory/02-concepts/mixin.td")
@@ -11,7 +10,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard
+::: flashcard{deck="pure lambda calculus"}
 Trait vs mixin?
 === key
 Note: Trait in this sense is different from Rust's traits.

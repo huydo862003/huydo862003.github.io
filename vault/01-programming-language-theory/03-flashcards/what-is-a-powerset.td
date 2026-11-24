@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is a powerset?'
-deck: 'set theory & relation'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/powerset.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'set theory & relation'
 ---
 
-::: flashcard
+::: flashcard{deck="set theory & relation"}
 What is a powerset?
 === key
 Given a set $S$, then $\mathcal{P}(S)$ is the set of all subsets of $S$.

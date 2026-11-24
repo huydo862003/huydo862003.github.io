@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'Name some lightweight formal methods'
-deck: 'language theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/type-system.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard
+::: flashcard{deck="language theory"}
 Name some lightweight formal methods
 === key
 - Model checker.

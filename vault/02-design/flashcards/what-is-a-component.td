@@ -1,12 +1,11 @@
 ---
 _type: DesignFlashcard
 _label: 'What is a component?'
-deck: 'design system'
 concepts:
   - fref("/02-design/concepts/component.td")
 ---
 
-::: flashcard
+::: flashcard{deck="design system"}
 What is a component?
 === key
 A reusable, standardized interface element, that encapsulate code, style, behavior.

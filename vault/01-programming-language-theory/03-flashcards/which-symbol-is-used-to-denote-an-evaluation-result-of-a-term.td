@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'Which symbol is used to denote an evaluation result of a term?'
-deck: 'semantics'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/term.td")
 books:
@@ -11,7 +10,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard
+::: flashcard{deck="semantics"}
 Which symbol is used to denote an evaluation result of a term?
 === key
 $\to$

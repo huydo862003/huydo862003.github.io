@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is an evaluation strategy?'
-deck: 'pure lambda calculus'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/evaluation-strategy.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard
+::: flashcard{deck="pure lambda calculus"}
 What is an evaluation strategy?
 === key
 A specification of what redexes can be reduced an in what order.

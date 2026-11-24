@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What are constructor expressions in rocq?'
-deck: 'rocq programming language'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/constructor-expression.td")
   - fref("/01-programming-language-theory/02-concepts/constructor.td")
@@ -11,7 +10,7 @@ tags:
   - 'rocq programming language'
 ---
 
-::: flashcard
+::: flashcard{deck="rocq programming language"}
 What are constructor expressions in rocq?
 === key
 A constructor expression is an expression constructed using a Constructor, effectively creating a member of a set represented by a type.

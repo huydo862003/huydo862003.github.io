@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is a local binding form?'
-deck: 'programming language basic'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/local-binding-form.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'programming language basic'
 ---
 
-::: flashcard
+::: flashcard{deck="programming language basic"}
 What is a local binding form?
 === key
 A syntactic construct that introduces a variable with limited scope.

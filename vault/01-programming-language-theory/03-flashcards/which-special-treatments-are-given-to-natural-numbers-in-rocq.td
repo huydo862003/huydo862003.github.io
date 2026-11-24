@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'Which special treatments are given to natural numbers in rocq?'
-deck: 'rocq programming language'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/church-numeral.td")
   - fref("/01-programming-language-theory/02-concepts/rocq.td")
@@ -11,7 +10,7 @@ tags:
   - 'rocq programming language'
 ---
 
-::: flashcard
+::: flashcard{deck="rocq programming language"}
 Which special treatments are given to natural numbers in rocq?
 === key
 Rocq gives natural numbers special parsing and printing capabilities.

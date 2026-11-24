@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'The definition of type system'
-deck: 'type theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/type-system.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'type theory'
 ---
 
-::: flashcard
+::: flashcard{deck="type theory"}
 The definition of type system
 === key
 Type system is a **tractable syntactic method** to **prove the absence of a program's behavior** by **classifying phrases according to the types of values they compute**.

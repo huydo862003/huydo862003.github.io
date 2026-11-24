@@ -1,7 +1,6 @@
 ---
 _type: PltFlashcard
 _label: 'What is a program in grammar?'
-deck: 'language theory'
 concepts:
   - fref("/01-programming-language-theory/02-concepts/program.td")
 books:
@@ -10,7 +9,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard
+::: flashcard{deck="language theory"}
 What is a program in grammar?
 === key
 The starting symbol in the grammar.
