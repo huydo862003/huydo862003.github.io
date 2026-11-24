@@ -50,12 +50,7 @@ Things I work on or research in my freetime, either because I need them personal
 
 ### Active / Researching
 
-- **[beatlix](https://github.com/huydo862003/beatlix)**: A shared space for group activities: chat, screen share, listen to music, or just hang out together. P2P via WebRTC.
 - **[oriondb](https://github.com/dqhung15/oriondb)**: First time implementing a DBMS, specifically a vector DB. I've learnt about database management systems, but haven't tried implementing one myself. My notes are hosted here: [oriondb homepage](https://dqhung15.github.io/oriondb/).
-
-### Stalled
-
-- **[type-theory](https://github.com/huydo862003/type-theory)**: Working through Software Foundations, TAPL, and PFPL. Slowly.
 
 ### Completed
 
