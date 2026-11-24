@@ -8,7 +8,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard{deck="language theory"}
+::: flashcard{deck="Language Theory"}
 What's another term for evaluation relation?
 === key
 

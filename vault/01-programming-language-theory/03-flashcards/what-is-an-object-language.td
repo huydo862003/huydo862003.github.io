@@ -9,7 +9,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="language theory"}
+::: flashcard{deck="Language Theory"}
 What is an object language?
 === key
 The formal language being defined by the metalanguage.

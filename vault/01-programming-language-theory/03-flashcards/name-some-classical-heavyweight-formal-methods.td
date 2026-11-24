@@ -9,7 +9,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="language theory"}
+::: flashcard{deck="Language Theory"}
 Name some classical heavyweight formal methods
 === key
 - Hoare logic.

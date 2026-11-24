@@ -11,7 +11,7 @@ tags:
   - 'language philosophy'
 ---
 
-::: flashcard{deck="programming language basic"}
+::: flashcard{deck="Programming Language Basics"}
 Why is there a need for macro hygiene?
 === key
 To avoid Variable capture.

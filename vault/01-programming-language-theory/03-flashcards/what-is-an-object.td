@@ -10,7 +10,7 @@ tags:
   - 'language philosophy'
 ---
 
-::: flashcard{deck="language theory"}
+::: flashcard{deck="Language Theory"}
 What is an object?
 === key
 - A value that maps names to stuff (either other values or "methods").

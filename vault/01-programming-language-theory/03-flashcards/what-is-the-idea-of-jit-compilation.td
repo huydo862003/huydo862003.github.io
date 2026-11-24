@@ -10,7 +10,7 @@ tags:
   - 'programming language basic'
 ---
 
-::: flashcard{deck="compiler implementation"}
+::: flashcard{deck="Compiler Implementation"}
 What is the idea of JIT compilation?
 === key
 A hybrid approach where programs are interpreted, but code is monitored for hot areas and compiled away to binary.

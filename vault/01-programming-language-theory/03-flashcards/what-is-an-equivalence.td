@@ -9,7 +9,7 @@ tags:
   - 'set theory & relation'
 ---
 
-::: flashcard{deck="set theory & relation"}
+::: flashcard{deck="Set Theory & Relation"}
 What is an equivalence?
 === key
 A relation that is Reflexive, Symmetric and Transitive.

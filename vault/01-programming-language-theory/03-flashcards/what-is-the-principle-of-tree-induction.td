@@ -11,7 +11,7 @@ tags:
   - 'set theory & relation'
 ---
 
-::: flashcard{deck="proof technique"}
+::: flashcard{deck="Proof Technique"}
 What is the principle of tree induction?
 === key
 Tree induction

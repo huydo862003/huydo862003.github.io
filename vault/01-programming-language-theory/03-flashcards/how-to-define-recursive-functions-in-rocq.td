@@ -9,7 +9,7 @@ tags:
   - 'rocq programming language'
 ---
 
-::: flashcard{deck="rocq programming language"}
+::: flashcard{deck="Rocq Programming Language"}
 How to define recursive functions in rocq?
 === key
 Use the `Fixpoint` definition. For example:

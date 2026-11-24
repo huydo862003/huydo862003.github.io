@@ -11,7 +11,7 @@ tags:
   - 'set theory & relation'
 ---
 
-::: flashcard{deck="proof technique"}
+::: flashcard{deck="Proof Technique"}
 What does the principle of rule induction state?
 === key
 Rule induction

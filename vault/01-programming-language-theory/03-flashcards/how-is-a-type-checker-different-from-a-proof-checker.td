@@ -7,7 +7,7 @@ tags:
   - 'type theory'
 ---
 
-::: flashcard{deck="type theory"}
+::: flashcard{deck="Type Theory"}
 How is a type checker different from a proof checker?
 === key
 A type checker can be a proof checker. Theoretically,  a **full proof** that the program **meets some arbitrary specification** could be **encoded in type annotations**.

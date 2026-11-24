@@ -9,7 +9,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="language theory"}
+::: flashcard{deck="Language Theory"}
 What is structural induction?
 === key
 A proof technique that proves some property $P$ for a term $t$ by relying on the property $P$ holding for $t$'s subterms.

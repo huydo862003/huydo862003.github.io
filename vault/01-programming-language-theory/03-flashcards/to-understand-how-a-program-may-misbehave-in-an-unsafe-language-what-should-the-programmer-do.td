@@ -7,7 +7,7 @@ tags:
   - 'type theory'
 ---
 
-::: flashcard{deck="type theory"}
+::: flashcard{deck="Type Theory"}
 To understand how a program may misbehave in an unsafe language, what should the programmer do?
 === key
 Know about the internals of the runtime & the platform.

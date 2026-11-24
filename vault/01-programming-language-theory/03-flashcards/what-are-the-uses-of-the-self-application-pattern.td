@@ -7,7 +7,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard{deck="pure lambda calculus"}
+::: flashcard{deck="Pure Lambda Calculus"}
 What are the uses of the self-application pattern?
 === key
 - Recursion: Y-combinator, Z-combinator.

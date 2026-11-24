@@ -9,7 +9,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="language theory"}
+::: flashcard{deck="Language Theory"}
 What is BNF?
 === key
 A specific meta-language that is widely used to describe context-free languages.

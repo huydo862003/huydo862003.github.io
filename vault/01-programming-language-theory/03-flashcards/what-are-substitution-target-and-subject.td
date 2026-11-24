@@ -11,7 +11,7 @@ tags:
   - 'semantics'
 ---
 
-::: flashcard{deck="language theory"}
+::: flashcard{deck="Language Theory"}
 What are substitution target and subject?
 === key
 Substitution target: The target term into which variables are substituted.

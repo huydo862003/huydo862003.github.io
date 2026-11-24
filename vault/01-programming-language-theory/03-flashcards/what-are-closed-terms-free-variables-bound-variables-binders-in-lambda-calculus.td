@@ -7,7 +7,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard{deck="pure lambda calculus"}
+::: flashcard{deck="Pure Lambda Calculus"}
 What are closed terms, free variables, bound variables, binders in lambda calculus?
 === key
 - Closed term: A term with no free variables.

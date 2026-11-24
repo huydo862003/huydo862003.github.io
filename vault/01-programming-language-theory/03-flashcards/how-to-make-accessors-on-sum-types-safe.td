@@ -9,7 +9,7 @@ tags:
   - 'type theory'
 ---
 
-::: flashcard{deck="type theory"}
+::: flashcard{deck="Type Theory"}
 How to make accessors on sum types safe?
 === key
 Pattern matching

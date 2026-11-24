@@ -9,7 +9,7 @@ tags:
   - 'set theory & relation'
 ---
 
-::: flashcard{deck="set theory & relation"}
+::: flashcard{deck="Set Theory & Relation"}
 What is a countable set?
 === key
 A set that is finite, or is infinite and a bijection from it into $\mathbb{N}$ exists.

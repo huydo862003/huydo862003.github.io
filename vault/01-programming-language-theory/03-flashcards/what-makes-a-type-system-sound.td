@@ -9,7 +9,7 @@ tags:
   - 'type theory'
 ---
 
-::: flashcard{deck="type theory"}
+::: flashcard{deck="Type Theory"}
 What makes a type system sound?
 === key
 A type system is sound if the claim they make about the program actually holds at runtime.

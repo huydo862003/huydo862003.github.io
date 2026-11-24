@@ -12,7 +12,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="compiler implementation"}
+::: flashcard{deck="Compiler Implementation"}
 How to implement classes with prototypes?
 === key
 Create a prototype object that contains all the shared methods and default properties.

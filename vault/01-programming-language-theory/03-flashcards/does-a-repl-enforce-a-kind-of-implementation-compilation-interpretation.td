@@ -9,7 +9,7 @@ tags:
   - 'compiler implementation'
 ---
 
-::: flashcard{deck="compiler implementation"}
+::: flashcard{deck="Compiler Implementation"}
 Does a REPL enforce a kind of implementation (compilation/interpretation)?
 === key
 No. But mostly a REPL implements interpretation.

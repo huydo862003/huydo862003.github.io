@@ -9,7 +9,7 @@ tags:
   - 'set theory & relation'
 ---
 
-::: flashcard{deck="set theory & relation"}
+::: flashcard{deck="Set Theory & Relation"}
 What is a lexicographic order
 === key
 A total ordering on sequences that compares elements position-by-position from left to right, with the first differing position determining precedence - like dictionary ordering of words.

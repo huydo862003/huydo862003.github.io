@@ -7,7 +7,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="language theory"}
+::: flashcard{deck="Language Theory"}
 Using Robert (Bob) Harper's notation, what is the definition of variable substitution?
 === key
 

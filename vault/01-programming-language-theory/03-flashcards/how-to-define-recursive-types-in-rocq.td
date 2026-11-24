@@ -9,7 +9,7 @@ tags:
   - 'rocq programming language'
 ---
 
-::: flashcard{deck="rocq programming language"}
+::: flashcard{deck="Rocq Programming Language"}
 How to define recursive types in rocq?
 === key
 Just use the `Inductive` type definition. For example:

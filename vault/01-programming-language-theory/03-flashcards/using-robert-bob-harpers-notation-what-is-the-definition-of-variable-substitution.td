@@ -7,7 +7,7 @@ books:
   - fref("/01-programming-language-theory/01-books/02-practical-foundations-for-programming-languages/01-part-i-judgments-and-rules/01-chapter-1-abstract-syntax.td")
 ---
 
-::: flashcard{deck="language theory"}
+::: flashcard{deck="Language Theory"}
 Using robert (bob) harper's notation, what is the definition of variable substitution?
 === key
 Given:

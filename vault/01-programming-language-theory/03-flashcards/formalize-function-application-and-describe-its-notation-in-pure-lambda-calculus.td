@@ -9,7 +9,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard{deck="pure lambda calculus"}
+::: flashcard{deck="Pure Lambda Calculus"}
 Formalize function application and describe its notation in pure lambda calculus?
 === key
 Function application is called a Beta-redex/Reducible expression in pure lambda calculus.

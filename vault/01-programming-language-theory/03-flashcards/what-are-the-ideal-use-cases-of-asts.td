@@ -7,7 +7,7 @@ tags:
   - 'compiler implementation'
 ---
 
-::: flashcard{deck="compiler implementation"}
+::: flashcard{deck="Compiler Implementation"}
 What are the ideal use cases of ASTs?
 === key
 - **Formal language definitions** and **proofs** about languages.

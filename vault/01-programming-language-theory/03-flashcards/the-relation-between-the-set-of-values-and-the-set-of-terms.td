@@ -10,7 +10,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="language theory"}
+::: flashcard{deck="Language Theory"}
 The relation between the set of values and the set of terms?
 === key
 The set of values is a subset of the set of terms.

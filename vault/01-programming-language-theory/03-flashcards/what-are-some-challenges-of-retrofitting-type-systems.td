@@ -9,7 +9,7 @@ tags:
   - 'compiler implementation'
 ---
 
-::: flashcard{deck="compiler implementation"}
+::: flashcard{deck="Compiler Implementation"}
 What are some challenges of retrofitting type systems?
 === key
 Languages that are previously untyped:

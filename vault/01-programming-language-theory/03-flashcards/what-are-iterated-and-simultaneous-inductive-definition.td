@@ -11,7 +11,7 @@ tags:
   - 'proof technique'
 ---
 
-::: flashcard{deck="set theory & relation"}
+::: flashcard{deck="Set Theory & Relation"}
 What are iterated and simultaneous inductive definition?
 === key
 :::

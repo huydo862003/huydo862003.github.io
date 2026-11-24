@@ -10,7 +10,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard{deck="pure lambda calculus"}
+::: flashcard{deck="Pure Lambda Calculus"}
 What is church numerals?
 === key
 Church numerals is an encoding of natural numbers in Pure/Untyped lambda calculus.

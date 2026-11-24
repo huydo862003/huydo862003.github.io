@@ -9,7 +9,7 @@ tags:
   - 'other mathematics'
 ---
 
-::: flashcard{deck="other mathematics"}
+::: flashcard{deck="Other Mathematics"}
 What is meta-mathematics?
 === key
 A branch of meta-mathematics that studies about the properties of mathematical systems.

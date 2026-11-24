@@ -11,7 +11,7 @@ tags:
   - 'compiler implementation'
 ---
 
-::: flashcard{deck="language theory"}
+::: flashcard{deck="Language Theory"}
 What are the approaches to implementing macros?
 === key
 AST rewriting

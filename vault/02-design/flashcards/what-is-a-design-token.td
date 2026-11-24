@@ -5,7 +5,7 @@ concepts:
   - fref("/02-design/concepts/design-token.td")
 ---
 
-::: flashcard{deck="design system"}
+::: flashcard{deck="Design System"}
 What is a design token?
 === key
 - A documented design decision that has been given a clear and unambiguous name.

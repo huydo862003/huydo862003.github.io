@@ -7,7 +7,7 @@ tags:
   - 'compiler implementation'
 ---
 
-::: flashcard{deck="compiler implementation"}
+::: flashcard{deck="Compiler Implementation"}
 In how many stages does the transformation from concrete syntax to abstract syntax undergo?
 === key
 - Lexical analysis.

@@ -9,7 +9,7 @@ tags:
   - 'rocq programming language'
 ---
 
-::: flashcard{deck="rocq programming language"}
+::: flashcard{deck="Rocq Programming Language"}
 What are simpl, reflexivity in rocq?
 === key
 Two proof tactics that relates to Proof by simplification, that is, they both try to unfold the terms then evaluate the expressions.

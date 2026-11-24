@@ -9,7 +9,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard{deck="pure lambda calculus"}
+::: flashcard{deck="Pure Lambda Calculus"}
 What does lambda calculus consist of in its purest form?
 === key
 - Function definition.

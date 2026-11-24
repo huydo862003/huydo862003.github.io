@@ -9,7 +9,7 @@ tags:
   - 'type theory'
 ---
 
-::: flashcard{deck="type theory"}
+::: flashcard{deck="Type Theory"}
 What else can a type system catch other than low-level faults such as invoking non-existent methods
 === key
 - Access control.

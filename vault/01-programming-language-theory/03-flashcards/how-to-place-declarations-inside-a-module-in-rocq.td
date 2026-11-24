@@ -9,7 +9,7 @@ tags:
   - 'rocq programming language'
 ---
 
-::: flashcard{deck="rocq programming language"}
+::: flashcard{deck="Rocq Programming Language"}
 How to place declarations inside a module in rocq?
 === key
 Wrap the declarations inside: `Module X.` and `End X.`

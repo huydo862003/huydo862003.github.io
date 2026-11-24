@@ -9,7 +9,7 @@ tags:
   - 'set theory & relation'
 ---
 
-::: flashcard{deck="set theory & relation"}
+::: flashcard{deck="Set Theory & Relation"}
 Which notation is often used to denote strict inequality in preorder?
 === key
 $\lt$

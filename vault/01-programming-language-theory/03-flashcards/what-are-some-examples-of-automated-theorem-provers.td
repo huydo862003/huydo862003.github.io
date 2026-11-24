@@ -11,7 +11,7 @@ tags:
   - 'compiler implementation'
 ---
 
-::: flashcard{deck="compiler implementation"}
+::: flashcard{deck="Compiler Implementation"}
 What are some examples of automated theorem provers?
 === key
 - SAT solver

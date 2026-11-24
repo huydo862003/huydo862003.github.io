@@ -9,7 +9,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="language theory"}
+::: flashcard{deck="Language Theory"}
 Why can there be nonsensical terms in the untyped calculus of booleans and numbers?
 === key
 There's no type system.

@@ -7,7 +7,7 @@ tags:
   - 'type theory'
 ---
 
-::: flashcard{deck="type theory"}
+::: flashcard{deck="Type Theory"}
 What are type systems good for?
 === key
 - Living documentation.

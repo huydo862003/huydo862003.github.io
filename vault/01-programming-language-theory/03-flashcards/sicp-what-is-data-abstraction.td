@@ -9,7 +9,7 @@ tags:
   - 'programming language basic'
 ---
 
-::: flashcard{deck="language theory"}
+::: flashcard{deck="Language Theory"}
 What is data abstraction? What are selectors and constructors?
 === key
 *Data abstraction*: The technique of isolating the parts of a program that deal with *how data objects are represented* from the parts that deal with *how data objects are used*.

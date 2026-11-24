@@ -7,7 +7,7 @@ tags:
   - 'type theory'
 ---
 
-::: flashcard{deck="type theory"}
+::: flashcard{deck="Type Theory"}
 Does unsafe language provide any static type checking at all?
 === key
 C/C++ are unsafe but still provide best-effort static type checking.

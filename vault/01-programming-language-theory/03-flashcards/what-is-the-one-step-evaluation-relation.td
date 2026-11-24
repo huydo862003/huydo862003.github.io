@@ -10,7 +10,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="pure lambda calculus"}
+::: flashcard{deck="Pure Lambda Calculus"}
 What is the one-step evaluation relation?
 === key
 A relation that relates a term to its immediate successor in a calculus, representing one step of evaluation.

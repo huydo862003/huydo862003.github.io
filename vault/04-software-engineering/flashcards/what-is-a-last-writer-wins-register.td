@@ -7,7 +7,7 @@ concepts:
   - fref("/04-software-engineering/concepts/last-writer-wins-register.td")
 ---
 
-::: flashcard{deck="collaboration"}
+::: flashcard{deck="Collaboration"}
 What is a last-writer-wins register?
 === key
 A CRDT that holds a single value. On conflict, the most recent write wins (using timestamp + peer ID to break ties). In a client-server setup, the server defines ordering so timestamps are not needed.

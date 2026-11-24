@@ -10,7 +10,7 @@ tags:
   - 'proof technique'
 ---
 
-::: flashcard{deck="logic & tools"}
+::: flashcard{deck="Logic & Tools"}
 When is a rule satisfied by a relation?
 === key
 A rule is satisfied by a relation if for every instance of that rule, if the fact that all premises of that instance is in that relation implies that the conclusion of that instance is in that relation.

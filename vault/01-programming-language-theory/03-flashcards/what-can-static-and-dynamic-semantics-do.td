@@ -7,7 +7,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="language theory"}
+::: flashcard{deck="Language Theory"}
 What can static and dynamic semantics do?
 === key
 :::

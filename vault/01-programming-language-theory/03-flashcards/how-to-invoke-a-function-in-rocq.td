@@ -9,7 +9,7 @@ tags:
   - 'rocq programming language'
 ---
 
-::: flashcard{deck="rocq programming language"}
+::: flashcard{deck="Rocq Programming Language"}
 How to invoke a function in rocq?
 === key
 Subexpression: `(fn arg1 arg2 ...)`

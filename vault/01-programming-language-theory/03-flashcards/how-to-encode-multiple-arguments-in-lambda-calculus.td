@@ -9,7 +9,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard{deck="pure lambda calculus"}
+::: flashcard{deck="Pure Lambda Calculus"}
 How to encode multiple arguments in lambda calculus?
 === key
 Use currying.

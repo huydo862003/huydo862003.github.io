@@ -9,7 +9,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard{deck="pure lambda calculus"}
+::: flashcard{deck="Pure Lambda Calculus"}
 What are combinators in lambda calculus?
 === key
 A term with no free variables.

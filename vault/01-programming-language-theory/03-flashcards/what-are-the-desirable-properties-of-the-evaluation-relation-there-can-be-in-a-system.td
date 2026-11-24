@@ -8,7 +8,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="pure lambda calculus"}
+::: flashcard{deck="Pure Lambda Calculus"}
 What are the desirable properties of the evaluation relation there can be in a system?
 === key
 Desired property: Termination of evaluation

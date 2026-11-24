@@ -10,7 +10,7 @@ tags:
   - 'type theory'
 ---
 
-::: flashcard{deck="type theory"}
+::: flashcard{deck="Type Theory"}
 What are nominal typing and structural typing?
 === key
 Nominal typing is a policy that determines type compatibility based on user-provided declarations.

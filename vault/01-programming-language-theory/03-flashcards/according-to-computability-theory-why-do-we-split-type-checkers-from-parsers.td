@@ -7,7 +7,7 @@ tags:
   - 'compiler implementation'
 ---
 
-::: flashcard{deck="compiler implementation"}
+::: flashcard{deck="Compiler Implementation"}
 According to computability theory, why do we split type checkers from parsers?
 === key
 - Parser: Easy context-free grammar handling. Efficient & Decidable algorithms exist.

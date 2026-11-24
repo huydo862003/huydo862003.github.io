@@ -9,7 +9,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="language theory"}
+::: flashcard{deck="Language Theory"}
 What are the major advantages of denotational semantics?
 === key
 Denotational semantics allows the reuse of knowledge drawn from a well-studied domain into programming language design.

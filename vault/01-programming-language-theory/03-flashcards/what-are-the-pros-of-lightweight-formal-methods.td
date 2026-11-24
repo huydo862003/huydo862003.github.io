@@ -9,7 +9,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="language theory"}
+::: flashcard{deck="Language Theory"}
 What are the pros of lightweight formal methods
 === key
 - Do not require high sophistication from the side of the programmer, more accessible.

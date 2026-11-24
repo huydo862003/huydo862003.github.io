@@ -10,7 +10,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="language theory"}
+::: flashcard{deck="Language Theory"}
 What is a fresh variable (concerning a set of variables)?
 === key
 A variable is fresh in a variable set $\mathcal{X}$ if it's not within $\mathcal{X}$.

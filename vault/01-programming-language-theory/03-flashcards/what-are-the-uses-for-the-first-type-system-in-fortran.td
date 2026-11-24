@@ -7,7 +7,7 @@ tags:
   - 'type theory'
 ---
 
-::: flashcard{deck="type theory"}
+::: flashcard{deck="Type Theory"}
 What are the uses for the first type system in fortran?
 === key
 To distinguish between integers and floating point numbers & optimize performance.

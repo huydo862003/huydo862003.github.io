@@ -7,7 +7,7 @@ tags:
   - 'rocq programming language'
 ---
 
-::: flashcard{deck="rocq programming language"}
+::: flashcard{deck="Rocq Programming Language"}
 How to destruct multiple variables at once in rocq?
 === key
 Use `intros <intro-pattern>.`

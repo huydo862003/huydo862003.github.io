@@ -9,7 +9,7 @@ tags:
   - 'programming language basic'
 ---
 
-::: flashcard{deck="programming language basic"}
+::: flashcard{deck="Programming Language Basics"}
 What is a closure in programming language?
 === key
 A closure is a function that memorizes its surrounding environment, so i can access variables from the outside.

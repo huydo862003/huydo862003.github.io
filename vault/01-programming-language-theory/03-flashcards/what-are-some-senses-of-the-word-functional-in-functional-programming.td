@@ -10,7 +10,7 @@ tags:
   - 'language philosophy'
 ---
 
-::: flashcard{deck="language theory"}
+::: flashcard{deck="Language Theory"}
 What are some senses of the word "functional" in "functional programming"?
 === key
 - Mathematical functions: To denote the resemblance to "pure" mathematical functions.

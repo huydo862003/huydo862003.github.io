@@ -10,7 +10,7 @@ tags:
   - 'semantics'
 ---
 
-::: flashcard{deck="language theory"}
+::: flashcard{deck="Language Theory"}
 What is the benefit of introducing assignment and local state variables? What is the cost?
 === key
 **Benefit**: By introducing assignment (`set!`) and hiding state in local variables, we are able to structure systems in a *more modular* fashion.

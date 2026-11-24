@@ -9,7 +9,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard{deck="pure lambda calculus"}
+::: flashcard{deck="Pure Lambda Calculus"}
 What does it mean to say church numerals represent ordinary numbers?
 === key
 Any programs written using numbers, assuming they are truly ordinary numbers, can have their numbers and associated operations substituted with Church numerals and their corresponding operations, without any changes in the observable behavior. -> Behavioral/Observational/Contextual equivalence.

@@ -7,7 +7,7 @@ concepts:
   - fref("/04-software-engineering/concepts/optimistic-concurrency-control.td")
 ---
 
-::: flashcard{deck="collaboration"}
+::: flashcard{deck="Collaboration"}
 Who generates ETags: The HTTP server or the application?
 === key
 For static files (JS, CSS, images), the HTTP server (Nginx, Apache) generates ETags automatically from file modification time + size. For dynamic resources (DB-backed content served via API), the application must generate and validate ETags itself.

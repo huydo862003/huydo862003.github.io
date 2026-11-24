@@ -9,7 +9,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard{deck="pure lambda calculus"}
+::: flashcard{deck="Pure Lambda Calculus"}
 In which ways the lambda calculus can be viewed?
 === key
 - A **simple programming language** in which computations can be described.

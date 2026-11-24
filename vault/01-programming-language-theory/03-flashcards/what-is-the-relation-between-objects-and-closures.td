@@ -10,7 +10,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="language theory"}
+::: flashcard{deck="Language Theory"}
 What is the relation between objects and closures?
 === key
 An Object is a Closure with multiple entrypoints.

@@ -7,7 +7,7 @@ tags:
   - 'set theory & relation'
 ---
 
-::: flashcard{deck="set theory & relation"}
+::: flashcard{deck="Set Theory & Relation"}
 Functions that diverge vs functions that can fail?
 === key
 A function $f$ fails at a value $x$ if $f(x) = \text{error}$, or $f(x) \uparrow$.

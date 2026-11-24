@@ -7,7 +7,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard{deck="pure lambda calculus"}
+::: flashcard{deck="Pure Lambda Calculus"}
 What are the possible evaluation strategies for lambda calculus?
 === key
 - Full beta-reduction.

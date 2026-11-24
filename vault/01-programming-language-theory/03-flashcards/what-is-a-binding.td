@@ -9,7 +9,7 @@ tags:
   - 'programming language basic'
 ---
 
-::: flashcard{deck="programming language basic"}
+::: flashcard{deck="Programming Language Basics"}
 What is a binding?
 === key
 A binding is a mapping from a variable to a value.

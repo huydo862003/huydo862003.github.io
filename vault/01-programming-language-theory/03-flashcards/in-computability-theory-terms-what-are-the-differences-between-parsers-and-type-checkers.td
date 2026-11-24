@@ -7,7 +7,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="language theory"}
+::: flashcard{deck="Language Theory"}
 In computability theory terms, what are the differences between parsers and type checkers?
 === key
 | Phase | Constraint type | Complexity | Example checks |

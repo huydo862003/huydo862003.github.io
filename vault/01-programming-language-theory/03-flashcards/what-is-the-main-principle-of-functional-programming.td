@@ -9,7 +9,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="language theory"}
+::: flashcard{deck="Language Theory"}
 What is the main principle of functional programming?
 === key
 Computations should be as pure as possible: It only returns results based on its input, do not cause side effects.

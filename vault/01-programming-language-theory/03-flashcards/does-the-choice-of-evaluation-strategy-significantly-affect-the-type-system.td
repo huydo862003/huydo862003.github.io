@@ -9,7 +9,7 @@ tags:
   - 'type theory'
 ---
 
-::: flashcard{deck="type theory"}
+::: flashcard{deck="Type Theory"}
 Does the choice of evaluation strategy significantly affect the type system?
 === key
 No.

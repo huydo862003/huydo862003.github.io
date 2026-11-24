@@ -7,7 +7,7 @@ tags:
   - 'programming language basic'
 ---
 
-::: flashcard{deck="language theory"}
+::: flashcard{deck="Language Theory"}
 What is the difference between a linear recursive process and a linear iterative process? Can a recursive procedure generate an iterative process?
 === key
 - *Linear recursive process*: Grows by building up a chain of deferred operations (expansion) and then contracting as operations are performed. The interpreter must keep track of hidden information proportional to `n`. Shape: expand then contract.

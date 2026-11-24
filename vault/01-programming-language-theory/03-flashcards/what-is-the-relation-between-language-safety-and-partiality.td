@@ -9,7 +9,7 @@ tags:
   - 'type theory'
 ---
 
-::: flashcard{deck="type theory"}
+::: flashcard{deck="Type Theory"}
 What is the relation between language safety and partiality?
 === key
 A safe language should have partial operations: `+` cannot work on strings for example.

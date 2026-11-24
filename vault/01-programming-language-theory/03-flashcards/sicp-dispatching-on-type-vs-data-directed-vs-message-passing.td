@@ -9,7 +9,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="language theory"}
+::: flashcard{deck="Language Theory"}
 Compare dispatching on type, data-directed programming, and message passing for handling generic operations.
 === key
 All three are strategies for implementing generic operations over multiple types (decompositions of the operation-and-type table):

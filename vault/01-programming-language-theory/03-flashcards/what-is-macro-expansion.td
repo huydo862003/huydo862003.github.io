@@ -11,7 +11,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="compiler implementation"}
+::: flashcard{deck="Compiler Implementation"}
 What is macro expansion?
 === key
 A compile-time code transformation where macro invocations are replaced by their expanded definitions, enabling Syntactic abstraction and code generation before regular compilation.

@@ -9,7 +9,7 @@ tags:
   - 'rocq programming language'
 ---
 
-::: flashcard{deck="rocq programming language"}
+::: flashcard{deck="Rocq Programming Language"}
 Which values are truthy in rocq?
 === key
 The first constructor of an inductive type that has two constructors.

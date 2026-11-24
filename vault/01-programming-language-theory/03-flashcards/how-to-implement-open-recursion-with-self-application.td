@@ -7,7 +7,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard{deck="pure lambda calculus"}
+::: flashcard{deck="Pure Lambda Calculus"}
 How to implement open recursion with self-application?
 === key
 ```scheme

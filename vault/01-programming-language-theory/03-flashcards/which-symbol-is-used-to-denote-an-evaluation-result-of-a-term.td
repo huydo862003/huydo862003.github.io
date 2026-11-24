@@ -10,7 +10,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard{deck="semantics"}
+::: flashcard{deck="Semantics"}
 Which symbol is used to denote an evaluation result of a term?
 === key
 $\to$

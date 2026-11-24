@@ -9,7 +9,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="language theory"}
+::: flashcard{deck="Language Theory"}
 What is operational semantics?
 === key
 A style of semantics that defines a language by how it runs using syntactic transformation.

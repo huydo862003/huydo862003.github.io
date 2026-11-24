@@ -7,7 +7,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="language theory"}
+::: flashcard{deck="Language Theory"}
 What's the strength of axiomatic semantics?
 === key
 

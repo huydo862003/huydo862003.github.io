@@ -9,7 +9,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard{deck="pure lambda calculus"}
+::: flashcard{deck="Pure Lambda Calculus"}
 In which evaluation strategy, the one-step evaluation relation is a partial function on terms?
 === key
 - Normal order.

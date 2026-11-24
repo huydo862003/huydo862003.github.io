@@ -8,7 +8,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="programming language basic"}
+::: flashcard{deck="Programming Language Basics"}
 What do programming languages describe, and for whom?
 === key
 Programming languages describe computations to human and machines.

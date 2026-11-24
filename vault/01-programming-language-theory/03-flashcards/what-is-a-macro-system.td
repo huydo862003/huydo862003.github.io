@@ -10,7 +10,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="compiler implementation"}
+::: flashcard{deck="Compiler Implementation"}
 What is a macro system?
 === key
 A language facility that provides programmable syntax transformations through macros.

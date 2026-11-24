@@ -11,7 +11,7 @@ tags:
   - 'set theory & relation'
 ---
 
-::: flashcard{deck="proof technique"}
+::: flashcard{deck="Proof Technique"}
 What are the ideas of forward chaining and backward chaining?
 === key
 Forward chaining

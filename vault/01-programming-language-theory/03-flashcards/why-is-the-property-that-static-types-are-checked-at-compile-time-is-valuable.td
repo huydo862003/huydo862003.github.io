@@ -8,7 +8,7 @@ tags:
   - 'language philosophy'
 ---
 
-::: flashcard{deck="type theory"}
+::: flashcard{deck="Type Theory"}
 Why is the property that static types are checked at compile-time is valuable?
 === key
 - Programs may be expensive/unsafe/destructive to run.

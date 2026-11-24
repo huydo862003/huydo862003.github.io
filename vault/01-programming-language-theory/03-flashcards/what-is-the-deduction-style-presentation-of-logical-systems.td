@@ -9,7 +9,7 @@ tags:
   - 'logic & tools'
 ---
 
-::: flashcard{deck="logic & tools"}
+::: flashcard{deck="Logic & Tools"}
 What is the deduction style presentation of logical systems?
 === key
 The premises are listed above the horizontal line & the conclusion is listed below the horizontal line.

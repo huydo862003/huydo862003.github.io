@@ -7,7 +7,7 @@ tags:
   - 'type theory'
 ---
 
-::: flashcard{deck="type theory"}
+::: flashcard{deck="Type Theory"}
 Why are type systems a valuable maintenance tool?
 === key
 When you refactor, some function signatures or variables' types may change, a type system would catch most locations that the refactor may miss.

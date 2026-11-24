@@ -9,7 +9,7 @@ tags:
   - 'logic & tools'
 ---
 
-::: flashcard{deck="logic & tools"}
+::: flashcard{deck="Logic & Tools"}
 What is an instance of an inference rule?
 === key
 An inference rule whose metavariables are replaced with real values.

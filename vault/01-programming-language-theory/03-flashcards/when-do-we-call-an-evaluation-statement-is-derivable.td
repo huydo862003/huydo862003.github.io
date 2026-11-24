@@ -10,7 +10,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="pure lambda calculus"}
+::: flashcard{deck="Pure Lambda Calculus"}
 When do we call an evaluation statement is derivable?
 === key
 There's a derivation tree whose root is the evaluation statement.

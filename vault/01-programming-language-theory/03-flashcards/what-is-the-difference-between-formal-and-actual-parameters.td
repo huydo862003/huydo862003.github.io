@@ -7,7 +7,7 @@ tags:
   - 'programming language basic'
 ---
 
-::: flashcard{deck="programming language basic"}
+::: flashcard{deck="Programming Language Basics"}
 What is the difference between formal and actual parameters?
 === key
 - Formal parameter: The function parameters as defined in the function headers.

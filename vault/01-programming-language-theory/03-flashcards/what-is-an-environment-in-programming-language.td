@@ -9,7 +9,7 @@ tags:
   - 'programming language basic'
 ---
 
-::: flashcard{deck="programming language basic"}
+::: flashcard{deck="Programming Language Basics"}
 What is an environment in programming language?
 === key
 An environment can be a theoretic construct to store bindings of variables to values/types as part of semantic/type-theoretic reasoning.

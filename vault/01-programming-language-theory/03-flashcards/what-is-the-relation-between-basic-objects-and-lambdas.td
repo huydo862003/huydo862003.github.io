@@ -9,7 +9,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="language theory"}
+::: flashcard{deck="Language Theory"}
 What is the relation between basic objects and lambdas?
 === key
 Object is a lambda expression with multiple entrypoints.

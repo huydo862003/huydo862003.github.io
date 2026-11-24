@@ -9,7 +9,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard{deck="pure lambda calculus"}
+::: flashcard{deck="Pure Lambda Calculus"}
 What does it mean by "everything is a function" in lambda calculus?
 === key
 Every closed terms in Lambda calculus are functions.

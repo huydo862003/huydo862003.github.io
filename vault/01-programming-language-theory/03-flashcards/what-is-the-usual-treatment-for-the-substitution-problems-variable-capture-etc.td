@@ -9,7 +9,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard{deck="pure lambda calculus"}
+::: flashcard{deck="Pure Lambda Calculus"}
 What is the usual treatment for the substitution problems (variable capture, etc.)
 === key
 Using Capture-avoiding substitution:

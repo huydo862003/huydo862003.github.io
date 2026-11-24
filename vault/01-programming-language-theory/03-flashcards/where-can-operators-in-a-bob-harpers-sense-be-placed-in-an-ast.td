@@ -7,7 +7,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="language theory"}
+::: flashcard{deck="Language Theory"}
 Where can operators (in a bob harper's sense) be placed in an AST?
 === key
 Leaves and internal nodes.

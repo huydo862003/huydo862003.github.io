@@ -10,7 +10,7 @@ tags:
   - 'programming language basic'
 ---
 
-::: flashcard{deck="programming language basic"}
+::: flashcard{deck="Programming Language Basics"}
 What is the difference between a compiler and an interpreter?
 === key
 - A compiler can be treated as a function that carries a program in the source programming language to another target programming language.

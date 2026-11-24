@@ -8,7 +8,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard{deck="pure lambda calculus"}
+::: flashcard{deck="Pure Lambda Calculus"}
 What's the difference between the fixed-point Y-combinator and the fixed-point Z-combinator?
 === key
 

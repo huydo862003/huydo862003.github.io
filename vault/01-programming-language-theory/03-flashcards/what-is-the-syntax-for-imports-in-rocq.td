@@ -10,7 +10,7 @@ tags:
   - 'rocq programming language'
 ---
 
-::: flashcard{deck="rocq programming language"}
+::: flashcard{deck="Rocq Programming Language"}
 What is the syntax for imports in rocq?
 === key
 `From Library Require [Import] Module.`

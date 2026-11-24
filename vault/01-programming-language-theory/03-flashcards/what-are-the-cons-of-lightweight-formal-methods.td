@@ -9,7 +9,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="language theory"}
+::: flashcard{deck="Language Theory"}
 What are the cons of lightweight formal methods
 === key
 Not as strong or general as more heavy-weight methods.

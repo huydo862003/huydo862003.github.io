@@ -7,7 +7,7 @@ concepts:
   - fref("/04-software-engineering/concepts/optimistic-concurrency-control.td")
 ---
 
-::: flashcard{deck="collaboration"}
+::: flashcard{deck="Collaboration"}
 How does optimistic concurrency control work?
 === key
 No lock is held between read and write. The client reads a version token (ETag, SHA, version number), modifies locally, then writes back with the token. The server rejects the write if the token changed (409 Conflict / 412 Precondition Failed). Same as Compare-and-Swap (CAS) at the application level.

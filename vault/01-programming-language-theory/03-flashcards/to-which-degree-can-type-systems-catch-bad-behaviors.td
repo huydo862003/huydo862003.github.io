@@ -7,7 +7,7 @@ tags:
   - 'type theory'
 ---
 
-::: flashcard{deck="type theory"}
+::: flashcard{deck="Type Theory"}
 To which degree can type systems catch bad behaviors?
 === key
 Generally, a sound type system can prove the absence of certain bad behaviors, but may not always prove the presence of certain bad behaviors.

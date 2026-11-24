@@ -9,7 +9,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard{deck="pure lambda calculus"}
+::: flashcard{deck="Pure Lambda Calculus"}
 What are the 2 definitions of substitution used in TAPL? for what purposes?
 === key
 - $[x \to s]t$ -> Useful for mathematical reasoning, proofs.

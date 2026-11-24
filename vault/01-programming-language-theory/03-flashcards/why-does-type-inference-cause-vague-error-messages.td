@@ -9,7 +9,7 @@ tags:
   - 'compiler implementation'
 ---
 
-::: flashcard{deck="compiler implementation"}
+::: flashcard{deck="Compiler Implementation"}
 Why does type inference cause vague error messages?
 === key
 Sometimes, multiple types are inferred for a variable at different locations. The question: Which type and which location to report?

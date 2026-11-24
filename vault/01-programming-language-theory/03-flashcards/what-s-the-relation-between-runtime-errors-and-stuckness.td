@@ -10,7 +10,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard{deck="language theory"}
+::: flashcard{deck="Language Theory"}
 What's the relation between runtime errors and stuckness?
 === key
 

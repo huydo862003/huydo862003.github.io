@@ -9,7 +9,7 @@ tags:
   - 'type theory'
 ---
 
-::: flashcard{deck="type theory"}
+::: flashcard{deck="Type Theory"}
 What is the portability perspective on language safety?
 === key
 A safe language can be totally defined by its programmer's manual.

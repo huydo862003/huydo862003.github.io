@@ -9,7 +9,7 @@ tags:
   - 'programming language basic'
 ---
 
-::: flashcard{deck="programming language basic"}
+::: flashcard{deck="Programming Language Basics"}
 What is automatic memory management?
 === key
 Automatic memory management is a set of compile-time or dynamic techniques that allows the dynamic allocation and deallocation of memory without explicit instructions from the programmer.

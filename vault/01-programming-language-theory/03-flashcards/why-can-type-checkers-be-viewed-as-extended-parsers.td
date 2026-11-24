@@ -7,7 +7,7 @@ tags:
   - 'language philosophy'
 ---
 
-::: flashcard{deck="language philosophy"}
+::: flashcard{deck="Language Philosophy"}
 Why can type checkers be viewed as extended parsers?
 === key
 Static analyzer but for context-sensitive semantics.

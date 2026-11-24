@@ -9,7 +9,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="language theory"}
+::: flashcard{deck="Language Theory"}
 What are the differences between terms and expressions?
 === key
 Expression is used to denote any syntactic constructs.

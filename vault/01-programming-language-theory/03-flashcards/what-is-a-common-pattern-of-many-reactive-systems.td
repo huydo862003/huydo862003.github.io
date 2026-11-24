@@ -9,7 +9,7 @@ tags:
   - 'simply-typed lambda calculus'
 ---
 
-::: flashcard{deck="design philosophy"}
+::: flashcard{deck="Design Philosophy"}
 What is a common pattern of many reactive systems?
 === key
 - Loop spine.

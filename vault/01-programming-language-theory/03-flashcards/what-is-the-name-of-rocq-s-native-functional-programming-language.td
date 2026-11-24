@@ -8,7 +8,7 @@ tags:
   - 'rocq programming language'
 ---
 
-::: flashcard{deck="rocq programming language"}
+::: flashcard{deck="Rocq Programming Language"}
 What is the name of Rocq's native functional programming language?
 === key
 

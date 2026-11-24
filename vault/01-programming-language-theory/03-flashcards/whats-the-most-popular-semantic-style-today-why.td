@@ -10,7 +10,7 @@ books:
   - fref("/01-programming-language-theory/01-books/01-types-and-programming-languages/03-part-i-untyped-systems/01-chapter-3-untyped-arithmetic-expressions.td")
 ---
 
-::: flashcard{deck="language theory"}
+::: flashcard{deck="Language Theory"}
 What's the most popular semantic style today? why?
 === key
 Of the three:

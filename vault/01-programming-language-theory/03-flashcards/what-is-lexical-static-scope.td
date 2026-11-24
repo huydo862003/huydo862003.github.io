@@ -9,7 +9,7 @@ tags:
   - 'programming language basic'
 ---
 
-::: flashcard{deck="programming language basic"}
+::: flashcard{deck="Programming Language Basics"}
 What is lexical/static scope?
 === key
 Lexical/static scoping is a binding resolution strategy where a variable's binding is determined by its textual position in the source code.

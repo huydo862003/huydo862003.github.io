@@ -9,7 +9,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard{deck="pure lambda calculus"}
+::: flashcard{deck="Pure Lambda Calculus"}
 How to use fix to define recursive functions?
 === key
 Sketch a normal recursive function as you will in regular programming languages:

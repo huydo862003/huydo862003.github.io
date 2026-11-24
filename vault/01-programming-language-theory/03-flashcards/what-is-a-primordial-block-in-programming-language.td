@@ -9,7 +9,7 @@ tags:
   - 'programming language basic'
 ---
 
-::: flashcard{deck="programming language basic"}
+::: flashcard{deck="Programming Language Basics"}
 What is a primordial block in programming language?
 === key
 A block that encompasses the global scope, containing all the builtins.

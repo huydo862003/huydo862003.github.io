@@ -12,7 +12,7 @@ tags:
   - 'proof technique'
 ---
 
-::: flashcard{deck="set theory & relation"}
+::: flashcard{deck="Set Theory & Relation"}
 Why is backward chaining goal-directed?
 === key
 Because Backward chaining starts from the goal and works backwards towards the axioms.

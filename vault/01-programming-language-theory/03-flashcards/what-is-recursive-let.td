@@ -9,7 +9,7 @@ tags:
   - 'programming language basic'
 ---
 
-::: flashcard{deck="programming language basic"}
+::: flashcard{deck="Programming Language Basics"}
 What is recursive let?
 === key
 Recursive let is a syntactic construct in Scheme in which each binding in the let definition is visible anywhere within the let expression.

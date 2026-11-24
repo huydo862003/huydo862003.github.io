@@ -10,7 +10,7 @@ tags:
   - 'compiler implementation'
 ---
 
-::: flashcard{deck="language theory"}
+::: flashcard{deck="Language Theory"}
 What is a macro?
 === key
 Macro is a syntactic pattern that gets expanded into other code at compile time.

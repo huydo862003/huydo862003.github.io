@@ -12,7 +12,7 @@ tags:
   - 'programming language basic'
 ---
 
-::: flashcard{deck="language theory"}
+::: flashcard{deck="Language Theory"}
 Does a language specify how it should be evaluated?
 === key
 No.

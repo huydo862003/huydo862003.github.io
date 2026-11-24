@@ -10,7 +10,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="pure lambda calculus"}
+::: flashcard{deck="Pure Lambda Calculus"}
 What is a normal form?
 === key
 A normal form is a lambda term that does not relate to any other terms by the One-step evaluation relation.

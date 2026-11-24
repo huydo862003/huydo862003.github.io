@@ -9,7 +9,7 @@ tags:
   - 'other mathematics'
 ---
 
-::: flashcard{deck="other mathematics"}
+::: flashcard{deck="Other Mathematics"}
 What is a metatheory?
 === key
 The study about properties of a formal system, using external reasonings.

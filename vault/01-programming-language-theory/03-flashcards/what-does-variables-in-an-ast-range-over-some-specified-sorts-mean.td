@@ -9,7 +9,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="language theory"}
+::: flashcard{deck="Language Theory"}
 What does "variables in an AST range over some specified sorts" mean?
 === key
 Variables are placeholders for ASTs of some specified sorts.

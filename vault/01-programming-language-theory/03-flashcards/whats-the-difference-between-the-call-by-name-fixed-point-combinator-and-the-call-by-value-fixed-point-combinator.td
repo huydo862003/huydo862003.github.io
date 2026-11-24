@@ -5,7 +5,7 @@ books:
   - fref("/01-programming-language-theory/01-books/01-types-and-programming-languages/03-part-i-untyped-systems/03-chapter-5-the-untyped-pure-lambda-calculus.td")
 ---
 
-::: flashcard{deck="pure lambda calculus"}
+::: flashcard{deck="Pure Lambda Calculus"}
 What's the difference between the call-by-name fixed-point combinator and the call-by-value fixed-point combinator?
 === key
 - Call-by-name fixed-point combinator - Curry/Y-Combinator:

@@ -9,7 +9,7 @@ tags:
   - 'type theory'
 ---
 
-::: flashcard{deck="type theory"}
+::: flashcard{deck="Type Theory"}
 What is the Hindley-Milner type inference algorithm?
 === key
 This algorithm works by:

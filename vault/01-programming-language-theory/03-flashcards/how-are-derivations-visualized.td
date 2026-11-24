@@ -12,7 +12,7 @@ tags:
   - 'logic & tools'
 ---
 
-::: flashcard{deck="proof technique"}
+::: flashcard{deck="Proof Technique"}
 How are derivations visualized?
 === key
 Derivation tree:

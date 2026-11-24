@@ -7,7 +7,7 @@ concepts:
   - fref("/04-software-engineering/concepts/pre-signed-urls.td")
 ---
 
-::: flashcard{deck="architecture"}
+::: flashcard{deck="Architecture"}
 What is a pre-signed URL and why use it?
 === key
 A temporary authenticated URL that lets a client upload/download directly from blob storage (S3, etc.) without going through the backend. The backend generates the URL but never touches the file bytes. Reduces memory pressure and scales better.

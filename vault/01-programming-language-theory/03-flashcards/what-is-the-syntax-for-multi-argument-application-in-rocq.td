@@ -9,7 +9,7 @@ tags:
   - 'rocq programming language'
 ---
 
-::: flashcard{deck="rocq programming language"}
+::: flashcard{deck="Rocq Programming Language"}
 What is the syntax for multi-argument application in rocq?
 === key
 `(fn arg1 arg2 ...)`.

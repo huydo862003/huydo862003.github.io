@@ -9,7 +9,7 @@ tags:
   - 'type theory'
 ---
 
-::: flashcard{deck="type theory"}
+::: flashcard{deck="Type Theory"}
 The definition of runtime type error
 === key
 Runtime type error is the class of program behaviors that a specific type system is designed to eliminate.

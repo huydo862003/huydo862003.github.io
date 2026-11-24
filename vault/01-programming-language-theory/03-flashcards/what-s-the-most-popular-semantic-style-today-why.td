@@ -12,7 +12,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard{deck="language theory"}
+::: flashcard{deck="Language Theory"}
 What's the most popular semantic style today? Why?
 === key
 

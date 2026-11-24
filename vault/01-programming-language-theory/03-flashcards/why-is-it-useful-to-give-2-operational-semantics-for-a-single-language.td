@@ -9,7 +9,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="language theory"}
+::: flashcard{deck="Language Theory"}
 Why is it useful to give >= 2 operational semantics for a single language?
 === key
 It's useful to give 2 operational semantics:

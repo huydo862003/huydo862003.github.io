@@ -7,7 +7,7 @@ tags:
   - 'type theory'
 ---
 
-::: flashcard{deck="type theory"}
+::: flashcard{deck="Type Theory"}
 What are the approaches to typing conditionals and their tradeoffs?
 === key
 - 1st approach: True and False branches must be of the same types.

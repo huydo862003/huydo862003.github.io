@@ -9,7 +9,7 @@ tags:
   - 'rocq programming language'
 ---
 
-::: flashcard{deck="rocq programming language"}
+::: flashcard{deck="Rocq Programming Language"}
 Which types are supported in conditional expressions' conditions in rocq? why? which values are truthy/falsy?
 === key
 - Inductive types with two constructors.

@@ -7,7 +7,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="language theory"}
+::: flashcard{deck="Language Theory"}
 What is the untyped calculus of booleans and numbers?
 === key
 A simple language with only natural numbers and booleans as primitives.

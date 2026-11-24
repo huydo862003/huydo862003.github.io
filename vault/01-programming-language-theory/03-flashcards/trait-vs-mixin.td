@@ -10,7 +10,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard{deck="pure lambda calculus"}
+::: flashcard{deck="Pure Lambda Calculus"}
 Trait vs mixin?
 === key
 Note: Trait in this sense is different from Rust's traits.

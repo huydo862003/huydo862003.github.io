@@ -12,7 +12,7 @@ tags:
   - 'proof technique'
 ---
 
-::: flashcard{deck="logic & tools"}
+::: flashcard{deck="Logic & Tools"}
 What are computation and congruence rules?
 === key
 A computation rule directly reduces the current term.

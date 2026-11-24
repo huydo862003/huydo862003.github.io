@@ -10,7 +10,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="pure lambda calculus"}
+::: flashcard{deck="Pure Lambda Calculus"}
 What is the operational semantics of boolean expressions?
 === key
 What is the operational semantics of arithmetic expressions?

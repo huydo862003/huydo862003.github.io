@@ -10,7 +10,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard{deck="pure lambda calculus"}
+::: flashcard{deck="Pure Lambda Calculus"}
 Define successor, addition, multiplication, zero test, subtraction, predecessor, equality for church numerals?
 === key
 Church numerals:
