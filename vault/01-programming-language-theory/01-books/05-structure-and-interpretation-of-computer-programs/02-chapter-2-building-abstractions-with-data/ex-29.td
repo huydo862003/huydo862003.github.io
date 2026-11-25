@@ -47,4 +47,4 @@ d. How much changes if the constructors use `cons` instead of `list`?
               (if (pair? rs) (balanced? rs) #t)))))
 ```
 
-d. If constructors use `cons`, only change `right-branch` to use `cdr` instead of `cadr`, and `branch-structure` to use `cdr` instead of `cadr`. All higher-level code remains unchanged — this is the power of data abstraction.
+d. If constructors use `cons`, only change `right-branch` to use `cdr` instead of `cadr`, and `branch-structure` to use `cdr` instead of `cadr`. All higher-level code remains unchanged - this is the power of data abstraction.

@@ -323,7 +323,7 @@ A *tower* of types (e.g. integer -> rational -> real -> complex) allows automati
 
 Inadequacies: Not all hierarchies are towers. Dealing with large numbers of interrelated types while preserving modularity is very difficult.
 
-> "A variety of inadequate ontological theories have been embodied in a plethora of correspondingly inadequate programming languages. For example, much of the complexity of object-oriented programming languages—and the subtle and confusing differences among contemporary object-oriented languages—centers on the treatment of generic operations on interrelated types."
+> "A variety of inadequate ontological theories have been embodied in a plethora of correspondingly inadequate programming languages. For example, much of the complexity of object-oriented programming languages - and the subtle and confusing differences among contemporary object-oriented languages - centers on the treatment of generic operations on interrelated types."
 
 ## Quick revision questions
 

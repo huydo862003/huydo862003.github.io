@@ -45,20 +45,6 @@
       }
     }
   },
-  "knowledge-graph": {
-    "source": "typerighter/src/client/theme-default/components/custom/TdKnowledgeGraph.vue",
-    "props": {
-      "overlay": {
-        "schema": {
-          "type": [
-            "boolean",
-            "null"
-          ]
-        },
-        "description": "Render as full-screen overlay instead of inline"
-      }
-    }
-  },
   "toc": {
     "source": "typerighter/src/client/theme-default/components/custom/TdToc.vue",
     "props": {
@@ -229,6 +215,20 @@
           ]
         },
         "description": "Whether to show tags"
+      }
+    }
+  },
+  "knowledge-graph": {
+    "source": "typerighter/src/client/theme-default/components/custom/knowledge-graph/TdKnowledgeGraph.vue",
+    "props": {
+      "overlay": {
+        "schema": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "description": "Render as full-screen overlay instead of inline"
       }
     }
   },

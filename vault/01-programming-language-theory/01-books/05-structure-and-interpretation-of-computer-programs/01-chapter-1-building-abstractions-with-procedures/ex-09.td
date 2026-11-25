@@ -18,7 +18,7 @@ status: "Finished"
 
 **Answer**: The first version is not tail-recursive (it wraps the recursive call in `inc`), so it generates a *linear recursive* process. The second is tail-recursive, generating a *linear iterative* process.
 
-First version — `(+ 4 5)`:
+First version - `(+ 4 5)`:
 ```scheme
 (+ 4 5)
 (inc (+ 3 5))
@@ -32,7 +32,7 @@ First version — `(+ 4 5)`:
 9
 ```
 
-Second version — `(+ 4 5)`:
+Second version - `(+ 4 5)`:
 ```scheme
 (+ 4 5)
 (+ 3 6)

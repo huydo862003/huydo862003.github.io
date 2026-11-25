@@ -97,7 +97,7 @@ The only change to the AST definition:
  }
 ```
 
-`ExprPool` gets two trivial methods: `add` (allocate — push to the vec, return index) and `get` (dereference — index into the vec).
+`ExprPool` gets two trivial methods: `add` (allocate - push to the vec, return index) and `get` (dereference - index into the vec).
 
 All existing code just needs mechanical changes:
 

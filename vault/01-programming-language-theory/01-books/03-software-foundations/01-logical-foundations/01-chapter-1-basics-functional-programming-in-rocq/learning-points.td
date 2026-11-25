@@ -12,14 +12,14 @@ status: "Finished"
 
 1. Pattern structure affects proofs, not just runtime behavior.
 2. Mixing specific and general patterns at the same level causes trouble with abstract variables.
-3. Nested matching isolates specificity—each level stays orthogonal.
+3. Nested matching isolates specificity-each level stays orthogonal.
 
 ### Context
 
 When I was doing the "Coure late policies" exercise set of this chapter, I ran into a pretty puzzling situtation with the theorem `lower_grade_lowers` (exercise 17).
 
 My solution to `lower_grade` (exercise 16) was:
-    
+
 ```rocq
 Definition lower_grade (g : grade) : grade :=
   match g with
@@ -33,6 +33,7 @@ Definition lower_grade (g : grade) : grade :=
 It seemed perfectly fine.
 
 My solution to `lower_grade_lowers` (exercise 17) was:
+
 ```rocq
 (* Lowered non-F-Minus-grade is lower *)
 Theorem lower_grade_lowers :
@@ -69,7 +70,7 @@ Qed.
 
 `simpl` produced weird residual matches like `match l with | A | _ => ... end` even for the `Plus` case, blocking simplification.
 
-The probable cause (according to Claude): Coq saw `F` mentioned in the patterns and couldn't simplify with an abstract letter variable `l`—it worried `l` might be `F`.
+The probable cause (according to Claude): Coq saw `F` mentioned in the patterns and couldn't simplify with an abstract letter variable `l`-it worried `l` might be `F`.
 
 So the fix was this: Use nested matching to isolate the specific case:
 

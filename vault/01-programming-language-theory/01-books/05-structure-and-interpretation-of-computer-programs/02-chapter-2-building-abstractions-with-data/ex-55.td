@@ -15,6 +15,6 @@ status: "Finished"
 ''abracadabra  →  (quote (quote abracadabra))
 ```
 
-Evaluating `(quote (quote abracadabra))` returns the list `(quote abracadabra)` — a two-element list with the symbol `quote` and the symbol `abracadabra`.
+Evaluating `(quote (quote abracadabra))` returns the list `(quote abracadabra)` - a two-element list with the symbol `quote` and the symbol `abracadabra`.
 
 Calling `car` on that list returns the first element: the symbol `quote`.

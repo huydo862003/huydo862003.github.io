@@ -16,7 +16,7 @@ status: "Finished"
 
 **Answer**: Consider calling `(a-plus-abs-b a b)`:
 
-1. Evaluate the operator `a-plus-abs-b` — the compound procedure above.
+1. Evaluate the operator `a-plus-abs-b` - the compound procedure above.
 2. Evaluate `a` and `b`.
 3. Substitute into the body: `((if (> b 0) + -) a b)`.
 4. Evaluate the operator expression `(if (> b 0) + -)`:
@@ -25,4 +25,4 @@ status: "Finished"
 5. Evaluate `a` and `b`.
 6. Apply either `(+ a b)` or `(- a b)` based on step 4.
 
-This procedure computes `a + |b|` — it always adds `a` and the absolute value of `b`.
+This procedure computes `a + |b|` - it always adds `a` and the absolute value of `b`.

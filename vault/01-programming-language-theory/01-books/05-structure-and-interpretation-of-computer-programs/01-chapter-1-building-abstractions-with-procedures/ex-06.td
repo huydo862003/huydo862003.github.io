@@ -29,7 +29,7 @@ What happens when she attempts to use this to compute square roots?
 **Answer**: Alyssa runs into infinite recursion.
 
 - The `if` *special form* is short-circuited: the predicate is evaluated first, and only the relevant branch is evaluated.
-- `new-if` is an *ordinary procedure*, so under applicative-order evaluation, all arguments — including both branches — are evaluated *before* the procedure is called.
+- `new-if` is an *ordinary procedure*, so under applicative-order evaluation, all arguments - including both branches - are evaluated *before* the procedure is called.
 - Therefore, `sqrt-iter` always recursively calls itself to evaluate the `else-clause` argument, regardless of `good-enough?`, causing infinite recursion.
 
 This is why `if` must be a special form rather than a regular procedure.

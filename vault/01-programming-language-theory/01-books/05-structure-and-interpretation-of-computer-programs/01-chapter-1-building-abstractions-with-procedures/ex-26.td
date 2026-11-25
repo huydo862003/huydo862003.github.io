@@ -23,7 +23,7 @@ Eva says this transforms the `Θ(log n)` process into `Θ(n)`. Explain.
 
 **Answer**:
 
-The original uses `(square (expmod ...))` — a single recursive call. The new version calls `(expmod base (/ exp 2) m)` *twice*, creating a tree-shaped process instead of a linear chain.
+The original uses `(square (expmod ...))` - a single recursive call. The new version calls `(expmod base (/ exp 2) m)` *twice*, creating a tree-shaped process instead of a linear chain.
 
 - Original: a linear chain of `Θ(log n)` calls.
 - New version: a binary tree. Each even-exponent step spawns 2 children instead of 1.
