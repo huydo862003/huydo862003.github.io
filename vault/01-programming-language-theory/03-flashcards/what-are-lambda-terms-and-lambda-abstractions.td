@@ -9,7 +9,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard{deck="Pure Lambda Calculus"}
+::: flashcard{deck="12-Pure Lambda Calculus"}
 What are lambda terms and lambda abstractions?
 === key
 Lambda terms are any syntactic constructs in Lambda calculus.

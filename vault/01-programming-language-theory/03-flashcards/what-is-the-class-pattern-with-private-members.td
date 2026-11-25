@@ -9,7 +9,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="Language Theory"}
+::: flashcard{deck="08-Language Theory"}
 What is the class pattern with private members?
 === key
 ```racket

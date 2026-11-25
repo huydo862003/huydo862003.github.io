@@ -9,7 +9,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard{deck="Pure Lambda Calculus"}
+::: flashcard{deck="12-Pure Lambda Calculus"}
 What is beta reduction?
 === key
 The act of reducing a Beta-redex/Reducible expression by substituting the redex's argument into its function body.

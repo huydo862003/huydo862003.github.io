@@ -7,7 +7,7 @@ tags:
   - 'type theory'
 ---
 
-::: flashcard{deck="Type Theory"}
+::: flashcard{deck="10-Type Theory"}
 Why should language design go hand in hand with type system design?
 === key
 According to Robert (Bob) Harper, type system is the central organizing principle in programming language theory.

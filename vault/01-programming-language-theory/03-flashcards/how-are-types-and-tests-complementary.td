@@ -7,7 +7,7 @@ tags:
   - 'programming language basic'
 ---
 
-::: flashcard{deck="Programming Language Basics"}
+::: flashcard{deck="01-Programming Language Basics"}
 How are types and tests complementary?
 === key
 - Type: Static verification.

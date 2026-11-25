@@ -9,7 +9,7 @@ tags:
   - 'set theory & relation'
 ---
 
-::: flashcard{deck="Set Theory & Relation"}
+::: flashcard{deck="02-Set Theory & Relation"}
 What is a preorder?
 === key
 A relation that is Reflexive and Transitive.

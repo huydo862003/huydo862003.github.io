@@ -7,7 +7,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="Language Theory"}
+::: flashcard{deck="08-Language Theory"}
 What are the cons of classical heavyweight formal methods
 === key
 - Cumbersome.

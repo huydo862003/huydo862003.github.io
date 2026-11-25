@@ -11,7 +11,7 @@ tags:
   - 'type theory'
 ---
 
-::: flashcard{deck="Type Theory"}
+::: flashcard{deck="10-Type Theory"}
 What are the ideas of micro and macro gradual typings?
 === key
 Gradual typing is often the formal term for retrofitted type systems.

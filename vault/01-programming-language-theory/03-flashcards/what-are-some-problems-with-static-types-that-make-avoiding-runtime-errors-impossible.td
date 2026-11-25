@@ -7,7 +7,7 @@ tags:
   - 'type theory'
 ---
 
-::: flashcard{deck="Type Theory"}
+::: flashcard{deck="10-Type Theory"}
 What are some problems with static types that make avoiding runtime errors impossible?
 === key
 Types **abstract away** runtime details to provide guarantees statically.

@@ -9,7 +9,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard{deck="Pure Lambda Calculus"}
+::: flashcard{deck="12-Pure Lambda Calculus"}
 Can a term fall within multiple syntactic categories?
 === key
 Yes.

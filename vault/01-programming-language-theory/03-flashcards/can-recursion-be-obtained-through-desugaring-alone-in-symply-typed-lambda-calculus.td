@@ -8,7 +8,7 @@ tags:
   - 'type theory'
 ---
 
-::: flashcard{deck="Simply-Typed Lambda Calculus"}
+::: flashcard{deck="11-Simply-Typed Lambda Calculus"}
 Can recursion be obtained through desugaring alone in symply typed lambda calculus?
 === key
 No: The Z-combinator requires self-application, but self-application is untypable.

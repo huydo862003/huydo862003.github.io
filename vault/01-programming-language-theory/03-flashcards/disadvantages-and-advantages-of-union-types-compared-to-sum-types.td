@@ -7,7 +7,7 @@ tags:
   - 'type theory'
 ---
 
-::: flashcard{deck="Type Theory"}
+::: flashcard{deck="10-Type Theory"}
 Disadvantages and advantages of union types compared to sum types?
 === key
 Depending on the exact language, tooling and runtime:

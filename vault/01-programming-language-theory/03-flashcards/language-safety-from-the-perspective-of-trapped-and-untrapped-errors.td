@@ -7,7 +7,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="Language Theory"}
+::: flashcard{deck="08-Language Theory"}
 Language safety from the perspective of trapped and untrapped errors?
 === key
 Trapped error: An error that causes immediate termination of the process.

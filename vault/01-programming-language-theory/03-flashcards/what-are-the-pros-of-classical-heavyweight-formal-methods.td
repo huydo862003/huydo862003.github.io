@@ -7,7 +7,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="Language Theory"}
+::: flashcard{deck="08-Language Theory"}
 What are the pros of classical heavyweight formal methods
 === key
 Able to express and prove very general and strong correctness properties about programs and systems.

@@ -9,7 +9,7 @@ tags:
   - 'rocq programming language'
 ---
 
-::: flashcard{deck="Rocq Programming Language"}
+::: flashcard{deck="14-Rocq Programming Language"}
 How to get the type of an expression in rocq?
 === key
 `Check exp.`

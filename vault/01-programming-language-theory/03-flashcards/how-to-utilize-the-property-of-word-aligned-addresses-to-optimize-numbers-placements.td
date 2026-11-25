@@ -7,7 +7,7 @@ tags:
   - 'compiler implementation'
 ---
 
-::: flashcard{deck="Compiler Implementation"}
+::: flashcard{deck="13-Compiler Implementation"}
 How to utilize the property of word-aligned addresses to optimize number's placements?
 === key
 - In languages that mostly allocate memory for objects on the heap.

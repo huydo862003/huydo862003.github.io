@@ -11,7 +11,7 @@ tags:
   - 'proof technique'
 ---
 
-::: flashcard{deck="Logic & Tools"}
+::: flashcard{deck="04-Logic & Tools"}
 What are the methods of finding derivations?
 === key
 - Forward chaining/Bottom-up construction

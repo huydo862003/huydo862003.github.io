@@ -12,7 +12,7 @@ tags:
   - 'proof technique'
 ---
 
-::: flashcard{deck="Set Theory & Relation"}
+::: flashcard{deck="02-Set Theory & Relation"}
 What are the pros and cons of backward chaining search?
 === key
 Backward chaining search can eventually find a derivation for a derivable judgment, goal-directed.

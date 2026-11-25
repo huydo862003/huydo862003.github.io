@@ -9,7 +9,7 @@ tags:
   - 'rocq programming language'
 ---
 
-::: flashcard{deck="Rocq Programming Language"}
+::: flashcard{deck="14-Rocq Programming Language"}
 How to define a tuple type in rocq?
 === key
 Multiple fields inside a constructor.

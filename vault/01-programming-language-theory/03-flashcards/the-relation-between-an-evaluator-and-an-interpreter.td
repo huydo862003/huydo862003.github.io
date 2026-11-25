@@ -9,7 +9,7 @@ tags:
   - 'programming language basic'
 ---
 
-::: flashcard{deck="Programming Language Basics"}
+::: flashcard{deck="01-Programming Language Basics"}
 The relation between an evaluator and an interpreter?
 === key
 - An interpreter is a program that simulates the execution of a programming language and implements a function that carries a program into a value.

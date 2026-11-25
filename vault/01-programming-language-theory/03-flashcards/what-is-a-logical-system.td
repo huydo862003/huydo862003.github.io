@@ -9,7 +9,7 @@ tags:
   - 'logic & tools'
 ---
 
-::: flashcard{deck="Logic & Tools"}
+::: flashcard{deck="04-Logic & Tools"}
 What is a logical system?
 === key
 A formal framework comprising a syntax (well-formed formulas), axioms, and inference rules that together determine which statements are derivable.

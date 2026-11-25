@@ -10,7 +10,7 @@ tags:
   - 'logic & tools'
 ---
 
-::: flashcard{deck="Logic & Tools"}
+::: flashcard{deck="04-Logic & Tools"}
 What is a rule schema and its relation with concrete rules?
 === key
 A rule schema is synonymous with inference rule, representing a generic rule with metavariables.

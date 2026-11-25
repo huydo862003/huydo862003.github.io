@@ -8,7 +8,7 @@ tags:
   - 'set theory & relation'
 ---
 
-::: flashcard{deck="Logic & Tools"}
+::: flashcard{deck="04-Logic & Tools"}
 In which style do the inductive definition and the inference rule format describe the syntax of a language?
 === key
 Non-constructive.

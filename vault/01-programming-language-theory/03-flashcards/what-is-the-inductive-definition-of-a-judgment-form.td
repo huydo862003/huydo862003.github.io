@@ -12,7 +12,7 @@ tags:
   - 'proof technique'
 ---
 
-::: flashcard{deck="Set Theory & Relation"}
+::: flashcard{deck="02-Set Theory & Relation"}
 What is the inductive definition of a judgment form?
 === key
 Assume a judgment form $-\ J$, the inductive definition of $J$ would be a set of Rules, typically starting with some Axioms then some Proper rules to derive membership of $J$. Then, $J$ is taken to be the strongest set closed under those rules.

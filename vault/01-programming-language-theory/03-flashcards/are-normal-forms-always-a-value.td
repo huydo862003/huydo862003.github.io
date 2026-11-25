@@ -11,7 +11,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="Pure Lambda Calculus"}
+::: flashcard{deck="12-Pure Lambda Calculus"}
 Are normal forms always a value?
 === key
 Normal forms can be stuck terms.

@@ -7,7 +7,7 @@ tags:
   - 'set theory & relation'
 ---
 
-::: flashcard{deck="Set Theory & Relation"}
+::: flashcard{deck="02-Set Theory & Relation"}
 What's the standard notation for transitive closure?
 === key
 

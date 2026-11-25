@@ -11,7 +11,7 @@ tags:
   - 'proof technique'
 ---
 
-::: flashcard{deck="Logic & Tools"}
+::: flashcard{deck="04-Logic & Tools"}
 What is a rule scheme?
 === key
 Synonymous with Rule schema - An Inference rule that is parameterized with Metavariables.

@@ -9,7 +9,7 @@ tags:
   - 'programming language basic'
 ---
 
-::: flashcard{deck="Programming Language Basics"}
+::: flashcard{deck="01-Programming Language Basics"}
 What is garbage collection?
 === key
 Garbage collection is a runtime mechanism that utilizes a heuristic to detect and release no-longer-used memory.

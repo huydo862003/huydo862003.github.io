@@ -5,7 +5,7 @@ concepts:
   - fref("/02-design/concepts/branding.td")
 ---
 
-::: flashcard{deck="Design Aspect"}
+::: flashcard{deck="03-Design Aspect"}
 What is a branding?
 === key
 The strategic application of distinct visual and tonal identity elements-like logos, colors, and voice-to create a unique, recognizable, and emotional connection with the user.

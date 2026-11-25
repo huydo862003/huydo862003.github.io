@@ -12,7 +12,7 @@ tags:
   - 'proof technique'
 ---
 
-::: flashcard{deck="Logic & Tools"}
+::: flashcard{deck="04-Logic & Tools"}
 How to use inductive definition to define functions?
 === key
 - Define a relation between inputs and outputs of the function using Inductive definition.

@@ -9,7 +9,7 @@ tags:
   - 'programming language basic'
 ---
 
-::: flashcard{deck="Programming Language Basics"}
+::: flashcard{deck="01-Programming Language Basics"}
 What is aliasing?
 === key
 Aliasing is a phenomenon where multiple paths (variables, references, member accesses) refer to the same memory location.

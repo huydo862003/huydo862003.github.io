@@ -7,7 +7,7 @@ tags:
   - 'compiler implementation'
 ---
 
-::: flashcard{deck="Compiler Implementation"}
+::: flashcard{deck="13-Compiler Implementation"}
 Can a language implementer choose whether to compile or interpret a given language?
 === key
 Yes. A language specification doesn't enforce compilation or interpretation.

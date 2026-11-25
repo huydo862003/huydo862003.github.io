@@ -10,7 +10,7 @@ tags:
   - 'type theory'
 ---
 
-::: flashcard{deck="Type Theory"}
+::: flashcard{deck="10-Type Theory"}
 Is inheritance = subtyping?
 === key
 No.

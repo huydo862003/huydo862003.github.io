@@ -11,7 +11,7 @@ tags:
   - 'semantics'
 ---
 
-::: flashcard{deck="Language Theory"}
+::: flashcard{deck="08-Language Theory"}
 What is the difference between applicative-order and normal-order evaluation? Which does Scheme use and why?
 === key
 - *Normal-order*: "Fully expand and then reduce" - arguments are substituted unevaluated into the procedure body first, then reduced.

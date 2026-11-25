@@ -10,7 +10,7 @@ tags:
   - 'semantics'
 ---
 
-::: flashcard{deck="Language Theory"}
+::: flashcard{deck="08-Language Theory"}
 According to robert (bob) harper, what is the scope of a binding?
 === key
 The scope of a binding is an ABT in which the corresponding bound identifier can be used as a placeholder or an index of an indexed operator.

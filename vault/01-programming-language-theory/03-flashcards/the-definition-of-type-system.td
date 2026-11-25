@@ -9,7 +9,7 @@ tags:
   - 'type theory'
 ---
 
-::: flashcard{deck="Type Theory"}
+::: flashcard{deck="10-Type Theory"}
 The definition of type system
 === key
 Type system is a **tractable syntactic method** to **prove the absence of a program's behavior** by **classifying phrases according to the types of values they compute**.

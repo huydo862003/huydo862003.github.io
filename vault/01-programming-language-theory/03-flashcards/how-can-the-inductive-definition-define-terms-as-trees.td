@@ -9,7 +9,7 @@ tags:
   - 'set theory & relation'
 ---
 
-::: flashcard{deck="Set Theory & Relation"}
+::: flashcard{deck="02-Set Theory & Relation"}
 How can the inductive definition define terms as trees?
 === key
 The inductive definition starts with a base term and builds a composite term from smaller terms. -> A term's structure is hierarchical.

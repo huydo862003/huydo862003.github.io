@@ -8,7 +8,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="Compiler Implementation"}
+::: flashcard{deck="13-Compiler Implementation"}
 What does abstract syntax have to do with AST/labeled tree?
 === key
 AST/Labeled trees are representations of abstract syntax.

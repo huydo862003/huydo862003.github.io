@@ -9,7 +9,7 @@ tags:
   - 'logic & tools'
 ---
 
-::: flashcard{deck="Proof Technique"}
+::: flashcard{deck="05-Proof Technique"}
 What are induction hypothesis and induction conclusion?
 === key
 Inductive conclusion

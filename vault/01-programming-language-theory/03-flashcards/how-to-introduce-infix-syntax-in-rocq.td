@@ -9,7 +9,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="Language Theory"}
+::: flashcard{deck="08-Language Theory"}
 How to introduce infix syntax in rocq?
 === key
 Use `Notation "x <op> y" := exp`.

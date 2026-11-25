@@ -9,7 +9,7 @@ tags:
   - 'set theory & relation'
 ---
 
-::: flashcard{deck="Proof Technique"}
+::: flashcard{deck="05-Proof Technique"}
 What does it mean for a collection of inference rules to form the strongest judgment form that is closed under those rules?
 === key
 

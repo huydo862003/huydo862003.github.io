@@ -5,7 +5,7 @@ concepts:
   - fref("/02-design/concepts/responsive-design.td")
 ---
 
-::: flashcard{deck="Design Aspect"}
+::: flashcard{deck="03-Design Aspect"}
 What is responsive design?
 === key
 A set of design techniques & methodologies to make the interface adapt to different screen sizes.

@@ -10,7 +10,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="Programming Language Basics"}
+::: flashcard{deck="01-Programming Language Basics"}
 What are the differences between abstract and concrete syntax?
 === key
 - Concrete/Surface syntax: The language that the programmers actually programs in - usually a sequence of characters.

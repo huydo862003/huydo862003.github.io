@@ -9,7 +9,7 @@ tags:
   - 'rocq programming language'
 ---
 
-::: flashcard{deck="Rocq Programming Language"}
+::: flashcard{deck="14-Rocq Programming Language"}
 What is a tactic in rocq?
 === key
 A proof command in Rocq, that transforms a goal's state to form a step of a proof.

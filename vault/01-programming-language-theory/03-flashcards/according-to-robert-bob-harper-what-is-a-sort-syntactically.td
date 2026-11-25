@@ -9,7 +9,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="Language Theory"}
+::: flashcard{deck="08-Language Theory"}
 According to robert (bob) harper, what is a sort, syntactically?
 === key
 Basically a syntactic category of an AST.

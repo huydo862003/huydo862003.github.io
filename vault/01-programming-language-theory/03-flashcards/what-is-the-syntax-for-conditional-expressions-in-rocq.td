@@ -9,7 +9,7 @@ tags:
   - 'rocq programming language'
 ---
 
-::: flashcard{deck="Rocq Programming Language"}
+::: flashcard{deck="14-Rocq Programming Language"}
 What is the syntax for conditional expressions in rocq?
 === key
 `if ... then ... else ...`

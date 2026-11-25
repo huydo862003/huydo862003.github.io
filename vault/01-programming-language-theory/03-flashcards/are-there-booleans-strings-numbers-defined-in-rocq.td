@@ -9,7 +9,7 @@ tags:
   - 'rocq programming language'
 ---
 
-::: flashcard{deck="Rocq Programming Language"}
+::: flashcard{deck="14-Rocq Programming Language"}
 Are there booleans, strings, numbers defined in rocq?
 === key
 Everything can be defined from scratch and there are no built-in boolean, string or number. However, the standard library still includes those.

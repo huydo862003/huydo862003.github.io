@@ -7,7 +7,7 @@ tags:
   - 'set theory & relation'
 ---
 
-::: flashcard{deck="Set Theory & Relation"}
+::: flashcard{deck="02-Set Theory & Relation"}
 Given an equivalence relation r, what does "up to r" mean?
 === key
 "Up to $R$" means that terms related by $R$ are treated indiscriminately.

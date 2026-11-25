@@ -7,7 +7,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="Language Theory"}
+::: flashcard{deck="08-Language Theory"}
 According to robert (bob) harper, what is an operator, the arity of an operator?
 === key
 An operator is a stand-in for an internal node's type of an abstract syntax tree.

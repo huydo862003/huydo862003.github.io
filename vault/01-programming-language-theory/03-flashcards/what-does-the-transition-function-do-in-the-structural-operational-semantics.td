@@ -9,7 +9,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="Language Theory"}
+::: flashcard{deck="08-Language Theory"}
 What does the transition function do in the structural operational semantics?
 === key
 Describe the machine's behavior - for each state, either:

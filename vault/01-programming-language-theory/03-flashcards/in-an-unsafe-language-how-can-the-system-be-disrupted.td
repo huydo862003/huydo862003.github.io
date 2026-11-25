@@ -7,7 +7,7 @@ tags:
   - 'type theory'
 ---
 
-::: flashcard{deck="Type Theory"}
+::: flashcard{deck="10-Type Theory"}
 In an unsafe language, how can the system be disrupted?
 === key
 For example, an unsafe language like C can run into buffer overrun attack, allowing an erroneous program to modify arbitrary memory.

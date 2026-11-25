@@ -9,7 +9,7 @@ tags:
   - 'compiler implementation'
 ---
 
-::: flashcard{deck="Compiler Implementation"}
+::: flashcard{deck="13-Compiler Implementation"}
 What is a desugarer?
 === key
 A compiler phase or program that transforms syntactic sugar into core language constructs, typically running before interpretation or further compilation stages.

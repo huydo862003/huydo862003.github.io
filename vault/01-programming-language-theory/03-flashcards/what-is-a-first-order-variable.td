@@ -9,7 +9,7 @@ tags:
   - 'programming language basic'
 ---
 
-::: flashcard{deck="Programming Language Basics"}
+::: flashcard{deck="01-Programming Language Basics"}
 What is a first order variable?
 === key
 A variable that ranges over data values (e.g., integers, booleans, records).

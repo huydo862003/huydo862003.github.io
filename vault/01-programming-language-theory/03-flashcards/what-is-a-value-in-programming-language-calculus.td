@@ -9,7 +9,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="Language Theory"}
+::: flashcard{deck="08-Language Theory"}
 What is a value in programming language calculus?
 === key
 A syntactic term that is not related by another term in the operational semantics.

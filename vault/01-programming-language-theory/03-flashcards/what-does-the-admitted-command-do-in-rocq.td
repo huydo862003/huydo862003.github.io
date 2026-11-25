@@ -9,7 +9,7 @@ tags:
   - 'rocq programming language'
 ---
 
-::: flashcard{deck="Rocq Programming Language"}
+::: flashcard{deck="14-Rocq Programming Language"}
 What does the admitted command do in rocq?
 === key
 It tells Rocq to just treat something as an Axiom.

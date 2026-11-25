@@ -10,7 +10,7 @@ tags:
   - 'compiler implementation'
 ---
 
-::: flashcard{deck="Language Theory"}
+::: flashcard{deck="08-Language Theory"}
 Why is there a need for syntactic sugar?
 === key
 - The core calculus can be minimal, so that proofs about them can be easily derived and the compiler implementation can be kept simple.

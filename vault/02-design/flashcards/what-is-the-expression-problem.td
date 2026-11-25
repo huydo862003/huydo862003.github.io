@@ -7,7 +7,7 @@ books:
   - fref("/01-programming-language-theory/01-books/04-programming-languages-application-and-interpretation/05-chapter-5-types.td")
 ---
 
-::: flashcard{deck="Design"}
+::: flashcard{deck="01-Design"}
 What is the expression problem?
 === key
 :::

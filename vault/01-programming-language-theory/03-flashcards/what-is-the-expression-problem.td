@@ -9,7 +9,7 @@ tags:
   - 'design philosophy'
 ---
 
-::: flashcard{deck="Design Philosophy"}
+::: flashcard{deck="07-Design Philosophy"}
 What is the expression problem?
 === key
 A fundamental tension in language design - how to extend a data abstraction with both **new variants** (data) and **new operations** (functions) without modifying existing code.

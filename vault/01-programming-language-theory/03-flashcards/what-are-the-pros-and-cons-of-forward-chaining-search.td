@@ -11,7 +11,7 @@ tags:
   - 'set theory & relation'
 ---
 
-::: flashcard{deck="Proof Technique"}
+::: flashcard{deck="05-Proof Technique"}
 What are the pros and cons of forward chaining search?
 === key
 Quite similar to What are the pros and cons of backward chaining search?, except that forward chaining search is undirected

@@ -11,7 +11,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="Language Theory"}
+::: flashcard{deck="08-Language Theory"}
 What is an abstract binding tree (ABT)?
 === key
 An AST that is enriched with bindings and scopes.

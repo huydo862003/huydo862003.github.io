@@ -8,7 +8,7 @@ tags:
   - 'programming language basic'
 ---
 
-::: flashcard{deck="Compiler Implementation"}
+::: flashcard{deck="13-Compiler Implementation"}
 What are some ways to define the syntax of a language?
 === key
 - Inductive definition.

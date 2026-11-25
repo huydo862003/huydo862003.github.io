@@ -7,7 +7,7 @@ tags:
   - 'type theory'
 ---
 
-::: flashcard{deck="Type Theory"}
+::: flashcard{deck="10-Type Theory"}
 Why is self-application impossible to typed?
 === key
 $x\ x$ -> $x = T \to T$ and $x = T$. Therefore, $T = T \to T$.

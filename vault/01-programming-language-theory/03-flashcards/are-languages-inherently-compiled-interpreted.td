@@ -7,7 +7,7 @@ tags:
   - 'programming language basic'
 ---
 
-::: flashcard{deck="Programming Language Basics"}
+::: flashcard{deck="01-Programming Language Basics"}
 Are languages inherently compiled/interpreted?
 === key
 - **No**: Languages are not inherently compiled or interpreted.

@@ -10,7 +10,7 @@ tags:
   - 'rocq programming language'
 ---
 
-::: flashcard{deck="Rocq Programming Language"}
+::: flashcard{deck="14-Rocq Programming Language"}
 What are there in the rocq system besides the kernel?
 === key
 - A large library of common definitions and axioms.

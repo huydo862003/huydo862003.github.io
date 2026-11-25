@@ -9,7 +9,7 @@ tags:
   - 'proof technique'
 ---
 
-::: flashcard{deck="Logic & Tools"}
+::: flashcard{deck="04-Logic & Tools"}
 What are judgment/assertion, judgment form, judgment instance, judgment form instance's subject? in what notations are they written in?
 === key
 - A judgment form is a relation, interpreted as a Predicate.

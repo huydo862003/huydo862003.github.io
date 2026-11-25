@@ -7,7 +7,7 @@ tags:
   - 'type theory'
 ---
 
-::: flashcard{deck="Type Theory"}
+::: flashcard{deck="10-Type Theory"}
 Can the type system totally not require interaction with or guidance from the programmers?
 === key
 It may, but sometimes, the programmer can provide guidance by giving type annotations.

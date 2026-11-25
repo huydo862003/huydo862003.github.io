@@ -5,7 +5,7 @@ concepts:
   - fref("/02-design/concepts/governance.td")
 ---
 
-::: flashcard{deck="Process"}
+::: flashcard{deck="06-Process"}
 What is governance?
 === key
 Protocols surrounding the maintenance of design systems.

@@ -10,7 +10,7 @@ tags:
   - 'compiler implementation'
 ---
 
-::: flashcard{deck="Logic & Tools"}
+::: flashcard{deck="04-Logic & Tools"}
 What are the pros and cons of proof assistants?
 === key
 - Automated for routine tasks of building proofs.

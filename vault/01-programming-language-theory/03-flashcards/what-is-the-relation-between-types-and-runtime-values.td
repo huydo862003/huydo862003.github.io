@@ -7,7 +7,7 @@ tags:
   - 'type theory'
 ---
 
-::: flashcard{deck="Type Theory"}
+::: flashcard{deck="10-Type Theory"}
 What is the relation between types and runtime values?
 === key
 Type is a static approximation of the runtime behavior of values computed by a term.

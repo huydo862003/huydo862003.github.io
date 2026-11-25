@@ -9,7 +9,7 @@ tags:
   - 'programming language basic'
 ---
 
-::: flashcard{deck="Programming Language Basics"}
+::: flashcard{deck="01-Programming Language Basics"}
 What is sequential let?
 === key
 Sequential let, as in Scheme, is a syntactic construct in which any preceding local binding in the same let clause is visible in the later binding definitions (not including itself) and the let body.

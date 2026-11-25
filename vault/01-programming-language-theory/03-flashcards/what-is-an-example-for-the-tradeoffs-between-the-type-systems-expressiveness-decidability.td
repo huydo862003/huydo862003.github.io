@@ -8,7 +8,7 @@ tags:
   - 'type theory'
 ---
 
-::: flashcard{deck="Language Theory"}
+::: flashcard{deck="08-Language Theory"}
 What is an example for the tradeoffs between the type system's expressiveness & decidability?
 === key
 Refined type: Allow the programmers to encode non-zeroness into the the type.

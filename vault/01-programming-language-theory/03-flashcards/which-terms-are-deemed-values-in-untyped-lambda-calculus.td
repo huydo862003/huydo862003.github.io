@@ -9,7 +9,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard{deck="Pure Lambda Calculus"}
+::: flashcard{deck="12-Pure Lambda Calculus"}
 Which terms are deemed values in untyped lambda calculus?
 === key
 Lambda abstractions/Functions are the only values.

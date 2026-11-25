@@ -9,7 +9,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="Language Theory"}
+::: flashcard{deck="08-Language Theory"}
 What is the meaning of a term?
 === key
 The meaning of a term can be taken to be the final state of the abstract machine running it.

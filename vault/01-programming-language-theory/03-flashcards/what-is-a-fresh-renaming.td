@@ -9,7 +9,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="Language Theory"}
+::: flashcard{deck="08-Language Theory"}
 What is a fresh renaming?
 === key
 Given a set of variables $\mathcal{X}$, a set of sorts $\mathcal{S}$, a sort-indexed family of $\mathcal{A} = \{\mathcal{A}_s\}$, then a Fresh renaming relative to $\mathcal{X}$ is a bijection $\rho : \vec{x} \leftrightarrow \vec{x}'$, such that $\vec{x} \notin \mathcal{X}$.

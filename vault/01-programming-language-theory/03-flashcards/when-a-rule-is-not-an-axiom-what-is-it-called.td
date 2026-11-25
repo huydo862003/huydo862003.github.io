@@ -12,7 +12,7 @@ tags:
   - 'logic & tools'
 ---
 
-::: flashcard{deck="Proof Technique"}
+::: flashcard{deck="05-Proof Technique"}
 When a rule is not an axiom, what is it called?
 === key
 Proper rule.

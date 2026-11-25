@@ -10,7 +10,7 @@ tags:
   - 'rocq programming language'
 ---
 
-::: flashcard{deck="Rocq Programming Language"}
+::: flashcard{deck="14-Rocq Programming Language"}
 Which special treatments are given to natural numbers in rocq?
 === key
 Rocq gives natural numbers special parsing and printing capabilities.

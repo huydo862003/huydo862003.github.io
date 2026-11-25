@@ -6,7 +6,7 @@ concepts:
   - fref("/02-design/concepts/user-experience-ux.td")
 ---
 
-::: flashcard{deck="Design Aspect"}
+::: flashcard{deck="03-Design Aspect"}
 What is UI/UX?
 === key
 - UI: The visual bridge between the user and the system.

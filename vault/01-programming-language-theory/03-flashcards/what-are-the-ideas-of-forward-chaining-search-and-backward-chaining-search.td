@@ -9,7 +9,7 @@ tags:
   - 'proof technique'
 ---
 
-::: flashcard{deck="Set Theory & Relation"}
+::: flashcard{deck="02-Set Theory & Relation"}
 What are the ideas of forward chaining search and backward chaining search?
 === key
 Forward chaining search

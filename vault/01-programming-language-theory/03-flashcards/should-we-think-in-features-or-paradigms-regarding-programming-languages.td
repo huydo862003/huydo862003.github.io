@@ -8,7 +8,7 @@ tags:
   - 'language philosophy'
 ---
 
-::: flashcard{deck="Programming Language Basics"}
+::: flashcard{deck="01-Programming Language Basics"}
 Should we think in features or paradigms regarding programming languages?
 === key
 Modern programming languages are all multi-paradigms and rather mixes of multiple features. It's outdated to think in terms of paradigms.

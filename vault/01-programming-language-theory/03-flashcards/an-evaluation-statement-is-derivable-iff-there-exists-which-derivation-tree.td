@@ -10,7 +10,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard{deck="Language Theory"}
+::: flashcard{deck="08-Language Theory"}
 An evaluation statement is derivable iff there exists which derivation tree?
 === key
 An evaluation statement is derivable if there is a derivation tree conforming to the evaluation relation whose root is that evaluation statement.

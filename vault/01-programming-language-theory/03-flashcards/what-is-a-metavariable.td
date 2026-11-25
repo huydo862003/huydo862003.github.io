@@ -9,7 +9,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="Language Theory"}
+::: flashcard{deck="08-Language Theory"}
 What is a metavariable?
 === key
 A variable of the metalanguage that ranges over terms of a syntactic category.

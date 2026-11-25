@@ -10,7 +10,7 @@ tags:
   - 'rocq programming language'
 ---
 
-::: flashcard{deck="Rocq Programming Language"}
+::: flashcard{deck="14-Rocq Programming Language"}
 What are some representations for natural numbers? what did we choose in rocq?
 === key
 - Unary representation. -> Church numeral.

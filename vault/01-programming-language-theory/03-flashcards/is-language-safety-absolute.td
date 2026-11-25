@@ -9,7 +9,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="Language Theory"}
+::: flashcard{deck="08-Language Theory"}
 Is language safety absolute?
 === key
 Safe language can provide escape hatches that are unsafe.

@@ -11,7 +11,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard{deck="Language Theory"}
+::: flashcard{deck="08-Language Theory"}
 Are values always in normal form?
 === key
 May not be, but should hold for all meaningful calculus.

@@ -11,7 +11,7 @@ tags:
   - 'programming language basic'
 ---
 
-::: flashcard{deck="Compiler Implementation"}
+::: flashcard{deck="13-Compiler Implementation"}
 What are the key considerations in designing conditionals?
 === key
 - Which data types are allowed in conditionals?

@@ -8,7 +8,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard{deck="Language Theory"}
+::: flashcard{deck="08-Language Theory"}
 Which desirable properties should hold for most systems, which would not?
 === key
 Should hold:

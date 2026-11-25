@@ -11,7 +11,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="Compiler Implementation"}
+::: flashcard{deck="13-Compiler Implementation"}
 What is the relation between macros and parenthetical language?
 === key
 It's easier to implement macro systems in parenthetical languages, as syntax and lists have the same structure. Therefore, a macro is literally a function that takes a list and yields another list.

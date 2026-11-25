@@ -9,7 +9,7 @@ tags:
   - 'proof technique'
 ---
 
-::: flashcard{deck="Proof Technique"}
+::: flashcard{deck="05-Proof Technique"}
 What does the principle of complete induction state?
 === key
 A proof technique where the inductive step assumes the property holds for all predecessors (not just the immediate one), deriving the property for the current element.

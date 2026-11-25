@@ -9,7 +9,7 @@ tags:
   - 'type theory'
 ---
 
-::: flashcard{deck="Type Theory"}
+::: flashcard{deck="10-Type Theory"}
 Between if-splitting and conditionals, which one can introduce unions, which one eliminates?
 === key
 - If-splittings eliminate union types.

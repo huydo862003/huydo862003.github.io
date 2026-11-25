@@ -9,7 +9,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard{deck="Pure Lambda Calculus"}
+::: flashcard{deck="12-Pure Lambda Calculus"}
 Which symbol is used to denote enriched lambda calculus with numbers and booleans?
 === key
 $\lambda\textbf{NB}$.

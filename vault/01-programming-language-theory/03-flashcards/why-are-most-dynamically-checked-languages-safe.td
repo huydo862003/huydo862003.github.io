@@ -9,7 +9,7 @@ tags:
   - 'type theory'
 ---
 
-::: flashcard{deck="Type Theory"}
+::: flashcard{deck="10-Type Theory"}
 Why are most dynamically checked languages safe?
 === key
 If a runtime provides any checking at all, it's trivial to provide the utmost safety.

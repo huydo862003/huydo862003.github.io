@@ -10,7 +10,7 @@ tags:
   - 'logic & tools'
 ---
 
-::: flashcard{deck="Logic & Tools"}
+::: flashcard{deck="04-Logic & Tools"}
 What is an axiom (inference rule)?
 === key
 An axiom is an inference rule with no premise.

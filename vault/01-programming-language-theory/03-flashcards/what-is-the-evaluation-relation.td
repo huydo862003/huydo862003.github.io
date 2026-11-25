@@ -10,7 +10,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="Pure Lambda Calculus"}
+::: flashcard{deck="12-Pure Lambda Calculus"}
 What is the evaluation relation?
 === key
 In operational semantics, a relation that relates terms to another reduced term, either representing one step of evaluation or directly carrying to a normal form.

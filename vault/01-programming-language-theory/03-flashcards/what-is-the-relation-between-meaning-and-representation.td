@@ -9,7 +9,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="Language Theory"}
+::: flashcard{deck="08-Language Theory"}
 What is the relation between "meaning" and "representation"?
 === key
 - One representation can have multiple meanings, depending on its usage.

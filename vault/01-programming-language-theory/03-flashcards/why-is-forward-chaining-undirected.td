@@ -11,7 +11,7 @@ tags:
   - 'set theory & relation'
 ---
 
-::: flashcard{deck="Proof Technique"}
+::: flashcard{deck="05-Proof Technique"}
 Why is forward chaining undirected?
 === key
 Forward chaining just keeps track of a set of currently derived judgments and then expands its each step - oblivious of the goal.

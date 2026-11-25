@@ -11,7 +11,7 @@ tags:
   - 'pure lambda calculus'
 ---
 
-::: flashcard{deck="Language Theory"}
+::: flashcard{deck="08-Language Theory"}
 What is the operational semantics of arithmetic expressions?
 === key
 Combining arithmetic and boolean expressions.

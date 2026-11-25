@@ -9,7 +9,7 @@ tags:
   - 'rocq programming language'
 ---
 
-::: flashcard{deck="Rocq Programming Language"}
+::: flashcard{deck="14-Rocq Programming Language"}
 What does an inductive definition in rocq do?
 === key
 It allows defining Algebraic data types in Rocq, including Recursive types.

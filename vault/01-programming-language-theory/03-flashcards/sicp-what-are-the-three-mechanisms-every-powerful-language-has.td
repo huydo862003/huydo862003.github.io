@@ -7,7 +7,7 @@ tags:
   - 'language theory'
 ---
 
-::: flashcard{deck="Language Theory"}
+::: flashcard{deck="08-Language Theory"}
 What are the three mechanisms every powerful language has for combining simple ideas into more complex ideas?
 === key
 1. *Primitive expressions* - the simplest entities the language is concerned with.
