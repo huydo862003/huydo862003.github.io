@@ -8,3 +8,6 @@ tags:
   - 'compiler implementation'
 ---
 
+::: info
+(Compiler implementation) Same as ${fref("./region.td")}.
+:::

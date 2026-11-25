@@ -10,3 +10,6 @@ tags:
   - 'compiler implementation'
 ---
 
+::: info
+(Compiler implementation) A type of memory management technique in which each allocated object is assigned to a ${fref("./region.td")}.
+:::
