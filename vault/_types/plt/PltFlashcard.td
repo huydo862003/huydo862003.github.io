@@ -6,4 +6,7 @@ _extends: Flashcard
 properties:
   tags:
     type: list['compiler implementation' | 'design philosophy' | 'language philosophy' | 'language theory' | 'logic & tools' | 'other mathematics' | 'programming language basic' | 'proof technique' | 'pure lambda calculus' | 'rocq programming language' | 'semantics' | 'set theory & relation' | 'simply-typed lambda calculus' | 'type theory']?
+  blogs:
+    type: list[Blog]?
+    computed: (r) -> vault.from_node(r).follow_back(Blog, "concepts").to_list()
 ---

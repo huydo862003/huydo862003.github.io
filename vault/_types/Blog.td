@@ -11,4 +11,8 @@ properties:
     type: Blogsite?
   tags:
     type: list[string]?
+  concepts:
+    type: list[PltConcept]?
+  flashcards:
+    type: list[PltFlashcard]?
 ---

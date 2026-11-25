@@ -14,4 +14,7 @@ properties:
   flashcards:
     type: list[Flashcard]?
     computed: (r) -> vault.from_node(r).follow_back(PltFlashcard, "concepts").to_list()
+  blogs:
+    type: list[Blog]?
+    computed: (r) -> vault.from_node(r).follow_back(Blog, "concepts").to_list()
 ---
